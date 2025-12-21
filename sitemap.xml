@@ -10,6 +10,10 @@
         <loc>https://lzon.ca/posts/</loc>
     </url>
     <url>
+        <loc>https://lzon.ca/posts/2025-review/</loc>
+        <lastmod>2025-12-20</lastmod>
+    </url>
+    <url>
         <loc>https://lzon.ca/posts/page/1/</loc>
     </url>
     <url>
@@ -103,10 +107,17 @@
         <lastmod>2025-03-20</lastmod>
     </url>
     <url>
+        <loc>https://lzon.ca/posts/test/</loc>
+        <lastmod>2025-12-21</lastmod>
+    </url>
+    <url>
         <loc>https://lzon.ca/tags/</loc>
     </url>
     <url>
         <loc>https://lzon.ca/tags/life/</loc>
+    </url>
+    <url>
+        <loc>https://lzon.ca/tags/politics/</loc>
     </url>
     <url>
         <loc>https://lzon.ca/tags/recipe/</loc>

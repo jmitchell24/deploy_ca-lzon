@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en">
+    <title>lzon.ca - politics</title>
+    <link href="https://lzon.ca/tags/politics/atom.xml" rel="self" type="application/atom+xml"/>
+    <link href="https://lzon.ca"/>
+    <generator uri="https://www.getzola.org/">Zola</generator>
+    <updated>2025-12-20T00:00:00+00:00</updated>
+    <id>https://lzon.ca/tags/politics/atom.xml</id>
+    <entry xml:lang="en">
+        <title>A review of Canadian Politics in 2025</title>
+        <published>2025-12-20T00:00:00+00:00</published>
+        <updated>2025-12-20T00:00:00+00:00</updated>
+        <author>
+          <name>Unknown</name>
+        </author>
+        <link rel="alternate" href="https://lzon.ca/posts/2025-review/" type="text/html"/>
+        <id>https://lzon.ca/posts/2025-review/</id>
+        
+        <summary type="html">&lt;p&gt;Since I live here I figured I should mention a few things about &lt;em&gt;&lt;strong&gt;The Politics&lt;&#x2F;strong&gt;&lt;&#x2F;em&gt;. &lt;&#x2F;p&gt;
+</summary>
+        
+    </entry>
+</feed>
