@@ -82,6 +82,47 @@ document.addEventListener('DOMContentLoaded', () => {
     updatePageHueIndex(pageHueIndex);
 }); 
 
+/// Daily Quote 
+
+document.addEventListener("DOMContentLoaded", () => {
+    const quoteArray = [ 
+        "All I really need is love, but a little chocolate now and then doesn't hurt. <br><br> - Lucy van Pelt",
+        "That's the secret to life... replace one worry with another. <br><br> - Charlie Brown",
+        "No problem is so big or so complicated that it can't be run away from! <br><br> - Linus van Pelt",
+        "Ugh! I’ve been kissed by a dog! I have dog germs! Get hot water! Get some disinfectant! Get some Iodine! <br><br> - Lucy van Pelt",
+        "Big sisters are the crab grass in the lawn of life. <br><br> - Linus van Pelt",
+        "Happiness is a warm puppy. <br><br> - Lucy van Pelt",
+        "I never made a mistake in my life. I thought I did once, but I was wrong. <br><br> - Lucy van Pelt",
+        "I think I've discovered the secret of life - you just hang around until you get used to it. <br><br> - Sally Brown",
+        "In the book of life, the answers aren't in the back. <br><br> - Charlie Brown",
+        "I've developed a new philosophy. I only dread one day at a time. <br><br> - Charlie Brown",
+        "My life has no purpose, no direction, no aim, no meaning, and yet I'm happy. I can't figure it out. What am I doing right? <br><br> - Charles M. Schulz",
+        "Nothing takes the taste out of peanut butter quite like unrequited love. <br><br> - Charlie Brown",
+        "Try not to have a good time... This is supposed to be educational. <br><br> - Lucy van Pelt",
+        "I think I'm allergic to morning. <br><br> - Charles M. Schulz",
+        "I love the kinds of hugs where you can physically feel the sadness leaving your body. <br><br> - Charlie Brown",
+        "There's no sense in doing a lot of barking if you don't really have anything to say. <br><br> - Snoopy",
+        "I think I'm afraid to be happy, every time I'm happy something bad happens. <br><br> - Charlie Brown",
+        "Be yourself. No one can say you're doing it wrong. <br><br> - Charles M. Schulz",
+        "The less you want, the more you love. <br><br> - Charles M. Schulz",
+        "Few people are successful unless other people want them to be. <br><br> - Charles M. Schulz",
+        "People always expect more of you when you have naturally curly hair! <br><br> - Frieda",
+        "Light travels at a speed of 186,000 miles per second…So why are the afternoons so long? <br><br> - Sally Brown",
+        "My anxieties have anxieties. <br><br> - Charlie Brown",
+        "Sometimes you lie in bed at night, and you don't have a single thing to worry about... That always worries me! <br><br> - Charlie Brown",
+        "For one brief moment today I thought I was winning in the game of life. But there was a flag on the play! <br><br> - Charlie Brown",
+        "Don't be a leaf... Be a tree! <br><br> - Linus van Pelt",
+    ]
+    
+    const today = new Date();
+    const dayOfYear = Math.floor((today - new Date(today.getFullYear(), 0, 0)) / 86400000);
+    const seed = dayOfYear * 9301 + 49297;
+    const randomIndex = seed % quoteArray.length;
+    const randomQuote = quoteArray[randomIndex];
+    const quote = document.querySelector("peanuts-quote"); 
+    quote.innerHTML = randomQuote;
+});
+
 
 // function toggleDarkMode() { 
 //     const attrDarkMode = document.body.getAttribute("data-dark-mode"); 
