@@ -4,8 +4,31 @@
     <link href="https://lzon.ca/tags/life/atom.xml" rel="self" type="application/atom+xml"/>
     <link href="https://lzon.ca"/>
     <generator uri="https://www.getzola.org/">Zola</generator>
-    <updated>2025-11-24T00:00:00+00:00</updated>
+    <updated>2025-12-23T00:00:00+00:00</updated>
     <id>https://lzon.ca/tags/life/atom.xml</id>
+    <entry xml:lang="en">
+        <title>Why I&#x27;m Grateful Today</title>
+        <published>2025-12-23T00:00:00+00:00</published>
+        <updated>2025-12-23T00:00:00+00:00</updated>
+        <author>
+          <name>Unknown</name>
+        </author>
+        <link rel="alternate" href="https://lzon.ca/posts/gratitude-2025-12-23/" type="text/html"/>
+        <id>https://lzon.ca/posts/gratitude-2025-12-23/</id>
+        
+        <content type="html">&lt;p&gt;Today I am grateful for this website, &lt;a rel=&quot;noopener&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;lzon.ca&quot;&gt;lzon.ca&lt;&#x2F;a&gt;. I started building it about a week ago, and so far I am quite satisfied with it, at a technical level. &lt;&#x2F;p&gt;
+&lt;p&gt;I’m using the &lt;a rel=&quot;noopener&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;getzola.org&quot;&gt;Zola&lt;&#x2F;a&gt; static site generator. I started from scratch, without a template. I wanted to improve my web development skill, and I wanted a challenge. There was a moment on day one in which I literally had an empty index.html file loaded in my text editor. &lt;&#x2F;p&gt;
+&lt;p&gt;The name is a contraction of the word “Lauzon”, pronounced “loh-zawn”. It’s the name of a lake near &lt;a rel=&quot;noopener&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;en.wikipedia.org&#x2F;wiki&#x2F;Blind_River,_Ontario&quot;&gt;Blind River, Ontario&lt;&#x2F;a&gt;. My Mom was born there and otherwise it is a very nice little town, in a part of the province that I love. The domain was also surprising inexpensive. &lt;&#x2F;p&gt;
+&lt;p&gt;I think the design of the site is nice so far, and I’ve already learned a few new things related to web development and design: &lt;&#x2F;p&gt;
+&lt;ul&gt;
+&lt;li&gt;A new trick for address FOUC&lt;&#x2F;li&gt;
+&lt;li&gt;How to create advanced CSS selectors&lt;&#x2F;li&gt;
+&lt;li&gt;New ways to use CSS variables&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;p&gt;I don’t know now how frequently I will publish content to this site. At the very least it can be a place to publish my rambles, when I feel compelled. Either way, I am satisfied with what this is right now. &lt;&#x2F;p&gt;
+</content>
+        
+    </entry>
     <entry xml:lang="en">
         <title>Twenty Twenty-Five</title>
         <published>2025-11-24T00:00:00+00:00</published>
