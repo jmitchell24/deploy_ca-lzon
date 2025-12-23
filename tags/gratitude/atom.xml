@@ -13,19 +13,36 @@
         <author>
           <name>Unknown</name>
         </author>
-        <link rel="alternate" href="https://lzon.ca/posts/gratitude-2025-12-23/" type="text/html"/>
-        <id>https://lzon.ca/posts/gratitude-2025-12-23/</id>
+        <link rel="alternate" href="https://lzon.ca/posts/gratitude/" type="text/html"/>
+        <id>https://lzon.ca/posts/gratitude/</id>
         
         <content type="html">&lt;p&gt;Today I am grateful for this website, &lt;a rel=&quot;noopener&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;lzon.ca&quot;&gt;lzon.ca&lt;&#x2F;a&gt;. I started building it about a week ago, and so far I am quite satisfied with it, at a technical level. &lt;&#x2F;p&gt;
 &lt;p&gt;I’m using the &lt;a rel=&quot;noopener&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;getzola.org&quot;&gt;Zola&lt;&#x2F;a&gt; static site generator. I started from scratch, without a template. I wanted to improve my web development skill, and I wanted a challenge. There was a moment on day one in which I literally had an empty index.html file loaded in my text editor. &lt;&#x2F;p&gt;
 &lt;p&gt;The name is a contraction of the word “Lauzon”, pronounced “loh-zawn”. It’s the name of a lake near &lt;a rel=&quot;noopener&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;en.wikipedia.org&#x2F;wiki&#x2F;Blind_River,_Ontario&quot;&gt;Blind River, Ontario&lt;&#x2F;a&gt;. My Mom was born there and otherwise it is a very nice little town, in a part of the province that I love. The domain was also surprising inexpensive. &lt;&#x2F;p&gt;
 &lt;p&gt;I think the design of the site is nice so far, and I’ve already learned a few new things related to web development and design: &lt;&#x2F;p&gt;
 &lt;ul&gt;
-&lt;li&gt;A new trick for address FOUC&lt;&#x2F;li&gt;
+&lt;li&gt;A new trick for addressing FOUC&lt;&#x2F;li&gt;
 &lt;li&gt;How to create advanced CSS selectors&lt;&#x2F;li&gt;
 &lt;li&gt;New ways to use CSS variables&lt;&#x2F;li&gt;
 &lt;&#x2F;ul&gt;
 &lt;p&gt;I don’t know now how frequently I will publish content to this site. At the very least it can be a place to publish my rambles, when I feel compelled. Either way, I am satisfied with what this is right now. &lt;&#x2F;p&gt;
+</content>
+        
+    </entry>
+    <entry xml:lang="en">
+        <title>Gratitude</title>
+        <published>2025-01-17T00:00:00+00:00</published>
+        <updated>2025-01-17T00:00:00+00:00</updated>
+        <author>
+          <name>Unknown</name>
+        </author>
+        <link rel="alternate" href="https://lzon.ca/posts/post-2025-01-17/" type="text/html"/>
+        <id>https://lzon.ca/posts/post-2025-01-17/</id>
+        
+        <content type="html">&lt;p&gt;Today is another decent day. The shop is just busy enough: I have enough to do that I don’t feel un-needed but I’m also not overworked. &lt;&#x2F;p&gt;
+&lt;p&gt;For the second time this month I was told to stay home for lack of work to do. I understand fully, and agree that it was warranted, but this has rattled me none-the-less. Before now I have always had a consistent schedule. I was told 45 minutes before closing that I wouldn’t be working the following day. This took me by surprise, and I feel that I should have been given more notice. &lt;&#x2F;p&gt;
+&lt;p&gt;Either way, I feel that I responded appropriately. I acknowledged the situation politely and professionally. The following day I immediately began searching for job postings, and updating my resume. I in no way want to lose this job, and I have recieved no indication yet that I’m in danger of losing it. But this is yet another &lt;em&gt;very&lt;&#x2F;em&gt; stark reminder that my position is &lt;a href=&quot;https:&#x2F;&#x2F;lzon.ca&#x2F;posts&#x2F;post-2024-12-18&#x2F;&quot;&gt;precarious&lt;&#x2F;a&gt;.&lt;&#x2F;p&gt;
+&lt;p&gt;In recent years, I’ve gotten a lot better at appreciating the present moment, not dwelling too much on the past, or future. I’ve gotten better at feeling gratitude for the nice things immediately in front of me, such as meaningful and interesting work.&lt;&#x2F;p&gt;
 </content>
         
     </entry>

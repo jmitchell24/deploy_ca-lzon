@@ -124,52 +124,54 @@ document.addEventListener("DOMContentLoaded", () => {
 });
 
 
-// function toggleDarkMode() { 
-//     const attrDarkMode = document.body.getAttribute("data-dark-mode"); 
-//     let dark_mode_value = localStorage.getItem(DARK_MODE_KEY) || "on"; 
+/// Copy Buttons
 
-//     if (attrDarkMode == null)
-//         dark_mode_value = "on"; 
-//     else if (attrDarkMode == "on")
-//         dark_mode_value = "off"; 
-//     else if (attrDarkMode == "off")
-//         dark_mode_value = "on"; 
-
-//     localStorage.setItem(DARK_MODE_KEY, dark_mode_value); 
-//     document.body.setAttribute("data-dark-mode", dark_mode_value); 
-// }
-
-// document.addEventListener('DOMContentLoaded', () => { 
-//     const footerButton = document.querySelector("footer-button"); 
-
-//     const keyDarkMode = "data-dark-mode";
-
-//     function toggleDarkMode(animateTransition) { 
-//         const attrDarkMode = document.body.getAttribute(keyDarkMode); 
-//         const valueDarkMode = 
-//             attrDarkMode != null && attrDarkMode == "on" 
-//             ? "off"
-//             : "on";  
-
-//         document.body.setAttribute(keyDarkMode, valueDarkMode); 
-//         localStorage.setItem(keyDarkMode, valueDarkMode); 
-        
-//         if (animateTransition) { 
-//             document.body.classList.add('dark-mode-transition');
-//                 setTimeout(() => {
-//                 document.body.classList.remove('dark-mode-transition');
-//             }, 300);
-//         }
-        
-//     }
-
-//     const attrDarkMode = document.body.getAttribute(keyDarkMode); 
-//     const itemDarkMode = localStorage.getItem(keyDarkMode); 
-//     if (attrDarkMode != itemDarkMode)
-//         toggleDarkMode(false); 
-
-//     footerButton.addEventListener("click", (e) => { 
-//         toggleDarkMode(true); 
-//     });
     
-// }); 
+function addCopyButton2(el) { 
+    const pre = el.querySelector("pre"); 
+    
+    const preLangText = pre.getAttribute("data-lang") || "plaintext"; 
+    const preCodeText = pre.textContent || pre.innerText; 
+
+    const footer = el.querySelector("code-footer"); 
+    const footerLang = el.querySelector("code-footer > code-footer-lang"); 
+    const footerCopy = el.querySelector("code-footer > code-footer-copy");
+    const footerChars = el.querySelector("code-footer > code-footer-chars"); 
+
+    footerLang.innerText = preLangText; 
+    footerChars.innerText = `${preCodeText.length} chars`; 
+    footerCopy.innerText = "click to copy";
+
+    footer.addEventListener('click', async () => {
+        try {
+            await navigator.clipboard.writeText(pre.textContent || pre.innerText);
+            
+            // Visual feedback
+            const originalText = footerCopy.innerHTML;
+            footerCopy.innerHTML = "copied...";
+            
+            // Reset after 2 seconds
+            setTimeout(() => {
+                footerCopy.innerHTML = originalText;
+            }, 1500);
+            
+        } catch (err) {
+            // Fallback for older browsers
+            // ...
+        }
+    });
+}
+        
+// Function to add copy buttons to all pre elements
+function addCopyButtons() {
+    document.querySelectorAll("code-wrapper").forEach((el, idx) => { 
+        addCopyButton2(el); 
+    });
+}
+
+// Run when DOM is loaded
+if (document.readyState === 'loading') {
+    document.addEventListener('DOMContentLoaded', addCopyButtons);
+} else {
+    addCopyButtons();
+}

@@ -10,7 +10,11 @@
         <loc>https://lzon.ca/posts/</loc>
     </url>
     <url>
-        <loc>https://lzon.ca/posts/gratitude-2025-12-23/</loc>
+        <loc>https://lzon.ca/posts/gratitude/</loc>
+        <lastmod>2025-12-23</lastmod>
+    </url>
+    <url>
+        <loc>https://lzon.ca/posts/how-to-quotes/</loc>
         <lastmod>2025-12-23</lastmod>
     </url>
     <url>
@@ -111,9 +115,6 @@
     </url>
     <url>
         <loc>https://lzon.ca/tags/gratitude/</loc>
-    </url>
-    <url>
-        <loc>https://lzon.ca/tags/gratus/</loc>
     </url>
     <url>
         <loc>https://lzon.ca/tags/life/</loc>
