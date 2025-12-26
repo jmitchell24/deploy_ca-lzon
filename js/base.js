@@ -92,9 +92,23 @@ document.addEventListener("DOMContentLoaded", () => {
    
     const today = new Date();
     const dayOfYear = Math.floor((today - new Date(today.getFullYear(), 0, 0)) / 86400000)+3;
-    const seed = dayOfYear * 9301 + 49297;
-    const randomIndex = seed % quoteArray.length;
-    const randomQuote = quoteArray[randomIndex];
+
+    let randomQuote = pickedQuoteArray.find(quote => {
+        const todayString = today.toISOString().split('T')[0]; // Returns 'YYYY-MM-DD'
+        console.log(todayString); 
+        console.log(quote.date); 
+        const isToday = quote.date === todayString;
+        console.log(isToday); // true or false
+        return isToday; 
+    });
+
+    if (!randomQuote) { 
+        const seed = dayOfYear * 9301 + 49297;
+        const randomIndex = seed % quoteArray.length;
+        randomQuote = quoteArray[randomIndex];
+    }
+
+    //const randomQuote = quoteArray[randomIndex];
     const quoteContent = document.querySelector("daily-quote-content"); 
     const quoteTitle = document.querySelector("daily-quote-title"); 
     const dateString = today.toLocaleDateString(undefined, {
