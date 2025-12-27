@@ -91,24 +91,31 @@ document.addEventListener('DOMContentLoaded', () => {
 document.addEventListener("DOMContentLoaded", () => {
    
     const today = new Date();
-    const dayOfYear = Math.floor((today - new Date(today.getFullYear(), 0, 0)) / 86400000)+3;
+    
 
-    let randomQuote = pickedQuoteArray.find(quote => {
-        const todayString = today.toISOString().split('T')[0]; // Returns 'YYYY-MM-DD'
-        console.log(todayString); 
-        console.log(quote.date); 
-        const isToday = quote.date === todayString;
-        console.log(isToday); // true or false
-        return isToday; 
+    // try first to use a dated quote for the current day 
+    let selectedQuote = datedQuoteArray.find(quote => {
+        // Use local date 
+        const year = today.getFullYear();
+        const month = String(today.getMonth() + 1).padStart(2, '0');
+        const day = String(today.getDate()).padStart(2, '0');
+        const todayString = `${year}-${month}-${day}`; // Local 'YYYY-MM-DD'
+
+        return quote.date === todayString; 
     });
 
-    if (!randomQuote) { 
+    // fallback to automatic rotating quote if a dated quote is not found 
+    if (!selectedQuote) { 
+        const dayOfYear = Math.floor((today - new Date(today.getFullYear(), 0, 0)) / 86400000);
         const seed = dayOfYear * 9301 + 49297;
-        const randomIndex = seed % quoteArray.length;
-        randomQuote = quoteArray[randomIndex];
+        const randomIndex = seed % autoQuoteArray.length;
+        selectedQuote = autoQuoteArray[randomIndex];
+
+        console.log("Automatic Rotating Quote: \n" + selectedQuote.text); 
+    } else { 
+        console.log("Dated Quote: \n" + selectedQuote.text); 
     }
 
-    //const randomQuote = quoteArray[randomIndex];
     const quoteContent = document.querySelector("daily-quote-content"); 
     const quoteTitle = document.querySelector("daily-quote-title"); 
     const dateString = today.toLocaleDateString(undefined, {
@@ -118,59 +125,47 @@ document.addEventListener("DOMContentLoaded", () => {
         day: "numeric",
     });
 
-    quoteContent.innerHTML = `${randomQuote.text} <br> - ${randomQuote.author}`;
+    quoteContent.innerHTML = `<em>“${selectedQuote.text}”</em> <br> - ${selectedQuote.author}`;
     quoteTitle.innerHTML =  `For ${dateString}`
 });
 
+/// Code Copy Buttons
 
-/// Copy Buttons
+document.addEventListener("DOMContentLoaded", () => {
 
-    
-function addCopyButton2(el) { 
-    const pre = el.querySelector("pre"); 
-    
-    const preLangText = pre.getAttribute("data-lang") || "plaintext"; 
-    const preCodeText = pre.textContent || pre.innerText; 
-
-    const footer = el.querySelector("code-footer"); 
-    const footerLang = el.querySelector("code-footer > code-footer-lang"); 
-    const footerCopy = el.querySelector("code-footer > code-footer-copy");
-    const footerChars = el.querySelector("code-footer > code-footer-chars"); 
-
-    footerLang.innerText = preLangText; 
-    footerChars.innerText = `${preCodeText.length} chars`; 
-    footerCopy.innerText = "click to copy";
-
-    footer.addEventListener('click', async () => {
-        try {
-            await navigator.clipboard.writeText(pre.textContent || pre.innerText);
-            
-            // Visual feedback
-            const originalText = footerCopy.innerHTML;
-            footerCopy.innerHTML = "copied...";
-            
-            // Reset after 2 seconds
-            setTimeout(() => {
-                footerCopy.innerHTML = originalText;
-            }, 1500);
-            
-        } catch (err) {
-            // Fallback for older browsers
-            // ...
-        }
-    });
-}
-        
-// Function to add copy buttons to all pre elements
-function addCopyButtons() {
     document.querySelectorAll("code-wrapper").forEach((el, idx) => { 
-        addCopyButton2(el); 
-    });
-}
+        const pre = el.querySelector("pre"); 
+        
+        const preLangText = pre.getAttribute("data-lang") || "plaintext"; 
+        const preCodeText = pre.textContent || pre.innerText; 
 
-// Run when DOM is loaded
-if (document.readyState === 'loading') {
-    document.addEventListener('DOMContentLoaded', addCopyButtons);
-} else {
-    addCopyButtons();
-}
+        const footer = el.querySelector("code-footer"); 
+        const footerLang = el.querySelector("code-footer > code-footer-lang"); 
+        const footerCopy = el.querySelector("code-footer > code-footer-copy");
+        const footerChars = el.querySelector("code-footer > code-footer-chars"); 
+
+        footerLang.innerText = preLangText; 
+        footerChars.innerText = `${preCodeText.length} chars`; 
+        footerCopy.innerText = "click to copy";
+
+        footer.addEventListener('click', async () => {
+            try {
+                await navigator.clipboard.writeText(pre.textContent || pre.innerText);
+                
+                // Visual feedback
+                const originalText = footerCopy.innerHTML;
+                footerCopy.innerHTML = "copied...";
+                
+                // Reset after 2 seconds
+                setTimeout(() => {
+                    footerCopy.innerHTML = originalText;
+                }, 1500);
+                
+            } catch (err) {
+                // Fallback for older browsers
+                // ...
+            }
+        });
+    });
+
+});
