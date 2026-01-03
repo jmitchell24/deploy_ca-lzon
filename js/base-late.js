@@ -1,4 +1,6 @@
-/// Matomo 
+//
+// Matomo 
+//
 
 var _paq = window._paq = window._paq || [];
 /* tracker methods like "setCustomDimension" should be called before "trackPageView" */
@@ -26,12 +28,14 @@ document.addEventListener('DOMContentLoaded', () => {
     
 });
 
-/// Theme List 
+//
+// Theme List 
+//
 
 document.addEventListener('DOMContentLoaded', () => {
 
     let pageHueIndex = parseInt(localStorage.getItem("theme-hue-index") ?? "0"); 
-    let pageThemeMode = localStorage.getItem("theme-mode") ?? "dark";
+    let pageDarkMode = localStorage.getItem("theme-dark-mode");
 
     const themeItemsColor = document.querySelectorAll('x-theme-color-item');
     const themeItemDark = document.querySelector("x-theme-dark-item"); 
@@ -45,24 +49,15 @@ document.addEventListener('DOMContentLoaded', () => {
         );
     }
 
-    function updatePageThemeMode(mode, animate) { 
-        pageThemeMode = mode; 
-        localStorage.setItem("theme-mode", mode); 
+    function updatePageDarkMode(mode) { 
+        pageDarkMode = mode ? "on" : "off"; 
+        localStorage.setItem("theme-dark-mode", pageDarkMode); 
 
-        if (animate) {
-            document.body.classList.add("animate-everything"); 
-        }
-            
-
-        if (mode == "dark") document.body.setAttribute("data-dark-mode", "on"); 
-        if (mode == "light") document.body.setAttribute("data-dark-mode", "off"); 
-
-        if (animate) { 
-            setTimeout(() => {
-                document.body.classList.remove("animate-everything"); 
-            }, 500);
-        }
-        
+        document.body.classList.add("animate-everything"); 
+        document.body.setAttribute("data-dark-mode", pageDarkMode); 
+        setTimeout(() => {
+            document.body.classList.remove("animate-everything"); 
+        }, 500);
     }
 
     function updateThemeItems() { 
@@ -71,9 +66,9 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     }
 
-    function updateThemeMode() { 
-        themeItemDark.setAttribute("data-active", pageThemeMode == "dark" ? "true" : "false"); 
-        themeItemLight.setAttribute("data-active", pageThemeMode == "light" ? "true" : "false"); 
+    function updateDarkModeItems() { 
+        themeItemDark.setAttribute("data-active", pageDarkMode == "on" ? "true" : "false"); 
+        themeItemLight.setAttribute("data-active", pageDarkMode == "off" ? "true" : "false"); 
     }
 
     themeItemsColor.forEach((it, idx) => { 
@@ -84,20 +79,17 @@ document.addEventListener('DOMContentLoaded', () => {
     });
 
     themeItemLight.addEventListener("click", (e) => {
-        updatePageThemeMode("light", true); 
-        updateThemeMode();
+        updatePageDarkMode(false); 
+        updateDarkModeItems();
     });
 
     themeItemDark.addEventListener("click", (e) => { 
-        updatePageThemeMode("dark", true); 
-        updateThemeMode(); 
+        updatePageDarkMode(true); 
+        updateDarkModeItems(); 
     });
 
-    updateThemeItems();
-    updatePageThemeMode(pageThemeMode, false); 
-
-    updateThemeMode(); 
-    updatePageHueIndex(pageHueIndex);
+    updateThemeItems(); 
+    updateDarkModeItems(); 
 }); 
 
 /// Daily Quote 
@@ -152,20 +144,22 @@ document.addEventListener("DOMContentLoaded", () => {
     quoteTitle.innerHTML =  `For ${dateString}`
 });
 
-/// Code Copy Buttons
+// 
+// Code Wrapper Copy Function 
+// 
 
 document.addEventListener("DOMContentLoaded", () => {
 
-    document.querySelectorAll("code-wrapper").forEach((el, idx) => { 
+    document.querySelectorAll("x-code-wrapper").forEach((el, idx) => { 
         const pre = el.querySelector("pre"); 
         
         const preLangText = pre.getAttribute("data-lang") || "plaintext"; 
         const preCodeText = pre.textContent || pre.innerText; 
 
-        const footer = el.querySelector("code-footer"); 
-        const footerLang = el.querySelector("code-footer > code-footer-lang"); 
-        const footerCopy = el.querySelector("code-footer > code-footer-copy");
-        const footerChars = el.querySelector("code-footer > code-footer-chars"); 
+        const footer = el.querySelector("x-code-footer"); 
+        const footerLang = el.querySelector("x-code-footer > x-code-footer-lang"); 
+        const footerCopy = el.querySelector("x-code-footer > x-code-footer-copy");
+        const footerChars = el.querySelector("x-code-footer > x-code-footer-chars"); 
 
         footerLang.innerText = preLangText; 
         footerChars.innerText = `${preCodeText.length} chars`; 
@@ -185,8 +179,7 @@ document.addEventListener("DOMContentLoaded", () => {
                 }, 1500);
                 
             } catch (err) {
-                // Fallback for older browsers
-                // ...
+                console.log("error while copying: " + err); 
             }
         });
     });
