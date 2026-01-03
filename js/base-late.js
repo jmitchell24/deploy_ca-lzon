@@ -92,58 +92,6 @@ document.addEventListener('DOMContentLoaded', () => {
     updateDarkModeItems(); 
 }); 
 
-/// Daily Quote 
-
-document.addEventListener("DOMContentLoaded", () => {
-   
-    const today = new Date();
-    
-
-    // try first to use a dated quote for the current day 
-    let selectedQuote = datedQuoteArray.find(quote => {
-        // Use local date 
-        const year = today.getFullYear();
-        const month = String(today.getMonth() + 1).padStart(2, '0');
-        const day = String(today.getDate()).padStart(2, '0');
-        const todayString = `${year}-${month}-${day}`; // Local 'YYYY-MM-DD'
-
-        return quote.date === todayString; 
-    });
-
-    // fallback to automatic rotating quote if a dated quote is not found 
-    if (!selectedQuote) { 
-        function getQuoteArray() {
-            console.log("mood: " + autoQuoteMood); 
-            if (autoQuoteMood == "stark") return starkQuoteArray; 
-            if (autoQuoteMood == "fun") return funQuoteArray; 
-            return autoQuoteArray; 
-        }
-
-        const dayOfYear = Math.floor((today - new Date(today.getFullYear(), 0, 0)) / 86400000);
-        const seed = dayOfYear * 9301 + 49297;
-        const quoteArray = getQuoteArray()
-        const randomIndex = seed % quoteArray.length;
-
-        selectedQuote = quoteArray[randomIndex];
-
-        console.log("Automatic Rotating Quote: \n" + selectedQuote.text); 
-    } else { 
-        console.log("Dated Quote: \n" + selectedQuote.text); 
-    }
-
-    const quoteContent = document.querySelector("daily-quote-content"); 
-    const quoteTitle = document.querySelector("daily-quote-title"); 
-    const dateString = today.toLocaleDateString(undefined, {
-        weekday: "long",
-        year: "numeric",
-        month: "short",
-        day: "numeric",
-    });
-
-    quoteContent.innerHTML = `<em>“${selectedQuote.text}”</em> <br> - ${selectedQuote.author}`;
-    quoteTitle.innerHTML =  `For ${dateString}`
-});
-
 // 
 // Code Wrapper Copy Function 
 // 
