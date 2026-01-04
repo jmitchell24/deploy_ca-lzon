@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
+    <channel>
+      <title>lzon.ca - daily-grateful</title>
+      <link>https://lzon.ca</link>
+      <description></description>
+      <generator>Zola</generator>
+      <language>en</language>
+      <atom:link href="https://lzon.ca/tags/daily-grateful/rss.xml" rel="self" type="application/rss+xml"/>
+      <lastBuildDate>Sat, 27 Dec 2025 00:00:00 +0000</lastBuildDate>
+      <item>
+          <title>Driving</title>
+          <pubDate>Sat, 27 Dec 2025 00:00:00 +0000</pubDate>
+          <author>Unknown</author>
+          <link>https://lzon.ca/posts/daily/driving/</link>
+          <guid>https://lzon.ca/posts/daily/driving/</guid>
+          <description xml:base="https://lzon.ca/posts/daily/driving/">&lt;p&gt;Today I’m grateful just for driving. &lt;&#x2F;p&gt;
+</description>
+      </item>
+      <item>
+          <title>Chip Nuts</title>
+          <pubDate>Fri, 26 Dec 2025 00:00:00 +0000</pubDate>
+          <author>Unknown</author>
+          <link>https://lzon.ca/posts/daily/chip-nuts/</link>
+          <guid>https://lzon.ca/posts/daily/chip-nuts/</guid>
+          <description xml:base="https://lzon.ca/posts/daily/chip-nuts/">&lt;p&gt;Today I’m grateful for a simple local snack called Chip Nuts. &lt;&#x2F;p&gt;
+</description>
+      </item>
+      <item>
+          <title>Tomatoes and Bread</title>
+          <pubDate>Thu, 25 Dec 2025 00:00:00 +0000</pubDate>
+          <author>Unknown</author>
+          <link>https://lzon.ca/posts/daily/tomatoes-and-bread/</link>
+          <guid>https://lzon.ca/posts/daily/tomatoes-and-bread/</guid>
+          <description xml:base="https://lzon.ca/posts/daily/tomatoes-and-bread/">&lt;p&gt;Yep, today (and most days) I’m grateful for Tomatoes and Bread. &lt;&#x2F;p&gt;
+</description>
+      </item>
+      <item>
+          <title>Riegelein Chocolate Lady Bugs</title>
+          <pubDate>Wed, 24 Dec 2025 00:00:00 +0000</pubDate>
+          <author>Unknown</author>
+          <link>https://lzon.ca/posts/daily/riegelein-lady-bugs/</link>
+          <guid>https://lzon.ca/posts/daily/riegelein-lady-bugs/</guid>
+          <description xml:base="https://lzon.ca/posts/daily/riegelein-lady-bugs/">&lt;p&gt;Today I’m grateful for &lt;em&gt;Riegelein Chocolate Lady Bugs&lt;&#x2F;em&gt;.&lt;&#x2F;p&gt;
+</description>
+      </item>
+      <item>
+          <title>Why I&#x27;m Grateful Today</title>
+          <pubDate>Tue, 23 Dec 2025 00:00:00 +0000</pubDate>
+          <author>Unknown</author>
+          <link>https://lzon.ca/posts/daily/lzon/</link>
+          <guid>https://lzon.ca/posts/daily/lzon/</guid>
+          <description xml:base="https://lzon.ca/posts/daily/lzon/"></description>
+      </item>
+    </channel>
+</rss>
