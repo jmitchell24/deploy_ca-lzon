@@ -7,16 +7,7 @@
       <generator>Zola</generator>
       <language>en</language>
       <atom:link href="https://lzon.ca/posts/rss.xml" rel="self" type="application/rss+xml"/>
-      <lastBuildDate>Mon, 05 Jan 2026 00:00:00 +0000</lastBuildDate>
-      <item>
-          <title>What is emailverification.info?</title>
-          <pubDate>Mon, 05 Jan 2026 00:00:00 +0000</pubDate>
-          <author>Unknown</author>
-          <link>https://lzon.ca/posts/site/scam-not-scam/</link>
-          <guid>https://lzon.ca/posts/site/scam-not-scam/</guid>
-          <description xml:base="https://lzon.ca/posts/site/scam-not-scam/">&lt;p&gt;Have you ever recieved an email from that address? Here’s why it might not actually be a scam. &lt;&#x2F;p&gt;
-</description>
-      </item>
+      <lastBuildDate>Fri, 02 Jan 2026 00:00:00 +0000</lastBuildDate>
       <item>
           <title>Year in Review 2025 - AI</title>
           <pubDate>Fri, 02 Jan 2026 00:00:00 +0000</pubDate>
@@ -48,9 +39,9 @@
           <title>The First Week of lzon.ca</title>
           <pubDate>Sun, 28 Dec 2025 00:00:00 +0000</pubDate>
           <author>Unknown</author>
-          <link>https://lzon.ca/posts/misc/lzon-week-one-update/</link>
-          <guid>https://lzon.ca/posts/misc/lzon-week-one-update/</guid>
-          <description xml:base="https://lzon.ca/posts/misc/lzon-week-one-update/">&lt;p&gt;Good god! How has it been only a week? &lt;&#x2F;p&gt;
+          <link>https://lzon.ca/posts/site/lzon-week-one-update/</link>
+          <guid>https://lzon.ca/posts/site/lzon-week-one-update/</guid>
+          <description xml:base="https://lzon.ca/posts/site/lzon-week-one-update/">&lt;p&gt;Good god! How has it been only a week? &lt;&#x2F;p&gt;
 </description>
       </item>
       <item>
