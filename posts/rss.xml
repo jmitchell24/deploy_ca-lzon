@@ -7,7 +7,16 @@
       <generator>Zola</generator>
       <language>en</language>
       <atom:link href="https://lzon.ca/posts/rss.xml" rel="self" type="application/rss+xml"/>
-      <lastBuildDate>Tue, 06 Jan 2026 00:00:00 +0000</lastBuildDate>
+      <lastBuildDate>Wed, 07 Jan 2026 00:00:00 +0000</lastBuildDate>
+      <item>
+          <title>Dream Trawler</title>
+          <pubDate>Wed, 07 Jan 2026 00:00:00 +0000</pubDate>
+          <author>Unknown</author>
+          <link>https://lzon.ca/posts/daily/dream-trawler/</link>
+          <guid>https://lzon.ca/posts/daily/dream-trawler/</guid>
+          <description xml:base="https://lzon.ca/posts/daily/dream-trawler/">&lt;p&gt;Today I’m grateful Dream Trawler, a card from the game Magic the Gathering. &lt;&#x2F;p&gt;
+</description>
+      </item>
       <item>
           <title>What is emailverification.info?</title>
           <pubDate>Mon, 05 Jan 2026 00:00:00 +0000</pubDate>
