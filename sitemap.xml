@@ -52,6 +52,20 @@
         <loc>https://lzon.ca/posts/daily/page/2/</loc>
     </url>
     <url>
+        <loc>https://lzon.ca/posts/dev/</loc>
+    </url>
+    <url>
+        <loc>https://lzon.ca/posts/dev/page/1/</loc>
+    </url>
+    <url>
+        <loc>https://lzon.ca/posts/dev/sketch-test/</loc>
+        <lastmod>2026-01-08</lastmod>
+    </url>
+    <url>
+        <loc>https://lzon.ca/posts/dev/toy-test/</loc>
+        <lastmod>2026-01-08</lastmod>
+    </url>
+    <url>
         <loc>https://lzon.ca/posts/life/</loc>
     </url>
     <url>
