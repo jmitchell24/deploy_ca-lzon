@@ -13,34 +13,43 @@
         <loc>https://lzon.ca/posts/daily/</loc>
     </url>
     <url>
-        <loc>https://lzon.ca/posts/daily/chip-nuts/</loc>
+        <loc>https://lzon.ca/posts/daily/grateful/</loc>
+    </url>
+    <url>
+        <loc>https://lzon.ca/posts/daily/grateful/chip-nuts/</loc>
         <lastmod>2025-12-27</lastmod>
     </url>
     <url>
-        <loc>https://lzon.ca/posts/daily/dream-trawler/</loc>
+        <loc>https://lzon.ca/posts/daily/grateful/dream-trawler/</loc>
         <lastmod>2026-01-07</lastmod>
     </url>
     <url>
-        <loc>https://lzon.ca/posts/daily/driving/</loc>
+        <loc>https://lzon.ca/posts/daily/grateful/driving/</loc>
         <lastmod>2025-12-27</lastmod>
     </url>
     <url>
-        <loc>https://lzon.ca/posts/daily/lzon/</loc>
+        <loc>https://lzon.ca/posts/daily/grateful/lzon/</loc>
         <lastmod>2025-12-23</lastmod>
+    </url>
+    <url>
+        <loc>https://lzon.ca/posts/daily/grateful/page/1/</loc>
+    </url>
+    <url>
+        <loc>https://lzon.ca/posts/daily/grateful/page/2/</loc>
+    </url>
+    <url>
+        <loc>https://lzon.ca/posts/daily/grateful/riegelein-lady-bugs/</loc>
+        <lastmod>2025-12-24</lastmod>
+    </url>
+    <url>
+        <loc>https://lzon.ca/posts/daily/grateful/tomatoes-and-bread/</loc>
+        <lastmod>2025-12-25</lastmod>
     </url>
     <url>
         <loc>https://lzon.ca/posts/daily/page/1/</loc>
     </url>
     <url>
         <loc>https://lzon.ca/posts/daily/page/2/</loc>
-    </url>
-    <url>
-        <loc>https://lzon.ca/posts/daily/riegelein-lady-bugs/</loc>
-        <lastmod>2025-12-24</lastmod>
-    </url>
-    <url>
-        <loc>https://lzon.ca/posts/daily/tomatoes-and-bread/</loc>
-        <lastmod>2025-12-25</lastmod>
     </url>
     <url>
         <loc>https://lzon.ca/posts/life/</loc>
@@ -202,11 +211,5 @@
     </url>
     <url>
         <loc>https://lzon.ca/tags/2025-review/</loc>
-    </url>
-    <url>
-        <loc>https://lzon.ca/tags/daily-grateful/</loc>
-    </url>
-    <url>
-        <loc>https://lzon.ca/tags/lzon-ca/</loc>
     </url>
 </urlset>
