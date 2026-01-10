@@ -23,3 +23,36 @@ document.addEventListener('DOMContentLoaded', () => { // update dark mode (defau
 
     document.body.setAttribute("data-dark-mode", pageDarkMode);
 }); 
+
+function parseCSSColorToFloat(colorStr) {
+    const div = document.createElement('div');
+    div.style.color = window.getComputedStyle(document.body).getPropertyValue(colorStr).trim();
+    document.body.appendChild(div);
+    
+    const rgb = window.getComputedStyle(div).color;
+    document.body.removeChild(div);
+    
+    const match = rgb.match(/[\d.]+/g);
+    return [
+        parseFloat(match[0]) / 255,
+        parseFloat(match[1]) / 255,
+        parseFloat(match[2]) / 255,
+        match[3] !== undefined ? parseFloat(match[3]) : 1
+    ];
+}
+
+function parseCSSColorToRGB(colorStr) {
+    const div = document.createElement('div');
+    div.style.color = window.getComputedStyle(document.body).getPropertyValue(colorStr).trim();
+    document.body.appendChild(div);
+    
+    const rgb = window.getComputedStyle(div).color;
+    document.body.removeChild(div);
+    
+    const match = rgb.match(/[\d.]+/g);
+    return [
+        parseInt(match[0]),
+        parseInt(match[1]),
+        parseInt(match[2])
+    ];
+}

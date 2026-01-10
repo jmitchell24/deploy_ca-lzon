@@ -7,32 +7,32 @@
       <generator>Zola</generator>
       <language>en</language>
       <atom:link href="https://lzon.ca/posts/rss.xml" rel="self" type="application/rss+xml"/>
-      <lastBuildDate>Fri, 09 Jan 2026 00:00:00 +0000</lastBuildDate>
+      <lastBuildDate>Sat, 10 Jan 2026 00:00:00 +0000</lastBuildDate>
       <item>
-          <title>Digital Sketching - Raylib</title>
+          <title>Digital Sketching - glsl</title>
           <pubDate>Fri, 09 Jan 2026 00:00:00 +0000</pubDate>
           <author>Unknown</author>
-          <link>https://lzon.ca/posts/site/digital-sketching-raylib/</link>
-          <guid>https://lzon.ca/posts/site/digital-sketching-raylib/</guid>
-          <description xml:base="https://lzon.ca/posts/site/digital-sketching-raylib/">&lt;p&gt;A demo of a ‘digital sketch’ using a Raylib-based C++ program compiled to WASM. &lt;&#x2F;p&gt;
+          <link>https://lzon.ca/posts/site/code-sketch-demo-glsl/</link>
+          <guid>https://lzon.ca/posts/site/code-sketch-demo-glsl/</guid>
+          <description xml:base="https://lzon.ca/posts/site/code-sketch-demo-glsl/">&lt;p&gt;A demo of a ‘code sketch’ using GLSL within a WebGL Fragment Shader. &lt;&#x2F;p&gt;
 </description>
       </item>
       <item>
-          <title>Digital Sketching - WebGL</title>
+          <title>Code Sketching - p5.js</title>
           <pubDate>Fri, 09 Jan 2026 00:00:00 +0000</pubDate>
           <author>Unknown</author>
-          <link>https://lzon.ca/posts/site/digital-sketching-webgl/</link>
-          <guid>https://lzon.ca/posts/site/digital-sketching-webgl/</guid>
-          <description xml:base="https://lzon.ca/posts/site/digital-sketching-webgl/">&lt;p&gt;A demo of a ‘digital sketch’ using WebGL with GLSL shaders. &lt;&#x2F;p&gt;
+          <link>https://lzon.ca/posts/site/code-sketch-demo-p5js/</link>
+          <guid>https://lzon.ca/posts/site/code-sketch-demo-p5js/</guid>
+          <description xml:base="https://lzon.ca/posts/site/code-sketch-demo-p5js/">&lt;p&gt;A demo of a ‘code sketch’ using the p5.js framework. &lt;&#x2F;p&gt;
 </description>
       </item>
       <item>
-          <title>Digital Sketching - Overview</title>
+          <title>Code Sketching - Overview</title>
           <pubDate>Fri, 09 Jan 2026 00:00:00 +0000</pubDate>
           <author>Unknown</author>
-          <link>https://lzon.ca/posts/site/digital-sketching/</link>
-          <guid>https://lzon.ca/posts/site/digital-sketching/</guid>
-          <description xml:base="https://lzon.ca/posts/site/digital-sketching/">&lt;p&gt;Exploring some ideas for how to create digital sketches for lzon.ca. &lt;&#x2F;p&gt;
+          <link>https://lzon.ca/posts/site/code-sketch-demo/</link>
+          <guid>https://lzon.ca/posts/site/code-sketch-demo/</guid>
+          <description xml:base="https://lzon.ca/posts/site/code-sketch-demo/">&lt;p&gt;Exploring some ideas for how to create digital sketches for lzon.ca. &lt;&#x2F;p&gt;
 </description>
       </item>
       <item>
