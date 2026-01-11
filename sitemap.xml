@@ -4,6 +4,20 @@
         <loc>https://lzon.ca/</loc>
     </url>
     <url>
+        <loc>https://lzon.ca/demos/</loc>
+    </url>
+    <url>
+        <loc>https://lzon.ca/demos/code-sketch-demo-glsl/</loc>
+        <lastmod>2026-01-10</lastmod>
+    </url>
+    <url>
+        <loc>https://lzon.ca/demos/code-sketch-demo-p5js/</loc>
+        <lastmod>2026-01-10</lastmod>
+    </url>
+    <url>
+        <loc>https://lzon.ca/demos/page/1/</loc>
+    </url>
+    <url>
         <loc>https://lzon.ca/links/</loc>
     </url>
     <url>
@@ -109,9 +123,6 @@
         <loc>https://lzon.ca/posts/page/6/</loc>
     </url>
     <url>
-        <loc>https://lzon.ca/posts/page/7/</loc>
-    </url>
-    <url>
         <loc>https://lzon.ca/posts/recipes/</loc>
     </url>
     <url>
@@ -200,14 +211,6 @@
     </url>
     <url>
         <loc>https://lzon.ca/posts/site/</loc>
-    </url>
-    <url>
-        <loc>https://lzon.ca/posts/site/code-sketch-demo-glsl/</loc>
-        <lastmod>2026-01-10</lastmod>
-    </url>
-    <url>
-        <loc>https://lzon.ca/posts/site/code-sketch-demo-p5js/</loc>
-        <lastmod>2026-01-10</lastmod>
     </url>
     <url>
         <loc>https://lzon.ca/posts/site/code-sketch-demo/</loc>

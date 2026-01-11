@@ -45,6 +45,9 @@ class Lzon {
 
     setup() { 
         const sketch = document.querySelector("x-sketch"); 
+
+        p5.disableFriendlyErrors = true;
+
         let canvas = createCanvas(sketch.offsetWidth, sketch.offsetHeight);
         canvas.parent('canvas-container');
 
