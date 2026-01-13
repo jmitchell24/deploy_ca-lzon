@@ -7,7 +7,7 @@
       <generator>Zola</generator>
       <language>en</language>
       <atom:link href="https://lzon.ca/demos/rss.xml" rel="self" type="application/rss+xml"/>
-      <lastBuildDate>Mon, 12 Jan 2026 00:00:00 +0000</lastBuildDate>
+      <lastBuildDate>Tue, 13 Jan 2026 00:00:00 +0000</lastBuildDate>
       <item>
           <title>Second Shader Demo</title>
           <pubDate>Mon, 12 Jan 2026 00:00:00 +0000</pubDate>
@@ -15,6 +15,15 @@
           <link>https://lzon.ca/demos/another-demo/</link>
           <guid>https://lzon.ca/demos/another-demo/</guid>
           <description xml:base="https://lzon.ca/demos/another-demo/"></description>
+      </item>
+      <item>
+          <title>First Shader Demo - Ring</title>
+          <pubDate>Fri, 09 Jan 2026 00:00:00 +0000</pubDate>
+          <author>Unknown</author>
+          <link>https://lzon.ca/demos/code-sketch-demo-glsl/</link>
+          <guid>https://lzon.ca/demos/code-sketch-demo-glsl/</guid>
+          <description xml:base="https://lzon.ca/demos/code-sketch-demo-glsl/">&lt;p&gt;A demo of a ‘code sketch’ using GLSL within a WebGL Fragment Shader. &lt;&#x2F;p&gt;
+</description>
       </item>
     </channel>
 </rss>
