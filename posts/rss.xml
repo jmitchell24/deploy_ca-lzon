@@ -7,14 +7,14 @@
       <generator>Zola</generator>
       <language>en</language>
       <atom:link href="https://lzon.ca/posts/rss.xml" rel="self" type="application/rss+xml"/>
-      <lastBuildDate>Sat, 10 Jan 2026 00:00:00 +0000</lastBuildDate>
+      <lastBuildDate>Tue, 13 Jan 2026 00:00:00 +0000</lastBuildDate>
       <item>
-          <title>Code Sketching - Overview</title>
+          <title>Sketching with Code</title>
           <pubDate>Fri, 09 Jan 2026 00:00:00 +0000</pubDate>
           <author>Unknown</author>
           <link>https://lzon.ca/posts/site/code-sketch-demo/</link>
           <guid>https://lzon.ca/posts/site/code-sketch-demo/</guid>
-          <description xml:base="https://lzon.ca/posts/site/code-sketch-demo/">&lt;p&gt;Exploring some ideas for how to create and publish code sketches for Lzon. &lt;&#x2F;p&gt;
+          <description xml:base="https://lzon.ca/posts/site/code-sketch-demo/">&lt;p&gt;Exploring some ideas for how to create and publish graphics demos for Lzon. &lt;&#x2F;p&gt;
 </description>
       </item>
       <item>
