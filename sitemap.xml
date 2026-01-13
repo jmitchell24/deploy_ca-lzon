@@ -7,6 +7,10 @@
         <loc>https://lzon.ca/demos/</loc>
     </url>
     <url>
+        <loc>https://lzon.ca/demos/another-demo/</loc>
+        <lastmod>2026-01-12</lastmod>
+    </url>
+    <url>
         <loc>https://lzon.ca/demos/code-sketch-demo-glsl/</loc>
         <lastmod>2026-01-10</lastmod>
     </url>
