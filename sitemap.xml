@@ -18,6 +18,10 @@
         <loc>https://lzon.ca/demos/page/1/</loc>
     </url>
     <url>
+        <loc>https://lzon.ca/demos/third-shader/</loc>
+        <lastmod>2026-01-14</lastmod>
+    </url>
+    <url>
         <loc>https://lzon.ca/links/</loc>
     </url>
     <url>
@@ -64,6 +68,10 @@
     </url>
     <url>
         <loc>https://lzon.ca/posts/daily/page/2/</loc>
+    </url>
+    <url>
+        <loc>https://lzon.ca/posts/daily/social-cheat-codes/</loc>
+        <lastmod>2026-01-15</lastmod>
     </url>
     <url>
         <loc>https://lzon.ca/posts/dev/</loc>
@@ -121,6 +129,9 @@
     </url>
     <url>
         <loc>https://lzon.ca/posts/page/6/</loc>
+    </url>
+    <url>
+        <loc>https://lzon.ca/posts/page/7/</loc>
     </url>
     <url>
         <loc>https://lzon.ca/posts/recipes/</loc>

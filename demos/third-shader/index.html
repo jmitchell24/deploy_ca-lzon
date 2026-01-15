@@ -1,4 +1,4 @@
-<!doctype html><html lang=en><head><meta charset=UTF-8><meta content="width=device-width,initial-scale=1.0" name=viewport><meta content=Lzon property=og:title><meta content="Personal Blog. Writing, Demos, and Links. " property=og:description><meta content=https://lzon.ca/img/pre1ude-image.png property=og:image><meta content=https://lzon.ca property=og:url><meta content=#9b4b4b name=theme-color><title>Second Shader Demo</title><link href=/favicon-96x96.png rel=icon sizes=96x96 type=image/png><link href=/favicon.svg rel=icon type=image/svg+xml><link rel="shortcut icon" href=/favicon.ico><link href=/apple-touch-icon.png rel=apple-touch-icon sizes=180x180><meta content=Lzon.ca name=apple-mobile-web-app-title><link href=/site.webmanifest rel=manifest><link as=font crossorigin href=/fonts/Montserrat-Regular.ttf rel=preload type=font/ttf><link as=font crossorigin href=/fonts/CourierPrime-Regular.ttf rel=preload type=font/ttf><link as=font crossorigin href=/fonts/CrimsonPro-VariableFont_wght.ttf rel=preload type=font/ttf><link as=style href=/styles.css rel=preload><link href=/styles.css rel=stylesheet><style>html{visibility:hidden}</style><script is:inline src=/js/base-early.js></script><body data-dark-mode=on><script>0</script><header><x-title> <a href=/> <svg viewbox="0 0 256 256" class=svgicon fill=currentColor height=32 width=32 xmlns=http://www.w3.org/2000/svg><path d=M198.1,62.59a76,76,0,0,0-140.2,0A71.71,71.71,0,0,0,16,127.8C15.9,166,48,199,86.14,200A72.09,72.09,0,0,0,120,192.47V232a8,8,0,0,0,16,0V192.47A72.17,72.17,0,0,0,168,200l1.82,0C208,199,240.11,166,240,127.8A71.71,71.71,0,0,0,198.1,62.59ZM169.45,184a56.08,56.08,0,0,1-33.45-10v-41l43.58-21.78a8,8,0,1,0-7.16-14.32L136,115.06V88a8,8,0,0,0-16,0v51.06L83.58,120.84a8,8,0,1,0-7.16,14.32L120,156.94v17a56,56,0,0,1-33.45,10C56.9,183.23,31.92,157.52,32,127.84A55.77,55.77,0,0,1,67.11,76a8,8,0,0,0,4.53-4.67,60,60,0,0,1,112.72,0A8,8,0,0,0,188.89,76,55.79,55.79,0,0,1,224,127.84C224.08,157.52,199.1,183.23,169.45,184Z></path></svg> </a> <span>lzon.ca</span> </x-title><nav><a href=/> Home </a><a href=/posts> Posts </a><a aria-current=page href=/demos> Demos </a><a href=/links> Links </a></nav></header><main><x-segment> <x-segment-title> Second Shader Demo </x-segment-title> <x-segment-content> <x-post> <x-post-header>  <x-post-header-item> <svg viewbox="0 0 256 256" class=svgicon fill=currentColor height=32 width=32 xmlns=http://www.w3.org/2000/svg><path d=M237.33,106.21,61.41,41l-.16-.05A16,16,0,0,0,40.9,61.25a1,1,0,0,0,.05.16l65.26,175.92A15.77,15.77,0,0,0,121.28,248h.3a15.77,15.77,0,0,0,15-11.29l.06-.2,21.84-78,78-21.84.2-.06a16,16,0,0,0,.62-30.38ZM149.84,144.3a8,8,0,0,0-5.54,5.54L121.3,232l-.06-.17L56,56l175.82,65.22.16.06Z></path></svg> <a href=https://lzon.ca/demos/>Demos</a> <svg viewbox="0 0 256 256" class=svgicon fill=currentColor height=32 width=32 xmlns=http://www.w3.org/2000/svg><path d=M221.66,133.66l-72,72a8,8,0,0,1-11.32-11.32L196.69,136H40a8,8,0,0,1,0-16H196.69L138.34,61.66a8,8,0,0,1,11.32-11.32l72,72A8,8,0,0,1,221.66,133.66Z></path></svg> Second Shader Demo </x-post-header-item>   <x-post-header-item> <svg viewbox="0 0 256 256" class=svgicon fill=currentColor height=32 width=32 xmlns=http://www.w3.org/2000/svg><path d=M208,32H184V24a8,8,0,0,0-16,0v8H88V24a8,8,0,0,0-16,0v8H48A16,16,0,0,0,32,48V208a16,16,0,0,0,16,16H208a16,16,0,0,0,16-16V48A16,16,0,0,0,208,32ZM72,48v8a8,8,0,0,0,16,0V48h80v8a8,8,0,0,0,16,0V48h24V80H48V48ZM208,208H48V96H208V208Zm-96-88v64a8,8,0,0,1-16,0V132.94l-4.42,2.22a8,8,0,0,1-7.16-14.32l16-8A8,8,0,0,1,112,120Zm59.16,30.45L152,176h16a8,8,0,0,1,0,16H136a8,8,0,0,1-6.4-12.8l28.78-38.37A8,8,0,1,0,145.07,132a8,8,0,1,1-13.85-8A24,24,0,0,1,176,136,23.76,23.76,0,0,1,171.16,150.45Z></path></svg> Posted January 12, 2026 </x-post-header-item>   <x-post-header-item> <svg viewbox="0 0 256 256" class=svgicon fill=currentColor height=32 width=32 xmlns=http://www.w3.org/2000/svg><path d=M200,40a8,8,0,0,0,0,16,16,16,0,0,1,16,16v58.08A44,44,0,0,0,145.68,152H110.32A44,44,0,0,0,40,130.08V72A16,16,0,0,1,56,56a8,8,0,0,0,0-16A32,32,0,0,0,24,72v92a44,44,0,0,0,87.81,4h32.38A44,44,0,0,0,232,164V72A32,32,0,0,0,200,40ZM68,192a28,28,0,1,1,28-28A28,28,0,0,1,68,192Zm120,0a28,28,0,1,1,28-28A28,28,0,0,1,188,192Z></path></svg> 2 min read </x-post-header-item> </x-post-header> <x-post-content> <p>Just another test shader.</p> <x-sketch> <x-sketch-header> <svg viewbox="0 0 256 256" class=svgicon fill=currentColor height=32 width=32 xmlns=http://www.w3.org/2000/svg><path d=M69.12,94.15,28.5,128l40.62,33.85a8,8,0,1,1-10.24,12.29l-48-40a8,8,0,0,1,0-12.29l48-40a8,8,0,0,1,10.24,12.3Zm176,27.7-48-40a8,8,0,1,0-10.24,12.3L227.5,128l-40.62,33.85a8,8,0,1,0,10.24,12.29l48-40a8,8,0,0,0,0-12.29ZM162.73,32.48a8,8,0,0,0-10.25,4.79l-64,176a8,8,0,0,0,4.79,10.26A8.14,8.14,0,0,0,96,224a8,8,0,0,0,7.52-5.27l64-176A8,8,0,0,0,162.73,32.48Z></path></svg> <x-sketch-framerate></x-sketch-framerate> <x-sketch-totaltime></x-sketch-totaltime> </x-sketch-header> <canvas id=canvas></canvas> <x-sketch-failed> <svg viewbox="0 0 256 256" class=svgicon fill=currentColor height=32 width=32 xmlns=http://www.w3.org/2000/svg><path d=M216,40H40A16,16,0,0,0,24,56V200a16,16,0,0,0,16,16h64a8,8,0,0,0,7.59-5.47l14.83-44.48L163,151.43a8.07,8.07,0,0,0,4.46-4.46l14.62-36.55,44.48-14.83A8,8,0,0,0,232,88V56A16,16,0,0,0,216,40ZM112.41,157.47,98.23,200H40V172l52-52,30.42,30.42L117,152.57A8,8,0,0,0,112.41,157.47ZM216,82.23,173.47,96.41a8,8,0,0,0-4.9,4.62l-14.72,36.82L138.58,144l-35.27-35.27a16,16,0,0,0-22.62,0L40,149.37V56H216Zm12.68,33a8,8,0,0,0-7.21-1.1l-23.8,7.94a8,8,0,0,0-4.9,4.61l-14.31,35.77-35.77,14.31a8,8,0,0,0-4.61,4.9l-7.94,23.8A8,8,0,0,0,137.73,216H216a16,16,0,0,0,16-16V121.73A8,8,0,0,0,228.68,115.24ZM216,200H148.83l3.25-9.75,35.51-14.2a8.07,8.07,0,0,0,4.46-4.46l14.2-35.51,9.75-3.25Z></path></svg> Failed to load Demo </x-sketch-failed>  </x-sketch>  <script>class ShaderSketch{setFailed(){this.canvas.style="display: none";this.elFailed.style="display: flex"}constructor(container,canvas,fragmentShader){this.container=container;this.canvas=canvas;this.gl=canvas.getContext('webgl')||canvas.getContext('experimental-webgl');this.elFramerate=container.querySelector("x-sketch-framerate");this.elTotaltime=container.querySelector("x-sketch-totaltime");this.elFailed=container.querySelector("x-sketch-failed");if(!this.gl){console.error('WebGL not supported');this.setFailed();return};this.startTime=Date.now();this.lastFrameTime=Date.now();this.iTime=0;this.iResolution=[0,0];this.iMouse=[0,0,0,0];this.iColorDark=[0,0,0,0];this.iColorPrimary=[0,0,0,0];this.iColorPrimaryDark=[0,0,0,0];this.iColorPrimaryLight=[0,0,0,0];this.frameCount=0;this.fps=0;this.uniforms=[];this.initShader(fragmentShader);this.resize();this.canvas.addEventListener('resize',()=>this.resize())}initShader(fragmentSource){const a=this.gl;const b=`
+<!doctype html><html lang=en><head><meta charset=UTF-8><meta content="width=device-width,initial-scale=1.0" name=viewport><meta content=Lzon property=og:title><meta content="Personal Blog. Writing, Demos, and Links. " property=og:description><meta content=https://lzon.ca/img/pre1ude-image.png property=og:image><meta content=https://lzon.ca property=og:url><meta content=#9b4b4b name=theme-color><title>Third Shader</title><link href=/favicon-96x96.png rel=icon sizes=96x96 type=image/png><link href=/favicon.svg rel=icon type=image/svg+xml><link rel="shortcut icon" href=/favicon.ico><link href=/apple-touch-icon.png rel=apple-touch-icon sizes=180x180><meta content=Lzon.ca name=apple-mobile-web-app-title><link href=/site.webmanifest rel=manifest><link as=font crossorigin href=/fonts/Montserrat-Regular.ttf rel=preload type=font/ttf><link as=font crossorigin href=/fonts/CourierPrime-Regular.ttf rel=preload type=font/ttf><link as=font crossorigin href=/fonts/CrimsonPro-VariableFont_wght.ttf rel=preload type=font/ttf><link as=style href=/styles.css rel=preload><link href=/styles.css rel=stylesheet><style>html{visibility:hidden}</style><script is:inline src=/js/base-early.js></script><body data-dark-mode=on><script>0</script><header><x-title> <a href=/> <svg viewbox="0 0 256 256" class=svgicon fill=currentColor height=32 width=32 xmlns=http://www.w3.org/2000/svg><path d=M198.1,62.59a76,76,0,0,0-140.2,0A71.71,71.71,0,0,0,16,127.8C15.9,166,48,199,86.14,200A72.09,72.09,0,0,0,120,192.47V232a8,8,0,0,0,16,0V192.47A72.17,72.17,0,0,0,168,200l1.82,0C208,199,240.11,166,240,127.8A71.71,71.71,0,0,0,198.1,62.59ZM169.45,184a56.08,56.08,0,0,1-33.45-10v-41l43.58-21.78a8,8,0,1,0-7.16-14.32L136,115.06V88a8,8,0,0,0-16,0v51.06L83.58,120.84a8,8,0,1,0-7.16,14.32L120,156.94v17a56,56,0,0,1-33.45,10C56.9,183.23,31.92,157.52,32,127.84A55.77,55.77,0,0,1,67.11,76a8,8,0,0,0,4.53-4.67,60,60,0,0,1,112.72,0A8,8,0,0,0,188.89,76,55.79,55.79,0,0,1,224,127.84C224.08,157.52,199.1,183.23,169.45,184Z></path></svg> </a> <span>lzon.ca</span> </x-title><nav><a href=/> Home </a><a href=/posts> Posts </a><a aria-current=page href=/demos> Demos </a><a href=/links> Links </a></nav></header><main><x-segment> <x-segment-title> Third Shader </x-segment-title> <x-segment-content> <x-post> <x-post-header>  <x-post-header-item> <svg viewbox="0 0 256 256" class=svgicon fill=currentColor height=32 width=32 xmlns=http://www.w3.org/2000/svg><path d=M237.33,106.21,61.41,41l-.16-.05A16,16,0,0,0,40.9,61.25a1,1,0,0,0,.05.16l65.26,175.92A15.77,15.77,0,0,0,121.28,248h.3a15.77,15.77,0,0,0,15-11.29l.06-.2,21.84-78,78-21.84.2-.06a16,16,0,0,0,.62-30.38ZM149.84,144.3a8,8,0,0,0-5.54,5.54L121.3,232l-.06-.17L56,56l175.82,65.22.16.06Z></path></svg> <a href=https://lzon.ca/demos/>Demos</a> <svg viewbox="0 0 256 256" class=svgicon fill=currentColor height=32 width=32 xmlns=http://www.w3.org/2000/svg><path d=M221.66,133.66l-72,72a8,8,0,0,1-11.32-11.32L196.69,136H40a8,8,0,0,1,0-16H196.69L138.34,61.66a8,8,0,0,1,11.32-11.32l72,72A8,8,0,0,1,221.66,133.66Z></path></svg> Third Shader </x-post-header-item>   <x-post-header-item> <svg viewbox="0 0 256 256" class=svgicon fill=currentColor height=32 width=32 xmlns=http://www.w3.org/2000/svg><path d=M208,32H184V24a8,8,0,0,0-16,0v8H88V24a8,8,0,0,0-16,0v8H48A16,16,0,0,0,32,48V208a16,16,0,0,0,16,16H208a16,16,0,0,0,16-16V48A16,16,0,0,0,208,32ZM72,48v8a8,8,0,0,0,16,0V48h80v8a8,8,0,0,0,16,0V48h24V80H48V48ZM208,208H48V96H208V208Zm-96-88v64a8,8,0,0,1-16,0V132.94l-4.42,2.22a8,8,0,0,1-7.16-14.32l16-8A8,8,0,0,1,112,120Zm59.16,30.45L152,176h16a8,8,0,0,1,0,16H136a8,8,0,0,1-6.4-12.8l28.78-38.37A8,8,0,1,0,145.07,132a8,8,0,1,1-13.85-8A24,24,0,0,1,176,136,23.76,23.76,0,0,1,171.16,150.45Z></path></svg> Posted January 14, 2026 </x-post-header-item>   <x-post-header-item> <svg viewbox="0 0 256 256" class=svgicon fill=currentColor height=32 width=32 xmlns=http://www.w3.org/2000/svg><path d=M200,40a8,8,0,0,0,0,16,16,16,0,0,1,16,16v58.08A44,44,0,0,0,145.68,152H110.32A44,44,0,0,0,40,130.08V72A16,16,0,0,1,56,56a8,8,0,0,0,0-16A32,32,0,0,0,24,72v92a44,44,0,0,0,87.81,4h32.38A44,44,0,0,0,232,164V72A32,32,0,0,0,200,40ZM68,192a28,28,0,1,1,28-28A28,28,0,0,1,68,192Zm120,0a28,28,0,1,1,28-28A28,28,0,0,1,188,192Z></path></svg> 9 min read </x-post-header-item> </x-post-header> <x-post-content> <p>An old shader. Not made by me, but discovered in an old collection I had. I don’t know the original author, so unfortunately I can’t provide proper credit.</p> <x-sketch> <x-sketch-header> <svg viewbox="0 0 256 256" class=svgicon fill=currentColor height=32 width=32 xmlns=http://www.w3.org/2000/svg><path d=M69.12,94.15,28.5,128l40.62,33.85a8,8,0,1,1-10.24,12.29l-48-40a8,8,0,0,1,0-12.29l48-40a8,8,0,0,1,10.24,12.3Zm176,27.7-48-40a8,8,0,1,0-10.24,12.3L227.5,128l-40.62,33.85a8,8,0,1,0,10.24,12.29l48-40a8,8,0,0,0,0-12.29ZM162.73,32.48a8,8,0,0,0-10.25,4.79l-64,176a8,8,0,0,0,4.79,10.26A8.14,8.14,0,0,0,96,224a8,8,0,0,0,7.52-5.27l64-176A8,8,0,0,0,162.73,32.48Z></path></svg> <x-sketch-framerate></x-sketch-framerate> <x-sketch-totaltime></x-sketch-totaltime> </x-sketch-header> <canvas id=canvas></canvas> <x-sketch-failed> <svg viewbox="0 0 256 256" class=svgicon fill=currentColor height=32 width=32 xmlns=http://www.w3.org/2000/svg><path d=M216,40H40A16,16,0,0,0,24,56V200a16,16,0,0,0,16,16h64a8,8,0,0,0,7.59-5.47l14.83-44.48L163,151.43a8.07,8.07,0,0,0,4.46-4.46l14.62-36.55,44.48-14.83A8,8,0,0,0,232,88V56A16,16,0,0,0,216,40ZM112.41,157.47,98.23,200H40V172l52-52,30.42,30.42L117,152.57A8,8,0,0,0,112.41,157.47ZM216,82.23,173.47,96.41a8,8,0,0,0-4.9,4.62l-14.72,36.82L138.58,144l-35.27-35.27a16,16,0,0,0-22.62,0L40,149.37V56H216Zm12.68,33a8,8,0,0,0-7.21-1.1l-23.8,7.94a8,8,0,0,0-4.9,4.61l-14.31,35.77-35.77,14.31a8,8,0,0,0-4.61,4.9l-7.94,23.8A8,8,0,0,0,137.73,216H216a16,16,0,0,0,16-16V121.73A8,8,0,0,0,228.68,115.24ZM216,200H148.83l3.25-9.75,35.51-14.2a8.07,8.07,0,0,0,4.46-4.46l14.2-35.51,9.75-3.25Z></path></svg> Failed to load Demo </x-sketch-failed>  </x-sketch>  <script>class ShaderSketch{setFailed(){this.canvas.style="display: none";this.elFailed.style="display: flex"}constructor(container,canvas,fragmentShader){this.container=container;this.canvas=canvas;this.gl=canvas.getContext('webgl')||canvas.getContext('experimental-webgl');this.elFramerate=container.querySelector("x-sketch-framerate");this.elTotaltime=container.querySelector("x-sketch-totaltime");this.elFailed=container.querySelector("x-sketch-failed");if(!this.gl){console.error('WebGL not supported');this.setFailed();return};this.startTime=Date.now();this.lastFrameTime=Date.now();this.iTime=0;this.iResolution=[0,0];this.iMouse=[0,0,0,0];this.iColorDark=[0,0,0,0];this.iColorPrimary=[0,0,0,0];this.iColorPrimaryDark=[0,0,0,0];this.iColorPrimaryLight=[0,0,0,0];this.frameCount=0;this.fps=0;this.uniforms=[];this.initShader(fragmentShader);this.resize();this.canvas.addEventListener('resize',()=>this.resize())}initShader(fragmentSource){const a=this.gl;const b=`
                 attribute vec2 position;
                 void main() {
                     gl_Position = vec4(position, 0.0, 1.0);
@@ -13,60 +13,356 @@ uniform vec4    iColorPrimary;
 uniform vec4    iColorPrimaryDark; 
 uniform vec4    iColorPrimaryLight;
 
-// Original by localthunk (https://www.playbalatro.com)
+float iGlobalTime = float(iTime);
 
-// Configuration (modify these values to change the effect)
-#define SPIN_ROTATION -2.0
-#define SPIN_SPEED 7.0
-#define OFFSET vec2(0.0)
-#define COLOUR_1 iColorPrimary
-#define COLOUR_2 iColorPrimaryDark
-#define COLOUR_3 vec4(0)
-#define CONTRAST 3.5
-#define LIGTHING 0.4
-#define SPIN_AMOUNT 0.25
-#define PIXEL_FILTER 745.0
-#define SPIN_EASE 1.0
-#define PI 3.14159265359
-#define IS_ROTATE false
+float RENDER_WIDTH = iResolution.x;
+float RENDER_HEIGHT = iResolution.y; 
 
-vec4 effect(vec2 screenSize, vec2 screen_coords) {
-    float pixel_size = length(screenSize.xy) / PIXEL_FILTER;
-    vec2 uv = (floor(screen_coords.xy*(1./pixel_size))*pixel_size - 0.5*screenSize.xy)/length(screenSize.xy) - OFFSET;
-    float uv_len = length(uv);
-    
-    float speed = (SPIN_ROTATION*SPIN_EASE*0.2);
-    if(IS_ROTATE){
-       speed = iTime * speed;
-    }
-    speed += 302.2;
-    float new_pixel_angle = atan(uv.y, uv.x) + speed - SPIN_EASE*20.*(1.*SPIN_AMOUNT*uv_len + (1. - 1.*SPIN_AMOUNT));
-    vec2 mid = (screenSize.xy/length(screenSize.xy))/2.;
-    uv = (vec2((uv_len * cos(new_pixel_angle) + mid.x), (uv_len * sin(new_pixel_angle) + mid.y)) - mid);
-    
-    uv *= 30.;
-    speed = iTime*(SPIN_SPEED);
-    vec2 uv2 = vec2(uv.x+uv.y);
-    
-    for(int i=0; i < 5; i++) {
-        uv2 += sin(max(uv.x, uv.y)) + uv;
-        uv  += 0.5*vec2(cos(5.1123314 + 0.353*uv2.y + speed*0.131121),sin(uv2.x - 0.113*speed));
-        uv  -= 1.0*cos(uv.x + uv.y) - 1.0*sin(uv.x*0.711 - uv.y);
-    }
-    
-    float contrast_mod = (0.25*CONTRAST + 0.5*SPIN_AMOUNT + 1.2);
-    float paint_res = min(2., max(0.,length(uv)*(0.035)*contrast_mod));
-    float c1p = max(0.,1. - contrast_mod*abs(1.-paint_res));
-    float c2p = max(0.,1. - contrast_mod*abs(paint_res));
-    float c3p = 1. - min(1., c1p + c2p);
-    float light = (LIGTHING - 0.2)*max(c1p*5. - 4., 0.) + LIGTHING*max(c2p*5. - 4., 0.);
-    return (0.3/CONTRAST)*COLOUR_1 + (1. - 0.3/CONTRAST)*(COLOUR_1*c1p + COLOUR_2*c2p + vec4(c3p*COLOUR_3.rgb, c3p*COLOUR_1.a)) + light;
+float pi = 3.141592;
+
+float hash(float n) 
+{ 
+    return fract(sin(n)*43758.5453123); 
 }
 
-void mainImage(out vec4 fragColor, in vec2 fragCoord) {
-    vec2 uv = fragCoord/iResolution.xy;
+float noise2(in vec2 x)
+{
+    vec2 p = floor(x);
+    vec2 f = fract(x);
+    f = f*f*(3.0-2.0*f);
     
-    fragColor = effect(iResolution.xy, uv * iResolution.xy);
+    float n = p.x + p.y*157.0;
+    return mix(mix(hash(n+0.0), hash(n+1.0),f.x), mix(hash(n+157.0), hash(n+158.0),f.x),f.y);
+}
+
+float noise3(in vec3 x)
+{
+    vec3 p = floor(x);
+    vec3 f = fract(x);
+    f = f*f*(3.0-2.0*f);
+    
+    float n = p.x + p.y*157.0 + 113.0*p.z;
+    return mix(
+        mix(mix(hash(n+  0.0), hash(n+  1.0),f.x), mix(hash(n+157.0), hash(n+158.0),f.x),f.y),
+        mix(mix(hash(n+113.0), hash(n+114.0),f.x), mix(hash(n+270.0), hash(n+271.0),f.x),f.y),f.z);
+}
+
+vec2 r(vec2 v,float y)
+{
+    return cos(y)*v+sin(y)*vec2(-v.y,v.x);
+}
+
+vec3 smin(vec3 a, vec3 b)
+{
+    if (a.x < b.x)
+        return a;
+    
+    return b;
+}
+
+vec3 smax(vec3 a, vec3 b)
+{
+    if (a.x > b.x)
+        return a;
+    
+    return b;
+}
+
+vec3 sinv(vec3 a)
+{
+    return vec3(-a.x, a.y, a.z);    
+}
+
+float sdSphere(vec3 p, float s)
+{
+  return length(p)-s;
+}
+
+float sdBox(vec3 p, vec3 b, float r)
+{
+  vec3 d = abs(p) - b;
+  return min(max(d.x,max(d.y,d.z)),0.0) +
+         length(max(d,0.0)) - r;
+}
+
+float sdCylinder( vec3 p, vec3 c )
+{
+  return length(p.xz-c.xy)-c.z;
+}
+
+float smoothmax( float a, float b, float k )
+{
+    return -log(exp(k*a) + exp(k*b))/-k;
+}
+
+float smoothmin( float a, float b, float k )
+{
+    return -log(exp(-k*a) + exp(-k*b))/k;
+}
+
+float cylsphere(vec3 p)
+{
+    float d = max(sdCylinder(p, vec3(0.0, 0.0, 0.04)), sdBox(p, vec3(0.3), 0.0));
+    d = smoothmin(d, sdSphere(p+vec3(0.0, 0.35, 0.0), 0.08), 48.0);
+    d = smoothmin(d, sdSphere(p-vec3(0.0, 0.35, 0.0), 0.08), 48.0);
+    return d;
+}
+
+vec3 greeble0(vec3 p, float phase)
+{
+    float t = mod(phase + iGlobalTime * 0.5, 1.0);
+    float rotation = sign(phase-0.5) * min(1.0, max(0.0, -0.2 + 5.0 * t)) * pi / 2.0;
+    float translation = min(1.0, max(0.0, 2.0 * sin(min(t - 0.02, 0.5) * 10.0)));
+    
+    float d = sdBox(p, vec3(0.4), 0.075);
+    float e = sdSphere(p - vec3(0.0, 0.6, 0.0), 0.2);
+    d = smoothmax(d, -e, 32.0);
+    p.y -= translation * 0.3 - 0.1;
+    p.xz = r(p.xz, rotation);
+    e = max(sdCylinder(p, vec3(0.0, 0.0, 0.1)), sdBox(p, vec3(0.8), 0.0));
+    vec3 q = p;    
+    q.y -= 0.8;
+    q.yz = r(q.yz,pi/2.0);
+    e = smoothmin(e, cylsphere(q), 16.0);
+    q.xy = r(q.xy,pi/2.0);
+    e = smoothmin(e, cylsphere(q), 16.0);
+    return smin(vec3(d, 0.0, 0.0), vec3(e, 1.0, 0.0));
+}
+
+vec3 greeble1(vec3 p, float phase)
+{
+    float d = sdBox(p, vec3(0.425), 0.05);
+    d = smoothmax(d, -sdBox(p + vec3(0.0, 0.0, 0.3), vec3(0.3, 1.0, 0.01), 0.0), 32.0);
+    d = smoothmax(d, -sdBox(p - vec3(0.0, 0.0, 0.3), vec3(0.3, 1.0, 0.01), 0.0), 32.0);
+    d = smoothmax(d, -sdBox(p + vec3(0.3, 0.0, 0.0), vec3(0.01, 1.0, 0.3), 0.0), 32.0);
+    d = smoothmax(d, -sdBox(p - vec3(0.3, 0.0, 0.0), vec3(0.01, 1.0, 0.3), 0.0), 32.0);
+    
+    float t = mod(phase + sign(phase-0.5) * iGlobalTime * 0.5, 1.0);
+    float x = max(-1.0, min(1.0, 4.0*cos(t*2.0*pi)));
+    float y = max(-1.0, min(1.0, 4.0*sin(t*2.0*pi)));
+    x *= 0.3;
+    y *= 0.3;
+    vec3 q = p + vec3(x, 0, y);
+    float e = sdBox(q, vec3(0.03, 0.75, 0.03), 0.0);
+    q.y -= 0.75;
+    e = smoothmin(e, sdSphere(q, 0.1), 32.0);
+    return smin(vec3(d, 2.0, 0.0), vec3(e, 3.0, 0.0));
+}
+
+vec3 greeble2(vec3 p, float phase)
+{
+    float d = sdBox(p, vec3(0.425), 0.05);
+    d = smoothmax(d, -sdBox(p + vec3(0.2, 0.0, 0.0), vec3(0.01, 1.0, 0.3), 0.0), 32.0);
+    d = smoothmax(d, -sdBox(p - vec3(0.2, 0.0, 0.0), vec3(0.01, 1.0, 0.3), 0.0), 32.0);
+    
+    float x = pow(mod(phase + sign(phase-0.5) * iGlobalTime * 0.5, 1.0), 2.0) * 2.0 * pi;
+    float t = max(-0.5, min(0.5, sin(x)));
+    p.yz = r(p.yz, t);
+    vec3 q = p + vec3(0.0, 0.25, 0.0);
+    float e =  sdBox(q - vec3(0.2, 0.0, 0.0), vec3(0.02, 1.0, 0.02), 0.0);
+    e = min(e, sdBox(q + vec3(0.2, 0.0, 0.0), vec3(0.02, 1.0, 0.02), 0.0));
+    e = min(e, sdBox(q - vec3(0.0, 1.0, 0.0), vec3(0.175, 0.02, 0.02), 0.0));
+    e = smoothmin(e, sdSphere(q - vec3(0.2, 1.01, 0.0), 0.03), 32.0);
+    e = smoothmin(e, sdSphere(q - vec3(-0.2, 1.01, 0.0), 0.03), 32.0);
+    q.y -= 1.0;
+    q.xy = r(q.xy, pi / 2.0);
+    e = smoothmin(e, max(sdCylinder(q, vec3(0.0, 0.0, 0.03)), sdBox(q, vec3(0.1), 0.0)), 32.0);
+    return smin(vec3(d, 4.0, 0.0), vec3(e, 5.0, 0.0));
+}
+
+vec3 greeble3(vec3 p, float phase)
+{
+    float d = sdBox(p, vec3(0.4), 0.08);
+    ivec2 i = ivec2(p.xz / 0.15 + floor(phase * 815.0));
+    float phase2 = noise2(vec2(i));
+    vec3 q = p;
+    q.xz = mod(q.xz, 0.15);
+    q.xz -= 0.075;
+    q.y -= 0.5;
+    float hole = max(sdBox(q, vec3(0.05, 1.0, 0.05), 0.0), sdBox(p, vec3(0.3, 2.0, 0.3), 0.0));
+    d = smoothmax(d, -hole, 96.0);
+    
+    float t = phase2 * 2.0 * pi + iGlobalTime * 8.0;
+    q.y -= 0.1 * max(-0.5, min(0.5, sin(t)));
+    q.y += 0.5;
+    float e = sdBox(q, vec3(0.025, 0.6, 0.025), 0.0);
+    e = max(e, sdBox(p, vec3(0.3, 2.0, 0.3), 0.0));
+    return smin(vec3(d, 6.0, 0.0), vec3(e, 7.0, 0.0));
+}
+
+vec3 greeble4(vec3 p, float phase)
+{
+    float angle = floor(phase * 4.0) * 0.5 * pi;
+    p.xz = r(p.xz, angle);
+    float d = sdBox(p, vec3(0.4), 0.08);
+    d = smoothmax(d, -sdBox(p - vec3(0.2, 0.0, 0.1), vec3(0.1, 1.0, 0.2), 0.0), 32.0);
+    d = smoothmax(d, -sdBox(p + vec3(0.2, 0.0, -0.1), vec3(0.1, 1.0, 0.2), 0.0), 32.0);
+    vec3 q = p - vec3(0.0, 0.8, -0.3);
+    float e = sdBox(q + vec3(0.0, 0.2, 0.0), vec3(0.0, 0.15, 0.0), 0.1) / 0.6;
+    q /= 0.6;
+    q.yz = r(q.yz,pi/2.0);
+    
+    float t = phase + 0.2 * iGlobalTime;
+    angle = 0.45 * max(-1.0, min(1.0, 4.0*cos(t*2.0*pi)));
+    float y = 0.5 + 0.5 * max(-1.0, min(1.0, 4.0*sin(t*2.0*pi)));
+    y = pow(y, 1.25 + 0.75 * cos(t*2.0*pi));
+    q.xy = r(q.xy, angle);
+    q.y += 0.4;
+    
+    e = smoothmin(e, cylsphere(q), 16.0);
+    q += vec3(0.0, 0.35, 0.05);
+    e = min(e, sdBox(q, vec3(0.0, 0.0, -0.1), 0.2)) * 0.6;
+    float f = sdBox(q + vec3(0.0, 0.0, 1.2 - y), vec3(0.1), 0.0) * 0.6;
+    return smin(smin(vec3(d, 8.0, 0.0), vec3(e, 9.0, 0.0)), vec3(f, 10.0, 0.0));
+}
+
+vec3 greeble(vec3 p, float findex, float phase)
+{
+    const int indexCount = 6;
+    int index = int(findex * float(indexCount));
+    p.y -= phase * 0.2 - 0.2;
+    if (index == 0)
+        return greeble0(p, phase);
+    else if (index == 1)
+        return greeble1(p, phase);
+    else if (index == 2)
+        return greeble2(p, phase);
+    else if (index == 3)
+        return greeble3(p, phase);
+    else if (index == 4)
+        return greeble4(p, phase);
+        
+    return vec3(sdBox(p, vec3(0.4), 0.025), 10.0, 0.0);
+}
+
+vec3 f( vec3 p )
+{
+    ivec3 h = ivec3(p+1337.0);
+    float hash = noise2(vec2(h.xz));
+    h = ivec3(p+42.0);
+    float phase = noise2(vec2(h.xz));
+    vec3 q = p;
+    q.xz = mod(q.xz, 1.0);
+    q -= 0.5;
+    return greeble(q, hash, phase);
+}
+
+vec3 colorize(float index)
+{
+    if (index == 0.0)
+        return vec3(0.4, 0.6, 0.2);
+    
+    if (index == 1.0)
+        return vec3(0.6, 0.3, 0.2);
+    
+    if (index == 2.0)
+        return vec3(1.0, 0.8, 0.5);
+    
+    if (index == 3.0)
+        return vec3(0.9, 0.2, 0.6);
+    
+    if (index == 4.0)
+        return vec3(0.3, 0.6, 0.7);
+    
+    if (index == 5.0)
+        return vec3(1.0, 1.0, 0.3);
+    
+    if (index == 6.0)
+        return vec3(0.7, 0.5, 0.7);
+    
+    if (index == 7.0)
+        return vec3(0.4, 0.3, 0.4);
+    
+    if (index == 8.0)
+        return vec3(0.8, 0.3, 0.2);
+    
+    if (index == 9.0)
+        return vec3(0.5, 0.8, 0.2);
+    
+    return vec3(index / 10.0);
+}
+
+float ao(vec3 v, vec3 n) 
+{
+    const int ao_iterations = 10;
+    const float ao_step = 0.2;
+    const float ao_scale = 0.75;
+    
+    float sum = 0.0;
+    float att = 1.0;
+    float len = ao_step;
+    
+    for (int i = 0; i < ao_iterations; i++)
+    {
+        sum += (len - f(v + n * len).x) * att;        
+        len += ao_step;        
+        att *= 0.5;
+    }
+    
+    return 1.0 - max(sum * ao_scale, 0.0);
+}
+
+void mainImage( out vec4 fragColor, in vec2 fragCoord )
+{
+    fragColor.xyz = vec3(0);
+    
+    vec3 q = vec3((fragCoord.xy / iResolution.xy - 0.5), 1.0);     
+    float vignette = 1.0 - length(q.xy);
+    q.x *= iResolution.x / iResolution.y;
+    q.y -= 0.5;
+    vec3 p = vec3(0, 0.0, -10.0);
+    q = normalize(q);
+    q.xz = r(q.xz, iGlobalTime * 0.1);
+    p.y += 2.5;
+    p.z -= iGlobalTime*0.5;
+    
+    float t=0.0;
+    vec3 d = vec3(0);
+    float steps = 0.0;
+    const float maxSteps = 96.0;
+    for (float tt = 0.0; tt < maxSteps; ++tt)
+    {
+        d = f(p+q*t);
+        t += d.x*0.45;
+        if(!(t<=50.0)||d.x<=0.0001)
+        {
+            break;
+        }
+        steps = tt;
+    }
+
+    vec3 glow = vec3(1.1, 1.1, 1.0);
+    vec3 fog = vec3(0.7, 0.75, 0.8);
+    vec3 color = fog;
+
+    if (t <= 50.0)
+    {
+        vec3 hit = p+q*t;
+
+        vec2 e = vec2(0.001, 0.00);
+        vec3 normal= vec3( f(hit + e.xyy).x - f(hit - e.xyy).x, f(hit + e.yxy).x - f(hit - e.yxy).x, f(hit + e.yyx).x - f(hit - e.yyx).x) / (2.0 * e.x);
+
+        normal= normalize(normal);
+    
+        float fao = ao(hit, normal);
+        vec3 ldir = normalize(vec3(1.0, 1.0, -1.0));
+        vec3 light = (0.5 * fog.rgb + vec3(0.5 * fao * abs(dot(normal, ldir)))) * colorize(d.y); // diffuse
+        light += (1.0 - t / 50.0) * vec3(fao * pow(1.0 - abs(dot(normal, q)), 4.0)); // rim
+        q = reflect(q, normal);
+        light += fao * vec3(pow(abs(dot(q, ldir)), 16.0)); // specular
+        color = min(vec3(1), light);
+        color *= fao;
+    }
+    
+    float luma = dot(color.rgb, vec3(0.3, 0.5, 0.2));
+    color = mix(color, 1.0 * luma * vec3(1.0, 0.9, 0.5), 2.0 * max(0.0, luma-0.5)); // yellow highlights
+    color = mix(color, 1.0 * luma * vec3(0.2, 0.5, 1.0), 2.0 * max(0.0, 0.5-luma)); // blue shadows
+    //color = mix(color, glow, 0.8 * pow(steps / 90.0, 8.0)); // glow
+    color = mix(color, fog, pow(min(1.0, t / 50.0), 0.5)); // fog
+    color = pow(color, vec3(0.8)); // gamma
+    color = smoothstep(0.0, 1.0, color); // contrast
+    color *= pow(vignette + 0.3, 0.5); // vignette
+    fragColor = vec4(color, 1.0);
 }
 
 void main() 
