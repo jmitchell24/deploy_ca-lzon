@@ -8,7 +8,25 @@
       <generator>Zola</generator>
       <language>en</language>
       <atom:link href="https://lzon.ca/demos/rss.xml" rel="self" type="application/rss+xml"/>
-      <lastBuildDate>Wed, 14 Jan 2026 00:00:00 +0000</lastBuildDate>
+      <lastBuildDate>Fri, 16 Jan 2026 00:00:00 +0000</lastBuildDate>
+      <item>
+          <title>Holofoil Dice</title>
+          <pubDate>Fri, 16 Jan 2026 00:00:00 +0000</pubDate>
+          <author>Lzon</author>
+          <link>https://lzon.ca/demos/just-another-shader/</link>
+          <guid>https://lzon.ca/demos/just-another-shader/</guid>
+          <description xml:base="https://lzon.ca/demos/just-another-shader/">&lt;p&gt;An interesting shader I found on &lt;a rel=&quot;noopener&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;www.shadertoy.com&#x2F;view&#x2F;tfGyzt&quot;&gt;Shadertoy&lt;&#x2F;a&gt;. &lt;&#x2F;p&gt;
+&lt;p&gt;Full credit due to &lt;a rel=&quot;noopener&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;www.shadertoy.com&#x2F;user&#x2F;Jaenam&quot;&gt;Jaenam&lt;&#x2F;a&gt;&lt;&#x2F;p&gt;
+</description>
+      </item>
+      <item>
+          <title>Pulse</title>
+          <pubDate>Fri, 16 Jan 2026 00:00:00 +0000</pubDate>
+          <author>Lzon</author>
+          <link>https://lzon.ca/demos/pulse/</link>
+          <guid>https://lzon.ca/demos/pulse/</guid>
+          <description xml:base="https://lzon.ca/demos/pulse/"></description>
+      </item>
       <item>
           <title>Third Shader</title>
           <pubDate>Wed, 14 Jan 2026 00:00:00 +0000</pubDate>
