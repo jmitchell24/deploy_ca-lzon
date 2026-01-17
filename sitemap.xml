@@ -22,8 +22,15 @@
         <loc>https://lzon.ca/demos/page/1/</loc>
     </url>
     <url>
+        <loc>https://lzon.ca/demos/page/2/</loc>
+    </url>
+    <url>
         <loc>https://lzon.ca/demos/pulse/</loc>
         <lastmod>2026-01-16</lastmod>
+    </url>
+    <url>
+        <loc>https://lzon.ca/demos/shader/</loc>
+        <lastmod>2026-01-17</lastmod>
     </url>
     <url>
         <loc>https://lzon.ca/demos/third-shader/</loc>
