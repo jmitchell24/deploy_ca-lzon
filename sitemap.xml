@@ -4,44 +4,15 @@
         <loc>https://lzon.ca/</loc>
     </url>
     <url>
-        <loc>https://lzon.ca/demos/</loc>
-    </url>
-    <url>
-        <loc>https://lzon.ca/demos/another-demo/</loc>
-        <lastmod>2026-01-12</lastmod>
-    </url>
-    <url>
-        <loc>https://lzon.ca/demos/code-sketch-demo-glsl/</loc>
-        <lastmod>2026-01-13</lastmod>
-    </url>
-    <url>
-        <loc>https://lzon.ca/demos/just-another-shader/</loc>
-        <lastmod>2026-01-16</lastmod>
-    </url>
-    <url>
-        <loc>https://lzon.ca/demos/page/1/</loc>
-    </url>
-    <url>
-        <loc>https://lzon.ca/demos/page/2/</loc>
-    </url>
-    <url>
-        <loc>https://lzon.ca/demos/pulse/</loc>
-        <lastmod>2026-01-16</lastmod>
-    </url>
-    <url>
-        <loc>https://lzon.ca/demos/shader/</loc>
-        <lastmod>2026-01-17</lastmod>
-    </url>
-    <url>
-        <loc>https://lzon.ca/demos/third-shader/</loc>
-        <lastmod>2026-01-14</lastmod>
-    </url>
-    <url>
         <loc>https://lzon.ca/links/</loc>
     </url>
     <url>
-        <loc>https://lzon.ca/now/</loc>
+        <loc>https://lzon.ca/more/</loc>
         <lastmod>2026-01-17</lastmod>
+    </url>
+    <url>
+        <loc>https://lzon.ca/now/</loc>
+        <lastmod>2026-01-18</lastmod>
     </url>
     <url>
         <loc>https://lzon.ca/posts/</loc>
@@ -93,7 +64,8 @@
         <lastmod>2026-01-15</lastmod>
     </url>
     <url>
-        <loc>https://lzon.ca/posts/dev/</loc>
+        <loc>https://lzon.ca/posts/daily/what-software-i-use/</loc>
+        <lastmod>2026-01-18</lastmod>
     </url>
     <url>
         <loc>https://lzon.ca/posts/life/</loc>
@@ -244,7 +216,7 @@
     </url>
     <url>
         <loc>https://lzon.ca/posts/site/code-sketch-demo/</loc>
-        <lastmod>2026-01-13</lastmod>
+        <lastmod>2026-01-18</lastmod>
     </url>
     <url>
         <loc>https://lzon.ca/posts/site/emailverification-info/</loc>
@@ -262,5 +234,42 @@
     </url>
     <url>
         <loc>https://lzon.ca/tags/2025-review/</loc>
+    </url>
+    <url>
+        <loc>https://lzon.ca/toys/</loc>
+    </url>
+    <url>
+        <loc>https://lzon.ca/toys/another-demo/</loc>
+        <lastmod>2026-01-12</lastmod>
+    </url>
+    <url>
+        <loc>https://lzon.ca/toys/code-sketch-demo-glsl/</loc>
+        <lastmod>2026-01-13</lastmod>
+    </url>
+    <url>
+        <loc>https://lzon.ca/toys/just-another-shader/</loc>
+        <lastmod>2026-01-16</lastmod>
+    </url>
+    <url>
+        <loc>https://lzon.ca/toys/page/1/</loc>
+    </url>
+    <url>
+        <loc>https://lzon.ca/toys/page/2/</loc>
+    </url>
+    <url>
+        <loc>https://lzon.ca/toys/pulse/</loc>
+        <lastmod>2026-01-16</lastmod>
+    </url>
+    <url>
+        <loc>https://lzon.ca/toys/shader/</loc>
+        <lastmod>2026-01-17</lastmod>
+    </url>
+    <url>
+        <loc>https://lzon.ca/toys/third-shader/</loc>
+        <lastmod>2026-01-14</lastmod>
+    </url>
+    <url>
+        <loc>https://lzon.ca/uses/</loc>
+        <lastmod>2026-01-18</lastmod>
     </url>
 </urlset>

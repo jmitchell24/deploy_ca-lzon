@@ -2,13 +2,22 @@
 <rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
     <channel>
       <title>
-        lzon.ca - Posts</title>
+        lzon.ca - Blog</title>
       <link>https://lzon.ca/posts/</link>
       <description></description>
       <generator>Zola</generator>
       <language>en</language>
       <atom:link href="https://lzon.ca/posts/rss.xml" rel="self" type="application/rss+xml"/>
-      <lastBuildDate>Thu, 15 Jan 2026 00:00:00 +0000</lastBuildDate>
+      <lastBuildDate>Sun, 18 Jan 2026 00:00:00 +0000</lastBuildDate>
+      <item>
+          <title>What software do I use?</title>
+          <pubDate>Sun, 18 Jan 2026 00:00:00 +0000</pubDate>
+          <author>Lzon</author>
+          <link>https://lzon.ca/posts/daily/what-software-i-use/</link>
+          <guid>https://lzon.ca/posts/daily/what-software-i-use/</guid>
+          <description xml:base="https://lzon.ca/posts/daily/what-software-i-use/">&lt;p&gt;Some of the software packages that I use, and why I use them. &lt;&#x2F;p&gt;
+</description>
+      </item>
       <item>
           <title>Some Social Cheat Codes</title>
           <pubDate>Thu, 15 Jan 2026 00:00:00 +0000</pubDate>
