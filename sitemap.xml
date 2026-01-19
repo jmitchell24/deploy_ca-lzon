@@ -4,15 +4,16 @@
         <loc>https://lzon.ca/</loc>
     </url>
     <url>
-        <loc>https://lzon.ca/links/</loc>
-    </url>
-    <url>
         <loc>https://lzon.ca/more/</loc>
-        <lastmod>2026-01-17</lastmod>
     </url>
     <url>
-        <loc>https://lzon.ca/now/</loc>
-        <lastmod>2026-01-18</lastmod>
+        <loc>https://lzon.ca/more/links/</loc>
+    </url>
+    <url>
+        <loc>https://lzon.ca/more/now/</loc>
+    </url>
+    <url>
+        <loc>https://lzon.ca/more/uses/</loc>
     </url>
     <url>
         <loc>https://lzon.ca/posts/</loc>
@@ -267,9 +268,5 @@
     <url>
         <loc>https://lzon.ca/toys/third-shader/</loc>
         <lastmod>2026-01-14</lastmod>
-    </url>
-    <url>
-        <loc>https://lzon.ca/uses/</loc>
-        <lastmod>2026-01-18</lastmod>
     </url>
 </urlset>
