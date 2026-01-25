@@ -216,6 +216,13 @@
         <loc>https://lzon.ca/posts/tips/</loc>
     </url>
     <url>
+        <loc>https://lzon.ca/posts/tips/page/1/</loc>
+    </url>
+    <url>
+        <loc>https://lzon.ca/posts/tips/zfs-dataset-tuning/</loc>
+        <lastmod>2026-01-24</lastmod>
+    </url>
+    <url>
         <loc>https://lzon.ca/tags/</loc>
     </url>
     <url>
