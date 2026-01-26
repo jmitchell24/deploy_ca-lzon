@@ -10,9 +10,9 @@ document.addEventListener("DOMContentLoaded", () => {
     const moodFun         = { arr: funQuoteArray,       text: "silly",             tip: "To make you laugh. Click to refresh." }; 
     const moodInspo       = { arr: inspoQuoteArray,     text: "inspirational",     tip: "To inspire you to do something amazing. Click to refresh." }; 
 
-    const qotdContent = document.querySelector("x-qotd-content"); 
-    const qotdDate = document.querySelector("x-qotd-date"); 
-    const qotdMood = document.querySelector("x-qotd-mood > a"); 
+    const qotdContent = document.querySelector("#qotd-content"); 
+    const qotdDate = document.querySelector("#qotd-date"); 
+    const qotdMood = document.querySelector("#qotd-mood > a"); 
 
     const today = new Date();
 
