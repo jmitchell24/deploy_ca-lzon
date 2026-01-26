@@ -16,7 +16,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
     const today = new Date();
 
-    // A better pseudo-random hasher
+    // A better pseudo-random seed generator 
     // https://stackoverflow.com/questions/521295/seeding-the-random-number-generator-in-javascript
     function getMulberry32(a) {
         return function() {
