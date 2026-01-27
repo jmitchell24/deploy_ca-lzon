@@ -8,7 +8,16 @@
       <generator>Zola</generator>
       <language>en</language>
       <atom:link href="https://lzon.ca/toys/rss.xml" rel="self" type="application/rss+xml"/>
-      <lastBuildDate>Sat, 17 Jan 2026 00:00:00 +0000</lastBuildDate>
+      <lastBuildDate>Sun, 18 Jan 2026 00:00:00 +0000</lastBuildDate>
+      <item>
+          <title>Slices of Time</title>
+          <pubDate>Sun, 18 Jan 2026 00:00:00 +0000</pubDate>
+          <author>Lzon</author>
+          <link>https://lzon.ca/toys/time/</link>
+          <guid>https://lzon.ca/toys/time/</guid>
+          <description xml:base="https://lzon.ca/toys/time/">&lt;p&gt;This is your slice of time, visualized. &lt;&#x2F;p&gt;
+</description>
+      </item>
       <item>
           <title>Signed Distance Fields</title>
           <pubDate>Sat, 17 Jan 2026 00:00:00 +0000</pubDate>
