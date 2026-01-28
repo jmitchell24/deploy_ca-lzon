@@ -73,18 +73,32 @@
     }
 </script>
 
-<hr>
+
+ 
+
+
+
+
+<h3> The Past </h3>
+
+<x-row>
+    <x-btn-group class="w-100">
+        <button class="btn btn-primary" id="btn-y100-now"  > 2026 </button>
+        <button class="btn btn-primary" id="btn-y100-2020" > COVID-19 <br> Lockdowns </button>
+        <button class="btn btn-primary" id="btn-y100-2008" > Financial <br> Crisis 2008 </button>
+        <button class="btn btn-primary" id="btn-y100-2001" > 9/11 <br> Attack </button>
+        <button class="btn btn-primary" id="btn-y100-1991"> Soviet <br> Collapse </button>
+        <button class="btn btn-primary" id="btn-y100-1972"> Last <br> Moonwalk </button>
+    </x-btn-group>
+</x-row>
+
+<h3> Your Age </h3>
 
 <x-row class="gap-md align-items-center">
     <x-col class="fl-row fl-wrap gap-sm ">
-        <button class="btn" id="btn-y100-2020" > COVID-19 <br> Lockdowns </button>
-        <button class="btn" id="btn-y100-2008" > Financial <br> Crisis 2008 </button>
-        <button class="btn" id="btn-y100-2001" > 9/11 <br> Attack </button>
-        <button class="btn" id="btn-y100-1991"> Soviet <br> Collapse </button>
-        <button class="btn" id="btn-y100-1972"> Last <br> Moonwalk </button>
-        <button class="btn" id="btn-y100-18"> Childhood </button>
-        <button class="btn" id="btn-y100-40"> Middle <br> Age </button>
-        <button class="btn" id="btn-y100-80"> Average <br> Life Expectancy </button>
+        <button class="btn btn-primary" id="btn-y100-18"> Childhood </button>
+        <button class="btn btn-primary" id="btn-y100-40"> Middle <br> Age </button>
+        <button class="btn btn-primary" id="btn-y100-80"> Average <br> Life Expectancy </button>
     </x-col>
 </x-row>
 
@@ -101,71 +115,103 @@
         document.querySelector("#grid-y100")
     );
 
-    const gvY100 = {
-        width: 10, 
-        height: 10, 
-        years: 32,
-        startYear: 0,
-        desc: "", 
-        getRowText: (i) => { 
+    class GridY100 { 
+        constructor() { 
+            this.width = 10 
+            this.height = 10 
+            this.startYear = 2026
+            this.endYear = 2026
+            this.markYear = 2026
+            this.desc = ""
+        }
+
+        setMarkYear(mark) { 
+
+        }
+
+        setRangeYears(start, end) { 
+            
+        }
+
+        getRowText(i) { 
             return [
                 "First", "Second", "Third", "Fourth", "Fifth", "Sixth", "Seventh", "Eight", "Ninth", "Tenth"
             ][i] + " Decade"; 
-        },
+        }
 
-        getCellClass: (i, j) => { 
-            return ( j*gvY100.width+i ) < gvY100.years+1 ? "grid-item-on" : "grid-item-off"; 
-        },
-
-        getCellText: (i, j) => { 
-            const nowYear = new Date().getFullYear(); 
-            const yearDist = gvY100.years + 1
-            const yearOffset = ( j*gvY100.width+i ); 
-            const yearString = `${nowYear-yearDist+yearOffset+1}`;
+        getCellText(i, j) { 
+            
+            const yearDist = this.endYear - this.startYear; 
+            const year = this.getYearFromCell(i, j); 
+            const yearString = `${year}`;
             return yearString;  
         }
-    };  
+
+        getCellClass(i, j) { 
+            const year = this.getYearFromCell(i, j); 
+            if (year < this.startYear || year > this.endYear)
+                return "grid-item-off";  
+            return "grid-item-mark";  
+        }
+
+        getYearFromCell(i, j) { 
+            const idx = j * this.width + i; 
+            const year = this.startYear + idx; 
+            return year; 
+        }
+    }
+
+    const gvY100 = new GridY100(); 
 
 
 
     vgY100.bindGridButton("btn-y100-2020", gvY100, () => {
         gvY100.desc = "Since the first COVID-19 lockdown in Italy. March 9, 2020."
-        gvY100.years = ( new Date().getFullYear() ) - 2020;
+        gvY100.startYear = 2020;  
+        gvY100.endYear = ( new Date().getFullYear() ); 
     }, true); 
 
     vgY100.bindGridButton("btn-y100-2008", gvY100, () => {
         gvY100.desc = "Since the collapse of Lehman Brothers. Sepember 15, 2008."
-        gvY100.years = ( new Date().getFullYear() ) - 2008;
+        gvY100.startYear = 2008;  
+        gvY100.endYear = ( new Date().getFullYear() ); 
     }); 
 
     vgY100.bindGridButton("btn-y100-2001", gvY100, () => {
         gvY100.desc = "Since the largest terror attack in United States history. September 11, 2021."
-        gvY100.years = ( new Date().getFullYear() ) - 2001;
+        gvY100.startYear = 2001;  
+        gvY100.endYear = ( new Date().getFullYear() ); 
     }); 
 
     vgY100.bindGridButton("btn-y100-1991", gvY100, () => {
         gvY100.desc = "Since the fall of the Soviet Union. December 26, 1991.";
-        gvY100.years = ( new Date().getFullYear() ) - 1991;
+        gvY100.startYear = 1991;  
+        gvY100.endYear = ( new Date().getFullYear() ); 
     }); 
 
     vgY100.bindGridButton("btn-y100-1972", gvY100, () => {
         gvY100.desc = "Since the final moon walk, from the Apollo 17 mission. December 14, 1972."
-        gvY100.years = ( new Date().getFullYear() ) - 1972; 
+        gvY100.startYear = 1972;  
+        gvY100.endYear = ( new Date().getFullYear() ); 
     });
     
     vgY100.bindGridButton("btn-y100-18", gvY100, () => {
         gvY100.desc = "From birth to adulthood."
-        gvY100.years = 18; 
+        gvY100.endYear = ( new Date().getFullYear() );
+        gvY100.startYear = gvY100.endYear - 18;  
+        
     }); 
 
     vgY100.bindGridButton("btn-y100-40", gvY100, () => {
         gvY100.desc = "From birth to middle-age."
-        gvY100.years = 40; 
+        gvY100.endYear = ( new Date().getFullYear() );
+        gvY100.startYear = gvY100.endYear - 40;  
     }); 
 
     vgY100.bindGridButton("btn-y100-80", gvY100, () => {
         gvY100.desc = "The average life expetancy of a Canadian man."
-        gvY100.years = 80; 
+        gvY100.endYear = ( new Date().getFullYear() );
+        gvY100.startYear = gvY100.endYear - 80;  
     }); 
 
 
@@ -263,6 +309,31 @@
         overflow: hidden;
 
         color: var(--color-gray); 
+
+        /* Flexbox centering */
+        display: flex;
+        justify-content: center;  /* horizontal center */
+        align-items: center;      /* vertical center */
+    }
+
+    .grid-item-mark {
+        min-width: fit-content;
+        padding: var(--space-xs); 
+
+        aspect-ratio: 1 / 1;
+        height: 100%;
+        border: var(--border-md) solid var(--color-primary); 
+        border-radius: var(--border-radius);
+        
+        /* Animation properties */
+        animation: scaleIn var(--transition-speed) ease-out forwards;
+        transform: scale(0);
+        opacity: 0;
+
+        overflow: hidden;
+
+        color: var(--color-darker); 
+        background-color: var(--color-primary);
 
         /* Flexbox centering */
         display: flex;
