@@ -100,8 +100,9 @@ document.addEventListener("DOMContentLoaded", () => {
 
     document.querySelectorAll("x-code-wrapper").forEach((el, idx) => { 
         const pre = el.querySelector("pre"); 
+        const preCode = pre.querySelector("code"); 
         
-        const preLangText = pre.getAttribute("data-lang") || "plaintext"; 
+        const preLangText = preCode.getAttribute("data-lang") || "plaintext"; 
         const preCodeText = pre.textContent || pre.innerText; 
 
         const footer = el.querySelector("x-code-footer"); 
