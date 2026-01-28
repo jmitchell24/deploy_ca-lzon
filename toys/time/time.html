@@ -22,7 +22,7 @@
                 
                 for (let j = 0; j < gv.width; ++j) { 
                     const cell = document.createElement("div"); 
-                    cell.classList.add(gv.getCellClass(j, i), "text-sans-serif"); 
+                    cell.classList.add(gv.getCellClass(j, i), "text-sans-serif", "text-small"); 
                     
                     // Calculate staggered delay based on position
                     const cellIndex = i * gv.width + j;
@@ -73,28 +73,9 @@
     }
 </script>
 
-<x-row>
-    <h2> Choose your Slice </h2>
-</x-row>
-
-<x-row class="gap-sm">
-    <button>1 Day</button>
-    <button>1 Week</button>
-    <button>1 Month</button>
-    <button>1 Year</button>
-    <button>10 Years</button>
-    <button class="active">100 Years</button>
-    <button>1000 Years</button>
-</x-row>
-
 <hr>
 
 <x-row class="gap-md align-items-center">
-    <x-col class="fl-shrink">
-    <h2> 100 Years </h2>
-    
-    </x-col>
-
     <x-col class="fl-row fl-wrap gap-sm ">
         <button id="btn-y100-2020" > COVID-19 <br> Lockdowns </button>
         <button id="btn-y100-2008" > Financial <br> Crisis 2008 </button>
@@ -125,6 +106,7 @@
         width: 10, 
         height: 10, 
         years: 32,
+        startYear: 0,
         desc: "", 
         getRowText: (i) => { 
             return [
@@ -133,12 +115,15 @@
         },
 
         getCellClass: (i, j) => { 
-            return ( j*gvY100.width+i ) < gvY100.years ? "grid-item-on" : "grid-item-off"; 
+            return ( j*gvY100.width+i ) < gvY100.years+1 ? "grid-item-on" : "grid-item-off"; 
         },
 
         getCellText: (i, j) => { 
-            const year = ( j*gvY100.width+i ); 
-            return year < gvY100.years ? (year+1).toString() : "";  
+            const nowYear = new Date().getFullYear(); 
+            const yearDist = gvY100.years + 1
+            const yearOffset = ( j*gvY100.width+i ); 
+            const yearString = `${nowYear-yearDist+yearOffset+1}`;
+            return yearString;  
         }
     };  
 
@@ -213,7 +198,6 @@
     .decade-label {
         display: flex;
         align-items: center;
-        white-space: nowrap;
         overflow: hidden;
     }
     
@@ -247,6 +231,8 @@
         transform: scale(0);
         opacity: 0;
 
+        overflow: hidden;
+
         
         /* Flexbox centering */
         display: flex;
@@ -263,6 +249,10 @@
         animation: scaleIn var(--transition-speed) ease-out forwards;
         transform: scale(0);
         opacity: 0;
+
+        overflow: hidden;
+
+        color: var(--color-gray); 
 
         /* Flexbox centering */
         display: flex;
