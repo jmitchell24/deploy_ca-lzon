@@ -93,8 +93,8 @@
     <p class="text-body-light" id="p-y100-desc">asdf</p>
 </x-row>
 
-<x-row>
-    <div id="grid-y100" class="container"> </div>
+<x-row class="overflow-x">
+    <div id="grid-y100" class="gcontainer"> </div>
 </x-row>
 
 <script>
@@ -173,7 +173,7 @@
 </script>
 
 <style>
-    .container {
+    .gcontainer {
         display: grid;
         grid-template-columns: auto 1fr;
         gap: var(--space-md);
@@ -183,6 +183,7 @@
         --grid-height: 10; 
 
         width: 100%;
+        overflow-x: auto;
     }
     
     .labels-column {
@@ -198,7 +199,7 @@
     .decade-label {
         display: flex;
         align-items: center;
-        overflow: hidden;
+        white-space: nowrap;
     }
     
     .grid-container {
@@ -206,7 +207,9 @@
         grid-template-columns: repeat(var(--grid-width), 1fr);
         grid-template-rows: repeat(var(--grid-height), 1fr);
         gap: var(--space-sm);
-        width: 100%;
+        
+        
+        
     }
 
     @keyframes scaleIn {
@@ -221,6 +224,10 @@
     }
 
     .grid-item-on {
+
+        min-width: fit-content;
+        padding: var(--space-xs); 
+
         background-color: var(--color-primary-dark);
         aspect-ratio: 1 / 1;
         border: var(--border-md) dashed var(--color-primary); 
@@ -232,7 +239,7 @@
         opacity: 0;
 
         overflow: hidden;
-
+        height: 100%;       
         
         /* Flexbox centering */
         display: flex;
@@ -241,7 +248,11 @@
     }
 
     .grid-item-off {
+        min-width: fit-content;
+        padding: var(--space-xs); 
+
         aspect-ratio: 1 / 1;
+        height: 100%;
         border: var(--border-md) dashed var(--color-primary-dark); 
         border-radius: var(--border-radius);
         
