@@ -223,6 +223,10 @@
         <loc>https://lzon.ca/toys/</loc>
     </url>
     <url>
+        <loc>https://lzon.ca/toys/century/</loc>
+        <lastmod>2026-01-18</lastmod>
+    </url>
+    <url>
         <loc>https://lzon.ca/toys/draft/another-demo/</loc>
         <lastmod>2026-01-12</lastmod>
     </url>
@@ -248,9 +252,5 @@
     <url>
         <loc>https://lzon.ca/toys/shader/</loc>
         <lastmod>2026-01-17</lastmod>
-    </url>
-    <url>
-        <loc>https://lzon.ca/toys/time/</loc>
-        <lastmod>2026-01-18</lastmod>
     </url>
 </urlset>
