@@ -29,9 +29,9 @@
           <title>How to fix tmux over ssh in ghostty</title>
           <pubDate>Tue, 27 Jan 2026 00:00:00 +0000</pubDate>
           <author>Lzon</author>
-          <link>https://lzon.ca/posts/tips/ssh-with-ghostty/</link>
-          <guid>https://lzon.ca/posts/tips/ssh-with-ghostty/</guid>
-          <description xml:base="https://lzon.ca/posts/tips/ssh-with-ghostty/">&lt;p&gt;&lt;code&gt;tmux&lt;&#x2F;code&gt; might break when you try to use it over SSH in Ghostty. Here’s how to fix it.&lt;&#x2F;p&gt;</description>
+          <link>https://lzon.ca/posts/tips/ghostty-tmux-ssh/</link>
+          <guid>https://lzon.ca/posts/tips/ghostty-tmux-ssh/</guid>
+          <description xml:base="https://lzon.ca/posts/tips/ghostty-tmux-ssh/">&lt;p&gt;&lt;code&gt;tmux&lt;&#x2F;code&gt; might break when you try to use it over SSH in Ghostty. Here’s how to fix it.&lt;&#x2F;p&gt;</description>
       </item>
       <item>
           <title>ZFS Dataset Tuning</title>
