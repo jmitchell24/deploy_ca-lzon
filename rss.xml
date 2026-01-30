@@ -26,6 +26,14 @@
           <description xml:base="https://lzon.ca/posts/recipes/antojitos/">&lt;p&gt;An easy and tasty tex-mex appetizer.&lt;&#x2F;p&gt;</description>
       </item>
       <item>
+          <title>How to fix tmux over ssh in ghostty</title>
+          <pubDate>Tue, 27 Jan 2026 00:00:00 +0000</pubDate>
+          <author>Lzon</author>
+          <link>https://lzon.ca/posts/tips/ssh-with-ghostty/</link>
+          <guid>https://lzon.ca/posts/tips/ssh-with-ghostty/</guid>
+          <description xml:base="https://lzon.ca/posts/tips/ssh-with-ghostty/">&lt;p&gt;&lt;code&gt;tmux&lt;&#x2F;code&gt; might break when you try to use it over SSH in Ghostty. Here’s how to fix it.&lt;&#x2F;p&gt;</description>
+      </item>
+      <item>
           <title>ZFS Dataset Tuning</title>
           <pubDate>Sat, 24 Jan 2026 00:00:00 +0000</pubDate>
           <author>Lzon</author>
@@ -58,23 +66,6 @@
           <description xml:base="https://lzon.ca/toys/shader/"></description>
       </item>
       <item>
-          <title>Holofoil Dice</title>
-          <pubDate>Fri, 16 Jan 2026 00:00:00 +0000</pubDate>
-          <author>Lzon</author>
-          <link>https://lzon.ca/toys/draft/just-another-shader/</link>
-          <guid>https://lzon.ca/toys/draft/just-another-shader/</guid>
-          <description xml:base="https://lzon.ca/toys/draft/just-another-shader/">&lt;p&gt;An interesting shader I found on &lt;a rel=&quot;noopener external&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;www.shadertoy.com&#x2F;view&#x2F;tfGyzt&quot;&gt;Shadertoy&lt;&#x2F;a&gt;.&lt;&#x2F;p&gt;
-&lt;p&gt;Full credit due to &lt;a rel=&quot;noopener external&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;www.shadertoy.com&#x2F;user&#x2F;Jaenam&quot;&gt;Jaenam&lt;&#x2F;a&gt;&lt;&#x2F;p&gt;</description>
-      </item>
-      <item>
-          <title>Pulse</title>
-          <pubDate>Fri, 16 Jan 2026 00:00:00 +0000</pubDate>
-          <author>Lzon</author>
-          <link>https://lzon.ca/toys/draft/pulse/</link>
-          <guid>https://lzon.ca/toys/draft/pulse/</guid>
-          <description xml:base="https://lzon.ca/toys/draft/pulse/"></description>
-      </item>
-      <item>
           <title>Some Social Cheat Codes</title>
           <pubDate>Thu, 15 Jan 2026 00:00:00 +0000</pubDate>
           <author>Lzon</author>
@@ -83,36 +74,12 @@
           <description xml:base="https://lzon.ca/posts/other/social-cheat-codes/">&lt;p&gt;How an timid, introverted recluse learned to enjoy talking to people.&lt;&#x2F;p&gt;</description>
       </item>
       <item>
-          <title>Third Shader</title>
-          <pubDate>Wed, 14 Jan 2026 00:00:00 +0000</pubDate>
-          <author>Lzon</author>
-          <link>https://lzon.ca/toys/draft/third-shader/</link>
-          <guid>https://lzon.ca/toys/draft/third-shader/</guid>
-          <description xml:base="https://lzon.ca/toys/draft/third-shader/"></description>
-      </item>
-      <item>
-          <title>Second Shader Demo</title>
-          <pubDate>Mon, 12 Jan 2026 00:00:00 +0000</pubDate>
-          <author>Lzon</author>
-          <link>https://lzon.ca/toys/draft/another-demo/</link>
-          <guid>https://lzon.ca/toys/draft/another-demo/</guid>
-          <description xml:base="https://lzon.ca/toys/draft/another-demo/"></description>
-      </item>
-      <item>
           <title>Sketching with Code</title>
           <pubDate>Fri, 09 Jan 2026 00:00:00 +0000</pubDate>
           <author>Lzon</author>
           <link>https://lzon.ca/posts/site/code-sketch-demo/</link>
           <guid>https://lzon.ca/posts/site/code-sketch-demo/</guid>
           <description xml:base="https://lzon.ca/posts/site/code-sketch-demo/">&lt;p&gt;Exploring some ideas for how to create and publish graphics demos for Lzon.&lt;&#x2F;p&gt;</description>
-      </item>
-      <item>
-          <title>First Shader Demo - Ring</title>
-          <pubDate>Fri, 09 Jan 2026 00:00:00 +0000</pubDate>
-          <author>Lzon</author>
-          <link>https://lzon.ca/toys/draft/code-sketch-demo-glsl/</link>
-          <guid>https://lzon.ca/toys/draft/code-sketch-demo-glsl/</guid>
-          <description xml:base="https://lzon.ca/toys/draft/code-sketch-demo-glsl/">&lt;p&gt;A demo of a ‘code sketch’ using GLSL within a WebGL Fragment Shader.&lt;&#x2F;p&gt;</description>
       </item>
       <item>
           <title>Dream Trawler</title>

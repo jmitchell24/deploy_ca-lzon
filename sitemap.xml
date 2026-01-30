@@ -224,6 +224,10 @@
         <loc>https://lzon.ca/posts/tips/page/1/</loc>
     </url>
     <url>
+        <loc>https://lzon.ca/posts/tips/ssh-with-ghostty/</loc>
+        <lastmod>2026-01-27</lastmod>
+    </url>
+    <url>
         <loc>https://lzon.ca/posts/tips/zfs-dataset-tuning/</loc>
         <lastmod>2026-01-24</lastmod>
     </url>
@@ -233,26 +237,6 @@
     <url>
         <loc>https://lzon.ca/toys/century/</loc>
         <lastmod>2026-01-18</lastmod>
-    </url>
-    <url>
-        <loc>https://lzon.ca/toys/draft/another-demo/</loc>
-        <lastmod>2026-01-12</lastmod>
-    </url>
-    <url>
-        <loc>https://lzon.ca/toys/draft/code-sketch-demo-glsl/</loc>
-        <lastmod>2026-01-13</lastmod>
-    </url>
-    <url>
-        <loc>https://lzon.ca/toys/draft/just-another-shader/</loc>
-        <lastmod>2026-01-16</lastmod>
-    </url>
-    <url>
-        <loc>https://lzon.ca/toys/draft/pulse/</loc>
-        <lastmod>2026-01-16</lastmod>
-    </url>
-    <url>
-        <loc>https://lzon.ca/toys/draft/third-shader/</loc>
-        <lastmod>2026-01-14</lastmod>
     </url>
     <url>
         <loc>https://lzon.ca/toys/page/1/</loc>
