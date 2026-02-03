@@ -8,7 +8,15 @@
       <generator>Zola</generator>
       <language>en</language>
       <atom:link href="https://lzon.ca/rss.xml" rel="self" type="application/rss+xml"/>
-      <lastBuildDate>Sun, 01 Feb 2026 00:00:00 +0000</lastBuildDate>
+      <lastBuildDate>Tue, 03 Feb 2026 00:00:00 +0000</lastBuildDate>
+      <item>
+          <title>You need to make your bed.</title>
+          <pubDate>Tue, 03 Feb 2026 00:00:00 +0000</pubDate>
+          <author>Lzon</author>
+          <link>https://lzon.ca/posts/life/make-your-bed/</link>
+          <guid>https://lzon.ca/posts/life/make-your-bed/</guid>
+          <description xml:base="https://lzon.ca/posts/life/make-your-bed/">&lt;p&gt;What to do when you are at rock bottom, from someone who’s been there.&lt;&#x2F;p&gt;</description>
+      </item>
       <item>
           <title>Christine&#x27;s Homestyle Bakery</title>
           <pubDate>Thu, 29 Jan 2026 00:00:00 +0000</pubDate>
