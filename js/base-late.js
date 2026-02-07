@@ -103,7 +103,7 @@ document.addEventListener("DOMContentLoaded", () => {
         const preCode = pre.querySelector("code"); 
         
         const preLangText = preCode.getAttribute("data-lang") || "plaintext"; 
-        const preCodeText = pre.textContent || pre.innerText; 
+        const preCodeText = el.getAttribute("data-raw-code"); // pre.textContent || pre.innerText; 
 
         const footer = el.querySelector("x-code-footer"); 
         const footerLang = el.querySelector("x-code-footer > x-code-footer-lang"); 
@@ -116,7 +116,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
         footer.addEventListener('click', async () => {
             try {
-                await navigator.clipboard.writeText(pre.textContent || pre.innerText);
+                await navigator.clipboard.writeText(preCodeText);
                 
                 // Visual feedback
                 const originalText = footerCopy.innerHTML;
