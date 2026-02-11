@@ -16,13 +16,13 @@
             for (let i = 0; i < gv.height; ++i) { 
                 const lbl = document.createElement("div"); 
                 lbl.innerText = gv.getRowText(i); 
-                lbl.classList.add("decade-label", "text-small", "text-align-center", "text-sans-serif"); 
+                lbl.classList.add("decade-label", "text-sm", "text-align-center", "text-sans-serif"); 
                 labels.appendChild(lbl); 
 
                 
                 for (let j = 0; j < gv.width; ++j) { 
                     const cell = document.createElement("div"); 
-                    cell.classList.add(gv.getCellClass(j, i), "text-sans-serif", "text-small"); 
+                    cell.classList.add(gv.getCellClass(j, i), "text-sans-serif", "text-sm"); 
                     
                     // Calculate staggered delay based on position
                     const cellIndex = i * gv.width + j;

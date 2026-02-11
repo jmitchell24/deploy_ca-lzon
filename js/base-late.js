@@ -18,7 +18,7 @@ _paq.push(['enableLinkTracking']);
 
 document.addEventListener('DOMContentLoaded', () => {
 
-    const settingsOverlay = document.querySelector("x-settings-overlay"); 
+    const settingsOverlay = document.querySelector(".overlay"); 
     settingsOverlay.addEventListener("click", (e) => { 
         if (e.target === settingsOverlay) { 
             history.back(); 
@@ -37,9 +37,9 @@ document.addEventListener('DOMContentLoaded', () => {
     let pageHueIndex = parseInt(localStorage.getItem("theme-hue-index") ?? "0"); 
     let pageDarkMode = localStorage.getItem("theme-dark-mode");
 
-    const themeItemsColor = document.querySelectorAll('x-theme-color-item');
-    const themeItemDark = document.querySelector("x-theme-dark-item"); 
-    const themeItemLight = document.querySelector("x-theme-light-item"); 
+    const themeItemsColor = document.querySelectorAll('.btn-hue');
+    const themeItemDark = document.querySelector("#btn-enable-dark-theme"); 
+    const themeItemLight = document.querySelector("#btn-enable-light-theme"); 
 
     function updatePageHueIndex(idx) { 
         pageHueIndex = idx; 
@@ -60,15 +60,16 @@ document.addEventListener('DOMContentLoaded', () => {
         }, 500);
     }
 
-    function updateThemeItems() { 
+    function updateThemeItems() {
         themeItemsColor.forEach((it, idx) => {
-            it.setAttribute("data-active", idx == pageHueIndex ? "true" : "false"); 
+            it.classList.toggle('active', idx === pageHueIndex);
         });
     }
 
     function updateDarkModeItems() { 
-        themeItemDark.setAttribute("data-active", pageDarkMode == "on" ? "true" : "false"); 
-        themeItemLight.setAttribute("data-active", pageDarkMode == "off" ? "true" : "false"); 
+        const isDark = pageDarkMode == "on"; 
+        themeItemDark.classList.toggle('active', isDark); 
+        themeItemLight.classList.toggle('active', !isDark); 
     }
 
     themeItemsColor.forEach((it, idx) => { 
