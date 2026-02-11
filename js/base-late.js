@@ -34,8 +34,11 @@ document.addEventListener('DOMContentLoaded', () => {
 
 document.addEventListener('DOMContentLoaded', () => {
 
-    let pageHueIndex = parseInt(localStorage.getItem("theme-hue-index") ?? "3"); 
+    
+    let pageHueIndex = parseInt(localStorage.getItem("theme-hue-index")) || 3;
     let pageDarkMode = localStorage.getItem("theme-dark-mode");
+
+    console.log(`initial page hue: ${pageHueIndex}`); 
 
     const themeItemsColor = document.querySelectorAll('.btn-hue');
     const themeItemDark = document.querySelector("#btn-enable-dark-theme"); 
@@ -44,6 +47,7 @@ document.addEventListener('DOMContentLoaded', () => {
     function updatePageHueIndex(idx) { 
         pageHueIndex = idx; 
         localStorage.setItem("theme-hue-index", idx); 
+        console.log(`page hue updated: ${pageHueIndex}`); 
         document.documentElement.style.setProperty("--color-primary-hue", 
             themeItemsColor[pageHueIndex].getAttribute("data-hue")
         );
@@ -91,6 +95,8 @@ document.addEventListener('DOMContentLoaded', () => {
 
     updateThemeItems(); 
     updateDarkModeItems(); 
+
+    updatePageHueIndex(pageHueIndex); 
 }); 
 
 // 
