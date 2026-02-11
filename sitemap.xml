@@ -41,18 +41,6 @@
         <loc>https://lzon.ca/posts/other/</loc>
     </url>
     <url>
-        <loc>https://lzon.ca/posts/other/2025-review-ai/</loc>
-        <lastmod>2026-01-02</lastmod>
-    </url>
-    <url>
-        <loc>https://lzon.ca/posts/other/2025-review-gaming/</loc>
-        <lastmod>2026-01-02</lastmod>
-    </url>
-    <url>
-        <loc>https://lzon.ca/posts/other/2025-review-smartphones/</loc>
-        <lastmod>2025-12-31</lastmod>
-    </url>
-    <url>
         <loc>https://lzon.ca/posts/other/page/1/</loc>
     </url>
     <url>
@@ -171,6 +159,24 @@
         <lastmod>2026-02-09</lastmod>
     </url>
     <url>
+        <loc>https://lzon.ca/posts/series/2025-review/</loc>
+    </url>
+    <url>
+        <loc>https://lzon.ca/posts/series/2025-review/2025-review-ai/</loc>
+        <lastmod>2026-01-02</lastmod>
+    </url>
+    <url>
+        <loc>https://lzon.ca/posts/series/2025-review/2025-review-gaming/</loc>
+        <lastmod>2026-01-02</lastmod>
+    </url>
+    <url>
+        <loc>https://lzon.ca/posts/series/2025-review/2025-review-smartphones/</loc>
+        <lastmod>2025-12-31</lastmod>
+    </url>
+    <url>
+        <loc>https://lzon.ca/posts/series/2025-review/page/1/</loc>
+    </url>
+    <url>
         <loc>https://lzon.ca/posts/series/grateful/</loc>
     </url>
     <url>
@@ -206,6 +212,9 @@
     </url>
     <url>
         <loc>https://lzon.ca/posts/series/page/1/</loc>
+    </url>
+    <url>
+        <loc>https://lzon.ca/posts/series/page/2/</loc>
     </url>
     <url>
         <loc>https://lzon.ca/posts/site/</loc>

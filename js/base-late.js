@@ -14,7 +14,7 @@ _paq.push(['enableLinkTracking']);
     g.async=true; g.src=u+'matomo.js'; s.parentNode.insertBefore(g,s);
 })();
 
-/// Settings Popup
+/// Overlay
 
 document.addEventListener('DOMContentLoaded', () => {
 
@@ -34,7 +34,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
 document.addEventListener('DOMContentLoaded', () => {
 
-    let pageHueIndex = parseInt(localStorage.getItem("theme-hue-index") ?? "0"); 
+    let pageHueIndex = parseInt(localStorage.getItem("theme-hue-index") ?? "3"); 
     let pageDarkMode = localStorage.getItem("theme-dark-mode");
 
     const themeItemsColor = document.querySelectorAll('.btn-hue');
