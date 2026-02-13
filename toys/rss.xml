@@ -23,7 +23,7 @@
           <author>Lzon</author>
           <link>https://lzon.ca/toys/shader/</link>
           <guid>https://lzon.ca/toys/shader/</guid>
-          <description xml:base="https://lzon.ca/toys/shader/"></description>
+          <description xml:base="https://lzon.ca/toys/shader/">&lt;p&gt;A test of two-dimensional signed distance fields.&lt;&#x2F;p&gt;</description>
       </item>
     </channel>
 </rss>

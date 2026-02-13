@@ -14,6 +14,41 @@ _paq.push(['enableLinkTracking']);
     g.async=true; g.src=u+'matomo.js'; s.parentNode.insertBefore(g,s);
 })();
 
+
+
+function parseCSSColorToFloat(colorStr) {
+    const div = document.createElement('div');
+    div.style.color = window.getComputedStyle(document.body).getPropertyValue(colorStr).trim();
+    document.body.appendChild(div);
+    
+    const rgb = window.getComputedStyle(div).color;
+    document.body.removeChild(div);
+    
+    const match = rgb.match(/[\d.]+/g);
+    return [
+        parseFloat(match[0]) / 255,
+        parseFloat(match[1]) / 255,
+        parseFloat(match[2]) / 255,
+        match[3] !== undefined ? parseFloat(match[3]) : 1
+    ];
+}
+
+function parseCSSColorToRGB(colorStr) {
+    const div = document.createElement('div');
+    div.style.color = window.getComputedStyle(document.body).getPropertyValue(colorStr).trim();
+    document.body.appendChild(div);
+    
+    const rgb = window.getComputedStyle(div).color;
+    document.body.removeChild(div);
+    
+    const match = rgb.match(/[\d.]+/g);
+    return [
+        parseInt(match[0]),
+        parseInt(match[1]),
+        parseInt(match[2])
+    ];
+}
+
 /// Overlay
 
 document.addEventListener('DOMContentLoaded', () => {
@@ -29,13 +64,62 @@ document.addEventListener('DOMContentLoaded', () => {
 });
 
 //
-// Theme List 
+// Theme 
 //
+
+const HUE_VALUE_TOTAL   = 36; 
+const HUE_VALUE_DEFAULT = 3; 
+const HUE_VALUE_KEY     = "theme-hue-index"; 
+
+function getStoredHueValue() { 
+    const item = localStorage.getItem(HUE_VALUE_KEY); 
+
+    if (item == null) { 
+        console.log(`hue value not found in local storage. setting default: ${HUE_VALUE_DEFAULT}`); 
+        localStorage.setItem(HUE_VALUE_KEY, HUE_VALUE_DEFAULT); 
+        return HUE_VALUE_DEFAULT;
+    }
+    
+    const value = parseInt(item); 
+
+    if (isNaN(value)) { 
+        console.log(`failed to parse hue value: ${item}`); 
+        return HUE_VALUE_DEFAULT;
+    }
+
+    console.log(`hue value found in local storage: ${value}`); 
+    return value; 
+}
+
+function setStoredHueValue(value) { 
+    localStorage.setItem(HUE_VALUE_KEY, value || HUE_VALUE_DEFAULT); 
+    console.log(`local storage hue value updated: ${value}`); 
+}
+
+(function() { // update hue value 
+    
+    let pageHueIndex = getStoredHueValue(); 
+    pageHueIndex = Math.max(0, Math.min(HUE_VALUE_TOTAL-1, pageHueIndex)); 
+    localStorage.setItem(HUE_VALUE_KEY, pageHueIndex); 
+    
+    document.documentElement.style.setProperty("--color-primary-hue", 
+        pageHueIndex * 360 / (HUE_VALUE_TOTAL - 1)
+    );
+})();
+
+
+document.addEventListener('DOMContentLoaded', () => { // update dark mode (defaults to 'on')
+    let pageDarkMode = localStorage.getItem("theme-dark-mode");
+    pageDarkMode = pageDarkMode == "off" ? "off" : "on"; 
+    localStorage.setItem("theme-dark-mode", pageDarkMode); 
+
+    document.body.setAttribute("data-dark-mode", pageDarkMode);
+}); 
 
 document.addEventListener('DOMContentLoaded', () => {
 
     
-    let pageHueIndex = parseInt(localStorage.getItem("theme-hue-index")) || 3;
+    let pageHueIndex = getStoredHueValue(); 
     let pageDarkMode = localStorage.getItem("theme-dark-mode");
 
     console.log(`initial page hue: ${pageHueIndex}`); 
@@ -46,8 +130,8 @@ document.addEventListener('DOMContentLoaded', () => {
 
     function updatePageHueIndex(idx) { 
         pageHueIndex = idx; 
-        localStorage.setItem("theme-hue-index", idx); 
-        console.log(`page hue updated: ${pageHueIndex}`); 
+        setStoredHueValue(idx); 
+        
         document.documentElement.style.setProperty("--color-primary-hue", 
             themeItemsColor[pageHueIndex].getAttribute("data-hue")
         );
@@ -96,7 +180,6 @@ document.addEventListener('DOMContentLoaded', () => {
     updateThemeItems(); 
     updateDarkModeItems(); 
 
-    updatePageHueIndex(pageHueIndex); 
 }); 
 
 // 
