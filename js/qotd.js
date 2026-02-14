@@ -12,7 +12,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
     const qotdContent = document.querySelector("#qotd-content"); 
     const qotdDate = document.querySelector("#qotd-date"); 
-    const qotdMood = document.querySelector("#qotd-mood > a"); 
+    const qotdMood = document.querySelector("#qotd-mood > button"); 
 
     const today = new Date();
 
