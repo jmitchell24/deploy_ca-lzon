@@ -7,7 +7,10 @@
 
         replaceGrid(gv) { 
             const grid = document.createElement("div"); 
-            grid.classList.add("grid-container"); 
+            grid.classList.add(
+                "grid-container",
+                "gap-sm"
+            ); 
 
             const labels = document.createElement("div"); 
             labels.classList.add("labels-column");  
@@ -22,7 +25,14 @@
                 
                 for (let j = 0; j < gv.width; ++j) { 
                     const cell = document.createElement("div"); 
-                    cell.classList.add(gv.getCellClass(j, i), "text-sans-serif", "text-sm"); 
+                    cell.classList.add(
+                        gv.getCellClass(j, i), 
+                        "text-sans-serif", 
+                        "text-sm", 
+                        "border", 
+                        "border-dashed",
+                        "rounded", 
+                    ); 
                     
                     // Calculate staggered delay based on position
                     const cellIndex = i * gv.width + j;
@@ -178,7 +188,7 @@
     .gcontainer {
         display: grid;
         grid-template-columns: auto 1fr;
-        gap: $spacer-md;
+        
         align-items: start;
 
         --grid-width: 10; 
@@ -194,7 +204,7 @@
 
         display: grid;
         grid-template-rows: repeat(var(--sz), 1fr);
-        gap: $spacer-sm;
+        
         height: 100%;
     }
     
@@ -208,10 +218,6 @@
         display: grid;
         grid-template-columns: repeat(var(--grid-width), 1fr);
         grid-template-rows: repeat(var(--grid-height), 1fr);
-        gap: $spacer-sm;
-        
-        
-        
     }
 
     @keyframes scaleIn {
@@ -228,15 +234,12 @@
     .grid-item-on {
 
         min-width: fit-content;
-        padding: $spacer-xs; 
-
-        background-color: var(--color-primary-dark);
-        aspect-ratio: 1 / 1;
-        border: $border-md dashed var(--color-primary); 
-        border-radius: $border-radius;
+        
+        background: var(--color-primary-dark);
+        border-color: var(--color-primary);
         
         /* Animation properties */
-        animation: scaleIn $transition-speed ease-out forwards;
+        animation: scaleIn .15s ease-out forwards;
         transform: scale(0);
         opacity: 0;
 
@@ -251,15 +254,14 @@
 
     .grid-item-off {
         min-width: fit-content;
-        padding: $spacer-xs; 
+        
 
         aspect-ratio: 1 / 1;
         height: 100%;
-        border: $border-md dashed var(--color-primary-dark); 
-        border-radius: $border-radius;
+        
         
         /* Animation properties */
-        animation: scaleIn $transition-speed ease-out forwards;
+        animation: scaleIn .15s ease-out forwards;
         transform: scale(0);
         opacity: 0;
 

@@ -186,41 +186,126 @@ document.addEventListener('DOMContentLoaded', () => {
 // Code Wrapper Copy Function 
 // 
 
+function initCodeWrapper(el) { 
+    const pre = el.querySelector("pre"); 
+    const preCode = pre.querySelector("code"); 
+    
+    const preLangText = preCode.getAttribute("data-lang") || "plaintext"; 
+    const preCodeText = el.getAttribute("data-raw-code"); // pre.textContent || pre.innerText; 
+
+    const footer = el.querySelector("x-code-footer"); 
+    const footerLang = el.querySelector("x-code-footer > x-code-footer-lang"); 
+    const footerCopy = el.querySelector("x-code-footer > x-code-footer-copy");
+    const footerChars = el.querySelector("x-code-footer > x-code-footer-chars"); 
+
+    footerLang.innerText = preLangText; 
+    footerChars.innerText = `${preCodeText.length} chars`; 
+    footerCopy.innerText = "click to copy";
+
+    footer.addEventListener('click', async () => {
+        try {
+            await navigator.clipboard.writeText(preCodeText);
+            
+            // Visual feedback
+            const originalText = footerCopy.innerHTML;
+            footerCopy.innerHTML = "copied...";
+            
+            // Reset after 2 seconds
+            setTimeout(() => {
+                footerCopy.innerHTML = originalText;
+            }, 1500);
+            
+        } catch (err) {
+            console.log("error while copying: " + err); 
+        }
+    });
+}
+
 document.addEventListener("DOMContentLoaded", () => {
 
-    document.querySelectorAll("x-code-wrapper").forEach((el, idx) => { 
-        const pre = el.querySelector("pre"); 
-        const preCode = pre.querySelector("code"); 
-        
-        const preLangText = preCode.getAttribute("data-lang") || "plaintext"; 
-        const preCodeText = el.getAttribute("data-raw-code"); // pre.textContent || pre.innerText; 
-
-        const footer = el.querySelector("x-code-footer"); 
-        const footerLang = el.querySelector("x-code-footer > x-code-footer-lang"); 
-        const footerCopy = el.querySelector("x-code-footer > x-code-footer-copy");
-        const footerChars = el.querySelector("x-code-footer > x-code-footer-chars"); 
-
-        footerLang.innerText = preLangText; 
-        footerChars.innerText = `${preCodeText.length} chars`; 
-        footerCopy.innerText = "click to copy";
-
-        footer.addEventListener('click', async () => {
-            try {
-                await navigator.clipboard.writeText(preCodeText);
-                
-                // Visual feedback
-                const originalText = footerCopy.innerHTML;
-                footerCopy.innerHTML = "copied...";
-                
-                // Reset after 2 seconds
-                setTimeout(() => {
-                    footerCopy.innerHTML = originalText;
-                }, 1500);
-                
-            } catch (err) {
-                console.log("error while copying: " + err); 
-            }
-        });
-    });
+    document.querySelectorAll("x-code-wrapper").forEach(initCodeWrapper);
 
 });
+
+// 
+// accordian 
+// 
+
+function initAccordion() {
+  document.addEventListener('click', function(e) {
+    const btn = e.target.closest('[data-toggle="collapse"]');
+    if (!btn) return;
+
+    const target = document.querySelector(btn.dataset.target);
+    if (!target) return;
+
+    const parent = btn.dataset.parent
+      ? document.querySelector(btn.dataset.parent)
+      : target.closest('.accordion');
+
+    // Close siblings within parent
+    if (parent) {
+      parent.querySelectorAll('.accordion-collapse.show, .accordion-collapse.collapsing')
+        .forEach(function(el) {
+          if (el !== target) collapseElement(el);
+        });
+    }
+
+    // Toggle target
+    if (target.classList.contains('show')) {
+      collapseElement(target);
+    } else {
+      expandElement(target);
+    }
+  });
+}
+
+function expandElement(el) {
+  // Remove collapse, add collapsing for transition
+  el.classList.remove('collapse');
+  el.classList.add('collapsing');
+  el.style.height = '0px';
+
+  // Force reflow then set target height
+  void el.offsetHeight;
+  el.style.height = el.scrollHeight + 'px';
+
+  // Toggle button state
+  var btn = findAccordionButton(el);
+  if (btn) btn.classList.remove('collapsed');
+
+  el.addEventListener('transitionend', function handler() {
+    el.removeEventListener('transitionend', handler);
+    el.classList.remove('collapsing');
+    el.classList.add('collapse', 'show');
+    el.style.height = '';
+  });
+}
+
+function collapseElement(el) {
+  // Set explicit height so transition has a start value
+  el.style.height = el.scrollHeight + 'px';
+  void el.offsetHeight;
+
+  el.classList.remove('collapse', 'show');
+  el.classList.add('collapsing');
+  el.style.height = '0px';
+
+  // Toggle button state
+  var btn = findAccordionButton(el);
+  if (btn) btn.classList.add('collapsed');
+
+  el.addEventListener('transitionend', function handler() {
+    el.removeEventListener('transitionend', handler);
+    el.classList.remove('collapsing');
+    el.classList.add('collapse');
+    el.style.height = '';
+  });
+}
+
+function findAccordionButton(collapseEl) {
+  return document.querySelector('[data-target="#' + collapseEl.id + '"]');
+}
+
+initAccordion();
+
