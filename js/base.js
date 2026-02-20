@@ -92,8 +92,9 @@ function getStoredHueValue() {
 }
 
 function setStoredHueValue(value) { 
+
     localStorage.setItem(HUE_VALUE_KEY, 
-        value !== undefined && value !== null ? value : HUE_VALUE_DEFAULT
+        value ?? HUE_VALUE_DEFAULT
     ); 
     console.log(`local storage hue value updated: ${value}`); 
 }
@@ -103,7 +104,7 @@ function setStoredHueValue(value) {
     let pageHueIndex = getStoredHueValue(); 
     pageHueIndex = Math.max(0, Math.min(HUE_VALUE_TOTAL-1, pageHueIndex)); 
     localStorage.setItem(HUE_VALUE_KEY, pageHueIndex); 
-    
+     
     document.documentElement.style.setProperty("--color-primary-hue", 
         pageHueIndex * 360 / (HUE_VALUE_TOTAL - 1)
     );
