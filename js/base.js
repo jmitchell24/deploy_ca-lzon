@@ -92,7 +92,9 @@ function getStoredHueValue() {
 }
 
 function setStoredHueValue(value) { 
-    localStorage.setItem(HUE_VALUE_KEY, value || HUE_VALUE_DEFAULT); 
+    localStorage.setItem(HUE_VALUE_KEY, 
+        value !== undefined && value !== null ? value : HUE_VALUE_DEFAULT
+    ); 
     console.log(`local storage hue value updated: ${value}`); 
 }
 
