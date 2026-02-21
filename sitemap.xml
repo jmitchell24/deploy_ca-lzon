@@ -74,6 +74,9 @@
         <loc>https://lzon.ca/posts/page/5/</loc>
     </url>
     <url>
+        <loc>https://lzon.ca/posts/page/6/</loc>
+    </url>
+    <url>
         <loc>https://lzon.ca/posts/recipes/</loc>
     </url>
     <url>
@@ -250,6 +253,10 @@
     </url>
     <url>
         <loc>https://lzon.ca/posts/tips/page/1/</loc>
+    </url>
+    <url>
+        <loc>https://lzon.ca/posts/tips/todo-howto/</loc>
+        <lastmod>2026-02-21</lastmod>
     </url>
     <url>
         <loc>https://lzon.ca/posts/tips/zfs-dataset-tuning/</loc>
