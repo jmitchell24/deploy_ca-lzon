@@ -8,15 +8,7 @@
       <generator>Zola</generator>
       <language>en</language>
       <atom:link href="https://lzon.ca/rss.xml" rel="self" type="application/rss+xml"/>
-      <lastBuildDate>Mon, 16 Feb 2026 00:00:00 +0000</lastBuildDate>
-      <item>
-          <title>Gyroid</title>
-          <pubDate>Mon, 16 Feb 2026 00:00:00 +0000</pubDate>
-          <author>Lzon</author>
-          <link>https://lzon.ca/toys/gyroid/</link>
-          <guid>https://lzon.ca/toys/gyroid/</guid>
-          <description xml:base="https://lzon.ca/toys/gyroid/">&lt;p&gt;A test of two-dimensional signed distance fields.&lt;&#x2F;p&gt;</description>
-      </item>
+      <lastBuildDate>Fri, 13 Feb 2026 00:00:00 +0000</lastBuildDate>
       <item>
           <title>Homescreen Mantras</title>
           <pubDate>Fri, 13 Feb 2026 00:00:00 +0000</pubDate>
