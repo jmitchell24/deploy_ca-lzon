@@ -312,3 +312,153 @@ function findAccordionButton(collapseEl) {
 
 initAccordion();
 
+// 
+// qotd
+// 
+
+async function initQotd() { 
+    function getShuffledIndices(length) {
+        function rand() {
+            let t = 0x6D2B79F5;
+            t = Math.imul(t ^ t >>> 15, t | 1);
+            t ^= t + Math.imul(t ^ t >>> 7, t | 61);
+            return ((t ^ t >>> 14) >>> 0) / 4294967296;
+        }
+        const indices = Array.from({length}, (_, i) => i);
+        for (let i = length - 1; i > 0; i--) {
+            const j = Math.floor(rand() * (i + 1));
+            [indices[i], indices[j]] = [indices[j], indices[i]];
+        }
+        return indices;
+    }
+
+    function getDaysSinceEpoch() { 
+        const epochDate = new Date(1991, 7, 22); 
+        const now = new Date(); 
+        const today = new Date(now.getFullYear(), now.getMonth(), now.getDate()); 
+        return Math.floor((today - epochDate) / (1000 * 60 * 60 * 24)); 
+    }
+
+    // wait for dom to load
+    document.addEventListener("DOMContentLoaded", () => {
+
+        // wait for quotes json to load
+        fetch('/data/quotes.json').then(res => res.json()).then(data => data.quotes).then(quotes => {
+            function getSequenceQuote(offset) { 
+                const days = getDaysSinceEpoch() + (offset || 0); 
+                const cycleLength = quotes.length;
+                const cycleIndex = days % cycleLength; 
+                const indices = getShuffledIndices(cycleLength); 
+
+                return quotes[indices[cycleIndex]]; 
+            }
+
+            function getTodayQuote(offset) {
+                const now = new Date();
+                const ty = now.getFullYear();
+                const tm = now.getMonth();
+                const td = now.getDate();
+
+                const dated = quotes.find(q => {
+                    if (!q.date) return false;
+                    const d = new Date(q.date + 'T00:00:00');
+                    return d.getFullYear() === ty 
+                        && d.getMonth() === tm 
+                        && d.getDate() === td;
+                });
+
+                if (dated) { 
+                    dated.isDated = true; 
+                    return dated; 
+                }
+
+                
+                return getSequenceQuote(offset);
+            }
+
+            // 
+            // setup qotd 
+            // 
+
+            document.querySelectorAll("#qotd").forEach(el => { 
+                const elContent = el.querySelector("#qotd-content");
+                const elDate = el.querySelector("#qotd-date");
+                const elPrev = el.querySelector("#qotd-prev");
+                const elNext = el.querySelector("#qotd-next");
+                const elLabel = el.querySelector("#qotd-label");
+                
+                function updateQuote(offset) {
+                    const day = new Date();
+                    day.setDate(day.getDate() + offset);
+                    const dayString = day.toISOString().split('T')[0];
+                    const dateString = day.toLocaleDateString(undefined, {
+                        weekday: "long", year: "numeric", month: "short", day: "numeric",
+                    });
+
+                    const q = getTodayQuote(offset); 
+                    elContent.innerHTML = `<em>"${q.text}"</em> <br> - ${q.author}`;
+                    elDate.innerHTML = dateString;
+
+                    return (q.isDated) === true; 
+                }
+
+                let dayOffset = 0;
+                if (updateQuote(dayOffset)) { 
+                    elPrev.classList.toggle("disabled", true); 
+                    elNext.classList.toggle("disabled", true); 
+
+                } else { 
+                    elLabel.style = "display: none"; 
+                    elPrev.addEventListener("click", () => { updateQuote(--dayOffset); elDate.classList.toggle("text-secondary", dayOffset != 0); });
+                    elNext.addEventListener("click", () => { updateQuote(++dayOffset); elDate.classList.toggle("text-secondary", dayOffset != 0); });
+                }
+            });
+
+            // 
+            // setup quotes table 
+            // 
+
+            document.querySelectorAll("#quotes-table").forEach(el => { 
+                const elBody = document.createElement("tbody");
+                for (let i = 0; i < quotes.length; ++i) { 
+                    const q = getSequenceQuote(i);
+                    const tr = document.createElement("tr");
+
+                    const tdId = document.createElement("td"); 
+                    tdId.textContent = i.toString(); 
+
+                    const tdText = document.createElement("td");
+                    tdText.textContent = (q.text || "").trim();
+
+                    const tdAuthor = document.createElement("td");
+                    tdAuthor.textContent = q.author || "";
+
+                    const tdSchedule = document.createElement("td");
+                    const d = new Date();
+                    d.setDate(d.getDate() + i);
+                    tdSchedule.textContent = d.toLocaleDateString(undefined, {
+                        weekday: "long", year: "numeric", month: "short", day: "numeric",
+                    });
+
+
+                    tr.append(tdId, tdText, tdAuthor, tdSchedule);
+                    elBody.appendChild(tr);        
+                }
+
+                el.innerHTML = `
+                    <thead>
+                        <tr>
+                            <th>ID </th>
+                            <th>Quote</th>
+                            <th>Author</th>
+                            <th>Schedule</th>
+                        </tr>
+                    </thead>`;
+
+                el.appendChild(elBody); 
+            }); 
+        }); 
+    });
+}
+
+initQotd(); 
