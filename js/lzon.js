@@ -339,6 +339,16 @@ async function initQotd() {
         return Math.floor((today - epochDate) / (1000 * 60 * 60 * 24)); 
     }
 
+    function getDate(d) { 
+        return new Date(d + 'T00:00:00');
+    }
+
+    function getDateString(d) { 
+        return d.toLocaleDateString(undefined, {
+            weekday: "long", year: "numeric", month: "short", day: "numeric",
+        });
+    }
+
     // wait for dom to load
     document.addEventListener("DOMContentLoaded", () => {
 
@@ -361,7 +371,7 @@ async function initQotd() {
 
                 const dated = quotes.find(q => {
                     if (!q.date) return false;
-                    const d = new Date(q.date + 'T00:00:00');
+                    const d = getDate(q.date); 
                     return d.getFullYear() === ty 
                         && d.getMonth() === tm 
                         && d.getDate() === td;
@@ -390,10 +400,7 @@ async function initQotd() {
                 function updateQuote(offset) {
                     const day = new Date();
                     day.setDate(day.getDate() + offset);
-                    const dayString = day.toISOString().split('T')[0];
-                    const dateString = day.toLocaleDateString(undefined, {
-                        weekday: "long", year: "numeric", month: "short", day: "numeric",
-                    });
+                    const dateString = getDateString(day); 
 
                     const q = getTodayQuote(offset); 
                     elContent.innerHTML = `<em>"${q.text}"</em> <br> - ${q.author}`;
@@ -418,44 +425,33 @@ async function initQotd() {
             // setup quotes table 
             // 
 
-            document.querySelectorAll("#quotes-table").forEach(el => { 
-                const elBody = document.createElement("tbody");
+            document.querySelectorAll("#quote-container > #quote").forEach(el => { 
+                const elContainer = el.parentElement; 
+                
                 for (let i = 0; i < quotes.length; ++i) { 
+
                     const q = getSequenceQuote(i);
-                    const tr = document.createElement("tr");
+                    const elQuote = el.cloneNode(true); 
+                    const elDate = elQuote.querySelector("#quote-date"); 
+                    const elLabel = elQuote.querySelector("#quote-label"); 
+                    const elContent = elQuote.querySelector("#quote-content"); 
 
-                    const tdId = document.createElement("td"); 
-                    tdId.textContent = i.toString(); 
-
-                    const tdText = document.createElement("td");
-                    tdText.textContent = (q.text || "").trim();
-
-                    const tdAuthor = document.createElement("td");
-                    tdAuthor.textContent = q.author || "";
-
-                    const tdSchedule = document.createElement("td");
                     const d = new Date();
                     d.setDate(d.getDate() + i);
-                    tdSchedule.textContent = d.toLocaleDateString(undefined, {
+                    elDate.innerHTML = "Scheduled for " + d.toLocaleDateString(undefined, {
                         weekday: "long", year: "numeric", month: "short", day: "numeric",
                     });
+                    
+                    if (q.date) { 
+                        elLabel.innerHTML = "Added " + getDateString(getDate(q.date)); 
+                    }
+                    
+                    elContent.innerHTML = `<em>"${q.text}"</em> <br> - ${q.author}`;
 
+                    elContainer.appendChild(elQuote); 
+                } 
 
-                    tr.append(tdId, tdText, tdAuthor, tdSchedule);
-                    elBody.appendChild(tr);        
-                }
-
-                el.innerHTML = `
-                    <thead>
-                        <tr>
-                            <th>ID </th>
-                            <th>Quote</th>
-                            <th>Author</th>
-                            <th>Schedule</th>
-                        </tr>
-                    </thead>`;
-
-                el.appendChild(elBody); 
+                el.remove();
             }); 
         }); 
     });
