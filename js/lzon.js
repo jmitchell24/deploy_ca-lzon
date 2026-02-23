@@ -364,7 +364,7 @@ async function initQotd() {
         fetch('/data/quotes.json')
             .then(res => res.json())
             .then(data => data.quotes)
-            .then(quotes => delay(1000).then(() => quotes))
+            .then(quotes => delay(10).then(() => quotes))
             .then(quotes => {
             function getSequenceQuote(offset) { 
                 const days = getDaysSinceEpoch() + (offset || 0); 
