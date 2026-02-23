@@ -351,9 +351,21 @@ async function initQotd() {
 
     // wait for dom to load
     document.addEventListener("DOMContentLoaded", () => {
+        
+        const elAllQotd = document.querySelectorAll("#qotd");
+        const elAllQuoteContainer = document.querySelectorAll("#quote-container > #quote:only-child");
+
+        // early out if no dom to work with
+        if (!(elAllQotd.length || elAllQuoteContainer.length)) 
+            return; 
 
         // wait for quotes json to load
-        fetch('/data/quotes.json').then(res => res.json()).then(data => data.quotes).then(quotes => {
+        const delay = ms => new Promise(resolve => setTimeout(resolve, ms));
+        fetch('/data/quotes.json')
+            .then(res => res.json())
+            .then(data => data.quotes)
+            .then(quotes => delay(1000).then(() => quotes))
+            .then(quotes => {
             function getSequenceQuote(offset) { 
                 const days = getDaysSinceEpoch() + (offset || 0); 
                 const cycleLength = quotes.length;
@@ -390,7 +402,7 @@ async function initQotd() {
             // setup qotd 
             // 
 
-            document.querySelectorAll("#qotd").forEach(el => { 
+            elAllQotd.forEach(el => { 
                 const elContent = el.querySelector("#qotd-content");
                 const elDate = el.querySelector("#qotd-date");
                 const elPrev = el.querySelector("#qotd-prev");
@@ -425,7 +437,7 @@ async function initQotd() {
             // setup quotes table 
             // 
 
-            document.querySelectorAll("#quote-container > #quote").forEach(el => { 
+            elAllQuoteContainer.forEach(el => { 
                 const elContainer = el.parentElement; 
                 
                 for (let i = 0; i < quotes.length; ++i) { 
@@ -458,3 +470,72 @@ async function initQotd() {
 }
 
 initQotd(); 
+
+// 
+// changelog 
+// 
+
+async function initChangelog() { 
+    const trimMargin = str => str.replace(/^[ \t]*\|/gm, '').trim();
+
+    const formatBytes = kb => {
+        if (kb < 1024) return `${kb} KB`;
+        if (kb < 1024 ** 2) return `${(kb / 1024).toFixed(1)} MB`;
+        if (kb < 1024 ** 3) return `${(kb / 1024 ** 2).toFixed(1)} GB`;
+        return `${(kb / 1024 ** 3).toFixed(1)} TB`;
+    };
+
+    const formatDate = unix => new Date(unix * 1000).toLocaleString('en-CA', {
+        year: 'numeric', month: 'long', day: 'numeric',
+    });
+
+    const formatTime = unix => new Date(unix * 1000).toLocaleString('en-CA', {
+        hour: 'numeric', minute: '2-digit', second: '2-digit'
+    });
+
+    // wait for dom to load
+    document.addEventListener("DOMContentLoaded", () => {
+
+        const elChangelog = document.querySelectorAll("#changelog"); 
+
+        // early out if no dom to work with
+        if (!elChangelog) return; 
+        
+        // wait for json to load
+        fetch('/data/changelog.json').then(res => res.json()).then(data => {
+            elChangelog.forEach(el => {
+                
+                
+                let html = ""
+
+                const buildStr = `
+                |# Build 
+                |    - date: <span class="z-string">${formatDate(data.timestamp)}</span>
+                |    - time: <span class="z-constant">${formatTime(data.timestamp)}</span>
+                |
+                |# Changelog
+                `;
+                
+                html += trimMargin(buildStr); 
+
+                data.commits.forEach(it => { 
+                    const itStr = `<br>
+                    |<span class="z-name">${it.header} </span>
+                    |    - date: <span class="z-string">${it.date}</span>
+                    |    - hash: <span class="z-constant">${it.hash}</span>
+                    |    - changes: <span class=" ">${it.changes.trim()}</span>
+                    |    - file count: <span class="z-constant">${it.file_count}</span>
+                    |    - size: <span class="z-constant">${formatBytes(it.repo_size_kb)}</span>
+                    `;
+                    
+                    html += trimMargin(itStr); 
+                });
+
+                el.innerHTML = html; 
+            }); 
+        }); 
+    });
+}
+
+initChangelog(); 
+
