@@ -364,7 +364,7 @@ async function initQotd() {
         fetch('/data/quotes.json')
             .then(res => res.json())
             .then(data => data.quotes)
-            .then(quotes => delay(10).then(() => quotes))
+            //.then(quotes => delay(1220).then(() => quotes))
             .then(quotes => {
             function getSequenceQuote(offset) { 
                 const days = getDaysSinceEpoch() + (offset || 0); 
@@ -431,6 +431,8 @@ async function initQotd() {
                     elPrev.addEventListener("click", () => { updateQuote(--dayOffset); elDate.classList.toggle("text-secondary", dayOffset != 0); });
                     elNext.addEventListener("click", () => { updateQuote(++dayOffset); elDate.classList.toggle("text-secondary", dayOffset != 0); });
                 }
+
+                el.classList.toggle("animate-fade-in-md", true); 
             });
 
             // 
@@ -459,6 +461,9 @@ async function initQotd() {
                     }
                     
                     elContent.innerHTML = `<em>"${q.text}"</em> <br> - ${q.author}`;
+
+                    elQuote.style.animationDelay = `${i * 50}ms`;
+                    elQuote.classList.add("animate-fade-in-md"); 
 
                     elContainer.appendChild(elQuote); 
                 } 
