@@ -339,8 +339,8 @@ async function initQotd() {
         return Math.floor((today - epochDate) / (1000 * 60 * 60 * 24)); 
     }
 
-    function getDate(d) { 
-        return new Date(d + 'T00:00:00');
+    function getQuoteDate(quote) { 
+        return quote.date ? new Date(quote.date + "T00:00:00") : null; 
     }
 
     function getDateString(d) { 
@@ -366,6 +366,8 @@ async function initQotd() {
             .then(data => data.quotes)
             //.then(quotes => delay(1220).then(() => quotes))
             .then(quotes => {
+
+
             function getSequenceQuote(offset) { 
                 const days = getDaysSinceEpoch() + (offset || 0); 
                 const cycleLength = quotes.length;
@@ -373,29 +375,6 @@ async function initQotd() {
                 const indices = getShuffledIndices(cycleLength); 
 
                 return quotes[indices[cycleIndex]]; 
-            }
-
-            function getTodayQuote(offset) {
-                const now = new Date();
-                const ty = now.getFullYear();
-                const tm = now.getMonth();
-                const td = now.getDate();
-
-                const dated = quotes.find(q => {
-                    if (!q.date) return false;
-                    const d = getDate(q.date); 
-                    return d.getFullYear() === ty 
-                        && d.getMonth() === tm 
-                        && d.getDate() === td;
-                });
-
-                if (dated) { 
-                    dated.isDated = true; 
-                    return dated; 
-                }
-
-                
-                return getSequenceQuote(offset);
             }
 
             // 
@@ -413,24 +392,28 @@ async function initQotd() {
                     const day = new Date();
                     day.setDate(day.getDate() + offset);
                     const dateString = getDateString(day); 
-
-                    const q = getTodayQuote(offset); 
+                    
+                    let q = getSequenceQuote(offset); 
+                    
+                    if (q.date) { 
+                        elLabel.innerHTML = getDateString(getQuoteDate(q)); 
+                    } else { 
+                        elLabel.innerHTML = ""; 
+                    }
+                    
+                    
                     elContent.innerHTML = `<em>"${q.text}"</em> <br> - ${q.author}`;
                     elDate.innerHTML = dateString;
-
-                    return (q.isDated) === true; 
+                    
+                    
                 }
 
                 let dayOffset = 0;
-                if (updateQuote(dayOffset)) { 
-                    elPrev.classList.toggle("disabled", true); 
-                    elNext.classList.toggle("disabled", true); 
-
-                } else { 
-                    elLabel.style = "display: none"; 
-                    elPrev.addEventListener("click", () => { updateQuote(--dayOffset); elDate.classList.toggle("text-secondary", dayOffset != 0); });
-                    elNext.addEventListener("click", () => { updateQuote(++dayOffset); elDate.classList.toggle("text-secondary", dayOffset != 0); });
-                }
+                
+                
+                updateQuote(dayOffset);
+                elPrev.addEventListener("click", () => { updateQuote(--dayOffset); elDate.classList.toggle("text-secondary", dayOffset != 0); });
+                elNext.addEventListener("click", () => { updateQuote(++dayOffset); elDate.classList.toggle("text-secondary", dayOffset != 0); });
 
                 el.classList.toggle("animate-fade-in-md", true); 
             });
@@ -457,7 +440,7 @@ async function initQotd() {
                     });
                     
                     if (q.date) { 
-                        elLabel.innerHTML = "Added " + getDateString(getDate(q.date)); 
+                        elLabel.innerHTML = "Added " + getDateString(getQuoteDate(q)); 
                     }
                     
                     elContent.innerHTML = `<em>"${q.text}"</em> <br> - ${q.author}`;
