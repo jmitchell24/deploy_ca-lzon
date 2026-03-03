@@ -317,6 +317,7 @@ initAccordion();
 // 
 
 async function initQotd() { 
+    //https://stackoverflow.com/questions/2450954/how-to-randomize-shuffle-a-javascript-array
     function getShuffledIndices(length) {
         function rand() {
             let t = 0x6D2B79F5;
@@ -324,6 +325,7 @@ async function initQotd() {
             t ^= t + Math.imul(t ^ t >>> 7, t | 61);
             return ((t ^ t >>> 14) >>> 0) / 4294967296;
         }
+        
         const indices = Array.from({length}, (_, i) => i);
         for (let i = length - 1; i > 0; i--) {
             const j = Math.floor(rand() * (i + 1));
@@ -367,13 +369,11 @@ async function initQotd() {
             //.then(quotes => delay(1220).then(() => quotes))
             .then(quotes => {
 
+            const indices = getShuffledIndices(quotes.length);
 
             function getSequenceQuote(offset) { 
                 const days = getDaysSinceEpoch() + (offset || 0); 
-                const cycleLength = quotes.length;
-                const cycleIndex = days % cycleLength; 
-                const indices = getShuffledIndices(cycleLength); 
-
+                const cycleIndex = days % quotes.length; 
                 return quotes[indices[cycleIndex]]; 
             }
 
