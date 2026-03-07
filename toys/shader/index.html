@@ -402,6 +402,9 @@ void mainImage( out vec4 fragColor, in vec2 fragCoord )
                 uniform vec4    iColorPrimary;
                 uniform vec4    iColorPrimaryDark; 
                 uniform vec4    iColorPrimaryLight; 
+                uniform vec4    iColorSecondary;
+                uniform vec4    iColorTertiary;
+
                 uniform int     iAA; 
             `; 
 
@@ -466,6 +469,8 @@ void mainImage( out vec4 fragColor, in vec2 fragCoord )
             this.uniforms.push({ name:"iColorPrimary"       , submit: (loc) => { gl.uniform4f(loc, ...this.iColorPrimary);      }});
             this.uniforms.push({ name:"iColorPrimaryDark"   , submit: (loc) => { gl.uniform4f(loc, ...this.iColorPrimaryDark);  }});
             this.uniforms.push({ name:"iColorPrimaryLight"  , submit: (loc) => { gl.uniform4f(loc, ...this.iColorPrimaryLight); }});
+            this.uniforms.push({ name:"iColorSecondary", submit: (loc) => { gl.uniform4f(loc, ...this.iColorSecondary); }});
+            this.uniforms.push({ name:"iColorTertiary",  submit: (loc) => { gl.uniform4f(loc, ...this.iColorTertiary);  }});
 
             this.uniforms.push({ name:"iAA"                 , submit: (loc) => { gl.uniform1i(loc,    this.iAA);              }});
 
@@ -493,6 +498,9 @@ void mainImage( out vec4 fragColor, in vec2 fragCoord )
             this.iColorDarker  = parseCSSColorToFloat('--color-darker');
             
             this.iColorPrimary = parseCSSColorToFloat('--color-primary');
+            this.iColorSecondary = parseCSSColorToFloat('--color-secondary');
+            this.iColorTertiary  = parseCSSColorToFloat('--color-tertiary');
+
             this.iColorPrimaryDark = parseCSSColorToFloat('--color-primary-dark');
             this.iColorPrimaryLight = parseCSSColorToFloat('--color-primary-light');
 

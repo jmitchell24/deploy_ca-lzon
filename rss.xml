@@ -8,7 +8,27 @@
       <generator>Zola</generator>
       <language>en</language>
       <atom:link href="https://lzon.ca/rss.xml" rel="self" type="application/rss+xml"/>
-      <lastBuildDate>Tue, 03 Mar 2026 00:00:00 +0000</lastBuildDate>
+      <lastBuildDate>Sat, 07 Mar 2026 00:00:00 +0000</lastBuildDate>
+      <item>
+          <title>Waves</title>
+          <pubDate>Sat, 07 Mar 2026 00:00:00 +0000</pubDate>
+          <author>Lzon</author>
+          <link>https://lzon.ca/toys/waves/</link>
+          <guid>https://lzon.ca/toys/waves/</guid>
+          <description xml:base="https://lzon.ca/toys/waves/">&lt;p&gt;This is just a simple idea I had for a wallpaper that I wanted.&lt;&#x2F;p&gt;
+&lt;p&gt;It’s been a while since I worked on this shader rendering code for the site,
+so I also see as this as an opportunity to give it a bit of TLC.&lt;&#x2F;p&gt;
+&lt;p&gt;If you do want to capture this as a wallpaper, I highly recommend that you use supersampling, it significantly reduces the aliasing effects on the wave lines.&lt;&#x2F;p&gt;
+&lt;p&gt;I hope you enjoy my little code sketch. If you do, don’t hesitate to reach out either at &lt;a href=&quot;mailto:&#x2F;&#x2F;mail@lzon.ca&quot;&gt;mail@lzon.ca&lt;&#x2F;a&gt;, or one of my socials (all on the homepage).&lt;&#x2F;p&gt;</description>
+      </item>
+      <item>
+          <title>My Big Macaroni Painting</title>
+          <pubDate>Thu, 05 Mar 2026 00:00:00 +0000</pubDate>
+          <author>Lzon</author>
+          <link>https://lzon.ca/posts/life/macaroni/</link>
+          <guid>https://lzon.ca/posts/life/macaroni/</guid>
+          <description xml:base="https://lzon.ca/posts/life/macaroni/"></description>
+      </item>
       <item>
           <title>3 tips for your to-do list</title>
           <pubDate>Sat, 21 Feb 2026 00:00:00 +0000</pubDate>
