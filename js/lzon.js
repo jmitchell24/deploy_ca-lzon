@@ -89,7 +89,7 @@ function getStoredHueValue() {
 
     console.log(`hue value found in local storage: ${value}`); 
     return value; 
-}
+} 
 
 function setStoredHueValue(value) { 
 
