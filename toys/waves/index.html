@@ -236,6 +236,27 @@
 
             new ResizeObserver(() => this.resize()).observe(this.canvas);
 
+            // Watch for theme changes (hue = style on <html>, dark mode = attr on <body>)
+            const refreshColors = () => {
+                console.log("refresh colors"); 
+                
+                this.iColorLighter      = parseCSSColorToFloat('--color-lighter');
+                this.iColorLight        = parseCSSColorToFloat('--color-light');
+                this.iColorGray         = parseCSSColorToFloat('--color-gray');
+                this.iColorDark         = parseCSSColorToFloat('--color-dark');
+                this.iColorDarker       = parseCSSColorToFloat('--color-darker');
+                this.iColorPrimary      = parseCSSColorToFloat('--color-primary');
+                this.iColorSecondary    = parseCSSColorToFloat('--color-secondary');
+                this.iColorTertiary     = parseCSSColorToFloat('--color-tertiary');
+                this.iColorPrimaryDark  = parseCSSColorToFloat('--color-primary-dark');
+                this.iColorPrimaryLight = parseCSSColorToFloat('--color-primary-light');
+                
+            };
+
+            new MutationObserver(refreshColors).observe(document.documentElement, { attributes: true, attributeFilter: ['style'] });
+            new MutationObserver(refreshColors).observe(document.body, { attributes: true, attributeFilter: ['data-dark-mode'] });
+
+
             // 
             // capture buttons
             // 
