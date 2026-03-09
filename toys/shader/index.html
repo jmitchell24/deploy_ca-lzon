@@ -370,6 +370,8 @@ void mainImage( out vec4 fragColor, in vec2 fragCoord )
             this.elTimeRange.value = this.maxTime;  
 
             this.lastNow = Date.now(); 
+
+            requestAnimationFrame(() => this.render()); // jump-start render
         }
 
         resetSketch() { 
@@ -600,7 +602,8 @@ void mainImage( out vec4 fragColor, in vec2 fragCoord )
             if (this.fpsInterval > 0) {
                 const elapsed = now - this.lastRenderTime;
                 if (elapsed < this.fpsInterval) {
-                    requestAnimationFrame(() => this.render());
+                    setTimeout(() => requestAnimationFrame(() => this.render()), 
+                            this.fpsInterval - elapsed);
                     return;
                 }
                 // Snap to interval to avoid drift
@@ -631,7 +634,10 @@ void mainImage( out vec4 fragColor, in vec2 fragCoord )
             this.uniforms.forEach( e => e.submit(e.loc) ); 
             
             gl.drawArrays(gl.TRIANGLE_STRIP, 0, 4);
-            requestAnimationFrame(() => this.render());
+
+            if (!this.isPaused) {
+                requestAnimationFrame(() => this.render());
+            }
 
             // 
             // performance counters 
