@@ -3,11 +3,19 @@
     vec2 uv = fragCoord / iResolution.xy;
 
     // Color sequence from top wave to bottom (last entry is the background)
-    vec3 colors[4];
+    vec3 colors[3];
     colors[0] = iColorPrimary.xyz;      // top wave
     colors[1] = iColorSecondary.xyz;    // second wave
     colors[2] = iColorTertiary.xyz;     // third wave
-    colors[3] = vec3(0);                // background (black)
+    // colors[3] = vec3(0);                // background (black)
+
+    vec3 bgColors[6];
+    bgColors[0] = vec3(0.18);
+    bgColors[1] = vec3(0.14);
+    bgColors[2] = vec3(0.11);
+    bgColors[3] = vec3(0.09);
+    bgColors[4] = vec3(0.07);
+    bgColors[5] = vec3(0.0);
     
 
     // Amplitude oscillates slowly over time for a breathing effect
@@ -15,12 +23,24 @@
 
     vec3 col = vec3(0.0); // start with black
 
-
-
-    for (int i = 0; i < 4; i++) {
+    // Background: 6 gray waves, darker, behind everything
+    for (int i = 0; i < 6; i++) {
+        float center = 0.90 - float(i) * 0.17;
+        float wave = center
+            + amp * 0.25 * sin(uv.x * 9.3  + iTime * 0.3)
+            + amp * 0.15 * sin(uv.x * 2.8  - iTime * 1.1);
+        float dist = abs(uv.y - wave);
+        float fill   = 1.0 / (1.0 + exp((uv.y - wave) * 122.0));
+        float groove = 1.0 - exp(-dist * 60.0);
+        float line   = step(dist, 0.004);
+        col = mix(col, mix(vec3(0.0), bgColors[i], groove), smoothstep(0.0, 1.0, fill));
+        col = mix(col, i == 5 ? bgColors[4] : bgColors[i], line);
+    }
+    
+    for (int i = 0; i < 3; i++) {
 
         // Vertical center of this wave, evenly spaced downward
-        float center = 0.75 - float(i) * 0.18;
+        float center = 0.55 - float(i) * 0.18;
 
         // Wave shape: sum of sines at incommensurate frequencies and speeds
         // produces a chaotic, non-repeating motion
@@ -46,7 +66,7 @@
         col = mix(col, mix(vec3(0.0), colors[i], groove), smoothstep(0.0, 1.0, fill));
 
         // Stamp the wave line on top. Last wave uses the previous color to avoid a black line.
-        col = mix(col, i == 3 ? colors[2] : colors[i], line);
+        col = mix(col, i == 2 ? colors[1] : colors[i], line);
 
     }
 
@@ -61,59 +81,79 @@
 <span class="giallo-l"><span aria-hidden="true" class="giallo-ln"> 3</span><span>    vec2 uv </span><span class="z-keyword">=</span><span> fragCoord </span><span class="z-keyword">/</span><span class="z-variable z-other"> iResolution</span><span>.</span><span class="z-variable z-other">xy</span><span>;</span></span>
 <span class="giallo-l"><span aria-hidden="true" class="giallo-ln"> 4</span></span>
 <span class="giallo-l"><span aria-hidden="true" class="giallo-ln"> 5</span><span class="z-punctuation z-definition z-comment">    //</span><span class="z-comment"> Color sequence from top wave to bottom (last entry is the background)</span></span>
-<span class="giallo-l"><span aria-hidden="true" class="giallo-ln"> 6</span><span>    vec3 </span><span class="z-variable">colors</span><span>[</span><span class="z-constant">4</span><span>]</span><span>;</span></span>
+<span class="giallo-l"><span aria-hidden="true" class="giallo-ln"> 6</span><span>    vec3 </span><span class="z-variable">colors</span><span>[</span><span class="z-constant">3</span><span>]</span><span>;</span></span>
 <span class="giallo-l"><span aria-hidden="true" class="giallo-ln"> 7</span><span class="z-variable">    colors</span><span>[</span><span class="z-constant">0</span><span>]</span><span class="z-keyword"> =</span><span class="z-variable z-other"> iColorPrimary</span><span>.</span><span class="z-variable z-other">xyz</span><span>;</span><span class="z-punctuation z-definition z-comment">      //</span><span class="z-comment"> top wave</span></span>
 <span class="giallo-l"><span aria-hidden="true" class="giallo-ln"> 8</span><span class="z-variable">    colors</span><span>[</span><span class="z-constant">1</span><span>]</span><span class="z-keyword"> =</span><span class="z-variable z-other"> iColorSecondary</span><span>.</span><span class="z-variable z-other">xyz</span><span>;</span><span class="z-punctuation z-definition z-comment">    //</span><span class="z-comment"> second wave</span></span>
 <span class="giallo-l"><span aria-hidden="true" class="giallo-ln"> 9</span><span class="z-variable">    colors</span><span>[</span><span class="z-constant">2</span><span>]</span><span class="z-keyword"> =</span><span class="z-variable z-other"> iColorTertiary</span><span>.</span><span class="z-variable z-other">xyz</span><span>;</span><span class="z-punctuation z-definition z-comment">     //</span><span class="z-comment"> third wave</span></span>
-<span class="giallo-l"><span aria-hidden="true" class="giallo-ln">10</span><span class="z-variable">    colors</span><span>[</span><span class="z-constant">3</span><span>]</span><span class="z-keyword"> =</span><span class="z-entity z-name"> vec3</span><span>(</span><span class="z-constant">0</span><span>)</span><span>;</span><span class="z-punctuation z-definition z-comment">                //</span><span class="z-comment"> background (black)</span></span>
-<span class="giallo-l"><span aria-hidden="true" class="giallo-ln">11</span><span>    </span></span>
-<span class="giallo-l"><span aria-hidden="true" class="giallo-ln">12</span></span>
-<span class="giallo-l"><span aria-hidden="true" class="giallo-ln">13</span><span class="z-punctuation z-definition z-comment">    //</span><span class="z-comment"> Amplitude oscillates slowly over time for a breathing effect</span></span>
-<span class="giallo-l"><span aria-hidden="true" class="giallo-ln">14</span><span class="z-storage z-type">    float</span><span> amp </span><span class="z-keyword">=</span><span class="z-constant"> 0</span><span class="z-constant">.</span><span class="z-constant">07</span><span class="z-keyword"> +</span><span class="z-constant"> 0</span><span class="z-constant">.</span><span class="z-constant">0003</span><span class="z-keyword"> *</span><span class="z-entity z-name"> sin</span><span>(</span><span>iTime</span><span>)</span><span>;</span></span>
-<span class="giallo-l"><span aria-hidden="true" class="giallo-ln">15</span></span>
-<span class="giallo-l"><span aria-hidden="true" class="giallo-ln">16</span><span>    vec3 col </span><span class="z-keyword">=</span><span class="z-entity z-name"> vec3</span><span>(</span><span class="z-constant">0</span><span class="z-constant">.</span><span class="z-constant">0</span><span>)</span><span>;</span><span class="z-punctuation z-definition z-comment"> //</span><span class="z-comment"> start with black</span></span>
-<span class="giallo-l"><span aria-hidden="true" class="giallo-ln">17</span></span>
-<span class="giallo-l"><span aria-hidden="true" class="giallo-ln">18</span></span>
-<span class="giallo-l"><span aria-hidden="true" class="giallo-ln">19</span></span>
-<span class="giallo-l"><span aria-hidden="true" class="giallo-ln">20</span><span class="z-keyword">    for</span><span> (</span><span class="z-storage z-type">int</span><span> i </span><span class="z-keyword">=</span><span class="z-constant"> 0</span><span>;</span><span> i </span><span class="z-keyword">&lt;</span><span class="z-constant"> 4</span><span>;</span><span> i</span><span class="z-keyword">++</span><span>)</span><span> {</span></span>
-<span class="giallo-l"><span aria-hidden="true" class="giallo-ln">21</span></span>
-<span class="giallo-l"><span aria-hidden="true" class="giallo-ln">22</span><span class="z-punctuation z-definition z-comment">        //</span><span class="z-comment"> Vertical center of this wave, evenly spaced downward</span></span>
-<span class="giallo-l"><span aria-hidden="true" class="giallo-ln">23</span><span class="z-storage z-type">        float</span><span> center </span><span class="z-keyword">=</span><span class="z-constant"> 0</span><span class="z-constant">.</span><span class="z-constant">75</span><span class="z-keyword"> -</span><span class="z-storage z-type"> float</span><span>(</span><span>i</span><span>)</span><span class="z-keyword"> *</span><span class="z-constant"> 0</span><span class="z-constant">.</span><span class="z-constant">18</span><span>;</span></span>
-<span class="giallo-l"><span aria-hidden="true" class="giallo-ln">24</span></span>
-<span class="giallo-l"><span aria-hidden="true" class="giallo-ln">25</span><span class="z-punctuation z-definition z-comment">        //</span><span class="z-comment"> Wave shape: sum of sines at incommensurate frequencies and speeds</span></span>
-<span class="giallo-l"><span aria-hidden="true" class="giallo-ln">26</span><span class="z-punctuation z-definition z-comment">        //</span><span class="z-comment"> produces a chaotic, non-repeating motion</span></span>
-<span class="giallo-l"><span aria-hidden="true" class="giallo-ln">27</span><span class="z-storage z-type">        float</span><span> wave </span><span class="z-keyword">=</span><span> center</span></span>
-<span class="giallo-l"><span aria-hidden="true" class="giallo-ln">28</span><span class="z-keyword">            +</span><span> amp </span><span class="z-keyword">*</span><span class="z-constant"> 0</span><span class="z-constant">.</span><span class="z-constant">3</span><span class="z-keyword"> *</span><span class="z-entity z-name"> sin</span><span>(</span><span class="z-variable z-other">uv</span><span>.</span><span class="z-variable z-other">x</span><span class="z-keyword"> *</span><span class="z-constant"> 13</span><span class="z-constant">.</span><span class="z-constant">1</span><span class="z-keyword"> -</span><span> iTime </span><span class="z-keyword">*</span><span class="z-constant"> 0</span><span class="z-constant">.</span><span class="z-constant">6</span><span>)</span><span class="z-punctuation z-definition z-comment">   //</span><span class="z-comment"> higher freq, slower</span></span>
-<span class="giallo-l"><span aria-hidden="true" class="giallo-ln">29</span><span class="z-keyword">            +</span><span> amp </span><span class="z-keyword">*</span><span class="z-constant"> 0</span><span class="z-constant">.</span><span class="z-constant">2</span><span class="z-keyword"> *</span><span class="z-entity z-name"> sin</span><span>(</span><span class="z-variable z-other">uv</span><span>.</span><span class="z-variable z-other">x</span><span class="z-keyword"> *</span><span class="z-constant"> 3</span><span class="z-constant">.</span><span class="z-constant">7</span><span class="z-keyword">  +</span><span> iTime </span><span class="z-keyword">*</span><span class="z-constant"> 2</span><span class="z-constant">.</span><span class="z-constant">3</span><span>)</span><span>;</span><span class="z-punctuation z-definition z-comment">  //</span><span class="z-comment"> low freq, opposite direction</span></span>
-<span class="giallo-l"><span aria-hidden="true" class="giallo-ln">30</span></span>
-<span class="giallo-l"><span aria-hidden="true" class="giallo-ln">31</span><span class="z-storage z-type">        float</span><span> dist </span><span class="z-keyword">=</span><span class="z-entity z-name"> abs</span><span>(</span><span class="z-variable z-other">uv</span><span>.</span><span class="z-variable z-other">y</span><span class="z-keyword"> -</span><span> wave</span><span>)</span><span>;</span></span>
-<span class="giallo-l"><span aria-hidden="true" class="giallo-ln">32</span></span>
-<span class="giallo-l"><span aria-hidden="true" class="giallo-ln">33</span><span class="z-punctuation z-definition z-comment">        //</span><span class="z-comment"> Sigmoid fill: full color below the wave, fades sharply to nothing above.</span></span>
-<span class="giallo-l"><span aria-hidden="true" class="giallo-ln">34</span><span class="z-punctuation z-definition z-comment">        //</span><span class="z-comment"> High steepness (122) makes it nearly a hard step.</span></span>
-<span class="giallo-l"><span aria-hidden="true" class="giallo-ln">35</span><span class="z-storage z-type">        float</span><span> fill </span><span class="z-keyword">=</span><span class="z-constant"> 1</span><span class="z-constant">.</span><span class="z-constant">0</span><span class="z-keyword"> /</span><span> (</span><span class="z-constant">1</span><span class="z-constant">.</span><span class="z-constant">0</span><span class="z-keyword"> +</span><span class="z-entity z-name"> exp</span><span>(</span><span>(</span><span class="z-variable z-other">uv</span><span>.</span><span class="z-variable z-other">y</span><span class="z-keyword"> -</span><span> wave</span><span>)</span><span class="z-keyword"> *</span><span class="z-constant"> 122</span><span class="z-constant">.</span><span class="z-constant">0</span><span>)</span><span>)</span><span>;</span></span>
-<span class="giallo-l"><span aria-hidden="true" class="giallo-ln">36</span></span>
-<span class="giallo-l"><span aria-hidden="true" class="giallo-ln">37</span><span class="z-punctuation z-definition z-comment">        //</span><span class="z-comment"> Groove: darkens the fill near the wave boundary.</span></span>
-<span class="giallo-l"><span aria-hidden="true" class="giallo-ln">38</span><span class="z-punctuation z-definition z-comment">        //</span><span class="z-comment"> 0 exactly at the wave line, recovers exponentially with distance.</span></span>
-<span class="giallo-l"><span aria-hidden="true" class="giallo-ln">39</span><span class="z-storage z-type">        float</span><span> groove </span><span class="z-keyword">=</span><span class="z-constant"> 1</span><span class="z-constant">.</span><span class="z-constant">0</span><span class="z-keyword"> -</span><span class="z-entity z-name"> exp</span><span>(</span><span class="z-keyword">-</span><span>dist </span><span class="z-keyword">*</span><span class="z-constant"> 60</span><span class="z-constant">.</span><span class="z-constant">0</span><span>)</span><span>;</span></span>
-<span class="giallo-l"><span aria-hidden="true" class="giallo-ln">40</span></span>
-<span class="giallo-l"><span aria-hidden="true" class="giallo-ln">41</span><span class="z-punctuation z-definition z-comment">        //</span><span class="z-comment"> Hard line: 1-pixel-wide bright stripe exactly at the wave.</span></span>
-<span class="giallo-l"><span aria-hidden="true" class="giallo-ln">42</span><span class="z-punctuation z-definition z-comment">        //</span><span class="z-comment"> Rendered on top of the groove to restore brightness at the edge.</span></span>
-<span class="giallo-l"><span aria-hidden="true" class="giallo-ln">43</span><span class="z-storage z-type">        float</span><span> line </span><span class="z-keyword">=</span><span class="z-entity z-name"> step</span><span>(</span><span>dist</span><span>,</span><span class="z-constant"> 0</span><span class="z-constant">.</span><span class="z-constant">004</span><span>)</span><span>;</span></span>
+<span class="giallo-l"><span aria-hidden="true" class="giallo-ln">10</span><span class="z-punctuation z-definition z-comment">    //</span><span class="z-comment"> colors[3] = vec3(0);                // background (black)</span></span>
+<span class="giallo-l"><span aria-hidden="true" class="giallo-ln">11</span></span>
+<span class="giallo-l"><span aria-hidden="true" class="giallo-ln">12</span><span>    vec3 </span><span class="z-variable">bgColors</span><span>[</span><span class="z-constant">6</span><span>]</span><span>;</span></span>
+<span class="giallo-l"><span aria-hidden="true" class="giallo-ln">13</span><span class="z-variable">    bgColors</span><span>[</span><span class="z-constant">0</span><span>]</span><span class="z-keyword"> =</span><span class="z-entity z-name"> vec3</span><span>(</span><span class="z-constant">0</span><span class="z-constant">.</span><span class="z-constant">18</span><span>)</span><span>;</span></span>
+<span class="giallo-l"><span aria-hidden="true" class="giallo-ln">14</span><span class="z-variable">    bgColors</span><span>[</span><span class="z-constant">1</span><span>]</span><span class="z-keyword"> =</span><span class="z-entity z-name"> vec3</span><span>(</span><span class="z-constant">0</span><span class="z-constant">.</span><span class="z-constant">14</span><span>)</span><span>;</span></span>
+<span class="giallo-l"><span aria-hidden="true" class="giallo-ln">15</span><span class="z-variable">    bgColors</span><span>[</span><span class="z-constant">2</span><span>]</span><span class="z-keyword"> =</span><span class="z-entity z-name"> vec3</span><span>(</span><span class="z-constant">0</span><span class="z-constant">.</span><span class="z-constant">11</span><span>)</span><span>;</span></span>
+<span class="giallo-l"><span aria-hidden="true" class="giallo-ln">16</span><span class="z-variable">    bgColors</span><span>[</span><span class="z-constant">3</span><span>]</span><span class="z-keyword"> =</span><span class="z-entity z-name"> vec3</span><span>(</span><span class="z-constant">0</span><span class="z-constant">.</span><span class="z-constant">09</span><span>)</span><span>;</span></span>
+<span class="giallo-l"><span aria-hidden="true" class="giallo-ln">17</span><span class="z-variable">    bgColors</span><span>[</span><span class="z-constant">4</span><span>]</span><span class="z-keyword"> =</span><span class="z-entity z-name"> vec3</span><span>(</span><span class="z-constant">0</span><span class="z-constant">.</span><span class="z-constant">07</span><span>)</span><span>;</span></span>
+<span class="giallo-l"><span aria-hidden="true" class="giallo-ln">18</span><span class="z-variable">    bgColors</span><span>[</span><span class="z-constant">5</span><span>]</span><span class="z-keyword"> =</span><span class="z-entity z-name"> vec3</span><span>(</span><span class="z-constant">0</span><span class="z-constant">.</span><span class="z-constant">0</span><span>)</span><span>;</span></span>
+<span class="giallo-l"><span aria-hidden="true" class="giallo-ln">19</span><span>    </span></span>
+<span class="giallo-l"><span aria-hidden="true" class="giallo-ln">20</span></span>
+<span class="giallo-l"><span aria-hidden="true" class="giallo-ln">21</span><span class="z-punctuation z-definition z-comment">    //</span><span class="z-comment"> Amplitude oscillates slowly over time for a breathing effect</span></span>
+<span class="giallo-l"><span aria-hidden="true" class="giallo-ln">22</span><span class="z-storage z-type">    float</span><span> amp </span><span class="z-keyword">=</span><span class="z-constant"> 0</span><span class="z-constant">.</span><span class="z-constant">07</span><span class="z-keyword"> +</span><span class="z-constant"> 0</span><span class="z-constant">.</span><span class="z-constant">0003</span><span class="z-keyword"> *</span><span class="z-entity z-name"> sin</span><span>(</span><span>iTime</span><span>)</span><span>;</span></span>
+<span class="giallo-l"><span aria-hidden="true" class="giallo-ln">23</span></span>
+<span class="giallo-l"><span aria-hidden="true" class="giallo-ln">24</span><span>    vec3 col </span><span class="z-keyword">=</span><span class="z-entity z-name"> vec3</span><span>(</span><span class="z-constant">0</span><span class="z-constant">.</span><span class="z-constant">0</span><span>)</span><span>;</span><span class="z-punctuation z-definition z-comment"> //</span><span class="z-comment"> start with black</span></span>
+<span class="giallo-l"><span aria-hidden="true" class="giallo-ln">25</span></span>
+<span class="giallo-l"><span aria-hidden="true" class="giallo-ln">26</span><span class="z-punctuation z-definition z-comment">    //</span><span class="z-comment"> Background: 6 gray waves, darker, behind everything</span></span>
+<span class="giallo-l"><span aria-hidden="true" class="giallo-ln">27</span><span class="z-keyword">    for</span><span> (</span><span class="z-storage z-type">int</span><span> i </span><span class="z-keyword">=</span><span class="z-constant"> 0</span><span>;</span><span> i </span><span class="z-keyword">&lt;</span><span class="z-constant"> 6</span><span>;</span><span> i</span><span class="z-keyword">++</span><span>)</span><span> {</span></span>
+<span class="giallo-l"><span aria-hidden="true" class="giallo-ln">28</span><span class="z-storage z-type">        float</span><span> center </span><span class="z-keyword">=</span><span class="z-constant"> 0</span><span class="z-constant">.</span><span class="z-constant">90</span><span class="z-keyword"> -</span><span class="z-storage z-type"> float</span><span>(</span><span>i</span><span>)</span><span class="z-keyword"> *</span><span class="z-constant"> 0</span><span class="z-constant">.</span><span class="z-constant">17</span><span>;</span></span>
+<span class="giallo-l"><span aria-hidden="true" class="giallo-ln">29</span><span class="z-storage z-type">        float</span><span> wave </span><span class="z-keyword">=</span><span> center</span></span>
+<span class="giallo-l"><span aria-hidden="true" class="giallo-ln">30</span><span class="z-keyword">            +</span><span> amp </span><span class="z-keyword">*</span><span class="z-constant"> 0</span><span class="z-constant">.</span><span class="z-constant">25</span><span class="z-keyword"> *</span><span class="z-entity z-name"> sin</span><span>(</span><span class="z-variable z-other">uv</span><span>.</span><span class="z-variable z-other">x</span><span class="z-keyword"> *</span><span class="z-constant"> 9</span><span class="z-constant">.</span><span class="z-constant">3</span><span class="z-keyword">  +</span><span> iTime </span><span class="z-keyword">*</span><span class="z-constant"> 0</span><span class="z-constant">.</span><span class="z-constant">3</span><span>)</span></span>
+<span class="giallo-l"><span aria-hidden="true" class="giallo-ln">31</span><span class="z-keyword">            +</span><span> amp </span><span class="z-keyword">*</span><span class="z-constant"> 0</span><span class="z-constant">.</span><span class="z-constant">15</span><span class="z-keyword"> *</span><span class="z-entity z-name"> sin</span><span>(</span><span class="z-variable z-other">uv</span><span>.</span><span class="z-variable z-other">x</span><span class="z-keyword"> *</span><span class="z-constant"> 2</span><span class="z-constant">.</span><span class="z-constant">8</span><span class="z-keyword">  -</span><span> iTime </span><span class="z-keyword">*</span><span class="z-constant"> 1</span><span class="z-constant">.</span><span class="z-constant">1</span><span>)</span><span>;</span></span>
+<span class="giallo-l"><span aria-hidden="true" class="giallo-ln">32</span><span class="z-storage z-type">        float</span><span> dist </span><span class="z-keyword">=</span><span class="z-entity z-name"> abs</span><span>(</span><span class="z-variable z-other">uv</span><span>.</span><span class="z-variable z-other">y</span><span class="z-keyword"> -</span><span> wave</span><span>)</span><span>;</span></span>
+<span class="giallo-l"><span aria-hidden="true" class="giallo-ln">33</span><span class="z-storage z-type">        float</span><span> fill   </span><span class="z-keyword">=</span><span class="z-constant"> 1</span><span class="z-constant">.</span><span class="z-constant">0</span><span class="z-keyword"> /</span><span> (</span><span class="z-constant">1</span><span class="z-constant">.</span><span class="z-constant">0</span><span class="z-keyword"> +</span><span class="z-entity z-name"> exp</span><span>(</span><span>(</span><span class="z-variable z-other">uv</span><span>.</span><span class="z-variable z-other">y</span><span class="z-keyword"> -</span><span> wave</span><span>)</span><span class="z-keyword"> *</span><span class="z-constant"> 122</span><span class="z-constant">.</span><span class="z-constant">0</span><span>)</span><span>)</span><span>;</span></span>
+<span class="giallo-l"><span aria-hidden="true" class="giallo-ln">34</span><span class="z-storage z-type">        float</span><span> groove </span><span class="z-keyword">=</span><span class="z-constant"> 1</span><span class="z-constant">.</span><span class="z-constant">0</span><span class="z-keyword"> -</span><span class="z-entity z-name"> exp</span><span>(</span><span class="z-keyword">-</span><span>dist </span><span class="z-keyword">*</span><span class="z-constant"> 60</span><span class="z-constant">.</span><span class="z-constant">0</span><span>)</span><span>;</span></span>
+<span class="giallo-l"><span aria-hidden="true" class="giallo-ln">35</span><span class="z-storage z-type">        float</span><span> line   </span><span class="z-keyword">=</span><span class="z-entity z-name"> step</span><span>(</span><span>dist</span><span>,</span><span class="z-constant"> 0</span><span class="z-constant">.</span><span class="z-constant">004</span><span>)</span><span>;</span></span>
+<span class="giallo-l"><span aria-hidden="true" class="giallo-ln">36</span><span>        col </span><span class="z-keyword">=</span><span class="z-entity z-name"> mix</span><span>(</span><span>col</span><span>,</span><span class="z-entity z-name"> mix</span><span>(</span><span class="z-entity z-name">vec3</span><span>(</span><span class="z-constant">0</span><span class="z-constant">.</span><span class="z-constant">0</span><span>)</span><span>,</span><span class="z-variable"> bgColors</span><span>[</span><span>i</span><span>]</span><span>,</span><span> groove</span><span>)</span><span>,</span><span class="z-entity z-name"> smoothstep</span><span>(</span><span class="z-constant">0</span><span class="z-constant">.</span><span class="z-constant">0</span><span>,</span><span class="z-constant"> 1</span><span class="z-constant">.</span><span class="z-constant">0</span><span>,</span><span> fill</span><span>)</span><span>)</span><span>;</span></span>
+<span class="giallo-l"><span aria-hidden="true" class="giallo-ln">37</span><span>        col </span><span class="z-keyword">=</span><span class="z-entity z-name"> mix</span><span>(</span><span>col</span><span>,</span><span> i </span><span class="z-keyword">==</span><span class="z-constant"> 5</span><span class="z-keyword"> ?</span><span class="z-variable"> bgColors</span><span>[</span><span class="z-constant">4</span><span>]</span><span class="z-keyword"> :</span><span class="z-variable"> bgColors</span><span>[</span><span>i</span><span>]</span><span>,</span><span> line</span><span>)</span><span>;</span></span>
+<span class="giallo-l"><span aria-hidden="true" class="giallo-ln">38</span><span>    }</span></span>
+<span class="giallo-l"><span aria-hidden="true" class="giallo-ln">39</span><span>    </span></span>
+<span class="giallo-l"><span aria-hidden="true" class="giallo-ln">40</span><span class="z-keyword">    for</span><span> (</span><span class="z-storage z-type">int</span><span> i </span><span class="z-keyword">=</span><span class="z-constant"> 0</span><span>;</span><span> i </span><span class="z-keyword">&lt;</span><span class="z-constant"> 3</span><span>;</span><span> i</span><span class="z-keyword">++</span><span>)</span><span> {</span></span>
+<span class="giallo-l"><span aria-hidden="true" class="giallo-ln">41</span></span>
+<span class="giallo-l"><span aria-hidden="true" class="giallo-ln">42</span><span class="z-punctuation z-definition z-comment">        //</span><span class="z-comment"> Vertical center of this wave, evenly spaced downward</span></span>
+<span class="giallo-l"><span aria-hidden="true" class="giallo-ln">43</span><span class="z-storage z-type">        float</span><span> center </span><span class="z-keyword">=</span><span class="z-constant"> 0</span><span class="z-constant">.</span><span class="z-constant">55</span><span class="z-keyword"> -</span><span class="z-storage z-type"> float</span><span>(</span><span>i</span><span>)</span><span class="z-keyword"> *</span><span class="z-constant"> 0</span><span class="z-constant">.</span><span class="z-constant">18</span><span>;</span></span>
 <span class="giallo-l"><span aria-hidden="true" class="giallo-ln">44</span></span>
-<span class="giallo-l"><span aria-hidden="true" class="giallo-ln">45</span><span class="z-punctuation z-definition z-comment">        //</span><span class="z-comment"> Layer this wave&#39;s color over the accumulated color, blending to black at the wave boundary.</span></span>
-<span class="giallo-l"><span aria-hidden="true" class="giallo-ln">46</span><span>        col </span><span class="z-keyword">=</span><span class="z-entity z-name"> mix</span><span>(</span><span>col</span><span>,</span><span class="z-entity z-name"> mix</span><span>(</span><span class="z-entity z-name">vec3</span><span>(</span><span class="z-constant">0</span><span class="z-constant">.</span><span class="z-constant">0</span><span>)</span><span>,</span><span class="z-variable"> colors</span><span>[</span><span>i</span><span>]</span><span>,</span><span> groove</span><span>)</span><span>,</span><span class="z-entity z-name"> smoothstep</span><span>(</span><span class="z-constant">0</span><span class="z-constant">.</span><span class="z-constant">0</span><span>,</span><span class="z-constant"> 1</span><span class="z-constant">.</span><span class="z-constant">0</span><span>,</span><span> fill</span><span>)</span><span>)</span><span>;</span></span>
-<span class="giallo-l"><span aria-hidden="true" class="giallo-ln">47</span></span>
-<span class="giallo-l"><span aria-hidden="true" class="giallo-ln">48</span><span class="z-punctuation z-definition z-comment">        //</span><span class="z-comment"> Stamp the wave line on top. Last wave uses the previous color to avoid a black line.</span></span>
-<span class="giallo-l"><span aria-hidden="true" class="giallo-ln">49</span><span>        col </span><span class="z-keyword">=</span><span class="z-entity z-name"> mix</span><span>(</span><span>col</span><span>,</span><span> i </span><span class="z-keyword">==</span><span class="z-constant"> 3</span><span class="z-keyword"> ?</span><span class="z-variable"> colors</span><span>[</span><span class="z-constant">2</span><span>]</span><span class="z-keyword"> :</span><span class="z-variable"> colors</span><span>[</span><span>i</span><span>]</span><span>,</span><span> line</span><span>)</span><span>;</span></span>
+<span class="giallo-l"><span aria-hidden="true" class="giallo-ln">45</span><span class="z-punctuation z-definition z-comment">        //</span><span class="z-comment"> Wave shape: sum of sines at incommensurate frequencies and speeds</span></span>
+<span class="giallo-l"><span aria-hidden="true" class="giallo-ln">46</span><span class="z-punctuation z-definition z-comment">        //</span><span class="z-comment"> produces a chaotic, non-repeating motion</span></span>
+<span class="giallo-l"><span aria-hidden="true" class="giallo-ln">47</span><span class="z-storage z-type">        float</span><span> wave </span><span class="z-keyword">=</span><span> center</span></span>
+<span class="giallo-l"><span aria-hidden="true" class="giallo-ln">48</span><span class="z-keyword">            +</span><span> amp </span><span class="z-keyword">*</span><span class="z-constant"> 0</span><span class="z-constant">.</span><span class="z-constant">3</span><span class="z-keyword"> *</span><span class="z-entity z-name"> sin</span><span>(</span><span class="z-variable z-other">uv</span><span>.</span><span class="z-variable z-other">x</span><span class="z-keyword"> *</span><span class="z-constant"> 13</span><span class="z-constant">.</span><span class="z-constant">1</span><span class="z-keyword"> -</span><span> iTime </span><span class="z-keyword">*</span><span class="z-constant"> 0</span><span class="z-constant">.</span><span class="z-constant">6</span><span>)</span><span class="z-punctuation z-definition z-comment">   //</span><span class="z-comment"> higher freq, slower</span></span>
+<span class="giallo-l"><span aria-hidden="true" class="giallo-ln">49</span><span class="z-keyword">            +</span><span> amp </span><span class="z-keyword">*</span><span class="z-constant"> 0</span><span class="z-constant">.</span><span class="z-constant">2</span><span class="z-keyword"> *</span><span class="z-entity z-name"> sin</span><span>(</span><span class="z-variable z-other">uv</span><span>.</span><span class="z-variable z-other">x</span><span class="z-keyword"> *</span><span class="z-constant"> 3</span><span class="z-constant">.</span><span class="z-constant">7</span><span class="z-keyword">  +</span><span> iTime </span><span class="z-keyword">*</span><span class="z-constant"> 2</span><span class="z-constant">.</span><span class="z-constant">3</span><span>)</span><span>;</span><span class="z-punctuation z-definition z-comment">  //</span><span class="z-comment"> low freq, opposite direction</span></span>
 <span class="giallo-l"><span aria-hidden="true" class="giallo-ln">50</span></span>
-<span class="giallo-l"><span aria-hidden="true" class="giallo-ln">51</span><span>    }</span></span>
+<span class="giallo-l"><span aria-hidden="true" class="giallo-ln">51</span><span class="z-storage z-type">        float</span><span> dist </span><span class="z-keyword">=</span><span class="z-entity z-name"> abs</span><span>(</span><span class="z-variable z-other">uv</span><span>.</span><span class="z-variable z-other">y</span><span class="z-keyword"> -</span><span> wave</span><span>)</span><span>;</span></span>
 <span class="giallo-l"><span aria-hidden="true" class="giallo-ln">52</span></span>
-<span class="giallo-l"><span aria-hidden="true" class="giallo-ln">53</span><span class="z-punctuation z-definition z-comment">    //</span><span class="z-comment"> vignette</span></span>
-<span class="giallo-l"><span aria-hidden="true" class="giallo-ln">54</span><span class="z-storage z-type">    float</span><span> edge </span><span class="z-keyword">=</span><span class="z-entity z-name"> abs</span><span>(</span><span class="z-variable z-other">uv</span><span>.</span><span class="z-variable z-other">y</span><span class="z-keyword"> *</span><span class="z-constant"> 2</span><span class="z-constant">.</span><span class="z-constant">0</span><span class="z-keyword"> -</span><span class="z-constant"> 1</span><span class="z-constant">.</span><span class="z-constant">0</span><span>)</span><span>;</span></span>
-<span class="giallo-l"><span aria-hidden="true" class="giallo-ln">55</span><span>    col </span><span class="z-keyword">=</span><span class="z-entity z-name"> mix</span><span>(</span><span>col</span><span>,</span><span class="z-entity z-name"> vec3</span><span>(</span><span class="z-constant">0</span><span class="z-constant">.</span><span class="z-constant">1</span><span>)</span><span>,</span><span class="z-entity z-name"> pow</span><span>(</span><span>edge</span><span>,</span><span class="z-constant"> 5</span><span class="z-constant">.</span><span class="z-constant">0</span><span>)</span><span>)</span><span>;</span><span class="z-punctuation z-definition z-comment"> //</span><span class="z-comment"> softer falloff</span></span>
-<span class="giallo-l"><span aria-hidden="true" class="giallo-ln">56</span><span>    </span></span>
-<span class="giallo-l"><span aria-hidden="true" class="giallo-ln">57</span><span>    fragColor </span><span class="z-keyword">=</span><span class="z-entity z-name"> vec4</span><span>(</span><span>col</span><span>,</span><span class="z-constant"> 1</span><span class="z-constant">.</span><span class="z-constant">0</span><span>)</span><span>;</span></span>
-<span class="giallo-l"><span aria-hidden="true" class="giallo-ln">58</span><span>}</span></span></code></pre> `;</script></div></div></div><div class=accordion-item><button class="accordion-button collapsed text-lg" data-target=#collapseCode data-toggle=collapse type=button>Code</button><div class="accordion-collapse collapse" id=collapseCode><div class="accordion-body w-100 py-sm"><x-code-wrapper class=animate-on-hover id=glslCodeWrapper> <x-code-footer> <x-code-footer-lang></x-code-footer-lang> <svg viewbox="0 0 256 256" class=svgicon fill=currentColor height=32 width=32 xmlns=http://www.w3.org/2000/svg><path d=M69.12,94.15,28.5,128l40.62,33.85a8,8,0,1,1-10.24,12.29l-48-40a8,8,0,0,1,0-12.29l48-40a8,8,0,0,1,10.24,12.3Zm176,27.7-48-40a8,8,0,1,0-10.24,12.3L227.5,128l-40.62,33.85a8,8,0,1,0,10.24,12.29l48-40a8,8,0,0,0,0-12.29ZM162.73,32.48a8,8,0,0,0-10.25,4.79l-64,176a8,8,0,0,0,4.79,10.26A8.14,8.14,0,0,0,96,224a8,8,0,0,0,7.52-5.27l64-176A8,8,0,0,0,162.73,32.48Z></path></svg> <x-code-footer-chars></x-code-footer-chars> <svg viewbox="0 0 256 256" class=svgicon fill=currentColor height=32 width=32 xmlns=http://www.w3.org/2000/svg><path d=M213.66,82.34l-56-56A8,8,0,0,0,152,24H56A16,16,0,0,0,40,40V216a16,16,0,0,0,16,16H200a16,16,0,0,0,16-16V88A8,8,0,0,0,213.66,82.34ZM160,51.31,188.69,80H160ZM200,216H56V40h88V88a8,8,0,0,0,8,8h48V216Zm-42.34-61.66a8,8,0,0,1,0,11.32l-24,24a8,8,0,0,1-11.32,0l-24-24a8,8,0,0,1,11.32-11.32L120,164.69V120a8,8,0,0,1,16,0v44.69l10.34-10.35A8,8,0,0,1,157.66,154.34Z></path></svg> <x-code-footer-copy></x-code-footer-copy> </x-code-footer> </x-code-wrapper></div></div></div></div> </x-col> </x-row></div><script>class ShaderSketch {
+<span class="giallo-l"><span aria-hidden="true" class="giallo-ln">53</span><span class="z-punctuation z-definition z-comment">        //</span><span class="z-comment"> Sigmoid fill: full color below the wave, fades sharply to nothing above.</span></span>
+<span class="giallo-l"><span aria-hidden="true" class="giallo-ln">54</span><span class="z-punctuation z-definition z-comment">        //</span><span class="z-comment"> High steepness (122) makes it nearly a hard step.</span></span>
+<span class="giallo-l"><span aria-hidden="true" class="giallo-ln">55</span><span class="z-storage z-type">        float</span><span> fill </span><span class="z-keyword">=</span><span class="z-constant"> 1</span><span class="z-constant">.</span><span class="z-constant">0</span><span class="z-keyword"> /</span><span> (</span><span class="z-constant">1</span><span class="z-constant">.</span><span class="z-constant">0</span><span class="z-keyword"> +</span><span class="z-entity z-name"> exp</span><span>(</span><span>(</span><span class="z-variable z-other">uv</span><span>.</span><span class="z-variable z-other">y</span><span class="z-keyword"> -</span><span> wave</span><span>)</span><span class="z-keyword"> *</span><span class="z-constant"> 122</span><span class="z-constant">.</span><span class="z-constant">0</span><span>)</span><span>)</span><span>;</span></span>
+<span class="giallo-l"><span aria-hidden="true" class="giallo-ln">56</span></span>
+<span class="giallo-l"><span aria-hidden="true" class="giallo-ln">57</span><span class="z-punctuation z-definition z-comment">        //</span><span class="z-comment"> Groove: darkens the fill near the wave boundary.</span></span>
+<span class="giallo-l"><span aria-hidden="true" class="giallo-ln">58</span><span class="z-punctuation z-definition z-comment">        //</span><span class="z-comment"> 0 exactly at the wave line, recovers exponentially with distance.</span></span>
+<span class="giallo-l"><span aria-hidden="true" class="giallo-ln">59</span><span class="z-storage z-type">        float</span><span> groove </span><span class="z-keyword">=</span><span class="z-constant"> 1</span><span class="z-constant">.</span><span class="z-constant">0</span><span class="z-keyword"> -</span><span class="z-entity z-name"> exp</span><span>(</span><span class="z-keyword">-</span><span>dist </span><span class="z-keyword">*</span><span class="z-constant"> 60</span><span class="z-constant">.</span><span class="z-constant">0</span><span>)</span><span>;</span></span>
+<span class="giallo-l"><span aria-hidden="true" class="giallo-ln">60</span></span>
+<span class="giallo-l"><span aria-hidden="true" class="giallo-ln">61</span><span class="z-punctuation z-definition z-comment">        //</span><span class="z-comment"> Hard line: 1-pixel-wide bright stripe exactly at the wave.</span></span>
+<span class="giallo-l"><span aria-hidden="true" class="giallo-ln">62</span><span class="z-punctuation z-definition z-comment">        //</span><span class="z-comment"> Rendered on top of the groove to restore brightness at the edge.</span></span>
+<span class="giallo-l"><span aria-hidden="true" class="giallo-ln">63</span><span class="z-storage z-type">        float</span><span> line </span><span class="z-keyword">=</span><span class="z-entity z-name"> step</span><span>(</span><span>dist</span><span>,</span><span class="z-constant"> 0</span><span class="z-constant">.</span><span class="z-constant">004</span><span>)</span><span>;</span></span>
+<span class="giallo-l"><span aria-hidden="true" class="giallo-ln">64</span></span>
+<span class="giallo-l"><span aria-hidden="true" class="giallo-ln">65</span><span class="z-punctuation z-definition z-comment">        //</span><span class="z-comment"> Layer this wave&#39;s color over the accumulated color, blending to black at the wave boundary.</span></span>
+<span class="giallo-l"><span aria-hidden="true" class="giallo-ln">66</span><span>        col </span><span class="z-keyword">=</span><span class="z-entity z-name"> mix</span><span>(</span><span>col</span><span>,</span><span class="z-entity z-name"> mix</span><span>(</span><span class="z-entity z-name">vec3</span><span>(</span><span class="z-constant">0</span><span class="z-constant">.</span><span class="z-constant">0</span><span>)</span><span>,</span><span class="z-variable"> colors</span><span>[</span><span>i</span><span>]</span><span>,</span><span> groove</span><span>)</span><span>,</span><span class="z-entity z-name"> smoothstep</span><span>(</span><span class="z-constant">0</span><span class="z-constant">.</span><span class="z-constant">0</span><span>,</span><span class="z-constant"> 1</span><span class="z-constant">.</span><span class="z-constant">0</span><span>,</span><span> fill</span><span>)</span><span>)</span><span>;</span></span>
+<span class="giallo-l"><span aria-hidden="true" class="giallo-ln">67</span></span>
+<span class="giallo-l"><span aria-hidden="true" class="giallo-ln">68</span><span class="z-punctuation z-definition z-comment">        //</span><span class="z-comment"> Stamp the wave line on top. Last wave uses the previous color to avoid a black line.</span></span>
+<span class="giallo-l"><span aria-hidden="true" class="giallo-ln">69</span><span>        col </span><span class="z-keyword">=</span><span class="z-entity z-name"> mix</span><span>(</span><span>col</span><span>,</span><span> i </span><span class="z-keyword">==</span><span class="z-constant"> 2</span><span class="z-keyword"> ?</span><span class="z-variable"> colors</span><span>[</span><span class="z-constant">1</span><span>]</span><span class="z-keyword"> :</span><span class="z-variable"> colors</span><span>[</span><span>i</span><span>]</span><span>,</span><span> line</span><span>)</span><span>;</span></span>
+<span class="giallo-l"><span aria-hidden="true" class="giallo-ln">70</span></span>
+<span class="giallo-l"><span aria-hidden="true" class="giallo-ln">71</span><span>    }</span></span>
+<span class="giallo-l"><span aria-hidden="true" class="giallo-ln">72</span></span>
+<span class="giallo-l"><span aria-hidden="true" class="giallo-ln">73</span><span class="z-punctuation z-definition z-comment">    //</span><span class="z-comment"> vignette</span></span>
+<span class="giallo-l"><span aria-hidden="true" class="giallo-ln">74</span><span class="z-storage z-type">    float</span><span> edge </span><span class="z-keyword">=</span><span class="z-entity z-name"> abs</span><span>(</span><span class="z-variable z-other">uv</span><span>.</span><span class="z-variable z-other">y</span><span class="z-keyword"> *</span><span class="z-constant"> 2</span><span class="z-constant">.</span><span class="z-constant">0</span><span class="z-keyword"> -</span><span class="z-constant"> 1</span><span class="z-constant">.</span><span class="z-constant">0</span><span>)</span><span>;</span></span>
+<span class="giallo-l"><span aria-hidden="true" class="giallo-ln">75</span><span>    col </span><span class="z-keyword">=</span><span class="z-entity z-name"> mix</span><span>(</span><span>col</span><span>,</span><span class="z-entity z-name"> vec3</span><span>(</span><span class="z-constant">0</span><span class="z-constant">.</span><span class="z-constant">1</span><span>)</span><span>,</span><span class="z-entity z-name"> pow</span><span>(</span><span>edge</span><span>,</span><span class="z-constant"> 5</span><span class="z-constant">.</span><span class="z-constant">0</span><span>)</span><span>)</span><span>;</span><span class="z-punctuation z-definition z-comment"> //</span><span class="z-comment"> softer falloff</span></span>
+<span class="giallo-l"><span aria-hidden="true" class="giallo-ln">76</span><span>    </span></span>
+<span class="giallo-l"><span aria-hidden="true" class="giallo-ln">77</span><span>    fragColor </span><span class="z-keyword">=</span><span class="z-entity z-name"> vec4</span><span>(</span><span>col</span><span>,</span><span class="z-constant"> 1</span><span class="z-constant">.</span><span class="z-constant">0</span><span>)</span><span>;</span></span>
+<span class="giallo-l"><span aria-hidden="true" class="giallo-ln">78</span><span>}</span></span></code></pre> `;</script></div></div></div><div class=accordion-item><button class="accordion-button collapsed text-lg" data-target=#collapseCode data-toggle=collapse type=button>Code</button><div class="accordion-collapse collapse" id=collapseCode><div class="accordion-body w-100 py-sm"><x-code-wrapper class=animate-on-hover id=glslCodeWrapper> <x-code-footer> <x-code-footer-lang></x-code-footer-lang> <svg viewbox="0 0 256 256" class=svgicon fill=currentColor height=32 width=32 xmlns=http://www.w3.org/2000/svg><path d=M69.12,94.15,28.5,128l40.62,33.85a8,8,0,1,1-10.24,12.29l-48-40a8,8,0,0,1,0-12.29l48-40a8,8,0,0,1,10.24,12.3Zm176,27.7-48-40a8,8,0,1,0-10.24,12.3L227.5,128l-40.62,33.85a8,8,0,1,0,10.24,12.29l48-40a8,8,0,0,0,0-12.29ZM162.73,32.48a8,8,0,0,0-10.25,4.79l-64,176a8,8,0,0,0,4.79,10.26A8.14,8.14,0,0,0,96,224a8,8,0,0,0,7.52-5.27l64-176A8,8,0,0,0,162.73,32.48Z></path></svg> <x-code-footer-chars></x-code-footer-chars> <svg viewbox="0 0 256 256" class=svgicon fill=currentColor height=32 width=32 xmlns=http://www.w3.org/2000/svg><path d=M213.66,82.34l-56-56A8,8,0,0,0,152,24H56A16,16,0,0,0,40,40V216a16,16,0,0,0,16,16H200a16,16,0,0,0,16-16V88A8,8,0,0,0,213.66,82.34ZM160,51.31,188.69,80H160ZM200,216H56V40h88V88a8,8,0,0,0,8,8h48V216Zm-42.34-61.66a8,8,0,0,1,0,11.32l-24,24a8,8,0,0,1-11.32,0l-24-24a8,8,0,0,1,11.32-11.32L120,164.69V120a8,8,0,0,1,16,0v44.69l10.34-10.35A8,8,0,0,1,157.66,154.34Z></path></svg> <x-code-footer-copy></x-code-footer-copy> </x-code-footer> </x-code-wrapper></div></div></div></div> </x-col> </x-row></div><script>class ShaderSketch {
 
         setFailed(error) { 
             this.canvas.style = "display: none"; 
@@ -606,69 +646,55 @@
             this.elResolution.innerText = `${width} x ${height}`;
         }
 
+        renderOnce() {
+            const gl = this.gl;
+            this.lastNow = Date.now();
+            this.uniforms.forEach(e => e.submit(e.loc));
+            gl.drawArrays(gl.TRIANGLE_STRIP, 0, 4);
+        }
 
-
-    
         render() {
             const gl = this.gl;
-            const now = Date.now(); 
+            const now = Date.now();
 
             if (this.fpsInterval > 0) {
                 const elapsed = now - this.lastRenderTime;
                 if (elapsed < this.fpsInterval) {
-                    setTimeout(() => requestAnimationFrame(() => this.render()), 
+                    setTimeout(() => requestAnimationFrame(() => this.render()),
                             this.fpsInterval - elapsed);
                     return;
                 }
-                // Snap to interval to avoid drift
                 this.lastRenderTime = now - (elapsed % this.fpsInterval);
             }
 
             const deltaTime = now - this.lastFrameTime;
-            const totalTime = (now - this.startTime) / 1000;
 
-            
-            if (!this.isPaused) { 
-                const newTime = (now - this.lastNow) / 1000
-                this.iTime = this.iTime + ( newTime * this.iTimeScale ); 
-                
+            if (!this.isPaused) {
+                const newTime = (now - this.lastNow) / 1000;
+                this.iTime += newTime * this.iTimeScale;
+
                 if (this.maxTime < this.iTime) this.maxTime = this.iTime;
 
                 this.elTimeRange.max = Math.ceil(this.maxTime * 100) / 100;
                 this.elTimeRange.value = this.elTimeRange.max;
-
-            }
-                
-            this.lastNow = now; 
-
-
-
-                
-
-            this.uniforms.forEach( e => e.submit(e.loc) ); 
-            
-            gl.drawArrays(gl.TRIANGLE_STRIP, 0, 4);
-
-            if (!this.isPaused) {
-                requestAnimationFrame(() => this.render());
             }
 
-            // 
-            // performance counters 
-            // 
+            this.lastNow = now;
 
-            this.frameCount ++; 
+            this.renderOnce();
 
-            
-            if (deltaTime >= 1000) { 
-                this.fps = (this.frameCount / deltaTime) * 1000; 
-                this.frameCount = 0; 
-                this.lastFrameTime = now; 
-                this.elFramerate.innerText = `${this.fps.toFixed(1)} fps`; 
+            requestAnimationFrame(() => this.render());
+
+            this.frameCount++;
+
+            if (deltaTime >= 1000) {
+                this.fps = (this.frameCount / deltaTime) * 1000;
+                this.frameCount = 0;
+                this.lastFrameTime = now;
+                this.elFramerate.innerText = `${this.fps.toFixed(1)} fps`;
             }
 
-
-            const totalTimeClamp = Math.min(999, this.iTime); 
+            const totalTimeClamp = Math.min(999, this.iTime);
             const maxTimeClamp = Math.min(999, this.maxTime);
             function formatTime(seconds) {
                 const m = Math.floor(seconds / 60).toString().padStart(2, '0');
@@ -676,10 +702,8 @@
                 return `${m}:${s}`;
             }
 
-
             this.elTotaltime.innerText = formatTime(totalTimeClamp);
-            this.elMaxtime.innerText = formatTime(maxTimeClamp); 
-
+            this.elMaxtime.innerText = formatTime(maxTimeClamp);
         }
     }
     

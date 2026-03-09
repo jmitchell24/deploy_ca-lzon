@@ -592,69 +592,55 @@ void mainImage( out vec4 fragColor, in vec2 fragCoord )
             this.elResolution.innerText = `${width} x ${height}`;
         }
 
+        renderOnce() {
+            const gl = this.gl;
+            this.lastNow = Date.now();
+            this.uniforms.forEach(e => e.submit(e.loc));
+            gl.drawArrays(gl.TRIANGLE_STRIP, 0, 4);
+        }
 
-
-    
         render() {
             const gl = this.gl;
-            const now = Date.now(); 
+            const now = Date.now();
 
             if (this.fpsInterval > 0) {
                 const elapsed = now - this.lastRenderTime;
                 if (elapsed < this.fpsInterval) {
-                    setTimeout(() => requestAnimationFrame(() => this.render()), 
+                    setTimeout(() => requestAnimationFrame(() => this.render()),
                             this.fpsInterval - elapsed);
                     return;
                 }
-                // Snap to interval to avoid drift
                 this.lastRenderTime = now - (elapsed % this.fpsInterval);
             }
 
             const deltaTime = now - this.lastFrameTime;
-            const totalTime = (now - this.startTime) / 1000;
 
-            
-            if (!this.isPaused) { 
-                const newTime = (now - this.lastNow) / 1000
-                this.iTime = this.iTime + ( newTime * this.iTimeScale ); 
-                
+            if (!this.isPaused) {
+                const newTime = (now - this.lastNow) / 1000;
+                this.iTime += newTime * this.iTimeScale;
+
                 if (this.maxTime < this.iTime) this.maxTime = this.iTime;
 
                 this.elTimeRange.max = Math.ceil(this.maxTime * 100) / 100;
                 this.elTimeRange.value = this.elTimeRange.max;
-
-            }
-                
-            this.lastNow = now; 
-
-
-
-                
-
-            this.uniforms.forEach( e => e.submit(e.loc) ); 
-            
-            gl.drawArrays(gl.TRIANGLE_STRIP, 0, 4);
-
-            if (!this.isPaused) {
-                requestAnimationFrame(() => this.render());
             }
 
-            // 
-            // performance counters 
-            // 
+            this.lastNow = now;
 
-            this.frameCount ++; 
+            this.renderOnce();
 
-            
-            if (deltaTime >= 1000) { 
-                this.fps = (this.frameCount / deltaTime) * 1000; 
-                this.frameCount = 0; 
-                this.lastFrameTime = now; 
-                this.elFramerate.innerText = `${this.fps.toFixed(1)} fps`; 
+            requestAnimationFrame(() => this.render());
+
+            this.frameCount++;
+
+            if (deltaTime >= 1000) {
+                this.fps = (this.frameCount / deltaTime) * 1000;
+                this.frameCount = 0;
+                this.lastFrameTime = now;
+                this.elFramerate.innerText = `${this.fps.toFixed(1)} fps`;
             }
 
-
-            const totalTimeClamp = Math.min(999, this.iTime); 
+            const totalTimeClamp = Math.min(999, this.iTime);
             const maxTimeClamp = Math.min(999, this.maxTime);
             function formatTime(seconds) {
                 const m = Math.floor(seconds / 60).toString().padStart(2, '0');
@@ -662,10 +648,8 @@ void mainImage( out vec4 fragColor, in vec2 fragCoord )
                 return `${m}:${s}`;
             }
 
-
             this.elTotaltime.innerText = formatTime(totalTimeClamp);
-            this.elMaxtime.innerText = formatTime(maxTimeClamp); 
-
+            this.elMaxtime.innerText = formatTime(maxTimeClamp);
         }
     }
     
