@@ -8,7 +8,23 @@
       <generator>Zola</generator>
       <language>en</language>
       <atom:link href="https://lzon.ca/rss.xml" rel="self" type="application/rss+xml"/>
-      <lastBuildDate>Sat, 07 Mar 2026 00:00:00 +0000</lastBuildDate>
+      <lastBuildDate>Thu, 12 Mar 2026 00:00:00 +0000</lastBuildDate>
+      <item>
+          <title>Chicken Fajita Loaf</title>
+          <pubDate>Thu, 12 Mar 2026 00:00:00 +0000</pubDate>
+          <author>Lzon</author>
+          <link>https://lzon.ca/posts/recipes/chicken-fajita-loaf/</link>
+          <guid>https://lzon.ca/posts/recipes/chicken-fajita-loaf/</guid>
+          <description xml:base="https://lzon.ca/posts/recipes/chicken-fajita-loaf/">&lt;p&gt;A new tex-mex recipe that I’ve come up with.&lt;&#x2F;p&gt;</description>
+      </item>
+      <item>
+          <title>Fractal</title>
+          <pubDate>Wed, 11 Mar 2026 00:00:00 +0000</pubDate>
+          <author>Lzon</author>
+          <link>https://lzon.ca/toys/fractal/</link>
+          <guid>https://lzon.ca/toys/fractal/</guid>
+          <description xml:base="https://lzon.ca/toys/fractal/"></description>
+      </item>
       <item>
           <title>Waves</title>
           <pubDate>Sat, 07 Mar 2026 00:00:00 +0000</pubDate>
