@@ -8,15 +8,7 @@
       <generator>Zola</generator>
       <language>en</language>
       <atom:link href="https://lzon.ca/toys/rss.xml" rel="self" type="application/rss+xml"/>
-      <lastBuildDate>Fri, 13 Mar 2026 00:00:00 +0000</lastBuildDate>
-      <item>
-          <title>Flammarion</title>
-          <pubDate>Fri, 13 Mar 2026 00:00:00 +0000</pubDate>
-          <author>Lzon</author>
-          <link>https://lzon.ca/toys/flammarion/</link>
-          <guid>https://lzon.ca/toys/flammarion/</guid>
-          <description xml:base="https://lzon.ca/toys/flammarion/"></description>
-      </item>
+      <lastBuildDate>Wed, 11 Mar 2026 00:00:00 +0000</lastBuildDate>
       <item>
           <title>Fractal</title>
           <pubDate>Wed, 11 Mar 2026 00:00:00 +0000</pubDate>

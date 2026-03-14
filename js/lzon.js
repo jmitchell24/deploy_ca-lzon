@@ -351,6 +351,9 @@ async function initQotd() {
         });
     }
 
+
+
+
     // wait for dom to load
     document.addEventListener("DOMContentLoaded", () => {
         
@@ -383,38 +386,50 @@ async function initQotd() {
 
             elAllQotd.forEach(el => { 
                 const elContent = el.querySelector("#qotd-content");
-                const elDate = el.querySelector("#qotd-date");
+                const elButtons = el.querySelector("#qotd-buttons");
                 const elPrev = el.querySelector("#qotd-prev");
                 const elNext = el.querySelector("#qotd-next");
+                const elReset = el.querySelector("#qotd-reset"); 
                 const elLabel = el.querySelector("#qotd-label");
+                const elLabelPre = elLabel.querySelector("#qotd-label-pre");
+                const elLabelText = elLabel.querySelector("#qotd-label-text");
                 
+
+
                 function updateQuote(offset) {
                     const day = new Date();
                     day.setDate(day.getDate() + offset);
-                    const dateString = getDateString(day); 
-                    
-                    let q = getSequenceQuote(offset); 
-                    
-                    if (q.date) { 
-                        elLabel.innerHTML = getDateString(getQuoteDate(q)); 
-                    } else { 
-                        elLabel.innerHTML = ""; 
+
+                    const q = getSequenceQuote(offset);
+                    const todayStr = new Date().toISOString().slice(0, 10);
+                    const isToday = q.date === todayStr;
+
+                    elButtons.classList.toggle("display-none", isToday);
+                    elLabelText.classList.toggle("text-tertiary", isToday);
+
+                    if (isToday) {
+                        elLabelText.innerHTML = "Today";
+                        
+                    } else {
+                        elLabelText.innerHTML = getDateString(day);
                     }
-                    
-                    
+
                     elContent.innerHTML = `<em>"${q.text}"</em> <br> - ${q.author}`;
-                    elDate.innerHTML = dateString;
-                    
-                    
                 }
 
                 let dayOffset = 0;
-                
-                
-                updateQuote(dayOffset);
-                elPrev.addEventListener("click", () => { updateQuote(--dayOffset); elDate.classList.toggle("text-secondary", dayOffset != 0); });
-                elNext.addEventListener("click", () => { updateQuote(++dayOffset); elDate.classList.toggle("text-secondary", dayOffset != 0); });
 
+                // if a quote was added today, start on it
+                const todayStr = new Date().toISOString().slice(0, 10);
+                for (let i = 0; i < quotes.length; i++) {
+                    if (getSequenceQuote(i).date === todayStr) { dayOffset = i; break; }
+                }
+
+                updateQuote(dayOffset);
+
+                elPrev.addEventListener("click", () => { updateQuote(--dayOffset); });
+                elNext.addEventListener("click", () => { updateQuote(++dayOffset); });
+                elReset.addEventListener("click", () => { updateQuote(dayOffset=0); });
                 el.classList.toggle("animate-fade-in-md", true); 
             });
 

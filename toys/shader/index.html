@@ -164,6 +164,7 @@ void mainImage( out vec4 fragColor, in vec2 fragCoord )
             this.scaleFactor = 1.0; 
             this.maxTime = 1;
             this.isPaused = true; 
+            this.isLooping = false; 
             
             this.initShader(fragmentShader);
             this.resize();
@@ -186,7 +187,7 @@ void mainImage( out vec4 fragColor, in vec2 fragCoord )
                 this.elButtonsPause.forEach(b => b.classList.toggle("active", true));
                 this.elButtonsPlay.forEach(b => b.classList.toggle("active", false));
                 this.iTime = parseFloat(e.target.value);
-                if (!this._loopRunning) requestAnimationFrame(() => this.render());
+                if (!this.isLooping) requestAnimationFrame(() => this.render());
             }));
 
             // 
@@ -226,6 +227,7 @@ void mainImage( out vec4 fragColor, in vec2 fragCoord )
                 this.iColorPrimaryDark  = parseCSSColorToFloat('--color-primary-dark');
                 this.iColorPrimaryLight = parseCSSColorToFloat('--color-primary-light');
                 
+                this.renderOnce(); 
             };
 
             new MutationObserver(refreshColors).observe(document.documentElement, { attributes: true, attributeFilter: ['style'] });
@@ -358,7 +360,7 @@ void mainImage( out vec4 fragColor, in vec2 fragCoord )
 
             this.lastNow = Date.now(); 
 
-            if (!this._loopRunning) {
+            if (!this.isLooping) {
                 requestAnimationFrame(() => this.render()); // jump-start render
             }
         }
@@ -368,6 +370,10 @@ void mainImage( out vec4 fragColor, in vec2 fragCoord )
             this.iTime = 0; 
             this.maxTime = 1; 
             this.elTimeRange.forEach(el => { el.value = 1; el.max = 1; });
+            this.elTotaltime.forEach(el => el.innerText = this.formatTime(0));
+            this.elMaxtime.forEach(el => el.innerText = this.formatTime(1));
+
+            this.renderOnce(); 
         }
 
         setScalingFactor(scaleFactor) {  
@@ -379,7 +385,7 @@ void mainImage( out vec4 fragColor, in vec2 fragCoord )
         setIAAValue(iAAValue) {
             this.iAA = Math.min(Math.max(iAAValue, 1), 100);
             console.log(`iaa value set: ${this.iAA}`);
-            if (!this._loopRunning) requestAnimationFrame(() => this.render());
+            if (!this.isLooping) requestAnimationFrame(() => this.render());
         }
 
         setTscaleValue(tscaleValue) { 
@@ -768,7 +774,7 @@ void mainImage( out vec4 fragColor, in vec2 fragCoord )
             this.iColorPrimaryDark = parseCSSColorToFloat('--color-primary-dark');
             this.iColorPrimaryLight = parseCSSColorToFloat('--color-primary-light');
 
-            this.isPaused = false; 
+            this.isPaused = false;  
         }
     
         resize() {
@@ -790,7 +796,7 @@ void mainImage( out vec4 fragColor, in vec2 fragCoord )
 
             this.elResolution.forEach(el => el.innerText = `${width} x ${height}`);
 
-            if (!this._loopRunning) requestAnimationFrame(() => this.render());
+            if (!this.isLooping) requestAnimationFrame(() => this.render());
         }
 
         renderOnce() {
@@ -801,7 +807,7 @@ void mainImage( out vec4 fragColor, in vec2 fragCoord )
         }
 
         render() {
-            this._loopRunning = true;
+            this.isLooping = true;
 
             const gl = this.gl;
             const now = Date.now();
@@ -809,7 +815,7 @@ void mainImage( out vec4 fragColor, in vec2 fragCoord )
             if (this.fpsInterval > 0) {
                 const elapsed = now - this.lastRenderTime;
                 if (elapsed < this.fpsInterval) {
-                    if (this.isPaused) { this._loopRunning = false; return; }
+                    if (this.isPaused) { this.isLooping = false; return; }
                     setTimeout(() => requestAnimationFrame(() => this.render()),
                             this.fpsInterval - elapsed);
                     return;
@@ -833,7 +839,13 @@ void mainImage( out vec4 fragColor, in vec2 fragCoord )
 
             this.renderOnce();
 
-            if (this.isPaused) { this._loopRunning = false; return; }
+            const totalTimeClamp = Math.min(999, this.iTime);
+            const maxTimeClamp = Math.min(999, this.maxTime);
+
+            this.elTotaltime.forEach(el => el.innerText = this.formatTime(totalTimeClamp));
+            this.elMaxtime.forEach(el => el.innerText = this.formatTime(maxTimeClamp));
+
+            if (this.isPaused) { this.isLooping = false; return; }
 
             requestAnimationFrame(() => this.render());
 
@@ -845,17 +857,12 @@ void mainImage( out vec4 fragColor, in vec2 fragCoord )
                 this.lastFrameTime = now;
                 this.elFramerate.forEach(el => el.innerText = `${this.fps.toFixed(1)} fps`);
             }
+        }
 
-            const totalTimeClamp = Math.min(999, this.iTime);
-            const maxTimeClamp = Math.min(999, this.maxTime);
-            function formatTime(seconds) {
-                const m = Math.floor(seconds / 60).toString().padStart(2, '0');
-                const s = (seconds % 60).toFixed(1).padStart(4, '0');
-                return `${m}:${s}`;
-            }
-
-            this.elTotaltime.forEach(el => el.innerText = formatTime(totalTimeClamp));
-            this.elMaxtime.forEach(el => el.innerText = formatTime(maxTimeClamp));
+        formatTime(seconds) {
+            const m = Math.floor(seconds / 60).toString().padStart(2, '0');
+            const s = (seconds % 60).toFixed(1).padStart(4, '0');
+            return `${m}:${s}`;
         }
     }
     
