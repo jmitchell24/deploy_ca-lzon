@@ -8,7 +8,15 @@
       <generator>Zola</generator>
       <language>en</language>
       <atom:link href="https://lzon.ca/posts/rss.xml" rel="self" type="application/rss+xml"/>
-      <lastBuildDate>Thu, 12 Mar 2026 00:00:00 +0000</lastBuildDate>
+      <lastBuildDate>Sun, 15 Mar 2026 00:00:00 +0000</lastBuildDate>
+      <item>
+          <title>How to Organize Your Files by Date</title>
+          <pubDate>Sun, 15 Mar 2026 00:00:00 +0000</pubDate>
+          <author>Lzon</author>
+          <link>https://lzon.ca/posts/tips/filename-dating/</link>
+          <guid>https://lzon.ca/posts/tips/filename-dating/</guid>
+          <description xml:base="https://lzon.ca/posts/tips/filename-dating/">&lt;p&gt;Here’s a technique I often use for organizing my files, as well as some useful scripts for generating filenames.&lt;&#x2F;p&gt;</description>
+      </item>
       <item>
           <title>Chicken Fajita Loaf</title>
           <pubDate>Thu, 12 Mar 2026 00:00:00 +0000</pubDate>
