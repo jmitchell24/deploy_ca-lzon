@@ -57,7 +57,7 @@ usage() {
 ${BOLD}type-date.sh${RESET} — Type today&#39;s date via simulated keypresses
 
 ${BOLD}USAGE${RESET}
-    jm.type-date [options]
+    type-date.sh [options]
 
 ${BOLD}OPTIONS${RESET}
     ${CYAN}--format FORMAT${RESET}  Date format string (default: ${CYAN}%Y-%m-%d${RESET})
@@ -74,13 +74,13 @@ ${BOLD}FORMATS${RESET}
 
 ${BOLD}EXAMPLES${RESET}
     ${DIM}# Type today&#39;s date in YYYY-MM-DD format${RESET}
-    jm.type-date
+    type-date.sh
 
     ${DIM}# Type in US date format${RESET}
-    jm.type-date --format &#39;%m/%d/%Y&#39;
+    type-date.sh --format &#39;%m/%d/%Y&#39;
 
     ${DIM}# Add a longer delay before typing (useful for switching windows)${RESET}
-    jm.type-date --delay 500
+    type-date.sh --delay 500
 
 ${BOLD}BEHAVIOR${RESET}
     - Simulates keypresses into the currently focused window
@@ -118,12 +118,12 @@ while [[ $# -gt 0 ]]; do
             ;;
         -*)
             echo -e "${RED}Error:${RESET} Unknown option: $1"
-            echo "Run ${CYAN}jm.type-date --help${RESET} for usage."
+            echo "Run ${CYAN}type-date.sh --help${RESET} for usage."
             exit 1
             ;;
         *)
             echo -e "${RED}Error:${RESET} Unexpected argument: $1"
-            echo "Run ${CYAN}jm.type-date --help${RESET} for usage."
+            echo "Run ${CYAN}type-date.sh --help${RESET} for usage."
             exit 1
             ;;
     esac
@@ -170,7 +170,7 @@ fi' class=animate-on-hover> <pre class="giallo z-code"><code data-lang=shellscri
 <span class=giallo-l><span aria-hidden=true class=giallo-ln> 23</span><span class=z-string>$</span><span class=z-string>{</span><span class="z-variable z-other">BOLD</span><span class=z-string>}</span><span class=z-string>type-date.sh</span><span class=z-string>$</span><span class=z-string>{</span><span class="z-variable z-other">RESET</span><span class=z-string>}</span><span class=z-string> — Type today's date via simulated keypresses</span></span>
 <span class=giallo-l><span aria-hidden=true class=giallo-ln> 24</span></span>
 <span class=giallo-l><span aria-hidden=true class=giallo-ln> 25</span><span class=z-string>$</span><span class=z-string>{</span><span class="z-variable z-other">BOLD</span><span class=z-string>}</span><span class=z-string>USAGE</span><span class=z-string>$</span><span class=z-string>{</span><span class="z-variable z-other">RESET</span><span class=z-string>}</span></span>
-<span class=giallo-l><span aria-hidden=true class=giallo-ln> 26</span><span class=z-string>    jm.type-date [options]</span></span>
+<span class=giallo-l><span aria-hidden=true class=giallo-ln> 26</span><span class=z-string>    type-date.sh [options]</span></span>
 <span class=giallo-l><span aria-hidden=true class=giallo-ln> 27</span></span>
 <span class=giallo-l><span aria-hidden=true class=giallo-ln> 28</span><span class=z-string>$</span><span class=z-string>{</span><span class="z-variable z-other">BOLD</span><span class=z-string>}</span><span class=z-string>OPTIONS</span><span class=z-string>$</span><span class=z-string>{</span><span class="z-variable z-other">RESET</span><span class=z-string>}</span></span>
 <span class=giallo-l><span aria-hidden=true class=giallo-ln> 29</span><span class=z-string>    $</span><span class=z-string>{</span><span class="z-variable z-other">CYAN</span><span class=z-string>}</span><span class=z-string>--format FORMAT</span><span class=z-string>$</span><span class=z-string>{</span><span class="z-variable z-other">RESET</span><span class=z-string>}</span><span class=z-string>  Date format string (default: </span><span class=z-string>$</span><span class=z-string>{</span><span class="z-variable z-other">CYAN</span><span class=z-string>}</span><span class=z-string>%Y-%m-%d</span><span class=z-string>$</span><span class=z-string>{</span><span class="z-variable z-other">RESET</span><span class=z-string>}</span><span class=z-string>)</span></span>
@@ -187,13 +187,13 @@ fi' class=animate-on-hover> <pre class="giallo z-code"><code data-lang=shellscri
 <span class=giallo-l><span aria-hidden=true class=giallo-ln> 40</span></span>
 <span class=giallo-l><span aria-hidden=true class=giallo-ln> 41</span><span class=z-string>$</span><span class=z-string>{</span><span class="z-variable z-other">BOLD</span><span class=z-string>}</span><span class=z-string>EXAMPLES</span><span class=z-string>$</span><span class=z-string>{</span><span class="z-variable z-other">RESET</span><span class=z-string>}</span></span>
 <span class=giallo-l><span aria-hidden=true class=giallo-ln> 42</span><span class=z-string>    $</span><span class=z-string>{</span><span class="z-variable z-other">DIM</span><span class=z-string>}</span><span class=z-string># Type today's date in YYYY-MM-DD format</span><span class=z-string>$</span><span class=z-string>{</span><span class="z-variable z-other">RESET</span><span class=z-string>}</span></span>
-<span class=giallo-l><span aria-hidden=true class=giallo-ln> 43</span><span class=z-string>    jm.type-date</span></span>
+<span class=giallo-l><span aria-hidden=true class=giallo-ln> 43</span><span class=z-string>    type-date.sh</span></span>
 <span class=giallo-l><span aria-hidden=true class=giallo-ln> 44</span></span>
 <span class=giallo-l><span aria-hidden=true class=giallo-ln> 45</span><span class=z-string>    $</span><span class=z-string>{</span><span class="z-variable z-other">DIM</span><span class=z-string>}</span><span class=z-string># Type in US date format</span><span class=z-string>$</span><span class=z-string>{</span><span class="z-variable z-other">RESET</span><span class=z-string>}</span></span>
-<span class=giallo-l><span aria-hidden=true class=giallo-ln> 46</span><span class=z-string>    jm.type-date --format '%m/%d/%Y'</span></span>
+<span class=giallo-l><span aria-hidden=true class=giallo-ln> 46</span><span class=z-string>    type-date.sh --format '%m/%d/%Y'</span></span>
 <span class=giallo-l><span aria-hidden=true class=giallo-ln> 47</span></span>
 <span class=giallo-l><span aria-hidden=true class=giallo-ln> 48</span><span class=z-string>    $</span><span class=z-string>{</span><span class="z-variable z-other">DIM</span><span class=z-string>}</span><span class=z-string># Add a longer delay before typing (useful for switching windows)</span><span class=z-string>$</span><span class=z-string>{</span><span class="z-variable z-other">RESET</span><span class=z-string>}</span></span>
-<span class=giallo-l><span aria-hidden=true class=giallo-ln> 49</span><span class=z-string>    jm.type-date --delay 500</span></span>
+<span class=giallo-l><span aria-hidden=true class=giallo-ln> 49</span><span class=z-string>    type-date.sh --delay 500</span></span>
 <span class=giallo-l><span aria-hidden=true class=giallo-ln> 50</span></span>
 <span class=giallo-l><span aria-hidden=true class=giallo-ln> 51</span><span class=z-string>$</span><span class=z-string>{</span><span class="z-variable z-other">BOLD</span><span class=z-string>}</span><span class=z-string>BEHAVIOR</span><span class=z-string>$</span><span class=z-string>{</span><span class="z-variable z-other">RESET</span><span class=z-string>}</span></span>
 <span class=giallo-l><span aria-hidden=true class=giallo-ln> 52</span><span class=z-string>    - Simulates keypresses into the currently focused window</span></span>
@@ -231,12 +231,12 @@ fi' class=animate-on-hover> <pre class="giallo z-code"><code data-lang=shellscri
 <span class=giallo-l><span aria-hidden=true class=giallo-ln> 84</span><span>            ;;</span></span>
 <span class=giallo-l><span aria-hidden=true class=giallo-ln> 85</span><span class="z-string z-regexp">        -</span><span class=z-keyword>*</span><span class=z-keyword>)</span></span>
 <span class=giallo-l><span aria-hidden=true class=giallo-ln> 86</span><span class=z-support>            echo</span><span class=z-constant> -</span><span class=z-constant>e</span><span class="z-punctuation z-definition z-string"> "</span><span class=z-string>$</span><span class=z-string>{</span><span class="z-variable z-other">RED</span><span class=z-string>}</span><span class=z-string>Error:</span><span class=z-string>$</span><span class=z-string>{</span><span class="z-variable z-other">RESET</span><span class=z-string>}</span><span class=z-string> Unknown option: </span><span class=z-variable>$</span><span class=z-variable>1</span><span class="z-punctuation z-definition z-string">"</span></span>
-<span class=giallo-l><span aria-hidden=true class=giallo-ln> 87</span><span class=z-support>            echo</span><span class="z-punctuation z-definition z-string"> "</span><span class=z-string>Run </span><span class=z-string>$</span><span class=z-string>{</span><span class="z-variable z-other">CYAN</span><span class=z-string>}</span><span class=z-string>jm.type-date --help</span><span class=z-string>$</span><span class=z-string>{</span><span class="z-variable z-other">RESET</span><span class=z-string>}</span><span class=z-string> for usage.</span><span class="z-punctuation z-definition z-string">"</span></span>
+<span class=giallo-l><span aria-hidden=true class=giallo-ln> 87</span><span class=z-support>            echo</span><span class="z-punctuation z-definition z-string"> "</span><span class=z-string>Run </span><span class=z-string>$</span><span class=z-string>{</span><span class="z-variable z-other">CYAN</span><span class=z-string>}</span><span class=z-string>type-date.sh --help</span><span class=z-string>$</span><span class=z-string>{</span><span class="z-variable z-other">RESET</span><span class=z-string>}</span><span class=z-string> for usage.</span><span class="z-punctuation z-definition z-string">"</span></span>
 <span class=giallo-l><span aria-hidden=true class=giallo-ln> 88</span><span class=z-support>            exit</span><span class=z-constant> 1</span></span>
 <span class=giallo-l><span aria-hidden=true class=giallo-ln> 89</span><span>            ;;</span></span>
 <span class=giallo-l><span aria-hidden=true class=giallo-ln> 90</span><span class=z-keyword>        *)</span></span>
 <span class=giallo-l><span aria-hidden=true class=giallo-ln> 91</span><span class=z-support>            echo</span><span class=z-constant> -</span><span class=z-constant>e</span><span class="z-punctuation z-definition z-string"> "</span><span class=z-string>$</span><span class=z-string>{</span><span class="z-variable z-other">RED</span><span class=z-string>}</span><span class=z-string>Error:</span><span class=z-string>$</span><span class=z-string>{</span><span class="z-variable z-other">RESET</span><span class=z-string>}</span><span class=z-string> Unexpected argument: </span><span class=z-variable>$</span><span class=z-variable>1</span><span class="z-punctuation z-definition z-string">"</span></span>
-<span class=giallo-l><span aria-hidden=true class=giallo-ln> 92</span><span class=z-support>            echo</span><span class="z-punctuation z-definition z-string"> "</span><span class=z-string>Run </span><span class=z-string>$</span><span class=z-string>{</span><span class="z-variable z-other">CYAN</span><span class=z-string>}</span><span class=z-string>jm.type-date --help</span><span class=z-string>$</span><span class=z-string>{</span><span class="z-variable z-other">RESET</span><span class=z-string>}</span><span class=z-string> for usage.</span><span class="z-punctuation z-definition z-string">"</span></span>
+<span class=giallo-l><span aria-hidden=true class=giallo-ln> 92</span><span class=z-support>            echo</span><span class="z-punctuation z-definition z-string"> "</span><span class=z-string>Run </span><span class=z-string>$</span><span class=z-string>{</span><span class="z-variable z-other">CYAN</span><span class=z-string>}</span><span class=z-string>type-date.sh --help</span><span class=z-string>$</span><span class=z-string>{</span><span class="z-variable z-other">RESET</span><span class=z-string>}</span><span class=z-string> for usage.</span><span class="z-punctuation z-definition z-string">"</span></span>
 <span class=giallo-l><span aria-hidden=true class=giallo-ln> 93</span><span class=z-support>            exit</span><span class=z-constant> 1</span></span>
 <span class=giallo-l><span aria-hidden=true class=giallo-ln> 94</span><span>            ;;</span></span>
 <span class=giallo-l><span aria-hidden=true class=giallo-ln> 95</span><span class=z-keyword>    esac</span></span>
