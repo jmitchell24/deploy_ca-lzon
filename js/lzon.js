@@ -351,7 +351,12 @@ async function initQotd() {
         });
     }
 
-
+    function getLocalDateString(d) {
+        const y = d.getFullYear();
+        const m = String(d.getMonth() + 1).padStart(2, '0');
+        const day = String(d.getDate()).padStart(2, '0');
+        return `${y}-${m}-${day}`;
+    }
 
 
     // wait for dom to load
@@ -401,7 +406,7 @@ async function initQotd() {
                     day.setDate(day.getDate() + offset);
 
                     const q = getSequenceQuote(offset);
-                    const todayStr = new Date().toISOString().slice(0, 10);
+                    const todayStr = getLocalDateString(new Date());
                     const isToday = q.date === todayStr;
 
                     elButtons.classList.toggle("display-none", isToday);
@@ -420,7 +425,7 @@ async function initQotd() {
                 let dayOffset = 0;
 
                 // if a quote was added today, start on it
-                const todayStr = new Date().toISOString().slice(0, 10);
+                const todayStr = getLocalDateString(new Date());
                 for (let i = 0; i < quotes.length; i++) {
                     if (getSequenceQuote(i).date === todayStr) { dayOffset = i; break; }
                 }
@@ -446,16 +451,18 @@ async function initQotd() {
                     const elQuote = el.cloneNode(true); 
                     const elDate = elQuote.querySelector("#quote-date"); 
                     const elLabel = elQuote.querySelector("#quote-label"); 
+                    const elLabelText = elLabel.querySelector("#quote-label-text"); 
                     const elContent = elQuote.querySelector("#quote-content"); 
 
                     const d = new Date();
                     d.setDate(d.getDate() + i);
-                    elDate.innerHTML = "Scheduled for " + d.toLocaleDateString(undefined, {
+                    elDate.innerHTML = d.toLocaleDateString(undefined, {
                         weekday: "long", year: "numeric", month: "short", day: "numeric",
                     });
                     
                     if (q.date) { 
-                        elLabel.innerHTML = "Added " + getDateString(getQuoteDate(q)); 
+                        elLabel.classList.remove("display-none");
+                        elLabelText.innerHTML = getDateString(getQuoteDate(q)); 
                     }
                     
                     elContent.innerHTML = `<em>"${q.text}"</em> <br> - ${q.author}`;
