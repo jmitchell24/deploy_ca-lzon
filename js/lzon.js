@@ -569,19 +569,28 @@ function initSlideshow() {
             this.nextBtn?.addEventListener('click', () => this.next());
             this.indicators.forEach((ind, i) => ind.addEventListener('click', () => this.goTo(i)));
 
+            
+            this.inner.addEventListener('scroll', () => {
+                const center = this.inner.scrollLeft + this.inner.offsetWidth / 2;
+                this.current = this.items.reduce((nearest, item, i) => {
+                    const itemCenter = item.offsetLeft + item.offsetWidth / 2;
+                    const prevCenter = this.items[nearest].offsetLeft + this.items[nearest].offsetWidth / 2;
+                    return Math.abs(itemCenter - center) < Math.abs(prevCenter - center) ? i : nearest;
+                }, 0);
+                this.update();
+            });
+
+
+
             this.update();
         }
 
         goTo(index) {
-            //if (this.scrolling) return;
-            //this.scrolling = true;
+            //if (this.current === index) return; 
+
             this.current = index;
-            console.trace(this.inner.offsetLeft);
             this.inner.scrollTo({ left: this.items[index].offsetLeft - this.inner.offsetLeft, behavior: 'smooth' });
             this.update();
-            this.inner.addEventListener('scrollend', () => {
-                this.scrolling = false;
-            }, { once: true });
         }
 
 
