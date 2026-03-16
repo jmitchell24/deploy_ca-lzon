@@ -549,3 +549,56 @@ async function initChangelog() {
 
 initChangelog(); 
 
+// 
+// slideshow
+// 
+
+function initSlideshow() { 
+    class Slideshow {
+        constructor(el) {
+            
+            this.el         = el;
+            this.inner      = el.querySelector('.slideshow-slides');
+            this.items      = [...el.querySelectorAll('.slideshow-slide')];
+            this.indicators = [...el.querySelectorAll('.slideshow-page')];
+            this.prevBtn    = el.querySelector('.slideshow-prev');
+            this.nextBtn    = el.querySelector('.slideshow-next');
+            this.current    = 0;
+
+            this.prevBtn?.addEventListener('click', () => this.prev());
+            this.nextBtn?.addEventListener('click', () => this.next());
+            this.indicators.forEach((ind, i) => ind.addEventListener('click', () => this.goTo(i)));
+
+            this.update();
+        }
+
+        goTo(index) {
+            //if (this.scrolling) return;
+            //this.scrolling = true;
+            this.current = index;
+            console.trace(this.inner.offsetLeft);
+            this.inner.scrollTo({ left: this.items[index].offsetLeft - this.inner.offsetLeft, behavior: 'smooth' });
+            this.update();
+            this.inner.addEventListener('scrollend', () => {
+                this.scrolling = false;
+            }, { once: true });
+        }
+
+
+        prev() { if (this.current > 0) this.goTo(this.current - 1); }
+        next() { if (this.current < this.items.length - 1) this.goTo(this.current + 1); }
+
+        update() {
+            this.indicators.forEach((ind, i) => ind.classList.toggle('active', i === this.current));
+            this.prevBtn?.toggleAttribute('disabled', this.current === 0);
+            this.nextBtn?.toggleAttribute('disabled', this.current === this.items.length - 1);
+        }
+    }
+
+    document.addEventListener('DOMContentLoaded', () => {
+        console.trace("hi"); 
+        document.querySelectorAll('.slideshow').forEach(el => new Slideshow(el));
+    }); 
+}
+
+initSlideshow(); 
