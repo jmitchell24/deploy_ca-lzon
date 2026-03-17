@@ -565,20 +565,28 @@ function initSlideshow() {
             this.nextBtn    = el.querySelector('.slideshow-next');
             this.current    = 0;
 
+            this.scrolling = false;
+
             this.prevBtn?.addEventListener('click', () => this.prev());
             this.nextBtn?.addEventListener('click', () => this.next());
             this.indicators.forEach((ind, i) => ind.addEventListener('click', () => this.goTo(i)));
 
-            
+
             this.inner.addEventListener('scroll', () => {
+                if (this.scrolling) return;
+
+                const origin = this.inner.offsetLeft;
                 const center = this.inner.scrollLeft + this.inner.offsetWidth / 2;
                 this.current = this.items.reduce((nearest, item, i) => {
-                    const itemCenter = item.offsetLeft + item.offsetWidth / 2;
-                    const prevCenter = this.items[nearest].offsetLeft + this.items[nearest].offsetWidth / 2;
+                    const itemCenter = (item.offsetLeft - origin) + item.offsetWidth / 2;
+                    const prevCenter = (this.items[nearest].offsetLeft - origin) + this.items[nearest].offsetWidth / 2;
                     return Math.abs(itemCenter - center) < Math.abs(prevCenter - center) ? i : nearest;
                 }, 0);
+
                 this.update();
             });
+
+           
 
 
 
@@ -586,11 +594,13 @@ function initSlideshow() {
         }
 
         goTo(index) {
-            //if (this.current === index) return; 
-
             this.current = index;
+            this.scrolling = true;
             this.inner.scrollTo({ left: this.items[index].offsetLeft - this.inner.offsetLeft, behavior: 'smooth' });
             this.update();
+
+            clearTimeout(this._scrollEnd);
+            this._scrollEnd = setTimeout(() => { this.scrolling = false; }, 400);
         }
 
 
