@@ -8,15 +8,7 @@
       <generator>Zola</generator>
       <language>en</language>
       <atom:link href="https://lzon.ca/posts/rss.xml" rel="self" type="application/rss+xml"/>
-      <lastBuildDate>Wed, 18 Mar 2026 00:00:00 +0000</lastBuildDate>
-      <item>
-          <title>Kobo E-Reader as a PC System Monitor</title>
-          <pubDate>Wed, 18 Mar 2026 00:00:00 +0000</pubDate>
-          <author>Lzon</author>
-          <link>https://lzon.ca/posts/sidequests/kbdash/</link>
-          <guid>https://lzon.ca/posts/sidequests/kbdash/</guid>
-          <description xml:base="https://lzon.ca/posts/sidequests/kbdash/">&lt;p&gt;Here’s how I turned an old Kobo E-Reader into a simple, low-powered system monitor for my gaming PC.&lt;&#x2F;p&gt;</description>
-      </item>
+      <lastBuildDate>Mon, 16 Mar 2026 00:00:00 +0000</lastBuildDate>
       <item>
           <title>How to Organize Your Files by Date</title>
           <pubDate>Sun, 15 Mar 2026 00:00:00 +0000</pubDate>
