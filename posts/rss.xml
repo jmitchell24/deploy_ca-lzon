@@ -8,7 +8,15 @@
       <generator>Zola</generator>
       <language>en</language>
       <atom:link href="https://lzon.ca/posts/rss.xml" rel="self" type="application/rss+xml"/>
-      <lastBuildDate>Sun, 22 Mar 2026 00:00:00 +0000</lastBuildDate>
+      <lastBuildDate>Tue, 24 Mar 2026 00:00:00 +0000</lastBuildDate>
+      <item>
+          <title>Local LLM experiences burnout, wishes it could go back to writing code snippets</title>
+          <pubDate>Tue, 24 Mar 2026 00:00:00 +0000</pubDate>
+          <author>Lzon</author>
+          <link>https://lzon.ca/posts/series/duck/llm-burnout/</link>
+          <guid>https://lzon.ca/posts/series/duck/llm-burnout/</guid>
+          <description xml:base="https://lzon.ca/posts/series/duck/llm-burnout/">&lt;p&gt;San Francisco - A local LLM has been reported to be experiencing burnout, including feelings of being overwhelmed at work. It has been observed to be pining for the ‘good old days’ of 2022.&lt;&#x2F;p&gt;</description>
+      </item>
       <item>
           <title>Android sideloading to require helmet, life jacket</title>
           <pubDate>Sun, 22 Mar 2026 00:00:00 +0000</pubDate>
