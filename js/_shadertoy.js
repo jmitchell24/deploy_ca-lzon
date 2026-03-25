@@ -14,35 +14,96 @@ function parseCSSColorToFloat(colorStr) {
   ];
 }
 class ShaderSketch {
+  container;
+  canvas;
+  gl;
+  program;
+  elTimeRange;
+  elTimeRangeLabel;
+  elFramerate;
+  elTotaltime;
+  elMaxtime;
+  elResolution;
+  elFailed;
+  elPanzoom;
+  elButtonsPlay;
+  elButtonsPause;
+  elButtonsReset;
+  elButtonFullscreen;
+  elButtonExitFullscreen;
+  startTime;
+  lastNow;
+  lastFrameTime;
+  lastRenderTime;
+  iTime;
+  iResolution;
+  iTileOffset;
+  iMouse;
+  iColorDarker;
+  iColorDark;
+  iColorGray;
+  iColorLight;
+  iColorLighter;
+  iColorPrimary;
+  iColorPrimaryDark;
+  iColorPrimaryLight;
+  iColorSecondary;
+  iColorTertiary;
+  iAA;
+  iTimeScale;
+  zoom;
+  cx;
+  cy;
+  _dragActive;
+  _dragStartX;
+  _dragStartY;
+  _dragCX;
+  _dragCY;
+  _pinchDist;
+  _pinchZoom;
+  _pinchMidX;
+  _pinchMidY;
+  _pinchFracCX;
+  _pinchFracCY;
+  frameCount;
+  fps;
+  fpsLimit;
+  fpsInterval;
+  uniforms;
+  scaleFactor;
+  maxTime;
+  isPaused;
+  isLooping;
   setFailed(error) {
-    this.canvas.style = "display: none";
+    this.canvas.style.display = "none";
     this.elFailed.forEach((el) => {
-      el.style = "display: flex";
-      el.innerHTML = error.toString();
+      el.style.display = "flex";
+      el.innerHTML = String(error);
     });
   }
   constructor(container, canvas, fragmentShader) {
     this.container = container;
     this.canvas = canvas;
-    this.gl = canvas.getContext("webgl2", {});
-    if (!this.gl) {
-      console.error("WebGL2 not supported");
-      this.setFailed("WebGL2 not supported");
-      return;
-    }
+    this.elFailed = document.querySelectorAll("#error");
     this.elTimeRange = document.querySelectorAll("#timerange");
     this.elTimeRangeLabel = document.querySelectorAll("#timerange-label");
     this.elFramerate = document.querySelectorAll("#framerate");
     this.elTotaltime = document.querySelectorAll("#totaltime");
     this.elMaxtime = document.querySelectorAll("#maxtime");
     this.elResolution = document.querySelectorAll("#resolution");
-    this.elFailed = document.querySelectorAll("#error");
     this.elPanzoom = document.querySelectorAll("#panzoom");
     this.elButtonsPlay = document.querySelectorAll('[id="play"]');
     this.elButtonsPause = document.querySelectorAll('[id="pause"]');
     this.elButtonsReset = document.querySelectorAll('[id="reset"]');
     this.elButtonFullscreen = document.querySelector("#fullscreen");
     this.elButtonExitFullscreen = document.querySelector("#exit-fullscreen");
+    const gl = canvas.getContext("webgl2", {});
+    if (!gl) {
+      console.error("WebGL2 not supported");
+      this.setFailed("WebGL2 not supported");
+      return;
+    }
+    this.gl = gl;
     this.startTime = Date.now();
     this.lastNow = Date.now();
     this.lastFrameTime = Date.now();
@@ -50,10 +111,16 @@ class ShaderSketch {
     this.iResolution = [0, 0];
     this.iTileOffset = [0, 0];
     this.iMouse = [0, 0, 0, 0];
+    this.iColorDarker = [0, 0, 0, 0];
     this.iColorDark = [0, 0, 0, 0];
+    this.iColorGray = [0, 0, 0, 0];
+    this.iColorLight = [0, 0, 0, 0];
+    this.iColorLighter = [0, 0, 0, 0];
     this.iColorPrimary = [0, 0, 0, 0];
     this.iColorPrimaryDark = [0, 0, 0, 0];
     this.iColorPrimaryLight = [0, 0, 0, 0];
+    this.iColorSecondary = [0, 0, 0, 0];
+    this.iColorTertiary = [0, 0, 0, 0];
     this.iAA = 1;
     this.iTimeScale = 1;
     this.zoom = 1;
@@ -64,6 +131,12 @@ class ShaderSketch {
     this._dragStartY = 0;
     this._dragCX = 0;
     this._dragCY = 0;
+    this._pinchDist = 0;
+    this._pinchZoom = 1;
+    this._pinchMidX = 0;
+    this._pinchMidY = 0;
+    this._pinchFracCX = 0;
+    this._pinchFracCY = 0;
     this.frameCount = 0;
     this.fps = 0;
     this.fpsLimit = 0;
@@ -121,8 +194,6 @@ class ShaderSketch {
     new MutationObserver(refreshColors).observe(document.body, { attributes: true, attributeFilter: ["data-dark-mode"] });
     const captureButtons = document.querySelectorAll("button[data-capture]");
     captureButtons.forEach((el) => {
-      let w = 0;
-      let h = 0;
       let capfunc = null;
       const [type, cw, ch, ct] = el.getAttribute("data-capture").split(" ");
       switch (type) {
@@ -304,8 +375,8 @@ class ShaderSketch {
     this.elButtonsPlay.forEach((el) => el.classList.toggle("active", true));
     this.maxTime = Math.max(1, this.maxTime);
     this.elTimeRange.forEach((el) => {
-      el.max = Math.ceil(this.maxTime * 100) / 100;
-      el.value = this.maxTime;
+      el.max = String(Math.ceil(this.maxTime * 100) / 100);
+      el.value = String(this.maxTime);
     });
     this.lastNow = Date.now();
     if (!this.isLooping) {
@@ -317,8 +388,8 @@ class ShaderSketch {
     this.iTime = 0;
     this.maxTime = 1;
     this.elTimeRange.forEach((el) => {
-      el.value = 1;
-      el.max = 1;
+      el.value = "1";
+      el.max = "1";
     });
     this.elTotaltime.forEach((el) => el.innerText = this.formatTime(0));
     this.elMaxtime.forEach((el) => el.innerText = this.formatTime(1));
@@ -510,12 +581,12 @@ class ShaderSketch {
                 uniform vec4    iColorDarker;
 
                 uniform vec4    iColorPrimary;
-                uniform vec4    iColorPrimaryDark; 
-                uniform vec4    iColorPrimaryLight; 
+                uniform vec4    iColorPrimaryDark;
+                uniform vec4    iColorPrimaryLight;
                 uniform vec4    iColorSecondary;
                 uniform vec4    iColorTertiary;
 
-                uniform int     iAA; 
+                uniform int     iAA;
 
                 uniform vec2    iTileOffset;
             `;
@@ -523,7 +594,7 @@ class ShaderSketch {
 
                 out vec4 _lzon_frag_color;
                 void main() {
-                    int _iAA = iAA; 
+                    int _iAA = iAA;
                     vec4 _color = vec4(0.0);
                     for (int x = 0; x < _iAA; x++) {
                         for (int y = 0; y < _iAA; y++) {
@@ -534,7 +605,7 @@ class ShaderSketch {
                         }
                     }
                     _lzon_frag_color = _color / float(_iAA * _iAA);
-                } 
+                }
 
             `;
     const vertexShader = gl.createShader(gl.VERTEX_SHADER);
@@ -665,8 +736,8 @@ class ShaderSketch {
         this.maxTime = this.iTime;
       const maxVal = Math.ceil(this.maxTime * 100) / 100;
       this.elTimeRange.forEach((el) => {
-        el.max = maxVal;
-        el.value = maxVal;
+        el.max = String(maxVal);
+        el.value = String(maxVal);
       });
     }
     this.lastNow = now;
