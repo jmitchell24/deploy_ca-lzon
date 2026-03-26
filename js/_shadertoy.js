@@ -769,7 +769,7 @@ class ShaderSketch {
 function initShadertoy() {
   const shaderCode = RAW_GLSL_CODE;
   console.log("shader code: " + shaderCode);
-  if (!RAd_GLSL_CODE) {
+  if (!RAW_GLSL_CODE) {
     console.error("raw glsl code is undefined");
     return;
   }
