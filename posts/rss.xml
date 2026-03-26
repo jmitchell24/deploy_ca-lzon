@@ -8,14 +8,14 @@
       <generator>Zola</generator>
       <language>en</language>
       <atom:link href="https://lzon.ca/posts/rss.xml" rel="self" type="application/rss+xml"/>
-      <lastBuildDate>Wed, 25 Mar 2026 00:00:00 +0000</lastBuildDate>
+      <lastBuildDate>Thu, 26 Mar 2026 00:00:00 +0000</lastBuildDate>
       <item>
           <title>Windows Notepad to receive new Age Verification Feature</title>
           <pubDate>Wed, 25 Mar 2026 00:00:00 +0000</pubDate>
           <author>Lzon</author>
           <link>https://lzon.ca/posts/series/duck/notepad-verified/</link>
           <guid>https://lzon.ca/posts/series/duck/notepad-verified/</guid>
-          <description xml:base="https://lzon.ca/posts/series/duck/notepad-verified/">&lt;p&gt;The decades-old note Windows text editor app will soon include new age verification checks to ensure user safety and security.&lt;&#x2F;p&gt;</description>
+          <description xml:base="https://lzon.ca/posts/series/duck/notepad-verified/">&lt;p&gt;The decades-old Windows-based text editor will soon include new age verification checks to ensure user safety and security.&lt;&#x2F;p&gt;</description>
       </item>
       <item>
           <title>Local LLM experiences burnout, wishes it could go back to writing code snippets</title>

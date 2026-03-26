@@ -561,53 +561,53 @@ class ShaderSketch {
   initShader(fragmentSource) {
     const gl = this.gl;
     const vertexSource = `#version 300 es
-                in vec2 position;
+            in vec2 position;
 
-                void main() {
-                    gl_Position = vec4(position, 0.0, 1.0);
-                }
-            `;
+            void main() {
+                gl_Position = vec4(position, 0.0, 1.0);
+            }
+        `;
     const fragmentSourcePrefix = `#version 300 es
-                precision highp float;
+            precision highp float;
 
-                uniform float   iTime;
-                uniform vec2    iResolution;
-                uniform vec4    iMouse;
+            uniform float   iTime;
+            uniform vec2    iResolution;
+            uniform vec4    iMouse;
 
-                uniform vec4    iColorLighter;
-                uniform vec4    iColorLight;
-                uniform vec4    iColorGray;
-                uniform vec4    iColorDark;
-                uniform vec4    iColorDarker;
+            uniform vec4    iColorLighter;
+            uniform vec4    iColorLight;
+            uniform vec4    iColorGray;
+            uniform vec4    iColorDark;
+            uniform vec4    iColorDarker;
 
-                uniform vec4    iColorPrimary;
-                uniform vec4    iColorPrimaryDark;
-                uniform vec4    iColorPrimaryLight;
-                uniform vec4    iColorSecondary;
-                uniform vec4    iColorTertiary;
+            uniform vec4    iColorPrimary;
+            uniform vec4    iColorPrimaryDark;
+            uniform vec4    iColorPrimaryLight;
+            uniform vec4    iColorSecondary;
+            uniform vec4    iColorTertiary;
 
-                uniform int     iAA;
+            uniform int     iAA;
 
-                uniform vec2    iTileOffset;
-            `;
+            uniform vec2    iTileOffset;
+        `;
     const fragmentSourceSuffix = `
 
-                out vec4 _lzon_frag_color;
-                void main() {
-                    int _iAA = iAA;
-                    vec4 _color = vec4(0.0);
-                    for (int x = 0; x < _iAA; x++) {
-                        for (int y = 0; y < _iAA; y++) {
-                            vec2 _offset = (vec2(float(x), float(y)) + 0.5) / float(_iAA) - 0.5;
-                            vec4 _sample;
-                            mainImage(_sample, gl_FragCoord.xy + _offset + iTileOffset);
-                            _color += _sample;
-                        }
+            out vec4 _lzon_frag_color;
+            void main() {
+                int _iAA = iAA;
+                vec4 _color = vec4(0.0);
+                for (int x = 0; x < _iAA; x++) {
+                    for (int y = 0; y < _iAA; y++) {
+                        vec2 _offset = (vec2(float(x), float(y)) + 0.5) / float(_iAA) - 0.5;
+                        vec4 _sample;
+                        mainImage(_sample, gl_FragCoord.xy + _offset + iTileOffset);
+                        _color += _sample;
                     }
-                    _lzon_frag_color = _color / float(_iAA * _iAA);
                 }
+                _lzon_frag_color = _color / float(_iAA * _iAA);
+            }
 
-            `;
+        `;
     const vertexShader = gl.createShader(gl.VERTEX_SHADER);
     gl.shaderSource(vertexShader, vertexSource);
     gl.compileShader(vertexShader);
@@ -766,13 +766,20 @@ class ShaderSketch {
     return `${m}:${s}`;
   }
 }
-var shaderCode = RAW_GLSL_CODE;
-console.log("shader code: " + shaderCode);
-var container = document.getElementById("sketch");
-var canvas = container.querySelector("canvas");
-var sketch = new ShaderSketch(container, canvas, shaderCode);
-var codeWrapper = document.querySelector("#glslCodeWrapper");
-codeWrapper.innerHTML = HTML_GLSL_CODE + codeWrapper.innerHTML;
-codeWrapper.setAttribute("data-raw-code", RAW_GLSL_CODE);
-initCodeWrapper(codeWrapper);
-window.sketch = sketch;
+function initShadertoy() {
+  const shaderCode = RAW_GLSL_CODE;
+  console.log("shader code: " + shaderCode);
+  if (!RAd_GLSL_CODE) {
+    console.error("raw glsl code is undefined");
+    return;
+  }
+  const container = document.getElementById("sketch");
+  const canvas = container.querySelector("canvas");
+  const sketch = new ShaderSketch(container, canvas, shaderCode);
+  const codeWrapper = document.querySelector("#glslCodeWrapper");
+  codeWrapper.innerHTML = HTML_GLSL_CODE + codeWrapper.innerHTML;
+  codeWrapper.setAttribute("data-raw-code", RAW_GLSL_CODE);
+  initCodeWrapper(codeWrapper);
+  window.sketch = sketch;
+}
+initShadertoy();
