@@ -8,7 +8,15 @@
       <generator>Zola</generator>
       <language>en</language>
       <atom:link href="https://lzon.ca/rss.xml" rel="self" type="application/rss+xml"/>
-      <lastBuildDate>Fri, 27 Mar 2026 00:00:00 +0000</lastBuildDate>
+      <lastBuildDate>Sat, 28 Mar 2026 00:00:00 +0000</lastBuildDate>
+      <item>
+          <title>My thoughts, 40 months into era of AI</title>
+          <pubDate>Sat, 28 Mar 2026 00:00:00 +0000</pubDate>
+          <author>Lzon</author>
+          <link>https://lzon.ca/posts/other/thoughts-ai-era/</link>
+          <guid>https://lzon.ca/posts/other/thoughts-ai-era/</guid>
+          <description xml:base="https://lzon.ca/posts/other/thoughts-ai-era/">&lt;p&gt;Here are my accumulated thoughts and ideas about AI since the launch of ChatGPT in November 2022.&lt;&#x2F;p&gt;</description>
+      </item>
       <item>
           <title>Statistics Canada to replace Food &amp; Gas with &quot;Huge TVs&quot; in inflation reporting</title>
           <pubDate>Fri, 27 Mar 2026 00:00:00 +0000</pubDate>

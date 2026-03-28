@@ -50,6 +50,33 @@ class Slideshow {
       this.update();
     });
     this.update();
+    this.constrainHeight();
+  }
+  constrainHeight() {
+    const imgs = this.items.flatMap((item) => [...item.querySelectorAll("img")]);
+    if (imgs.length === 0)
+      return;
+    const measure = () => {
+      const minH = imgs.reduce((min, img) => Math.min(min, img.offsetHeight), Infinity);
+      if (minH > 0 && isFinite(minH)) {
+        imgs.forEach((img) => {
+          img.style.maxHeight = `${minH}px`;
+        });
+      }
+    };
+    const pending = imgs.filter((img) => !img.complete);
+    if (pending.length === 0) {
+      measure();
+    } else {
+      let loaded = 0;
+      const onLoad = () => {
+        if (++loaded === pending.length)
+          measure();
+      };
+      pending.forEach((img) => {
+        img.addEventListener("load", onLoad, { once: true });
+      });
+    }
   }
   goTo(index) {
     this.current = index;
