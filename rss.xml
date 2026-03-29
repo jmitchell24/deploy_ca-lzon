@@ -8,7 +8,15 @@
       <generator>Zola</generator>
       <language>en</language>
       <atom:link href="https://lzon.ca/rss.xml" rel="self" type="application/rss+xml"/>
-      <lastBuildDate>Sat, 28 Mar 2026 00:00:00 +0000</lastBuildDate>
+      <lastBuildDate>Sun, 29 Mar 2026 00:00:00 +0000</lastBuildDate>
+      <item>
+          <title>On Typing and Keyboards</title>
+          <pubDate>Sun, 29 Mar 2026 00:00:00 +0000</pubDate>
+          <author>Lzon</author>
+          <link>https://lzon.ca/posts/series/grateful/typing-and-keyboards/</link>
+          <guid>https://lzon.ca/posts/series/grateful/typing-and-keyboards/</guid>
+          <description xml:base="https://lzon.ca/posts/series/grateful/typing-and-keyboards/">&lt;p&gt;I have a very consistent routine. I get up early. I exercise. I shower. I make coffee. I turn my computer on, then I place my hands on my keyboard and begin working.&lt;&#x2F;p&gt;</description>
+      </item>
       <item>
           <title>The first 40 months of the AI era</title>
           <pubDate>Sat, 28 Mar 2026 00:00:00 +0000</pubDate>

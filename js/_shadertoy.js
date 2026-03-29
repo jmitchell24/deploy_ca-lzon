@@ -679,6 +679,7 @@ class ShaderSketch {
     } });
     this.uniforms.forEach((e) => {
       e.loc = gl.getUniformLocation(this.program, e.name);
+      e.isActive = () => e.loc != null;
       console.log(`${e.name} : ${e.loc} `);
     });
     this.iColorLighter = parseCSSColorToFloat("--color-lighter");
