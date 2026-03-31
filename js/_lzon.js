@@ -467,6 +467,50 @@ function initTheme() {
   });
 }
 
+// ts/cipher.ts
+function cipher(asciiVal) {
+  if (asciiVal >= 65 && asciiVal <= 90)
+    return String.fromCharCode(155 - asciiVal);
+  if (asciiVal >= 97 && asciiVal <= 122)
+    return String.fromCharCode(219 - asciiVal);
+  return String.fromCharCode(asciiVal);
+}
+function applyCipher(el, cipher2) {
+  const walker = document.createTreeWalker(el, NodeFilter.SHOW_TEXT);
+  let node;
+  while ((node = walker.nextNode()) !== null) {
+    node.nodeValue = node.nodeValue.split("").map((ch) => {
+      const code = ch.charCodeAt(0);
+      return code > 32 ? cipher2(code) : ch;
+    }).join("");
+  }
+}
+function initCipher() {
+  document.addEventListener("DOMContentLoaded", () => {
+    const elCipherTexts = document.querySelectorAll(".cipher-text");
+    const elBtnReveal = document.getElementById("cipher-reveal");
+    const elBtnHide = document.getElementById("cipher-hide");
+    if (elCipherTexts.length == 0)
+      return;
+    if (!elBtnReveal || !elBtnHide)
+      return;
+    console.log(`${elCipherTexts.length} cipher texts`);
+    let toggleState = true;
+    function applyAllCiphers() {
+      for (const el of elCipherTexts) {
+        applyCipher(el, cipher);
+      }
+      toggleState = !toggleState;
+      elBtnReveal?.classList.toggle("display-none", toggleState);
+      elBtnHide?.classList.toggle("display-none", !toggleState);
+    }
+    elBtnReveal?.classList.toggle("display-none", toggleState);
+    elBtnHide?.classList.toggle("display-none", !toggleState);
+    elBtnReveal.addEventListener("click", applyAllCiphers);
+    elBtnHide.addEventListener("click", applyAllCiphers);
+  });
+}
+
 // ts/_lzon.ts
 initMatomo();
 initSlideshow();
@@ -476,3 +520,4 @@ initQotd();
 initCode();
 initAccordion();
 initTheme();
+initCipher();
