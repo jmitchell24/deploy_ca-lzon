@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title>
+    lzon.ca - Toys</title>
+  <id>https://lzon.ca/toys/</id>
+  <link rel="alternate" href="https://lzon.ca"/>
+  <link rel="self" href="https://lzon.ca/toys/atom.xml" type="application/atom+xml"/>
+  <generator uri="https://www.getzola.org/">Zola</generator>
+  
+  <updated>2026-03-11T00:00:00Z</updated>
+  <entry>
+    <title>Fractal</title>
+    <id>https://lzon.ca/toys/fractal/</id>
+    <link href="https://lzon.ca/toys/fractal/"/>
+    <published>2026-03-11T00:00:00Z</published>
+    <updated>2026-03-11T00:00:00Z</updated>
+    <author>
+      <name>Lzon</name>
+    </author>
+    
+  </entry>
+  <entry>
+    <title>Waves</title>
+    <id>https://lzon.ca/toys/waves/</id>
+    <link href="https://lzon.ca/toys/waves/"/>
+    <published>2026-03-07T00:00:00Z</published>
+    <updated>2026-03-07T00:00:00Z</updated>
+    <author>
+      <name>Lzon</name>
+    </author>
+    <summary type="html" xml:base="https://lzon.ca/toys/waves/">&lt;p&gt;This is just a simple idea I had for a wallpaper that I wanted.&lt;&#x2F;p&gt;</summary>
+  </entry>
+  <entry>
+    <title>A Century</title>
+    <id>https://lzon.ca/toys/century/</id>
+    <link href="https://lzon.ca/toys/century/"/>
+    <published>2026-01-18T00:00:00Z</published>
+    <updated>2026-01-18T00:00:00Z</updated>
+    <author>
+      <name>Lzon</name>
+    </author>
+    <summary type="html" xml:base="https://lzon.ca/toys/century/">&lt;p&gt;100 years, visualized.&lt;&#x2F;p&gt;</summary>
+  </entry>
+  <entry>
+    <title>Signed Distance Fields</title>
+    <id>https://lzon.ca/toys/shader/</id>
+    <link href="https://lzon.ca/toys/shader/"/>
+    <published>2026-01-17T00:00:00Z</published>
+    <updated>2026-01-17T00:00:00Z</updated>
+    <author>
+      <name>Lzon</name>
+    </author>
+    <summary type="html" xml:base="https://lzon.ca/toys/shader/">&lt;p&gt;A test of two-dimensional signed distance fields.&lt;&#x2F;p&gt;</summary>
+  </entry>
+</feed>

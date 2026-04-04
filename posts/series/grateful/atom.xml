@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title>
+    lzon.ca - Daily Grateful</title>
+  <id>https://lzon.ca/posts/series/grateful/</id>
+  <link rel="alternate" href="https://lzon.ca"/>
+  <link rel="self" href="https://lzon.ca/posts/series/grateful/atom.xml" type="application/atom+xml"/>
+  <generator uri="https://www.getzola.org/">Zola</generator>
+  
+  <updated>2026-03-30T00:00:00Z</updated>
+  <entry>
+    <title>On Typing and Keyboards</title>
+    <id>https://lzon.ca/posts/series/grateful/typing-and-keyboards/</id>
+    <link href="https://lzon.ca/posts/series/grateful/typing-and-keyboards/"/>
+    <published>2026-03-29T00:00:00Z</published>
+    <updated>2026-03-30T00:00:00Z</updated>
+    <author>
+      <name>Lzon</name>
+    </author>
+    <summary type="html" xml:base="https://lzon.ca/posts/series/grateful/typing-and-keyboards/">&lt;p&gt;I have a very consistent routine. I get up early. I exercise. I shower. I make coffee. I turn my computer on, then I place my hands on my keyboard and begin working.&lt;&#x2F;p&gt;</summary>
+  </entry>
+  <entry>
+    <title>Christine&#x27;s Homestyle Bakery</title>
+    <id>https://lzon.ca/posts/series/grateful/christine-bakery/</id>
+    <link href="https://lzon.ca/posts/series/grateful/christine-bakery/"/>
+    <published>2026-01-29T00:00:00Z</published>
+    <updated>2026-01-29T00:00:00Z</updated>
+    <author>
+      <name>Lzon</name>
+    </author>
+    <summary type="html" xml:base="https://lzon.ca/posts/series/grateful/christine-bakery/">&lt;p&gt;Today I’m grateful for Christine’s Homestyle Bakery.&lt;&#x2F;p&gt;</summary>
+  </entry>
+  <entry>
+    <title>Dream Trawler</title>
+    <id>https://lzon.ca/posts/series/grateful/dream-trawler/</id>
+    <link href="https://lzon.ca/posts/series/grateful/dream-trawler/"/>
+    <published>2026-01-07T00:00:00Z</published>
+    <updated>2026-01-23T00:00:00Z</updated>
+    <author>
+      <name>Lzon</name>
+    </author>
+    <summary type="html" xml:base="https://lzon.ca/posts/series/grateful/dream-trawler/">&lt;p&gt;Today I’m grateful for Dream Trawler, a card from the game Magic the Gathering.&lt;&#x2F;p&gt;</summary>
+  </entry>
+  <entry>
+    <title>Driving</title>
+    <id>https://lzon.ca/posts/series/grateful/driving/</id>
+    <link href="https://lzon.ca/posts/series/grateful/driving/"/>
+    <published>2025-12-27T00:00:00Z</published>
+    <updated>2025-12-27T00:00:00Z</updated>
+    <author>
+      <name>Lzon</name>
+    </author>
+    <summary type="html" xml:base="https://lzon.ca/posts/series/grateful/driving/">&lt;p&gt;Today I’m grateful just for driving.&lt;&#x2F;p&gt;</summary>
+  </entry>
+  <entry>
+    <title>Chip Nuts</title>
+    <id>https://lzon.ca/posts/series/grateful/chip-nuts/</id>
+    <link href="https://lzon.ca/posts/series/grateful/chip-nuts/"/>
+    <published>2025-12-26T00:00:00Z</published>
+    <updated>2025-12-27T00:00:00Z</updated>
+    <author>
+      <name>Lzon</name>
+    </author>
+    <summary type="html" xml:base="https://lzon.ca/posts/series/grateful/chip-nuts/">&lt;p&gt;Today I’m grateful for a simple local snack called Chip Nuts.&lt;&#x2F;p&gt;</summary>
+  </entry>
+  <entry>
+    <title>Tomatoes and Bread</title>
+    <id>https://lzon.ca/posts/series/grateful/tomatoes-and-bread/</id>
+    <link href="https://lzon.ca/posts/series/grateful/tomatoes-and-bread/"/>
+    <published>2025-12-25T00:00:00Z</published>
+    <updated>2025-12-25T00:00:00Z</updated>
+    <author>
+      <name>Lzon</name>
+    </author>
+    <summary type="html" xml:base="https://lzon.ca/posts/series/grateful/tomatoes-and-bread/">&lt;p&gt;Yep, today (and most days) I’m grateful for Tomatoes and Bread.&lt;&#x2F;p&gt;</summary>
+  </entry>
+  <entry>
+    <title>Riegelein Chocolate Lady Bugs</title>
+    <id>https://lzon.ca/posts/series/grateful/riegelein-lady-bugs/</id>
+    <link href="https://lzon.ca/posts/series/grateful/riegelein-lady-bugs/"/>
+    <published>2025-12-24T00:00:00Z</published>
+    <updated>2026-03-03T00:00:00Z</updated>
+    <author>
+      <name>Lzon</name>
+    </author>
+    <summary type="html" xml:base="https://lzon.ca/posts/series/grateful/riegelein-lady-bugs/">&lt;p&gt;Today I’m grateful for &lt;em&gt;Riegelein Chocolate Lady Bugs&lt;&#x2F;em&gt;.&lt;&#x2F;p&gt;</summary>
+  </entry>
+  <entry>
+    <title>Why I&#x27;m Grateful Today</title>
+    <id>https://lzon.ca/posts/series/grateful/lzon/</id>
+    <link href="https://lzon.ca/posts/series/grateful/lzon/"/>
+    <published>2025-12-23T00:00:00Z</published>
+    <updated>2025-12-23T00:00:00Z</updated>
+    <author>
+      <name>Lzon</name>
+    </author>
+    
+  </entry>
+</feed>
