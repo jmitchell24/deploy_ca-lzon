@@ -768,19 +768,20 @@ class ShaderSketch {
   }
 }
 function initShadertoy() {
-  const shaderCode = RAW_GLSL_CODE;
-  console.log("shader code: " + shaderCode);
-  if (!RAW_GLSL_CODE) {
-    console.error("raw glsl code is undefined");
-    return;
-  }
-  const container = document.getElementById("sketch");
-  const canvas = container.querySelector("canvas");
-  const sketch = new ShaderSketch(container, canvas, shaderCode);
-  const codeWrapper = document.querySelector("#glslCodeWrapper");
-  codeWrapper.innerHTML = HTML_GLSL_CODE + codeWrapper.innerHTML;
-  codeWrapper.setAttribute("data-raw-code", RAW_GLSL_CODE);
-  initCodeWrapper(codeWrapper);
-  window.sketch = sketch;
+  document.addEventListener("DOMContentLoaded", () => {
+    const shaderCode = RAW_GLSL_CODE;
+    console.log("shader code: " + shaderCode);
+    if (!RAW_GLSL_CODE) {
+      console.error("raw glsl code is undefined");
+      return;
+    }
+    const container = document.getElementById("sketch");
+    const canvas = container.querySelector("canvas");
+    const sketch = new ShaderSketch(container, canvas, shaderCode);
+    const codeWrapper = document.querySelector("#glslCodeWrapper");
+    codeWrapper.innerHTML = HTML_GLSL_CODE + codeWrapper.innerHTML;
+    codeWrapper.setAttribute("data-raw-code", RAW_GLSL_CODE);
+    initCodeWrapper(codeWrapper);
+  });
 }
 initShadertoy();
