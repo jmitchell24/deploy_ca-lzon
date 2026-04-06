@@ -18,12 +18,14 @@ class ShaderSketch {
   canvas;
   gl;
   program;
+  elRuntimeCtrl;
   elTimeRange;
   elTimeRangeLabel;
   elFramerate;
   elTotaltime;
   elMaxtime;
-  elResolution;
+  elDownresLabel;
+  elCaptureLabel;
   elFailed;
   elPanzoom;
   elButtonsPlay;
@@ -74,23 +76,19 @@ class ShaderSketch {
   maxTime;
   isPaused;
   isLooping;
-  setFailed(error) {
-    this.canvas.style.display = "none";
-    this.elFailed.forEach((el) => {
-      el.style.display = "flex";
-      el.innerHTML = String(error);
-    });
-  }
+  hasRuntime;
   constructor(container, canvas, fragmentShader) {
     this.container = container;
     this.canvas = canvas;
     this.elFailed = document.querySelectorAll("#error");
+    this.elRuntimeCtrl = document.querySelectorAll("#runtime-ctrl");
     this.elTimeRange = document.querySelectorAll("#timerange");
     this.elTimeRangeLabel = document.querySelectorAll("#timerange-label");
     this.elFramerate = document.querySelectorAll("#framerate");
     this.elTotaltime = document.querySelectorAll("#totaltime");
     this.elMaxtime = document.querySelectorAll("#maxtime");
-    this.elResolution = document.querySelectorAll("#resolution");
+    this.elDownresLabel = document.querySelectorAll("#downres-label");
+    this.elCaptureLabel = document.querySelectorAll("#capture-label");
     this.elPanzoom = document.querySelectorAll("#panzoom");
     this.elButtonsPlay = document.querySelectorAll('[id="play"]');
     this.elButtonsPause = document.querySelectorAll('[id="pause"]');
@@ -148,7 +146,7 @@ class ShaderSketch {
     this.isPaused = true;
     this.isLooping = false;
     this.initShader(fragmentShader);
-    this.resize();
+    this.resize(false);
     this.resetSketch();
     this.playSketch();
     this.canvas.addEventListener("resize", () => this.resize());
@@ -340,6 +338,13 @@ class ShaderSketch {
       this._dragActive = false;
     });
   }
+  setFailed(error) {
+    this.canvas.style.display = "none";
+    this.elFailed.forEach((el) => {
+      el.style.display = "flex";
+      el.innerHTML = String(error);
+    });
+  }
   applyPanZoom() {
     if (this.zoom === 1) {
       this.cx = 0;
@@ -363,6 +368,8 @@ class ShaderSketch {
       panY * h * this.zoom
     ];
     this.elPanzoom.forEach((el) => el.innerHTML = `zoom:${Math.log(this.zoom).toFixed(2)} pan:${this.cx.toFixed(4)} x ${this.cy.toFixed(4)}`);
+    if (this.isPaused)
+      this.renderOnce();
   }
   pauseSketch() {
     this.isPaused = true;
@@ -489,6 +496,10 @@ class ShaderSketch {
           }
           tileBuffers.push(flipped);
           await new Promise((r) => setTimeout(r, 0));
+          const tn = tileRow * rows + tileCol;
+          const td = rows * cols;
+          const tp = tn / td * 100;
+          this.setCaptureLabel(`${Math.round(tp)}%`);
         }
         for (let py = 0;py < tileSize; py++) {
           const row = new Uint8Array(1 + totalW * 3);
@@ -523,6 +534,7 @@ class ShaderSketch {
       link.download = `giga-${totalW}x${totalH}.png`;
       link.href = url;
       link.click();
+      this.setCaptureLabel(`Capture Finished: ${totalW} x ${totalH}`, true);
       setTimeout(() => URL.revokeObjectURL(url), 1e4);
     } finally {
       this.canvas.width = origW;
@@ -534,6 +546,7 @@ class ShaderSketch {
     }
   }
   captureResolution(width, height) {
+    this.elCaptureLabel.forEach((el) => el.innerText = `Capturing... (1/1)`);
     const gl = this.gl;
     const originalW = this.canvas.width;
     const originalH = this.canvas.height;
@@ -557,6 +570,15 @@ class ShaderSketch {
       gl.viewport(0, 0, originalW, originalH);
       this.render();
     }, "image/png");
+    this.setCaptureLabel(`Capture Finished: ${width} x ${height}`, true);
+  }
+  setCaptureLabel(text, autoClear = false) {
+    this.elCaptureLabel.forEach((el) => el.innerText = text);
+    if (autoClear) {
+      setTimeout(() => {
+        this.elCaptureLabel.forEach((el) => el.innerText = "");
+      }, 5000);
+    }
   }
   initShader(fragmentSource) {
     const gl = this.gl;
@@ -679,9 +701,18 @@ class ShaderSketch {
     } });
     this.uniforms.forEach((e) => {
       e.loc = gl.getUniformLocation(this.program, e.name);
-      e.isActive = () => e.loc != null;
       console.log(`${e.name} : ${e.loc} `);
     });
+    if (gl.getUniformLocation(this.program, "iTime") == null) {
+      console.log("has runtime? no");
+      this.pauseSketch();
+      this.elRuntimeCtrl.forEach((el) => {
+        el.classList.toggle("display-none", true);
+      });
+    } else {
+      console.log("has runtime? yes");
+      this.playSketch();
+    }
     this.iColorLighter = parseCSSColorToFloat("--color-lighter");
     this.iColorLight = parseCSSColorToFloat("--color-light");
     this.iColorGray = parseCSSColorToFloat("--color-gray");
@@ -692,18 +723,18 @@ class ShaderSketch {
     this.iColorTertiary = parseCSSColorToFloat("--color-tertiary");
     this.iColorPrimaryDark = parseCSSColorToFloat("--color-primary-dark");
     this.iColorPrimaryLight = parseCSSColorToFloat("--color-primary-light");
-    this.isPaused = false;
   }
-  resize() {
+  resize(autoPanZoom = true) {
     const dpr = window.devicePixelRatio || 1;
     const width = Math.round(this.canvas.clientWidth * this.scaleFactor * dpr);
     const height = Math.round(this.canvas.clientHeight * this.scaleFactor * dpr);
     this.canvas.width = width;
     this.canvas.height = height;
-    this.applyPanZoom();
+    if (autoPanZoom)
+      this.applyPanZoom();
     this.gl.viewport(0, 0, width, height);
     this.gl.texParameteri(this.gl.TEXTURE_2D, this.gl.TEXTURE_MAG_FILTER, this.gl.NEAREST);
-    this.elResolution.forEach((el) => el.innerText = `${width} x ${height}`);
+    this.elDownresLabel.forEach((el) => el.innerText = `${width} x ${height}`);
     if (!this.isLooping)
       requestAnimationFrame(() => this.render());
   }
