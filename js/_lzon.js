@@ -467,7 +467,7 @@ function initTheme() {
   });
 }
 
-// ts/cipher.ts
+// ts/secrets.ts
 function cipher(asciiVal) {
   if (asciiVal >= 65 && asciiVal <= 90)
     return String.fromCharCode(155 - asciiVal);
@@ -485,29 +485,42 @@ function applyCipher(el, cipher2) {
     }).join("");
   }
 }
-function initCipher() {
+function initSecrets() {
+  REVEAL_SECRETS = false;
   document.addEventListener("DOMContentLoaded", () => {
-    const elCipherTexts = document.querySelectorAll(".cipher-text");
-    const elBtnReveal = document.getElementById("cipher-reveal");
-    const elBtnHide = document.getElementById("cipher-hide");
-    if (elCipherTexts.length == 0)
+    const elSecrets = document.querySelectorAll(".secret");
+    const elSecretTexts = document.querySelectorAll(".secret-text");
+    const elSecretsDiv = document.getElementById("div-secrets");
+    const elBtnSecretsOn = document.getElementById("btn-secrets-on");
+    const elBtnSecretsOff = document.getElementById("btn-secrets-off");
+    if (!elBtnSecretsOn || !elBtnSecretsOff)
       return;
-    if (!elBtnReveal || !elBtnHide)
+    if (elSecrets.length > 0)
+      elSecretsDiv?.classList.toggle("display-none", false);
+    if (elSecretTexts.length == 0)
       return;
-    console.log(`${elCipherTexts.length} cipher texts`);
-    let toggleState = true;
+    console.log(`${elSecretTexts.length} cipher texts`);
     function applyAllCiphers() {
-      for (const el of elCipherTexts) {
+      for (const el of elSecretTexts) {
         applyCipher(el, cipher);
       }
-      toggleState = !toggleState;
-      elBtnReveal?.classList.toggle("display-none", toggleState);
-      elBtnHide?.classList.toggle("display-none", !toggleState);
     }
-    elBtnReveal?.classList.toggle("display-none", toggleState);
-    elBtnHide?.classList.toggle("display-none", !toggleState);
-    elBtnReveal.addEventListener("click", applyAllCiphers);
-    elBtnHide.addEventListener("click", applyAllCiphers);
+    elBtnSecretsOn.addEventListener("click", () => {
+      if (!REVEAL_SECRETS) {
+        REVEAL_SECRETS = true;
+        applyAllCiphers();
+        elBtnSecretsOn.classList.toggle("active", true);
+        elBtnSecretsOff.classList.toggle("active", false);
+      }
+    });
+    elBtnSecretsOff.addEventListener("click", () => {
+      if (REVEAL_SECRETS) {
+        REVEAL_SECRETS = false;
+        applyAllCiphers();
+        elBtnSecretsOn.classList.toggle("active", false);
+        elBtnSecretsOff.classList.toggle("active", true);
+      }
+    });
   });
 }
 
@@ -520,4 +533,4 @@ initQotd();
 initCode();
 initAccordion();
 initTheme();
-initCipher();
+initSecrets();
