@@ -8,7 +8,15 @@
       <generator>Zola</generator>
       <language>en</language>
       <atom:link href="https://lzon.ca/rss.xml" rel="self" type="application/rss+xml"/>
-      <lastBuildDate>Sun, 05 Apr 2026 00:00:00 +0000</lastBuildDate>
+      <lastBuildDate>Tue, 07 Apr 2026 00:00:00 +0000</lastBuildDate>
+      <item>
+          <title>Now</title>
+          <pubDate>Tue, 07 Apr 2026 00:00:00 +0000</pubDate>
+          <author>Lzon</author>
+          <link>https://lzon.ca/more/now/</link>
+          <guid>https://lzon.ca/more/now/</guid>
+          <description xml:base="https://lzon.ca/more/now/">&lt;p&gt;A brief overview of my life right now, and what I’m working on.&lt;&#x2F;p&gt;</description>
+      </item>
       <item>
           <title>Ending my Claude Pro Subscription</title>
           <pubDate>Sun, 05 Apr 2026 00:00:00 +0000</pubDate>
