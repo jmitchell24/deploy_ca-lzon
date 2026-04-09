@@ -15,7 +15,7 @@ function parseCSSColorToFloat(colorStr) {
 }
 class ShaderSketch {
   setFailed(error) {
-    this.canvas.style = "display: none";
+    this.elCanvas.style = "display: none";
     this.elFailed.forEach((el) => {
       el.style = "display: flex";
       el.innerHTML = error.toString();
@@ -23,7 +23,7 @@ class ShaderSketch {
   }
   constructor(container, canvas, fragmentShader) {
     this.container = container;
-    this.canvas = canvas;
+    this.elCanvas = canvas;
     this.gl = canvas.getContext("webgl2", {});
     if (!this.gl) {
       console.error("WebGL2 not supported");
@@ -78,7 +78,7 @@ class ShaderSketch {
     this.resize();
     this.resetSketch();
     this.playSketch();
-    this.canvas.addEventListener("resize", () => this.resize());
+    this.elCanvas.addEventListener("resize", () => this.resize());
     this.elButtonsPause.forEach((el) => el.addEventListener("click", () => this.pauseSketch()));
     this.elButtonsPlay.forEach((el) => el.addEventListener("click", () => this.playSketch()));
     this.elButtonsReset.forEach((el) => el.addEventListener("click", () => this.resetSketch()));
@@ -102,7 +102,7 @@ class ShaderSketch {
     this.elButtonExitFullscreen.addEventListener("click", () => {
       document.exitFullscreen();
     });
-    new ResizeObserver(() => this.resize()).observe(this.canvas);
+    new ResizeObserver(() => this.resize()).observe(this.elCanvas);
     const refreshColors = () => {
       console.log("refresh colors");
       this.iColorLighter = parseCSSColorToFloat("--color-lighter");
@@ -130,7 +130,7 @@ class ShaderSketch {
           capfunc = () => this.captureResolution(window.screen.width * window.devicePixelRatio, window.screen.height * window.devicePixelRatio);
           break;
         case "canvas":
-          capfunc = () => this.captureResolution(this.canvas.width, this.canvas.height);
+          capfunc = () => this.captureResolution(this.elCanvas.width, this.elCanvas.height);
           break;
         case "custom":
           capfunc = () => this.captureResolution(parseInt(cw), parseInt(ch));
@@ -190,7 +190,7 @@ class ShaderSketch {
         const dy = e.touches[0].clientY - e.touches[1].clientY;
         this._pinchDist = Math.hypot(dx, dy);
         this._pinchZoom = this.zoom;
-        const rect = this.canvas.getBoundingClientRect();
+        const rect = this.elCanvas.getBoundingClientRect();
         this._pinchMidX = ((e.touches[0].clientX + e.touches[1].clientX) / 2 - rect.left) / rect.width;
         this._pinchMidY = 1 - ((e.touches[0].clientY + e.touches[1].clientY) / 2 - rect.top) / rect.height;
         this._pinchFracCX = this.cx;
@@ -199,9 +199,9 @@ class ShaderSketch {
     }, { passive: false });
     canvas.addEventListener("touchmove", (e) => {
       e.preventDefault();
-      const rect = this.canvas.getBoundingClientRect();
+      const rect = this.elCanvas.getBoundingClientRect();
       if (e.touches.length === 1 && this._dragActive) {
-        const aspect = this.canvas.width / this.canvas.height;
+        const aspect = this.elCanvas.width / this.elCanvas.height;
         const dx = (e.touches[0].clientX - this._dragStartX) / rect.width * aspect / this.zoom;
         const dy = (e.touches[0].clientY - this._dragStartY) / rect.height / this.zoom;
         this.cx = this._dragCX - dx;
@@ -214,7 +214,7 @@ class ShaderSketch {
         const factor = dist / this._pinchDist;
         const pmx = this._pinchMidX;
         const pmy = this._pinchMidY;
-        const aspect = this.canvas.width / this.canvas.height;
+        const aspect = this.elCanvas.width / this.elCanvas.height;
         const fx = this._pinchFracCX + aspect * (pmx - 0.5) / this._pinchZoom;
         const fy = this._pinchFracCY + (pmy - 0.5) / this._pinchZoom;
         this.zoom = Math.max(1, Math.min(999999, this._pinchZoom * factor));
@@ -226,9 +226,9 @@ class ShaderSketch {
     canvas.addEventListener("wheel", (e) => {
       e.preventDefault();
       const factor = e.deltaY < 0 ? 1.15 : 1 / 1.15;
-      const cx_norm = e.offsetX / this.canvas.width;
-      const cy_norm = 1 - e.offsetY / this.canvas.height;
-      const aspect = this.canvas.width / this.canvas.height;
+      const cx_norm = e.offsetX / this.elCanvas.width;
+      const cy_norm = 1 - e.offsetY / this.elCanvas.height;
+      const aspect = this.elCanvas.width / this.elCanvas.height;
       const fx = this.cx + aspect * (cx_norm - 0.5) / this.zoom;
       const fy = this.cy + (cy_norm - 0.5) / this.zoom;
       this.zoom = Math.max(1, Math.min(999999, this.zoom * factor));
@@ -246,9 +246,9 @@ class ShaderSketch {
       }
     });
     canvas.addEventListener("mousemove", (e) => {
-      const rect = this.canvas.getBoundingClientRect();
+      const rect = this.elCanvas.getBoundingClientRect();
       if (this._dragActive) {
-        const aspect = this.canvas.width / this.canvas.height;
+        const aspect = this.elCanvas.width / this.elCanvas.height;
         const dx = (e.clientX - this._dragStartX) / rect.width * aspect / this.zoom;
         const dy = (e.clientY - this._dragStartY) / rect.height / this.zoom;
         this.cx = this._dragCX - dx;
@@ -274,8 +274,8 @@ class ShaderSketch {
       this.cx = 0;
       this.cy = 0;
     }
-    const w = this.canvas.width;
-    const h = this.canvas.height;
+    const w = this.elCanvas.width;
+    const h = this.elCanvas.height;
     const aspect = w / h;
     const maxCY = 0.5 * (1 - 1 / this.zoom);
     const maxCX = aspect * maxCY;
@@ -386,7 +386,7 @@ class ShaderSketch {
         idatChunks.push(makeChunk("IDAT", value));
       }
     })();
-    const origW = this.canvas.width, origH = this.canvas.height;
+    const origW = this.elCanvas.width, origH = this.elCanvas.height;
     const origRes = [...this.iResolution], origOffset = [...this.iTileOffset];
     this.pauseSketch();
     try {
@@ -400,8 +400,8 @@ class ShaderSketch {
         const tileBuffers = [];
         for (let tileCol = 0;tileCol < cols; tileCol++) {
           const x0 = tileCol * tileSize, y0 = tileRow * tileSize;
-          this.canvas.width = tileSize;
-          this.canvas.height = tileSize;
+          this.elCanvas.width = tileSize;
+          this.elCanvas.height = tileSize;
           gl.viewport(0, 0, tileSize, tileSize);
           this.iTileOffset = [
             x0 + baseOffX,
@@ -454,8 +454,8 @@ class ShaderSketch {
       link.click();
       setTimeout(() => URL.revokeObjectURL(url), 1e4);
     } finally {
-      this.canvas.width = origW;
-      this.canvas.height = origH;
+      this.elCanvas.width = origW;
+      this.elCanvas.height = origH;
       this.iResolution = origRes;
       this.iTileOffset = origOffset;
       gl.viewport(0, 0, origW, origH);
@@ -464,24 +464,24 @@ class ShaderSketch {
   }
   captureResolution(width, height) {
     const gl = this.gl;
-    const originalW = this.canvas.width;
-    const originalH = this.canvas.height;
+    const originalW = this.elCanvas.width;
+    const originalH = this.elCanvas.height;
     const originalRes = [...this.iResolution];
-    this.canvas.width = width;
-    this.canvas.height = height;
+    this.elCanvas.width = width;
+    this.elCanvas.height = height;
     this.applyPanZoom();
     gl.viewport(0, 0, width, height);
     this.uniforms.forEach((e) => e.submit(e.loc));
     gl.drawArrays(gl.TRIANGLE_STRIP, 0, 4);
-    this.canvas.toBlob((blob) => {
+    this.elCanvas.toBlob((blob) => {
       const url = URL.createObjectURL(blob);
       const link = document.createElement("a");
       link.download = `wallpaper-${width}x${height}.png`;
       link.href = url;
       link.click();
       URL.revokeObjectURL(url);
-      this.canvas.width = originalW;
-      this.canvas.height = originalH;
+      this.elCanvas.width = originalW;
+      this.elCanvas.height = originalH;
       this.iResolution = originalRes;
       gl.viewport(0, 0, originalW, originalH);
       this.render();
@@ -624,10 +624,10 @@ class ShaderSketch {
   }
   resize() {
     const dpr = window.devicePixelRatio || 1;
-    const width = Math.round(this.canvas.clientWidth * this.scaleFactor * dpr);
-    const height = Math.round(this.canvas.clientHeight * this.scaleFactor * dpr);
-    this.canvas.width = width;
-    this.canvas.height = height;
+    const width = Math.round(this.elCanvas.clientWidth * this.scaleFactor * dpr);
+    const height = Math.round(this.elCanvas.clientHeight * this.scaleFactor * dpr);
+    this.elCanvas.width = width;
+    this.elCanvas.height = height;
     this.applyPanZoom();
     this.gl.viewport(0, 0, width, height);
     this.gl.texParameteri(this.gl.TEXTURE_2D, this.gl.TEXTURE_MAG_FILTER, this.gl.NEAREST);

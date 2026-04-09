@@ -8,7 +8,15 @@
       <generator>Zola</generator>
       <language>en</language>
       <atom:link href="https://lzon.ca/posts/rss.xml" rel="self" type="application/rss+xml"/>
-      <lastBuildDate>Sun, 05 Apr 2026 00:00:00 +0000</lastBuildDate>
+      <lastBuildDate>Thu, 09 Apr 2026 00:00:00 +0000</lastBuildDate>
+      <item>
+          <title>Microsoft abuses its users</title>
+          <pubDate>Thu, 09 Apr 2026 00:00:00 +0000</pubDate>
+          <author>Lzon</author>
+          <link>https://lzon.ca/posts/other/microsoft-user-abuse/</link>
+          <guid>https://lzon.ca/posts/other/microsoft-user-abuse/</guid>
+          <description xml:base="https://lzon.ca/posts/other/microsoft-user-abuse/">&lt;p&gt;I’d like to tell the story of job I just completed for a customer, so that I can make a point about how I feel Microsoft and other large technology companies are actively hostile to their users.&lt;&#x2F;p&gt;</description>
+      </item>
       <item>
           <title>Ending my Claude Pro Subscription</title>
           <pubDate>Sun, 05 Apr 2026 00:00:00 +0000</pubDate>
@@ -29,9 +37,9 @@
           <title>Gsv Yozxp</title>
           <pubDate>Tue, 31 Mar 2026 00:00:00 +0000</pubDate>
           <author>Lzon</author>
-          <link>https://lzon.ca/posts/other/gsv-yozxp/</link>
-          <guid>https://lzon.ca/posts/other/gsv-yozxp/</guid>
-          <description xml:base="https://lzon.ca/posts/other/gsv-yozxp/">&lt;p&gt;Rmhkrizgrlm uiln clielrw, gszmp blf.&lt;&#x2F;p&gt;</description>
+          <link>https://lzon.ca/posts/life/gsv-yozxp/</link>
+          <guid>https://lzon.ca/posts/life/gsv-yozxp/</guid>
+          <description xml:base="https://lzon.ca/posts/life/gsv-yozxp/">&lt;p&gt;Rmhkrizgrlm uiln clielrw, gszmp blf.&lt;&#x2F;p&gt;</description>
       </item>
       <item>
           <title>On Typing and Keyboards</title>
@@ -144,6 +152,14 @@
           <link>https://lzon.ca/posts/recipes/swiss-chalet-sauce/</link>
           <guid>https://lzon.ca/posts/recipes/swiss-chalet-sauce/</guid>
           <description xml:base="https://lzon.ca/posts/recipes/swiss-chalet-sauce/"></description>
+      </item>
+      <item>
+          <title>You need to make your bed</title>
+          <pubDate>Tue, 03 Feb 2026 00:00:00 +0000</pubDate>
+          <author>Lzon</author>
+          <link>https://lzon.ca/posts/life/make-your-bed/</link>
+          <guid>https://lzon.ca/posts/life/make-your-bed/</guid>
+          <description xml:base="https://lzon.ca/posts/life/make-your-bed/">&lt;p&gt;What to do when you are at rock bottom, from someone who’s been there.&lt;&#x2F;p&gt;</description>
       </item>
       <item>
           <title>Christine&#x27;s Homestyle Bakery</title>
@@ -266,6 +282,14 @@
           <description xml:base="https://lzon.ca/posts/series/grateful/lzon/"></description>
       </item>
       <item>
+          <title>Twenty Twenty-Five</title>
+          <pubDate>Mon, 24 Nov 2025 00:00:00 +0000</pubDate>
+          <author>Lzon</author>
+          <link>https://lzon.ca/posts/life/twenty-five/</link>
+          <guid>https://lzon.ca/posts/life/twenty-five/</guid>
+          <description xml:base="https://lzon.ca/posts/life/twenty-five/"></description>
+      </item>
+      <item>
           <title>Pollo Sabrosa</title>
           <pubDate>Sun, 18 May 2025 00:00:00 +0000</pubDate>
           <author>Lzon</author>
@@ -312,6 +336,22 @@
           <link>https://lzon.ca/posts/recipes/jollof-seasoning/</link>
           <guid>https://lzon.ca/posts/recipes/jollof-seasoning/</guid>
           <description xml:base="https://lzon.ca/posts/recipes/jollof-seasoning/"></description>
+      </item>
+      <item>
+          <title>Gratitude</title>
+          <pubDate>Fri, 17 Jan 2025 00:00:00 +0000</pubDate>
+          <author>Lzon</author>
+          <link>https://lzon.ca/posts/life/gratitude/</link>
+          <guid>https://lzon.ca/posts/life/gratitude/</guid>
+          <description xml:base="https://lzon.ca/posts/life/gratitude/"></description>
+      </item>
+      <item>
+          <title>Precarity</title>
+          <pubDate>Wed, 18 Dec 2024 00:00:00 +0000</pubDate>
+          <author>Lzon</author>
+          <link>https://lzon.ca/posts/life/precarity/</link>
+          <guid>https://lzon.ca/posts/life/precarity/</guid>
+          <description xml:base="https://lzon.ca/posts/life/precarity/"></description>
       </item>
       <item>
           <title>Baked Jollof Rice</title>

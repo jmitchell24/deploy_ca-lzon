@@ -7,7 +7,18 @@
   <link rel="self" href="https://lzon.ca/posts/atom.xml" type="application/atom+xml"/>
   <generator uri="https://www.getzola.org/">Zola</generator>
   
-  <updated>2026-04-05T00:00:00Z</updated>
+  <updated>2026-04-09T00:00:00Z</updated>
+  <entry>
+    <title>Microsoft abuses its users</title>
+    <id>https://lzon.ca/posts/other/microsoft-user-abuse/</id>
+    <link href="https://lzon.ca/posts/other/microsoft-user-abuse/"/>
+    <published>2026-04-09T00:00:00Z</published>
+    <updated>2026-04-09T00:00:00Z</updated>
+    <author>
+      <name>Lzon</name>
+    </author>
+    <summary type="html" xml:base="https://lzon.ca/posts/other/microsoft-user-abuse/">&lt;p&gt;I’d like to tell the story of job I just completed for a customer, so that I can make a point about how I feel Microsoft and other large technology companies are actively hostile to their users.&lt;&#x2F;p&gt;</summary>
+  </entry>
   <entry>
     <title>Ending my Claude Pro Subscription</title>
     <id>https://lzon.ca/posts/other/cancelling-claude/</id>
@@ -32,14 +43,14 @@
   </entry>
   <entry>
     <title>Gsv Yozxp</title>
-    <id>https://lzon.ca/posts/other/gsv-yozxp/</id>
-    <link href="https://lzon.ca/posts/other/gsv-yozxp/"/>
+    <id>https://lzon.ca/posts/life/gsv-yozxp/</id>
+    <link href="https://lzon.ca/posts/life/gsv-yozxp/"/>
     <published>2026-03-31T00:00:00Z</published>
     <updated>2026-04-01T00:00:00Z</updated>
     <author>
       <name>Lzon</name>
     </author>
-    <summary type="html" xml:base="https://lzon.ca/posts/other/gsv-yozxp/">&lt;p&gt;Rmhkrizgrlm uiln clielrw, gszmp blf.&lt;&#x2F;p&gt;</summary>
+    <summary type="html" xml:base="https://lzon.ca/posts/life/gsv-yozxp/">&lt;p&gt;Rmhkrizgrlm uiln clielrw, gszmp blf.&lt;&#x2F;p&gt;</summary>
   </entry>
   <entry>
     <title>On Typing and Keyboards</title>
@@ -194,6 +205,17 @@
       <name>Lzon</name>
     </author>
     
+  </entry>
+  <entry>
+    <title>You need to make your bed</title>
+    <id>https://lzon.ca/posts/life/make-your-bed/</id>
+    <link href="https://lzon.ca/posts/life/make-your-bed/"/>
+    <published>2026-02-03T00:00:00Z</published>
+    <updated>2026-02-03T00:00:00Z</updated>
+    <author>
+      <name>Lzon</name>
+    </author>
+    <summary type="html" xml:base="https://lzon.ca/posts/life/make-your-bed/">&lt;p&gt;What to do when you are at rock bottom, from someone who’s been there.&lt;&#x2F;p&gt;</summary>
   </entry>
   <entry>
     <title>Christine&#x27;s Homestyle Bakery</title>
@@ -361,6 +383,17 @@
     
   </entry>
   <entry>
+    <title>Twenty Twenty-Five</title>
+    <id>https://lzon.ca/posts/life/twenty-five/</id>
+    <link href="https://lzon.ca/posts/life/twenty-five/"/>
+    <published>2025-11-24T00:00:00Z</published>
+    <updated>2025-11-24T00:00:00Z</updated>
+    <author>
+      <name>Lzon</name>
+    </author>
+    
+  </entry>
+  <entry>
     <title>Pollo Sabrosa</title>
     <id>https://lzon.ca/posts/recipes/pollo-sabrosa/</id>
     <link href="https://lzon.ca/posts/recipes/pollo-sabrosa/"/>
@@ -421,6 +454,28 @@
     <link href="https://lzon.ca/posts/recipes/jollof-seasoning/"/>
     <published>2025-03-17T00:00:00Z</published>
     <updated>2025-03-19T00:00:00Z</updated>
+    <author>
+      <name>Lzon</name>
+    </author>
+    
+  </entry>
+  <entry>
+    <title>Gratitude</title>
+    <id>https://lzon.ca/posts/life/gratitude/</id>
+    <link href="https://lzon.ca/posts/life/gratitude/"/>
+    <published>2025-01-17T00:00:00Z</published>
+    <updated>2025-01-17T00:00:00Z</updated>
+    <author>
+      <name>Lzon</name>
+    </author>
+    
+  </entry>
+  <entry>
+    <title>Precarity</title>
+    <id>https://lzon.ca/posts/life/precarity/</id>
+    <link href="https://lzon.ca/posts/life/precarity/"/>
+    <published>2024-12-18T00:00:00Z</published>
+    <updated>2024-12-18T00:00:00Z</updated>
     <author>
       <name>Lzon</name>
     </author>
