@@ -14,10 +14,14 @@ function parseCSSColorToFloat(colorStr) {
   ];
 }
 class ShaderSketch {
-  elContainer;
-  elCanvas;
   gl;
   program;
+  elShaderToy;
+  elShaderToyView;
+  elShaderToyViewError;
+  elShaderToyViewCanvas;
+  elShaderToyViewFullscreen;
+  elShaderToyMapThumb;
   elRuntimeCtrl;
   elTimeRange;
   elTimeRangeLabel;
@@ -33,8 +37,6 @@ class ShaderSketch {
   elButtonsReset;
   elButtonFullscreen;
   elButtonExitFullscreen;
-  elView;
-  elMinimapThumb;
   startTime = Date.now();
   lastNow = Date.now();
   lastFrameTime = Date.now();
@@ -70,7 +72,6 @@ class ShaderSketch {
   _pinchMidY = 0;
   _pinchFracCX = 0;
   _pinchFracCY = 0;
-  _didDrag = false;
   frameCount = 0;
   fps = 0;
   fpsLimit = 0;
@@ -81,10 +82,14 @@ class ShaderSketch {
   isPaused = true;
   isLooping = false;
   hasRuntime = false;
-  constructor(elContainer, elCanvas, shaderCode) {
-    this.elContainer = elContainer;
-    this.elCanvas = elCanvas;
+  constructor(shaderCode) {
     this.elFailed = document.querySelectorAll("#error");
+    this.elShaderToy = document.querySelector("div#shadertoy");
+    this.elShaderToyMapThumb = document.querySelectorAll("div.shadertoy-map-thumb");
+    this.elShaderToyView = document.querySelector("div#shadertoy-view");
+    this.elShaderToyViewError = document.querySelector("div#shadertoy-view-error");
+    this.elShaderToyViewCanvas = document.querySelector("canvas#shadertoy-view-canvas");
+    this.elShaderToyViewFullscreen = document.querySelector("div#shadertoy-view-fullscreen");
     this.elRuntimeCtrl = document.querySelectorAll("#runtime-ctrl");
     this.elTimeRange = document.querySelectorAll("#timerange");
     this.elTimeRangeLabel = document.querySelectorAll("#timerange-label");
@@ -93,15 +98,13 @@ class ShaderSketch {
     this.elMaxtime = document.querySelectorAll("#maxtime");
     this.elDownresLabel = document.querySelectorAll("#downres-label");
     this.elCaptureLabel = document.querySelectorAll("#capture-label");
-    this.elView = document.querySelector("#shadertoy-view");
-    this.elMinimapThumb = document.querySelector("#shadertoy-view-panzoom-thumb");
     this.elPanzoom = document.querySelectorAll("#panzoom");
     this.elButtonsPlay = document.querySelectorAll('[id="play"]');
     this.elButtonsPause = document.querySelectorAll('[id="pause"]');
     this.elButtonsReset = document.querySelectorAll('[id="reset"]');
     this.elButtonFullscreen = document.querySelector("#fullscreen");
     this.elButtonExitFullscreen = document.querySelector("#exit-fullscreen");
-    const gl = elCanvas.getContext("webgl2", {});
+    const gl = this.elShaderToyViewCanvas.getContext("webgl2", {});
     if (gl) {
       this.gl = gl;
     } else {
@@ -112,8 +115,8 @@ class ShaderSketch {
     this.initShader(shaderCode);
     this.resize(false);
     this.resetSketch();
-    this.playSketch();
-    this.elCanvas.addEventListener("resize", () => this.resize());
+    if (this.hasRuntime)
+      this.playSketch();
     this.elButtonsPause.forEach((el) => el.addEventListener("click", () => this.pauseSketch()));
     this.elButtonsPlay.forEach((el) => el.addEventListener("click", () => this.playSketch()));
     this.elButtonsReset.forEach((el) => el.addEventListener("click", () => this.resetSketch()));
@@ -127,17 +130,20 @@ class ShaderSketch {
     }));
     this.elButtonFullscreen.addEventListener("click", () => {
       if (!document.fullscreenElement) {
-        this.elContainer.requestFullscreen().catch((err) => {
+        this.elShaderToyView.requestFullscreen().catch((err) => {
           console.error(`Error attempting to enable fullscreen: ${err.message}`);
         });
       } else {
         document.exitFullscreen();
       }
     });
+    document.addEventListener("fullscreenchange", () => {
+      this.elShaderToyView.classList.toggle("fullscreen-enabled", !!document.fullscreenElement);
+    });
     this.elButtonExitFullscreen.addEventListener("click", () => {
       document.exitFullscreen();
     });
-    new ResizeObserver(() => this.resize()).observe(this.elCanvas);
+    new ResizeObserver(() => this.resize()).observe(this.elShaderToyViewCanvas);
     const refreshColors = () => {
       console.log("refresh colors");
       this.iColorLighter = parseCSSColorToFloat("--color-lighter");
@@ -163,7 +169,7 @@ class ShaderSketch {
           capfunc = () => this.captureResolution(window.screen.width * window.devicePixelRatio, window.screen.height * window.devicePixelRatio);
           break;
         case "canvas":
-          capfunc = () => this.captureResolution(this.elCanvas.width, this.elCanvas.height);
+          capfunc = () => this.captureResolution(this.elShaderToyViewCanvas.width, this.elShaderToyViewCanvas.height);
           break;
         case "custom":
           capfunc = () => this.captureResolution(parseInt(cw), parseInt(ch));
@@ -209,15 +215,20 @@ class ShaderSketch {
         el.classList.toggle("active", true);
       });
     });
-    const panzoomResetBtn = document.querySelector("#panzoom-reset");
-    if (panzoomResetBtn) {
-      panzoomResetBtn.addEventListener("click", () => this.resetPanZoom());
-    }
-    this.elCanvas.addEventListener("touchstart", (e) => {
-      if (!this.isPanZoom)
+    const mapResetButtons = document.querySelectorAll("button.shadertoy-map-reset");
+    mapResetButtons.forEach((el) => {
+      el.addEventListener("click", () => {
+        this.zoom = 1;
+        this.cx = 0;
+        this.cy = 0;
+        this.applyPanZoom();
+      });
+    });
+    this.elShaderToyView.addEventListener("touchstart", (e) => {
+      if (e.target.closest("button, input, a, select"))
         return;
       e.preventDefault();
-      if (e.touches.length === 1) {
+      if (e.touches.length === 1 && this.zoom > 1) {
         this._dragActive = true;
         this._dragStartX = e.touches[0].clientX;
         this._dragStartY = e.touches[0].clientY;
@@ -229,20 +240,18 @@ class ShaderSketch {
         const dy = e.touches[0].clientY - e.touches[1].clientY;
         this._pinchDist = Math.hypot(dx, dy);
         this._pinchZoom = this.zoom;
-        const rect = this.elCanvas.getBoundingClientRect();
+        const rect = this.elShaderToyViewCanvas.getBoundingClientRect();
         this._pinchMidX = ((e.touches[0].clientX + e.touches[1].clientX) / 2 - rect.left) / rect.width;
         this._pinchMidY = 1 - ((e.touches[0].clientY + e.touches[1].clientY) / 2 - rect.top) / rect.height;
         this._pinchFracCX = this.cx;
         this._pinchFracCY = this.cy;
       }
     }, { passive: false });
-    this.elCanvas.addEventListener("touchmove", (e) => {
-      if (!this.isPanZoom)
-        return;
+    this.elShaderToyView.addEventListener("touchmove", (e) => {
       e.preventDefault();
-      const rect = this.elCanvas.getBoundingClientRect();
+      const rect = this.elShaderToyViewCanvas.getBoundingClientRect();
       if (e.touches.length === 1 && this._dragActive) {
-        const aspect = this.elCanvas.width / this.elCanvas.height;
+        const aspect = this.elShaderToyViewCanvas.width / this.elShaderToyViewCanvas.height;
         const dx = (e.touches[0].clientX - this._dragStartX) / rect.width * aspect / this.zoom;
         const dy = (e.touches[0].clientY - this._dragStartY) / rect.height / this.zoom;
         this.cx = this._dragCX - dx;
@@ -255,7 +264,7 @@ class ShaderSketch {
         const factor = dist / this._pinchDist;
         const pmx = this._pinchMidX;
         const pmy = this._pinchMidY;
-        const aspect = this.elCanvas.width / this.elCanvas.height;
+        const aspect = this.elShaderToyViewCanvas.width / this.elShaderToyViewCanvas.height;
         const fx = this._pinchFracCX + aspect * (pmx - 0.5) / this._pinchZoom;
         const fy = this._pinchFracCY + (pmy - 0.5) / this._pinchZoom;
         this.zoom = Math.max(1, Math.min(999999, this._pinchZoom * factor));
@@ -264,14 +273,12 @@ class ShaderSketch {
         this.applyPanZoom();
       }
     }, { passive: false });
-    this.elCanvas.addEventListener("wheel", (e) => {
-      if (!this.isPanZoom)
-        return;
+    this.elShaderToyView.addEventListener("wheel", (e) => {
       e.preventDefault();
       const factor = e.deltaY < 0 ? 1.15 : 1 / 1.15;
-      const cx_norm = e.offsetX / this.elCanvas.width;
-      const cy_norm = 1 - e.offsetY / this.elCanvas.height;
-      const aspect = this.elCanvas.width / this.elCanvas.height;
+      const cx_norm = e.offsetX / this.elShaderToyViewCanvas.width;
+      const cy_norm = 1 - e.offsetY / this.elShaderToyViewCanvas.height;
+      const aspect = this.elShaderToyViewCanvas.width / this.elShaderToyViewCanvas.height;
       const fx = this.cx + aspect * (cx_norm - 0.5) / this.zoom;
       const fy = this.cy + (cy_norm - 0.5) / this.zoom;
       this.zoom = Math.max(1, Math.min(999999, this.zoom * factor));
@@ -279,91 +286,54 @@ class ShaderSketch {
       this.cy = fy - (cy_norm - 0.5) / this.zoom;
       this.applyPanZoom();
     }, { passive: false });
-    this.elCanvas.addEventListener("mousedown", (e) => {
-      this._didDrag = false;
-      this._dragStartX = e.clientX;
-      this._dragStartY = e.clientY;
-      if (!this.isPanZoom)
-        return;
-      this._dragActive = true;
-      this._dragCX = this.cx;
-      this._dragCY = this.cy;
-    });
-    this.elCanvas.addEventListener("mousemove", (e) => {
-      if (!this._didDrag && Math.hypot(e.clientX - this._dragStartX, e.clientY - this._dragStartY) > 4) {
-        this._didDrag = true;
-      }
-      if (!this.isPanZoom || !this._dragActive)
-        return;
-      const rect = this.elCanvas.getBoundingClientRect();
-      const aspect = this.elCanvas.width / this.elCanvas.height;
-      const dx = (e.clientX - this._dragStartX) / rect.width * aspect / this.zoom;
-      const dy = (e.clientY - this._dragStartY) / rect.height / this.zoom;
-      this.cx = this._dragCX - dx;
-      this.cy = this._dragCY + dy;
-      this.applyPanZoom();
-    });
-    this.elCanvas.addEventListener("touchend", () => {
-      this._dragActive = false;
-    });
-    this.elCanvas.addEventListener("touchcancel", () => {
-      this._dragActive = false;
-    });
-    this.elCanvas.addEventListener("mouseup", () => {
-      this._dragActive = false;
-    });
-    this.elCanvas.addEventListener("mouseleave", () => {
-      this._dragActive = false;
-    });
-    this.elCanvas.addEventListener("click", () => {
-      if (!this._didDrag) {
-        this.togglePanZoom(!this.isPanZoom);
+    this.elShaderToyView.addEventListener("mousedown", (e) => {
+      if (this.zoom > 1) {
+        this._dragActive = true;
+        this._dragStartX = e.clientX;
+        this._dragStartY = e.clientY;
+        this._dragCX = this.cx;
+        this._dragCY = this.cy;
+        document.body.style.userSelect = "none";
+        document.body.style.cursor = "grabbing";
       }
     });
-    document.addEventListener("mousedown", (e) => {
-      if (this.isPanZoom && e.target !== this.elCanvas) {
-        this.togglePanZoom(false);
+    document.addEventListener("mousemove", (e) => {
+      if (this._dragActive) {
+        const rect = this.elShaderToyView.getBoundingClientRect();
+        const aspect = rect.width / rect.height;
+        const dx = (e.clientX - this._dragStartX) / rect.width * aspect / this.zoom;
+        const dy = (e.clientY - this._dragStartY) / rect.height / this.zoom;
+        this.cx = this._dragCX - dx;
+        this.cy = this._dragCY + dy;
+        this.applyPanZoom();
       }
+    });
+    document.addEventListener("mouseup", () => {
+      this._dragActive = false;
+      document.body.style.userSelect = "";
+      document.body.style.cursor = "";
+    });
+    this.elShaderToyView.addEventListener("touchend", () => {
+      this._dragActive = false;
+    });
+    this.elShaderToyView.addEventListener("touchcancel", () => {
+      this._dragActive = false;
     });
   }
   setFailed(error) {
-    this.elCanvas.style.display = "none";
+    this.elShaderToyViewCanvas.style.display = "none";
     this.elFailed.forEach((el) => {
       el.style.display = "flex";
       el.innerHTML = String(error);
     });
-  }
-  togglePanZoom(force) {
-    this.isPanZoom = force !== undefined ? force : !this.isPanZoom;
-    this.elView.classList.toggle("panzoom-active", this.isPanZoom);
-    if (!this.isPanZoom) {
-      this._dragActive = false;
-    }
-  }
-  resetPanZoom() {
-    this.zoom = 1;
-    this.cx = 0;
-    this.cy = 0;
-    this.applyPanZoom();
-    this.togglePanZoom(false);
-  }
-  updateMinimapThumb() {
-    const aspect = this.elCanvas.width / this.elCanvas.height;
-    const size = 1 / this.zoom * 100;
-    const left = (this.cx / aspect - 1 / (2 * this.zoom) + 0.5) * 100;
-    const top = (0.5 - this.cy - 1 / (2 * this.zoom)) * 100;
-    this.elMinimapThumb.style.width = `${size}%`;
-    this.elMinimapThumb.style.height = `${size}%`;
-    this.elMinimapThumb.style.left = `${left}%`;
-    this.elMinimapThumb.style.top = `${top}%`;
   }
   applyPanZoom() {
     if (this.zoom === 1) {
       this.cx = 0;
       this.cy = 0;
     }
-    const w = this.elCanvas.width;
-    const h = this.elCanvas.height;
+    const w = this.elShaderToyViewCanvas.width;
+    const h = this.elShaderToyViewCanvas.height;
     const aspect = w / h;
     const maxCY = 0.5 * (1 - 1 / this.zoom);
     const maxCX = aspect * maxCY;
@@ -379,10 +349,15 @@ class ShaderSketch {
       panX * w * this.zoom,
       panY * h * this.zoom
     ];
-    this.elPanzoom.forEach((el) => el.innerHTML = `zoom:${Math.log(this.zoom).toFixed(2)} pan:${this.cx.toFixed(4)} x ${this.cy.toFixed(4)}`);
+    const thumbSize = 1 / this.zoom;
+    this.elShaderToyMapThumb.forEach((e) => {
+      e.style.width = `${thumbSize * 100}%`;
+      e.style.height = `${thumbSize * 100}%`;
+      e.style.left = `${panX * 100}%`;
+      e.style.top = `${(1 - thumbSize - panY) * 100}%`;
+    });
     if (this.isPaused)
       this.renderOnce();
-    this.updateMinimapThumb();
   }
   pauseSketch() {
     this.isPaused = true;
@@ -399,6 +374,8 @@ class ShaderSketch {
       el.value = String(this.maxTime);
     });
     this.lastNow = Date.now();
+    this.lastFrameTime = Date.now();
+    this.frameCount = 0;
     if (!this.isLooping) {
       requestAnimationFrame(() => this.render());
     }
@@ -477,7 +454,7 @@ class ShaderSketch {
         idatChunks.push(makeChunk("IDAT", value));
       }
     })();
-    const origW = this.elCanvas.width, origH = this.elCanvas.height;
+    const origW = this.elShaderToyViewCanvas.width, origH = this.elShaderToyViewCanvas.height;
     const origRes = [...this.iResolution], origOffset = [...this.iTileOffset];
     this.pauseSketch();
     try {
@@ -487,39 +464,39 @@ class ShaderSketch {
       ];
       const baseOffX = this.cx * totalH * this.zoom + totalW * (this.zoom - 1) / 2;
       const baseOffY = this.cy * totalH * this.zoom + totalH * (this.zoom - 1) / 2;
+      const td = rows * cols;
+      const px = new Uint8Array(tileSize * tileSize * 4);
+      const flipped = new Uint8Array(tileSize * tileSize * 4);
+      const row = new Uint8Array(1 + totalW * 3);
+      this.elShaderToyViewCanvas.width = tileSize;
+      this.elShaderToyViewCanvas.height = tileSize;
+      gl.viewport(0, 0, tileSize, tileSize);
       for (let tileRow = 0;tileRow < rows; tileRow++) {
         const tileBuffers = [];
         for (let tileCol = 0;tileCol < cols; tileCol++) {
           const x0 = tileCol * tileSize, y0 = tileRow * tileSize;
-          this.elCanvas.width = tileSize;
-          this.elCanvas.height = tileSize;
-          gl.viewport(0, 0, tileSize, tileSize);
           this.iTileOffset = [
             x0 + baseOffX,
             totalH - y0 - tileSize + baseOffY
           ];
           this.uniforms.forEach((e) => e.submit(e.loc));
           gl.drawArrays(gl.TRIANGLE_STRIP, 0, 4);
-          const px = new Uint8Array(tileSize * tileSize * 4);
           gl.readPixels(0, 0, tileSize, tileSize, gl.RGBA, gl.UNSIGNED_BYTE, px);
-          const flipped = new Uint8Array(tileSize * tileSize * 4);
           for (let y = 0;y < tileSize; y++) {
             const src = (tileSize - 1 - y) * tileSize * 4;
             flipped.set(px.subarray(src, src + tileSize * 4), y * tileSize * 4);
           }
-          tileBuffers.push(flipped);
+          tileBuffers.push(flipped.slice());
           await new Promise((r) => setTimeout(r, 0));
-          const tn = tileRow * rows + tileCol;
-          const td = rows * cols;
-          const tp = tn / td * 100;
+          const tp = (tileRow * cols + tileCol) / td * 100;
           this.setCaptureLabel(`${Math.round(tp)}%`);
         }
         for (let py = 0;py < tileSize; py++) {
-          const row = new Uint8Array(1 + totalW * 3);
+          row.fill(0);
           for (let tc = 0;tc < cols; tc++) {
-            for (let px = 0;px < tileSize; px++) {
-              const si = (py * tileSize + px) * 4;
-              const di = 1 + (tc * tileSize + px) * 3;
+            for (let px2 = 0;px2 < tileSize; px2++) {
+              const si = (py * tileSize + px2) * 4;
+              const di = 1 + (tc * tileSize + px2) * 3;
               row[di] = tileBuffers[tc][si];
               row[di + 1] = tileBuffers[tc][si + 1];
               row[di + 2] = tileBuffers[tc][si + 2];
@@ -550,8 +527,8 @@ class ShaderSketch {
       this.setCaptureLabel(`Capture Finished: ${totalW} x ${totalH}`, true);
       setTimeout(() => URL.revokeObjectURL(url), 1e4);
     } finally {
-      this.elCanvas.width = origW;
-      this.elCanvas.height = origH;
+      this.elShaderToyViewCanvas.width = origW;
+      this.elShaderToyViewCanvas.height = origH;
       this.iResolution = origRes;
       this.iTileOffset = origOffset;
       gl.viewport(0, 0, origW, origH);
@@ -561,24 +538,24 @@ class ShaderSketch {
   captureResolution(width, height) {
     this.elCaptureLabel.forEach((el) => el.innerText = `Capturing... (1/1)`);
     const gl = this.gl;
-    const originalW = this.elCanvas.width;
-    const originalH = this.elCanvas.height;
+    const originalW = this.elShaderToyViewCanvas.width;
+    const originalH = this.elShaderToyViewCanvas.height;
     const originalRes = [...this.iResolution];
-    this.elCanvas.width = width;
-    this.elCanvas.height = height;
+    this.elShaderToyViewCanvas.width = width;
+    this.elShaderToyViewCanvas.height = height;
     this.applyPanZoom();
     gl.viewport(0, 0, width, height);
     this.uniforms.forEach((e) => e.submit(e.loc));
     gl.drawArrays(gl.TRIANGLE_STRIP, 0, 4);
-    this.elCanvas.toBlob((blob) => {
+    this.elShaderToyViewCanvas.toBlob((blob) => {
       const url = URL.createObjectURL(blob);
       const link = document.createElement("a");
       link.download = `wallpaper-${width}x${height}.png`;
       link.href = url;
       link.click();
       URL.revokeObjectURL(url);
-      this.elCanvas.width = originalW;
-      this.elCanvas.height = originalH;
+      this.elShaderToyViewCanvas.width = originalW;
+      this.elShaderToyViewCanvas.height = originalH;
       this.iResolution = originalRes;
       gl.viewport(0, 0, originalW, originalH);
       this.render();
@@ -716,16 +693,9 @@ class ShaderSketch {
       e.loc = gl.getUniformLocation(this.program, e.name);
       console.log(`${e.name} : ${e.loc} `);
     });
-    if (gl.getUniformLocation(this.program, "iTime") == null) {
-      console.log("has runtime? no");
-      this.pauseSketch();
-      this.elRuntimeCtrl.forEach((el) => {
-        el.classList.toggle("display-none", true);
-      });
-    } else {
-      console.log("has runtime? yes");
-      this.playSketch();
-    }
+    this.hasRuntime = gl.getUniformLocation(this.program, "iTime") != null;
+    console.log(`has runtime? ${this.hasRuntime ? "yes" : "no"}`);
+    this.elShaderToy.classList.toggle("playback-none", !this.hasRuntime);
     this.iColorLighter = parseCSSColorToFloat("--color-lighter");
     this.iColorLight = parseCSSColorToFloat("--color-light");
     this.iColorGray = parseCSSColorToFloat("--color-gray");
@@ -739,17 +709,17 @@ class ShaderSketch {
   }
   resize(autoPanZoom = true) {
     const dpr = window.devicePixelRatio || 1;
-    const width = Math.round(this.elCanvas.clientWidth * this.scaleFactor * dpr);
-    const height = Math.round(this.elCanvas.clientHeight * this.scaleFactor * dpr);
-    this.elCanvas.width = width;
-    this.elCanvas.height = height;
+    const width = Math.round(this.elShaderToyViewCanvas.clientWidth * this.scaleFactor * dpr);
+    const height = Math.round(this.elShaderToyViewCanvas.clientHeight * this.scaleFactor * dpr);
+    this.elShaderToyViewCanvas.width = width;
+    this.elShaderToyViewCanvas.height = height;
     if (autoPanZoom)
       this.applyPanZoom();
     this.gl.viewport(0, 0, width, height);
     this.gl.texParameteri(this.gl.TEXTURE_2D, this.gl.TEXTURE_MAG_FILTER, this.gl.NEAREST);
     this.elDownresLabel.forEach((el) => el.innerText = `${width} x ${height}`);
     if (!this.isLooping)
-      requestAnimationFrame(() => this.render());
+      this.renderOnce();
   }
   renderOnce() {
     const gl = this.gl;
@@ -819,9 +789,7 @@ function initShadertoy() {
       console.error("raw glsl code is undefined");
       return;
     }
-    const container = document.querySelector("div#shadertoy");
-    const canvas = container.querySelector("canvas#shadertoy-view-canvas");
-    const sketch = new ShaderSketch(container, canvas, shaderCode);
+    const sketch = new ShaderSketch(shaderCode);
     const codeWrapper = document.querySelector("#glslCodeWrapper");
     codeWrapper.innerHTML = HTML_GLSL_CODE + codeWrapper.innerHTML;
     codeWrapper.setAttribute("data-raw-code", RAW_GLSL_CODE);
