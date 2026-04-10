@@ -388,7 +388,7 @@ function findAccordionButton(collapseEl) {
 
 // ts/theme.ts
 var HUE_VALUE_TOTAL = 36;
-var HUE_VALUE_DEFAULT = 3;
+var HUE_VALUE_DEFAULT = 0;
 var HUE_VALUE_KEY = "theme-hue-index";
 function getStoredHueValue() {
   const item = localStorage.getItem(HUE_VALUE_KEY);
