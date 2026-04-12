@@ -7,7 +7,62 @@
   <link rel="self" href="https://lzon.ca/atom.xml" type="application/atom+xml"/>
   <generator uri="https://www.getzola.org/">Zola</generator>
   
-  <updated>2026-04-11T00:00:00Z</updated>
+  <updated>2026-04-13T00:00:00Z</updated>
+  <entry>
+    <title>Books</title>
+    <id>https://lzon.ca/more/uses/books/</id>
+    <link href="https://lzon.ca/more/uses/books/"/>
+    <published>2026-04-12T00:00:00Z</published>
+    <updated>2026-04-12T00:00:00Z</updated>
+    <author>
+      <name>Lzon</name>
+    </author>
+    
+  </entry>
+  <entry>
+    <title>Desktop</title>
+    <id>https://lzon.ca/more/uses/desktop/</id>
+    <link href="https://lzon.ca/more/uses/desktop/"/>
+    <published>2026-04-12T00:00:00Z</published>
+    <updated>2026-04-12T00:00:00Z</updated>
+    <author>
+      <name>Lzon</name>
+    </author>
+    
+  </entry>
+  <entry>
+    <title>Everyday Carry</title>
+    <id>https://lzon.ca/more/uses/edc/</id>
+    <link href="https://lzon.ca/more/uses/edc/"/>
+    <published>2026-04-12T00:00:00Z</published>
+    <updated>2026-04-12T00:00:00Z</updated>
+    <author>
+      <name>Lzon</name>
+    </author>
+    
+  </entry>
+  <entry>
+    <title>Games</title>
+    <id>https://lzon.ca/more/uses/games/</id>
+    <link href="https://lzon.ca/more/uses/games/"/>
+    <published>2026-04-12T00:00:00Z</published>
+    <updated>2026-04-13T00:00:00Z</updated>
+    <author>
+      <name>Lzon</name>
+    </author>
+    
+  </entry>
+  <entry>
+    <title>Software</title>
+    <id>https://lzon.ca/more/uses/software/</id>
+    <link href="https://lzon.ca/more/uses/software/"/>
+    <published>2026-04-12T00:00:00Z</published>
+    <updated>2026-04-12T00:00:00Z</updated>
+    <author>
+      <name>Lzon</name>
+    </author>
+    
+  </entry>
   <entry>
     <title>How Microsoft abuses its users</title>
     <id>https://lzon.ca/posts/other/microsoft-user-abuse/</id>

@@ -8,7 +8,47 @@
       <generator>Zola</generator>
       <language>en</language>
       <atom:link href="https://lzon.ca/rss.xml" rel="self" type="application/rss+xml"/>
-      <lastBuildDate>Sat, 11 Apr 2026 00:00:00 +0000</lastBuildDate>
+      <lastBuildDate>Mon, 13 Apr 2026 00:00:00 +0000</lastBuildDate>
+      <item>
+          <title>Books</title>
+          <pubDate>Sun, 12 Apr 2026 00:00:00 +0000</pubDate>
+          <author>Lzon</author>
+          <link>https://lzon.ca/more/uses/books/</link>
+          <guid>https://lzon.ca/more/uses/books/</guid>
+          <description xml:base="https://lzon.ca/more/uses/books/"></description>
+      </item>
+      <item>
+          <title>Desktop</title>
+          <pubDate>Sun, 12 Apr 2026 00:00:00 +0000</pubDate>
+          <author>Lzon</author>
+          <link>https://lzon.ca/more/uses/desktop/</link>
+          <guid>https://lzon.ca/more/uses/desktop/</guid>
+          <description xml:base="https://lzon.ca/more/uses/desktop/"></description>
+      </item>
+      <item>
+          <title>Everyday Carry</title>
+          <pubDate>Sun, 12 Apr 2026 00:00:00 +0000</pubDate>
+          <author>Lzon</author>
+          <link>https://lzon.ca/more/uses/edc/</link>
+          <guid>https://lzon.ca/more/uses/edc/</guid>
+          <description xml:base="https://lzon.ca/more/uses/edc/"></description>
+      </item>
+      <item>
+          <title>Games</title>
+          <pubDate>Sun, 12 Apr 2026 00:00:00 +0000</pubDate>
+          <author>Lzon</author>
+          <link>https://lzon.ca/more/uses/games/</link>
+          <guid>https://lzon.ca/more/uses/games/</guid>
+          <description xml:base="https://lzon.ca/more/uses/games/"></description>
+      </item>
+      <item>
+          <title>Software</title>
+          <pubDate>Sun, 12 Apr 2026 00:00:00 +0000</pubDate>
+          <author>Lzon</author>
+          <link>https://lzon.ca/more/uses/software/</link>
+          <guid>https://lzon.ca/more/uses/software/</guid>
+          <description xml:base="https://lzon.ca/more/uses/software/"></description>
+      </item>
       <item>
           <title>How Microsoft abuses its users</title>
           <pubDate>Thu, 09 Apr 2026 00:00:00 +0000</pubDate>

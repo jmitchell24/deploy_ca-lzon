@@ -359,7 +359,15 @@ function expandElement(el) {
   el.classList.add("collapsing");
   el.style.height = "0px";
   el.offsetHeight;
-  el.style.height = `${el.scrollHeight}px`;
+  const targetHeight = el.scrollHeight;
+  if (targetHeight === 0) {
+    el.classList.remove("collapsing");
+    el.classList.add("collapse", "show");
+    el.style.height = "";
+    findAccordionButton(el)?.classList.remove("collapsed");
+    return;
+  }
+  el.style.height = `${targetHeight}px`;
   findAccordionButton(el)?.classList.remove("collapsed");
   el.addEventListener("transitionend", function handler() {
     el.removeEventListener("transitionend", handler);
@@ -369,7 +377,15 @@ function expandElement(el) {
   });
 }
 function collapseElement(el) {
-  el.style.height = `${el.scrollHeight}px`;
+  const currentHeight = el.scrollHeight;
+  if (currentHeight === 0) {
+    el.classList.remove("collapsing", "show");
+    el.classList.add("collapse");
+    el.style.height = "";
+    findAccordionButton(el)?.classList.add("collapsed");
+    return;
+  }
+  el.style.height = `${currentHeight}px`;
   el.offsetHeight;
   el.classList.remove("collapse", "show");
   el.classList.add("collapsing");
@@ -388,7 +404,7 @@ function findAccordionButton(collapseEl) {
 
 // ts/theme.ts
 var HUE_VALUE_TOTAL = 36;
-var HUE_VALUE_DEFAULT = 0;
+var HUE_VALUE_DEFAULT = 4;
 var HUE_VALUE_KEY = "theme-hue-index";
 function getStoredHueValue() {
   const item = localStorage.getItem(HUE_VALUE_KEY);
@@ -537,6 +553,24 @@ function initTree() {
 // ts/toc-content.ts
 function initTocContent() {
   document.addEventListener("DOMContentLoaded", () => {
+    document.querySelectorAll(".top-section").forEach((section) => {
+      const head = section.querySelector(".top-section-head");
+      const body = section.querySelector(".top-section-body");
+      if (!head || !body)
+        return;
+      body.classList.add("collapse");
+      head.addEventListener("click", () => {
+        if (body.classList.contains("show")) {
+          collapseElement(body);
+          head.classList.add("collapsed");
+          console.log("collapse top-section");
+        } else if (!body.classList.contains("collapsing")) {
+          expandElement(body);
+          head.classList.remove("collapsed");
+          console.log("expand top-section");
+        }
+      });
+    });
     document.querySelectorAll(".toc-content").forEach((container) => {
       transformContent(container);
       container.addEventListener("click", toggleHandler);
