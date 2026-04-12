@@ -524,6 +524,171 @@ function initSecrets() {
   });
 }
 
+// ts/tree.ts
+function initTree() {
+  document.addEventListener("click", (e) => {
+    const head = e.target?.closest(".tree-node-head");
+    if (!head)
+      return;
+    head.closest("li")?.classList.toggle("open");
+  });
+}
+
+// ts/toc-content.ts
+function initTocContent() {
+  document.addEventListener("DOMContentLoaded", () => {
+    document.querySelectorAll(".toc-content").forEach((container) => {
+      transformContent(container);
+      container.addEventListener("click", toggleHandler);
+    });
+    document.querySelectorAll('[class*="sectionize-h"]').forEach((container) => {
+      const level = sectionizeLevel(container);
+      if (!level)
+        return;
+      transformSectionize(container, level);
+      container.addEventListener("click", toggleHandler);
+    });
+    if (window.location.hash) {
+      expandToHash(window.location.hash);
+    }
+    document.addEventListener("click", (e) => {
+      const link = e.target?.closest('a[href^="#"]');
+      if (!link)
+        return;
+      expandToHash(link.getAttribute("href"));
+    });
+    window.addEventListener("hashchange", () => {
+      expandToHash(window.location.hash);
+    });
+  });
+}
+function toggleHandler(e) {
+  const head = e.target?.closest(".toc-section-head");
+  if (!head)
+    return;
+  const body = head.nextElementSibling;
+  if (!body?.classList.contains("toc-section-body"))
+    return;
+  if (body.classList.contains("show")) {
+    collapseElement(body);
+    head.classList.add("collapsed");
+  } else if (!body.classList.contains("collapsing")) {
+    expandSection(head, body);
+  }
+}
+function transformContent(container) {
+  const frag = document.createDocumentFragment();
+  while (container.firstChild)
+    frag.appendChild(container.firstChild);
+  container.appendChild(wrapSections(Array.from(frag.childNodes)));
+}
+function wrapSections(nodes) {
+  const frag = document.createDocumentFragment();
+  let i = 0;
+  while (i < nodes.length) {
+    const node = nodes[i];
+    if (isHeading(node)) {
+      const heading = node;
+      const body = [];
+      i++;
+      while (i < nodes.length) {
+        const next = nodes[i];
+        if (isHeading(next))
+          break;
+        body.push(next);
+        i++;
+      }
+      const section = document.createElement("div");
+      section.className = "toc-section";
+      heading.classList.add("toc-section-head", "collapsed");
+      section.appendChild(heading);
+      const bodyDiv = document.createElement("div");
+      bodyDiv.className = "collapse toc-section-body";
+      bodyDiv.appendChild(wrapSections(body));
+      section.appendChild(bodyDiv);
+      frag.appendChild(section);
+    } else {
+      frag.appendChild(node);
+      i++;
+    }
+  }
+  return frag;
+}
+function isHeading(node) {
+  return node.nodeType === Node.ELEMENT_NODE && node.tagName === "H3";
+}
+function sectionizeLevel(container) {
+  const match = container.className.match(/\bsectionize-h([1-6])\b/);
+  return match ? parseInt(match[1], 10) : null;
+}
+function transformSectionize(container, level) {
+  const frag = document.createDocumentFragment();
+  while (container.firstChild)
+    frag.appendChild(container.firstChild);
+  container.appendChild(wrapSectionize(Array.from(frag.childNodes), level));
+}
+function wrapSectionize(nodes, level) {
+  const frag = document.createDocumentFragment();
+  let i = 0;
+  while (i < nodes.length) {
+    const node = nodes[i];
+    if (isHeadingLevel(node, level)) {
+      const heading = node;
+      const body = [];
+      i++;
+      while (i < nodes.length) {
+        if (isHeadingLevel(nodes[i], level))
+          break;
+        body.push(nodes[i++]);
+      }
+      const section = document.createElement("div");
+      section.className = "toc-section";
+      heading.classList.add("toc-section-head", "collapsed");
+      section.appendChild(heading);
+      const bodyDiv = document.createElement("div");
+      bodyDiv.className = "collapse toc-section-body";
+      bodyDiv.appendChild(wrapSectionize(body, level));
+      section.appendChild(bodyDiv);
+      frag.appendChild(section);
+    } else {
+      frag.appendChild(nodes[i++]);
+    }
+  }
+  return frag;
+}
+function isHeadingLevel(node, level) {
+  return node.nodeType === Node.ELEMENT_NODE && node.tagName === `H${level}`;
+}
+function expandSection(head, body) {
+  if (!body.classList.contains("show") && !body.classList.contains("collapsing")) {
+    expandElement(body);
+    head.classList.remove("collapsed");
+  }
+}
+function expandToHash(hash) {
+  const id = hash.startsWith("#") ? hash.slice(1) : hash;
+  if (!id)
+    return;
+  const target = document.getElementById(id);
+  if (!target)
+    return;
+  if (!target.closest('.toc-content, [class*="sectionize-h"]'))
+    return;
+  const body = target.nextElementSibling;
+  if (body?.classList.contains("toc-section-body")) {
+    expandSection(target, body);
+  }
+  let el = target;
+  while (el) {
+    el = el.parentElement?.closest(".toc-section-body") ?? null;
+    if (el) {
+      const head = el.previousElementSibling;
+      if (head)
+        expandSection(head, el);
+    }
+  }
+}
+
 // ts/_lzon.ts
 initMatomo();
 initSlideshow();
@@ -534,3 +699,5 @@ initCode();
 initAccordion();
 initTheme();
 initSecrets();
+initTree();
+initTocContent();
