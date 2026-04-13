@@ -1,17 +1,21 @@
 // ts/_shadertoy.ts
-function parseCSSColorToFloat(colorStr) {
+function resolveCSSColorToPixel(colorStr) {
   const div = document.createElement("div");
-  div.style.color = window.getComputedStyle(document.body).getPropertyValue(colorStr).trim();
   document.body.appendChild(div);
-  const rgb = window.getComputedStyle(div).color;
+  div.style.color = window.getComputedStyle(document.body).getPropertyValue(colorStr).trim();
+  const computedColor = window.getComputedStyle(div).color;
   document.body.removeChild(div);
-  const match = rgb.match(/[\d.]+/g);
-  return [
-    parseFloat(match[0]) / 255,
-    parseFloat(match[1]) / 255,
-    parseFloat(match[2]) / 255,
-    match[3] !== undefined ? parseFloat(match[3]) : 1
-  ];
+  const canvas = document.createElement("canvas");
+  canvas.width = canvas.height = 1;
+  const ctx = canvas.getContext("2d");
+  ctx.fillStyle = computedColor;
+  ctx.fillRect(0, 0, 1, 1);
+  const d = ctx.getImageData(0, 0, 1, 1).data;
+  return [d[0], d[1], d[2], d[3]];
+}
+function parseCSSColorToFloat(colorStr) {
+  const [r, g, b, a] = resolveCSSColorToPixel(colorStr);
+  return [r / 255, g / 255, b / 255, a / 255];
 }
 class ShaderSketch {
   gl;
