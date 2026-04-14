@@ -127,6 +127,9 @@
         <loc>https://lzon.ca/posts/page/8/</loc>
     </url>
     <url>
+        <loc>https://lzon.ca/posts/page/9/</loc>
+    </url>
+    <url>
         <loc>https://lzon.ca/posts/recipes/</loc>
     </url>
     <url>
@@ -344,6 +347,10 @@
     <url>
         <loc>https://lzon.ca/posts/site/emailverification-info/</loc>
         <lastmod>2026-01-06</lastmod>
+    </url>
+    <url>
+        <loc>https://lzon.ca/posts/site/lzon-day-100/</loc>
+        <lastmod>2026-04-14</lastmod>
     </url>
     <url>
         <loc>https://lzon.ca/posts/site/lzon-week-one-update/</loc>

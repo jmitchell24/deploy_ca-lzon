@@ -8,7 +8,15 @@
       <generator>Zola</generator>
       <language>en</language>
       <atom:link href="https://lzon.ca/rss.xml" rel="self" type="application/rss+xml"/>
-      <lastBuildDate>Mon, 13 Apr 2026 00:00:00 +0000</lastBuildDate>
+      <lastBuildDate>Tue, 14 Apr 2026 00:00:00 +0000</lastBuildDate>
+      <item>
+          <title>100 days of lzon.ca</title>
+          <pubDate>Tue, 14 Apr 2026 00:00:00 +0000</pubDate>
+          <author>Lzon</author>
+          <link>https://lzon.ca/posts/site/lzon-day-100/</link>
+          <guid>https://lzon.ca/posts/site/lzon-day-100/</guid>
+          <description xml:base="https://lzon.ca/posts/site/lzon-day-100/">&lt;p&gt;My thoughts on the first 100 days of lzon.ca&lt;&#x2F;p&gt;</description>
+      </item>
       <item>
           <title>Books</title>
           <pubDate>Sun, 12 Apr 2026 00:00:00 +0000</pubDate>

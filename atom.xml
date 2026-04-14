@@ -7,7 +7,18 @@
   <link rel="self" href="https://lzon.ca/atom.xml" type="application/atom+xml"/>
   <generator uri="https://www.getzola.org/">Zola</generator>
   
-  <updated>2026-04-13T00:00:00Z</updated>
+  <updated>2026-04-14T00:00:00Z</updated>
+  <entry>
+    <title>100 days of lzon.ca</title>
+    <id>https://lzon.ca/posts/site/lzon-day-100/</id>
+    <link href="https://lzon.ca/posts/site/lzon-day-100/"/>
+    <published>2026-04-14T00:00:00Z</published>
+    <updated>2026-04-14T00:00:00Z</updated>
+    <author>
+      <name>Lzon</name>
+    </author>
+    <summary type="html" xml:base="https://lzon.ca/posts/site/lzon-day-100/">&lt;p&gt;My thoughts on the first 100 days of lzon.ca&lt;&#x2F;p&gt;</summary>
+  </entry>
   <entry>
     <title>Books</title>
     <id>https://lzon.ca/more/uses/books/</id>

@@ -7,7 +7,18 @@
   <link rel="self" href="https://lzon.ca/posts/atom.xml" type="application/atom+xml"/>
   <generator uri="https://www.getzola.org/">Zola</generator>
   
-  <updated>2026-04-09T00:00:00Z</updated>
+  <updated>2026-04-14T00:00:00Z</updated>
+  <entry>
+    <title>100 days of lzon.ca</title>
+    <id>https://lzon.ca/posts/site/lzon-day-100/</id>
+    <link href="https://lzon.ca/posts/site/lzon-day-100/"/>
+    <published>2026-04-14T00:00:00Z</published>
+    <updated>2026-04-14T00:00:00Z</updated>
+    <author>
+      <name>Lzon</name>
+    </author>
+    <summary type="html" xml:base="https://lzon.ca/posts/site/lzon-day-100/">&lt;p&gt;My thoughts on the first 100 days of lzon.ca&lt;&#x2F;p&gt;</summary>
+  </entry>
   <entry>
     <title>How Microsoft abuses its users</title>
     <id>https://lzon.ca/posts/other/microsoft-user-abuse/</id>
@@ -284,6 +295,17 @@
     <summary type="html" xml:base="https://lzon.ca/posts/other/social-cheat-codes/">&lt;p&gt;How an timid, introverted recluse learned to enjoy talking to people.&lt;&#x2F;p&gt;</summary>
   </entry>
   <entry>
+    <title>Sketching with Code</title>
+    <id>https://lzon.ca/posts/site/code-sketch-demo/</id>
+    <link href="https://lzon.ca/posts/site/code-sketch-demo/"/>
+    <published>2026-01-09T00:00:00Z</published>
+    <updated>2026-01-18T00:00:00Z</updated>
+    <author>
+      <name>Lzon</name>
+    </author>
+    <summary type="html" xml:base="https://lzon.ca/posts/site/code-sketch-demo/">&lt;p&gt;Exploring some ideas for how to create and publish graphics demos for Lzon.&lt;&#x2F;p&gt;</summary>
+  </entry>
+  <entry>
     <title>Dream Trawler</title>
     <id>https://lzon.ca/posts/series/grateful/dream-trawler/</id>
     <link href="https://lzon.ca/posts/series/grateful/dream-trawler/"/>
@@ -293,6 +315,17 @@
       <name>Lzon</name>
     </author>
     <summary type="html" xml:base="https://lzon.ca/posts/series/grateful/dream-trawler/">&lt;p&gt;Today I’m grateful for Dream Trawler, a card from the game Magic the Gathering.&lt;&#x2F;p&gt;</summary>
+  </entry>
+  <entry>
+    <title>What is emailverification.info?</title>
+    <id>https://lzon.ca/posts/site/emailverification-info/</id>
+    <link href="https://lzon.ca/posts/site/emailverification-info/"/>
+    <published>2026-01-05T00:00:00Z</published>
+    <updated>2026-01-06T00:00:00Z</updated>
+    <author>
+      <name>Lzon</name>
+    </author>
+    <summary type="html" xml:base="https://lzon.ca/posts/site/emailverification-info/">&lt;p&gt;Have you ever recieved an email from this address? Here’s why it might not actually be a scam.&lt;&#x2F;p&gt;</summary>
   </entry>
   <entry>
     <title>Year in Review 2025 - AI</title>
@@ -326,6 +359,17 @@
       <name>Lzon</name>
     </author>
     <summary type="html" xml:base="https://lzon.ca/posts/series/2025-review/2025-review-smartphones/">&lt;p&gt;Here’s my review of smartphone tech in 2025, as well as a prediction for 2026!&lt;&#x2F;p&gt;</summary>
+  </entry>
+  <entry>
+    <title>The First Week of lzon.ca</title>
+    <id>https://lzon.ca/posts/site/lzon-week-one-update/</id>
+    <link href="https://lzon.ca/posts/site/lzon-week-one-update/"/>
+    <published>2025-12-28T00:00:00Z</published>
+    <updated>2025-12-29T00:00:00Z</updated>
+    <author>
+      <name>Lzon</name>
+    </author>
+    <summary type="html" xml:base="https://lzon.ca/posts/site/lzon-week-one-update/">&lt;p&gt;Good god! How has it been only a week?&lt;&#x2F;p&gt;</summary>
   </entry>
   <entry>
     <title>Driving</title>
