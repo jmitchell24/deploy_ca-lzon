@@ -306,8 +306,8 @@ async function initQotd() {
   });
 }
 
-// ts/code.ts
-function initCodeWrapper(el) {
+// ts/code-frame.ts
+function initCodeFrame(el) {
   const pre = el.querySelector("pre");
   const preCode = pre.querySelector("code");
   const preLangText = preCode.getAttribute("data-lang") || "plaintext";
@@ -332,33 +332,15 @@ function initCodeWrapper(el) {
     }
   });
 }
-function initCode() {
+function initCodeFrames() {
   document.addEventListener("DOMContentLoaded", () => {
-    document.querySelectorAll("x-code-wrapper").forEach(initCodeWrapper);
+    document.querySelectorAll("x-code-wrapper").forEach(initCodeFrame);
+    document.querySelectorAll(".code-frame").forEach(initCodeFrame);
   });
 }
 
 // ts/collapse.ts
-function initAccordion() {
-  document.addEventListener("click", (e) => {
-    const btn = e.target?.closest('[data-toggle="collapse"]');
-    if (!btn)
-      return;
-    const target = document.querySelector(btn.dataset["target"]);
-    if (!target)
-      return;
-    const parent = btn.dataset["parent"] ? document.querySelector(btn.dataset["parent"]) : target.closest(".accordion");
-    parent?.querySelectorAll(".accordion-collapse.show, .accordion-collapse.collapsing").forEach((el) => {
-      if (el !== target)
-        collapseElement(el);
-    });
-    if (target.classList.contains("show"))
-      collapseElement(target);
-    else
-      expandElement(target);
-  });
-}
-function initTopSection() {
+function initCollapse() {
   document.addEventListener("DOMContentLoaded", () => {
     document.querySelectorAll(".top-section").forEach((section) => {
       const head = section.querySelector(".top-section-head");
@@ -397,11 +379,9 @@ function expandElement(el) {
     el.classList.remove("collapsing");
     el.classList.add("collapse", "show");
     el.style.height = "0px";
-    findAccordionButton(el)?.classList.remove("collapsed");
     return;
   }
   el.style.height = `${targetHeight}px`;
-  findAccordionButton(el)?.classList.remove("collapsed");
   el.addEventListener("transitionend", function handler(e) {
     if (e.propertyName !== "height")
       return;
@@ -417,7 +397,6 @@ function collapseElement(el) {
     el.classList.remove("collapsing", "show");
     el.classList.add("collapse");
     el.style.height = "";
-    findAccordionButton(el)?.classList.add("collapsed");
     return;
   }
   el.style.height = `${currentHeight}px`;
@@ -425,7 +404,6 @@ function collapseElement(el) {
   el.classList.remove("collapse", "show");
   el.classList.add("collapsing");
   el.style.height = "0px";
-  findAccordionButton(el)?.classList.add("collapsed");
   el.addEventListener("transitionend", function handler(e) {
     if (e.propertyName !== "height")
       return;
@@ -434,9 +412,6 @@ function collapseElement(el) {
     el.classList.add("collapse");
     el.style.height = "";
   });
-}
-function findAccordionButton(collapseEl) {
-  return document.querySelector(`[data-target="#${collapseEl.id}"]`);
 }
 
 // ts/theme.ts
@@ -593,9 +568,8 @@ initSlideshow();
 initOverlay();
 initChangelog();
 initQotd();
-initCode();
-initAccordion();
+initCodeFrames();
 initTheme();
 initSecrets();
 initTree();
-initTopSection();
+initCollapse();
