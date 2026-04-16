@@ -307,21 +307,25 @@ async function initQotd() {
 }
 
 // ts/code-frame.ts
+function createNode(parent, className, node = "div") {
+  const el = document.createElement(node);
+  el.classList.add(className);
+  parent.appendChild(el);
+  return el;
+}
 function initCodeFrame(el) {
-  const pre = el.querySelector("pre");
-  const preCode = pre.querySelector("code");
-  const preLangText = preCode.getAttribute("data-lang") || "plaintext";
-  const preCodeText = el.getAttribute("data-raw-code");
-  const footer = el.querySelector("x-code-footer");
-  const footerLang = el.querySelector("x-code-footer > x-code-footer-lang");
-  const footerCopy = el.querySelector("x-code-footer > x-code-footer-copy");
-  const footerChars = el.querySelector("x-code-footer > x-code-footer-chars");
-  footerLang.innerText = preLangText;
-  footerChars.innerText = `${preCodeText.length} chars`;
+  const codeLang = el.getAttribute("data-code-lang") || "plaintext";
+  const codeText = el.getAttribute("data-code-text");
+  const footer = createNode(el, "code-frame-footer", "button");
+  const footerLang = createNode(footer, "code-frame-footer-lang");
+  const footerChars = createNode(footer, "code-frame-footer-chars");
+  const footerCopy = createNode(footer, "code-frame-footer-copy");
+  footerLang.innerText = codeLang;
+  footerChars.innerText = `${codeText.length} chars`;
   footerCopy.innerText = "click to copy";
   footer.addEventListener("click", async () => {
     try {
-      await navigator.clipboard.writeText(preCodeText);
+      await navigator.clipboard.writeText(codeText);
       const originalText = footerCopy.innerHTML;
       footerCopy.innerHTML = "copied...";
       setTimeout(() => {
@@ -334,7 +338,6 @@ function initCodeFrame(el) {
 }
 function initCodeFrames() {
   document.addEventListener("DOMContentLoaded", () => {
-    document.querySelectorAll("x-code-wrapper").forEach(initCodeFrame);
     document.querySelectorAll(".code-frame").forEach(initCodeFrame);
   });
 }

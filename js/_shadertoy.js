@@ -787,17 +787,14 @@ class ShaderSketch {
 }
 function initShadertoy() {
   document.addEventListener("DOMContentLoaded", () => {
-    const shaderCode = RAW_GLSL_CODE;
-    console.log("shader code: " + shaderCode);
-    if (!RAW_GLSL_CODE) {
-      console.error("raw glsl code is undefined");
+    const codeFrameSource = document.getElementById("code-frame-glsl-source");
+    const codeFrameTarget = document.getElementById("code-frame-glsl-target");
+    if (!codeFrameSource || !codeFrameTarget)
       return;
-    }
+    codeFrameTarget.replaceWith(codeFrameSource);
+    const shaderCode = codeFrameSource.getAttribute("data-code-text");
+    console.log("shader code: " + shaderCode);
     const sketch = new ShaderSketch(shaderCode);
-    const codeWrapper = document.querySelector("#glslCodeWrapper");
-    codeWrapper.innerHTML = HTML_GLSL_CODE + codeWrapper.innerHTML;
-    codeWrapper.setAttribute("data-raw-code", RAW_GLSL_CODE);
-    initCodeWrapper(codeWrapper);
   });
 }
 initShadertoy();
