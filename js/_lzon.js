@@ -565,12 +565,54 @@ function initTree() {
   });
 }
 
+// ts/links.ts
+function initLinks() {
+  function getDateString(dateStr) {
+    const d = new Date(dateStr + "T00:00:00");
+    return d.toLocaleDateString(undefined, {
+      year: "numeric",
+      month: "short",
+      day: "numeric"
+    });
+  }
+  document.addEventListener("DOMContentLoaded", () => {
+    const elLinkTemplate = document.querySelector("#link:only-child");
+    if (!elLinkTemplate)
+      return;
+    const elContainer = elLinkTemplate.parentElement;
+    fetch("/data/links.json").then((res) => res.json()).then((data) => data.links).then((links) => {
+      const reversed = [...links].sort((a, b) => b.date.localeCompare(a.date));
+      for (let i = 0;i < reversed.length; i++) {
+        const link = reversed[i];
+        const elLink = elLinkTemplate.cloneNode(true);
+        const elLinkAnchor = elLink.querySelector("#link-link");
+        const elDate = elLink.querySelector("#link-date");
+        const elArc = elLink.querySelector("#link-arc");
+        elLinkAnchor.href = link.url;
+        elLinkAnchor.textContent = link.title;
+        elDate.textContent = getDateString(link.date);
+        if (link.arc) {
+          elArc.href = `https://web.archive.org/web/${link.arc}/${link.url}`;
+        } else {
+          elArc.href = `https://web.archive.org/web/*/${link.url}`;
+          elArc.textContent = "search archive.org";
+        }
+        elLink.style.animationDelay = `${i * 30}ms`;
+        elLink.classList.add("animate-fade-in-md");
+        elContainer.appendChild(elLink);
+      }
+      elLinkTemplate.remove();
+    });
+  });
+}
+
 // ts/_lzon.ts
 initMatomo();
 initSlideshow();
 initOverlay();
 initChangelog();
 initQotd();
+initLinks();
 initCodeFrames();
 initTheme();
 initSecrets();
