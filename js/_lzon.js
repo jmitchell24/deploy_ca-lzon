@@ -126,8 +126,8 @@ function initOverlay() {
   });
 }
 
-// ts/changelog.ts
-async function initChangelog() {
+// ts/commits.ts
+async function initCommits() {
   const trimMargin = (str) => str.replace(/^[ \t]*\|/gm, "").trim();
   const formatBytes = (kb) => {
     if (kb < 1024)
@@ -149,18 +149,18 @@ async function initChangelog() {
     second: "2-digit"
   });
   document.addEventListener("DOMContentLoaded", () => {
-    const elChangelog = document.querySelectorAll("#changelog");
-    if (!elChangelog)
+    const elCommits = document.querySelectorAll("#commits");
+    if (!elCommits)
       return;
-    fetch("/data/changelog.json").then((res) => res.json()).then((data) => {
-      elChangelog.forEach((el) => {
+    fetch("/data/commits.json").then((res) => res.json()).then((data) => {
+      elCommits.forEach((el) => {
         let html = "";
         const buildStr = `
-                    |# Build 
+                    |# Build
                     |    - date: <span class="z-string">${formatDate(data.timestamp)}</span>
                     |    - time: <span class="z-constant">${formatTime(data.timestamp)}</span>
                     |
-                    |# Changelog
+                    |# Commits
                 `;
         html += trimMargin(buildStr);
         data.commits.forEach((it) => {
@@ -623,7 +623,7 @@ function initLinks() {
 initMatomo();
 initSlideshow();
 initOverlay();
-initChangelog();
+initCommits();
 initQotd();
 initLinks();
 initCodeFrames();

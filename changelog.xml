@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+        <feed xmlns="http://www.w3.org/2005/Atom">
+            <id>https://lzon.ca/changelog.xml</id>
+            <title>lzon.ca – Changelog</title>
+            <link href="https://lzon.ca/more" rel="alternate" />
+            <link href="https://lzon.ca/changelog.xml" rel="self" />
+            <updated>2026-04-18T00:00:00Z</updated>
+            
+                <entry>
+                    <id>https://lzon.ca/changelog.xml#2026-04-18</id>
+                    <title>2026-04-18</title>
+                    <link href="https://lzon.ca/more" />
+                    <updated>2026-04-18T00:00:00Z</updated>
+                    <content type="html">&lt;pre&gt;### Changes 
+
+I'm adding a bunch of new feeds: 
+- links
+- quotes
+- changelog
+
+like this kinda thing, go to [lzon.ca](https://lzon.ca) for more.&lt;/pre&gt;</content>
+                </entry>
+        </feed>
