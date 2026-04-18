@@ -6,6 +6,14 @@
             <link href="https://lzon.ca/extras.xml" rel="self" />
             <updated>2026-04-18T00:00:00Z</updated>
             <entry>
+                    <id>https://lzon.ca/quotes.xml#c3626c86</id>
+                    <title>Confucius</title>
+                    <link href="https://lzon.ca/more/quotes" />
+                    <updated>2026-04-18T00:00:00Z</updated>
+                    <category term="quote" />
+    <summary>Our greatest glory is not in never falling, but in getting up every time we do.</summary>
+                </entry>
+            <entry>
                     <id>https://lzon.ca/links.xml#1f2466d1</id>
                     <title>The Last Question by Isaac Asimov</title>
                     <link href="https://hex.ooo/library/last_question.html" />
