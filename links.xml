@@ -1,0 +1,165 @@
+<?xml version='1.0' encoding='utf-8'?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <id>https://lzon.ca/links.xml</id>
+  <title>lzon.ca – Links</title>
+  <link href="https://lzon.ca/more/links" rel="alternate" />
+  <link href="https://lzon.ca/links.xml" rel="self" />
+  <updated>2026-04-18T00:00:00Z</updated>
+  <entry>
+    <id>https://hex.ooo/library/last_question.html</id>
+    <title>The Last Question by Isaac Asimov</title>
+    <link href="https://hex.ooo/library/last_question.html" />
+    <updated>2026-04-18T00:00:00Z</updated>
+    <summary>A short scifi story, I've read it many times. Well worth your time.</summary>
+  </entry>
+  <entry>
+    <id>https://thegrounded.ghost.io/the-truth-dies-on-the-way-up/</id>
+    <title>The Truth Dies on the Way Up</title>
+    <link href="https://thegrounded.ghost.io/the-truth-dies-on-the-way-up/" />
+    <updated>2026-04-06T00:00:00Z</updated>
+  </entry>
+  <entry>
+    <id>https://paulgraham.com/submarine.html</id>
+    <title>The Submarine</title>
+    <link href="https://paulgraham.com/submarine.html" />
+    <updated>2026-04-05T00:00:00Z</updated>
+  </entry>
+  <entry>
+    <id>https://dlants.me/agi-not-imminent.html</id>
+    <title>Why I don't think AGI is imminent</title>
+    <link href="https://dlants.me/agi-not-imminent.html" />
+    <updated>2026-02-19T00:00:00Z</updated>
+  </entry>
+  <entry>
+    <id>https://www.destroyallsoftware.com/talks/the-birth-and-death-of-javascript</id>
+    <title>The Birth &amp; Death of JavaScript</title>
+    <link href="https://www.destroyallsoftware.com/talks/the-birth-and-death-of-javascript" />
+    <updated>2026-01-30T00:00:00Z</updated>
+  </entry>
+  <entry>
+    <id>https://letters.thedankoe.com/p/the-future-of-work-when-work-is-meaningless</id>
+    <title>The future of work when work is meaningless</title>
+    <link href="https://letters.thedankoe.com/p/the-future-of-work-when-work-is-meaningless" />
+    <updated>2026-01-26T00:00:00Z</updated>
+  </entry>
+  <entry>
+    <id>https://marshallbrain.com/manna1</id>
+    <title>Manna by Marshall Brain</title>
+    <link href="https://marshallbrain.com/manna1" />
+    <updated>2026-01-25T00:00:00Z</updated>
+  </entry>
+  <entry>
+    <id>https://www.michelegargiulo.com/blog/what-is-soul-fatigue</id>
+    <title>What Is Soul Fatigue?</title>
+    <link href="https://www.michelegargiulo.com/blog/what-is-soul-fatigue" />
+    <updated>2026-01-24T00:00:00Z</updated>
+  </entry>
+  <entry>
+    <id>https://www.sciencedaily.com/releases/2026/01/260107225516.htm</id>
+    <title>Scientists find exercise rivals therapy for depression</title>
+    <link href="https://www.sciencedaily.com/releases/2026/01/260107225516.htm" />
+    <updated>2026-01-11T00:00:00Z</updated>
+  </entry>
+  <entry>
+    <id>https://www.sciencedirect.com/science/article/abs/pii/S0747563215001272</id>
+    <title>Are you already a Cyborg?</title>
+    <link href="https://www.sciencedirect.com/science/article/abs/pii/S0747563215001272" />
+    <updated>2026-01-03T00:00:00Z</updated>
+  </entry>
+  <entry>
+    <id>https://quarter--mile.com/vanity-activities</id>
+    <title>Vanitiy Activities</title>
+    <link href="https://quarter--mile.com/vanity-activities" />
+    <updated>2025-12-25T00:00:00Z</updated>
+  </entry>
+  <entry>
+    <id>https://slatestarcodex.com/2015/03/25/is-everything-a-religion/</id>
+    <title>Is Everything a Religion?</title>
+    <link href="https://slatestarcodex.com/2015/03/25/is-everything-a-religion/" />
+    <updated>2025-12-19T00:00:00Z</updated>
+  </entry>
+  <entry>
+    <id>https://www.sebastianaaltonen.com/blog/no-graphics-api</id>
+    <title>No Graphics API</title>
+    <link href="https://www.sebastianaaltonen.com/blog/no-graphics-api" />
+    <updated>2025-12-18T00:00:00Z</updated>
+  </entry>
+  <entry>
+    <id>https://www.abortretry.fail/p/the-history-of-xerox</id>
+    <title>The history of Xerox</title>
+    <link href="https://www.abortretry.fail/p/the-history-of-xerox" />
+    <updated>2025-12-16T00:00:00Z</updated>
+  </entry>
+  <entry>
+    <id>https://gafferongames.com/post/fix_your_timestep/</id>
+    <title>Fix your timestep</title>
+    <link href="https://gafferongames.com/post/fix_your_timestep/" />
+    <updated>2025-12-15T00:00:00Z</updated>
+  </entry>
+  <entry>
+    <id>https://aliveness.kunnas.com/articles/copenhagen-trap</id>
+    <title>The Copenhagen Trap</title>
+    <link href="https://aliveness.kunnas.com/articles/copenhagen-trap" />
+    <updated>2025-12-12T00:00:00Z</updated>
+  </entry>
+  <entry>
+    <id>https://www.dosdays.co.uk/topics/laptop_displays.php</id>
+    <title>A History of Laptop Displays</title>
+    <link href="https://www.dosdays.co.uk/topics/laptop_displays.php" />
+    <updated>2025-11-24T00:00:00Z</updated>
+  </entry>
+  <entry>
+    <id>https://en.wikipedia.org/wiki/Flash_of_unstyled_content</id>
+    <title>Flash of unstyled content (FOUC) </title>
+    <link href="https://en.wikipedia.org/wiki/Flash_of_unstyled_content" />
+    <updated>2025-07-23T00:00:00Z</updated>
+  </entry>
+  <entry>
+    <id>https://discourse.mozilla.org/t/let-me-pay-for-firefox/141297</id>
+    <title>Let me pay for Firefox</title>
+    <link href="https://discourse.mozilla.org/t/let-me-pay-for-firefox/141297" />
+    <updated>2025-07-15T00:00:00Z</updated>
+  </entry>
+  <entry>
+    <id>https://blog.jsbarretto.com/post/software-is-joy</id>
+    <title>Writing Toy Software Is A Joy</title>
+    <link href="https://blog.jsbarretto.com/post/software-is-joy" />
+    <updated>2025-06-20T00:00:00Z</updated>
+  </entry>
+  <entry>
+    <id>https://intelligence-curse.ai/</id>
+    <title>The Intelligence Curse</title>
+    <link href="https://intelligence-curse.ai/" />
+    <updated>2025-06-09T00:00:00Z</updated>
+  </entry>
+  <entry>
+    <id>https://viewsourcecode.org/snaptoken/kilo/index.html</id>
+    <title>Build Your Own Text Editor</title>
+    <link href="https://viewsourcecode.org/snaptoken/kilo/index.html" />
+    <updated>2025-05-29T00:00:00Z</updated>
+  </entry>
+  <entry>
+    <id>https://kerrick.blog/articles/2025/ship-software-that-does-nothing/</id>
+    <title>Ship Software That Does Nothing</title>
+    <link href="https://kerrick.blog/articles/2025/ship-software-that-does-nothing/" />
+    <updated>2025-05-28T00:00:00Z</updated>
+  </entry>
+  <entry>
+    <id>https://www.linux-magazine.com/Online/Features/Basic-Hacks-for-Kobo-E-Readers</id>
+    <title>Basic Hacks for Kobo E-Readers</title>
+    <link href="https://www.linux-magazine.com/Online/Features/Basic-Hacks-for-Kobo-E-Readers" />
+    <updated>2025-05-28T00:00:00Z</updated>
+  </entry>
+  <entry>
+    <id>https://blogsystem5.substack.com/p/windows-nt-vs-unix-design</id>
+    <title>Windows NT vs. Unix - A design comparison</title>
+    <link href="https://blogsystem5.substack.com/p/windows-nt-vs-unix-design" />
+    <updated>2025-05-28T00:00:00Z</updated>
+  </entry>
+  <entry>
+    <id>https://ktema.org/articles/the-overengineered-resume/</id>
+    <title>How to build your resume with an SSG</title>
+    <link href="https://ktema.org/articles/the-overengineered-resume/" />
+    <updated>2025-05-20T00:00:00Z</updated>
+  </entry>
+</feed>

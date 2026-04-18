@@ -576,32 +576,45 @@ function initLinks() {
     });
   }
   document.addEventListener("DOMContentLoaded", () => {
-    const elLinkTemplate = document.querySelector("#link:only-child");
-    if (!elLinkTemplate)
+    const elContainer = document.querySelector("#links-container");
+    const elTemplate = document.querySelector("#links-container > #links-template:only-child");
+    if (!elTemplate || !elContainer) {
+      console.error("links-container selector failed");
       return;
-    const elContainer = elLinkTemplate.parentElement;
+    }
+    const elContainerLimit = parseInt(elContainer.getAttribute("data-limit") ?? "", 10) || -1;
+    elTemplate.remove();
     fetch("/data/links.json").then((res) => res.json()).then((data) => data.links).then((links) => {
-      const reversed = [...links].sort((a, b) => b.date.localeCompare(a.date));
-      for (let i = 0;i < reversed.length; i++) {
-        const link = reversed[i];
-        const elLink = elLinkTemplate.cloneNode(true);
-        const elLinkAnchor = elLink.querySelector("#link-link");
-        const elDate = elLink.querySelector("#link-date");
-        const elArc = elLink.querySelector("#link-arc");
-        elLinkAnchor.href = link.url;
-        elLinkAnchor.textContent = link.title;
-        elDate.textContent = getDateString(link.date);
-        if (link.arc) {
-          elArc.href = `https://web.archive.org/web/${link.arc}/${link.url}`;
+      const sortedLinks = [...links].sort((a, b) => b.date.localeCompare(a.date)).slice(0, elContainerLimit === -1 ? undefined : elContainerLimit);
+      sortedLinks.forEach((it, idx) => {
+        const el = elTemplate.cloneNode(true);
+        el.classList.add("animate-fade-in-md");
+        el.style.animationDelay = `${idx * 50}ms`;
+        const elUrl = el.querySelector(".url");
+        const elArc = el.querySelector(".arc");
+        const elDate = el.querySelector(".date");
+        const elDesc = el.querySelector(".desc");
+        if (!elUrl || !elArc || !elDate || !elDesc) {
+          console.error("links-template selector failed");
+          return;
+        }
+        elUrl.href = it.url;
+        elUrl.textContent = it.title;
+        elDate.textContent = getDateString(it.date);
+        if (it.arc) {
+          elArc.href = `https://web.archive.org/web/${it.arc}/${it.url}`;
+          elArc.textContent = "snapshot";
         } else {
-          elArc.href = `https://web.archive.org/web/*/${link.url}`;
+          elArc.href = `https://web.archive.org/web/*/${it.url}`;
           elArc.textContent = "search archive.org";
         }
-        elLink.style.animationDelay = `${i * 30}ms`;
-        elLink.classList.add("animate-fade-in-md");
-        elContainer.appendChild(elLink);
-      }
-      elLinkTemplate.remove();
+        if (it.desc) {
+          elDesc.textContent = it.desc;
+        } else {
+          elDesc.remove();
+        }
+        elContainer.appendChild(el);
+      });
     });
   });
 }

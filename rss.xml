@@ -8,7 +8,15 @@
       <generator>Zola</generator>
       <language>en</language>
       <atom:link href="https://lzon.ca/rss.xml" rel="self" type="application/rss+xml"/>
-      <lastBuildDate>Thu, 16 Apr 2026 00:00:00 +0000</lastBuildDate>
+      <lastBuildDate>Sat, 18 Apr 2026 00:00:00 +0000</lastBuildDate>
+      <item>
+          <title>Phone</title>
+          <pubDate>Sat, 18 Apr 2026 00:00:00 +0000</pubDate>
+          <author>Lzon</author>
+          <link>https://lzon.ca/more/uses/phone/</link>
+          <guid>https://lzon.ca/more/uses/phone/</guid>
+          <description xml:base="https://lzon.ca/more/uses/phone/"></description>
+      </item>
       <item>
           <title>testing</title>
           <pubDate>Thu, 16 Apr 2026 00:00:00 +0000</pubDate>
