@@ -9,6 +9,17 @@
   
   <updated>2026-04-18T00:00:00Z</updated>
   <entry>
+    <title>Feeds</title>
+    <id>https://lzon.ca/more/feeds/</id>
+    <link href="https://lzon.ca/more/feeds/"/>
+    <published>2026-04-18T00:00:00Z</published>
+    <updated>2026-04-18T00:00:00Z</updated>
+    <author>
+      <name>Lzon</name>
+    </author>
+    <summary type="html" xml:base="https://lzon.ca/more/feeds/">&lt;p&gt;A list of all web feeds for the site.&lt;&#x2F;p&gt;</summary>
+  </entry>
+  <entry>
     <title>Phone</title>
     <id>https://lzon.ca/more/uses/phone/</id>
     <link href="https://lzon.ca/more/uses/phone/"/>
@@ -18,6 +29,17 @@
       <name>Lzon</name>
     </author>
     
+  </entry>
+  <entry>
+    <title>The quest for Web Feeds</title>
+    <id>https://lzon.ca/posts/site/feeds/</id>
+    <link href="https://lzon.ca/posts/site/feeds/"/>
+    <published>2026-04-18T00:00:00Z</published>
+    <updated>2026-04-18T00:00:00Z</updated>
+    <author>
+      <name>Lzon</name>
+    </author>
+    <summary type="html" xml:base="https://lzon.ca/posts/site/feeds/">&lt;p&gt;I’ve just finished a sidequest in which I built a bunch of feeds for the site.&lt;&#x2F;p&gt;</summary>
   </entry>
   <entry>
     <title>testing</title>

@@ -10,12 +10,28 @@
       <atom:link href="https://lzon.ca/rss.xml" rel="self" type="application/rss+xml"/>
       <lastBuildDate>Sat, 18 Apr 2026 00:00:00 +0000</lastBuildDate>
       <item>
+          <title>Feeds</title>
+          <pubDate>Sat, 18 Apr 2026 00:00:00 +0000</pubDate>
+          <author>Lzon</author>
+          <link>https://lzon.ca/more/feeds/</link>
+          <guid>https://lzon.ca/more/feeds/</guid>
+          <description xml:base="https://lzon.ca/more/feeds/">&lt;p&gt;A list of all web feeds for the site.&lt;&#x2F;p&gt;</description>
+      </item>
+      <item>
           <title>Phone</title>
           <pubDate>Sat, 18 Apr 2026 00:00:00 +0000</pubDate>
           <author>Lzon</author>
           <link>https://lzon.ca/more/uses/phone/</link>
           <guid>https://lzon.ca/more/uses/phone/</guid>
           <description xml:base="https://lzon.ca/more/uses/phone/"></description>
+      </item>
+      <item>
+          <title>The quest for Web Feeds</title>
+          <pubDate>Sat, 18 Apr 2026 00:00:00 +0000</pubDate>
+          <author>Lzon</author>
+          <link>https://lzon.ca/posts/site/feeds/</link>
+          <guid>https://lzon.ca/posts/site/feeds/</guid>
+          <description xml:base="https://lzon.ca/posts/site/feeds/">&lt;p&gt;I’ve just finished a sidequest in which I built a bunch of feeds for the site.&lt;&#x2F;p&gt;</description>
       </item>
       <item>
           <title>testing</title>

@@ -7,10 +7,11 @@
             <updated>2026-04-18T00:00:00Z</updated>
             
                 <entry>
-                    <id>https://lzon.ca/changelog.xml#2026-04-18</id>
+                    <id>https://lzon.ca/changelog.xml#1767c414</id>
                     <title>2026-04-18</title>
-                    <link href="https://lzon.ca/more" />
+                    <link href="https://lzon.ca/more/feeds" />
                     <updated>2026-04-18T00:00:00Z</updated>
+                    <category term="changelog" />
                     <content type="html">&lt;pre&gt;### Changes 
 
 I'm adding a bunch of new feeds: 
