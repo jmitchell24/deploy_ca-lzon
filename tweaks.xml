@@ -7,11 +7,27 @@
             <updated>2026-04-20T00:00:00Z</updated>
             
                 <entry>
+                    <id>https://lzon.ca/tweaks.xml#312776ee</id>
+                    <title>Lzon Site Tweak #5</title>
+                    <link href="https://lzon.ca/more/uses/mobile" />
+                    <updated>2026-04-20T00:00:00Z</updated>
+                    <category term="tweak" /><summary type="html">- added some mobile apps</summary>
+                </entry>
+
+                <entry>
+                    <id>https://lzon.ca/tweaks.xml#96227c57</id>
+                    <title>Lzon Site Tweak #4</title>
+                    <link href="https://lzon.ca/more/uses" />
+                    <updated>2026-04-20T00:00:00Z</updated>
+                    <category term="tweak" /><summary type="html">- updated section headers</summary>
+                </entry>
+
+                <entry>
                     <id>https://lzon.ca/tweaks.xml#5faeed5e</id>
                     <title>Lzon Site Tweak #3</title>
                     <link href="https://lzon.ca/more/feeds" />
                     <updated>2026-04-20T00:00:00Z</updated>
-                    <category term="tweak" /><content type="html">- changed feed 'changelog.xml' to 'tweaks.xml' &lt;br/&gt;- changed feed 'links.xml' to 'curios.xml'</content>
+                    <category term="tweak" /><summary type="html">- changed feed 'changelog.xml' to 'tweaks.xml' &lt;br/&gt;- changed feed 'links.xml' to 'curios.xml'</summary>
                 </entry>
 
                 <entry>
@@ -19,7 +35,7 @@
                     <title>Lzon Site Tweak #2</title>
                     <link href="https://lzon.ca/more/feeds" />
                     <updated>2026-04-19T00:00:00Z</updated>
-                    <category term="tweak" /><content type="html">Removed site-wide feed. updated Feeds page.</content>
+                    <category term="tweak" /><summary type="html">Removed site-wide feed. updated Feeds page.</summary>
                 </entry>
 
                 <entry>
@@ -27,6 +43,6 @@
                     <title>Lzon Site Tweak #1</title>
                     <link href="https://lzon.ca/more/feeds" />
                     <updated>2026-04-18T00:00:00Z</updated>
-                    <category term="tweak" /><content type="html">Added a Feeds page</content>
+                    <category term="tweak" /><summary type="html">Added a Feeds page</summary>
                 </entry>
         </feed>
