@@ -7,11 +7,11 @@
         <loc>https://lzon.ca/more/</loc>
     </url>
     <url>
-        <loc>https://lzon.ca/more/feeds/</loc>
-        <lastmod>2026-04-18</lastmod>
+        <loc>https://lzon.ca/more/curios/</loc>
     </url>
     <url>
-        <loc>https://lzon.ca/more/links/</loc>
+        <loc>https://lzon.ca/more/feeds/</loc>
+        <lastmod>2026-04-19</lastmod>
     </url>
     <url>
         <loc>https://lzon.ca/more/now/</loc>
@@ -392,10 +392,6 @@
     <url>
         <loc>https://lzon.ca/posts/tips/zfs-dataset-tuning/</loc>
         <lastmod>2026-02-09</lastmod>
-    </url>
-    <url>
-        <loc>https://lzon.ca/testing/</loc>
-        <lastmod>2026-04-16</lastmod>
     </url>
     <url>
         <loc>https://lzon.ca/toys/</loc>

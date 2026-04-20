@@ -565,7 +565,7 @@ function initTree() {
   });
 }
 
-// ts/links.ts
+// ts/curios.ts
 function initLinks() {
   function getDateString(dateStr) {
     const d = new Date(dateStr + "T00:00:00");
@@ -584,8 +584,8 @@ function initLinks() {
     }
     const elContainerLimit = parseInt(elContainer.getAttribute("data-limit") ?? "", 10) || -1;
     elTemplate.remove();
-    fetch("/data/links.json").then((res) => res.json()).then((data) => data.links).then((links) => {
-      const sortedLinks = [...links].sort((a, b) => b.date.localeCompare(a.date)).slice(0, elContainerLimit === -1 ? undefined : elContainerLimit);
+    fetch("/data/curios.json").then((res) => res.json()).then((data) => data.curios).then((curios) => {
+      const sortedLinks = [...curios].sort((a, b) => b.date.localeCompare(a.date)).slice(0, elContainerLimit === -1 ? undefined : elContainerLimit);
       sortedLinks.forEach((it, idx) => {
         const el = elTemplate.cloneNode(true);
         el.classList.add("animate-fade-in-md");

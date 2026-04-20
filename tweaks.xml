@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+        <feed xmlns="http://www.w3.org/2005/Atom">
+            <id>https://lzon.ca/tweaks.xml</id>
+            <title>lzon.ca – Tweaks</title>
+            <link href="https://lzon.ca/more" rel="alternate" />
+            <link href="https://lzon.ca/tweaks.xml" rel="self" />
+            <updated>2026-04-20T00:00:00Z</updated>
+            
+                <entry>
+                    <id>https://lzon.ca/tweaks.xml#5faeed5e</id>
+                    <title>Lzon Site Tweak #3</title>
+                    <link href="https://lzon.ca/more/feeds" />
+                    <updated>2026-04-20T00:00:00Z</updated>
+                    <category term="tweak" /><content type="html">- changed feed 'changelog.xml' to 'tweaks.xml' &lt;br/&gt;- changed feed 'links.xml' to 'curios.xml'</content>
+                </entry>
+
+                <entry>
+                    <id>https://lzon.ca/tweaks.xml#d40111cf</id>
+                    <title>Lzon Site Tweak #2</title>
+                    <link href="https://lzon.ca/more/feeds" />
+                    <updated>2026-04-19T00:00:00Z</updated>
+                    <category term="tweak" /><content type="html">Removed site-wide feed. updated Feeds page.</content>
+                </entry>
+
+                <entry>
+                    <id>https://lzon.ca/tweaks.xml#ff3da63</id>
+                    <title>Lzon Site Tweak #1</title>
+                    <link href="https://lzon.ca/more/feeds" />
+                    <updated>2026-04-18T00:00:00Z</updated>
+                    <category term="tweak" /><content type="html">Added a Feeds page</content>
+                </entry>
+        </feed>
