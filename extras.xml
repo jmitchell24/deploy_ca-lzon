@@ -4,13 +4,20 @@
             <title>lzon.ca – Extras</title>
             <link href="https://lzon.ca/more" rel="alternate" />
             <link href="https://lzon.ca/extras.xml" rel="self" />
-            <updated>2026-04-18T00:00:00Z</updated>
+            <updated>2026-04-20T00:00:00Z</updated>
+            <entry>
+                    <id>https://lzon.ca/curios.xml#7d6a5151</id>
+                    <title>Waves &amp; Particles</title>
+                    <link href="https://taylor.town/waves" />
+                    <updated>2026-04-20T00:00:00Z</updated>
+                    <category term="curio" />
+                    <summary>A fun peice of interactive digital art.</summary>
+                </entry>
             <entry>
                     <id>https://lzon.ca/quotes.xml#c3626c86</id>
                     <title>Lzon Quote of the Day #43</title>
                     <link href="https://lzon.ca/more/quotes" />
                     <updated>2026-04-18T00:00:00Z</updated>
-                    <author><name>Confucius</name></author>
                     <category term="quote" />
     <summary type="html">Our greatest glory is not in never falling, but in getting up every time we do.&lt;br/&gt;- Confucius</summary>
                 </entry>
@@ -19,7 +26,7 @@
                     <title>The Last Question by Isaac Asimov</title>
                     <link href="https://hex.ooo/library/last_question.html" />
                     <updated>2026-04-18T00:00:00Z</updated>
-                    <category term="link" />
+                    <category term="curio" />
                     <summary>A short scifi story, I've read it many times. Well worth your time.</summary>
                 </entry>
             <entry>
@@ -27,7 +34,6 @@
                     <title>Lzon Quote of the Day #42</title>
                     <link href="https://lzon.ca/more/quotes" />
                     <updated>2026-04-14T00:00:00Z</updated>
-                    <author><name>Traditional Proverb</name></author>
                     <category term="quote" />
     <summary type="html">Everyone you meet is fighting a battle you know nothing about. Be kind, always.&lt;br/&gt;- Traditional Proverb</summary>
                 </entry>
@@ -36,7 +42,6 @@
                     <title>Lzon Quote of the Day #41</title>
                     <link href="https://lzon.ca/more/quotes" />
                     <updated>2026-04-06T00:00:00Z</updated>
-                    <author><name>Edmund Vance Cooke</name></author>
                     <category term="quote" />
     <summary type="html">Don’t fight with the pillow, but lay down your head, and kick every worriment out of the bed.&lt;br/&gt;- Edmund Vance Cooke</summary>
                 </entry>
@@ -45,14 +50,13 @@
                     <title>The Truth Dies on the Way Up</title>
                     <link href="https://thegrounded.ghost.io/the-truth-dies-on-the-way-up/" />
                     <updated>2026-04-06T00:00:00Z</updated>
-                    <category term="link" />
+                    <category term="curio" />
                 </entry>
             <entry>
                     <id>https://lzon.ca/quotes.xml#1aae959e</id>
                     <title>Lzon Quote of the Day #40</title>
                     <link href="https://lzon.ca/more/quotes" />
                     <updated>2026-04-05T00:00:00Z</updated>
-                    <author><name>Friedrich Nietzsche</name></author>
                     <category term="quote" />
     <summary type="html">Look at your habits: Are they product of innumerable little cowardices and laziness... or of your courage and inventive reason?&lt;br/&gt;- Friedrich Nietzsche</summary>
                 </entry>
@@ -61,14 +65,13 @@
                     <title>The Submarine</title>
                     <link href="https://paulgraham.com/submarine.html" />
                     <updated>2026-04-05T00:00:00Z</updated>
-                    <category term="link" />
+                    <category term="curio" />
                 </entry>
             <entry>
                     <id>https://lzon.ca/quotes.xml#c58e805a</id>
                     <title>Lzon Quote of the Day #39</title>
                     <link href="https://lzon.ca/more/quotes" />
                     <updated>2026-04-04T00:00:00Z</updated>
-                    <author><name>Friedrich Nietzsche</name></author>
                     <category term="quote" />
     <summary type="html">To live is to suffer, to survive is to find some meaning in the suffering.&lt;br/&gt;- Friedrich Nietzsche</summary>
                 </entry>
@@ -77,7 +80,6 @@
                     <title>Lzon Quote of the Day #38</title>
                     <link href="https://lzon.ca/more/quotes" />
                     <updated>2026-04-03T00:00:00Z</updated>
-                    <author><name>Friedrich Nietzsche</name></author>
                     <category term="quote" />
     <summary type="html">When we are tired, we are attacked by ideas we conquered long ago.&lt;br/&gt;- Friedrich Nietzsche</summary>
                 </entry>
@@ -86,7 +88,6 @@
                     <title>Lzon Quote of the Day #37</title>
                     <link href="https://lzon.ca/more/quotes" />
                     <updated>2026-03-31T00:00:00Z</updated>
-                    <author><name>Ray Kurzweil</name></author>
                     <category term="quote" />
     <summary type="html">The past is over; the present is fleeting; we live in the future.&lt;br/&gt;- Ray Kurzweil</summary>
                 </entry>
@@ -95,7 +96,6 @@
                     <title>Lzon Quote of the Day #36</title>
                     <link href="https://lzon.ca/more/quotes" />
                     <updated>2026-03-30T00:00:00Z</updated>
-                    <author><name>Ray Kurzweil</name></author>
                     <category term="quote" />
     <summary type="html">Find your passion, learn how to add value to it, and commit to a lifetime of learning.&lt;br/&gt;- Ray Kurzweil</summary>
                 </entry>
@@ -104,7 +104,6 @@
                     <title>Lzon Quote of the Day #35</title>
                     <link href="https://lzon.ca/more/quotes" />
                     <updated>2026-03-28T00:00:00Z</updated>
-                    <author><name>Douglas Adams</name></author>
                     <category term="quote" />
     <summary type="html">The fact that we live at the bottom of a deep gravity well, on the surface of a gas covered planet going around a nuclear 
 fireball 90 million miles away and think this to be normal is obviously some indication of how skewed our perspective tends to be.&lt;br/&gt;- Douglas Adams</summary>
@@ -114,7 +113,6 @@ fireball 90 million miles away and think this to be normal is obviously some ind
                     <title>Lzon Quote of the Day #34</title>
                     <link href="https://lzon.ca/more/quotes" />
                     <updated>2026-03-27T00:00:00Z</updated>
-                    <author><name>Douglas Adams</name></author>
                     <category term="quote" />
     <summary type="html">Technology is a word that describes something that doesn’t work yet.&lt;br/&gt;- Douglas Adams</summary>
                 </entry>
@@ -123,7 +121,6 @@ fireball 90 million miles away and think this to be normal is obviously some ind
                     <title>Lzon Quote of the Day #33</title>
                     <link href="https://lzon.ca/more/quotes" />
                     <updated>2026-03-26T00:00:00Z</updated>
-                    <author><name>Douglas Adams</name></author>
                     <category term="quote" />
     <summary type="html">Isn't it enough to see that a garden is beautiful without having to believe that there are fairies at the bottom of it too?&lt;br/&gt;- Douglas Adams</summary>
                 </entry>
@@ -132,7 +129,6 @@ fireball 90 million miles away and think this to be normal is obviously some ind
                     <title>Lzon Quote of the Day #32</title>
                     <link href="https://lzon.ca/more/quotes" />
                     <updated>2026-03-16T00:00:00Z</updated>
-                    <author><name>Vincent Van Gogh</name></author>
                     <category term="quote" />
     <summary type="html">Great things are not done by impulse, but by a series of small things brought together.&lt;br/&gt;- Vincent Van Gogh</summary>
                 </entry>
@@ -141,7 +137,6 @@ fireball 90 million miles away and think this to be normal is obviously some ind
                     <title>Lzon Quote of the Day #31</title>
                     <link href="https://lzon.ca/more/quotes" />
                     <updated>2026-03-15T00:00:00Z</updated>
-                    <author><name>Vincent Van Gogh</name></author>
                     <category term="quote" />
     <summary type="html">I often think that the night is more alive and more richly colored than the day.&lt;br/&gt;- Vincent Van Gogh</summary>
                 </entry>
@@ -150,7 +145,6 @@ fireball 90 million miles away and think this to be normal is obviously some ind
                     <title>Lzon Quote of the Day #30</title>
                     <link href="https://lzon.ca/more/quotes" />
                     <updated>2026-03-14T00:00:00Z</updated>
-                    <author><name>Vincent Van Gogh</name></author>
                     <category term="quote" />
     <summary type="html">A great fire burns within me, but no one stops to warm themselves at it, and passers-by only see a wisp of smoke.&lt;br/&gt;- Vincent Van Gogh</summary>
                 </entry>
@@ -159,7 +153,6 @@ fireball 90 million miles away and think this to be normal is obviously some ind
                     <title>Lzon Quote of the Day #29</title>
                     <link href="https://lzon.ca/more/quotes" />
                     <updated>2026-02-26T00:00:00Z</updated>
-                    <author><name>Colin R. Davis</name></author>
                     <category term="quote" />
     <summary type="html">The road to success and the road to failure are almost exactly the same.&lt;br/&gt;- Colin R. Davis</summary>
                 </entry>
@@ -168,7 +161,6 @@ fireball 90 million miles away and think this to be normal is obviously some ind
                     <title>Lzon Quote of the Day #28</title>
                     <link href="https://lzon.ca/more/quotes" />
                     <updated>2026-02-24T00:00:00Z</updated>
-                    <author><name>Mark Twain</name></author>
                     <category term="quote" />
     <summary type="html">Clothes make the man. Naked people have little or no influence on society.&lt;br/&gt;- Mark Twain</summary>
                 </entry>
@@ -177,7 +169,6 @@ fireball 90 million miles away and think this to be normal is obviously some ind
                     <title>Lzon Quote of the Day #27</title>
                     <link href="https://lzon.ca/more/quotes" />
                     <updated>2026-02-19T00:00:00Z</updated>
-                    <author><name>Douglas Coupland</name></author>
                     <category term="quote" />
     <summary type="html">One of the cruelest things you can do to another person is pretend you care about them more than you really do.&lt;br/&gt;- Douglas Coupland</summary>
                 </entry>
@@ -186,28 +177,27 @@ fireball 90 million miles away and think this to be normal is obviously some ind
                     <title>Why I don't think AGI is imminent</title>
                     <link href="https://dlants.me/agi-not-imminent.html" />
                     <updated>2026-02-19T00:00:00Z</updated>
-                    <category term="link" />
+                    <category term="curio" />
                 </entry>
             <entry>
                     <id>https://lzon.ca/curios.xml#38ca6f7a</id>
                     <title>The Birth &amp; Death of JavaScript</title>
                     <link href="https://www.destroyallsoftware.com/talks/the-birth-and-death-of-javascript" />
                     <updated>2026-01-30T00:00:00Z</updated>
-                    <category term="link" />
+                    <category term="curio" />
                 </entry>
             <entry>
                     <id>https://lzon.ca/curios.xml#a66a1c8d</id>
                     <title>The future of work when work is meaningless</title>
                     <link href="https://letters.thedankoe.com/p/the-future-of-work-when-work-is-meaningless" />
                     <updated>2026-01-26T00:00:00Z</updated>
-                    <category term="link" />
+                    <category term="curio" />
                 </entry>
             <entry>
                     <id>https://lzon.ca/quotes.xml#f9e2a799</id>
                     <title>Lzon Quote of the Day #26</title>
                     <link href="https://lzon.ca/more/quotes" />
                     <updated>2026-01-25T00:00:00Z</updated>
-                    <author><name>Tom Chatfield</name></author>
                     <category term="quote" />
     <summary type="html">Forget artificial intelligence – in the brave new world of big data, it’s artificial idiocy we should be looking out for.&lt;br/&gt;- Tom Chatfield</summary>
                 </entry>
@@ -216,28 +206,27 @@ fireball 90 million miles away and think this to be normal is obviously some ind
                     <title>Manna by Marshall Brain</title>
                     <link href="https://marshallbrain.com/manna1" />
                     <updated>2026-01-25T00:00:00Z</updated>
-                    <category term="link" />
+                    <category term="curio" />
                 </entry>
             <entry>
                     <id>https://lzon.ca/curios.xml#81ec5972</id>
                     <title>What Is Soul Fatigue?</title>
                     <link href="https://www.michelegargiulo.com/blog/what-is-soul-fatigue" />
                     <updated>2026-01-24T00:00:00Z</updated>
-                    <category term="link" />
+                    <category term="curio" />
                 </entry>
             <entry>
                     <id>https://lzon.ca/curios.xml#cb7c302</id>
                     <title>Scientists find exercise rivals therapy for depression</title>
                     <link href="https://www.sciencedaily.com/releases/2026/01/260107225516.htm" />
                     <updated>2026-01-11T00:00:00Z</updated>
-                    <category term="link" />
+                    <category term="curio" />
                 </entry>
             <entry>
                     <id>https://lzon.ca/quotes.xml#8a615c79</id>
                     <title>Lzon Quote of the Day #25</title>
                     <link href="https://lzon.ca/more/quotes" />
                     <updated>2026-01-07T00:00:00Z</updated>
-                    <author><name>Mark Rosewater (2013)</name></author>
                     <category term="quote" />
     <summary type="html">Here, let me grab a napkin to write on and I'll show you. Everyone knows things written on napkins are creative.&lt;br/&gt;- Mark Rosewater (2013)</summary>
                 </entry>
@@ -246,56 +235,55 @@ fireball 90 million miles away and think this to be normal is obviously some ind
                     <title>Are you already a Cyborg?</title>
                     <link href="https://www.sciencedirect.com/science/article/abs/pii/S0747563215001272" />
                     <updated>2026-01-03T00:00:00Z</updated>
-                    <category term="link" />
+                    <category term="curio" />
                 </entry>
             <entry>
                     <id>https://lzon.ca/curios.xml#e5fde9da</id>
                     <title>Vanitiy Activities</title>
                     <link href="https://quarter--mile.com/vanity-activities" />
                     <updated>2025-12-25T00:00:00Z</updated>
-                    <category term="link" />
+                    <category term="curio" />
                 </entry>
             <entry>
                     <id>https://lzon.ca/curios.xml#e77f8891</id>
                     <title>Is Everything a Religion?</title>
                     <link href="https://slatestarcodex.com/2015/03/25/is-everything-a-religion/" />
                     <updated>2025-12-19T00:00:00Z</updated>
-                    <category term="link" />
+                    <category term="curio" />
                 </entry>
             <entry>
                     <id>https://lzon.ca/curios.xml#6074dc8c</id>
                     <title>No Graphics API</title>
                     <link href="https://www.sebastianaaltonen.com/blog/no-graphics-api" />
                     <updated>2025-12-18T00:00:00Z</updated>
-                    <category term="link" />
+                    <category term="curio" />
                 </entry>
             <entry>
                     <id>https://lzon.ca/curios.xml#a7c571b8</id>
                     <title>The history of Xerox</title>
                     <link href="https://www.abortretry.fail/p/the-history-of-xerox" />
                     <updated>2025-12-16T00:00:00Z</updated>
-                    <category term="link" />
+                    <category term="curio" />
                 </entry>
             <entry>
                     <id>https://lzon.ca/curios.xml#b34482f</id>
                     <title>Fix your timestep</title>
                     <link href="https://gafferongames.com/post/fix_your_timestep/" />
                     <updated>2025-12-15T00:00:00Z</updated>
-                    <category term="link" />
+                    <category term="curio" />
                 </entry>
             <entry>
                     <id>https://lzon.ca/curios.xml#c8a6faf2</id>
                     <title>The Copenhagen Trap</title>
                     <link href="https://aliveness.kunnas.com/articles/copenhagen-trap" />
                     <updated>2025-12-12T00:00:00Z</updated>
-                    <category term="link" />
+                    <category term="curio" />
                 </entry>
             <entry>
                     <id>https://lzon.ca/quotes.xml#8d736e3a</id>
                     <title>Lzon Quote of the Day #1</title>
                     <link href="https://lzon.ca/more/quotes" />
                     <updated>2025-12-01T00:00:00Z</updated>
-                    <author><name>Charles M. Schulz</name></author>
                     <category term="quote" />
     <summary type="html">Few people are successful unless other people want them to be.&lt;br/&gt;- Charles M. Schulz</summary>
                 </entry>
@@ -304,7 +292,6 @@ fireball 90 million miles away and think this to be normal is obviously some ind
                     <title>Lzon Quote of the Day #2</title>
                     <link href="https://lzon.ca/more/quotes" />
                     <updated>2025-12-01T00:00:00Z</updated>
-                    <author><name>Bre Pettis, The Cult of Done</name></author>
                     <category term="quote" />
     <summary type="html">People without dirty hands are wrong. Doing something makes you right.&lt;br/&gt;- Bre Pettis, The Cult of Done</summary>
                 </entry>
@@ -313,7 +300,6 @@ fireball 90 million miles away and think this to be normal is obviously some ind
                     <title>Lzon Quote of the Day #3</title>
                     <link href="https://lzon.ca/more/quotes" />
                     <updated>2025-12-01T00:00:00Z</updated>
-                    <author><name>Bre Pettis, The Cult of Done</name></author>
                     <category term="quote" />
     <summary type="html">Pretending you know what you’re doing is almost the same as knowing what you are doing, 
 so just accept that you know what you’re doing even if you don’t and do it.&lt;br/&gt;- Bre Pettis, The Cult of Done</summary>
@@ -323,7 +309,6 @@ so just accept that you know what you’re doing even if you don’t and do it.&
                     <title>Lzon Quote of the Day #4</title>
                     <link href="https://lzon.ca/more/quotes" />
                     <updated>2025-12-01T00:00:00Z</updated>
-                    <author><name>Anthony Bourdain</name></author>
                     <category term="quote" />
     <summary type="html">Good food is very often, even most often, simple food.&lt;br/&gt;- Anthony Bourdain</summary>
                 </entry>
@@ -332,7 +317,6 @@ so just accept that you know what you’re doing even if you don’t and do it.&
                     <title>Lzon Quote of the Day #5</title>
                     <link href="https://lzon.ca/more/quotes" />
                     <updated>2025-12-01T00:00:00Z</updated>
-                    <author><name>Anthony Bourdain</name></author>
                     <category term="quote" />
     <summary type="html">Maybe that’s enlightenment enough: to know that there is no final resting place of the mind; 
 no moment of smug clarity. Perhaps wisdom...is realizing how small I am, and unwise, 
@@ -343,7 +327,6 @@ and how far I have yet to go.&lt;br/&gt;- Anthony Bourdain</summary>
                     <title>Lzon Quote of the Day #6</title>
                     <link href="https://lzon.ca/more/quotes" />
                     <updated>2025-12-01T00:00:00Z</updated>
-                    <author><name>Anthony Bourdain</name></author>
                     <category term="quote" />
     <summary type="html">I don't have to agree with you to like you or respect you.&lt;br/&gt;- Anthony Bourdain</summary>
                 </entry>
@@ -352,7 +335,6 @@ and how far I have yet to go.&lt;br/&gt;- Anthony Bourdain</summary>
                     <title>Lzon Quote of the Day #7</title>
                     <link href="https://lzon.ca/more/quotes" />
                     <updated>2025-12-01T00:00:00Z</updated>
-                    <author><name>Mahatma Gandhi</name></author>
                     <category term="quote" />
     <summary type="html">Each night, when I go to sleep, I die. And the next morning, when I wake up, I am reborn.&lt;br/&gt;- Mahatma Gandhi</summary>
                 </entry>
@@ -361,7 +343,6 @@ and how far I have yet to go.&lt;br/&gt;- Anthony Bourdain</summary>
                     <title>Lzon Quote of the Day #8</title>
                     <link href="https://lzon.ca/more/quotes" />
                     <updated>2025-12-01T00:00:00Z</updated>
-                    <author><name>Mahatma Gandhi</name></author>
                     <category term="quote" />
     <summary type="html">A man is but the product of his thoughts. What he thinks, he becomes.&lt;br/&gt;- Mahatma Gandhi</summary>
                 </entry>
@@ -370,7 +351,6 @@ and how far I have yet to go.&lt;br/&gt;- Anthony Bourdain</summary>
                     <title>Lzon Quote of the Day #9</title>
                     <link href="https://lzon.ca/more/quotes" />
                     <updated>2025-12-01T00:00:00Z</updated>
-                    <author><name>Mahatma Gandhi</name></author>
                     <category term="quote" />
     <summary type="html">The best way to find yourself is to lose yourself in the service of others.&lt;br/&gt;- Mahatma Gandhi</summary>
                 </entry>
@@ -379,7 +359,6 @@ and how far I have yet to go.&lt;br/&gt;- Anthony Bourdain</summary>
                     <title>Lzon Quote of the Day #10</title>
                     <link href="https://lzon.ca/more/quotes" />
                     <updated>2025-12-01T00:00:00Z</updated>
-                    <author><name>Mahatma Gandhi</name></author>
                     <category term="quote" />
     <summary type="html">Your beliefs become your thoughts,
 Your thoughts become your words,
@@ -393,7 +372,6 @@ Your values become your destiny.&lt;br/&gt;- Mahatma Gandhi</summary>
                     <title>Lzon Quote of the Day #11</title>
                     <link href="https://lzon.ca/more/quotes" />
                     <updated>2025-12-01T00:00:00Z</updated>
-                    <author><name>Mahatma Gandhi</name></author>
                     <category term="quote" />
     <summary type="html">I will not let anyone walk through my mind with their dirty feet.&lt;br/&gt;- Mahatma Gandhi</summary>
                 </entry>
@@ -402,7 +380,6 @@ Your values become your destiny.&lt;br/&gt;- Mahatma Gandhi</summary>
                     <title>Lzon Quote of the Day #12</title>
                     <link href="https://lzon.ca/more/quotes" />
                     <updated>2025-12-01T00:00:00Z</updated>
-                    <author><name>Mahatma Gandhi</name></author>
                     <category term="quote" />
     <summary type="html">Happiness is when what you think, what you say, and what you do are in harmony.&lt;br/&gt;- Mahatma Gandhi</summary>
                 </entry>
@@ -411,7 +388,6 @@ Your values become your destiny.&lt;br/&gt;- Mahatma Gandhi</summary>
                     <title>Lzon Quote of the Day #13</title>
                     <link href="https://lzon.ca/more/quotes" />
                     <updated>2025-12-01T00:00:00Z</updated>
-                    <author><name>Mahatma Gandhi</name></author>
                     <category term="quote" />
     <summary type="html">Live as if you were to die tomorrow. Learn as if you were to live forever.&lt;br/&gt;- Mahatma Gandhi</summary>
                 </entry>
@@ -420,7 +396,6 @@ Your values become your destiny.&lt;br/&gt;- Mahatma Gandhi</summary>
                     <title>Lzon Quote of the Day #14</title>
                     <link href="https://lzon.ca/more/quotes" />
                     <updated>2025-12-01T00:00:00Z</updated>
-                    <author><name>Charles M. Schulz</name></author>
                     <category term="quote" />
     <summary type="html">The less you want, the more you love.&lt;br/&gt;- Charles M. Schulz</summary>
                 </entry>
@@ -429,7 +404,6 @@ Your values become your destiny.&lt;br/&gt;- Mahatma Gandhi</summary>
                     <title>Lzon Quote of the Day #15</title>
                     <link href="https://lzon.ca/more/quotes" />
                     <updated>2025-12-01T00:00:00Z</updated>
-                    <author><name>Charles M. Schulz</name></author>
                     <category term="quote" />
     <summary type="html">Be yourself. No one can say you're doing it wrong.&lt;br/&gt;- Charles M. Schulz</summary>
                 </entry>
@@ -438,7 +412,6 @@ Your values become your destiny.&lt;br/&gt;- Mahatma Gandhi</summary>
                     <title>Lzon Quote of the Day #16</title>
                     <link href="https://lzon.ca/more/quotes" />
                     <updated>2025-12-01T00:00:00Z</updated>
-                    <author><name>Charles M. Schulz</name></author>
                     <category term="quote" />
     <summary type="html">My life has no purpose, no direction, no aim, no meaning, and yet I'm happy. I can't figure it out. What am I doing right?&lt;br/&gt;- Charles M. Schulz</summary>
                 </entry>
@@ -447,7 +420,6 @@ Your values become your destiny.&lt;br/&gt;- Mahatma Gandhi</summary>
                     <title>Lzon Quote of the Day #17</title>
                     <link href="https://lzon.ca/more/quotes" />
                     <updated>2025-12-01T00:00:00Z</updated>
-                    <author><name>Charles M. Schulz</name></author>
                     <category term="quote" />
     <summary type="html">I think I'm allergic to morning.&lt;br/&gt;- Charles M. Schulz</summary>
                 </entry>
@@ -456,7 +428,6 @@ Your values become your destiny.&lt;br/&gt;- Mahatma Gandhi</summary>
                     <title>Lzon Quote of the Day #18</title>
                     <link href="https://lzon.ca/more/quotes" />
                     <updated>2025-12-01T00:00:00Z</updated>
-                    <author><name>Charlie Brown</name></author>
                     <category term="quote" />
     <summary type="html">I think I'm afraid to be happy, every time I'm happy something bad happens.&lt;br/&gt;- Charlie Brown</summary>
                 </entry>
@@ -465,7 +436,6 @@ Your values become your destiny.&lt;br/&gt;- Mahatma Gandhi</summary>
                     <title>Lzon Quote of the Day #19</title>
                     <link href="https://lzon.ca/more/quotes" />
                     <updated>2025-12-01T00:00:00Z</updated>
-                    <author><name>Charlie Brown</name></author>
                     <category term="quote" />
     <summary type="html">I love the kinds of hugs where you can physically feel the sadness leaving your body.&lt;br/&gt;- Charlie Brown</summary>
                 </entry>
@@ -474,7 +444,6 @@ Your values become your destiny.&lt;br/&gt;- Mahatma Gandhi</summary>
                     <title>Lzon Quote of the Day #20</title>
                     <link href="https://lzon.ca/more/quotes" />
                     <updated>2025-12-01T00:00:00Z</updated>
-                    <author><name>Charlie Brown</name></author>
                     <category term="quote" />
     <summary type="html">I've developed a new philosophy. I only dread one day at a time.&lt;br/&gt;- Charlie Brown</summary>
                 </entry>
@@ -483,7 +452,6 @@ Your values become your destiny.&lt;br/&gt;- Mahatma Gandhi</summary>
                     <title>Lzon Quote of the Day #21</title>
                     <link href="https://lzon.ca/more/quotes" />
                     <updated>2025-12-01T00:00:00Z</updated>
-                    <author><name>Charlie Brown</name></author>
                     <category term="quote" />
     <summary type="html">That's the secret to life... replace one worry with another.&lt;br/&gt;- Charlie Brown</summary>
                 </entry>
@@ -492,7 +460,6 @@ Your values become your destiny.&lt;br/&gt;- Mahatma Gandhi</summary>
                     <title>Lzon Quote of the Day #22</title>
                     <link href="https://lzon.ca/more/quotes" />
                     <updated>2025-12-01T00:00:00Z</updated>
-                    <author><name>Charlie Brown</name></author>
                     <category term="quote" />
     <summary type="html">In the book of life, the answers aren't in the back.&lt;br/&gt;- Charlie Brown</summary>
                 </entry>
@@ -501,7 +468,6 @@ Your values become your destiny.&lt;br/&gt;- Mahatma Gandhi</summary>
                     <title>Lzon Quote of the Day #23</title>
                     <link href="https://lzon.ca/more/quotes" />
                     <updated>2025-12-01T00:00:00Z</updated>
-                    <author><name>Robert Louis Stevenson</name></author>
                     <category term="quote" />
     <summary type="html">Keep your eyes open to your mercies. The man who forgets to be thankful has fallen asleep in life.&lt;br/&gt;- Robert Louis Stevenson</summary>
                 </entry>
@@ -510,7 +476,6 @@ Your values become your destiny.&lt;br/&gt;- Mahatma Gandhi</summary>
                     <title>Lzon Quote of the Day #24</title>
                     <link href="https://lzon.ca/more/quotes" />
                     <updated>2025-12-01T00:00:00Z</updated>
-                    <author><name>Alexander Smith </name></author>
                     <category term="quote" />
     <summary type="html">To be occasionally quoted is the only fame I care for.&lt;br/&gt;- Alexander Smith </summary>
                 </entry>
@@ -519,69 +484,69 @@ Your values become your destiny.&lt;br/&gt;- Mahatma Gandhi</summary>
                     <title>A History of Laptop Displays</title>
                     <link href="https://www.dosdays.co.uk/topics/laptop_displays.php" />
                     <updated>2025-11-24T00:00:00Z</updated>
-                    <category term="link" />
+                    <category term="curio" />
                 </entry>
             <entry>
                     <id>https://lzon.ca/curios.xml#ba15b055</id>
                     <title>Flash of unstyled content (FOUC) </title>
                     <link href="https://en.wikipedia.org/wiki/Flash_of_unstyled_content" />
                     <updated>2025-07-23T00:00:00Z</updated>
-                    <category term="link" />
+                    <category term="curio" />
                 </entry>
             <entry>
                     <id>https://lzon.ca/curios.xml#fff13a0a</id>
                     <title>Let me pay for Firefox</title>
                     <link href="https://discourse.mozilla.org/t/let-me-pay-for-firefox/141297" />
                     <updated>2025-07-15T00:00:00Z</updated>
-                    <category term="link" />
+                    <category term="curio" />
                 </entry>
             <entry>
                     <id>https://lzon.ca/curios.xml#c057b29e</id>
                     <title>Writing Toy Software Is A Joy</title>
                     <link href="https://blog.jsbarretto.com/post/software-is-joy" />
                     <updated>2025-06-20T00:00:00Z</updated>
-                    <category term="link" />
+                    <category term="curio" />
                 </entry>
             <entry>
                     <id>https://lzon.ca/curios.xml#dfed7470</id>
                     <title>The Intelligence Curse</title>
                     <link href="https://intelligence-curse.ai/" />
                     <updated>2025-06-09T00:00:00Z</updated>
-                    <category term="link" />
+                    <category term="curio" />
                 </entry>
             <entry>
                     <id>https://lzon.ca/curios.xml#aac0ed4f</id>
                     <title>Build Your Own Text Editor</title>
                     <link href="https://viewsourcecode.org/snaptoken/kilo/index.html" />
                     <updated>2025-05-29T00:00:00Z</updated>
-                    <category term="link" />
+                    <category term="curio" />
                 </entry>
             <entry>
                     <id>https://lzon.ca/curios.xml#2ad60002</id>
                     <title>Ship Software That Does Nothing</title>
                     <link href="https://kerrick.blog/articles/2025/ship-software-that-does-nothing/" />
                     <updated>2025-05-28T00:00:00Z</updated>
-                    <category term="link" />
+                    <category term="curio" />
                 </entry>
             <entry>
                     <id>https://lzon.ca/curios.xml#ce09ecbf</id>
                     <title>Basic Hacks for Kobo E-Readers</title>
                     <link href="https://www.linux-magazine.com/Online/Features/Basic-Hacks-for-Kobo-E-Readers" />
                     <updated>2025-05-28T00:00:00Z</updated>
-                    <category term="link" />
+                    <category term="curio" />
                 </entry>
             <entry>
                     <id>https://lzon.ca/curios.xml#e817e446</id>
                     <title>Windows NT vs. Unix - A design comparison</title>
                     <link href="https://blogsystem5.substack.com/p/windows-nt-vs-unix-design" />
                     <updated>2025-05-28T00:00:00Z</updated>
-                    <category term="link" />
+                    <category term="curio" />
                 </entry>
             <entry>
                     <id>https://lzon.ca/curios.xml#4be03eb7</id>
                     <title>How to build your resume with an SSG</title>
                     <link href="https://ktema.org/articles/the-overengineered-resume/" />
                     <updated>2025-05-20T00:00:00Z</updated>
-                    <category term="link" />
+                    <category term="curio" />
                 </entry>
         </feed>
