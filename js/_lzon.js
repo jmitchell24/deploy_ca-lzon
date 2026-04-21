@@ -195,6 +195,27 @@ async function initCommits() {
 }
 
 // ts/qotd.ts
+function parseQuote(quote) {
+  if (!quote?.text)
+    throw new Error("Quote missing required field: text");
+  if (!quote.date)
+    throw new Error("Quote missing required field: date");
+  const date = new Date(quote.date + "T00:00:00");
+  if (isNaN(date.getTime()))
+    throw new Error(`Invalid quote date: ${quote.date}`);
+  return {
+    date,
+    author: quote.author,
+    work: quote.work,
+    text: quote.text
+  };
+}
+function getQuoteTextAsHtml(q) {
+  const text = q.text.trim();
+  const author = q.author ?? "Anonymous";
+  const attribution = q.work ? `${author}, <em>${q.work}</em>` : author;
+  return `<em>"${text}"</em> <br>- ${attribution}`;
+}
 async function initQotd() {
   function getShuffledIndices(length) {
     function rand() {
@@ -233,89 +254,126 @@ async function initQotd() {
     const day = String(d.getDate()).padStart(2, "0");
     return `${y}-${m}-${day}`;
   }
+  function isDateSame(a, b) {
+    return a.getFullYear() === b.getFullYear() && a.getMonth() === b.getMonth() && a.getDate() === b.getDate();
+  }
+  function findNewQuote(quotes) {
+    const today = new Date;
+    for (const q of quotes) {
+      if (isDateSame(today, q.date))
+        return q;
+    }
+    return null;
+  }
   document.addEventListener("DOMContentLoaded", () => {
-    const elAllQotd = document.querySelectorAll("#qotd");
-    const elAllQuoteContainer = document.querySelectorAll("#quote-container > #quote:only-child");
-    if (!(elAllQotd.length || elAllQuoteContainer.length))
+    const elQotd = document.querySelector("#qotd");
+    const elQuoteContainer = document.querySelector("#quote-container");
+    if (!(elQotd || elQotd))
       return;
-    fetch("/data/quotes.json").then((res) => res.json()).then((data) => data.quotes).then((quotes) => {
+    fetch("/data/quotes.json").then((res) => res.json()).then((data) => data.quotes).then((quotes) => quotes.map(parseQuote)).then((quotes) => {
       const indices = getShuffledIndices(quotes.length);
       function getSequenceQuote(offset) {
         const days = getDaysSinceEpoch() + (offset || 0);
         const cycleIndex = days % quotes.length;
         return quotes[indices[cycleIndex]];
       }
-      elAllQotd.forEach((el) => {
-        const elContent = el.querySelector("#qotd-content");
-        const elButtons = el.querySelector("#qotd-buttons");
-        const elPrev = el.querySelector("#qotd-prev");
-        const elNext = el.querySelector("#qotd-next");
-        const elReset = el.querySelector("#qotd-reset");
-        const elLabel = el.querySelector("#qotd-label");
-        const elLabelText = elLabel?.querySelector("#qotd-label-text");
-        function updateQuote(offset) {
-          const day = new Date;
-          day.setDate(day.getDate() + offset);
-          const q = getSequenceQuote(offset);
-          const todayStr2 = getLocalDateString(new Date);
-          const isToday = q.date === todayStr2;
-          elButtons.classList.toggle("display-none", isToday);
-          elLabelText.classList.toggle("text-tertiary", isToday);
-          if (isToday) {
+      if (elQotd) {
+        let updateQuote = function(quote, isNewToday2) {
+          elButtons.classList.toggle("display-none", isNewToday2);
+          elLabelText.classList.toggle("text-tertiary", isNewToday2);
+          if (isNewToday2) {
             elLabelText.innerHTML = "Today";
           } else {
-            elLabelText.innerHTML = getDateString(day);
+            elLabelText.innerHTML = getDateString(quote.date);
           }
-          elContent.innerHTML = `<em>"${q.text}"</em> <br> - ${q.author}`;
-        }
-        let dayOffset = 0;
-        const todayStr = getLocalDateString(new Date);
+          elContent.innerHTML = getQuoteTextAsHtml(quote);
+        };
+        const elContent = elQotd.querySelector("#qotd-content");
+        const elButtons = elQotd.querySelector("#qotd-buttons");
+        const elPrev = elQotd.querySelector("#qotd-prev");
+        const elNext = elQotd.querySelector("#qotd-next");
+        const elReset = elQotd.querySelector("#qotd-reset");
+        const elLabel = elQotd.querySelector("#qotd-label");
+        const elLabelText = elLabel?.querySelector("#qotd-label-text");
+        let todayQuoteIdx = 0;
+        let isNewToday = false;
+        const todayDate = new Date;
         for (let i = 0;i < quotes.length; i++) {
-          if (getSequenceQuote(i).date === todayStr) {
-            dayOffset = i;
+          if (isDateSame(getSequenceQuote(i).date, todayDate)) {
+            todayQuoteIdx = i;
+            isNewToday = true;
             break;
           }
         }
-        updateQuote(dayOffset);
+        updateQuote(getSequenceQuote(todayQuoteIdx), isNewToday);
         elPrev.addEventListener("click", () => {
-          updateQuote(--dayOffset);
+          updateQuote(getSequenceQuote(--todayQuoteIdx), false);
         });
         elNext.addEventListener("click", () => {
-          updateQuote(++dayOffset);
+          updateQuote(getSequenceQuote(++todayQuoteIdx), false);
         });
         elReset.addEventListener("click", () => {
-          updateQuote(dayOffset = 0);
+          updateQuote(getSequenceQuote(todayQuoteIdx = 0), false);
         });
-        el.classList.toggle("animate-fade-in-md", true);
-      });
-      elAllQuoteContainer.forEach((el) => {
-        const elContainer = el.parentElement;
-        for (let i = 0;i < quotes.length; ++i) {
-          const q = getSequenceQuote(i);
-          const elQuote = el.cloneNode(true);
-          const elDate = elQuote.querySelector("#quote-date");
-          const elLabel = elQuote.querySelector("#quote-label");
-          const elLabelText = elLabel.querySelector("#quote-label-text");
-          const elContent = elQuote.querySelector("#quote-content");
-          const d = new Date;
-          d.setDate(d.getDate() + i);
-          elDate.innerHTML = d.toLocaleDateString(undefined, {
-            weekday: "long",
-            year: "numeric",
-            month: "short",
-            day: "numeric"
+        elQotd.classList.toggle("animate-fade-in-md", true);
+      }
+      if (elQuoteContainer) {
+        let renderQuotes = function() {
+          elQuoteContainer.innerHTML = "";
+          sortedQuotes.forEach((q, i) => {
+            const elQuote = elQuoteTemplate.cloneNode(true);
+            const elDateEl = elQuote.querySelector("#quote-date");
+            const elLabelEl = elQuote.querySelector("#quote-label");
+            const elLabelTextEl = elLabelEl.querySelector("#quote-label-text");
+            const elContentEl = elQuote.querySelector("#quote-content");
+            if (sortMode === "schedule") {
+              const d = new Date;
+              d.setDate(d.getDate() + i);
+              elDateEl.innerHTML = d.toLocaleDateString(undefined, {
+                weekday: "long",
+                year: "numeric",
+                month: "short",
+                day: "numeric"
+              });
+              if (q.date) {
+                elLabelEl.classList.remove("display-none");
+                elLabelTextEl.innerHTML = getDateString(q.date);
+              }
+            } else {
+              elDateEl.innerHTML = getDateString(q.date);
+            }
+            elContentEl.innerHTML = getQuoteTextAsHtml(q);
+            elQuote.style.animationDelay = `${i * 50}ms`;
+            elQuote.classList.add("animate-fade-in-md");
+            elQuoteContainer.appendChild(elQuote);
           });
-          if (q.date) {
-            elLabel.classList.remove("display-none");
-            elLabelText.innerHTML = getDateString(getQuoteDate(q));
-          }
-          elContent.innerHTML = `<em>"${q.text}"</em> <br> - ${q.author}`;
-          elQuote.style.animationDelay = `${i * 50}ms`;
-          elQuote.classList.add("animate-fade-in-md");
-          elContainer.appendChild(elQuote);
-        }
-        el.remove();
-      });
+        };
+        const elQuoteTemplate = elQuoteContainer.querySelector("#quote-template:only-child");
+        if (!elQuoteTemplate)
+          return;
+        const elQuoteSortSchedule = document.querySelector("#quote-sort-schedule");
+        const elQuoteSortNewest = document.querySelector("#quote-sort-newest");
+        const elQuoteSortOldest = document.querySelector("#quote-sort-oldest");
+        let sortMode = "schedule";
+        let sortedQuotes = Array.from({ length: quotes.length }, (_, i) => getSequenceQuote(i));
+        elQuoteTemplate.remove();
+        elQuoteSortSchedule?.addEventListener("click", () => {
+          sortMode = "schedule";
+          sortedQuotes = Array.from({ length: quotes.length }, (_, i) => getSequenceQuote(i));
+          renderQuotes();
+        });
+        elQuoteSortOldest?.addEventListener("click", () => {
+          sortMode = "oldest";
+          sortedQuotes = [...quotes].sort((a, b) => a.date.valueOf() - b.date.valueOf());
+          renderQuotes();
+        });
+        elQuoteSortNewest?.addEventListener("click", () => {
+          sortMode = "newest";
+          sortedQuotes = [...quotes].sort((a, b) => b.date.valueOf() - a.date.valueOf());
+          renderQuotes();
+        });
+        renderQuotes();
+      }
     });
   });
 }
