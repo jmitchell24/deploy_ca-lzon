@@ -1,3 +1,17 @@
+// ts/_toy-p5.ts
+function initToyP5() {
+  document.addEventListener("DOMContentLoaded", () => {
+    const codeFrameSource = document.getElementById("code-frame-p5-source");
+    const codeFrameTarget = document.getElementById("code-frame-p5-target");
+    if (!codeFrameSource || !codeFrameTarget)
+      return;
+    codeFrameTarget.replaceWith(codeFrameSource);
+    const p5Code = codeFrameSource.getAttribute("data-code-text");
+    console.log("p5 code" + p5Code);
+  });
+}
+initToyP5();
+
 // ts/matomo.ts
 function initMatomo() {
   const _paq = window._paq = window._paq || [];
@@ -631,3 +645,4 @@ initTheme();
 initSecrets();
 initTree();
 initCollapse();
+initToyP5();
