@@ -4,8 +4,17 @@
             <title>lzon.ca – Quotes</title>
             <link href="https://lzon.ca/more/quotes" rel="alternate" />
             <link href="https://lzon.ca/quotes.xml" rel="self" />
-            <updated>2026-04-18T00:00:00Z</updated>
+            <updated>2026-04-21T00:00:00Z</updated>
               
+                <entry>
+                    <id>https://lzon.ca/quotes.xml#8db9f789</id>
+                    <title>Lzon Quote of the Day #44</title>
+                    <link href="https://lzon.ca/more/quotes" />
+                    <updated>2026-04-21T00:00:00Z</updated>
+                    <category term="quote" />
+    <summary type="html">The human capacity for self pity is truly endless.&lt;br/&gt;- John Green</summary>
+                </entry>
+  
                 <entry>
                     <id>https://lzon.ca/quotes.xml#c3626c86</id>
                     <title>Lzon Quote of the Day #43</title>
