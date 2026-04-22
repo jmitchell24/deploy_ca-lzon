@@ -8,14 +8,14 @@
       <generator>Zola</generator>
       <language>en</language>
       <atom:link href="https://lzon.ca/posts/rss.xml" rel="self" type="application/rss+xml"/>
-      <lastBuildDate>Tue, 21 Apr 2026 00:00:00 +0000</lastBuildDate>
+      <lastBuildDate>Wed, 22 Apr 2026 00:00:00 +0000</lastBuildDate>
       <item>
-          <title>Testing a Local LLM</title>
+          <title>A Local AI Experiment</title>
           <pubDate>Tue, 21 Apr 2026 00:00:00 +0000</pubDate>
           <author>Lzon</author>
           <link>https://lzon.ca/posts/other/local-llm-testing/</link>
           <guid>https://lzon.ca/posts/other/local-llm-testing/</guid>
-          <description xml:base="https://lzon.ca/posts/other/local-llm-testing/">&lt;p&gt;I wanted to know if I could make real use of a local &amp;amp; small LLM. Here’s a blog post I wrote about it.&lt;&#x2F;p&gt;</description>
+          <description xml:base="https://lzon.ca/posts/other/local-llm-testing/">&lt;p&gt;Today I ran an experiment to see if I could find a real use-case for a local LLM.&lt;&#x2F;p&gt;</description>
       </item>
       <item>
           <title>The quest for Web Feeds</title>

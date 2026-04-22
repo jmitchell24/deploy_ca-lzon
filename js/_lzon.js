@@ -248,6 +248,24 @@ async function initQotd() {
       day: "numeric"
     });
   }
+  function getDateStringHtml(d) {
+    const s = d.toLocaleDateString(undefined, {
+      weekday: "long",
+      year: "numeric",
+      month: "short",
+      day: "numeric"
+    });
+    return `From <span class="text-secondary">${s}</span>`;
+  }
+  function getScheduleStringHtml(d) {
+    const s = d.toLocaleDateString(undefined, {
+      weekday: "long",
+      year: "numeric",
+      month: "short",
+      day: "numeric"
+    });
+    return `Scheduled for <span class="text-tertiary">${s}</span>`;
+  }
   function getLocalDateString(d) {
     const y = d.getFullYear();
     const m = String(d.getMonth() + 1).padStart(2, "0");
@@ -268,7 +286,7 @@ async function initQotd() {
   document.addEventListener("DOMContentLoaded", () => {
     const elQotd = document.querySelector("#qotd");
     const elQuoteContainer = document.querySelector("#quote-container");
-    if (!(elQotd || elQotd))
+    if (!(elQotd || elQuoteContainer))
       return;
     fetch("/data/quotes.json").then((res) => res.json()).then((data) => data.quotes).then((quotes) => quotes.map(parseQuote)).then((quotes) => {
       const indices = getShuffledIndices(quotes.length);
@@ -284,7 +302,9 @@ async function initQotd() {
           if (isNewToday2) {
             elLabelText.innerHTML = "Today";
           } else {
-            elLabelText.innerHTML = getDateString(quote.date);
+            const scheduleDate = new Date(todayDate);
+            scheduleDate.setDate(scheduleDate.getDate() + todayQuoteIdx);
+            elLabelText.innerHTML = getDateString(scheduleDate);
           }
           elContent.innerHTML = getQuoteTextAsHtml(quote);
         };
@@ -322,27 +342,16 @@ async function initQotd() {
           elQuoteContainer.innerHTML = "";
           sortedQuotes.forEach((q, i) => {
             const elQuote = elQuoteTemplate.cloneNode(true);
-            const elDateEl = elQuote.querySelector("#quote-date");
-            const elLabelEl = elQuote.querySelector("#quote-label");
-            const elLabelTextEl = elLabelEl.querySelector("#quote-label-text");
-            const elContentEl = elQuote.querySelector("#quote-content");
+            const elDate = elQuote.querySelector("#quote-template-date");
+            const elSchedule = elQuote.querySelector("#quote-template-schedule");
+            const elContent = elQuote.querySelector("#quote-template-content");
             if (sortMode === "schedule") {
               const d = new Date;
               d.setDate(d.getDate() + i);
-              elDateEl.innerHTML = d.toLocaleDateString(undefined, {
-                weekday: "long",
-                year: "numeric",
-                month: "short",
-                day: "numeric"
-              });
-              if (q.date) {
-                elLabelEl.classList.remove("display-none");
-                elLabelTextEl.innerHTML = getDateString(q.date);
-              }
-            } else {
-              elDateEl.innerHTML = getDateString(q.date);
+              elSchedule.innerHTML = getScheduleStringHtml(d);
             }
-            elContentEl.innerHTML = getQuoteTextAsHtml(q);
+            elDate.innerHTML = getDateStringHtml(q.date);
+            elContent.innerHTML = getQuoteTextAsHtml(q);
             elQuote.style.animationDelay = `${i * 50}ms`;
             elQuote.classList.add("animate-fade-in-md");
             elQuoteContainer.appendChild(elQuote);
@@ -361,16 +370,25 @@ async function initQotd() {
           sortMode = "schedule";
           sortedQuotes = Array.from({ length: quotes.length }, (_, i) => getSequenceQuote(i));
           renderQuotes();
+          elQuoteSortSchedule?.classList.toggle("active", true);
+          elQuoteSortOldest?.classList.toggle("active", false);
+          elQuoteSortNewest?.classList.toggle("active", false);
         });
         elQuoteSortOldest?.addEventListener("click", () => {
           sortMode = "oldest";
           sortedQuotes = [...quotes].sort((a, b) => a.date.valueOf() - b.date.valueOf());
           renderQuotes();
+          elQuoteSortSchedule?.classList.toggle("active", false);
+          elQuoteSortOldest?.classList.toggle("active", true);
+          elQuoteSortNewest?.classList.toggle("active", false);
         });
         elQuoteSortNewest?.addEventListener("click", () => {
           sortMode = "newest";
           sortedQuotes = [...quotes].sort((a, b) => b.date.valueOf() - a.date.valueOf());
           renderQuotes();
+          elQuoteSortSchedule?.classList.toggle("active", false);
+          elQuoteSortOldest?.classList.toggle("active", false);
+          elQuoteSortNewest?.classList.toggle("active", true);
         });
         renderQuotes();
       }
@@ -651,7 +669,6 @@ function initLinks() {
     const elContainer = document.querySelector("#links-container");
     const elTemplate = document.querySelector("#links-container > #links-template:only-child");
     if (!elTemplate || !elContainer) {
-      console.error("links-container selector failed");
       return;
     }
     const elContainerLimit = parseInt(elContainer.getAttribute("data-limit") ?? "", 10) || -1;
