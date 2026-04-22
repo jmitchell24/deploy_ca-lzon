@@ -4,8 +4,19 @@
             <title>lzon.ca – Quotes</title>
             <link href="https://lzon.ca/more/quotes" rel="alternate" />
             <link href="https://lzon.ca/quotes.xml" rel="self" />
-            <updated>2026-04-21T00:00:00Z</updated>
+            <updated>2026-04-22T00:00:00Z</updated>
               
+                <entry>
+                    <id>https://lzon.ca/quotes.xml#43ea1f96</id>
+                    <title>45. lzon.ca/quotes</title>
+                    <link href="https://lzon.ca/more/quotes" />
+                    <updated>2026-04-22T00:00:00Z</updated>
+                    <category term="quote" />
+                    <summary type="html">Wisdom comes from experience. Experience is often a result of lack of wisdom.&lt;br/&gt;- Terry Pratchett </summary>
+                </entry>
+                
+
+  
                 <entry>
                     <id>https://lzon.ca/quotes.xml#8db9f789</id>
                     <title>44. lzon.ca/quotes</title>
