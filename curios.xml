@@ -4,8 +4,17 @@
             <title>lzon.ca – Curios</title>
             <link href="https://lzon.ca/more/curios" rel="alternate" />
             <link href="https://lzon.ca/curios.xml" rel="self" />
-            <updated>2026-04-20T00:00:00Z</updated>
+            <updated>2026-04-22T00:00:00Z</updated>
             
+                <entry>
+                    <id>https://lzon.ca/curios.xml#e16c434e</id>
+                    <title>Understand, by Ted Chiang</title>
+                    <link href="https://web.archive.org/web/20060101043301/http://www.infinityplus.co.uk/stories/under.htm" />
+                    <updated>2026-04-22T00:00:00Z</updated>
+                    <category term="curio" />
+                    <summary>A sci-fi novelette by Ted Chiang. Very short, and a great read.</summary>
+                </entry>
+
                 <entry>
                     <id>https://lzon.ca/curios.xml#7d6a5151</id>
                     <title>Waves &amp; Particles</title>
@@ -193,9 +202,9 @@
                 </entry>
 
                 <entry>
-                    <id>https://lzon.ca/curios.xml#e817e446</id>
-                    <title>Windows NT vs. Unix - A design comparison</title>
-                    <link href="https://blogsystem5.substack.com/p/windows-nt-vs-unix-design" />
+                    <id>https://lzon.ca/curios.xml#2ad60002</id>
+                    <title>Ship Software That Does Nothing</title>
+                    <link href="https://kerrick.blog/articles/2025/ship-software-that-does-nothing/" />
                     <updated>2025-05-28T00:00:00Z</updated>
                     <category term="curio" />
                 </entry>
@@ -209,9 +218,9 @@
                 </entry>
 
                 <entry>
-                    <id>https://lzon.ca/curios.xml#2ad60002</id>
-                    <title>Ship Software That Does Nothing</title>
-                    <link href="https://kerrick.blog/articles/2025/ship-software-that-does-nothing/" />
+                    <id>https://lzon.ca/curios.xml#e817e446</id>
+                    <title>Windows NT vs. Unix - A design comparison</title>
+                    <link href="https://blogsystem5.substack.com/p/windows-nt-vs-unix-design" />
                     <updated>2025-05-28T00:00:00Z</updated>
                     <category term="curio" />
                 </entry>

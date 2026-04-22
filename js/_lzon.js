@@ -674,6 +674,7 @@ function initLinks() {
     const elContainerLimit = parseInt(elContainer.getAttribute("data-limit") ?? "", 10) || -1;
     elTemplate.remove();
     fetch("/data/curios.json").then((res) => res.json()).then((data) => data.curios).then((curios) => {
+      const numCurios = curios.length;
       const sortedLinks = [...curios].sort((a, b) => b.date.localeCompare(a.date)).slice(0, elContainerLimit === -1 ? undefined : elContainerLimit);
       sortedLinks.forEach((it, idx) => {
         const el = elTemplate.cloneNode(true);
@@ -683,6 +684,7 @@ function initLinks() {
         const elArc = el.querySelector(".arc");
         const elDate = el.querySelector(".date");
         const elDesc = el.querySelector(".desc");
+        const elSeq = el.querySelector(".seq");
         if (!elUrl || !elArc || !elDate || !elDesc) {
           console.error("links-template selector failed");
           return;
@@ -690,6 +692,10 @@ function initLinks() {
         elUrl.href = it.url;
         elUrl.textContent = it.title;
         elDate.textContent = getDateString(it.date);
+        if (elSeq) {
+          const pad = numCurios.toString().length;
+          elSeq.textContent = String(numCurios - idx).padStart(pad, "0") + ".";
+        }
         if (it.arc) {
           elArc.href = `https://web.archive.org/web/${it.arc}/${it.url}`;
           elArc.textContent = "snapshot";
