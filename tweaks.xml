@@ -4,8 +4,16 @@
             <title>lzon.ca – Tweaks</title>
             <link href="https://lzon.ca/more" rel="alternate" />
             <link href="https://lzon.ca/tweaks.xml" rel="self" />
-            <updated>2026-04-21T00:00:00Z</updated>
+            <updated>2026-04-22T00:00:00Z</updated>
             
+                <entry>
+                    <id>https://lzon.ca/tweaks.xml#86525b7b</id>
+                    <title>Lzon Site Tweak #7</title>
+                    <link href="https://lzon.ca/more/curios" />
+                    <updated>2026-04-22T00:00:00Z</updated>
+                    <category term="tweak" /><summary type="html">- small tweaks to curios&lt;br/&gt;- small tweaks to quotes</summary>
+                </entry>
+
                 <entry>
                     <id>https://lzon.ca/tweaks.xml#1476c9dc</id>
                     <title>Lzon Site Tweak #6</title>
