@@ -4,7 +4,15 @@
             <title>lzon.ca – Extras</title>
             <link href="https://lzon.ca/more" rel="alternate" />
             <link href="https://lzon.ca/extras.xml" rel="self" />
-            <updated>2026-04-22T00:00:00Z</updated>
+            <updated>2026-04-23T00:00:00Z</updated>
+            <entry>
+                    <id>https://lzon.ca/quotes.xml#3d7422f0</id>
+                    <title>46. lzon.ca/quotes</title>
+                    <link href="https://lzon.ca/more/quotes" />
+                    <updated>2026-04-23T00:00:00Z</updated>
+                    <category term="quote" />
+                    <summary type="html">The harder I work, the luckier I become.&lt;br/&gt;- Terry Pratchett</summary>
+                </entry>
             <entry>
                     <id>https://lzon.ca/quotes.xml#7795d816</id>
                     <title>45. lzon.ca/quotes</title>
