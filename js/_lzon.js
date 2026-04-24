@@ -216,6 +216,77 @@ function getQuoteTextAsHtml(q) {
   const attribution = q.work ? `${author}, <em>${q.work}</em>` : author;
   return `<em>"${text}"</em> <br>- ${attribution}`;
 }
+function collectTextNodes(el) {
+  const nodes = [];
+  (function walk(node) {
+    if (node.nodeType === Node.TEXT_NODE) {
+      const text = node.textContent ?? "";
+      nodes.push([node, text]);
+    } else
+      node.childNodes.forEach(walk);
+  })(el);
+  return nodes;
+}
+function typeOut(el, durationMs, alive) {
+  return new Promise((resolve) => {
+    const nodes = collectTextNodes(el).filter(([, t]) => t.length > 0).reverse();
+    const total = nodes.reduce((n, [, t]) => n + t.length, 0);
+    if (total === 0) {
+      resolve();
+      return;
+    }
+    const ms = durationMs / total;
+    let ni = 0, ci = nodes[0][1].length;
+    function tick() {
+      if (!alive()) {
+        resolve();
+        return;
+      }
+      nodes[ni][0].textContent = nodes[ni][1].slice(0, --ci);
+      if (ci <= 0) {
+        ni++;
+        if (ni >= nodes.length) {
+          resolve();
+          return;
+        }
+        ci = nodes[ni][1].length;
+      }
+      setTimeout(tick, ms);
+    }
+    tick();
+  });
+}
+function typeIn(el, html, durationMs, alive) {
+  return new Promise((resolve) => {
+    el.innerHTML = html;
+    const nodes = collectTextNodes(el);
+    nodes.forEach(([node]) => node.textContent = "");
+    const total = nodes.reduce((n, [, t]) => n + t.length, 0);
+    if (total === 0) {
+      resolve();
+      return;
+    }
+    const ms = durationMs / total;
+    let ni = 0, ci = 0;
+    function tick() {
+      if (!alive()) {
+        resolve();
+        return;
+      }
+      nodes[ni][0].textContent = nodes[ni][1].slice(0, ++ci);
+      if (ci >= nodes[ni][1].length) {
+        ni++;
+        if (ni >= nodes.length) {
+          resolve();
+          return;
+        }
+        ci = 0;
+      }
+      setTimeout(tick, ms);
+    }
+    tick();
+  });
+}
 async function initQotd() {
   function getShuffledIndices(length) {
     function rand() {
@@ -297,7 +368,6 @@ async function initQotd() {
       }
       if (elQotd) {
         let updateQuote = function(quote, isNewToday2) {
-          elButtons.classList.toggle("display-none", isNewToday2);
           elLabelText.classList.toggle("text-tertiary", isNewToday2);
           if (isNewToday2) {
             elLabelText.innerHTML = "Today";
@@ -306,18 +376,21 @@ async function initQotd() {
             scheduleDate.setDate(scheduleDate.getDate() + todayQuoteIdx);
             elLabelText.innerHTML = getDateString(scheduleDate);
           }
-          elContent.innerHTML = getQuoteTextAsHtml(quote);
+          const gen = ++animGen;
+          const alive = () => gen === animGen;
+          typeOut(elContent, 1000, alive).then(() => {
+            if (alive())
+              typeIn(elContent, getQuoteTextAsHtml(quote), 1000, alive);
+          });
         };
         const elContent = elQotd.querySelector("#qotd-content");
-        const elButtons = elQotd.querySelector("#qotd-buttons");
-        const elPrev = elQotd.querySelector("#qotd-prev");
-        const elNext = elQotd.querySelector("#qotd-next");
-        const elReset = elQotd.querySelector("#qotd-reset");
+        const elRandomize = elQotd.querySelector("#qotd-randomize");
         const elLabel = elQotd.querySelector("#qotd-label");
         const elLabelText = elLabel?.querySelector("#qotd-label-text");
         let todayQuoteIdx = 0;
         let isNewToday = false;
         const todayDate = new Date;
+        let animGen = 0;
         for (let i = 0;i < quotes.length; i++) {
           if (isDateSame(getSequenceQuote(i).date, todayDate)) {
             todayQuoteIdx = i;
@@ -326,14 +399,8 @@ async function initQotd() {
           }
         }
         updateQuote(getSequenceQuote(todayQuoteIdx), isNewToday);
-        elPrev.addEventListener("click", () => {
-          updateQuote(getSequenceQuote(--todayQuoteIdx), false);
-        });
-        elNext.addEventListener("click", () => {
+        elRandomize.addEventListener("click", () => {
           updateQuote(getSequenceQuote(++todayQuoteIdx), false);
-        });
-        elReset.addEventListener("click", () => {
-          updateQuote(getSequenceQuote(todayQuoteIdx = 0), false);
         });
         elQotd.classList.toggle("animate-fade-in-md", true);
       }
