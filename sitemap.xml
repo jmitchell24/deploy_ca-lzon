@@ -4,10 +4,10 @@
         <loc>https://lzon.ca/</loc>
     </url>
     <url>
-        <loc>https://lzon.ca/more/</loc>
+        <loc>https://lzon.ca/curios/</loc>
     </url>
     <url>
-        <loc>https://lzon.ca/more/curios/</loc>
+        <loc>https://lzon.ca/more/</loc>
     </url>
     <url>
         <loc>https://lzon.ca/more/feeds/</loc>
@@ -16,9 +16,6 @@
     <url>
         <loc>https://lzon.ca/more/now/</loc>
         <lastmod>2026-04-13</lastmod>
-    </url>
-    <url>
-        <loc>https://lzon.ca/more/quotes/</loc>
     </url>
     <url>
         <loc>https://lzon.ca/more/uses/</loc>
@@ -53,32 +50,6 @@
     </url>
     <url>
         <loc>https://lzon.ca/posts/</loc>
-    </url>
-    <url>
-        <loc>https://lzon.ca/posts/life/</loc>
-    </url>
-    <url>
-        <loc>https://lzon.ca/posts/life/gratitude/</loc>
-        <lastmod>2025-01-17</lastmod>
-    </url>
-    <url>
-        <loc>https://lzon.ca/posts/life/gsv-yozxp/</loc>
-        <lastmod>2026-04-01</lastmod>
-    </url>
-    <url>
-        <loc>https://lzon.ca/posts/life/make-your-bed/</loc>
-        <lastmod>2026-02-03</lastmod>
-    </url>
-    <url>
-        <loc>https://lzon.ca/posts/life/page/1/</loc>
-    </url>
-    <url>
-        <loc>https://lzon.ca/posts/life/precarity/</loc>
-        <lastmod>2024-12-18</lastmod>
-    </url>
-    <url>
-        <loc>https://lzon.ca/posts/life/twenty-five/</loc>
-        <lastmod>2025-11-24</lastmod>
     </url>
     <url>
         <loc>https://lzon.ca/posts/other/</loc>
@@ -137,9 +108,6 @@
     </url>
     <url>
         <loc>https://lzon.ca/posts/page/8/</loc>
-    </url>
-    <url>
-        <loc>https://lzon.ca/posts/page/9/</loc>
     </url>
     <url>
         <loc>https://lzon.ca/posts/recipes/</loc>
@@ -236,6 +204,32 @@
     <url>
         <loc>https://lzon.ca/posts/recipes/zucchini-pizza-caserole/</loc>
         <lastmod>2026-02-09</lastmod>
+    </url>
+    <url>
+        <loc>https://lzon.ca/posts/ruminations/</loc>
+    </url>
+    <url>
+        <loc>https://lzon.ca/posts/ruminations/gratitude/</loc>
+        <lastmod>2025-01-17</lastmod>
+    </url>
+    <url>
+        <loc>https://lzon.ca/posts/ruminations/gsv-yozxp/</loc>
+        <lastmod>2026-04-01</lastmod>
+    </url>
+    <url>
+        <loc>https://lzon.ca/posts/ruminations/make-your-bed/</loc>
+        <lastmod>2026-02-03</lastmod>
+    </url>
+    <url>
+        <loc>https://lzon.ca/posts/ruminations/page/1/</loc>
+    </url>
+    <url>
+        <loc>https://lzon.ca/posts/ruminations/precarity/</loc>
+        <lastmod>2024-12-18</lastmod>
+    </url>
+    <url>
+        <loc>https://lzon.ca/posts/ruminations/twenty-five/</loc>
+        <lastmod>2025-11-24</lastmod>
     </url>
     <url>
         <loc>https://lzon.ca/posts/series/2025-review/</loc>
@@ -347,9 +341,6 @@
         <loc>https://lzon.ca/posts/series/page/3/</loc>
     </url>
     <url>
-        <loc>https://lzon.ca/posts/sidequests/</loc>
-    </url>
-    <url>
         <loc>https://lzon.ca/posts/site/</loc>
     </url>
     <url>
@@ -396,6 +387,9 @@
     <url>
         <loc>https://lzon.ca/posts/tips/zfs-dataset-tuning/</loc>
         <lastmod>2026-02-09</lastmod>
+    </url>
+    <url>
+        <loc>https://lzon.ca/quotes/</loc>
     </url>
     <url>
         <loc>https://lzon.ca/toys/</loc>
