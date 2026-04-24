@@ -367,7 +367,7 @@ async function initQotd() {
         return quotes[indices[cycleIndex]];
       }
       if (elQotd) {
-        let updateQuote = function(quote, isNewToday2) {
+        let updateQuote = function(quote, isNewToday2, animate = false) {
           elLabelText.classList.toggle("text-tertiary", isNewToday2);
           if (isNewToday2) {
             elLabelText.innerHTML = "Today";
@@ -376,12 +376,16 @@ async function initQotd() {
             scheduleDate.setDate(scheduleDate.getDate() + todayQuoteIdx);
             elLabelText.innerHTML = getDateString(scheduleDate);
           }
-          const gen = ++animGen;
-          const alive = () => gen === animGen;
-          typeOut(elContent, 1000, alive).then(() => {
-            if (alive())
-              typeIn(elContent, getQuoteTextAsHtml(quote), 1000, alive);
-          });
+          if (animate) {
+            const gen = ++animGen;
+            const alive = () => gen === animGen;
+            typeOut(elContent, 1000, alive).then(() => {
+              if (alive())
+                typeIn(elContent, getQuoteTextAsHtml(quote), 1000, alive);
+            });
+          } else {
+            elContent.innerHTML = getQuoteTextAsHtml(quote);
+          }
         };
         const elContent = elQotd.querySelector("#qotd-content");
         const elRandomize = elQotd.querySelector("#qotd-randomize");
@@ -400,7 +404,7 @@ async function initQotd() {
         }
         updateQuote(getSequenceQuote(todayQuoteIdx), isNewToday);
         elRandomize.addEventListener("click", () => {
-          updateQuote(getSequenceQuote(++todayQuoteIdx), false);
+          updateQuote(getSequenceQuote(++todayQuoteIdx), false, true);
         });
         elQotd.classList.toggle("animate-fade-in-md", true);
       }
