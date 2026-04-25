@@ -4,7 +4,15 @@
             <title>lzon.ca – Extras</title>
             <link href="https://lzon.ca/more" rel="alternate" />
             <link href="https://lzon.ca/extras.xml" rel="self" />
-            <updated>2026-04-24T00:00:00Z</updated>
+            <updated>2026-04-25T00:00:00Z</updated>
+            <entry>
+                    <id>https://lzon.ca/curios.xml#a7186c3f</id>
+                    <title>Brainwash An Executive Today!</title>
+                    <link href="https://ludic.mataroa.blog/blog/brainwash-an-executive-today/" />
+                    <updated>2026-04-25T00:00:00Z</updated>
+                    <category term="curio" />
+                    <summary>An enlightening story. It demonstrates how executives are manipulated into participating in economic hype bubbles such as AI, or otherwise.&lt;br/&gt;&lt;br/&gt;30. lzon.ca/curios </summary>
+                </entry>
             <entry>
                     <id>https://lzon.ca/quotes.xml#5dbe350</id>
                     <title>47. lzon.ca/quotes</title>
