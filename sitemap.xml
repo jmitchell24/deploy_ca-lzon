@@ -55,18 +55,15 @@
         <loc>https://lzon.ca/posts/drafts/</loc>
     </url>
     <url>
-        <loc>https://lzon.ca/posts/drafts/bad-passwords/</loc>
-        <lastmod>2026-04-25</lastmod>
-    </url>
-    <url>
-        <loc>https://lzon.ca/posts/drafts/page/1/</loc>
-    </url>
-    <url>
         <loc>https://lzon.ca/posts/other/</loc>
     </url>
     <url>
         <loc>https://lzon.ca/posts/other/cancelling-claude/</loc>
         <lastmod>2026-04-05</lastmod>
+    </url>
+    <url>
+        <loc>https://lzon.ca/posts/other/gsv-yozxp/</loc>
+        <lastmod>2026-04-01</lastmod>
     </url>
     <url>
         <loc>https://lzon.ca/posts/other/homescreen-mantras/</loc>
@@ -82,6 +79,9 @@
     </url>
     <url>
         <loc>https://lzon.ca/posts/other/page/1/</loc>
+    </url>
+    <url>
+        <loc>https://lzon.ca/posts/other/page/2/</loc>
     </url>
     <url>
         <loc>https://lzon.ca/posts/other/social-cheat-codes/</loc>
@@ -118,6 +118,9 @@
     </url>
     <url>
         <loc>https://lzon.ca/posts/page/8/</loc>
+    </url>
+    <url>
+        <loc>https://lzon.ca/posts/page/9/</loc>
     </url>
     <url>
         <loc>https://lzon.ca/posts/recipes/</loc>
@@ -221,10 +224,6 @@
     <url>
         <loc>https://lzon.ca/posts/ruminations/gratitude/</loc>
         <lastmod>2025-01-17</lastmod>
-    </url>
-    <url>
-        <loc>https://lzon.ca/posts/ruminations/gsv-yozxp/</loc>
-        <lastmod>2026-04-01</lastmod>
     </url>
     <url>
         <loc>https://lzon.ca/posts/ruminations/make-your-bed/</loc>
@@ -389,6 +388,10 @@
     </url>
     <url>
         <loc>https://lzon.ca/posts/tips/page/1/</loc>
+    </url>
+    <url>
+        <loc>https://lzon.ca/posts/tips/pleasant-passwords/</loc>
+        <lastmod>2026-04-28</lastmod>
     </url>
     <url>
         <loc>https://lzon.ca/posts/tips/todo-howto/</loc>
