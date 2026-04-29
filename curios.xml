@@ -4,8 +4,19 @@
             <title>lzon.ca – Curios</title>
             <link href="https://lzon.ca/more/curios" rel="alternate" />
             <link href="https://lzon.ca/curios.xml" rel="self" />
-            <updated>2026-04-25T00:00:00Z</updated>
+            <updated>2026-04-29T00:00:00Z</updated>
             
+                <entry>
+                    <id>https://lzon.ca/curios.xml#3e84c53e</id>
+                    <title>Passwords vs. Pass Phrases</title>
+                    <link href="https://blog.codinghorror.com/passwords-vs-pass-phrases/" />
+                    <updated>2026-04-29T00:00:00Z</updated>
+                    <category term="curio" />
+                    <summary>An old CodingHorror post advocating for pass phrases over passwords.&lt;br/&gt;&lt;br/&gt;31. lzon.ca/curios </summary>
+                </entry>
+                
+
+
                 <entry>
                     <id>https://lzon.ca/curios.xml#a7186c3f</id>
                     <title>Brainwash An Executive Today!</title>
