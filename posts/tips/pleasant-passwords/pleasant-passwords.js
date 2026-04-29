@@ -50,10 +50,14 @@
     const expander = ListExpander.create("pwd-container", "pwd-template");
     function generatePasswords() {
       Promise.all([fetchAdjectiveList(), fetchNounList()]).then(([aList, nList]) => {
+        const generatedCount = 24;
         const adjectiveCount = aList.length;
         const nounCount = nList.length;
         const digitCount = 1000;
         const totalCount = adjectiveCount * nounCount * digitCount;
+        document.querySelectorAll(".generated-count").forEach((el) => {
+          el.innerHTML = generatedCount.toString();
+        });
         document.querySelectorAll(".adjective-count").forEach((el) => {
           el.innerHTML = adjectiveCount.toString();
         });
@@ -66,16 +70,14 @@
         document.querySelectorAll(".total-count").forEach((el) => {
           el.innerHTML = totalCount.toLocaleString();
         });
-        const pList = Array.from({ length: 20 }, () => {
+        const pList = Array.from({ length: generatedCount }, () => {
           const adj = aList[Math.floor(Math.random() * aList.length)];
           const noun = nList[Math.floor(Math.random() * nList.length)];
           const digits = String(Math.floor(Math.random() * 900) + 100);
           return `${digits}-${adj}-${noun}`;
         });
         expander?.expand(pList, (el, it, idx) => {
-          const elIndex = el.querySelector(".pwd-index");
           const elText = el.querySelector(".pwd-text");
-          elIndex.innerHTML = (idx + 1).toString().padStart(2, "0");
           elText.innerHTML = it;
         });
       });

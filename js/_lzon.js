@@ -575,6 +575,30 @@
         });
       });
     });
+    document.addEventListener("DOMContentLoaded", () => {
+      document.querySelectorAll(".lazy-expand").forEach((el) => {
+        el.style.height = "0px";
+        el.style.opacity = "0";
+        const observer = new MutationObserver(() => {
+          observer.disconnect();
+          setTimeout(() => {
+            el.offsetHeight;
+            const target = el.scrollHeight;
+            el.classList.add("collapsing");
+            el.style.height = `${target}px`;
+            el.style.opacity = "1";
+            el.addEventListener("transitionend", function handler(e) {
+              if (e.propertyName !== "height")
+                return;
+              el.removeEventListener("transitionend", handler);
+              el.classList.remove("collapsing");
+              el.style.height = "";
+            });
+          }, 500);
+        });
+        observer.observe(el, { childList: true, subtree: true });
+      });
+    });
   }
   function expandElement(el) {
     el.classList.remove("collapse");
