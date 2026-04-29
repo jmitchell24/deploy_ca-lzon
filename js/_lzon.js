@@ -351,9 +351,6 @@
       const today = new Date(now.getFullYear(), now.getMonth(), now.getDate());
       return Math.floor((today.valueOf() - epochDate.valueOf()) / (1000 * 60 * 60 * 24));
     }
-    function getQuoteDate(quote) {
-      return quote.date ? new Date(quote.date + "T00:00:00") : new Date;
-    }
     function getDateString(d) {
       return d.toLocaleDateString(undefined, {
         weekday: "long",
@@ -388,14 +385,6 @@
     }
     function isDateSame(a, b) {
       return a.getFullYear() === b.getFullYear() && a.getMonth() === b.getMonth() && a.getDate() === b.getDate();
-    }
-    function findNewQuote(quotes) {
-      const today = new Date;
-      for (const q of quotes) {
-        if (isDateSame(today, q.date))
-          return q;
-      }
-      return null;
     }
     document.addEventListener("DOMContentLoaded", () => {
       const elQotd = document.querySelector("#qotd");
@@ -449,7 +438,6 @@
           elRandomize.addEventListener("click", () => {
             updateQuote(getSequenceQuote(++todayQuoteIdx), false, true);
           });
-          elQotd.classList.toggle("animate-fade-in-md", true);
         }
         if (elQuoteContainer) {
           let renderQuotes = function() {
@@ -576,7 +564,29 @@
       });
     });
     document.addEventListener("DOMContentLoaded", () => {
-      document.querySelectorAll(".lazy-expand").forEach((el) => {
+      function initLazyExpandX(el) {
+        el.style.width = "0px";
+        el.style.opacity = "0";
+        const observer = new MutationObserver(() => {
+          observer.disconnect();
+          setTimeout(() => {
+            el.offsetWidth;
+            const target = el.scrollWidth;
+            el.classList.add("collapsing", "collapse-horizontal");
+            el.style.width = `${target}px`;
+            el.style.opacity = "1";
+            el.addEventListener("transitionend", function handler(e) {
+              if (e.propertyName !== "width")
+                return;
+              el.removeEventListener("transitionend", handler);
+              el.classList.remove("collapsing", "collapse-horizontal");
+              el.style.width = "";
+            });
+          }, 500);
+        });
+        observer.observe(el, { childList: true, subtree: true });
+      }
+      function initLazyExpandY(el) {
         el.style.height = "0px";
         el.style.opacity = "0";
         const observer = new MutationObserver(() => {
@@ -597,7 +607,10 @@
           }, 500);
         });
         observer.observe(el, { childList: true, subtree: true });
-      });
+      }
+      document.querySelectorAll(".lazy-expand").forEach(initLazyExpandY);
+      document.querySelectorAll(".lazy-expand-y").forEach(initLazyExpandY);
+      document.querySelectorAll(".lazy-expand-x").forEach(initLazyExpandX);
     });
   }
   function expandElement(el) {
