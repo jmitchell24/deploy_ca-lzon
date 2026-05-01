@@ -4,8 +4,21 @@
             <title>lzon.ca – Curios</title>
             <link href="https://lzon.ca/more/curios" rel="alternate" />
             <link href="https://lzon.ca/curios.xml" rel="self" />
-            <updated>2026-04-29T00:00:00Z</updated>
+            <updated>2026-05-01T00:00:00Z</updated>
             
+                <entry>
+                    <id>https://lzon.ca/curios.xml#ef2adbca</id>
+                    <title>Crafting Interpreters</title>
+                    <link href="https://craftinginterpreters.com/" />
+                    <updated>2026-05-01T00:00:00Z</updated>
+                    <category term="curio" />
+                    <summary>Robert Nystrom's guide for creating a programming language from scratch. 
+It's fantastic, both his writing and code are very accessible. Freely available on his site, 
+also published as a book.&lt;br/&gt;&lt;br/&gt;32. lzon.ca/curios </summary>
+                </entry>
+                
+
+
                 <entry>
                     <id>https://lzon.ca/curios.xml#3e84c53e</id>
                     <title>Passwords vs. Pass Phrases</title>

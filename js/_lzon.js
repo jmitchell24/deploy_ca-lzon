@@ -567,6 +567,7 @@
       function initLazyExpandX(el) {
         el.style.width = "0px";
         el.style.opacity = "0";
+        const delay = Number(el.getAttribute("data-delay-ms")) || 500;
         const observer = new MutationObserver(() => {
           observer.disconnect();
           setTimeout(() => {
@@ -582,13 +583,14 @@
               el.classList.remove("collapsing", "collapse-horizontal");
               el.style.width = "";
             });
-          }, 500);
+          }, delay);
         });
         observer.observe(el, { childList: true, subtree: true });
       }
       function initLazyExpandY(el) {
         el.style.height = "0px";
         el.style.opacity = "0";
+        const delay = Number(el.getAttribute("data-delay-ms")) || 500;
         const observer = new MutationObserver(() => {
           observer.disconnect();
           setTimeout(() => {
@@ -604,7 +606,7 @@
               el.classList.remove("collapsing");
               el.style.height = "";
             });
-          }, 500);
+          }, delay);
         });
         observer.observe(el, { childList: true, subtree: true });
       }
