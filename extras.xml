@@ -4,7 +4,15 @@
             <title>lzon.ca – Extras</title>
             <link href="https://lzon.ca/more" rel="alternate" />
             <link href="https://lzon.ca/extras.xml" rel="self" />
-            <updated>2026-05-01T00:00:00Z</updated>
+            <updated>2026-05-03T00:00:00Z</updated>
+            <entry>
+                    <id>https://lzon.ca/quotes.xml#447f8859</id>
+                    <title>50. lzon.ca/quotes</title>
+                    <link href="https://lzon.ca/more/quotes" />
+                    <updated>2026-05-03T00:00:00Z</updated>
+                    <category term="quote" />
+                    <summary type="html">Software is like sex: it's better when it's free.&lt;br/&gt;- Linus Torvalds</summary>
+                </entry>
             <entry>
                     <id>https://lzon.ca/quotes.xml#2bc9e15c</id>
                     <title>49. lzon.ca/quotes</title>
