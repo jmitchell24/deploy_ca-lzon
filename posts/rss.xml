@@ -8,7 +8,15 @@
       <generator>Zola</generator>
       <language>en</language>
       <atom:link href="https://lzon.ca/posts/rss.xml" rel="self" type="application/rss+xml"/>
-      <lastBuildDate>Sat, 02 May 2026 00:00:00 +0000</lastBuildDate>
+      <lastBuildDate>Sun, 03 May 2026 00:00:00 +0000</lastBuildDate>
+      <item>
+          <title>Gratitude for an Open Android</title>
+          <pubDate>Sun, 03 May 2026 00:00:00 +0000</pubDate>
+          <author>Lzon</author>
+          <link>https://lzon.ca/posts/series/grateful/keep-android-open/</link>
+          <guid>https://lzon.ca/posts/series/grateful/keep-android-open/</guid>
+          <description xml:base="https://lzon.ca/posts/series/grateful/keep-android-open/">&lt;p&gt;Today I’m grateful for the open Android operating system.&lt;&#x2F;p&gt;</description>
+      </item>
       <item>
           <title>How to make a single instance program in C++</title>
           <pubDate>Sat, 02 May 2026 00:00:00 +0000</pubDate>
