@@ -4,8 +4,16 @@
             <title>lzon.ca – Tweaks</title>
             <link href="https://lzon.ca/more" rel="alternate" />
             <link href="https://lzon.ca/tweaks.xml" rel="self" />
-            <updated>2026-04-24T00:00:00Z</updated>
+            <updated>2026-05-04T00:00:00Z</updated>
             
+                <entry>
+                    <id>https://lzon.ca/tweaks.xml#dbcb7933</id>
+                    <title>Lzon Site Tweak #9</title>
+                    <link href="https://lzon.ca/more" />
+                    <updated>2026-05-04T00:00:00Z</updated>
+                    <category term="tweak" /><summary type="html">- added rss link to footer</summary>
+                </entry>
+
                 <entry>
                     <id>https://lzon.ca/tweaks.xml#bc0907ed</id>
                     <title>Lzon Site Tweak #8</title>

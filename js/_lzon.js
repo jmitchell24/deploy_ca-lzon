@@ -377,12 +377,6 @@
       });
       return `Scheduled for <span class="text-tertiary">${s}</span>`;
     }
-    function getLocalDateString(d) {
-      const y = d.getFullYear();
-      const m = String(d.getMonth() + 1).padStart(2, "0");
-      const day = String(d.getDate()).padStart(2, "0");
-      return `${y}-${m}-${day}`;
-    }
     function isDateSame(a, b) {
       return a.getFullYear() === b.getFullYear() && a.getMonth() === b.getMonth() && a.getDate() === b.getDate();
     }
@@ -435,6 +429,7 @@
             }
           }
           updateQuote(getSequenceQuote(todayQuoteIdx), isNewToday);
+          todayQuoteIdx = 0;
           elRandomize.addEventListener("click", () => {
             updateQuote(getSequenceQuote(++todayQuoteIdx), false, true);
           });
@@ -816,6 +811,16 @@
       this.elContainer = elContainer;
       this.elTemplate = elTemplate;
     }
+    static createList(containerClass, templateClass) {
+      const containers = document.querySelectorAll(`.${containerClass}`);
+      return Array.from(containers).flatMap((elContainer) => {
+        const elTemplate = elContainer.querySelector(`:scope > .${templateClass}:only-child`);
+        if (!elTemplate)
+          return [];
+        elTemplate.remove();
+        return [new ListExpander(elContainer, elTemplate)];
+      });
+    }
     static create(containerId, templateId) {
       const elContainer = document.querySelector(`#${containerId}`);
       const elTemplate = document.querySelector(`#${containerId} > #${templateId}:only-child`);
@@ -823,6 +828,12 @@
         return null;
       elTemplate.remove();
       return new ListExpander(elContainer, elTemplate);
+    }
+    getUrl() {
+      return this.elContainer.getAttribute("data-url") ?? "";
+    }
+    getName() {
+      return this.elContainer.getAttribute("data-name") ?? "";
     }
     expand(items, populate, { clear = true } = {}) {
       if (clear)
@@ -839,7 +850,7 @@
     }
   }
 
-  // ts/curios.ts
+  // ts/links.ts
   function initLinks() {
     function getDateString(dateStr) {
       const d = new Date(dateStr + "T00:00:00");
@@ -850,39 +861,41 @@
       });
     }
     document.addEventListener("DOMContentLoaded", () => {
-      const expander = ListExpander.create("links-container", "links-template");
-      fetch("/data/curios.json").then((res) => res.json()).then((data) => data.curios).then((curios) => {
-        const numCurios = curios.length;
-        const sorted = [...curios].sort((a, b) => b.date.localeCompare(a.date));
-        expander?.expand(sorted, (el, it, idx) => {
-          const elUrl = el.querySelector(".url");
-          const elArc = el.querySelector(".arc");
-          const elDate = el.querySelector(".date");
-          const elDesc = el.querySelector(".desc");
-          const elSeq = el.querySelector(".seq");
-          if (!elUrl || !elArc || !elDate || !elDesc) {
-            console.error("links-template selector failed");
-            return;
-          }
-          elUrl.href = it.url;
-          elUrl.textContent = it.title;
-          elDate.textContent = getDateString(it.date);
-          if (elSeq) {
-            const pad = numCurios.toString().length;
-            elSeq.textContent = String(numCurios - idx).padStart(pad, "0") + ".";
-          }
-          if (it.arc) {
-            elArc.href = `https://web.archive.org/web/${it.arc}/${it.url}`;
-            elArc.textContent = "snapshot";
-          } else {
-            elArc.href = `https://web.archive.org/web/*/${it.url}`;
-            elArc.textContent = "search archive.org";
-          }
-          if (it.desc) {
-            elDesc.textContent = it.desc;
-          } else {
-            elDesc.remove();
-          }
+      const expanders = ListExpander.createList("links-container", "links-template");
+      expanders.forEach((expander) => {
+        fetch(expander?.getUrl()).then((res) => res.json()).then((data) => data.items).then((items) => {
+          const numCurios = items.length;
+          const sorted = [...items].sort((a, b) => b.date.localeCompare(a.date));
+          expander?.expand(sorted, (el, it, idx) => {
+            const elUrl = el.querySelector(".url");
+            const elArc = el.querySelector(".arc");
+            const elDate = el.querySelector(".date");
+            const elDesc = el.querySelector(".desc");
+            const elSeq = el.querySelector(".seq");
+            if (!elUrl || !elArc || !elDate || !elDesc) {
+              console.error("links-template selector failed");
+              return;
+            }
+            elUrl.href = it.url;
+            elUrl.textContent = it.title;
+            elDate.textContent = getDateString(it.date);
+            if (elSeq) {
+              const pad = numCurios.toString().length;
+              elSeq.textContent = String(numCurios - idx).padStart(pad, "0") + ".";
+            }
+            if (it.arc) {
+              elArc.href = `https://web.archive.org/web/${it.arc}/${it.url}`;
+              elArc.textContent = "snapshot";
+            } else {
+              elArc.href = `https://web.archive.org/web/*/${it.url}`;
+              elArc.textContent = "search archive.org";
+            }
+            if (it.desc) {
+              elDesc.textContent = it.desc;
+            } else {
+              elDesc.remove();
+            }
+          });
         });
       });
     });

@@ -7,6 +7,16 @@
       this.elContainer = elContainer;
       this.elTemplate = elTemplate;
     }
+    static createList(containerClass, templateClass) {
+      const containers = document.querySelectorAll(`.${containerClass}`);
+      return Array.from(containers).flatMap((elContainer) => {
+        const elTemplate = elContainer.querySelector(`:scope > .${templateClass}:only-child`);
+        if (!elTemplate)
+          return [];
+        elTemplate.remove();
+        return [new ListExpander(elContainer, elTemplate)];
+      });
+    }
     static create(containerId, templateId) {
       const elContainer = document.querySelector(`#${containerId}`);
       const elTemplate = document.querySelector(`#${containerId} > #${templateId}:only-child`);
@@ -14,6 +24,12 @@
         return null;
       elTemplate.remove();
       return new ListExpander(elContainer, elTemplate);
+    }
+    getUrl() {
+      return this.elContainer.getAttribute("data-url") ?? "";
+    }
+    getName() {
+      return this.elContainer.getAttribute("data-name") ?? "";
     }
     expand(items, populate, { clear = true } = {}) {
       if (clear)
