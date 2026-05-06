@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
+    <channel>
+      <title>
+        lzon.ca - News</title>
+      <link>https://lzon.ca/news/</link>
+      <description></description>
+      <generator>Zola</generator>
+      <language>en</language>
+      <atom:link href="https://lzon.ca/news/rss.xml" rel="self" type="application/rss+xml"/>
+      <lastBuildDate>Tue, 05 May 2026 00:00:00 +0000</lastBuildDate>
+      <item>
+          <title>Steam Controller released, quickly sold out</title>
+          <pubDate>Tue, 05 May 2026 00:00:00 +0000</pubDate>
+          <author>Lzon</author>
+          <link>https://lzon.ca/news/news-1-steam-controller/</link>
+          <guid>https://lzon.ca/news/news-1-steam-controller/</guid>
+          <description xml:base="https://lzon.ca/news/news-1-steam-controller/"></description>
+      </item>
+      <item>
+          <title>Richard Dawkins believes Claude LLM is concious</title>
+          <pubDate>Tue, 05 May 2026 00:00:00 +0000</pubDate>
+          <author>Lzon</author>
+          <link>https://lzon.ca/news/news-2-dawkins/</link>
+          <guid>https://lzon.ca/news/news-2-dawkins/</guid>
+          <description xml:base="https://lzon.ca/news/news-2-dawkins/"></description>
+      </item>
+    </channel>
+</rss>

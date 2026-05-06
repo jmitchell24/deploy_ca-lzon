@@ -1,17 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
   <title>
-    lzon.ca - Bulletins</title>
-  <id>https://lzon.ca/posts/bulletins/</id>
+    lzon.ca - News</title>
+  <id>https://lzon.ca/news/</id>
   <link rel="alternate" href="https://lzon.ca"/>
-  <link rel="self" href="https://lzon.ca/posts/bulletins/atom.xml" type="application/atom+xml"/>
+  <link rel="self" href="https://lzon.ca/news/atom.xml" type="application/atom+xml"/>
   <generator uri="https://www.getzola.org/">Zola</generator>
   
   <updated>2026-05-05T00:00:00Z</updated>
   <entry>
-    <title>Richard Dawkins believes Claude LLM is concious</title>
-    <id>https://lzon.ca/posts/bulletins/dawkins/</id>
-    <link href="https://lzon.ca/posts/bulletins/dawkins/"/>
+    <title>Steam Controller released, quickly sold out</title>
+    <id>https://lzon.ca/news/news-1-steam-controller/</id>
+    <link href="https://lzon.ca/news/news-1-steam-controller/"/>
     <published>2026-05-05T00:00:00Z</published>
     <updated>2026-05-05T00:00:00Z</updated>
     <author>
@@ -20,9 +20,9 @@
     
   </entry>
   <entry>
-    <title>Steam Controller released, quickly sold out</title>
-    <id>https://lzon.ca/posts/bulletins/steam-controller/</id>
-    <link href="https://lzon.ca/posts/bulletins/steam-controller/"/>
+    <title>Richard Dawkins believes Claude LLM is concious</title>
+    <id>https://lzon.ca/news/news-2-dawkins/</id>
+    <link href="https://lzon.ca/news/news-2-dawkins/"/>
     <published>2026-05-05T00:00:00Z</published>
     <updated>2026-05-05T00:00:00Z</updated>
     <author>
