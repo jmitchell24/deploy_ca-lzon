@@ -8,7 +8,15 @@
       <generator>Zola</generator>
       <language>en</language>
       <atom:link href="https://lzon.ca/news/rss.xml" rel="self" type="application/rss+xml"/>
-      <lastBuildDate>Wed, 06 May 2026 00:00:00 +0000</lastBuildDate>
+      <lastBuildDate>Thu, 07 May 2026 00:00:00 +0000</lastBuildDate>
+      <item>
+          <title>Steam Controller to have a reservation queue</title>
+          <pubDate>Thu, 07 May 2026 00:00:00 +0000</pubDate>
+          <author>Lzon</author>
+          <link>https://lzon.ca/news/news-4-steam-controller-reservation/</link>
+          <guid>https://lzon.ca/news/news-4-steam-controller-reservation/</guid>
+          <description xml:base="https://lzon.ca/news/news-4-steam-controller-reservation/"></description>
+      </item>
       <item>
           <title>Ghostty Is Leaving GitHub</title>
           <pubDate>Wed, 06 May 2026 00:00:00 +0000</pubDate>
