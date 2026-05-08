@@ -8,7 +8,15 @@
       <generator>Zola</generator>
       <language>en</language>
       <atom:link href="https://lzon.ca/news/rss.xml" rel="self" type="application/rss+xml"/>
-      <lastBuildDate>Thu, 07 May 2026 00:00:00 +0000</lastBuildDate>
+      <lastBuildDate>Fri, 08 May 2026 00:00:00 +0000</lastBuildDate>
+      <item>
+          <title>Tesla Recalls Cybertrucks Over Concerns Their Wheels Could Come Off</title>
+          <pubDate>Fri, 08 May 2026 00:00:00 +0000</pubDate>
+          <author>Lzon</author>
+          <link>https://lzon.ca/news/news-5-tesla-recalls-cybertrucks/</link>
+          <guid>https://lzon.ca/news/news-5-tesla-recalls-cybertrucks/</guid>
+          <description xml:base="https://lzon.ca/news/news-5-tesla-recalls-cybertrucks/">&lt;p&gt;Tesla is recalling several hundred budget variant Cybertrucks.&lt;&#x2F;p&gt;</description>
+      </item>
       <item>
           <title>Steam Controller to have a reservation queue</title>
           <pubDate>Thu, 07 May 2026 00:00:00 +0000</pubDate>
@@ -21,9 +29,9 @@
           <title>Ghostty Is Leaving GitHub</title>
           <pubDate>Wed, 06 May 2026 00:00:00 +0000</pubDate>
           <author>Lzon</author>
-          <link>https://lzon.ca/news/news-3-ghosttty/</link>
-          <guid>https://lzon.ca/news/news-3-ghosttty/</guid>
-          <description xml:base="https://lzon.ca/news/news-3-ghosttty/"></description>
+          <link>https://lzon.ca/news/news-3-ghostty/</link>
+          <guid>https://lzon.ca/news/news-3-ghostty/</guid>
+          <description xml:base="https://lzon.ca/news/news-3-ghostty/"></description>
       </item>
       <item>
           <title>Steam Controller released, quickly sold out</title>

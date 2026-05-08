@@ -7,7 +7,18 @@
   <link rel="self" href="https://lzon.ca/news/atom.xml" type="application/atom+xml"/>
   <generator uri="https://www.getzola.org/">Zola</generator>
   
-  <updated>2026-05-07T00:00:00Z</updated>
+  <updated>2026-05-08T00:00:00Z</updated>
+  <entry>
+    <title>Tesla Recalls Cybertrucks Over Concerns Their Wheels Could Come Off</title>
+    <id>https://lzon.ca/news/news-5-tesla-recalls-cybertrucks/</id>
+    <link href="https://lzon.ca/news/news-5-tesla-recalls-cybertrucks/"/>
+    <published>2026-05-08T00:00:00Z</published>
+    <updated>2026-05-08T00:00:00Z</updated>
+    <author>
+      <name>Lzon</name>
+    </author>
+    <summary type="html" xml:base="https://lzon.ca/news/news-5-tesla-recalls-cybertrucks/">&lt;p&gt;Tesla is recalling several hundred budget variant Cybertrucks.&lt;&#x2F;p&gt;</summary>
+  </entry>
   <entry>
     <title>Steam Controller to have a reservation queue</title>
     <id>https://lzon.ca/news/news-4-steam-controller-reservation/</id>
@@ -21,8 +32,8 @@
   </entry>
   <entry>
     <title>Ghostty Is Leaving GitHub</title>
-    <id>https://lzon.ca/news/news-3-ghosttty/</id>
-    <link href="https://lzon.ca/news/news-3-ghosttty/"/>
+    <id>https://lzon.ca/news/news-3-ghostty/</id>
+    <link href="https://lzon.ca/news/news-3-ghostty/"/>
     <published>2026-05-06T00:00:00Z</published>
     <updated>2026-05-06T00:00:00Z</updated>
     <author>
