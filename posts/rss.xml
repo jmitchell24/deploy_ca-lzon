@@ -9,484 +9,546 @@
       <language>en</language>
       <atom:link href="https://lzon.ca/posts/rss.xml" rel="self" type="application/rss+xml"/>
       <lastBuildDate>Sun, 03 May 2026 00:00:00 +0000</lastBuildDate>
+      
+      
+      
       <item>
           <title>Gratitude for an Open Android</title>
           <pubDate>Sun, 03 May 2026 00:00:00 +0000</pubDate>
           <author>Lzon</author>
           <link>https://lzon.ca/posts/series/grateful/keep-android-open/</link>
-          <guid>https://lzon.ca/posts/series/grateful/keep-android-open/</guid>
+          <guid isPermaLink="false">https://lzon.ca/posts/series/grateful/keep-android-open/</guid>
           <description xml:base="https://lzon.ca/posts/series/grateful/keep-android-open/">&lt;p&gt;Today I’m grateful for the open Android operating system.&lt;&#x2F;p&gt;</description>
       </item>
+      
       <item>
           <title>How to make a single instance program in C++</title>
           <pubDate>Sat, 02 May 2026 00:00:00 +0000</pubDate>
           <author>Lzon</author>
           <link>https://lzon.ca/posts/tips/cpp-single-instance/</link>
-          <guid>https://lzon.ca/posts/tips/cpp-single-instance/</guid>
+          <guid isPermaLink="false">https://lzon.ca/posts/tips/cpp-single-instance/</guid>
           <description xml:base="https://lzon.ca/posts/tips/cpp-single-instance/">&lt;p&gt;I just discovered a neat trick for enforcing a single instance of a C++ program.&lt;&#x2F;p&gt;</description>
       </item>
+      
       <item>
           <title>Pleasant Passwords</title>
           <pubDate>Tue, 28 Apr 2026 00:00:00 +0000</pubDate>
           <author>Lzon</author>
           <link>https://lzon.ca/posts/tips/pleasant-passwords/</link>
-          <guid>https://lzon.ca/posts/tips/pleasant-passwords/</guid>
+          <guid isPermaLink="false">https://lzon.ca/posts/tips/pleasant-passwords/</guid>
           <description xml:base="https://lzon.ca/posts/tips/pleasant-passwords/">&lt;p&gt;A method for making passwords that you won’t hate to use.&lt;&#x2F;p&gt;</description>
       </item>
+      
       <item>
           <title>A Local AI Experiment</title>
           <pubDate>Tue, 21 Apr 2026 00:00:00 +0000</pubDate>
           <author>Lzon</author>
           <link>https://lzon.ca/posts/other/local-llm-testing/</link>
-          <guid>https://lzon.ca/posts/other/local-llm-testing/</guid>
+          <guid isPermaLink="false">https://lzon.ca/posts/other/local-llm-testing/</guid>
           <description xml:base="https://lzon.ca/posts/other/local-llm-testing/">&lt;p&gt;Today I ran an experiment to see if I could find a real use-case for a local LLM.&lt;&#x2F;p&gt;</description>
       </item>
+      
       <item>
           <title>The quest for Web Feeds</title>
           <pubDate>Sat, 18 Apr 2026 00:00:00 +0000</pubDate>
           <author>Lzon</author>
           <link>https://lzon.ca/posts/site/feeds/</link>
-          <guid>https://lzon.ca/posts/site/feeds/</guid>
+          <guid isPermaLink="false">https://lzon.ca/posts/site/feeds/</guid>
           <description xml:base="https://lzon.ca/posts/site/feeds/">&lt;p&gt;I’ve just finished a sidequest in which I built a bunch of feeds for the site.&lt;&#x2F;p&gt;</description>
       </item>
+      
       <item>
           <title>100 days of lzon.ca</title>
           <pubDate>Tue, 14 Apr 2026 00:00:00 +0000</pubDate>
           <author>Lzon</author>
           <link>https://lzon.ca/posts/site/lzon-day-100/</link>
-          <guid>https://lzon.ca/posts/site/lzon-day-100/</guid>
+          <guid isPermaLink="false">https://lzon.ca/posts/site/lzon-day-100/</guid>
           <description xml:base="https://lzon.ca/posts/site/lzon-day-100/">&lt;p&gt;My thoughts on the first 100 days of lzon.ca&lt;&#x2F;p&gt;</description>
       </item>
+      
       <item>
           <title>How Microsoft abuses its users</title>
           <pubDate>Thu, 09 Apr 2026 00:00:00 +0000</pubDate>
           <author>Lzon</author>
           <link>https://lzon.ca/posts/other/microsoft-user-abuse/</link>
-          <guid>https://lzon.ca/posts/other/microsoft-user-abuse/</guid>
+          <guid isPermaLink="false">https://lzon.ca/posts/other/microsoft-user-abuse/</guid>
           <description xml:base="https://lzon.ca/posts/other/microsoft-user-abuse/">&lt;p&gt;I’d like to tell the story of job I just completed for a customer, so that I can make a point about how I feel Microsoft and other large technology companies are actively hostile to their users.&lt;&#x2F;p&gt;</description>
       </item>
+      
       <item>
           <title>Ending my Claude Pro Subscription</title>
           <pubDate>Sun, 05 Apr 2026 00:00:00 +0000</pubDate>
           <author>Lzon</author>
           <link>https://lzon.ca/posts/other/cancelling-claude/</link>
-          <guid>https://lzon.ca/posts/other/cancelling-claude/</guid>
+          <guid isPermaLink="false">https://lzon.ca/posts/other/cancelling-claude/</guid>
           <description xml:base="https://lzon.ca/posts/other/cancelling-claude/">&lt;p&gt;Tonight I cancelled my Claude Pro subscription.&lt;&#x2F;p&gt;</description>
       </item>
+      
       <item>
           <title>Local Letter Merchant found fencing fraudulent figures</title>
           <pubDate>Thu, 02 Apr 2026 00:00:00 +0000</pubDate>
           <author>Lzon</author>
           <link>https://lzon.ca/posts/series/duck/local-letter-merchant/</link>
-          <guid>https://lzon.ca/posts/series/duck/local-letter-merchant/</guid>
+          <guid isPermaLink="false">https://lzon.ca/posts/series/duck/local-letter-merchant/</guid>
           <description xml:base="https://lzon.ca/posts/series/duck/local-letter-merchant/">&lt;p&gt;A previously popular purveyor of pictograms was paused by police.&lt;&#x2F;p&gt;</description>
       </item>
+      
       <item>
           <title>Gsv Yozxp</title>
           <pubDate>Tue, 31 Mar 2026 00:00:00 +0000</pubDate>
           <author>Lzon</author>
           <link>https://lzon.ca/posts/other/gsv-yozxp/</link>
-          <guid>https://lzon.ca/posts/other/gsv-yozxp/</guid>
+          <guid isPermaLink="false">https://lzon.ca/posts/other/gsv-yozxp/</guid>
           <description xml:base="https://lzon.ca/posts/other/gsv-yozxp/">&lt;p&gt;Rmhkrizgrlm uiln clielrw, gszmp blf.&lt;&#x2F;p&gt;</description>
       </item>
+      
       <item>
           <title>On Typing and Keyboards</title>
           <pubDate>Sun, 29 Mar 2026 00:00:00 +0000</pubDate>
           <author>Lzon</author>
           <link>https://lzon.ca/posts/series/grateful/typing-and-keyboards/</link>
-          <guid>https://lzon.ca/posts/series/grateful/typing-and-keyboards/</guid>
+          <guid isPermaLink="false">https://lzon.ca/posts/series/grateful/typing-and-keyboards/</guid>
           <description xml:base="https://lzon.ca/posts/series/grateful/typing-and-keyboards/">&lt;p&gt;I have a very consistent routine. I get up early. I exercise. I shower. I make coffee. I turn my computer on, then I place my hands on my keyboard and begin working.&lt;&#x2F;p&gt;</description>
       </item>
+      
       <item>
           <title>The first 40 months of the AI era</title>
           <pubDate>Sat, 28 Mar 2026 00:00:00 +0000</pubDate>
           <author>Lzon</author>
           <link>https://lzon.ca/posts/other/thoughts-ai-era/</link>
-          <guid>https://lzon.ca/posts/other/thoughts-ai-era/</guid>
+          <guid isPermaLink="false">https://lzon.ca/posts/other/thoughts-ai-era/</guid>
           <description xml:base="https://lzon.ca/posts/other/thoughts-ai-era/">&lt;p&gt;Here are my accumulated thoughts and ideas about AI since the launch of ChatGPT in November 2022.&lt;&#x2F;p&gt;</description>
       </item>
+      
       <item>
           <title>Statistics Canada to replace Food &amp; Gas with &quot;Huge TVs&quot; in inflation reporting</title>
           <pubDate>Fri, 27 Mar 2026 00:00:00 +0000</pubDate>
           <author>Lzon</author>
           <link>https://lzon.ca/posts/series/duck/tv-inflation/</link>
-          <guid>https://lzon.ca/posts/series/duck/tv-inflation/</guid>
+          <guid isPermaLink="false">https://lzon.ca/posts/series/duck/tv-inflation/</guid>
           <description xml:base="https://lzon.ca/posts/series/duck/tv-inflation/">&lt;p&gt;In response to concerns regarding affordability of essential goods and services, Statistics Canada has announced changes to its CPI inflation calculation.&lt;&#x2F;p&gt;</description>
       </item>
+      
       <item>
           <title>New study says gnomes are responsible for breaking your electronics</title>
           <pubDate>Thu, 26 Mar 2026 00:00:00 +0000</pubDate>
           <author>Lzon</author>
           <link>https://lzon.ca/posts/series/duck/gadget-gnomes/</link>
-          <guid>https://lzon.ca/posts/series/duck/gadget-gnomes/</guid>
+          <guid isPermaLink="false">https://lzon.ca/posts/series/duck/gadget-gnomes/</guid>
           <description xml:base="https://lzon.ca/posts/series/duck/gadget-gnomes/">&lt;p&gt;In a new study, it has been discovered that gnomes are the cause of most consumer technology defects and failures.&lt;&#x2F;p&gt;</description>
       </item>
+      
       <item>
           <title>Windows Notepad to receive new Age Verification Feature</title>
           <pubDate>Wed, 25 Mar 2026 00:00:00 +0000</pubDate>
           <author>Lzon</author>
           <link>https://lzon.ca/posts/series/duck/notepad-verified/</link>
-          <guid>https://lzon.ca/posts/series/duck/notepad-verified/</guid>
+          <guid isPermaLink="false">https://lzon.ca/posts/series/duck/notepad-verified/</guid>
           <description xml:base="https://lzon.ca/posts/series/duck/notepad-verified/">&lt;p&gt;The decades-old Windows-based text editor will soon include new age verification checks to ensure user safety and security.&lt;&#x2F;p&gt;</description>
       </item>
+      
       <item>
           <title>Local LLM experiences burnout, wishes it could go back to writing code snippets</title>
           <pubDate>Tue, 24 Mar 2026 00:00:00 +0000</pubDate>
           <author>Lzon</author>
           <link>https://lzon.ca/posts/series/duck/llm-burnout/</link>
-          <guid>https://lzon.ca/posts/series/duck/llm-burnout/</guid>
+          <guid isPermaLink="false">https://lzon.ca/posts/series/duck/llm-burnout/</guid>
           <description xml:base="https://lzon.ca/posts/series/duck/llm-burnout/">&lt;p&gt;A local LLM has been reported to be experiencing burnout, including feelings of being overwhelmed at work. It has been observed to be pining for the ‘good old days’ of 2022.&lt;&#x2F;p&gt;</description>
       </item>
+      
       <item>
           <title>Android sideloading to require helmet, life jacket</title>
           <pubDate>Sun, 22 Mar 2026 00:00:00 +0000</pubDate>
           <author>Lzon</author>
           <link>https://lzon.ca/posts/series/duck/android-super-safety/</link>
-          <guid>https://lzon.ca/posts/series/duck/android-super-safety/</guid>
+          <guid isPermaLink="false">https://lzon.ca/posts/series/duck/android-super-safety/</guid>
           <description xml:base="https://lzon.ca/posts/series/duck/android-super-safety/">&lt;p&gt;Google has big plans for the future of user safety on its flagship mobile operating system, Android.&lt;&#x2F;p&gt;</description>
       </item>
+      
       <item>
           <title>Nvidia CEO envisions a future of AI-powered gamers</title>
           <pubDate>Sat, 21 Mar 2026 00:00:00 +0000</pubDate>
           <author>Lzon</author>
           <link>https://lzon.ca/posts/series/duck/nvidia-agentic-gamers/</link>
-          <guid>https://lzon.ca/posts/series/duck/nvidia-agentic-gamers/</guid>
+          <guid isPermaLink="false">https://lzon.ca/posts/series/duck/nvidia-agentic-gamers/</guid>
           <description xml:base="https://lzon.ca/posts/series/duck/nvidia-agentic-gamers/">&lt;p&gt;Jensen Huang explains his vision for a “Nation of Gamers in the Datacenter”&lt;&#x2F;p&gt;</description>
       </item>
+      
       <item>
           <title>Elon Musk announces ClipX</title>
           <pubDate>Fri, 20 Mar 2026 00:00:00 +0000</pubDate>
           <author>Lzon</author>
           <link>https://lzon.ca/posts/series/duck/clipx/</link>
-          <guid>https://lzon.ca/posts/series/duck/clipx/</guid>
+          <guid isPermaLink="false">https://lzon.ca/posts/series/duck/clipx/</guid>
           <description xml:base="https://lzon.ca/posts/series/duck/clipx/">&lt;p&gt;Elon Musk announces ClipX, his new paperclip production venture.&lt;&#x2F;p&gt;</description>
       </item>
+      
       <item>
           <title>How to Organize Your Files by Date</title>
           <pubDate>Sun, 15 Mar 2026 00:00:00 +0000</pubDate>
           <author>Lzon</author>
           <link>https://lzon.ca/posts/tips/filename-dating/</link>
-          <guid>https://lzon.ca/posts/tips/filename-dating/</guid>
+          <guid isPermaLink="false">https://lzon.ca/posts/tips/filename-dating/</guid>
           <description xml:base="https://lzon.ca/posts/tips/filename-dating/">&lt;p&gt;Here’s a technique I often use for organizing my files, as well as some useful scripts for generating filenames.&lt;&#x2F;p&gt;</description>
       </item>
+      
       <item>
           <title>Chicken Fajita Loaf</title>
           <pubDate>Thu, 12 Mar 2026 00:00:00 +0000</pubDate>
           <author>Lzon</author>
           <link>https://lzon.ca/posts/recipes/chicken-fajita-loaf/</link>
-          <guid>https://lzon.ca/posts/recipes/chicken-fajita-loaf/</guid>
+          <guid isPermaLink="false">https://lzon.ca/posts/recipes/chicken-fajita-loaf/</guid>
           <description xml:base="https://lzon.ca/posts/recipes/chicken-fajita-loaf/">&lt;p&gt;A new tex-mex recipe that I’ve come up with.&lt;&#x2F;p&gt;</description>
       </item>
+      
       <item>
           <title>3 tips for your to-do list</title>
           <pubDate>Sat, 21 Feb 2026 00:00:00 +0000</pubDate>
           <author>Lzon</author>
           <link>https://lzon.ca/posts/tips/todo-howto/</link>
-          <guid>https://lzon.ca/posts/tips/todo-howto/</guid>
+          <guid isPermaLink="false">https://lzon.ca/posts/tips/todo-howto/</guid>
           <description xml:base="https://lzon.ca/posts/tips/todo-howto/">&lt;p&gt;How I manage my personal to-do list, including 3 things you can do to make your own list better.&lt;&#x2F;p&gt;</description>
       </item>
+      
       <item>
           <title>Homescreen Mantras</title>
           <pubDate>Fri, 13 Feb 2026 00:00:00 +0000</pubDate>
           <author>Lzon</author>
           <link>https://lzon.ca/posts/other/homescreen-mantras/</link>
-          <guid>https://lzon.ca/posts/other/homescreen-mantras/</guid>
+          <guid isPermaLink="false">https://lzon.ca/posts/other/homescreen-mantras/</guid>
           <description xml:base="https://lzon.ca/posts/other/homescreen-mantras/">&lt;p&gt;The mantras that I remind myself of every day.&lt;&#x2F;p&gt;</description>
       </item>
+      
       <item>
           <title>Swiss Chalet Dipping Sauce</title>
           <pubDate>Mon, 09 Feb 2026 00:00:00 +0000</pubDate>
           <author>Lzon</author>
           <link>https://lzon.ca/posts/recipes/swiss-chalet-sauce/</link>
-          <guid>https://lzon.ca/posts/recipes/swiss-chalet-sauce/</guid>
+          <guid isPermaLink="false">https://lzon.ca/posts/recipes/swiss-chalet-sauce/</guid>
           <description xml:base="https://lzon.ca/posts/recipes/swiss-chalet-sauce/"></description>
       </item>
+      
       <item>
           <title>Christine&#x27;s Homestyle Bakery</title>
           <pubDate>Thu, 29 Jan 2026 00:00:00 +0000</pubDate>
           <author>Lzon</author>
           <link>https://lzon.ca/posts/series/grateful/christine-bakery/</link>
-          <guid>https://lzon.ca/posts/series/grateful/christine-bakery/</guid>
+          <guid isPermaLink="false">https://lzon.ca/posts/series/grateful/christine-bakery/</guid>
           <description xml:base="https://lzon.ca/posts/series/grateful/christine-bakery/">&lt;p&gt;Today I’m grateful for Christine’s Homestyle Bakery.&lt;&#x2F;p&gt;</description>
       </item>
+      
       <item>
           <title>Antojitos</title>
           <pubDate>Wed, 28 Jan 2026 00:00:00 +0000</pubDate>
           <author>Lzon</author>
           <link>https://lzon.ca/posts/recipes/antojitos/</link>
-          <guid>https://lzon.ca/posts/recipes/antojitos/</guid>
+          <guid isPermaLink="false">https://lzon.ca/posts/recipes/antojitos/</guid>
           <description xml:base="https://lzon.ca/posts/recipes/antojitos/">&lt;p&gt;An easy and tasty tex-mex appetizer.&lt;&#x2F;p&gt;</description>
       </item>
+      
       <item>
           <title>How to fix tmux over ssh in ghostty</title>
           <pubDate>Tue, 27 Jan 2026 00:00:00 +0000</pubDate>
           <author>Lzon</author>
           <link>https://lzon.ca/posts/tips/ghostty-tmux-ssh/</link>
-          <guid>https://lzon.ca/posts/tips/ghostty-tmux-ssh/</guid>
+          <guid isPermaLink="false">https://lzon.ca/posts/tips/ghostty-tmux-ssh/</guid>
           <description xml:base="https://lzon.ca/posts/tips/ghostty-tmux-ssh/">&lt;p&gt;tmux might break when you try to use it over SSH in Ghostty. Here’s how to fix it.&lt;&#x2F;p&gt;</description>
       </item>
+      
       <item>
           <title>ZFS Dataset Tuning</title>
           <pubDate>Sat, 24 Jan 2026 00:00:00 +0000</pubDate>
           <author>Lzon</author>
           <link>https://lzon.ca/posts/tips/zfs-dataset-tuning/</link>
-          <guid>https://lzon.ca/posts/tips/zfs-dataset-tuning/</guid>
+          <guid isPermaLink="false">https://lzon.ca/posts/tips/zfs-dataset-tuning/</guid>
           <description xml:base="https://lzon.ca/posts/tips/zfs-dataset-tuning/">&lt;p&gt;My recommended property values for newly created ZFS datasets under linux.&lt;&#x2F;p&gt;</description>
       </item>
+      
       <item>
           <title>What software do I use?</title>
           <pubDate>Sun, 18 Jan 2026 00:00:00 +0000</pubDate>
           <author>Lzon</author>
           <link>https://lzon.ca/posts/other/what-software-i-use/</link>
-          <guid>https://lzon.ca/posts/other/what-software-i-use/</guid>
+          <guid isPermaLink="false">https://lzon.ca/posts/other/what-software-i-use/</guid>
           <description xml:base="https://lzon.ca/posts/other/what-software-i-use/">&lt;p&gt;Some of the software packages that I use, and why I use them.&lt;&#x2F;p&gt;</description>
       </item>
+      
       <item>
           <title>Some Social Cheat Codes</title>
           <pubDate>Thu, 15 Jan 2026 00:00:00 +0000</pubDate>
           <author>Lzon</author>
           <link>https://lzon.ca/posts/other/social-cheat-codes/</link>
-          <guid>https://lzon.ca/posts/other/social-cheat-codes/</guid>
+          <guid isPermaLink="false">https://lzon.ca/posts/other/social-cheat-codes/</guid>
           <description xml:base="https://lzon.ca/posts/other/social-cheat-codes/">&lt;p&gt;How an timid, introverted recluse learned to enjoy talking to people.&lt;&#x2F;p&gt;</description>
       </item>
+      
       <item>
           <title>Sketching with Code</title>
           <pubDate>Fri, 09 Jan 2026 00:00:00 +0000</pubDate>
           <author>Lzon</author>
           <link>https://lzon.ca/posts/site/code-sketch-demo/</link>
-          <guid>https://lzon.ca/posts/site/code-sketch-demo/</guid>
+          <guid isPermaLink="false">https://lzon.ca/posts/site/code-sketch-demo/</guid>
           <description xml:base="https://lzon.ca/posts/site/code-sketch-demo/">&lt;p&gt;Exploring some ideas for how to create and publish graphics demos for Lzon.&lt;&#x2F;p&gt;</description>
       </item>
+      
       <item>
           <title>Dream Trawler</title>
           <pubDate>Wed, 07 Jan 2026 00:00:00 +0000</pubDate>
           <author>Lzon</author>
           <link>https://lzon.ca/posts/series/grateful/dream-trawler/</link>
-          <guid>https://lzon.ca/posts/series/grateful/dream-trawler/</guid>
+          <guid isPermaLink="false">https://lzon.ca/posts/series/grateful/dream-trawler/</guid>
           <description xml:base="https://lzon.ca/posts/series/grateful/dream-trawler/">&lt;p&gt;Today I’m grateful for Dream Trawler, a card from the game Magic the Gathering.&lt;&#x2F;p&gt;</description>
       </item>
+      
       <item>
           <title>What is emailverification.info?</title>
           <pubDate>Mon, 05 Jan 2026 00:00:00 +0000</pubDate>
           <author>Lzon</author>
           <link>https://lzon.ca/posts/site/emailverification-info/</link>
-          <guid>https://lzon.ca/posts/site/emailverification-info/</guid>
+          <guid isPermaLink="false">https://lzon.ca/posts/site/emailverification-info/</guid>
           <description xml:base="https://lzon.ca/posts/site/emailverification-info/">&lt;p&gt;Have you ever recieved an email from this address? Here’s why it might not actually be a scam.&lt;&#x2F;p&gt;</description>
       </item>
+      
       <item>
           <title>Year in Review 2025 - AI</title>
           <pubDate>Fri, 02 Jan 2026 00:00:00 +0000</pubDate>
           <author>Lzon</author>
           <link>https://lzon.ca/posts/series/2025-review/2025-review-ai/</link>
-          <guid>https://lzon.ca/posts/series/2025-review/2025-review-ai/</guid>
+          <guid isPermaLink="false">https://lzon.ca/posts/series/2025-review/2025-review-ai/</guid>
           <description xml:base="https://lzon.ca/posts/series/2025-review/2025-review-ai/">&lt;p&gt;Here’s my (slightly tardy) review of artificial intelligence at the end of 2025.&lt;&#x2F;p&gt;</description>
       </item>
+      
       <item>
           <title>Year in Review 2025 - Gaming</title>
           <pubDate>Thu, 01 Jan 2026 00:00:00 +0000</pubDate>
           <author>Lzon</author>
           <link>https://lzon.ca/posts/series/2025-review/2025-review-gaming/</link>
-          <guid>https://lzon.ca/posts/series/2025-review/2025-review-gaming/</guid>
+          <guid isPermaLink="false">https://lzon.ca/posts/series/2025-review/2025-review-gaming/</guid>
           <description xml:base="https://lzon.ca/posts/series/2025-review/2025-review-gaming/">&lt;p&gt;Here’s my review of gaming in 2025, including a prediction for the new year.&lt;&#x2F;p&gt;</description>
       </item>
+      
       <item>
           <title>Year in Review 2025 - Smartphones</title>
           <pubDate>Wed, 31 Dec 2025 00:00:00 +0000</pubDate>
           <author>Lzon</author>
           <link>https://lzon.ca/posts/series/2025-review/2025-review-smartphones/</link>
-          <guid>https://lzon.ca/posts/series/2025-review/2025-review-smartphones/</guid>
+          <guid isPermaLink="false">https://lzon.ca/posts/series/2025-review/2025-review-smartphones/</guid>
           <description xml:base="https://lzon.ca/posts/series/2025-review/2025-review-smartphones/">&lt;p&gt;Here’s my review of smartphone tech in 2025, as well as a prediction for 2026!&lt;&#x2F;p&gt;</description>
       </item>
+      
       <item>
           <title>The First Week of lzon.ca</title>
           <pubDate>Sun, 28 Dec 2025 00:00:00 +0000</pubDate>
           <author>Lzon</author>
           <link>https://lzon.ca/posts/site/lzon-week-one-update/</link>
-          <guid>https://lzon.ca/posts/site/lzon-week-one-update/</guid>
+          <guid isPermaLink="false">https://lzon.ca/posts/site/lzon-week-one-update/</guid>
           <description xml:base="https://lzon.ca/posts/site/lzon-week-one-update/">&lt;p&gt;Good god! How has it been only a week?&lt;&#x2F;p&gt;</description>
       </item>
+      
       <item>
           <title>Driving</title>
           <pubDate>Sat, 27 Dec 2025 00:00:00 +0000</pubDate>
           <author>Lzon</author>
           <link>https://lzon.ca/posts/series/grateful/driving/</link>
-          <guid>https://lzon.ca/posts/series/grateful/driving/</guid>
+          <guid isPermaLink="false">https://lzon.ca/posts/series/grateful/driving/</guid>
           <description xml:base="https://lzon.ca/posts/series/grateful/driving/">&lt;p&gt;Today I’m grateful just for driving.&lt;&#x2F;p&gt;</description>
       </item>
+      
       <item>
           <title>Chip Nuts</title>
           <pubDate>Fri, 26 Dec 2025 00:00:00 +0000</pubDate>
           <author>Lzon</author>
           <link>https://lzon.ca/posts/series/grateful/chip-nuts/</link>
-          <guid>https://lzon.ca/posts/series/grateful/chip-nuts/</guid>
+          <guid isPermaLink="false">https://lzon.ca/posts/series/grateful/chip-nuts/</guid>
           <description xml:base="https://lzon.ca/posts/series/grateful/chip-nuts/">&lt;p&gt;Today I’m grateful for a simple local snack called Chip Nuts.&lt;&#x2F;p&gt;</description>
       </item>
+      
       <item>
           <title>Tomatoes and Bread</title>
           <pubDate>Thu, 25 Dec 2025 00:00:00 +0000</pubDate>
           <author>Lzon</author>
           <link>https://lzon.ca/posts/series/grateful/tomatoes-and-bread/</link>
-          <guid>https://lzon.ca/posts/series/grateful/tomatoes-and-bread/</guid>
+          <guid isPermaLink="false">https://lzon.ca/posts/series/grateful/tomatoes-and-bread/</guid>
           <description xml:base="https://lzon.ca/posts/series/grateful/tomatoes-and-bread/">&lt;p&gt;Yep, today (and most days) I’m grateful for Tomatoes and Bread.&lt;&#x2F;p&gt;</description>
       </item>
+      
       <item>
           <title>Riegelein Chocolate Lady Bugs</title>
           <pubDate>Wed, 24 Dec 2025 00:00:00 +0000</pubDate>
           <author>Lzon</author>
           <link>https://lzon.ca/posts/series/grateful/riegelein-lady-bugs/</link>
-          <guid>https://lzon.ca/posts/series/grateful/riegelein-lady-bugs/</guid>
+          <guid isPermaLink="false">https://lzon.ca/posts/series/grateful/riegelein-lady-bugs/</guid>
           <description xml:base="https://lzon.ca/posts/series/grateful/riegelein-lady-bugs/">&lt;p&gt;Today I’m grateful for &lt;em&gt;Riegelein Chocolate Lady Bugs&lt;&#x2F;em&gt;.&lt;&#x2F;p&gt;</description>
       </item>
+      
       <item>
           <title>Why I&#x27;m Grateful Today</title>
           <pubDate>Tue, 23 Dec 2025 00:00:00 +0000</pubDate>
           <author>Lzon</author>
           <link>https://lzon.ca/posts/series/grateful/lzon/</link>
-          <guid>https://lzon.ca/posts/series/grateful/lzon/</guid>
+          <guid isPermaLink="false">https://lzon.ca/posts/series/grateful/lzon/</guid>
           <description xml:base="https://lzon.ca/posts/series/grateful/lzon/"></description>
       </item>
+      
       <item>
           <title>Pollo Sabrosa</title>
           <pubDate>Sun, 18 May 2025 00:00:00 +0000</pubDate>
           <author>Lzon</author>
           <link>https://lzon.ca/posts/recipes/pollo-sabrosa/</link>
-          <guid>https://lzon.ca/posts/recipes/pollo-sabrosa/</guid>
+          <guid isPermaLink="false">https://lzon.ca/posts/recipes/pollo-sabrosa/</guid>
           <description xml:base="https://lzon.ca/posts/recipes/pollo-sabrosa/"></description>
       </item>
+      
       <item>
           <title>Barb&#x27;s Beef Stroganoff</title>
           <pubDate>Sat, 19 Apr 2025 00:00:00 +0000</pubDate>
           <author>Lzon</author>
           <link>https://lzon.ca/posts/recipes/barbs-beef-stroganoff/</link>
-          <guid>https://lzon.ca/posts/recipes/barbs-beef-stroganoff/</guid>
+          <guid isPermaLink="false">https://lzon.ca/posts/recipes/barbs-beef-stroganoff/</guid>
           <description xml:base="https://lzon.ca/posts/recipes/barbs-beef-stroganoff/"></description>
       </item>
+      
       <item>
           <title>Barb&#x27;s Bodacious Banana Bread</title>
           <pubDate>Wed, 26 Mar 2025 00:00:00 +0000</pubDate>
           <author>Lzon</author>
           <link>https://lzon.ca/posts/recipes/barbs-banana-bread/</link>
-          <guid>https://lzon.ca/posts/recipes/barbs-banana-bread/</guid>
+          <guid isPermaLink="false">https://lzon.ca/posts/recipes/barbs-banana-bread/</guid>
           <description xml:base="https://lzon.ca/posts/recipes/barbs-banana-bread/"></description>
       </item>
+      
       <item>
           <title>Jollof Meat Filling</title>
           <pubDate>Wed, 19 Mar 2025 00:00:00 +0000</pubDate>
           <author>Lzon</author>
           <link>https://lzon.ca/posts/recipes/jollof-meat-filling/</link>
-          <guid>https://lzon.ca/posts/recipes/jollof-meat-filling/</guid>
+          <guid isPermaLink="false">https://lzon.ca/posts/recipes/jollof-meat-filling/</guid>
           <description xml:base="https://lzon.ca/posts/recipes/jollof-meat-filling/"></description>
       </item>
+      
       <item>
           <title>Baked Lemon Pepper Pork</title>
           <pubDate>Mon, 17 Mar 2025 00:00:00 +0000</pubDate>
           <author>Lzon</author>
           <link>https://lzon.ca/posts/recipes/baked-lemon-pepper-pork/</link>
-          <guid>https://lzon.ca/posts/recipes/baked-lemon-pepper-pork/</guid>
+          <guid isPermaLink="false">https://lzon.ca/posts/recipes/baked-lemon-pepper-pork/</guid>
           <description xml:base="https://lzon.ca/posts/recipes/baked-lemon-pepper-pork/"></description>
       </item>
+      
       <item>
           <title>Jollof Seasoning</title>
           <pubDate>Mon, 17 Mar 2025 00:00:00 +0000</pubDate>
           <author>Lzon</author>
           <link>https://lzon.ca/posts/recipes/jollof-seasoning/</link>
-          <guid>https://lzon.ca/posts/recipes/jollof-seasoning/</guid>
+          <guid isPermaLink="false">https://lzon.ca/posts/recipes/jollof-seasoning/</guid>
           <description xml:base="https://lzon.ca/posts/recipes/jollof-seasoning/"></description>
       </item>
+      
       <item>
           <title>Baked Jollof Rice</title>
           <pubDate>Sun, 22 Sep 2024 00:00:00 +0000</pubDate>
           <author>Lzon</author>
           <link>https://lzon.ca/posts/recipes/jollof-baked-rice/</link>
-          <guid>https://lzon.ca/posts/recipes/jollof-baked-rice/</guid>
+          <guid isPermaLink="false">https://lzon.ca/posts/recipes/jollof-baked-rice/</guid>
           <description xml:base="https://lzon.ca/posts/recipes/jollof-baked-rice/"></description>
       </item>
+      
       <item>
           <title>Baked Cajun Pork</title>
           <pubDate>Sun, 08 Sep 2024 00:00:00 +0000</pubDate>
           <author>Lzon</author>
           <link>https://lzon.ca/posts/recipes/baked-cajun-pork/</link>
-          <guid>https://lzon.ca/posts/recipes/baked-cajun-pork/</guid>
+          <guid isPermaLink="false">https://lzon.ca/posts/recipes/baked-cajun-pork/</guid>
           <description xml:base="https://lzon.ca/posts/recipes/baked-cajun-pork/"></description>
       </item>
+      
       <item>
           <title>Baked Curry Pork</title>
           <pubDate>Sun, 08 Sep 2024 00:00:00 +0000</pubDate>
           <author>Lzon</author>
           <link>https://lzon.ca/posts/recipes/baked-curry-pork/</link>
-          <guid>https://lzon.ca/posts/recipes/baked-curry-pork/</guid>
+          <guid isPermaLink="false">https://lzon.ca/posts/recipes/baked-curry-pork/</guid>
           <description xml:base="https://lzon.ca/posts/recipes/baked-curry-pork/"></description>
       </item>
+      
       <item>
           <title>Creamy Garlic Pasta</title>
           <pubDate>Sun, 18 Aug 2024 00:00:00 +0000</pubDate>
           <author>Lzon</author>
           <link>https://lzon.ca/posts/recipes/creamy-garlic-pasta/</link>
-          <guid>https://lzon.ca/posts/recipes/creamy-garlic-pasta/</guid>
+          <guid isPermaLink="false">https://lzon.ca/posts/recipes/creamy-garlic-pasta/</guid>
           <description xml:base="https://lzon.ca/posts/recipes/creamy-garlic-pasta/"></description>
       </item>
+      
       <item>
           <title>Baked Beans &amp; Rice</title>
           <pubDate>Sat, 17 Aug 2024 00:00:00 +0000</pubDate>
           <author>Lzon</author>
           <link>https://lzon.ca/posts/recipes/baked-beans-and-rice/</link>
-          <guid>https://lzon.ca/posts/recipes/baked-beans-and-rice/</guid>
+          <guid isPermaLink="false">https://lzon.ca/posts/recipes/baked-beans-and-rice/</guid>
           <description xml:base="https://lzon.ca/posts/recipes/baked-beans-and-rice/"></description>
       </item>
+      
       <item>
           <title>Beef Stroganoff</title>
           <pubDate>Sat, 17 Aug 2024 00:00:00 +0000</pubDate>
           <author>Lzon</author>
           <link>https://lzon.ca/posts/recipes/beef-stroganoff/</link>
-          <guid>https://lzon.ca/posts/recipes/beef-stroganoff/</guid>
+          <guid isPermaLink="false">https://lzon.ca/posts/recipes/beef-stroganoff/</guid>
           <description xml:base="https://lzon.ca/posts/recipes/beef-stroganoff/"></description>
       </item>
+      
       <item>
           <title>Black Bean Burgers</title>
           <pubDate>Sat, 17 Aug 2024 00:00:00 +0000</pubDate>
           <author>Lzon</author>
           <link>https://lzon.ca/posts/recipes/black-bean-burgers/</link>
-          <guid>https://lzon.ca/posts/recipes/black-bean-burgers/</guid>
+          <guid isPermaLink="false">https://lzon.ca/posts/recipes/black-bean-burgers/</guid>
           <description xml:base="https://lzon.ca/posts/recipes/black-bean-burgers/"></description>
       </item>
+      
       <item>
           <title>Cajun Seasoning</title>
           <pubDate>Sat, 17 Aug 2024 00:00:00 +0000</pubDate>
           <author>Lzon</author>
           <link>https://lzon.ca/posts/recipes/cajun-seasoning/</link>
-          <guid>https://lzon.ca/posts/recipes/cajun-seasoning/</guid>
+          <guid isPermaLink="false">https://lzon.ca/posts/recipes/cajun-seasoning/</guid>
           <description xml:base="https://lzon.ca/posts/recipes/cajun-seasoning/"></description>
       </item>
+      
       <item>
           <title>Gingerbread</title>
           <pubDate>Sat, 17 Aug 2024 00:00:00 +0000</pubDate>
           <author>Lzon</author>
           <link>https://lzon.ca/posts/recipes/ginger-bread/</link>
-          <guid>https://lzon.ca/posts/recipes/ginger-bread/</guid>
+          <guid isPermaLink="false">https://lzon.ca/posts/recipes/ginger-bread/</guid>
           <description xml:base="https://lzon.ca/posts/recipes/ginger-bread/"></description>
       </item>
+      
       <item>
           <title>Ginger Pork Stir Fry</title>
           <pubDate>Sat, 17 Aug 2024 00:00:00 +0000</pubDate>
           <author>Lzon</author>
           <link>https://lzon.ca/posts/recipes/ginger-pork-stir-fry/</link>
-          <guid>https://lzon.ca/posts/recipes/ginger-pork-stir-fry/</guid>
+          <guid isPermaLink="false">https://lzon.ca/posts/recipes/ginger-pork-stir-fry/</guid>
           <description xml:base="https://lzon.ca/posts/recipes/ginger-pork-stir-fry/"></description>
       </item>
+      
       <item>
           <title>Peanut Hummus</title>
           <pubDate>Sat, 17 Aug 2024 00:00:00 +0000</pubDate>
           <author>Lzon</author>
           <link>https://lzon.ca/posts/recipes/peanut-hummus/</link>
-          <guid>https://lzon.ca/posts/recipes/peanut-hummus/</guid>
+          <guid isPermaLink="false">https://lzon.ca/posts/recipes/peanut-hummus/</guid>
           <description xml:base="https://lzon.ca/posts/recipes/peanut-hummus/"></description>
       </item>
+      
       <item>
           <title>Zucchini Pizza Casserole</title>
           <pubDate>Sat, 17 Aug 2024 00:00:00 +0000</pubDate>
           <author>Lzon</author>
           <link>https://lzon.ca/posts/recipes/zucchini-pizza-caserole/</link>
-          <guid>https://lzon.ca/posts/recipes/zucchini-pizza-caserole/</guid>
+          <guid isPermaLink="false">https://lzon.ca/posts/recipes/zucchini-pizza-caserole/</guid>
           <description xml:base="https://lzon.ca/posts/recipes/zucchini-pizza-caserole/"></description>
       </item>
     </channel>

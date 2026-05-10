@@ -1,0 +1,312 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
+    <channel>
+      <title>
+        lzon.ca - Curios</title>
+      <link>https://lzon.ca/curios/</link>
+      <description></description>
+      <generator>Zola</generator>
+      <language>en</language>
+      <atom:link href="https://lzon.ca/curios/rss.xml" rel="self" type="application/rss+xml"/>
+      <lastBuildDate>Fri, 01 May 2026 00:00:00 +0000</lastBuildDate>
+      
+      
+      
+      <item>
+          <title>32. Crafting Interpreters</title>
+          <pubDate>Fri, 01 May 2026 00:00:00 +0000</pubDate>
+          <author>Lzon</author>
+          <link>https://lzon.ca/curios/curio-000032-crafting-interpreters/</link>
+          <guid isPermaLink="false">https://lzon.ca/curios/32</guid>
+          <description xml:base="https://lzon.ca/curios/curio-000032-crafting-interpreters/">&lt;p&gt;Robert Nystrom’s guide for creating a programming language from scratch.
+It’s fantastic, both his writing and code are very accessible. Freely available on his site,
+also published as a book.&lt;/p&gt;
+</description>
+      </item>
+      
+      <item>
+          <title>31. Passwords vs. Pass Phrases</title>
+          <pubDate>Wed, 29 Apr 2026 00:00:00 +0000</pubDate>
+          <author>Lzon</author>
+          <link>https://lzon.ca/curios/curio-000031-passwords-vs-pass-phrases/</link>
+          <guid isPermaLink="false">https://lzon.ca/curios/31</guid>
+          <description xml:base="https://lzon.ca/curios/curio-000031-passwords-vs-pass-phrases/">&lt;p&gt;An old CodingHorror post advocating for pass phrases over passwords.&lt;/p&gt;
+</description>
+      </item>
+      
+      <item>
+          <title>30. Brainwash An Executive Today!</title>
+          <pubDate>Sat, 25 Apr 2026 00:00:00 +0000</pubDate>
+          <author>Lzon</author>
+          <link>https://lzon.ca/curios/curio-000030-brainwash-an-executive-today/</link>
+          <guid isPermaLink="false">https://lzon.ca/curios/30</guid>
+          <description xml:base="https://lzon.ca/curios/curio-000030-brainwash-an-executive-today/">&lt;p&gt;An enlightening story. It demonstrates how executives are manipulated into participating in economic hype bubbles such as AI, or otherwise.&lt;/p&gt;
+</description>
+      </item>
+      
+      <item>
+          <title>29. Motivation in Hard Times</title>
+          <pubDate>Fri, 24 Apr 2026 00:00:00 +0000</pubDate>
+          <author>Lzon</author>
+          <link>https://lzon.ca/curios/curio-000029-motivation-in-hard-times/</link>
+          <guid isPermaLink="false">https://lzon.ca/curios/29</guid>
+          <description xml:base="https://lzon.ca/curios/curio-000029-motivation-in-hard-times/">&lt;p&gt;A video by John Green about the nature of motivation. I agree with what he has to say on the matter.&lt;/p&gt;
+</description>
+      </item>
+      
+      <item>
+          <title>28. Understand, by Ted Chiang</title>
+          <pubDate>Wed, 22 Apr 2026 00:00:00 +0000</pubDate>
+          <author>Lzon</author>
+          <link>https://lzon.ca/curios/curio-000028-understand-by-ted-chiang/</link>
+          <guid isPermaLink="false">https://lzon.ca/curios/28</guid>
+          <description xml:base="https://lzon.ca/curios/curio-000028-understand-by-ted-chiang/">&lt;p&gt;A sci-fi novelette by Ted Chiang. Very short, and a great read.&lt;/p&gt;
+</description>
+      </item>
+      
+      <item>
+          <title>27. Waves &amp; Particles</title>
+          <pubDate>Mon, 20 Apr 2026 00:00:00 +0000</pubDate>
+          <author>Lzon</author>
+          <link>https://lzon.ca/curios/curio-000027-waves-particles/</link>
+          <guid isPermaLink="false">https://lzon.ca/curios/27</guid>
+          <description xml:base="https://lzon.ca/curios/curio-000027-waves-particles/">&lt;p&gt;A fun peice of interactive digital art.&lt;/p&gt;
+</description>
+      </item>
+      
+      <item>
+          <title>26. The Last Question by Isaac Asimov</title>
+          <pubDate>Sat, 18 Apr 2026 00:00:00 +0000</pubDate>
+          <author>Lzon</author>
+          <link>https://lzon.ca/curios/curio-000026-the-last-question-by-isaac-asimov/</link>
+          <guid isPermaLink="false">https://lzon.ca/curios/26</guid>
+          <description xml:base="https://lzon.ca/curios/curio-000026-the-last-question-by-isaac-asimov/">&lt;p&gt;A short scifi story, I’ve read it many times. Well worth your time.&lt;/p&gt;
+</description>
+      </item>
+      
+      <item>
+          <title>25. The Truth Dies on the Way Up</title>
+          <pubDate>Mon, 06 Apr 2026 00:00:00 +0000</pubDate>
+          <author>Lzon</author>
+          <link>https://lzon.ca/curios/curio-000025-the-truth-dies-on-the-way-up/</link>
+          <guid isPermaLink="false">https://lzon.ca/curios/25</guid>
+          <description xml:base="https://lzon.ca/curios/curio-000025-the-truth-dies-on-the-way-up/"></description>
+      </item>
+      
+      <item>
+          <title>24. The Submarine</title>
+          <pubDate>Sun, 05 Apr 2026 00:00:00 +0000</pubDate>
+          <author>Lzon</author>
+          <link>https://lzon.ca/curios/curio-000024-the-submarine/</link>
+          <guid isPermaLink="false">https://lzon.ca/curios/24</guid>
+          <description xml:base="https://lzon.ca/curios/curio-000024-the-submarine/"></description>
+      </item>
+      
+      <item>
+          <title>23. Why I don&#x27;t think AGI is imminent</title>
+          <pubDate>Thu, 19 Feb 2026 00:00:00 +0000</pubDate>
+          <author>Lzon</author>
+          <link>https://lzon.ca/curios/curio-000023-why-i-don-t-think-agi-is-imminent/</link>
+          <guid isPermaLink="false">https://lzon.ca/curios/23</guid>
+          <description xml:base="https://lzon.ca/curios/curio-000023-why-i-don-t-think-agi-is-imminent/"></description>
+      </item>
+      
+      <item>
+          <title>22. The Birth &amp; Death of JavaScript</title>
+          <pubDate>Fri, 30 Jan 2026 00:00:00 +0000</pubDate>
+          <author>Lzon</author>
+          <link>https://lzon.ca/curios/curio-000022-the-birth-death-of-javascript/</link>
+          <guid isPermaLink="false">https://lzon.ca/curios/22</guid>
+          <description xml:base="https://lzon.ca/curios/curio-000022-the-birth-death-of-javascript/"></description>
+      </item>
+      
+      <item>
+          <title>21. The future of work when work is meaningless</title>
+          <pubDate>Mon, 26 Jan 2026 00:00:00 +0000</pubDate>
+          <author>Lzon</author>
+          <link>https://lzon.ca/curios/curio-000021-the-future-of-work-when-work-is-meaningless/</link>
+          <guid isPermaLink="false">https://lzon.ca/curios/21</guid>
+          <description xml:base="https://lzon.ca/curios/curio-000021-the-future-of-work-when-work-is-meaningless/"></description>
+      </item>
+      
+      <item>
+          <title>20. Manna by Marshall Brain</title>
+          <pubDate>Sun, 25 Jan 2026 00:00:00 +0000</pubDate>
+          <author>Lzon</author>
+          <link>https://lzon.ca/curios/curio-000020-manna-by-marshall-brain/</link>
+          <guid isPermaLink="false">https://lzon.ca/curios/20</guid>
+          <description xml:base="https://lzon.ca/curios/curio-000020-manna-by-marshall-brain/"></description>
+      </item>
+      
+      <item>
+          <title>19. What Is Soul Fatigue?</title>
+          <pubDate>Sat, 24 Jan 2026 00:00:00 +0000</pubDate>
+          <author>Lzon</author>
+          <link>https://lzon.ca/curios/curio-000019-what-is-soul-fatigue/</link>
+          <guid isPermaLink="false">https://lzon.ca/curios/19</guid>
+          <description xml:base="https://lzon.ca/curios/curio-000019-what-is-soul-fatigue/"></description>
+      </item>
+      
+      <item>
+          <title>18. Scientists find exercise rivals therapy for depression</title>
+          <pubDate>Sun, 11 Jan 2026 00:00:00 +0000</pubDate>
+          <author>Lzon</author>
+          <link>https://lzon.ca/curios/curio-000018-scientists-find-exercise-rivals-therapy-for-depression/</link>
+          <guid isPermaLink="false">https://lzon.ca/curios/18</guid>
+          <description xml:base="https://lzon.ca/curios/curio-000018-scientists-find-exercise-rivals-therapy-for-depression/"></description>
+      </item>
+      
+      <item>
+          <title>17. Are you already a Cyborg?</title>
+          <pubDate>Sat, 03 Jan 2026 00:00:00 +0000</pubDate>
+          <author>Lzon</author>
+          <link>https://lzon.ca/curios/curio-000017-are-you-already-a-cyborg/</link>
+          <guid isPermaLink="false">https://lzon.ca/curios/17</guid>
+          <description xml:base="https://lzon.ca/curios/curio-000017-are-you-already-a-cyborg/"></description>
+      </item>
+      
+      <item>
+          <title>16. Vanitiy Activities</title>
+          <pubDate>Thu, 25 Dec 2025 00:00:00 +0000</pubDate>
+          <author>Lzon</author>
+          <link>https://lzon.ca/curios/curio-000016-vanitiy-activities/</link>
+          <guid isPermaLink="false">https://lzon.ca/curios/16</guid>
+          <description xml:base="https://lzon.ca/curios/curio-000016-vanitiy-activities/"></description>
+      </item>
+      
+      <item>
+          <title>15. Is Everything a Religion?</title>
+          <pubDate>Fri, 19 Dec 2025 00:00:00 +0000</pubDate>
+          <author>Lzon</author>
+          <link>https://lzon.ca/curios/curio-000015-is-everything-a-religion/</link>
+          <guid isPermaLink="false">https://lzon.ca/curios/15</guid>
+          <description xml:base="https://lzon.ca/curios/curio-000015-is-everything-a-religion/"></description>
+      </item>
+      
+      <item>
+          <title>14. No Graphics API</title>
+          <pubDate>Thu, 18 Dec 2025 00:00:00 +0000</pubDate>
+          <author>Lzon</author>
+          <link>https://lzon.ca/curios/curio-000014-no-graphics-api/</link>
+          <guid isPermaLink="false">https://lzon.ca/curios/14</guid>
+          <description xml:base="https://lzon.ca/curios/curio-000014-no-graphics-api/"></description>
+      </item>
+      
+      <item>
+          <title>13. The history of Xerox</title>
+          <pubDate>Tue, 16 Dec 2025 00:00:00 +0000</pubDate>
+          <author>Lzon</author>
+          <link>https://lzon.ca/curios/curio-000013-the-history-of-xerox/</link>
+          <guid isPermaLink="false">https://lzon.ca/curios/13</guid>
+          <description xml:base="https://lzon.ca/curios/curio-000013-the-history-of-xerox/"></description>
+      </item>
+      
+      <item>
+          <title>12. Fix your timestep</title>
+          <pubDate>Mon, 15 Dec 2025 00:00:00 +0000</pubDate>
+          <author>Lzon</author>
+          <link>https://lzon.ca/curios/curio-000012-fix-your-timestep/</link>
+          <guid isPermaLink="false">https://lzon.ca/curios/12</guid>
+          <description xml:base="https://lzon.ca/curios/curio-000012-fix-your-timestep/"></description>
+      </item>
+      
+      <item>
+          <title>11. The Copenhagen Trap</title>
+          <pubDate>Fri, 12 Dec 2025 00:00:00 +0000</pubDate>
+          <author>Lzon</author>
+          <link>https://lzon.ca/curios/curio-000011-the-copenhagen-trap/</link>
+          <guid isPermaLink="false">https://lzon.ca/curios/11</guid>
+          <description xml:base="https://lzon.ca/curios/curio-000011-the-copenhagen-trap/"></description>
+      </item>
+      
+      <item>
+          <title>10. A History of Laptop Displays</title>
+          <pubDate>Mon, 24 Nov 2025 00:00:00 +0000</pubDate>
+          <author>Lzon</author>
+          <link>https://lzon.ca/curios/curio-000010-a-history-of-laptop-displays/</link>
+          <guid isPermaLink="false">https://lzon.ca/curios/10</guid>
+          <description xml:base="https://lzon.ca/curios/curio-000010-a-history-of-laptop-displays/"></description>
+      </item>
+      
+      <item>
+          <title>9. Flash of unstyled content (FOUC) </title>
+          <pubDate>Wed, 23 Jul 2025 00:00:00 +0000</pubDate>
+          <author>Lzon</author>
+          <link>https://lzon.ca/curios/curio-000009-flash-of-unstyled-content-fouc/</link>
+          <guid isPermaLink="false">https://lzon.ca/curios/9</guid>
+          <description xml:base="https://lzon.ca/curios/curio-000009-flash-of-unstyled-content-fouc/"></description>
+      </item>
+      
+      <item>
+          <title>8. Let me pay for Firefox</title>
+          <pubDate>Tue, 15 Jul 2025 00:00:00 +0000</pubDate>
+          <author>Lzon</author>
+          <link>https://lzon.ca/curios/curio-000008-let-me-pay-for-firefox/</link>
+          <guid isPermaLink="false">https://lzon.ca/curios/8</guid>
+          <description xml:base="https://lzon.ca/curios/curio-000008-let-me-pay-for-firefox/"></description>
+      </item>
+      
+      <item>
+          <title>7. Writing Toy Software Is A Joy</title>
+          <pubDate>Fri, 20 Jun 2025 00:00:00 +0000</pubDate>
+          <author>Lzon</author>
+          <link>https://lzon.ca/curios/curio-000007-writing-toy-software-is-a-joy/</link>
+          <guid isPermaLink="false">https://lzon.ca/curios/7</guid>
+          <description xml:base="https://lzon.ca/curios/curio-000007-writing-toy-software-is-a-joy/"></description>
+      </item>
+      
+      <item>
+          <title>6. The Intelligence Curse</title>
+          <pubDate>Mon, 09 Jun 2025 00:00:00 +0000</pubDate>
+          <author>Lzon</author>
+          <link>https://lzon.ca/curios/curio-000006-the-intelligence-curse/</link>
+          <guid isPermaLink="false">https://lzon.ca/curios/6</guid>
+          <description xml:base="https://lzon.ca/curios/curio-000006-the-intelligence-curse/"></description>
+      </item>
+      
+      <item>
+          <title>5. Build Your Own Text Editor</title>
+          <pubDate>Thu, 29 May 2025 00:00:00 +0000</pubDate>
+          <author>Lzon</author>
+          <link>https://lzon.ca/curios/curio-000005-build-your-own-text-editor/</link>
+          <guid isPermaLink="false">https://lzon.ca/curios/5</guid>
+          <description xml:base="https://lzon.ca/curios/curio-000005-build-your-own-text-editor/"></description>
+      </item>
+      
+      <item>
+          <title>4. Windows NT vs. Unix - A design comparison</title>
+          <pubDate>Wed, 28 May 2025 00:00:00 +0000</pubDate>
+          <author>Lzon</author>
+          <link>https://lzon.ca/curios/curio-000004-windows-nt-vs-unix-a-design-comparison/</link>
+          <guid isPermaLink="false">https://lzon.ca/curios/4</guid>
+          <description xml:base="https://lzon.ca/curios/curio-000004-windows-nt-vs-unix-a-design-comparison/"></description>
+      </item>
+      
+      <item>
+          <title>3. Basic Hacks for Kobo E-Readers</title>
+          <pubDate>Wed, 28 May 2025 00:00:00 +0000</pubDate>
+          <author>Lzon</author>
+          <link>https://lzon.ca/curios/curio-000003-basic-hacks-for-kobo-e-readers/</link>
+          <guid isPermaLink="false">https://lzon.ca/curios/3</guid>
+          <description xml:base="https://lzon.ca/curios/curio-000003-basic-hacks-for-kobo-e-readers/"></description>
+      </item>
+      
+      <item>
+          <title>2. Ship Software That Does Nothing</title>
+          <pubDate>Wed, 28 May 2025 00:00:00 +0000</pubDate>
+          <author>Lzon</author>
+          <link>https://lzon.ca/curios/curio-000002-ship-software-that-does-nothing/</link>
+          <guid isPermaLink="false">https://lzon.ca/curios/2</guid>
+          <description xml:base="https://lzon.ca/curios/curio-000002-ship-software-that-does-nothing/"></description>
+      </item>
+      
+      <item>
+          <title>1. How to build your resume with an SSG</title>
+          <pubDate>Tue, 20 May 2025 00:00:00 +0000</pubDate>
+          <author>Lzon</author>
+          <link>https://lzon.ca/curios/curio-000001-how-to-build-your-resume-with-an-ssg/</link>
+          <guid isPermaLink="false">https://lzon.ca/curios/1</guid>
+          <description xml:base="https://lzon.ca/curios/curio-000001-how-to-build-your-resume-with-an-ssg/"></description>
+      </item>
+    </channel>
+</rss>

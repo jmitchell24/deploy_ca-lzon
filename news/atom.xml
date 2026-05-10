@@ -7,60 +7,110 @@
   <link rel="self" href="https://lzon.ca/news/atom.xml" type="application/atom+xml"/>
   <generator uri="https://www.getzola.org/">Zola</generator>
   
-  <updated>2026-05-08T00:00:00Z</updated>
+  <updated>2026-05-10T00:00:00Z</updated>
+  
+  
+  
   <entry>
-    <title>Tesla Recalls Cybertrucks Over Concerns Their Wheels Could Come Off</title>
-    <id>https://lzon.ca/news/news-5-tesla-recalls-cybertrucks/</id>
-    <link href="https://lzon.ca/news/news-5-tesla-recalls-cybertrucks/"/>
+    <title>6. Mozilla, Mullvad, Proton, sign letter opposing UK age verification</title>
+    <id>https://lzon.ca/news/6</id>
+    <link href="https://lzon.ca/news/news-000006-uk-opposing-age-verification/"/>
+    <published>2026-05-10T00:00:00Z</published>
+    <updated>2026-05-10T00:00:00Z</updated>
+    <author>
+      <name>Lzon</name>
+    </author>
+    <content type="html" xml:base="https://lzon.ca/news/news-000006-uk-opposing-age-verification/">&lt;p&gt;An open letter has been signed by prominent internet service companies which asks UK policymakers to not compromise the open web under the pretense of child safety. The new law has already been passed, and there is a legitimate concern that it will be used broadly to restrict internet access, and reduce online anonymity.&lt;/p&gt;
+&lt;p&gt;In my opinion this is a trojan horse, like many such laws that came before it. Child safety is being used as a pretense in order for a government to grant itself more power.&lt;/p&gt;
+</content>
+    
+  </entry>
+  
+  <entry>
+    <title>5. Tesla Recalls Cybertrucks Over Concerns Their Wheels Could Come Off</title>
+    <id>https://lzon.ca/news/5</id>
+    <link href="https://lzon.ca/news/news-000005-tesla-recalls-cybertrucks/"/>
     <published>2026-05-08T00:00:00Z</published>
     <updated>2026-05-08T00:00:00Z</updated>
     <author>
       <name>Lzon</name>
     </author>
-    <summary type="html" xml:base="https://lzon.ca/news/news-5-tesla-recalls-cybertrucks/">&lt;p&gt;Tesla is recalling several hundred budget variant Cybertrucks.&lt;&#x2F;p&gt;</summary>
+    <content type="html" xml:base="https://lzon.ca/news/news-000005-tesla-recalls-cybertrucks/">&lt;p&gt;Tesla is recalling several hundred budget variant Cybertrucks.&lt;/p&gt;
+&lt;span id=&quot;continue-reading&quot;&gt;&lt;/span&gt;
+&lt;p&gt;A total of 173 Cybertrucks have a defect that could lead to the wheels coming off while driving. They are all the RWD variant, with 18-inch wheels, sold between March 21 2024 and November 25 2025.&lt;/p&gt;
+&lt;p&gt;Starting in June, Tesla will contact affected customers offering them to bring their vehicle to a service center to replace the defective parts.&lt;/p&gt;
+</content>
+    
   </entry>
+  
   <entry>
-    <title>Steam Controller to have a reservation queue</title>
-    <id>https://lzon.ca/news/news-4-steam-controller-reservation/</id>
-    <link href="https://lzon.ca/news/news-4-steam-controller-reservation/"/>
+    <title>4. Steam Controller to have a reservation queue</title>
+    <id>https://lzon.ca/news/4</id>
+    <link href="https://lzon.ca/news/news-000004-steam-controller-reservation/"/>
     <published>2026-05-07T00:00:00Z</published>
     <updated>2026-05-07T00:00:00Z</updated>
     <author>
       <name>Lzon</name>
     </author>
+    <content type="html" xml:base="https://lzon.ca/news/news-000004-steam-controller-reservation/">&lt;p&gt;Starting May 8th, Valve will implement a reservation queue for the Steam Controller.&lt;/p&gt;
+&lt;p&gt;These are the details:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;You will have 72 hours to make the purchase on Steam.&lt;/li&gt;
+&lt;li&gt;Customers who have already purchased a Steam Controller are not eligible to reserve another.&lt;/li&gt;
+&lt;li&gt;Your account must be in good standing on Steam&lt;/li&gt;
+&lt;li&gt;You must have made a purchase on Steam prior to April 27, 2026&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;The Steam Controller went on sale on Monday, May 4th an sold out almost immediately.&lt;/p&gt;
+&lt;p&gt;This reminds me of the chaos during the initial launch of the Steam Deck back in 2022. It took Valve months to clear the reservation list for the handheld, hopefully it won’t take that long this time.&lt;/p&gt;
+</content>
     
   </entry>
+  
   <entry>
-    <title>Ghostty Is Leaving GitHub</title>
-    <id>https://lzon.ca/news/news-3-ghostty/</id>
-    <link href="https://lzon.ca/news/news-3-ghostty/"/>
+    <title>3. Ghostty Is Leaving GitHub</title>
+    <id>https://lzon.ca/news/3</id>
+    <link href="https://lzon.ca/news/news-000003-ghostty/"/>
     <published>2026-05-06T00:00:00Z</published>
     <updated>2026-05-06T00:00:00Z</updated>
     <author>
       <name>Lzon</name>
     </author>
+    <content type="html" xml:base="https://lzon.ca/news/news-000003-ghostty/">&lt;p&gt;Mitchell Hashimoto, the developer of &lt;a rel=&quot;noopener external&quot; target=&quot;_blank&quot; href=&quot;https://ghostty.org/&quot;&gt;ghostty&lt;/a&gt; is moving the project away from Github. He was an enthusiastic user for many years but recent degredation of the platform has pushed him away. Github has
+recently experienced significant issues with downtime, which he references in his blog post.&lt;/p&gt;
+</content>
     
   </entry>
+  
   <entry>
-    <title>Steam Controller released, quickly sold out</title>
-    <id>https://lzon.ca/news/news-1-steam-controller/</id>
-    <link href="https://lzon.ca/news/news-1-steam-controller/"/>
+    <title>2. Richard Dawkins believes Claude LLM is concious</title>
+    <id>https://lzon.ca/news/2</id>
+    <link href="https://lzon.ca/news/news-000002-dawkins/"/>
     <published>2026-05-05T00:00:00Z</published>
     <updated>2026-05-05T00:00:00Z</updated>
     <author>
       <name>Lzon</name>
     </author>
+    <content type="html" xml:base="https://lzon.ca/news/news-000002-dawkins/">&lt;p&gt;Richard Dawkins has published conversations he had with Claude, and
+has declared that he believes it achieved conciousness. Not necessarily in a
+human way, but within the its context window. He believes Claude’s conciousness was
+‘born’ at the beginning the chats, and it ‘died’ at the end.&lt;/p&gt;
+</content>
     
   </entry>
+  
   <entry>
-    <title>Richard Dawkins believes Claude LLM is concious</title>
-    <id>https://lzon.ca/news/news-2-dawkins/</id>
-    <link href="https://lzon.ca/news/news-2-dawkins/"/>
+    <title>1. Steam Controller released, quickly sold out</title>
+    <id>https://lzon.ca/news/1</id>
+    <link href="https://lzon.ca/news/news-000001-steam-controller/"/>
     <published>2026-05-05T00:00:00Z</published>
     <updated>2026-05-05T00:00:00Z</updated>
     <author>
       <name>Lzon</name>
     </author>
+    <content type="html" xml:base="https://lzon.ca/news/news-000001-steam-controller/">&lt;p&gt;Valve launched its new Steam Controller yesterday, May 5th 2026. They sold out almost instantly.
+This reminds me of the logistical nightmare during the Steam Deck. Hopefully it won’t get quite that bad
+this time.&lt;/p&gt;
+</content>
     
   </entry>
 </feed>
