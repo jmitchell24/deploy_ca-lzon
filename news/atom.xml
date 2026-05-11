@@ -7,9 +7,25 @@
   <link rel="self" href="https://lzon.ca/news/atom.xml" type="application/atom+xml"/>
   <generator uri="https://www.getzola.org/">Zola</generator>
   
-  <updated>2026-05-10T00:00:00Z</updated>
+  <updated>2026-05-11T00:00:00Z</updated>
   
   
+  
+  <entry>
+    <title>7. Pirates are already playing Forza Horizon 6 days before its launch</title>
+    <id>https://lzon.ca/news/7</id>
+    <link href="https://lzon.ca/news/news-000007-pirates-playing-forza-horizon-6/"/>
+    <published>2026-05-11T00:00:00Z</published>
+    <updated>2026-05-11T00:00:00Z</updated>
+    <author>
+      <name>Lzon</name>
+    </author>
+    <content type="html" xml:base="https://lzon.ca/news/news-000007-pirates-playing-forza-horizon-6/">&lt;p&gt;Game pirates are already playing Forza Horizon 6, more than a week ahead of the title’s official release date.&lt;/p&gt;
+&lt;p&gt;This was made possible by copying the game’s preload install files, which were mistakenly distributed on Steam without encryption.&lt;/p&gt;
+&lt;p&gt;There was a similar incident back in March for the release of Death Stranding 2.&lt;/p&gt;
+</content>
+    
+  </entry>
   
   <entry>
     <title>6. Mozilla, Mullvad, Proton, sign letter opposing UK age verification</title>

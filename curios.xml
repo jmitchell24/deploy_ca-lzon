@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-        <feed xmlns="http://www.w3.org/2005/Atom">
-            <id>https://lzon.ca/curios.xml</id>
-            <title>lzon.ca – Curios</title>
-            <link href="https://lzon.ca/more/curios" rel="alternate" />
-            <link href="https://lzon.ca/curios.xml" rel="self" />
-            <updated>T00:00:00Z</updated>
-            
-        </feed>
