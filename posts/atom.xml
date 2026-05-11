@@ -7,9 +7,21 @@
   <link rel="self" href="https://lzon.ca/posts/atom.xml" type="application/atom+xml"/>
   <generator uri="https://www.getzola.org/">Zola</generator>
   
-  <updated>2026-05-03T00:00:00Z</updated>
+  <updated>2026-05-10T00:00:00Z</updated>
   
   
+  
+  <entry>
+    <title>News &amp; Feeds</title>
+    <id>https://lzon.ca/posts/site/news-feed-update/</id>
+    <link href="https://lzon.ca/posts/site/news-feed-update/"/>
+    <published>2026-05-10T00:00:00Z</published>
+    <updated>2026-05-10T00:00:00Z</updated>
+    <author>
+      <name>Lzon</name>
+    </author>
+    <summary type="html" xml:base="https://lzon.ca/posts/site/news-feed-update/">&lt;p&gt;This is what I’ve been working recently on the site.&lt;&#x2F;p&gt;</summary>
+  </entry>
   
   <entry>
     <title>Gratitude for an Open Android</title>

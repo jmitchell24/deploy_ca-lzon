@@ -8,9 +8,18 @@
       <generator>Zola</generator>
       <language>en</language>
       <atom:link href="https://lzon.ca/posts/rss.xml" rel="self" type="application/rss+xml"/>
-      <lastBuildDate>Sun, 03 May 2026 00:00:00 +0000</lastBuildDate>
+      <lastBuildDate>Sun, 10 May 2026 00:00:00 +0000</lastBuildDate>
       
       
+      
+      <item>
+          <title>News &amp; Feeds</title>
+          <pubDate>Sun, 10 May 2026 00:00:00 +0000</pubDate>
+          <author>Lzon</author>
+          <link>https://lzon.ca/posts/site/news-feed-update/</link>
+          <guid isPermaLink="false">https://lzon.ca/posts/site/news-feed-update/</guid>
+          <description xml:base="https://lzon.ca/posts/site/news-feed-update/">&lt;p&gt;This is what I’ve been working recently on the site.&lt;&#x2F;p&gt;</description>
+      </item>
       
       <item>
           <title>Gratitude for an Open Android</title>
