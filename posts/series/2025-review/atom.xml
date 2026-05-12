@@ -1,15 +1,35 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
+
+  
+
   <title>
     lzon.ca - Year in Review 2025</title>
+
   <id>https://lzon.ca/posts/series/2025-review/</id>
+
   <link rel="alternate" href="https://lzon.ca"/>
   <link rel="self" href="https://lzon.ca/posts/series/2025-review/atom.xml" type="application/atom+xml"/>
   <generator uri="https://www.getzola.org/">Zola</generator>
+
   
   <updated>2026-01-02T00:00:00Z</updated>
+
   
   
+  
+
+  
+  
+  
+
+  
+  
+
+  
+
+  
+
   
   <entry>
     <title>Year in Review 2025 - AI</title>
@@ -17,11 +37,10 @@
     <link href="https://lzon.ca/posts/series/2025-review/2025-review-ai/"/>
     <published>2026-01-02T00:00:00Z</published>
     <updated>2026-01-02T00:00:00Z</updated>
-    <author>
-      <name>Lzon</name>
-    </author>
+    <author><name>Lzon</name></author>
     <summary type="html" xml:base="https://lzon.ca/posts/series/2025-review/2025-review-ai/">&lt;p&gt;Here’s my (slightly tardy) review of artificial intelligence at the end of 2025.&lt;&#x2F;p&gt;</summary>
   </entry>
+
   
   <entry>
     <title>Year in Review 2025 - Gaming</title>
@@ -29,11 +48,10 @@
     <link href="https://lzon.ca/posts/series/2025-review/2025-review-gaming/"/>
     <published>2026-01-01T00:00:00Z</published>
     <updated>2026-01-02T00:00:00Z</updated>
-    <author>
-      <name>Lzon</name>
-    </author>
+    <author><name>Lzon</name></author>
     <summary type="html" xml:base="https://lzon.ca/posts/series/2025-review/2025-review-gaming/">&lt;p&gt;Here’s my review of gaming in 2025, including a prediction for the new year.&lt;&#x2F;p&gt;</summary>
   </entry>
+
   
   <entry>
     <title>Year in Review 2025 - Smartphones</title>
@@ -41,9 +59,8 @@
     <link href="https://lzon.ca/posts/series/2025-review/2025-review-smartphones/"/>
     <published>2025-12-31T00:00:00Z</published>
     <updated>2025-12-31T00:00:00Z</updated>
-    <author>
-      <name>Lzon</name>
-    </author>
+    <author><name>Lzon</name></author>
     <summary type="html" xml:base="https://lzon.ca/posts/series/2025-review/2025-review-smartphones/">&lt;p&gt;Here’s my review of smartphone tech in 2025, as well as a prediction for 2026!&lt;&#x2F;p&gt;</summary>
   </entry>
+
 </feed>

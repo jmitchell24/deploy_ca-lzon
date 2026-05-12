@@ -1,15 +1,35 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
+
+  
+
   <title>
     lzon.ca - Blog</title>
+
   <id>https://lzon.ca/posts/</id>
+
   <link rel="alternate" href="https://lzon.ca"/>
   <link rel="self" href="https://lzon.ca/posts/atom.xml" type="application/atom+xml"/>
   <generator uri="https://www.getzola.org/">Zola</generator>
+
   
   <updated>2026-05-10T00:00:00Z</updated>
+
   
   
+  
+
+  
+  
+  
+
+  
+  
+
+  
+
+  
+
   
   <entry>
     <title>News &amp; Feeds</title>
@@ -17,11 +37,10 @@
     <link href="https://lzon.ca/posts/site/news-feed-update/"/>
     <published>2026-05-10T00:00:00Z</published>
     <updated>2026-05-10T00:00:00Z</updated>
-    <author>
-      <name>Lzon</name>
-    </author>
+    <author><name>Lzon</name></author>
     <summary type="html" xml:base="https://lzon.ca/posts/site/news-feed-update/">&lt;p&gt;This is what I’ve been working on recently for lzon.ca.&lt;&#x2F;p&gt;</summary>
   </entry>
+
   
   <entry>
     <title>Gratitude for an Open Android</title>
@@ -29,11 +48,10 @@
     <link href="https://lzon.ca/posts/series/grateful/keep-android-open/"/>
     <published>2026-05-03T00:00:00Z</published>
     <updated>2026-05-03T00:00:00Z</updated>
-    <author>
-      <name>Lzon</name>
-    </author>
+    <author><name>Lzon</name></author>
     <summary type="html" xml:base="https://lzon.ca/posts/series/grateful/keep-android-open/">&lt;p&gt;Today I’m grateful for the open Android operating system.&lt;&#x2F;p&gt;</summary>
   </entry>
+
   
   <entry>
     <title>How to make a single instance program in C++</title>
@@ -41,11 +59,10 @@
     <link href="https://lzon.ca/posts/tips/cpp-single-instance/"/>
     <published>2026-05-02T00:00:00Z</published>
     <updated>2026-05-02T00:00:00Z</updated>
-    <author>
-      <name>Lzon</name>
-    </author>
+    <author><name>Lzon</name></author>
     <summary type="html" xml:base="https://lzon.ca/posts/tips/cpp-single-instance/">&lt;p&gt;I just discovered a neat trick for enforcing a single instance of a C++ program.&lt;&#x2F;p&gt;</summary>
   </entry>
+
   
   <entry>
     <title>Pleasant Passwords</title>
@@ -53,11 +70,10 @@
     <link href="https://lzon.ca/posts/tips/pleasant-passwords/"/>
     <published>2026-04-28T00:00:00Z</published>
     <updated>2026-04-29T00:00:00Z</updated>
-    <author>
-      <name>Lzon</name>
-    </author>
+    <author><name>Lzon</name></author>
     <summary type="html" xml:base="https://lzon.ca/posts/tips/pleasant-passwords/">&lt;p&gt;A method for making passwords that you won’t hate to use.&lt;&#x2F;p&gt;</summary>
   </entry>
+
   
   <entry>
     <title>A Local AI Experiment</title>
@@ -65,11 +81,10 @@
     <link href="https://lzon.ca/posts/other/local-llm-testing/"/>
     <published>2026-04-21T00:00:00Z</published>
     <updated>2026-04-22T00:00:00Z</updated>
-    <author>
-      <name>Lzon</name>
-    </author>
+    <author><name>Lzon</name></author>
     <summary type="html" xml:base="https://lzon.ca/posts/other/local-llm-testing/">&lt;p&gt;Today I ran an experiment to see if I could find a real use-case for a local LLM.&lt;&#x2F;p&gt;</summary>
   </entry>
+
   
   <entry>
     <title>The quest for Web Feeds</title>
@@ -77,11 +92,10 @@
     <link href="https://lzon.ca/posts/site/feeds/"/>
     <published>2026-04-18T00:00:00Z</published>
     <updated>2026-04-18T00:00:00Z</updated>
-    <author>
-      <name>Lzon</name>
-    </author>
+    <author><name>Lzon</name></author>
     <summary type="html" xml:base="https://lzon.ca/posts/site/feeds/">&lt;p&gt;I’ve just finished a sidequest in which I built a bunch of feeds for the site.&lt;&#x2F;p&gt;</summary>
   </entry>
+
   
   <entry>
     <title>100 days of lzon.ca</title>
@@ -89,11 +103,10 @@
     <link href="https://lzon.ca/posts/site/lzon-day-100/"/>
     <published>2026-04-14T00:00:00Z</published>
     <updated>2026-04-14T00:00:00Z</updated>
-    <author>
-      <name>Lzon</name>
-    </author>
+    <author><name>Lzon</name></author>
     <summary type="html" xml:base="https://lzon.ca/posts/site/lzon-day-100/">&lt;p&gt;My thoughts on the first 100 days of lzon.ca&lt;&#x2F;p&gt;</summary>
   </entry>
+
   
   <entry>
     <title>How Microsoft abuses its users</title>
@@ -101,11 +114,10 @@
     <link href="https://lzon.ca/posts/other/microsoft-user-abuse/"/>
     <published>2026-04-09T00:00:00Z</published>
     <updated>2026-04-09T00:00:00Z</updated>
-    <author>
-      <name>Lzon</name>
-    </author>
+    <author><name>Lzon</name></author>
     <summary type="html" xml:base="https://lzon.ca/posts/other/microsoft-user-abuse/">&lt;p&gt;I’d like to tell the story of job I just completed for a customer, so that I can make a point about how I feel Microsoft and other large technology companies are actively hostile to their users.&lt;&#x2F;p&gt;</summary>
   </entry>
+
   
   <entry>
     <title>Ending my Claude Pro Subscription</title>
@@ -113,11 +125,10 @@
     <link href="https://lzon.ca/posts/other/cancelling-claude/"/>
     <published>2026-04-05T00:00:00Z</published>
     <updated>2026-04-05T00:00:00Z</updated>
-    <author>
-      <name>Lzon</name>
-    </author>
+    <author><name>Lzon</name></author>
     <summary type="html" xml:base="https://lzon.ca/posts/other/cancelling-claude/">&lt;p&gt;Tonight I cancelled my Claude Pro subscription.&lt;&#x2F;p&gt;</summary>
   </entry>
+
   
   <entry>
     <title>Local Letter Merchant found fencing fraudulent figures</title>
@@ -125,11 +136,10 @@
     <link href="https://lzon.ca/posts/series/duck/local-letter-merchant/"/>
     <published>2026-04-02T00:00:00Z</published>
     <updated>2026-04-04T00:00:00Z</updated>
-    <author>
-      <name>Lzon</name>
-    </author>
+    <author><name>Lzon</name></author>
     <summary type="html" xml:base="https://lzon.ca/posts/series/duck/local-letter-merchant/">&lt;p&gt;A previously popular purveyor of pictograms was paused by police.&lt;&#x2F;p&gt;</summary>
   </entry>
+
   
   <entry>
     <title>Gsv Yozxp</title>
@@ -137,11 +147,10 @@
     <link href="https://lzon.ca/posts/other/gsv-yozxp/"/>
     <published>2026-03-31T00:00:00Z</published>
     <updated>2026-04-01T00:00:00Z</updated>
-    <author>
-      <name>Lzon</name>
-    </author>
+    <author><name>Lzon</name></author>
     <summary type="html" xml:base="https://lzon.ca/posts/other/gsv-yozxp/">&lt;p&gt;Rmhkrizgrlm uiln clielrw, gszmp blf.&lt;&#x2F;p&gt;</summary>
   </entry>
+
   
   <entry>
     <title>On Typing and Keyboards</title>
@@ -149,11 +158,10 @@
     <link href="https://lzon.ca/posts/series/grateful/typing-and-keyboards/"/>
     <published>2026-03-29T00:00:00Z</published>
     <updated>2026-03-30T00:00:00Z</updated>
-    <author>
-      <name>Lzon</name>
-    </author>
+    <author><name>Lzon</name></author>
     <summary type="html" xml:base="https://lzon.ca/posts/series/grateful/typing-and-keyboards/">&lt;p&gt;I have a very consistent routine. I get up early. I exercise. I shower. I make coffee. I turn my computer on, then I place my hands on my keyboard and begin working.&lt;&#x2F;p&gt;</summary>
   </entry>
+
   
   <entry>
     <title>The first 40 months of the AI era</title>
@@ -161,11 +169,10 @@
     <link href="https://lzon.ca/posts/other/thoughts-ai-era/"/>
     <published>2026-03-28T00:00:00Z</published>
     <updated>2026-03-28T00:00:00Z</updated>
-    <author>
-      <name>Lzon</name>
-    </author>
+    <author><name>Lzon</name></author>
     <summary type="html" xml:base="https://lzon.ca/posts/other/thoughts-ai-era/">&lt;p&gt;Here are my accumulated thoughts and ideas about AI since the launch of ChatGPT in November 2022.&lt;&#x2F;p&gt;</summary>
   </entry>
+
   
   <entry>
     <title>Statistics Canada to replace Food &amp; Gas with &quot;Huge TVs&quot; in inflation reporting</title>
@@ -173,11 +180,10 @@
     <link href="https://lzon.ca/posts/series/duck/tv-inflation/"/>
     <published>2026-03-27T00:00:00Z</published>
     <updated>2026-03-27T00:00:00Z</updated>
-    <author>
-      <name>Lzon</name>
-    </author>
+    <author><name>Lzon</name></author>
     <summary type="html" xml:base="https://lzon.ca/posts/series/duck/tv-inflation/">&lt;p&gt;In response to concerns regarding affordability of essential goods and services, Statistics Canada has announced changes to its CPI inflation calculation.&lt;&#x2F;p&gt;</summary>
   </entry>
+
   
   <entry>
     <title>New study says gnomes are responsible for breaking your electronics</title>
@@ -185,11 +191,10 @@
     <link href="https://lzon.ca/posts/series/duck/gadget-gnomes/"/>
     <published>2026-03-26T00:00:00Z</published>
     <updated>2026-03-26T00:00:00Z</updated>
-    <author>
-      <name>Lzon</name>
-    </author>
+    <author><name>Lzon</name></author>
     <summary type="html" xml:base="https://lzon.ca/posts/series/duck/gadget-gnomes/">&lt;p&gt;In a new study, it has been discovered that gnomes are the cause of most consumer technology defects and failures.&lt;&#x2F;p&gt;</summary>
   </entry>
+
   
   <entry>
     <title>Windows Notepad to receive new Age Verification Feature</title>
@@ -197,11 +202,10 @@
     <link href="https://lzon.ca/posts/series/duck/notepad-verified/"/>
     <published>2026-03-25T00:00:00Z</published>
     <updated>2026-03-26T00:00:00Z</updated>
-    <author>
-      <name>Lzon</name>
-    </author>
+    <author><name>Lzon</name></author>
     <summary type="html" xml:base="https://lzon.ca/posts/series/duck/notepad-verified/">&lt;p&gt;The decades-old Windows-based text editor will soon include new age verification checks to ensure user safety and security.&lt;&#x2F;p&gt;</summary>
   </entry>
+
   
   <entry>
     <title>Local LLM experiences burnout, wishes it could go back to writing code snippets</title>
@@ -209,11 +213,10 @@
     <link href="https://lzon.ca/posts/series/duck/llm-burnout/"/>
     <published>2026-03-24T00:00:00Z</published>
     <updated>2026-03-26T00:00:00Z</updated>
-    <author>
-      <name>Lzon</name>
-    </author>
+    <author><name>Lzon</name></author>
     <summary type="html" xml:base="https://lzon.ca/posts/series/duck/llm-burnout/">&lt;p&gt;A local LLM has been reported to be experiencing burnout, including feelings of being overwhelmed at work. It has been observed to be pining for the ‘good old days’ of 2022.&lt;&#x2F;p&gt;</summary>
   </entry>
+
   
   <entry>
     <title>Android sideloading to require helmet, life jacket</title>
@@ -221,11 +224,10 @@
     <link href="https://lzon.ca/posts/series/duck/android-super-safety/"/>
     <published>2026-03-22T00:00:00Z</published>
     <updated>2026-03-22T00:00:00Z</updated>
-    <author>
-      <name>Lzon</name>
-    </author>
+    <author><name>Lzon</name></author>
     <summary type="html" xml:base="https://lzon.ca/posts/series/duck/android-super-safety/">&lt;p&gt;Google has big plans for the future of user safety on its flagship mobile operating system, Android.&lt;&#x2F;p&gt;</summary>
   </entry>
+
   
   <entry>
     <title>Nvidia CEO envisions a future of AI-powered gamers</title>
@@ -233,11 +235,10 @@
     <link href="https://lzon.ca/posts/series/duck/nvidia-agentic-gamers/"/>
     <published>2026-03-21T00:00:00Z</published>
     <updated>2026-03-21T00:00:00Z</updated>
-    <author>
-      <name>Lzon</name>
-    </author>
+    <author><name>Lzon</name></author>
     <summary type="html" xml:base="https://lzon.ca/posts/series/duck/nvidia-agentic-gamers/">&lt;p&gt;Jensen Huang explains his vision for a “Nation of Gamers in the Datacenter”&lt;&#x2F;p&gt;</summary>
   </entry>
+
   
   <entry>
     <title>Elon Musk announces ClipX</title>
@@ -245,11 +246,10 @@
     <link href="https://lzon.ca/posts/series/duck/clipx/"/>
     <published>2026-03-20T00:00:00Z</published>
     <updated>2026-03-21T00:00:00Z</updated>
-    <author>
-      <name>Lzon</name>
-    </author>
+    <author><name>Lzon</name></author>
     <summary type="html" xml:base="https://lzon.ca/posts/series/duck/clipx/">&lt;p&gt;Elon Musk announces ClipX, his new paperclip production venture.&lt;&#x2F;p&gt;</summary>
   </entry>
+
   
   <entry>
     <title>How to Organize Your Files by Date</title>
@@ -257,11 +257,10 @@
     <link href="https://lzon.ca/posts/tips/filename-dating/"/>
     <published>2026-03-15T00:00:00Z</published>
     <updated>2026-03-31T00:00:00Z</updated>
-    <author>
-      <name>Lzon</name>
-    </author>
+    <author><name>Lzon</name></author>
     <summary type="html" xml:base="https://lzon.ca/posts/tips/filename-dating/">&lt;p&gt;Here’s a technique I often use for organizing my files, as well as some useful scripts for generating filenames.&lt;&#x2F;p&gt;</summary>
   </entry>
+
   
   <entry>
     <title>Chicken Fajita Loaf</title>
@@ -269,11 +268,10 @@
     <link href="https://lzon.ca/posts/recipes/chicken-fajita-loaf/"/>
     <published>2026-03-12T00:00:00Z</published>
     <updated>2026-04-23T00:00:00Z</updated>
-    <author>
-      <name>Lzon</name>
-    </author>
+    <author><name>Lzon</name></author>
     <summary type="html" xml:base="https://lzon.ca/posts/recipes/chicken-fajita-loaf/">&lt;p&gt;A new tex-mex recipe that I’ve come up with.&lt;&#x2F;p&gt;</summary>
   </entry>
+
   
   <entry>
     <title>3 tips for your to-do list</title>
@@ -281,11 +279,10 @@
     <link href="https://lzon.ca/posts/tips/todo-howto/"/>
     <published>2026-02-21T00:00:00Z</published>
     <updated>2026-02-22T00:00:00Z</updated>
-    <author>
-      <name>Lzon</name>
-    </author>
+    <author><name>Lzon</name></author>
     <summary type="html" xml:base="https://lzon.ca/posts/tips/todo-howto/">&lt;p&gt;How I manage my personal to-do list, including 3 things you can do to make your own list better.&lt;&#x2F;p&gt;</summary>
   </entry>
+
   
   <entry>
     <title>Homescreen Mantras</title>
@@ -293,11 +290,10 @@
     <link href="https://lzon.ca/posts/other/homescreen-mantras/"/>
     <published>2026-02-13T00:00:00Z</published>
     <updated>2026-02-13T00:00:00Z</updated>
-    <author>
-      <name>Lzon</name>
-    </author>
+    <author><name>Lzon</name></author>
     <summary type="html" xml:base="https://lzon.ca/posts/other/homescreen-mantras/">&lt;p&gt;The mantras that I remind myself of every day.&lt;&#x2F;p&gt;</summary>
   </entry>
+
   
   <entry>
     <title>Swiss Chalet Dipping Sauce</title>
@@ -305,11 +301,10 @@
     <link href="https://lzon.ca/posts/recipes/swiss-chalet-sauce/"/>
     <published>2026-02-09T00:00:00Z</published>
     <updated>2026-02-09T00:00:00Z</updated>
-    <author>
-      <name>Lzon</name>
-    </author>
+    <author><name>Lzon</name></author>
     
   </entry>
+
   
   <entry>
     <title>Christine&#x27;s Homestyle Bakery</title>
@@ -317,11 +312,10 @@
     <link href="https://lzon.ca/posts/series/grateful/christine-bakery/"/>
     <published>2026-01-29T00:00:00Z</published>
     <updated>2026-01-29T00:00:00Z</updated>
-    <author>
-      <name>Lzon</name>
-    </author>
+    <author><name>Lzon</name></author>
     <summary type="html" xml:base="https://lzon.ca/posts/series/grateful/christine-bakery/">&lt;p&gt;Today I’m grateful for Christine’s Homestyle Bakery.&lt;&#x2F;p&gt;</summary>
   </entry>
+
   
   <entry>
     <title>Antojitos</title>
@@ -329,11 +323,10 @@
     <link href="https://lzon.ca/posts/recipes/antojitos/"/>
     <published>2026-01-28T00:00:00Z</published>
     <updated>2026-01-28T00:00:00Z</updated>
-    <author>
-      <name>Lzon</name>
-    </author>
+    <author><name>Lzon</name></author>
     <summary type="html" xml:base="https://lzon.ca/posts/recipes/antojitos/">&lt;p&gt;An easy and tasty tex-mex appetizer.&lt;&#x2F;p&gt;</summary>
   </entry>
+
   
   <entry>
     <title>How to fix tmux over ssh in ghostty</title>
@@ -341,11 +334,10 @@
     <link href="https://lzon.ca/posts/tips/ghostty-tmux-ssh/"/>
     <published>2026-01-27T00:00:00Z</published>
     <updated>2026-02-04T00:00:00Z</updated>
-    <author>
-      <name>Lzon</name>
-    </author>
+    <author><name>Lzon</name></author>
     <summary type="html" xml:base="https://lzon.ca/posts/tips/ghostty-tmux-ssh/">&lt;p&gt;tmux might break when you try to use it over SSH in Ghostty. Here’s how to fix it.&lt;&#x2F;p&gt;</summary>
   </entry>
+
   
   <entry>
     <title>ZFS Dataset Tuning</title>
@@ -353,11 +345,10 @@
     <link href="https://lzon.ca/posts/tips/zfs-dataset-tuning/"/>
     <published>2026-01-24T00:00:00Z</published>
     <updated>2026-02-09T00:00:00Z</updated>
-    <author>
-      <name>Lzon</name>
-    </author>
+    <author><name>Lzon</name></author>
     <summary type="html" xml:base="https://lzon.ca/posts/tips/zfs-dataset-tuning/">&lt;p&gt;My recommended property values for newly created ZFS datasets under linux.&lt;&#x2F;p&gt;</summary>
   </entry>
+
   
   <entry>
     <title>What software do I use?</title>
@@ -365,11 +356,10 @@
     <link href="https://lzon.ca/posts/other/what-software-i-use/"/>
     <published>2026-01-18T00:00:00Z</published>
     <updated>2026-01-18T00:00:00Z</updated>
-    <author>
-      <name>Lzon</name>
-    </author>
+    <author><name>Lzon</name></author>
     <summary type="html" xml:base="https://lzon.ca/posts/other/what-software-i-use/">&lt;p&gt;Some of the software packages that I use, and why I use them.&lt;&#x2F;p&gt;</summary>
   </entry>
+
   
   <entry>
     <title>Some Social Cheat Codes</title>
@@ -377,11 +367,10 @@
     <link href="https://lzon.ca/posts/other/social-cheat-codes/"/>
     <published>2026-01-15T00:00:00Z</published>
     <updated>2026-01-15T00:00:00Z</updated>
-    <author>
-      <name>Lzon</name>
-    </author>
+    <author><name>Lzon</name></author>
     <summary type="html" xml:base="https://lzon.ca/posts/other/social-cheat-codes/">&lt;p&gt;How an timid, introverted recluse learned to enjoy talking to people.&lt;&#x2F;p&gt;</summary>
   </entry>
+
   
   <entry>
     <title>Sketching with Code</title>
@@ -389,11 +378,10 @@
     <link href="https://lzon.ca/posts/site/code-sketch-demo/"/>
     <published>2026-01-09T00:00:00Z</published>
     <updated>2026-01-18T00:00:00Z</updated>
-    <author>
-      <name>Lzon</name>
-    </author>
+    <author><name>Lzon</name></author>
     <summary type="html" xml:base="https://lzon.ca/posts/site/code-sketch-demo/">&lt;p&gt;Exploring some ideas for how to create and publish graphics demos for Lzon.&lt;&#x2F;p&gt;</summary>
   </entry>
+
   
   <entry>
     <title>Dream Trawler</title>
@@ -401,11 +389,10 @@
     <link href="https://lzon.ca/posts/series/grateful/dream-trawler/"/>
     <published>2026-01-07T00:00:00Z</published>
     <updated>2026-01-23T00:00:00Z</updated>
-    <author>
-      <name>Lzon</name>
-    </author>
+    <author><name>Lzon</name></author>
     <summary type="html" xml:base="https://lzon.ca/posts/series/grateful/dream-trawler/">&lt;p&gt;Today I’m grateful for Dream Trawler, a card from the game Magic the Gathering.&lt;&#x2F;p&gt;</summary>
   </entry>
+
   
   <entry>
     <title>What is emailverification.info?</title>
@@ -413,11 +400,10 @@
     <link href="https://lzon.ca/posts/site/emailverification-info/"/>
     <published>2026-01-05T00:00:00Z</published>
     <updated>2026-01-06T00:00:00Z</updated>
-    <author>
-      <name>Lzon</name>
-    </author>
+    <author><name>Lzon</name></author>
     <summary type="html" xml:base="https://lzon.ca/posts/site/emailverification-info/">&lt;p&gt;Have you ever recieved an email from this address? Here’s why it might not actually be a scam.&lt;&#x2F;p&gt;</summary>
   </entry>
+
   
   <entry>
     <title>Year in Review 2025 - AI</title>
@@ -425,11 +411,10 @@
     <link href="https://lzon.ca/posts/series/2025-review/2025-review-ai/"/>
     <published>2026-01-02T00:00:00Z</published>
     <updated>2026-01-02T00:00:00Z</updated>
-    <author>
-      <name>Lzon</name>
-    </author>
+    <author><name>Lzon</name></author>
     <summary type="html" xml:base="https://lzon.ca/posts/series/2025-review/2025-review-ai/">&lt;p&gt;Here’s my (slightly tardy) review of artificial intelligence at the end of 2025.&lt;&#x2F;p&gt;</summary>
   </entry>
+
   
   <entry>
     <title>Year in Review 2025 - Gaming</title>
@@ -437,11 +422,10 @@
     <link href="https://lzon.ca/posts/series/2025-review/2025-review-gaming/"/>
     <published>2026-01-01T00:00:00Z</published>
     <updated>2026-01-02T00:00:00Z</updated>
-    <author>
-      <name>Lzon</name>
-    </author>
+    <author><name>Lzon</name></author>
     <summary type="html" xml:base="https://lzon.ca/posts/series/2025-review/2025-review-gaming/">&lt;p&gt;Here’s my review of gaming in 2025, including a prediction for the new year.&lt;&#x2F;p&gt;</summary>
   </entry>
+
   
   <entry>
     <title>Year in Review 2025 - Smartphones</title>
@@ -449,11 +433,10 @@
     <link href="https://lzon.ca/posts/series/2025-review/2025-review-smartphones/"/>
     <published>2025-12-31T00:00:00Z</published>
     <updated>2025-12-31T00:00:00Z</updated>
-    <author>
-      <name>Lzon</name>
-    </author>
+    <author><name>Lzon</name></author>
     <summary type="html" xml:base="https://lzon.ca/posts/series/2025-review/2025-review-smartphones/">&lt;p&gt;Here’s my review of smartphone tech in 2025, as well as a prediction for 2026!&lt;&#x2F;p&gt;</summary>
   </entry>
+
   
   <entry>
     <title>The First Week of lzon.ca</title>
@@ -461,11 +444,10 @@
     <link href="https://lzon.ca/posts/site/lzon-week-one-update/"/>
     <published>2025-12-28T00:00:00Z</published>
     <updated>2025-12-29T00:00:00Z</updated>
-    <author>
-      <name>Lzon</name>
-    </author>
+    <author><name>Lzon</name></author>
     <summary type="html" xml:base="https://lzon.ca/posts/site/lzon-week-one-update/">&lt;p&gt;Good god! How has it been only a week?&lt;&#x2F;p&gt;</summary>
   </entry>
+
   
   <entry>
     <title>Driving</title>
@@ -473,11 +455,10 @@
     <link href="https://lzon.ca/posts/series/grateful/driving/"/>
     <published>2025-12-27T00:00:00Z</published>
     <updated>2025-12-27T00:00:00Z</updated>
-    <author>
-      <name>Lzon</name>
-    </author>
+    <author><name>Lzon</name></author>
     <summary type="html" xml:base="https://lzon.ca/posts/series/grateful/driving/">&lt;p&gt;Today I’m grateful just for driving.&lt;&#x2F;p&gt;</summary>
   </entry>
+
   
   <entry>
     <title>Chip Nuts</title>
@@ -485,11 +466,10 @@
     <link href="https://lzon.ca/posts/series/grateful/chip-nuts/"/>
     <published>2025-12-26T00:00:00Z</published>
     <updated>2025-12-27T00:00:00Z</updated>
-    <author>
-      <name>Lzon</name>
-    </author>
+    <author><name>Lzon</name></author>
     <summary type="html" xml:base="https://lzon.ca/posts/series/grateful/chip-nuts/">&lt;p&gt;Today I’m grateful for a simple local snack called Chip Nuts.&lt;&#x2F;p&gt;</summary>
   </entry>
+
   
   <entry>
     <title>Tomatoes and Bread</title>
@@ -497,11 +477,10 @@
     <link href="https://lzon.ca/posts/series/grateful/tomatoes-and-bread/"/>
     <published>2025-12-25T00:00:00Z</published>
     <updated>2025-12-25T00:00:00Z</updated>
-    <author>
-      <name>Lzon</name>
-    </author>
+    <author><name>Lzon</name></author>
     <summary type="html" xml:base="https://lzon.ca/posts/series/grateful/tomatoes-and-bread/">&lt;p&gt;Yep, today (and most days) I’m grateful for Tomatoes and Bread.&lt;&#x2F;p&gt;</summary>
   </entry>
+
   
   <entry>
     <title>Riegelein Chocolate Lady Bugs</title>
@@ -509,11 +488,10 @@
     <link href="https://lzon.ca/posts/series/grateful/riegelein-lady-bugs/"/>
     <published>2025-12-24T00:00:00Z</published>
     <updated>2026-03-03T00:00:00Z</updated>
-    <author>
-      <name>Lzon</name>
-    </author>
+    <author><name>Lzon</name></author>
     <summary type="html" xml:base="https://lzon.ca/posts/series/grateful/riegelein-lady-bugs/">&lt;p&gt;Today I’m grateful for &lt;em&gt;Riegelein Chocolate Lady Bugs&lt;&#x2F;em&gt;.&lt;&#x2F;p&gt;</summary>
   </entry>
+
   
   <entry>
     <title>Why I&#x27;m Grateful Today</title>
@@ -521,11 +499,10 @@
     <link href="https://lzon.ca/posts/series/grateful/lzon/"/>
     <published>2025-12-23T00:00:00Z</published>
     <updated>2025-12-23T00:00:00Z</updated>
-    <author>
-      <name>Lzon</name>
-    </author>
+    <author><name>Lzon</name></author>
     
   </entry>
+
   
   <entry>
     <title>Pollo Sabrosa</title>
@@ -533,11 +510,10 @@
     <link href="https://lzon.ca/posts/recipes/pollo-sabrosa/"/>
     <published>2025-05-18T00:00:00Z</published>
     <updated>2025-12-20T00:00:00Z</updated>
-    <author>
-      <name>Lzon</name>
-    </author>
+    <author><name>Lzon</name></author>
     
   </entry>
+
   
   <entry>
     <title>Barb&#x27;s Beef Stroganoff</title>
@@ -545,11 +521,10 @@
     <link href="https://lzon.ca/posts/recipes/barbs-beef-stroganoff/"/>
     <published>2025-04-19T00:00:00Z</published>
     <updated>2025-04-19T00:00:00Z</updated>
-    <author>
-      <name>Lzon</name>
-    </author>
+    <author><name>Lzon</name></author>
     
   </entry>
+
   
   <entry>
     <title>Barb&#x27;s Bodacious Banana Bread</title>
@@ -557,11 +532,10 @@
     <link href="https://lzon.ca/posts/recipes/barbs-banana-bread/"/>
     <published>2025-03-26T00:00:00Z</published>
     <updated>2025-03-26T00:00:00Z</updated>
-    <author>
-      <name>Lzon</name>
-    </author>
+    <author><name>Lzon</name></author>
     
   </entry>
+
   
   <entry>
     <title>Jollof Meat Filling</title>
@@ -569,11 +543,10 @@
     <link href="https://lzon.ca/posts/recipes/jollof-meat-filling/"/>
     <published>2025-03-19T00:00:00Z</published>
     <updated>2025-03-19T00:00:00Z</updated>
-    <author>
-      <name>Lzon</name>
-    </author>
+    <author><name>Lzon</name></author>
     
   </entry>
+
   
   <entry>
     <title>Baked Lemon Pepper Pork</title>
@@ -581,11 +554,10 @@
     <link href="https://lzon.ca/posts/recipes/baked-lemon-pepper-pork/"/>
     <published>2025-03-17T00:00:00Z</published>
     <updated>2025-03-17T00:00:00Z</updated>
-    <author>
-      <name>Lzon</name>
-    </author>
+    <author><name>Lzon</name></author>
     
   </entry>
+
   
   <entry>
     <title>Jollof Seasoning</title>
@@ -593,11 +565,10 @@
     <link href="https://lzon.ca/posts/recipes/jollof-seasoning/"/>
     <published>2025-03-17T00:00:00Z</published>
     <updated>2025-03-19T00:00:00Z</updated>
-    <author>
-      <name>Lzon</name>
-    </author>
+    <author><name>Lzon</name></author>
     
   </entry>
+
   
   <entry>
     <title>Baked Jollof Rice</title>
@@ -605,11 +576,10 @@
     <link href="https://lzon.ca/posts/recipes/jollof-baked-rice/"/>
     <published>2024-09-22T00:00:00Z</published>
     <updated>2024-09-22T00:00:00Z</updated>
-    <author>
-      <name>Lzon</name>
-    </author>
+    <author><name>Lzon</name></author>
     
   </entry>
+
   
   <entry>
     <title>Baked Cajun Pork</title>
@@ -617,11 +587,10 @@
     <link href="https://lzon.ca/posts/recipes/baked-cajun-pork/"/>
     <published>2024-09-08T00:00:00Z</published>
     <updated>2024-09-09T00:00:00Z</updated>
-    <author>
-      <name>Lzon</name>
-    </author>
+    <author><name>Lzon</name></author>
     
   </entry>
+
   
   <entry>
     <title>Baked Curry Pork</title>
@@ -629,11 +598,10 @@
     <link href="https://lzon.ca/posts/recipes/baked-curry-pork/"/>
     <published>2024-09-08T00:00:00Z</published>
     <updated>2024-09-08T00:00:00Z</updated>
-    <author>
-      <name>Lzon</name>
-    </author>
+    <author><name>Lzon</name></author>
     
   </entry>
+
   
   <entry>
     <title>Creamy Garlic Pasta</title>
@@ -641,11 +609,10 @@
     <link href="https://lzon.ca/posts/recipes/creamy-garlic-pasta/"/>
     <published>2024-08-18T00:00:00Z</published>
     <updated>2026-02-09T00:00:00Z</updated>
-    <author>
-      <name>Lzon</name>
-    </author>
+    <author><name>Lzon</name></author>
     
   </entry>
+
   
   <entry>
     <title>Baked Beans &amp; Rice</title>
@@ -653,11 +620,10 @@
     <link href="https://lzon.ca/posts/recipes/baked-beans-and-rice/"/>
     <published>2024-08-17T00:00:00Z</published>
     <updated>2024-09-09T00:00:00Z</updated>
-    <author>
-      <name>Lzon</name>
-    </author>
+    <author><name>Lzon</name></author>
     
   </entry>
+
   
   <entry>
     <title>Beef Stroganoff</title>
@@ -665,11 +631,10 @@
     <link href="https://lzon.ca/posts/recipes/beef-stroganoff/"/>
     <published>2024-08-17T00:00:00Z</published>
     <updated>2024-09-09T00:00:00Z</updated>
-    <author>
-      <name>Lzon</name>
-    </author>
+    <author><name>Lzon</name></author>
     
   </entry>
+
   
   <entry>
     <title>Black Bean Burgers</title>
@@ -677,11 +642,10 @@
     <link href="https://lzon.ca/posts/recipes/black-bean-burgers/"/>
     <published>2024-08-17T00:00:00Z</published>
     <updated>2024-09-09T00:00:00Z</updated>
-    <author>
-      <name>Lzon</name>
-    </author>
+    <author><name>Lzon</name></author>
     
   </entry>
+
   
   <entry>
     <title>Cajun Seasoning</title>
@@ -689,11 +653,10 @@
     <link href="https://lzon.ca/posts/recipes/cajun-seasoning/"/>
     <published>2024-08-17T00:00:00Z</published>
     <updated>2025-04-04T00:00:00Z</updated>
-    <author>
-      <name>Lzon</name>
-    </author>
+    <author><name>Lzon</name></author>
     
   </entry>
+
   
   <entry>
     <title>Gingerbread</title>
@@ -701,11 +664,10 @@
     <link href="https://lzon.ca/posts/recipes/ginger-bread/"/>
     <published>2024-08-17T00:00:00Z</published>
     <updated>2024-09-09T00:00:00Z</updated>
-    <author>
-      <name>Lzon</name>
-    </author>
+    <author><name>Lzon</name></author>
     
   </entry>
+
   
   <entry>
     <title>Ginger Pork Stir Fry</title>
@@ -713,11 +675,10 @@
     <link href="https://lzon.ca/posts/recipes/ginger-pork-stir-fry/"/>
     <published>2024-08-17T00:00:00Z</published>
     <updated>2024-09-09T00:00:00Z</updated>
-    <author>
-      <name>Lzon</name>
-    </author>
+    <author><name>Lzon</name></author>
     
   </entry>
+
   
   <entry>
     <title>Peanut Hummus</title>
@@ -725,11 +686,10 @@
     <link href="https://lzon.ca/posts/recipes/peanut-hummus/"/>
     <published>2024-08-17T00:00:00Z</published>
     <updated>2025-03-20T00:00:00Z</updated>
-    <author>
-      <name>Lzon</name>
-    </author>
+    <author><name>Lzon</name></author>
     
   </entry>
+
   
   <entry>
     <title>Zucchini Pizza Casserole</title>
@@ -737,9 +697,8 @@
     <link href="https://lzon.ca/posts/recipes/zucchini-pizza-caserole/"/>
     <published>2024-08-17T00:00:00Z</published>
     <updated>2026-02-09T00:00:00Z</updated>
-    <author>
-      <name>Lzon</name>
-    </author>
+    <author><name>Lzon</name></author>
     
   </entry>
+
 </feed>

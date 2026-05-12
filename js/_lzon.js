@@ -183,60 +183,6 @@
     });
   }
 
-  // ts/commits.ts
-  async function initCommits() {
-    const trimMargin = (str) => str.replace(/^[ \t]*\|/gm, "").trim();
-    const formatBytes = (kb) => {
-      if (kb < 1024)
-        return `${kb} KB`;
-      if (kb < 1024 ** 2)
-        return `${(kb / 1024).toFixed(1)} MB`;
-      if (kb < 1024 ** 3)
-        return `${(kb / 1024 ** 2).toFixed(1)} GB`;
-      return `${(kb / 1024 ** 3).toFixed(1)} TB`;
-    };
-    const formatDate = (unix) => new Date(unix * 1000).toLocaleString("en-CA", {
-      year: "numeric",
-      month: "long",
-      day: "numeric"
-    });
-    const formatTime = (unix) => new Date(unix * 1000).toLocaleString("en-CA", {
-      hour: "numeric",
-      minute: "2-digit",
-      second: "2-digit"
-    });
-    document.addEventListener("DOMContentLoaded", () => {
-      const elCommits = document.querySelectorAll("#commits");
-      if (!elCommits)
-        return;
-      fetch("/data/commits.json").then((res) => res.json()).then((data) => {
-        elCommits.forEach((el) => {
-          let html = "";
-          const buildStr = `
-                    |# Build
-                    |    - date: <span class="z-string">${formatDate(data.timestamp)}</span>
-                    |    - time: <span class="z-constant">${formatTime(data.timestamp)}</span>
-                    |
-                    |# Commits
-                `;
-          html += trimMargin(buildStr);
-          data.commits.forEach((it) => {
-            const itStr = `<br>
-                        |<span class="z-name">${it.header} </span>
-                        |    - date: <span class="z-string">${it.date}</span>
-                        |    - hash: <span class="z-constant">${it.hash}</span>
-                        |    - changes: <span class=" ">${it.changes.trim()}</span>
-                        |    - file count: <span class="z-constant">${it.file_count}</span>
-                        |    - size: <span class="z-constant">${formatBytes(it.repo_size_kb)}</span>
-                    `;
-            html += trimMargin(itStr);
-          });
-          el.innerHTML = html;
-        });
-      });
-    });
-  }
-
   // ts/qotd.ts
   function parseQuote(quote) {
     if (!quote?.text)
@@ -385,7 +331,7 @@
       const elQuoteContainer = document.querySelector("#quote-container");
       if (!(elQotd || elQuoteContainer))
         return;
-      fetch("/data/quotes.json").then((res) => res.json()).then((data) => data.quotes).then((quotes) => quotes.map(parseQuote)).then((quotes) => {
+      fetch("/quotes2/pages.json").then((res) => res.json()).then((data) => data.pages).then((quotes) => quotes.map(parseQuote)).then((quotes) => {
         const indices = getShuffledIndices(quotes.length);
         function getSequenceQuote(offset) {
           const days = getDaysSinceEpoch() + (offset || 0);
@@ -905,7 +851,6 @@
   initMatomo();
   initSlideshow();
   initOverlay();
-  initCommits();
   initQotd();
   initLinks();
   initCodeFrames();
