@@ -331,7 +331,7 @@
       const elQuoteContainer = document.querySelector("#quote-container");
       if (!(elQotd || elQuoteContainer))
         return;
-      fetch("/quotes2/pages.json").then((res) => res.json()).then((data) => data.pages).then((quotes) => quotes.map(parseQuote)).then((quotes) => {
+      fetch("/quotes/pages.json").then((res) => res.json()).then((data) => data.pages).then((quotes) => quotes.map(parseQuote)).then((quotes) => {
         const indices = getShuffledIndices(quotes.length);
         function getSequenceQuote(offset) {
           const days = getDaysSinceEpoch() + (offset || 0);

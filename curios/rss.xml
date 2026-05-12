@@ -8,11 +8,21 @@
       <generator>Zola</generator>
       <language>en</language>
       <atom:link href="https://lzon.ca/curios/rss.xml" rel="self" type="application/rss+xml"/>
-      <lastBuildDate>Fri, 01 May 2026 00:00:00 +0000</lastBuildDate>
+      <lastBuildDate>Tue, 12 May 2026 00:00:00 +0000</lastBuildDate>
       
       
       
       
+      <item>
+          <title>33. taken.</title>
+          <pubDate>Tue, 12 May 2026 00:00:00 +0000</pubDate>
+          <author>Lzon</author>
+          <link>https://sinceyouarrived.world/taken</link>
+          <guid isPermaLink="false">https://lzon.ca/curios/33</guid>
+          <description xml:base="https://lzon.ca/curios/curio-000033-taken/">&lt;p&gt;A beautiful website that demonstrates what personal information a web server can collect from you just for opening a web page.&lt;/p&gt;
+&lt;p&gt;I’ve seen a few similar projects like this before, but this is by &lt;em&gt;far&lt;/em&gt; the best one I’ve ever seen.&lt;/p&gt;
+</description>
+      </item>
       <item>
           <title>32. Crafting Interpreters</title>
           <pubDate>Fri, 01 May 2026 00:00:00 +0000</pubDate>
