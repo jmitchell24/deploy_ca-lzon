@@ -13,7 +13,7 @@
   <generator uri="https://www.getzola.org/">Zola</generator>
 
   
-  <updated>2026-05-12T00:00:00Z</updated>
+  <updated>2026-05-12T00:00:00+00:00</updated>
 
   
   
@@ -37,8 +37,8 @@
     <title>33. taken.</title>
     <id>https://lzon.ca/curios/33</id>
     <link href="https://sinceyouarrived.world/taken"/>
-    <published>2026-05-12T00:00:00Z</published>
-    <updated>2026-05-12T00:00:00Z</updated>
+    <published>2026-05-12T00:00:00+00:00</published>
+    <updated>2026-05-12T00:00:00+00:00</updated>
     <author><name>Lzon</name></author>
     <content type="html" xml:base="https://lzon.ca/curios/curio-000033-taken/">&lt;p&gt;A beautiful website that demonstrates what personal information a web server can collect from you just for opening a web page.&lt;/p&gt;
 &lt;p&gt;I’ve seen a few similar projects like this before, but this is by &lt;em&gt;far&lt;/em&gt; the best one I’ve ever seen.&lt;/p&gt;
@@ -52,8 +52,8 @@
     <title>32. Crafting Interpreters</title>
     <id>https://lzon.ca/curios/32</id>
     <link href="https://craftinginterpreters.com/"/>
-    <published>2026-05-01T00:00:00Z</published>
-    <updated>2026-05-01T00:00:00Z</updated>
+    <published>2026-05-01T00:00:00+00:00</published>
+    <updated>2026-05-01T00:00:00+00:00</updated>
     <author><name>Lzon</name></author>
     <content type="html" xml:base="https://lzon.ca/curios/curio-000032-crafting-interpreters/">&lt;p&gt;Robert Nystrom’s guide for creating a programming language from scratch.
 It’s fantastic, both his writing and code are very accessible. Freely available on his site,
@@ -68,8 +68,8 @@ also published as a book.&lt;/p&gt;
     <title>31. Passwords vs. Pass Phrases</title>
     <id>https://lzon.ca/curios/31</id>
     <link href="https://blog.codinghorror.com/passwords-vs-pass-phrases/"/>
-    <published>2026-04-29T00:00:00Z</published>
-    <updated>2026-04-29T00:00:00Z</updated>
+    <published>2026-04-29T00:00:00+00:00</published>
+    <updated>2026-04-29T00:00:00+00:00</updated>
     <author><name>Lzon</name></author>
     <content type="html" xml:base="https://lzon.ca/curios/curio-000031-passwords-vs-pass-phrases/">&lt;p&gt;An old CodingHorror post advocating for pass phrases over passwords.&lt;/p&gt;
 </content>
@@ -82,8 +82,8 @@ also published as a book.&lt;/p&gt;
     <title>30. Brainwash An Executive Today!</title>
     <id>https://lzon.ca/curios/30</id>
     <link href="https://ludic.mataroa.blog/blog/brainwash-an-executive-today/"/>
-    <published>2026-04-25T00:00:00Z</published>
-    <updated>2026-04-25T00:00:00Z</updated>
+    <published>2026-04-25T00:00:00+00:00</published>
+    <updated>2026-04-25T00:00:00+00:00</updated>
     <author><name>Lzon</name></author>
     <content type="html" xml:base="https://lzon.ca/curios/curio-000030-brainwash-an-executive-today/">&lt;p&gt;An enlightening story. It demonstrates how executives are manipulated into participating in economic hype bubbles such as AI, or otherwise.&lt;/p&gt;
 </content>
@@ -96,8 +96,8 @@ also published as a book.&lt;/p&gt;
     <title>29. Motivation in Hard Times</title>
     <id>https://lzon.ca/curios/29</id>
     <link href="https://www.youtube.com/watch?v=oAEewFj_-dg"/>
-    <published>2026-04-24T00:00:00Z</published>
-    <updated>2026-04-24T00:00:00Z</updated>
+    <published>2026-04-24T00:00:00+00:00</published>
+    <updated>2026-04-24T00:00:00+00:00</updated>
     <author><name>Lzon</name></author>
     <content type="html" xml:base="https://lzon.ca/curios/curio-000029-motivation-in-hard-times/">&lt;p&gt;A video by John Green about the nature of motivation. I agree with what he has to say on the matter.&lt;/p&gt;
 </content>
@@ -110,8 +110,8 @@ also published as a book.&lt;/p&gt;
     <title>28. Understand, by Ted Chiang</title>
     <id>https://lzon.ca/curios/28</id>
     <link href="https://web.archive.org/web/20060101043301/http://www.infinityplus.co.uk/stories/under.htm"/>
-    <published>2026-04-22T00:00:00Z</published>
-    <updated>2026-04-22T00:00:00Z</updated>
+    <published>2026-04-22T00:00:00+00:00</published>
+    <updated>2026-04-22T00:00:00+00:00</updated>
     <author><name>Lzon</name></author>
     <content type="html" xml:base="https://lzon.ca/curios/curio-000028-understand-by-ted-chiang/">&lt;p&gt;A sci-fi novelette by Ted Chiang. Very short, and a great read.&lt;/p&gt;
 </content>
@@ -124,8 +124,8 @@ also published as a book.&lt;/p&gt;
     <title>27. Waves &amp; Particles</title>
     <id>https://lzon.ca/curios/27</id>
     <link href="https://taylor.town/waves"/>
-    <published>2026-04-20T00:00:00Z</published>
-    <updated>2026-04-20T00:00:00Z</updated>
+    <published>2026-04-20T00:00:00+00:00</published>
+    <updated>2026-04-20T00:00:00+00:00</updated>
     <author><name>Lzon</name></author>
     <content type="html" xml:base="https://lzon.ca/curios/curio-000027-waves-particles/">&lt;p&gt;A fun peice of interactive digital art.&lt;/p&gt;
 </content>
@@ -138,8 +138,8 @@ also published as a book.&lt;/p&gt;
     <title>26. The Last Question by Isaac Asimov</title>
     <id>https://lzon.ca/curios/26</id>
     <link href="https://hex.ooo/library/last_question.html"/>
-    <published>2026-04-18T00:00:00Z</published>
-    <updated>2026-04-18T00:00:00Z</updated>
+    <published>2026-04-18T00:00:00+00:00</published>
+    <updated>2026-04-18T00:00:00+00:00</updated>
     <author><name>Lzon</name></author>
     <content type="html" xml:base="https://lzon.ca/curios/curio-000026-the-last-question-by-isaac-asimov/">&lt;p&gt;A short scifi story, I’ve read it many times. Well worth your time.&lt;/p&gt;
 </content>
@@ -152,8 +152,8 @@ also published as a book.&lt;/p&gt;
     <title>25. The Truth Dies on the Way Up</title>
     <id>https://lzon.ca/curios/25</id>
     <link href="https://thegrounded.ghost.io/the-truth-dies-on-the-way-up/"/>
-    <published>2026-04-06T00:00:00Z</published>
-    <updated>2026-04-06T00:00:00Z</updated>
+    <published>2026-04-06T00:00:00+00:00</published>
+    <updated>2026-04-06T00:00:00+00:00</updated>
     <author><name>Lzon</name></author>
     
   </entry>
@@ -165,8 +165,8 @@ also published as a book.&lt;/p&gt;
     <title>24. The Submarine</title>
     <id>https://lzon.ca/curios/24</id>
     <link href="https://paulgraham.com/submarine.html"/>
-    <published>2026-04-05T00:00:00Z</published>
-    <updated>2026-04-05T00:00:00Z</updated>
+    <published>2026-04-05T00:00:00+00:00</published>
+    <updated>2026-04-05T00:00:00+00:00</updated>
     <author><name>Lzon</name></author>
     
   </entry>
@@ -178,8 +178,8 @@ also published as a book.&lt;/p&gt;
     <title>23. Why I don&#x27;t think AGI is imminent</title>
     <id>https://lzon.ca/curios/23</id>
     <link href="https://dlants.me/agi-not-imminent.html"/>
-    <published>2026-02-19T00:00:00Z</published>
-    <updated>2026-02-19T00:00:00Z</updated>
+    <published>2026-02-19T00:00:00+00:00</published>
+    <updated>2026-02-19T00:00:00+00:00</updated>
     <author><name>Lzon</name></author>
     
   </entry>
@@ -191,8 +191,8 @@ also published as a book.&lt;/p&gt;
     <title>22. The Birth &amp; Death of JavaScript</title>
     <id>https://lzon.ca/curios/22</id>
     <link href="https://www.destroyallsoftware.com/talks/the-birth-and-death-of-javascript"/>
-    <published>2026-01-30T00:00:00Z</published>
-    <updated>2026-01-30T00:00:00Z</updated>
+    <published>2026-01-30T00:00:00+00:00</published>
+    <updated>2026-01-30T00:00:00+00:00</updated>
     <author><name>Lzon</name></author>
     
   </entry>
@@ -204,8 +204,8 @@ also published as a book.&lt;/p&gt;
     <title>21. The future of work when work is meaningless</title>
     <id>https://lzon.ca/curios/21</id>
     <link href="https://letters.thedankoe.com/p/the-future-of-work-when-work-is-meaningless"/>
-    <published>2026-01-26T00:00:00Z</published>
-    <updated>2026-01-26T00:00:00Z</updated>
+    <published>2026-01-26T00:00:00+00:00</published>
+    <updated>2026-01-26T00:00:00+00:00</updated>
     <author><name>Lzon</name></author>
     
   </entry>
@@ -217,8 +217,8 @@ also published as a book.&lt;/p&gt;
     <title>20. Manna by Marshall Brain</title>
     <id>https://lzon.ca/curios/20</id>
     <link href="https://marshallbrain.com/manna1"/>
-    <published>2026-01-25T00:00:00Z</published>
-    <updated>2026-01-25T00:00:00Z</updated>
+    <published>2026-01-25T00:00:00+00:00</published>
+    <updated>2026-01-25T00:00:00+00:00</updated>
     <author><name>Lzon</name></author>
     
   </entry>
@@ -230,8 +230,8 @@ also published as a book.&lt;/p&gt;
     <title>19. What Is Soul Fatigue?</title>
     <id>https://lzon.ca/curios/19</id>
     <link href="https://www.michelegargiulo.com/blog/what-is-soul-fatigue"/>
-    <published>2026-01-24T00:00:00Z</published>
-    <updated>2026-01-24T00:00:00Z</updated>
+    <published>2026-01-24T00:00:00+00:00</published>
+    <updated>2026-01-24T00:00:00+00:00</updated>
     <author><name>Lzon</name></author>
     
   </entry>
@@ -243,8 +243,8 @@ also published as a book.&lt;/p&gt;
     <title>18. Scientists find exercise rivals therapy for depression</title>
     <id>https://lzon.ca/curios/18</id>
     <link href="https://www.sciencedaily.com/releases/2026/01/260107225516.htm"/>
-    <published>2026-01-11T00:00:00Z</published>
-    <updated>2026-01-11T00:00:00Z</updated>
+    <published>2026-01-11T00:00:00+00:00</published>
+    <updated>2026-01-11T00:00:00+00:00</updated>
     <author><name>Lzon</name></author>
     
   </entry>
@@ -256,8 +256,8 @@ also published as a book.&lt;/p&gt;
     <title>17. Are you already a Cyborg?</title>
     <id>https://lzon.ca/curios/17</id>
     <link href="https://www.sciencedirect.com/science/article/abs/pii/S0747563215001272"/>
-    <published>2026-01-03T00:00:00Z</published>
-    <updated>2026-01-03T00:00:00Z</updated>
+    <published>2026-01-03T00:00:00+00:00</published>
+    <updated>2026-01-03T00:00:00+00:00</updated>
     <author><name>Lzon</name></author>
     
   </entry>
@@ -269,8 +269,8 @@ also published as a book.&lt;/p&gt;
     <title>16. Vanitiy Activities</title>
     <id>https://lzon.ca/curios/16</id>
     <link href="https://quarter--mile.com/vanity-activities"/>
-    <published>2025-12-25T00:00:00Z</published>
-    <updated>2025-12-25T00:00:00Z</updated>
+    <published>2025-12-25T00:00:00+00:00</published>
+    <updated>2025-12-25T00:00:00+00:00</updated>
     <author><name>Lzon</name></author>
     
   </entry>
@@ -282,8 +282,8 @@ also published as a book.&lt;/p&gt;
     <title>15. Is Everything a Religion?</title>
     <id>https://lzon.ca/curios/15</id>
     <link href="https://slatestarcodex.com/2015/03/25/is-everything-a-religion/"/>
-    <published>2025-12-19T00:00:00Z</published>
-    <updated>2025-12-19T00:00:00Z</updated>
+    <published>2025-12-19T00:00:00+00:00</published>
+    <updated>2025-12-19T00:00:00+00:00</updated>
     <author><name>Lzon</name></author>
     
   </entry>
@@ -295,8 +295,8 @@ also published as a book.&lt;/p&gt;
     <title>14. No Graphics API</title>
     <id>https://lzon.ca/curios/14</id>
     <link href="https://www.sebastianaaltonen.com/blog/no-graphics-api"/>
-    <published>2025-12-18T00:00:00Z</published>
-    <updated>2025-12-18T00:00:00Z</updated>
+    <published>2025-12-18T00:00:00+00:00</published>
+    <updated>2025-12-18T00:00:00+00:00</updated>
     <author><name>Lzon</name></author>
     
   </entry>
@@ -308,8 +308,8 @@ also published as a book.&lt;/p&gt;
     <title>13. The history of Xerox</title>
     <id>https://lzon.ca/curios/13</id>
     <link href="https://www.abortretry.fail/p/the-history-of-xerox"/>
-    <published>2025-12-16T00:00:00Z</published>
-    <updated>2025-12-16T00:00:00Z</updated>
+    <published>2025-12-16T00:00:00+00:00</published>
+    <updated>2025-12-16T00:00:00+00:00</updated>
     <author><name>Lzon</name></author>
     
   </entry>
@@ -321,8 +321,8 @@ also published as a book.&lt;/p&gt;
     <title>12. Fix your timestep</title>
     <id>https://lzon.ca/curios/12</id>
     <link href="https://gafferongames.com/post/fix_your_timestep/"/>
-    <published>2025-12-15T00:00:00Z</published>
-    <updated>2025-12-15T00:00:00Z</updated>
+    <published>2025-12-15T00:00:00+00:00</published>
+    <updated>2025-12-15T00:00:00+00:00</updated>
     <author><name>Lzon</name></author>
     
   </entry>
@@ -334,8 +334,8 @@ also published as a book.&lt;/p&gt;
     <title>11. The Copenhagen Trap</title>
     <id>https://lzon.ca/curios/11</id>
     <link href="https://aliveness.kunnas.com/articles/copenhagen-trap"/>
-    <published>2025-12-12T00:00:00Z</published>
-    <updated>2025-12-12T00:00:00Z</updated>
+    <published>2025-12-12T00:00:00+00:00</published>
+    <updated>2025-12-12T00:00:00+00:00</updated>
     <author><name>Lzon</name></author>
     
   </entry>
@@ -347,8 +347,8 @@ also published as a book.&lt;/p&gt;
     <title>10. A History of Laptop Displays</title>
     <id>https://lzon.ca/curios/10</id>
     <link href="https://www.dosdays.co.uk/topics/laptop_displays.php"/>
-    <published>2025-11-24T00:00:00Z</published>
-    <updated>2025-11-24T00:00:00Z</updated>
+    <published>2025-11-24T00:00:00+00:00</published>
+    <updated>2025-11-24T00:00:00+00:00</updated>
     <author><name>Lzon</name></author>
     
   </entry>
@@ -360,8 +360,8 @@ also published as a book.&lt;/p&gt;
     <title>9. Flash of unstyled content (FOUC) </title>
     <id>https://lzon.ca/curios/9</id>
     <link href="https://en.wikipedia.org/wiki/Flash_of_unstyled_content"/>
-    <published>2025-07-23T00:00:00Z</published>
-    <updated>2025-07-23T00:00:00Z</updated>
+    <published>2025-07-23T00:00:00+00:00</published>
+    <updated>2025-07-23T00:00:00+00:00</updated>
     <author><name>Lzon</name></author>
     
   </entry>
@@ -373,8 +373,8 @@ also published as a book.&lt;/p&gt;
     <title>8. Let me pay for Firefox</title>
     <id>https://lzon.ca/curios/8</id>
     <link href="https://discourse.mozilla.org/t/let-me-pay-for-firefox/141297"/>
-    <published>2025-07-15T00:00:00Z</published>
-    <updated>2025-07-15T00:00:00Z</updated>
+    <published>2025-07-15T00:00:00+00:00</published>
+    <updated>2025-07-15T00:00:00+00:00</updated>
     <author><name>Lzon</name></author>
     
   </entry>
@@ -386,8 +386,8 @@ also published as a book.&lt;/p&gt;
     <title>7. Writing Toy Software Is A Joy</title>
     <id>https://lzon.ca/curios/7</id>
     <link href="https://blog.jsbarretto.com/post/software-is-joy"/>
-    <published>2025-06-20T00:00:00Z</published>
-    <updated>2025-06-20T00:00:00Z</updated>
+    <published>2025-06-20T00:00:00+00:00</published>
+    <updated>2025-06-20T00:00:00+00:00</updated>
     <author><name>Lzon</name></author>
     
   </entry>
@@ -399,8 +399,8 @@ also published as a book.&lt;/p&gt;
     <title>6. The Intelligence Curse</title>
     <id>https://lzon.ca/curios/6</id>
     <link href="https://intelligence-curse.ai/"/>
-    <published>2025-06-09T00:00:00Z</published>
-    <updated>2025-06-09T00:00:00Z</updated>
+    <published>2025-06-09T00:00:00+00:00</published>
+    <updated>2025-06-09T00:00:00+00:00</updated>
     <author><name>Lzon</name></author>
     
   </entry>
@@ -412,8 +412,8 @@ also published as a book.&lt;/p&gt;
     <title>5. Build Your Own Text Editor</title>
     <id>https://lzon.ca/curios/5</id>
     <link href="https://viewsourcecode.org/snaptoken/kilo/index.html"/>
-    <published>2025-05-29T00:00:00Z</published>
-    <updated>2025-05-29T00:00:00Z</updated>
+    <published>2025-05-29T00:00:00+00:00</published>
+    <updated>2025-05-29T00:00:00+00:00</updated>
     <author><name>Lzon</name></author>
     
   </entry>
@@ -425,8 +425,8 @@ also published as a book.&lt;/p&gt;
     <title>4. Windows NT vs. Unix - A design comparison</title>
     <id>https://lzon.ca/curios/4</id>
     <link href="https://blogsystem5.substack.com/p/windows-nt-vs-unix-design"/>
-    <published>2025-05-28T00:00:00Z</published>
-    <updated>2025-05-28T00:00:00Z</updated>
+    <published>2025-05-28T00:00:00+00:00</published>
+    <updated>2025-05-28T00:00:00+00:00</updated>
     <author><name>Lzon</name></author>
     
   </entry>
@@ -438,8 +438,8 @@ also published as a book.&lt;/p&gt;
     <title>3. Basic Hacks for Kobo E-Readers</title>
     <id>https://lzon.ca/curios/3</id>
     <link href="https://www.linux-magazine.com/Online/Features/Basic-Hacks-for-Kobo-E-Readers"/>
-    <published>2025-05-28T00:00:00Z</published>
-    <updated>2025-05-28T00:00:00Z</updated>
+    <published>2025-05-28T00:00:00+00:00</published>
+    <updated>2025-05-28T00:00:00+00:00</updated>
     <author><name>Lzon</name></author>
     
   </entry>
@@ -451,8 +451,8 @@ also published as a book.&lt;/p&gt;
     <title>2. Ship Software That Does Nothing</title>
     <id>https://lzon.ca/curios/2</id>
     <link href="https://kerrick.blog/articles/2025/ship-software-that-does-nothing/"/>
-    <published>2025-05-28T00:00:00Z</published>
-    <updated>2025-05-28T00:00:00Z</updated>
+    <published>2025-05-28T00:00:00+00:00</published>
+    <updated>2025-05-28T00:00:00+00:00</updated>
     <author><name>Lzon</name></author>
     
   </entry>
@@ -464,8 +464,8 @@ also published as a book.&lt;/p&gt;
     <title>1. How to build your resume with an SSG</title>
     <id>https://lzon.ca/curios/1</id>
     <link href="https://ktema.org/articles/the-overengineered-resume/"/>
-    <published>2025-05-20T00:00:00Z</published>
-    <updated>2025-05-20T00:00:00Z</updated>
+    <published>2025-05-20T00:00:00+00:00</published>
+    <updated>2025-05-20T00:00:00+00:00</updated>
     <author><name>Lzon</name></author>
     
   </entry>
