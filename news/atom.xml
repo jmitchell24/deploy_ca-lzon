@@ -13,7 +13,7 @@
   <generator uri="https://www.getzola.org/">Zola</generator>
 
   
-  <updated>2026-05-11T00:00:00+00:00</updated>
+  <updated>2026-05-11T12:00:00Z</updated>
 
   
   
@@ -37,8 +37,8 @@
     <title>7. Pirates are already playing Forza Horizon 6 days before its launch</title>
     <id>https://lzon.ca/news/7</id>
     <link href="https://arstechnica.com/gaming/2026/05/pirates-are-already-playing-forza-horizon-6-days-before-its-launch/"/>
-    <published>2026-05-11T00:00:00+00:00</published>
-    <updated>2026-05-11T00:00:00+00:00</updated>
+    <published>2026-05-11T12:00:00Z</published>
+    <updated>2026-05-11T12:00:00Z</updated>
     <author><name>Lzon</name></author>
     <content type="html" xml:base="https://lzon.ca/news/news-000007-pirates-playing-forza-horizon-6/">&lt;p&gt;Game pirates are already playing Forza Horizon 6, more than a week ahead of the title’s official release date.&lt;/p&gt;
 &lt;p&gt;This was made possible by copying the game’s preload install files, which were mistakenly distributed on Steam without encryption.&lt;/p&gt;
@@ -53,8 +53,8 @@
     <title>6. Mozilla, Mullvad, Proton, sign letter opposing UK age verification</title>
     <id>https://lzon.ca/news/6</id>
     <link href="https://www.openrightsgroup.org/press-releases/companies-and-civil-society-warn-that-uk-is-undermining-open-web/"/>
-    <published>2026-05-10T00:00:00+00:00</published>
-    <updated>2026-05-10T00:00:00+00:00</updated>
+    <published>2026-05-10T12:00:00Z</published>
+    <updated>2026-05-10T12:00:00Z</updated>
     <author><name>Lzon</name></author>
     <content type="html" xml:base="https://lzon.ca/news/news-000006-uk-opposing-age-verification/">&lt;p&gt;An open letter has been signed by prominent internet service companies which asks UK policymakers to not compromise the open web under the pretense of child safety. The new law has already been passed, and there is a legitimate concern that it will be used broadly to restrict internet access, and reduce online anonymity.&lt;/p&gt;
 &lt;p&gt;In my opinion this is a trojan horse, like many such laws that came before it. Child safety is being used as a pretense in order for a government to grant itself more power.&lt;/p&gt;
@@ -68,8 +68,8 @@
     <title>5. Tesla Recalls Cybertrucks Over Concerns Their Wheels Could Come Off</title>
     <id>https://lzon.ca/news/5</id>
     <link href="https://gizmodo.com/tesla-recalls-cybertrucks-over-concerns-their-wheels-could-come-off-2000756284"/>
-    <published>2026-05-08T00:00:00+00:00</published>
-    <updated>2026-05-08T00:00:00+00:00</updated>
+    <published>2026-05-08T12:00:00Z</published>
+    <updated>2026-05-08T12:00:00Z</updated>
     <author><name>Lzon</name></author>
     <content type="html" xml:base="https://lzon.ca/news/news-000005-tesla-recalls-cybertrucks/">&lt;p&gt;Tesla is recalling several hundred budget variant Cybertrucks.&lt;/p&gt;
 &lt;span id=&quot;continue-reading&quot;&gt;&lt;/span&gt;
@@ -85,8 +85,8 @@
     <title>4. Steam Controller to have a reservation queue</title>
     <id>https://lzon.ca/news/4</id>
     <link href="https://store.steampowered.com/news/group/45479024/view/702141174212725149"/>
-    <published>2026-05-07T00:00:00+00:00</published>
-    <updated>2026-05-07T00:00:00+00:00</updated>
+    <published>2026-05-07T12:00:00Z</published>
+    <updated>2026-05-07T12:00:00Z</updated>
     <author><name>Lzon</name></author>
     <content type="html" xml:base="https://lzon.ca/news/news-000004-steam-controller-reservation/">&lt;p&gt;Starting May 8th, Valve will implement a reservation queue for the Steam Controller.&lt;/p&gt;
 &lt;p&gt;These are the details:&lt;/p&gt;
@@ -108,8 +108,8 @@
     <title>3. Ghostty Is Leaving GitHub</title>
     <id>https://lzon.ca/news/3</id>
     <link href="https://mitchellh.com/writing/ghostty-leaving-github"/>
-    <published>2026-05-06T00:00:00+00:00</published>
-    <updated>2026-05-06T00:00:00+00:00</updated>
+    <published>2026-05-06T12:00:00Z</published>
+    <updated>2026-05-06T12:00:00Z</updated>
     <author><name>Lzon</name></author>
     <content type="html" xml:base="https://lzon.ca/news/news-000003-ghostty/">&lt;p&gt;Mitchell Hashimoto, the developer of &lt;a rel=&quot;noopener external&quot; target=&quot;_blank&quot; href=&quot;https://ghostty.org/&quot;&gt;ghostty&lt;/a&gt; is moving the project away from Github. He was an enthusiastic user for many years but recent degredation of the platform has pushed him away. Github has
 recently experienced significant issues with downtime, which he references in his blog post.&lt;/p&gt;
@@ -123,8 +123,8 @@ recently experienced significant issues with downtime, which he references in hi
     <title>2. Richard Dawkins believes Claude LLM is concious</title>
     <id>https://lzon.ca/news/2</id>
     <link href="https://www.theguardian.com/technology/2026/may/05/richard-dawkins-ai-consciousness-anthropic-claude-openai-chatgpt"/>
-    <published>2026-05-05T00:00:00+00:00</published>
-    <updated>2026-05-05T00:00:00+00:00</updated>
+    <published>2026-05-05T12:00:00Z</published>
+    <updated>2026-05-05T12:00:00Z</updated>
     <author><name>Lzon</name></author>
     <content type="html" xml:base="https://lzon.ca/news/news-000002-dawkins/">&lt;p&gt;Richard Dawkins has published conversations he had with Claude, and
 has declared that he believes it achieved conciousness. Not necessarily in a
@@ -140,8 +140,8 @@ human way, but within the its context window. He believes Claude’s conciousnes
     <title>1. Steam Controller released, quickly sold out</title>
     <id>https://lzon.ca/news/1</id>
     <link href="https://store.steampowered.com/sale/steamcontroller"/>
-    <published>2026-05-05T00:00:00+00:00</published>
-    <updated>2026-05-05T00:00:00+00:00</updated>
+    <published>2026-05-05T12:00:00Z</published>
+    <updated>2026-05-05T12:00:00Z</updated>
     <author><name>Lzon</name></author>
     <content type="html" xml:base="https://lzon.ca/news/news-000001-steam-controller/">&lt;p&gt;Valve launched its new Steam Controller yesterday, May 5th 2026. They sold out almost instantly.
 This reminds me of the logistical nightmare during the Steam Deck. Hopefully it won’t get quite that bad
