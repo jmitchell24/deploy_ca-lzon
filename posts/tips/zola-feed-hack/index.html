@@ -11,7 +11,6 @@
 <span class=giallo-l><span>└── quotes-000003_charlie-brown.md</span></span>
 <span class=giallo-l><span>... </span></span></code></pre><p>After I finished migrating my quotes out of the old <code>toml</code> document into their separate page files, I took a look at the Zola site configuration <code>config.toml</code><pre class="giallo z-code"><code data-lang=plain><span class=giallo-l><span>base_url            = "https://lzon.ca"</span></span>
 <span class=giallo-l><span>title               = "lzon.ca"</span></span>
-<span class=giallo-l><span>generate_feeds      = false</span></span>
 <span class=giallo-l><span>feed_filenames      = ["rss.xml", "atom.xml", "pages.json"]</span></span>
 <span class=giallo-l><span>...</span></span>
 <span class=giallo-l></span></code></pre><p><strong>Here is the hack:</strong> I added that third feed entry <code>pages.json</code> to the config, and a corresponding file under <code>templates/</code>.<p>And this is what that new template looks like.<div class="code-frame animate-on-hover" data-code-text='{%- set section_type = section.extra.section_type | default(value="") -%}
