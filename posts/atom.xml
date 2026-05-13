@@ -32,6 +32,17 @@
 
   
   <entry>
+    <title>A hack for Zola SSG feed templates</title>
+    <id>https://lzon.ca/posts/tips/zola-feed-hack/</id>
+    <link href="https://lzon.ca/posts/tips/zola-feed-hack/"/>
+    <published>2026-05-13T00:00:00Z</published>
+    <updated>2026-05-13T00:00:00Z</updated>
+    <author><name>Lzon</name></author>
+    <summary type="html" xml:base="https://lzon.ca/posts/tips/zola-feed-hack/">&lt;p&gt;Here’s an interesting little hack I discovered for the Zola static site generator.&lt;&#x2F;p&gt;</summary>
+  </entry>
+
+  
+  <entry>
     <title>News &amp; Feeds</title>
     <id>https://lzon.ca/posts/site/news-feed-update/</id>
     <link href="https://lzon.ca/posts/site/news-feed-update/"/>

@@ -14,6 +14,14 @@
       
       
       <item>
+          <title>A hack for Zola SSG feed templates</title>
+          <pubDate>Wed, 13 May 2026 00:00:00 +0000</pubDate>
+          <author>Lzon</author>
+          <link>https://lzon.ca/posts/tips/zola-feed-hack/</link>
+          <guid isPermaLink="false">https://lzon.ca/posts/tips/zola-feed-hack/</guid>
+          <description xml:base="https://lzon.ca/posts/tips/zola-feed-hack/">&lt;p&gt;Here’s an interesting little hack I discovered for the Zola static site generator.&lt;&#x2F;p&gt;</description>
+      </item>
+      <item>
           <title>News &amp; Feeds</title>
           <pubDate>Sun, 10 May 2026 00:00:00 +0000</pubDate>
           <author>Lzon</author>
