@@ -8,11 +8,21 @@
       <generator>Zola</generator>
       <language>en</language>
       <atom:link href="https://lzon.ca/news/rss.xml" rel="self" type="application/rss+xml"/>
-      <lastBuildDate>Mon, 11 May 2026 12:00:00 +0000</lastBuildDate>
+      <lastBuildDate>Thu, 14 May 2026 12:00:00 +0000</lastBuildDate>
       
       
       
       
+      <item>
+          <title>8. Cisco posts record revenue, then cuts 4,000 jobs</title>
+          <pubDate>Thu, 14 May 2026 12:00:00 +0000</pubDate>
+          <author>Lzon</author>
+          <link>https://www.sfchronicle.com/tech/article/cisco-layoffs-ai-restructuring-22257878.php</link>
+          <guid isPermaLink="false">https://lzon.ca/news/8</guid>
+          <description xml:base="https://lzon.ca/news/news-000008-cisco-layoffs/">&lt;p&gt;Cisco announced a 4000-person layoff, representing 5% of there total workforce.
+This coincides with the announcement that they have achieved revenue of $15.8 billion for the most recent financial quarter, which is a 12 percent increase year over year.&lt;/p&gt;
+</description>
+      </item>
       <item>
           <title>7. Pirates are already playing Forza Horizon 6 days before its launch</title>
           <pubDate>Mon, 11 May 2026 12:00:00 +0000</pubDate>
