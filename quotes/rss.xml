@@ -8,11 +8,20 @@
       <generator>Zola</generator>
       <language>en</language>
       <atom:link href="https://lzon.ca/quotes/rss.xml" rel="self" type="application/rss+xml"/>
-      <lastBuildDate>Tue, 12 May 2026 12:00:00 +0000</lastBuildDate>
+      <lastBuildDate>Fri, 15 May 2026 12:00:00 +0000</lastBuildDate>
       
       
       
       
+      <item>
+          <title>54. lzon.ca&#x2F;quotes</title>
+          <pubDate>Fri, 15 May 2026 12:00:00 +0000</pubDate>
+          <author>Lzon</author>
+          <link>https://lzon.ca/quotes/</link>
+          <guid isPermaLink="false">https://lzon.ca/quotes/#54</guid>
+          <category>quote</category>
+          <description>The truth is, everyone is going to hurt you. You just got to find the ones worth suffering for.&lt;br/&gt;- Bob Marley</description>
+      </item>
       <item>
           <title>53. lzon.ca&#x2F;quotes</title>
           <pubDate>Tue, 12 May 2026 12:00:00 +0000</pubDate>
