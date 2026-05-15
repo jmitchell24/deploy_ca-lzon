@@ -193,10 +193,12 @@
     if (isNaN(date.getTime()))
       throw new Error(`Invalid quote date: ${quote.date}`);
     return {
+      id: quote.id,
       date,
       author: quote.author,
       work: quote.work,
-      text: quote.text
+      text: quote.text,
+      path: quote.path
     };
   }
   function getQuoteTextAsHtml(q) {
@@ -316,20 +318,20 @@
     }
     function getScheduleStringHtml(d) {
       const s = d.toLocaleDateString(undefined, {
-        weekday: "long",
         year: "numeric",
         month: "short",
         day: "numeric"
       });
-      return `Scheduled for <span class="text-tertiary">${s}</span>`;
+      return `For ${s}`;
     }
     function isDateSame(a, b) {
       return a.getFullYear() === b.getFullYear() && a.getMonth() === b.getMonth() && a.getDate() === b.getDate();
     }
     document.addEventListener("DOMContentLoaded", () => {
       const elQotd = document.querySelector("#qotd");
-      const elQuoteContainer = document.querySelector("#quote-container");
-      if (!(elQotd || elQuoteContainer))
+      const elQuoteSchedules = document.querySelectorAll(".quote-schedule");
+      const elQuoteRandoms = document.querySelectorAll("a.quote-random");
+      if (!(elQotd || elQuoteSchedules.length > 0 || elQuoteRandoms.length > 0))
         return;
       fetch("/quotes/pages.json").then((res) => res.json()).then((data) => data.pages).then((quotes) => quotes.map(parseQuote)).then((quotes) => {
         const indices = getShuffledIndices(quotes.length);
@@ -380,60 +382,26 @@
             updateQuote(getSequenceQuote(++todayQuoteIdx), false, true);
           });
         }
-        if (elQuoteContainer) {
-          let renderQuotes = function() {
-            elQuoteContainer.innerHTML = "";
-            sortedQuotes.forEach((q, i) => {
-              const elQuote = elQuoteTemplate.cloneNode(true);
-              const elDate = elQuote.querySelector("#quote-template-date");
-              const elSchedule = elQuote.querySelector("#quote-template-schedule");
-              const elContent = elQuote.querySelector("#quote-template-content");
-              if (sortMode === "schedule") {
-                const d = new Date;
-                d.setDate(d.getDate() + i);
-                elSchedule.innerHTML = getScheduleStringHtml(d);
-              }
-              elDate.innerHTML = getDateStringHtml(q.date);
-              elContent.innerHTML = getQuoteTextAsHtml(q);
-              elQuote.style.animationDelay = `${i * 50}ms`;
-              elQuote.classList.add("animate-fade-in-md");
-              elQuoteContainer.appendChild(elQuote);
-            });
-          };
-          const elQuoteTemplate = elQuoteContainer.querySelector("#quote-template:only-child");
-          if (!elQuoteTemplate)
-            return;
-          const elQuoteSortSchedule = document.querySelector("#quote-sort-schedule");
-          const elQuoteSortNewest = document.querySelector("#quote-sort-newest");
-          const elQuoteSortOldest = document.querySelector("#quote-sort-oldest");
-          let sortMode = "schedule";
-          let sortedQuotes = Array.from({ length: quotes.length }, (_, i) => getSequenceQuote(i));
-          elQuoteTemplate.remove();
-          elQuoteSortSchedule?.addEventListener("click", () => {
-            sortMode = "schedule";
-            sortedQuotes = Array.from({ length: quotes.length }, (_, i) => getSequenceQuote(i));
-            renderQuotes();
-            elQuoteSortSchedule?.classList.toggle("active", true);
-            elQuoteSortOldest?.classList.toggle("active", false);
-            elQuoteSortNewest?.classList.toggle("active", false);
+        if (elQuoteSchedules.length > 0) {
+          const today = new Date;
+          const idToDate = new Map;
+          for (let offset = 0;offset < quotes.length; offset++) {
+            const d = new Date(today);
+            d.setDate(d.getDate() + offset);
+            idToDate.set(getSequenceQuote(offset).id, d);
+          }
+          elQuoteSchedules.forEach((el) => {
+            const id = parseInt(el.dataset.quoteId ?? "", 10);
+            const schedDate = idToDate.get(id);
+            if (schedDate)
+              el.innerHTML = getScheduleStringHtml(schedDate);
           });
-          elQuoteSortOldest?.addEventListener("click", () => {
-            sortMode = "oldest";
-            sortedQuotes = [...quotes].sort((a, b) => a.date.valueOf() - b.date.valueOf());
-            renderQuotes();
-            elQuoteSortSchedule?.classList.toggle("active", false);
-            elQuoteSortOldest?.classList.toggle("active", true);
-            elQuoteSortNewest?.classList.toggle("active", false);
+        }
+        if (elQuoteRandoms.length > 0) {
+          elQuoteRandoms.forEach((el) => {
+            const pick = quotes[Math.floor(Math.random() * quotes.length)];
+            el.href = pick.path;
           });
-          elQuoteSortNewest?.addEventListener("click", () => {
-            sortMode = "newest";
-            sortedQuotes = [...quotes].sort((a, b) => b.date.valueOf() - a.date.valueOf());
-            renderQuotes();
-            elQuoteSortSchedule?.classList.toggle("active", false);
-            elQuoteSortOldest?.classList.toggle("active", false);
-            elQuoteSortNewest?.classList.toggle("active", true);
-          });
-          renderQuotes();
         }
       });
     });
