@@ -13,7 +13,7 @@
   <generator uri="https://www.getzola.org/">Zola</generator>
 
   
-  <updated>2026-05-14T12:00:00Z</updated>
+  <updated>2026-05-16T12:00:00Z</updated>
 
   
   
@@ -29,6 +29,21 @@
   
 
   
+
+  
+
+  
+  <entry>
+    <title>9. The era of 15GB free Gmail storage is ending</title>
+    <id>https://lzon.ca/news/9</id>
+    <link href="https://www.androidauthority.com/google-gmail-5gb-free-storage-test-3667002"/>
+    <published>2026-05-16T12:00:00Z</published>
+    <updated>2026-05-16T12:00:00Z</updated>
+    <author><name>Lzon</name></author>
+    <content type="html" xml:base="https://lzon.ca/news/news-000009-15gb-gmail-ending/">&lt;p&gt;Google is experimenting with a reduction in the free storage on Gmail accounts. As they often do, they appear to be A/B testing the change. Some user reports suggest that the change is currently limited by region (mostly Africa). Other users are claiming that their new accounts have 5GB of storage, with the option to increase to 15GB after phone number verification.&lt;/p&gt;
+&lt;p&gt;One would assume that this is a response to abuse of the Gmail service. It’s uncertain whether this was a response to an increase in service abuse, or the result of some internal pressures from within Google itself.&lt;/p&gt;
+</content>
+  </entry>
 
   
 

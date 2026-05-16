@@ -8,11 +8,21 @@
       <generator>Zola</generator>
       <language>en</language>
       <atom:link href="https://lzon.ca/news/rss.xml" rel="self" type="application/rss+xml"/>
-      <lastBuildDate>Thu, 14 May 2026 12:00:00 +0000</lastBuildDate>
+      <lastBuildDate>Sat, 16 May 2026 12:00:00 +0000</lastBuildDate>
       
       
       
       
+      <item>
+          <title>9. The era of 15GB free Gmail storage is ending</title>
+          <pubDate>Sat, 16 May 2026 12:00:00 +0000</pubDate>
+          <author>Lzon</author>
+          <link>https://www.androidauthority.com/google-gmail-5gb-free-storage-test-3667002</link>
+          <guid isPermaLink="false">https://lzon.ca/news/9</guid>
+          <description xml:base="https://lzon.ca/news/news-000009-15gb-gmail-ending/">&lt;p&gt;Google is experimenting with a reduction in the free storage on Gmail accounts. As they often do, they appear to be A/B testing the change. Some user reports suggest that the change is currently limited by region (mostly Africa). Other users are claiming that their new accounts have 5GB of storage, with the option to increase to 15GB after phone number verification.&lt;/p&gt;
+&lt;p&gt;One would assume that this is a response to abuse of the Gmail service. It’s uncertain whether this was a response to an increase in service abuse, or the result of some internal pressures from within Google itself.&lt;/p&gt;
+</description>
+      </item>
       <item>
           <title>8. Cisco posts record revenue, then cuts 4,000 jobs</title>
           <pubDate>Thu, 14 May 2026 12:00:00 +0000</pubDate>
