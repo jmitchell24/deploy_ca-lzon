@@ -13,7 +13,7 @@
   <generator uri="https://www.getzola.org/">Zola</generator>
 
   
-  <updated>2026-05-15T12:00:00Z</updated>
+  <updated>2026-05-18T12:00:00Z</updated>
 
   
   
@@ -29,6 +29,20 @@
   
 
   
+
+  
+
+  
+  <entry>
+    <title>55. lzon.ca&#x2F;quotes</title>
+    <id>https://lzon.ca/quotes/#55</id>
+    <link href="https://lzon.ca/quotes/"/>
+    <published>2026-05-18T12:00:00Z</published>
+    <updated>2026-05-18T12:00:00Z</updated>
+    <author><name>Lzon</name></author>
+    <category term="quote"/>
+    <summary type="html">Flow is being completely involved in an activity for its own sake. The ego falls away. Time flies. Every action, movement, and thought follows inevitably from the previous one, like playing jazz.&lt;br/&gt;- Mihaly Csikszentmihalyi</summary>
+  </entry>
 
   
 

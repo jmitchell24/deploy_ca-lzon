@@ -8,11 +8,21 @@
       <generator>Zola</generator>
       <language>en</language>
       <atom:link href="https://lzon.ca/curios/rss.xml" rel="self" type="application/rss+xml"/>
-      <lastBuildDate>Tue, 12 May 2026 12:00:00 +0000</lastBuildDate>
+      <lastBuildDate>Mon, 18 May 2026 12:00:00 +0000</lastBuildDate>
       
       
       
       
+      <item>
+          <title>34. Nibble</title>
+          <pubDate>Mon, 18 May 2026 12:00:00 +0000</pubDate>
+          <author>Lzon</author>
+          <link>https://en.wikipedia.org/wiki/Nibble</link>
+          <guid isPermaLink="false">https://lzon.ca/curios/34</guid>
+          <description xml:base="https://lzon.ca/curios/curio-000034-nibble-wikipedia/">&lt;p&gt;You probably already know that a byte is 8 bits, but have you ever heard of a ‘nibble’? A nibble is 4 bits. A few older chip architectures used it, but modern CPU’s typically use a 64-bit word length.&lt;/p&gt;
+&lt;p&gt;It’s not particularly relevant anymore. I personally had to use nibbles when I was writing my Gameboy emulator.&lt;/p&gt;
+</description>
+      </item>
       <item>
           <title>33. taken.</title>
           <pubDate>Tue, 12 May 2026 12:00:00 +0000</pubDate>
