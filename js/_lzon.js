@@ -815,6 +815,13 @@
     });
   }
 
+  // ts/toast.ts
+  function initToasts() {
+    document.addEventListener("DOMContentLoaded", () => {
+      console.log(document.cookie);
+    });
+  }
+
   // ts/_lzon.ts
   initMatomo();
   initSlideshow();
@@ -827,4 +834,5 @@
   initTree();
   initCollapse();
   initToyP5();
+  initToasts();
 })();
