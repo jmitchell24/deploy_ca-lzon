@@ -816,9 +816,31 @@
   }
 
   // ts/toast.ts
+  var API_URL = window.location.hostname === "localhost" ? "http://localhost:3000" : "https://api.lzon.ca";
   function initToasts() {
-    document.addEventListener("DOMContentLoaded", () => {
-      console.log(document.cookie);
+    function setCount(btn, count) {
+      const el = btn.querySelector("[data-toast-count]");
+      if (el)
+        el.textContent = String(count);
+    }
+    document.addEventListener("DOMContentLoaded", async () => {
+      const buttons = document.querySelectorAll("[data-toast-path]");
+      for (const btn of buttons) {
+        const path = btn.dataset.toastPath;
+        const res = await fetch(`${API_URL}/toast?path=${encodeURIComponent(path)}`);
+        if (res.ok) {
+          const { count } = await res.json();
+          setCount(btn, count);
+        }
+        btn.addEventListener("click", async () => {
+          btn.disabled = true;
+          const res2 = await fetch(`${API_URL}/toast?path=${encodeURIComponent(path)}`, { method: "POST" });
+          if (res2.ok) {
+            const { count } = await res2.json();
+            setCount(btn, count);
+          }
+        });
+      }
     });
   }
 
