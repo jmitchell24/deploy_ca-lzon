@@ -13,7 +13,7 @@
   <generator uri="https://www.getzola.org/">Zola</generator>
 
   
-  <updated>2026-05-18T12:00:00Z</updated>
+  <updated>2026-05-21T12:00:00Z</updated>
 
   
   
@@ -29,6 +29,20 @@
   
 
   
+
+  
+
+  
+  <entry>
+    <title>35. Six Degrees of Wikipedia</title>
+    <id>https://lzon.ca/curios/35</id>
+    <link href="https://www.sixdegreesofwikipedia.com"/>
+    <published>2026-05-21T12:00:00Z</published>
+    <updated>2026-05-21T12:00:00Z</updated>
+    <author><name>Lzon</name></author>
+    <content type="html" xml:base="https://lzon.ca/curios/curio-000035-six-degrees-of-wikipedia/">&lt;p&gt;A fun little web app. It finds the shortest possible of sequence of links between two different Wikipedia pages.&lt;/p&gt;
+</content>
+  </entry>
 
   
 

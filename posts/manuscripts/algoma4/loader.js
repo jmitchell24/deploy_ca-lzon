@@ -3,7 +3,7 @@ const fitAddon = new FitAddon.FitAddon();
 const term = new Terminal({
     convertEol: true,
     scrollback: 1000,
-    cols: 300,
+    cols: 150,
     allowTransparency: true,
     fontFamily: "'CourierPrime', monospace",
     fontSize: 14,
