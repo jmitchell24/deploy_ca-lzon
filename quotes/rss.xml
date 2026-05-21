@@ -8,11 +8,20 @@
       <generator>Zola</generator>
       <language>en</language>
       <atom:link href="https://lzon.ca/quotes/rss.xml" rel="self" type="application/rss+xml"/>
-      <lastBuildDate>Wed, 20 May 2026 12:00:00 +0000</lastBuildDate>
+      <lastBuildDate>Thu, 21 May 2026 12:00:00 +0000</lastBuildDate>
       
       
       
       
+      <item>
+          <title>57. lzon.ca&#x2F;quotes</title>
+          <pubDate>Thu, 21 May 2026 12:00:00 +0000</pubDate>
+          <author>Lzon</author>
+          <link>https://lzon.ca/quotes/</link>
+          <guid isPermaLink="false">https://lzon.ca/quotes/#57</guid>
+          <category>quote</category>
+          <description>Mostly it is loss which teaches us about the worth of things.&lt;br/&gt;- Arthur Schopenhauer (Parerga and Paralipomena)</description>
+      </item>
       <item>
           <title>56. lzon.ca&#x2F;quotes</title>
           <pubDate>Wed, 20 May 2026 12:00:00 +0000</pubDate>
