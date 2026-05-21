@@ -8,6 +8,7 @@ const term = new Terminal({
     fontFamily: "'CourierPrime', monospace",
     fontSize: 14,
     fontWeight: '100',
+    cursorBlink: true, 
     cursorStyle: 'underline',
     theme: { background: 'rgba(0,0,0,0)' }
 });
