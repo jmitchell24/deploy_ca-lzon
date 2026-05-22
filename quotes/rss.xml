@@ -8,11 +8,20 @@
       <generator>Zola</generator>
       <language>en</language>
       <atom:link href="https://lzon.ca/quotes/rss.xml" rel="self" type="application/rss+xml"/>
-      <lastBuildDate>Thu, 21 May 2026 12:00:00 +0000</lastBuildDate>
+      <lastBuildDate>Fri, 22 May 2026 12:00:00 +0000</lastBuildDate>
       
       
       
       
+      <item>
+          <title>58. lzon.ca&#x2F;quotes</title>
+          <pubDate>Fri, 22 May 2026 12:00:00 +0000</pubDate>
+          <author>Lzon</author>
+          <link>https://lzon.ca/quotes/</link>
+          <guid isPermaLink="false">https://lzon.ca/quotes/#58</guid>
+          <category>quote</category>
+          <description>We seldom think of what we have, but always of what we lack.&lt;br/&gt;- Arthur Schopenhauer</description>
+      </item>
       <item>
           <title>57. lzon.ca&#x2F;quotes</title>
           <pubDate>Thu, 21 May 2026 12:00:00 +0000</pubDate>

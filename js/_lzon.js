@@ -816,30 +816,32 @@
   }
 
   // ts/toast.ts
-  var API_URL = window.location.hostname === "localhost" ? "http://localhost:3000" : "https://api.lzon.ca";
+  var API_URL = window.location.hostname === "lzon.ca" || window.location.hostname === "www.lzon.ca" ? "https://api.lzon.ca" : "http://localhost:3000";
   function initToasts() {
     function setCount(btn, count) {
-      const el = btn.querySelector("[data-toast-count]");
+      const el = btn.querySelector(".toast-count");
       if (el)
         el.textContent = String(count);
     }
     document.addEventListener("DOMContentLoaded", async () => {
       const buttons = document.querySelectorAll("[data-toast-path]");
       for (const btn of buttons) {
-        const path = btn.dataset.toastPath;
+        const path = btn.getAttribute("data-toast-path");
         const res = await fetch(`${API_URL}/toast?path=${encodeURIComponent(path)}`);
         if (res.ok) {
           const { count } = await res.json();
           setCount(btn, count);
+          btn.addEventListener("click", async () => {
+            btn.disabled = true;
+            const res2 = await fetch(`${API_URL}/toast?path=${encodeURIComponent(path)}`, { method: "POST" });
+            if (res2.ok) {
+              const { count: count2 } = await res2.json();
+              setCount(btn, count2);
+            }
+          });
+        } else {
+          console.log("toast error: " + res.statusText);
         }
-        btn.addEventListener("click", async () => {
-          btn.disabled = true;
-          const res2 = await fetch(`${API_URL}/toast?path=${encodeURIComponent(path)}`, { method: "POST" });
-          if (res2.ok) {
-            const { count } = await res2.json();
-            setCount(btn, count);
-          }
-        });
       }
     });
   }
