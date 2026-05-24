@@ -8,11 +8,18 @@
       <generator>Zola</generator>
       <language>en</language>
       <atom:link href="https://lzon.ca/posts/rss.xml" rel="self" type="application/rss+xml"/>
-      <lastBuildDate>Sun, 17 May 2026 12:00:00 +0000</lastBuildDate>
+      <lastBuildDate>Sun, 24 May 2026 12:00:00 +0000</lastBuildDate>
       
       
       
       
+      <item>
+          <title>May 24th</title>
+          <pubDate>Sun, 24 May 2026 12:00:00 +0000</pubDate>
+          <author>Lzon</author>
+          <link>https://lzon.ca/posts/other/jon-bday-2026/</link>
+          <guid isPermaLink="false">https://lzon.ca/posts/other/jon-bday-2026/</guid>
+      </item>
       <item>
           <title>YouTube channels worth following</title>
           <pubDate>Sun, 17 May 2026 12:00:00 +0000</pubDate>
