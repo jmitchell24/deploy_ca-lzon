@@ -13,7 +13,7 @@
   <generator uri="https://www.getzola.org/">Zola</generator>
 
   
-  <updated>2026-05-25T12:00:00Z</updated>
+  <updated>2026-05-26T12:00:00Z</updated>
 
   
   
@@ -29,6 +29,23 @@
   
 
   
+
+  
+
+  
+  <entry>
+    <title>14. Motorola phones are hijacking Amazon URLs to insert affiliate codes</title>
+    <id>https://lzon.ca/news/14</id>
+    <link href="https://9to5google.com/2026/05/25/motorola-amazon-app-hijacking-behavior/"/>
+    <published>2026-05-26T12:00:00Z</published>
+    <updated>2026-05-26T12:00:00Z</updated>
+    <author><name>Lzon</name></author>
+    <content type="html" xml:base="https://lzon.ca/news/news-000014-motorola-hijacking-amazon/">&lt;p&gt;Some users of Motorola smartphones have noticed that affiliate codes are being automatically injected into Amazon web links.&lt;/p&gt;
+&lt;p&gt;This appears to be done by a pre-installed app called &lt;code&gt;Smart Feed&lt;/code&gt; which intercepts the URLs, redirects to an ad server, which then inserts the affiliate codes. This &lt;a rel=&quot;noopener external&quot; target=&quot;_blank&quot; href=&quot;https://old.reddit.com/r/Android/comments/1tno2z3/motorolas_preinstalled_smart_feed_app_hijacks/&quot;&gt;Reddit thread&lt;/a&gt; referenced in the article includes a more technical analysis.&lt;/p&gt;
+&lt;p&gt;For now at least, it is possible to stop this behavior. You can do so by navigating to the app’s info page &lt;code&gt;Settings -&amp;gt; Apps -&amp;gt; Search &apos;Smart Feed&apos;&lt;/code&gt; and pressing the &lt;code&gt;Disable&lt;/code&gt; button.&lt;/p&gt;
+&lt;p&gt;I’m not surprised but I am disappointed to see Motorola do this. They were once very well known for offering affordable Android devices with minimal bloat. I have an original &lt;a rel=&quot;noopener external&quot; target=&quot;_blank&quot; href=&quot;https://www.gsmarena.com/motorola_moto_g-5831.php&quot;&gt;Moto G&lt;/a&gt; which was a fantastic little device in it’s time.&lt;/p&gt;
+</content>
+  </entry>
 
   
 
