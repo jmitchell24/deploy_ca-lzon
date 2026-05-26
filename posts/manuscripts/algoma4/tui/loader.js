@@ -71,5 +71,5 @@ window.Module = {
 };
 
 var s = document.createElement('script');
-s.src = 'algoma4.js';
+s.src = 'tui/algoma4.js';
 document.head.appendChild(s);
