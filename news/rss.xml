@@ -8,11 +8,21 @@
       <generator>Zola</generator>
       <language>en</language>
       <atom:link href="https://lzon.ca/news/rss.xml" rel="self" type="application/rss+xml"/>
-      <lastBuildDate>Tue, 26 May 2026 12:00:00 +0000</lastBuildDate>
+      <lastBuildDate>Wed, 27 May 2026 12:00:00 +0000</lastBuildDate>
       
       
       
       
+      <item>
+          <title>15. Corsair to source DRAM chips from Chinese fab</title>
+          <pubDate>Wed, 27 May 2026 12:00:00 +0000</pubDate>
+          <author>Lzon</author>
+          <link>https://www.tomshardware.com/pc-components/ddr5/chinese-memory-maker-cxmt-enters-the-mainstream-consumer-memory-with-corsair-vengeance-ddr5-kit-chinese-made-dram-emerges-as-an-antidote-for-crushing-shortages</link>
+          <guid isPermaLink="false">https://lzon.ca/news/15</guid>
+          <description xml:base="https://lzon.ca/news/news-000015-memory-cxmt-shortages/">&lt;p&gt;Corsair will begin sourcing DRAM chips from &lt;a rel=&quot;noopener external&quot; target=&quot;_blank&quot; href=&quot;https://en.wikipedia.org/wiki/ChangXin_Memory_Technologies&quot;&gt;CXMT&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;The Chinese company has only just recently began production of DDR5 chips, beginning in 2025. This move is clearly a response to the DRAM chip shortages currently being caused by the AI hype bubble.&lt;/p&gt;
+</description>
+      </item>
       <item>
           <title>14. Motorola phones are hijacking Amazon URLs to insert affiliate codes</title>
           <pubDate>Tue, 26 May 2026 12:00:00 +0000</pubDate>

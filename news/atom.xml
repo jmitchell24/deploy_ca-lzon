@@ -13,7 +13,7 @@
   <generator uri="https://www.getzola.org/">Zola</generator>
 
   
-  <updated>2026-05-26T12:00:00Z</updated>
+  <updated>2026-05-27T12:00:00Z</updated>
 
   
   
@@ -29,6 +29,21 @@
   
 
   
+
+  
+
+  
+  <entry>
+    <title>15. Corsair to source DRAM chips from Chinese fab</title>
+    <id>https://lzon.ca/news/15</id>
+    <link href="https://www.tomshardware.com/pc-components/ddr5/chinese-memory-maker-cxmt-enters-the-mainstream-consumer-memory-with-corsair-vengeance-ddr5-kit-chinese-made-dram-emerges-as-an-antidote-for-crushing-shortages"/>
+    <published>2026-05-27T12:00:00Z</published>
+    <updated>2026-05-27T12:00:00Z</updated>
+    <author><name>Lzon</name></author>
+    <content type="html" xml:base="https://lzon.ca/news/news-000015-memory-cxmt-shortages/">&lt;p&gt;Corsair will begin sourcing DRAM chips from &lt;a rel=&quot;noopener external&quot; target=&quot;_blank&quot; href=&quot;https://en.wikipedia.org/wiki/ChangXin_Memory_Technologies&quot;&gt;CXMT&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;The Chinese company has only just recently began production of DDR5 chips, beginning in 2025. This move is clearly a response to the DRAM chip shortages currently being caused by the AI hype bubble.&lt;/p&gt;
+</content>
+  </entry>
 
   
 
