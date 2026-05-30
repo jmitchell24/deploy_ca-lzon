@@ -13,7 +13,7 @@
   <generator uri="https://www.getzola.org/">Zola</generator>
 
   
-  <updated>2026-05-29T12:00:00Z</updated>
+  <updated>2026-05-30T12:00:00Z</updated>
 
   
   
@@ -29,6 +29,20 @@
   
 
   
+
+  
+
+  
+  <entry>
+    <title>61. lzon.ca&#x2F;quotes</title>
+    <id>https://lzon.ca/quotes/#61</id>
+    <link href="https://lzon.ca/quotes/"/>
+    <published>2026-05-30T12:00:00Z</published>
+    <updated>2026-05-30T12:00:00Z</updated>
+    <author><name>Lzon</name></author>
+    <category term="quote"/>
+    <summary type="html">If you get tired, learn to rest, not to quit.&lt;br/&gt;- Banksy</summary>
+  </entry>
 
   
 
