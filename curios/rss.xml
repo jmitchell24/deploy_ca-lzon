@@ -113,6 +113,8 @@ also published as a book.&lt;/p&gt;
           <author>Lzon</author>
           <link>https://thegrounded.ghost.io/the-truth-dies-on-the-way-up/</link>
           <guid isPermaLink="false">https://lzon.ca/curios/25</guid>
+          <description xml:base="https://lzon.ca/curios/curio-000025-the-truth-dies-on-the-way-up/">&lt;p&gt;An interesting article about the nature of being an elite. Put simply, the wealthier and more powerful you become the more separated you become from the reality of everyone else in society. This is harmful for the individual as well as society which is subject to their whims.&lt;/p&gt;
+</description>
       </item>
       <item>
           <title>24. The Submarine</title>
@@ -120,6 +122,9 @@ also published as a book.&lt;/p&gt;
           <author>Lzon</author>
           <link>https://paulgraham.com/submarine.html</link>
           <guid isPermaLink="false">https://lzon.ca/curios/24</guid>
+          <description xml:base="https://lzon.ca/curios/curio-000024-the-submarine/">&lt;p&gt;Paul Graham’s story of how he came to learn the value of marketing and public relations. The article specifically speaks to the use of PR in the news media.&lt;/p&gt;
+&lt;p&gt;I was already fairly paranoid about seeing ulterior motives in the news, so this served to confirm my suspicions.&lt;/p&gt;
+</description>
       </item>
       <item>
           <title>23. Why I don&#x27;t think AGI is imminent</title>
@@ -127,6 +132,8 @@ also published as a book.&lt;/p&gt;
           <author>Lzon</author>
           <link>https://dlants.me/agi-not-imminent.html</link>
           <guid isPermaLink="false">https://lzon.ca/curios/23</guid>
+          <description xml:base="https://lzon.ca/curios/curio-000023-why-i-don-t-think-agi-is-imminent/">&lt;p&gt;A very thorough explanation for why LLM technology will not lead to AGI.&lt;/p&gt;
+</description>
       </item>
       <item>
           <title>22. The Birth &amp; Death of JavaScript</title>
@@ -134,6 +141,8 @@ also published as a book.&lt;/p&gt;
           <author>Lzon</author>
           <link>https://www.destroyallsoftware.com/talks/the-birth-and-death-of-javascript</link>
           <guid isPermaLink="false">https://lzon.ca/curios/22</guid>
+          <description xml:base="https://lzon.ca/curios/curio-000022-the-birth-death-of-javascript/">&lt;p&gt;An old satirical TED-style presentation about the future of JavaScript and web assembly. I remember seeing it years ago and thought it would be worth sharing.&lt;/p&gt;
+</description>
       </item>
       <item>
           <title>21. The future of work when work is meaningless</title>
@@ -141,6 +150,8 @@ also published as a book.&lt;/p&gt;
           <author>Lzon</author>
           <link>https://letters.thedankoe.com/p/the-future-of-work-when-work-is-meaningless</link>
           <guid isPermaLink="false">https://lzon.ca/curios/21</guid>
+          <description xml:base="https://lzon.ca/curios/curio-000021-the-future-of-work-when-work-is-meaningless/">&lt;p&gt;A good take on the current effect that AI is having on the nature of employment, as well as predictions for the future.&lt;/p&gt;
+</description>
       </item>
       <item>
           <title>20. Manna by Marshall Brain</title>
@@ -148,6 +159,10 @@ also published as a book.&lt;/p&gt;
           <author>Lzon</author>
           <link>https://marshallbrain.com/manna1</link>
           <guid isPermaLink="false">https://lzon.ca/curios/20</guid>
+          <description xml:base="https://lzon.ca/curios/curio-000020-manna-by-marshall-brain/">&lt;p&gt;A good short scifi story by Marshall Brain.&lt;/p&gt;
+&lt;p&gt;I like to re-read this every so often. I have a habit of measuring news about automation against the timeline in the story, “when in Manna did this start happening”.&lt;/p&gt;
+&lt;p&gt;The second half is a bit too fanciful for my taste, so I usually skip it when re-reading.&lt;/p&gt;
+</description>
       </item>
       <item>
           <title>19. What Is Soul Fatigue?</title>
@@ -155,6 +170,8 @@ also published as a book.&lt;/p&gt;
           <author>Lzon</author>
           <link>https://www.michelegargiulo.com/blog/what-is-soul-fatigue</link>
           <guid isPermaLink="false">https://lzon.ca/curios/19</guid>
+          <description xml:base="https://lzon.ca/curios/curio-000019-what-is-soul-fatigue/">&lt;p&gt;Soul Fatigue as describe by the author is something I can definitely relate to. Fortunately I do believe its something that can be overcome, but it isn’t easy.&lt;/p&gt;
+</description>
       </item>
       <item>
           <title>18. Scientists find exercise rivals therapy for depression</title>
@@ -162,6 +179,8 @@ also published as a book.&lt;/p&gt;
           <author>Lzon</author>
           <link>https://www.sciencedaily.com/releases/2026/01/260107225516.htm</link>
           <guid isPermaLink="false">https://lzon.ca/curios/18</guid>
+          <description xml:base="https://lzon.ca/curios/curio-000018-scientists-find-exercise-rivals-therapy-for-depression/">&lt;p&gt;I have struggled with depression for a long time and I can 100% attest to the effectiveness of exercise. There have been days in which I convinced myself to work out just by reminding myself that it would lift my mood.&lt;/p&gt;
+</description>
       </item>
       <item>
           <title>17. Are you already a Cyborg?</title>
@@ -169,6 +188,9 @@ also published as a book.&lt;/p&gt;
           <author>Lzon</author>
           <link>https://www.sciencedirect.com/science/article/abs/pii/S0747563215001272</link>
           <guid isPermaLink="false">https://lzon.ca/curios/17</guid>
+          <description xml:base="https://lzon.ca/curios/curio-000017-are-you-already-a-cyborg/">&lt;p&gt;I suppose this is somewhat a matter of opinion, but its an idea that I definitely agree with.&lt;/p&gt;
+&lt;p&gt;The medium of communication between a person and their computer is hands, eyes, ears, etc… This doesn’t &lt;em&gt;feel&lt;/em&gt; like it qualifies as cyborg, but if that same computer was wired directly into the brain it most definitely would. The article (and I) argue that the meaningful difference is ‘bandwidth’, not the medium itself.&lt;/p&gt;
+</description>
       </item>
       <item>
           <title>16. Vanitiy Activities</title>
@@ -176,6 +198,9 @@ also published as a book.&lt;/p&gt;
           <author>Lzon</author>
           <link>https://quarter--mile.com/vanity-activities</link>
           <guid isPermaLink="false">https://lzon.ca/curios/16</guid>
+          <description xml:base="https://lzon.ca/curios/curio-000016-vanitiy-activities/">&lt;p&gt;An interesting piece of social theory. I definitely see this pattern in others, and in myself as well.&lt;/p&gt;
+&lt;p&gt;I think it’s a valid concept. I don’t see it as being necessarily a bad thing, but it’s certainly worthwhile to be cognizant of it.&lt;/p&gt;
+</description>
       </item>
       <item>
           <title>15. Is Everything a Religion?</title>
@@ -183,6 +208,9 @@ also published as a book.&lt;/p&gt;
           <author>Lzon</author>
           <link>https://slatestarcodex.com/2015/03/25/is-everything-a-religion/</link>
           <guid isPermaLink="false">https://lzon.ca/curios/15</guid>
+          <description xml:base="https://lzon.ca/curios/curio-000015-is-everything-a-religion/">&lt;p&gt;A SlateStarCodex post about how often sub-cultures and social movements get called ‘religions’.&lt;/p&gt;
+&lt;p&gt;A good read, as always.&lt;/p&gt;
+</description>
       </item>
       <item>
           <title>14. No Graphics API</title>
@@ -190,6 +218,9 @@ also published as a book.&lt;/p&gt;
           <author>Lzon</author>
           <link>https://www.sebastianaaltonen.com/blog/no-graphics-api</link>
           <guid isPermaLink="false">https://lzon.ca/curios/14</guid>
+          <description xml:base="https://lzon.ca/curios/curio-000014-no-graphics-api/">&lt;p&gt;A history of graphics APIs. I remember teaching myself OpenGL in high school so I knew a fair bit of the history of this subject.&lt;/p&gt;
+&lt;p&gt;If you have any interest in computer graphics this is well worth a read.&lt;/p&gt;
+</description>
       </item>
       <item>
           <title>13. The history of Xerox</title>
@@ -197,6 +228,8 @@ also published as a book.&lt;/p&gt;
           <author>Lzon</author>
           <link>https://www.abortretry.fail/p/the-history-of-xerox</link>
           <guid isPermaLink="false">https://lzon.ca/curios/13</guid>
+          <description xml:base="https://lzon.ca/curios/curio-000013-the-history-of-xerox/">&lt;p&gt;The story of Xerox through the early years of the personal computer. It’s a fascinating story and well worth your time.&lt;/p&gt;
+</description>
       </item>
       <item>
           <title>12. Fix your timestep</title>
@@ -204,6 +237,8 @@ also published as a book.&lt;/p&gt;
           <author>Lzon</author>
           <link>https://gafferongames.com/post/fix_your_timestep/</link>
           <guid isPermaLink="false">https://lzon.ca/curios/12</guid>
+          <description xml:base="https://lzon.ca/curios/curio-000012-fix-your-timestep/">&lt;p&gt;A very useful article for anyone interested in developing video games, or any other kind of real time system.&lt;/p&gt;
+</description>
       </item>
       <item>
           <title>11. The Copenhagen Trap</title>
@@ -211,6 +246,8 @@ also published as a book.&lt;/p&gt;
           <author>Lzon</author>
           <link>https://aliveness.kunnas.com/articles/copenhagen-trap</link>
           <guid isPermaLink="false">https://lzon.ca/curios/11</guid>
+          <description xml:base="https://lzon.ca/curios/curio-000011-the-copenhagen-trap/">&lt;p&gt;An article about how bad incentives lead to inaction.&lt;/p&gt;
+</description>
       </item>
       <item>
           <title>10. A History of Laptop Displays</title>
@@ -218,13 +255,17 @@ also published as a book.&lt;/p&gt;
           <author>Lzon</author>
           <link>https://www.dosdays.co.uk/topics/laptop_displays.php</link>
           <guid isPermaLink="false">https://lzon.ca/curios/10</guid>
+          <description xml:base="https://lzon.ca/curios/curio-000010-a-history-of-laptop-displays/">&lt;p&gt;An interesting history of older computer display technology. I’m a display nerd, a ‘pixel peeper’ so of course I had to read when I found it.&lt;/p&gt;
+</description>
       </item>
       <item>
-          <title>9. Flash of unstyled content (FOUC) </title>
+          <title>9. Flash of unstyled content (FOUC)</title>
           <pubDate>Wed, 23 Jul 2025 12:00:00 +0000</pubDate>
           <author>Lzon</author>
           <link>https://en.wikipedia.org/wiki/Flash_of_unstyled_content</link>
           <guid isPermaLink="false">https://lzon.ca/curios/9</guid>
+          <description xml:base="https://lzon.ca/curios/curio-000009-flash-of-unstyled-content-fouc/">&lt;p&gt;An apparently well known issue in web development. I encountered this issue while teaching myself web development and have come to realize that it is a perennial concern. And in my personal experience is something that needs to be actively managed (it seems to creep back into my projects if I’m not careful).&lt;/p&gt;
+</description>
       </item>
       <item>
           <title>8. Let me pay for Firefox</title>
@@ -232,6 +273,10 @@ also published as a book.&lt;/p&gt;
           <author>Lzon</author>
           <link>https://discourse.mozilla.org/t/let-me-pay-for-firefox/141297</link>
           <guid isPermaLink="false">https://lzon.ca/curios/8</guid>
+          <description xml:base="https://lzon.ca/curios/curio-000008-let-me-pay-for-firefox/">&lt;p&gt;A lament regarding the state of Mozilla corporation and its flagship product: the Firefox web browser.&lt;/p&gt;
+&lt;p&gt;The financial structure of Mozilla is concerning, it appears as though it is largely propped up by its only real competitor Google.&lt;/p&gt;
+&lt;p&gt;As much as I &lt;em&gt;want&lt;/em&gt; to believe that Firefox could be sustained as a paid product, I just don’t see that as being realistic. Asking anyone to pay for software is difficult, and even moresoe for web browsers since there is a deeply ingrained expectation that they are free to use.&lt;/p&gt;
+</description>
       </item>
       <item>
           <title>7. Writing Toy Software Is A Joy</title>
@@ -239,6 +284,9 @@ also published as a book.&lt;/p&gt;
           <author>Lzon</author>
           <link>https://blog.jsbarretto.com/post/software-is-joy</link>
           <guid isPermaLink="false">https://lzon.ca/curios/7</guid>
+          <description xml:base="https://lzon.ca/curios/curio-000007-writing-toy-software-is-a-joy/">&lt;p&gt;There seems to be two kinds of programmers: those who care only for the final product of their work, and those who also enjoy the process itself.&lt;/p&gt;
+&lt;p&gt;I’m in the latter camp, as well as this author. I get a lot of satisfaction the experience of computing.&lt;/p&gt;
+</description>
       </item>
       <item>
           <title>6. The Intelligence Curse</title>
@@ -246,6 +294,10 @@ also published as a book.&lt;/p&gt;
           <author>Lzon</author>
           <link>https://intelligence-curse.ai/</link>
           <guid isPermaLink="false">https://lzon.ca/curios/6</guid>
+          <description xml:base="https://lzon.ca/curios/curio-000006-the-intelligence-curse/">&lt;p&gt;A speculative article about the near-term future of AI technology, and the impacts it will have on the economy and society. It has a similar style to &lt;a rel=&quot;noopener external&quot; target=&quot;_blank&quot; href=&quot;https://ai-2027.com/&quot;&gt;AI 2027&lt;/a&gt;, but perhaps less well known.&lt;/p&gt;
+&lt;p&gt;The name is a riff on &lt;a rel=&quot;noopener external&quot; target=&quot;_blank&quot; href=&quot;https://en.wikipedia.org/wiki/Resource_curse&quot;&gt;Resource Curse&lt;/a&gt;, which describes what happens to citizens in a resource-rich nation. Wealth is generated from the resource, and less so from the labor of the citizens, which leads to their dis-empowerment due to lack of leverage.&lt;/p&gt;
+&lt;p&gt;The article warns that advanced AI can dis-empower people in a similar way.&lt;/p&gt;
+</description>
       </item>
       <item>
           <title>5. Build Your Own Text Editor</title>
@@ -253,6 +305,8 @@ also published as a book.&lt;/p&gt;
           <author>Lzon</author>
           <link>https://viewsourcecode.org/snaptoken/kilo/index.html</link>
           <guid isPermaLink="false">https://lzon.ca/curios/5</guid>
+          <description xml:base="https://lzon.ca/curios/curio-000005-build-your-own-text-editor/">&lt;p&gt;A very approachable guide for building your own terminal-based text editor from scratch. I haven’t made one for myself yet, but I did learn a lot about how command line terminals work while reading this.&lt;/p&gt;
+</description>
       </item>
       <item>
           <title>4. Windows NT vs. Unix - A design comparison</title>
@@ -260,6 +314,8 @@ also published as a book.&lt;/p&gt;
           <author>Lzon</author>
           <link>https://blogsystem5.substack.com/p/windows-nt-vs-unix-design</link>
           <guid isPermaLink="false">https://lzon.ca/curios/4</guid>
+          <description xml:base="https://lzon.ca/curios/curio-000004-windows-nt-vs-unix-a-design-comparison/">&lt;p&gt;An interesting technical deep dive that I found. It explains in detail the differences between modern Windows (NT kernel) and Unix.&lt;/p&gt;
+</description>
       </item>
       <item>
           <title>3. Basic Hacks for Kobo E-Readers</title>
@@ -267,6 +323,9 @@ also published as a book.&lt;/p&gt;
           <author>Lzon</author>
           <link>https://www.linux-magazine.com/Online/Features/Basic-Hacks-for-Kobo-E-Readers</link>
           <guid isPermaLink="false">https://lzon.ca/curios/3</guid>
+          <description xml:base="https://lzon.ca/curios/curio-000003-basic-hacks-for-kobo-e-readers/">&lt;p&gt;I really like e-readers, and e-ink displays. The good ones really do like a real printed page, and its great to read on them.&lt;/p&gt;
+&lt;p&gt;I also like how hack-able they are, especially compared to other modern consumer technology. Kobo’s specifically are very easy to work with.&lt;/p&gt;
+</description>
       </item>
       <item>
           <title>2. Ship Software That Does Nothing</title>
@@ -274,6 +333,8 @@ also published as a book.&lt;/p&gt;
           <author>Lzon</author>
           <link>https://kerrick.blog/articles/2025/ship-software-that-does-nothing/</link>
           <guid isPermaLink="false">https://lzon.ca/curios/2</guid>
+          <description xml:base="https://lzon.ca/curios/curio-000002-ship-software-that-does-nothing/">&lt;p&gt;A good article, with a very sound piece of advice. Getting to the point that you are able to ship your product, even if it literally does nothing, is an important step and worth taking just on its own. Doing so will pay dividends as the project grows.&lt;/p&gt;
+</description>
       </item>
       <item>
           <title>1. How to build your resume with an SSG</title>
@@ -281,6 +342,9 @@ also published as a book.&lt;/p&gt;
           <author>Lzon</author>
           <link>https://ktema.org/articles/the-overengineered-resume/</link>
           <guid isPermaLink="false">https://lzon.ca/curios/1</guid>
+          <description xml:base="https://lzon.ca/curios/curio-000001-how-to-build-your-resume-with-an-ssg/">&lt;p&gt;An interesting and fun blog post about how the author built his resume using &lt;a rel=&quot;noopener external&quot; target=&quot;_blank&quot; href=&quot;https://getzola.org&quot;&gt;Zola&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;I use Zola to build this site, and I like using it a lot. I also took the author’s lead and built a workflow for my own resume based on it.&lt;/p&gt;
+</description>
       </item>
     </channel>
 </rss>

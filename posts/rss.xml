@@ -8,11 +8,19 @@
       <generator>Zola</generator>
       <language>en</language>
       <atom:link href="https://lzon.ca/posts/rss.xml" rel="self" type="application/rss+xml"/>
-      <lastBuildDate>Thu, 28 May 2026 12:00:00 +0000</lastBuildDate>
+      <lastBuildDate>Mon, 01 Jun 2026 12:00:00 +0000</lastBuildDate>
       
       
       
       
+      <item>
+          <title>A result type for C++</title>
+          <pubDate>Mon, 01 Jun 2026 12:00:00 +0000</pubDate>
+          <author>Lzon</author>
+          <link>https://lzon.ca/posts/tips/cpp-result-type/</link>
+          <guid isPermaLink="false">https://lzon.ca/posts/tips/cpp-result-type/</guid>
+          <description xml:base="https://lzon.ca/posts/tips/cpp-result-type/">&lt;p&gt;I wrote my own version of the very useful ‘result type’ pattern for C++.&lt;&#x2F;p&gt;</description>
+      </item>
       <item>
           <title>May 24th</title>
           <pubDate>Sun, 24 May 2026 12:00:00 +0000</pubDate>

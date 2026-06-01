@@ -842,6 +842,10 @@
         <loc>https://lzon.ca/posts/tips/</loc>
     </url>
     <url>
+        <loc>https://lzon.ca/posts/tips/cpp-result-type/</loc>
+        <lastmod>2026-06-01</lastmod>
+    </url>
+    <url>
         <loc>https://lzon.ca/posts/tips/cpp-single-instance/</loc>
         <lastmod>2026-05-02</lastmod>
     </url>
@@ -855,6 +859,9 @@
     </url>
     <url>
         <loc>https://lzon.ca/posts/tips/page/1/</loc>
+    </url>
+    <url>
+        <loc>https://lzon.ca/posts/tips/page/2/</loc>
     </url>
     <url>
         <loc>https://lzon.ca/posts/tips/pleasant-passwords/</loc>
@@ -1121,6 +1128,10 @@
     <url>
         <loc>https://lzon.ca/quotes/quotes-000061-banksy/</loc>
         <lastmod>2026-05-30</lastmod>
+    </url>
+    <url>
+        <loc>https://lzon.ca/quotes/quotes-000062-benjamin-franklin/</loc>
+        <lastmod>2026-06-01</lastmod>
     </url>
     <url>
         <loc>https://lzon.ca/toys/</loc>
