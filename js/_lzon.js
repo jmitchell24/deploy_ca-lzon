@@ -280,8 +280,8 @@
   }
   async function initQotd() {
     function getShuffledIndices(length) {
+      let t = 1831565813;
       function rand() {
-        let t = 1831565813;
         t = Math.imul(t ^ t >>> 15, t | 1);
         t ^= t + Math.imul(t ^ t >>> 7, t | 61);
         return ((t ^ t >>> 14) >>> 0) / 4294967296;
@@ -335,6 +335,7 @@
         return;
       fetch("/quotes/pages.json").then((res) => res.json()).then((data) => data.pages).then((quotes) => quotes.map(parseQuote)).then((quotes) => {
         const indices = getShuffledIndices(quotes.length);
+        indices.forEach((v, i) => console.log(`shuffle[${i}] = ${v}`));
         function getSequenceQuote(offset) {
           const days = getDaysSinceEpoch() + (offset || 0);
           const cycleIndex = days % quotes.length;
