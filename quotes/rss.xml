@@ -8,11 +8,20 @@
       <generator>Zola</generator>
       <language>en</language>
       <atom:link href="https://lzon.ca/quotes/rss.xml" rel="self" type="application/rss+xml"/>
-      <lastBuildDate>Wed, 03 Jun 2026 12:00:00 +0000</lastBuildDate>
+      <lastBuildDate>Thu, 04 Jun 2026 12:00:00 +0000</lastBuildDate>
       
       
       
       
+      <item>
+          <title>65. lzon.ca&#x2F;quotes</title>
+          <pubDate>Thu, 04 Jun 2026 12:00:00 +0000</pubDate>
+          <author>Lzon</author>
+          <link>https://lzon.ca/quotes/</link>
+          <guid isPermaLink="false">https://lzon.ca/quotes/#65</guid>
+          <category>quote</category>
+          <description>Reject your sense of injury and the injury itself disappears.&lt;br/&gt;- Marcus Aurelius (Meditations)</description>
+      </item>
       <item>
           <title>64. lzon.ca&#x2F;quotes</title>
           <pubDate>Wed, 03 Jun 2026 12:00:00 +0000</pubDate>
