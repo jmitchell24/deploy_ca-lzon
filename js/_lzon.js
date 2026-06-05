@@ -330,8 +330,9 @@
     document.addEventListener("DOMContentLoaded", () => {
       const elQotd = document.querySelector("#qotd");
       const elQuoteSchedules = document.querySelectorAll(".quote-schedule");
+      const elQuoteSorts = document.querySelectorAll(".quote-sort");
       const elQuoteRandoms = document.querySelectorAll("a.quote-random");
-      if (!(elQotd || elQuoteSchedules.length > 0 || elQuoteRandoms.length > 0))
+      if (!(elQotd || elQuoteSchedules.length > 0 || elQuoteRandoms.length > 0 || elQuoteSorts.length > 0))
         return;
       fetch("/quotes/pages.json").then((res) => res.json()).then((data) => data.pages).then((quotes) => quotes.map(parseQuote)).then((quotes) => {
         const indices = getShuffledIndices(quotes.length);
@@ -383,14 +384,33 @@
             updateQuote(getSequenceQuote(++todayQuoteIdx), false, true);
           });
         }
+        const today = new Date;
+        const idToDate = new Map;
+        for (let offset = 0;offset < quotes.length; offset++) {
+          const d = new Date(today);
+          d.setDate(d.getDate() + offset);
+          idToDate.set(getSequenceQuote(offset).id, d);
+        }
+        const sortParam = new URLSearchParams(window.location.search).get("sort");
+        if (sortParam === "schedule" && elQuoteSorts.length > 0) {
+          const sorted = Array.from(elQuoteSorts).sort((a, b) => {
+            const idA = parseInt(a.dataset.quoteId ?? "", 10);
+            const idB = parseInt(b.dataset.quoteId ?? "", 10);
+            const dateA = idToDate.get(idA)?.getTime() ?? Infinity;
+            const dateB = idToDate.get(idB)?.getTime() ?? Infinity;
+            return dateA - dateB;
+          });
+          const parent = sorted[0].parentElement;
+          if (parent)
+            sorted.forEach((el) => parent.appendChild(el));
+        }
+        if (sortParam === "random" && elQuoteSorts.length > 0) {
+          const shuffled = Array.from(elQuoteSorts).sort(() => Math.random() - 0.5);
+          const parent = shuffled[0].parentElement;
+          if (parent)
+            shuffled.forEach((el) => parent.appendChild(el));
+        }
         if (elQuoteSchedules.length > 0) {
-          const today = new Date;
-          const idToDate = new Map;
-          for (let offset = 0;offset < quotes.length; offset++) {
-            const d = new Date(today);
-            d.setDate(d.getDate() + offset);
-            idToDate.set(getSequenceQuote(offset).id, d);
-          }
           elQuoteSchedules.forEach((el) => {
             const id = parseInt(el.dataset.quoteId ?? "", 10);
             const schedDate = idToDate.get(id);
