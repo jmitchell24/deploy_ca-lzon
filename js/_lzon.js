@@ -392,6 +392,10 @@
           idToDate.set(getSequenceQuote(offset).id, d);
         }
         const sortParam = new URLSearchParams(window.location.search).get("sort");
+        document.querySelectorAll(".quote-sort-options a[data-sort]").forEach((el) => {
+          if (el.dataset.sort === (sortParam ?? ""))
+            el.setAttribute("aria-current", "page");
+        });
         if (sortParam === "schedule" && elQuoteSorts.length > 0) {
           const sorted = Array.from(elQuoteSorts).sort((a, b) => {
             const idA = parseInt(a.dataset.quoteId ?? "", 10);

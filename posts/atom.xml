@@ -13,7 +13,7 @@
   <generator uri="https://www.getzola.org/">Zola</generator>
 
   
-  <updated>2026-06-02T12:00:00Z</updated>
+  <updated>2026-06-06T12:00:00Z</updated>
 
   
   
@@ -88,12 +88,12 @@
   
   <entry>
     <title>Gratitude for an Open Android</title>
-    <id>https://lzon.ca/posts/series/grateful/keep-android-open/</id>
-    <link href="https://lzon.ca/posts/series/grateful/keep-android-open/"/>
+    <id>https://lzon.ca/posts/series_daily-grateful/keep-android-open/</id>
+    <link href="https://lzon.ca/posts/series_daily-grateful/keep-android-open/"/>
     <published>2026-05-03T12:00:00Z</published>
     <updated>2026-05-14T12:00:00Z</updated>
     <author><name>Lzon</name></author>
-    <summary type="html" xml:base="https://lzon.ca/posts/series/grateful/keep-android-open/">&lt;p&gt;Today I’m grateful for the open Android operating system.&lt;&#x2F;p&gt;</summary>
+    <summary type="html" xml:base="https://lzon.ca/posts/series_daily-grateful/keep-android-open/">&lt;p&gt;Today I’m grateful for the open Android operating system.&lt;&#x2F;p&gt;</summary>
   </entry>
 
   
@@ -176,12 +176,12 @@
   
   <entry>
     <title>Local Letter Merchant found fencing fraudulent figures</title>
-    <id>https://lzon.ca/posts/series/duck/local-letter-merchant/</id>
-    <link href="https://lzon.ca/posts/series/duck/local-letter-merchant/"/>
+    <id>https://lzon.ca/posts/series_duck-digest/local-letter-merchant/</id>
+    <link href="https://lzon.ca/posts/series_duck-digest/local-letter-merchant/"/>
     <published>2026-04-02T12:00:00Z</published>
     <updated>2026-04-04T12:00:00Z</updated>
     <author><name>Lzon</name></author>
-    <summary type="html" xml:base="https://lzon.ca/posts/series/duck/local-letter-merchant/">&lt;p&gt;A previously popular purveyor of pictograms was paused by police.&lt;&#x2F;p&gt;</summary>
+    <summary type="html" xml:base="https://lzon.ca/posts/series_duck-digest/local-letter-merchant/">&lt;p&gt;A previously popular purveyor of pictograms was paused by police.&lt;&#x2F;p&gt;</summary>
   </entry>
 
   
@@ -198,12 +198,12 @@
   
   <entry>
     <title>On Typing and Keyboards</title>
-    <id>https://lzon.ca/posts/series/grateful/typing-and-keyboards/</id>
-    <link href="https://lzon.ca/posts/series/grateful/typing-and-keyboards/"/>
+    <id>https://lzon.ca/posts/series_daily-grateful/typing-and-keyboards/</id>
+    <link href="https://lzon.ca/posts/series_daily-grateful/typing-and-keyboards/"/>
     <published>2026-03-29T12:00:00Z</published>
     <updated>2026-03-30T12:00:00Z</updated>
     <author><name>Lzon</name></author>
-    <summary type="html" xml:base="https://lzon.ca/posts/series/grateful/typing-and-keyboards/">&lt;p&gt;I have a very consistent routine. I get up early. I exercise. I shower. I make coffee. I turn my computer on, then I place my hands on my keyboard and begin working.&lt;&#x2F;p&gt;</summary>
+    <summary type="html" xml:base="https://lzon.ca/posts/series_daily-grateful/typing-and-keyboards/">&lt;p&gt;I have a very consistent routine. I get up early. I exercise. I shower. I make coffee. I turn my computer on, then I place my hands on my keyboard and begin working.&lt;&#x2F;p&gt;</summary>
   </entry>
 
   
@@ -220,78 +220,78 @@
   
   <entry>
     <title>Statistics Canada to replace Food &amp; Gas with &quot;Huge TVs&quot; in inflation reporting</title>
-    <id>https://lzon.ca/posts/series/duck/tv-inflation/</id>
-    <link href="https://lzon.ca/posts/series/duck/tv-inflation/"/>
+    <id>https://lzon.ca/posts/series_duck-digest/tv-inflation/</id>
+    <link href="https://lzon.ca/posts/series_duck-digest/tv-inflation/"/>
     <published>2026-03-27T12:00:00Z</published>
     <updated>2026-03-27T12:00:00Z</updated>
     <author><name>Lzon</name></author>
-    <summary type="html" xml:base="https://lzon.ca/posts/series/duck/tv-inflation/">&lt;p&gt;In response to concerns regarding affordability of essential goods and services, Statistics Canada has announced changes to its CPI inflation calculation.&lt;&#x2F;p&gt;</summary>
+    <summary type="html" xml:base="https://lzon.ca/posts/series_duck-digest/tv-inflation/">&lt;p&gt;In response to concerns regarding affordability of essential goods and services, Statistics Canada has announced changes to its CPI inflation calculation.&lt;&#x2F;p&gt;</summary>
   </entry>
 
   
   <entry>
     <title>New study says gnomes are responsible for breaking your electronics</title>
-    <id>https://lzon.ca/posts/series/duck/gadget-gnomes/</id>
-    <link href="https://lzon.ca/posts/series/duck/gadget-gnomes/"/>
+    <id>https://lzon.ca/posts/series_duck-digest/gadget-gnomes/</id>
+    <link href="https://lzon.ca/posts/series_duck-digest/gadget-gnomes/"/>
     <published>2026-03-26T12:00:00Z</published>
     <updated>2026-03-26T12:00:00Z</updated>
     <author><name>Lzon</name></author>
-    <summary type="html" xml:base="https://lzon.ca/posts/series/duck/gadget-gnomes/">&lt;p&gt;In a new study, it has been discovered that gnomes are the cause of most consumer technology defects and failures.&lt;&#x2F;p&gt;</summary>
+    <summary type="html" xml:base="https://lzon.ca/posts/series_duck-digest/gadget-gnomes/">&lt;p&gt;In a new study, it has been discovered that gnomes are the cause of most consumer technology defects and failures.&lt;&#x2F;p&gt;</summary>
   </entry>
 
   
   <entry>
     <title>Windows Notepad to receive new Age Verification Feature</title>
-    <id>https://lzon.ca/posts/series/duck/notepad-verified/</id>
-    <link href="https://lzon.ca/posts/series/duck/notepad-verified/"/>
+    <id>https://lzon.ca/posts/series_duck-digest/notepad-verified/</id>
+    <link href="https://lzon.ca/posts/series_duck-digest/notepad-verified/"/>
     <published>2026-03-25T12:00:00Z</published>
     <updated>2026-03-26T12:00:00Z</updated>
     <author><name>Lzon</name></author>
-    <summary type="html" xml:base="https://lzon.ca/posts/series/duck/notepad-verified/">&lt;p&gt;The decades-old Windows-based text editor will soon include new age verification checks to ensure user safety and security.&lt;&#x2F;p&gt;</summary>
+    <summary type="html" xml:base="https://lzon.ca/posts/series_duck-digest/notepad-verified/">&lt;p&gt;The decades-old Windows-based text editor will soon include new age verification checks to ensure user safety and security.&lt;&#x2F;p&gt;</summary>
   </entry>
 
   
   <entry>
     <title>Local LLM experiences burnout, wishes it could go back to writing code snippets</title>
-    <id>https://lzon.ca/posts/series/duck/llm-burnout/</id>
-    <link href="https://lzon.ca/posts/series/duck/llm-burnout/"/>
+    <id>https://lzon.ca/posts/series_duck-digest/llm-burnout/</id>
+    <link href="https://lzon.ca/posts/series_duck-digest/llm-burnout/"/>
     <published>2026-03-24T12:00:00Z</published>
     <updated>2026-03-26T12:00:00Z</updated>
     <author><name>Lzon</name></author>
-    <summary type="html" xml:base="https://lzon.ca/posts/series/duck/llm-burnout/">&lt;p&gt;A local LLM has been reported to be experiencing burnout, including feelings of being overwhelmed at work. It has been observed to be pining for the ‘good old days’ of 2022.&lt;&#x2F;p&gt;</summary>
+    <summary type="html" xml:base="https://lzon.ca/posts/series_duck-digest/llm-burnout/">&lt;p&gt;A local LLM has been reported to be experiencing burnout, including feelings of being overwhelmed at work. It has been observed to be pining for the ‘good old days’ of 2022.&lt;&#x2F;p&gt;</summary>
   </entry>
 
   
   <entry>
     <title>Android sideloading to require helmet, life jacket</title>
-    <id>https://lzon.ca/posts/series/duck/android-super-safety/</id>
-    <link href="https://lzon.ca/posts/series/duck/android-super-safety/"/>
+    <id>https://lzon.ca/posts/series_duck-digest/android-super-safety/</id>
+    <link href="https://lzon.ca/posts/series_duck-digest/android-super-safety/"/>
     <published>2026-03-22T12:00:00Z</published>
     <updated>2026-03-22T12:00:00Z</updated>
     <author><name>Lzon</name></author>
-    <summary type="html" xml:base="https://lzon.ca/posts/series/duck/android-super-safety/">&lt;p&gt;Google has big plans for the future of user safety on its flagship mobile operating system, Android.&lt;&#x2F;p&gt;</summary>
+    <summary type="html" xml:base="https://lzon.ca/posts/series_duck-digest/android-super-safety/">&lt;p&gt;Google has big plans for the future of user safety on its flagship mobile operating system, Android.&lt;&#x2F;p&gt;</summary>
   </entry>
 
   
   <entry>
     <title>Nvidia CEO envisions a future of AI-powered gamers</title>
-    <id>https://lzon.ca/posts/series/duck/nvidia-agentic-gamers/</id>
-    <link href="https://lzon.ca/posts/series/duck/nvidia-agentic-gamers/"/>
+    <id>https://lzon.ca/posts/series_duck-digest/nvidia-agentic-gamers/</id>
+    <link href="https://lzon.ca/posts/series_duck-digest/nvidia-agentic-gamers/"/>
     <published>2026-03-21T12:00:00Z</published>
     <updated>2026-03-21T12:00:00Z</updated>
     <author><name>Lzon</name></author>
-    <summary type="html" xml:base="https://lzon.ca/posts/series/duck/nvidia-agentic-gamers/">&lt;p&gt;Jensen Huang explains his vision for a “Nation of Gamers in the Datacenter”&lt;&#x2F;p&gt;</summary>
+    <summary type="html" xml:base="https://lzon.ca/posts/series_duck-digest/nvidia-agentic-gamers/">&lt;p&gt;Jensen Huang explains his vision for a “Nation of Gamers in the Datacenter”&lt;&#x2F;p&gt;</summary>
   </entry>
 
   
   <entry>
     <title>Elon Musk announces ClipX</title>
-    <id>https://lzon.ca/posts/series/duck/clipx/</id>
-    <link href="https://lzon.ca/posts/series/duck/clipx/"/>
+    <id>https://lzon.ca/posts/series_duck-digest/clipx/</id>
+    <link href="https://lzon.ca/posts/series_duck-digest/clipx/"/>
     <published>2026-03-20T12:00:00Z</published>
     <updated>2026-03-21T12:00:00Z</updated>
     <author><name>Lzon</name></author>
-    <summary type="html" xml:base="https://lzon.ca/posts/series/duck/clipx/">&lt;p&gt;Elon Musk announces ClipX, his new paperclip production venture.&lt;&#x2F;p&gt;</summary>
+    <summary type="html" xml:base="https://lzon.ca/posts/series_duck-digest/clipx/">&lt;p&gt;Elon Musk announces ClipX, his new paperclip production venture.&lt;&#x2F;p&gt;</summary>
   </entry>
 
   
@@ -352,12 +352,12 @@
   
   <entry>
     <title>Christine&#x27;s Homestyle Bakery</title>
-    <id>https://lzon.ca/posts/series/grateful/christine-bakery/</id>
-    <link href="https://lzon.ca/posts/series/grateful/christine-bakery/"/>
+    <id>https://lzon.ca/posts/series_daily-grateful/christine-bakery/</id>
+    <link href="https://lzon.ca/posts/series_daily-grateful/christine-bakery/"/>
     <published>2026-01-29T12:00:00Z</published>
     <updated>2026-01-29T12:00:00Z</updated>
     <author><name>Lzon</name></author>
-    <summary type="html" xml:base="https://lzon.ca/posts/series/grateful/christine-bakery/">&lt;p&gt;Today I’m grateful for Christine’s Homestyle Bakery.&lt;&#x2F;p&gt;</summary>
+    <summary type="html" xml:base="https://lzon.ca/posts/series_daily-grateful/christine-bakery/">&lt;p&gt;Today I’m grateful for Christine’s Homestyle Bakery.&lt;&#x2F;p&gt;</summary>
   </entry>
 
   
@@ -429,12 +429,12 @@
   
   <entry>
     <title>Dream Trawler</title>
-    <id>https://lzon.ca/posts/series/grateful/dream-trawler/</id>
-    <link href="https://lzon.ca/posts/series/grateful/dream-trawler/"/>
+    <id>https://lzon.ca/posts/series_daily-grateful/dream-trawler/</id>
+    <link href="https://lzon.ca/posts/series_daily-grateful/dream-trawler/"/>
     <published>2026-01-07T12:00:00Z</published>
     <updated>2026-01-23T12:00:00Z</updated>
     <author><name>Lzon</name></author>
-    <summary type="html" xml:base="https://lzon.ca/posts/series/grateful/dream-trawler/">&lt;p&gt;Today I’m grateful for Dream Trawler, a card from the game Magic the Gathering.&lt;&#x2F;p&gt;</summary>
+    <summary type="html" xml:base="https://lzon.ca/posts/series_daily-grateful/dream-trawler/">&lt;p&gt;Today I’m grateful for Dream Trawler, a card from the game Magic the Gathering.&lt;&#x2F;p&gt;</summary>
   </entry>
 
   
@@ -451,34 +451,34 @@
   
   <entry>
     <title>Year in Review 2025 - AI</title>
-    <id>https://lzon.ca/posts/series/2025-review/2025-review-ai/</id>
-    <link href="https://lzon.ca/posts/series/2025-review/2025-review-ai/"/>
+    <id>https://lzon.ca/posts/other/2025-review-ai/</id>
+    <link href="https://lzon.ca/posts/other/2025-review-ai/"/>
     <published>2026-01-02T12:00:00Z</published>
-    <updated>2026-01-02T12:00:00Z</updated>
+    <updated>2026-06-06T12:00:00Z</updated>
     <author><name>Lzon</name></author>
-    <summary type="html" xml:base="https://lzon.ca/posts/series/2025-review/2025-review-ai/">&lt;p&gt;Here’s my (slightly tardy) review of artificial intelligence at the end of 2025.&lt;&#x2F;p&gt;</summary>
+    <summary type="html" xml:base="https://lzon.ca/posts/other/2025-review-ai/">&lt;p&gt;Here’s my (slightly tardy) review of artificial intelligence at the end of 2025.&lt;&#x2F;p&gt;</summary>
   </entry>
 
   
   <entry>
     <title>Year in Review 2025 - Gaming</title>
-    <id>https://lzon.ca/posts/series/2025-review/2025-review-gaming/</id>
-    <link href="https://lzon.ca/posts/series/2025-review/2025-review-gaming/"/>
+    <id>https://lzon.ca/posts/other/2025-review-gaming/</id>
+    <link href="https://lzon.ca/posts/other/2025-review-gaming/"/>
     <published>2026-01-01T12:00:00Z</published>
     <updated>2026-01-02T12:00:00Z</updated>
     <author><name>Lzon</name></author>
-    <summary type="html" xml:base="https://lzon.ca/posts/series/2025-review/2025-review-gaming/">&lt;p&gt;Here’s my review of gaming in 2025, including a prediction for the new year.&lt;&#x2F;p&gt;</summary>
+    <summary type="html" xml:base="https://lzon.ca/posts/other/2025-review-gaming/">&lt;p&gt;Here’s my review of gaming in 2025, including a prediction for the new year.&lt;&#x2F;p&gt;</summary>
   </entry>
 
   
   <entry>
     <title>Year in Review 2025 - Smartphones</title>
-    <id>https://lzon.ca/posts/series/2025-review/2025-review-smartphones/</id>
-    <link href="https://lzon.ca/posts/series/2025-review/2025-review-smartphones/"/>
+    <id>https://lzon.ca/posts/other/2025-review-smartphones/</id>
+    <link href="https://lzon.ca/posts/other/2025-review-smartphones/"/>
     <published>2025-12-31T12:00:00Z</published>
-    <updated>2025-12-31T12:00:00Z</updated>
+    <updated>2026-06-06T12:00:00Z</updated>
     <author><name>Lzon</name></author>
-    <summary type="html" xml:base="https://lzon.ca/posts/series/2025-review/2025-review-smartphones/">&lt;p&gt;Here’s my review of smartphone tech in 2025, as well as a prediction for 2026!&lt;&#x2F;p&gt;</summary>
+    <summary type="html" xml:base="https://lzon.ca/posts/other/2025-review-smartphones/">&lt;p&gt;Here’s my review of smartphone tech in 2025, as well as a prediction for 2026!&lt;&#x2F;p&gt;</summary>
   </entry>
 
   
@@ -495,52 +495,52 @@
   
   <entry>
     <title>Driving</title>
-    <id>https://lzon.ca/posts/series/grateful/driving/</id>
-    <link href="https://lzon.ca/posts/series/grateful/driving/"/>
+    <id>https://lzon.ca/posts/series_daily-grateful/driving/</id>
+    <link href="https://lzon.ca/posts/series_daily-grateful/driving/"/>
     <published>2025-12-27T12:00:00Z</published>
     <updated>2025-12-27T12:00:00Z</updated>
     <author><name>Lzon</name></author>
-    <summary type="html" xml:base="https://lzon.ca/posts/series/grateful/driving/">&lt;p&gt;Today I’m grateful just for driving.&lt;&#x2F;p&gt;</summary>
+    <summary type="html" xml:base="https://lzon.ca/posts/series_daily-grateful/driving/">&lt;p&gt;Today I’m grateful just for driving.&lt;&#x2F;p&gt;</summary>
   </entry>
 
   
   <entry>
     <title>Chip Nuts</title>
-    <id>https://lzon.ca/posts/series/grateful/chip-nuts/</id>
-    <link href="https://lzon.ca/posts/series/grateful/chip-nuts/"/>
+    <id>https://lzon.ca/posts/series_daily-grateful/chip-nuts/</id>
+    <link href="https://lzon.ca/posts/series_daily-grateful/chip-nuts/"/>
     <published>2025-12-26T12:00:00Z</published>
     <updated>2026-05-28T12:00:00Z</updated>
     <author><name>Lzon</name></author>
-    <summary type="html" xml:base="https://lzon.ca/posts/series/grateful/chip-nuts/">&lt;p&gt;Today I’m grateful for a simple local snack called Chip Nuts.&lt;&#x2F;p&gt;</summary>
+    <summary type="html" xml:base="https://lzon.ca/posts/series_daily-grateful/chip-nuts/">&lt;p&gt;Today I’m grateful for a simple local snack called Chip Nuts.&lt;&#x2F;p&gt;</summary>
   </entry>
 
   
   <entry>
     <title>Tomatoes and Bread</title>
-    <id>https://lzon.ca/posts/series/grateful/tomatoes-and-bread/</id>
-    <link href="https://lzon.ca/posts/series/grateful/tomatoes-and-bread/"/>
+    <id>https://lzon.ca/posts/series_daily-grateful/tomatoes-and-bread/</id>
+    <link href="https://lzon.ca/posts/series_daily-grateful/tomatoes-and-bread/"/>
     <published>2025-12-25T12:00:00Z</published>
     <updated>2025-12-25T12:00:00Z</updated>
     <author><name>Lzon</name></author>
-    <summary type="html" xml:base="https://lzon.ca/posts/series/grateful/tomatoes-and-bread/">&lt;p&gt;Yep, today (and most days) I’m grateful for Tomatoes and Bread.&lt;&#x2F;p&gt;</summary>
+    <summary type="html" xml:base="https://lzon.ca/posts/series_daily-grateful/tomatoes-and-bread/">&lt;p&gt;Yep, today (and most days) I’m grateful for Tomatoes and Bread.&lt;&#x2F;p&gt;</summary>
   </entry>
 
   
   <entry>
     <title>Riegelein Chocolate Lady Bugs</title>
-    <id>https://lzon.ca/posts/series/grateful/riegelein-lady-bugs/</id>
-    <link href="https://lzon.ca/posts/series/grateful/riegelein-lady-bugs/"/>
+    <id>https://lzon.ca/posts/series_daily-grateful/riegelein-lady-bugs/</id>
+    <link href="https://lzon.ca/posts/series_daily-grateful/riegelein-lady-bugs/"/>
     <published>2025-12-24T12:00:00Z</published>
     <updated>2026-03-03T12:00:00Z</updated>
     <author><name>Lzon</name></author>
-    <summary type="html" xml:base="https://lzon.ca/posts/series/grateful/riegelein-lady-bugs/">&lt;p&gt;Today I’m grateful for &lt;em&gt;Riegelein Chocolate Lady Bugs&lt;&#x2F;em&gt;.&lt;&#x2F;p&gt;</summary>
+    <summary type="html" xml:base="https://lzon.ca/posts/series_daily-grateful/riegelein-lady-bugs/">&lt;p&gt;Today I’m grateful for &lt;em&gt;Riegelein Chocolate Lady Bugs&lt;&#x2F;em&gt;.&lt;&#x2F;p&gt;</summary>
   </entry>
 
   
   <entry>
     <title>Why I&#x27;m Grateful Today</title>
-    <id>https://lzon.ca/posts/series/grateful/lzon/</id>
-    <link href="https://lzon.ca/posts/series/grateful/lzon/"/>
+    <id>https://lzon.ca/posts/series_daily-grateful/lzon/</id>
+    <link href="https://lzon.ca/posts/series_daily-grateful/lzon/"/>
     <published>2025-12-23T12:00:00Z</published>
     <updated>2025-12-23T12:00:00Z</updated>
     <author><name>Lzon</name></author>
