@@ -8,11 +8,20 @@
       <generator>Zola</generator>
       <language>en</language>
       <atom:link href="https://lzon.ca/quotes/rss.xml" rel="self" type="application/rss+xml"/>
-      <lastBuildDate>Sat, 06 Jun 2026 12:00:00 +0000</lastBuildDate>
+      <lastBuildDate>Sun, 07 Jun 2026 12:00:00 +0000</lastBuildDate>
       
       
       
       
+      <item>
+          <title>68. lzon.ca&#x2F;quotes</title>
+          <pubDate>Sun, 07 Jun 2026 12:00:00 +0000</pubDate>
+          <author>Lzon</author>
+          <link>https://lzon.ca/quotes/</link>
+          <guid isPermaLink="false">https://lzon.ca/quotes/#68</guid>
+          <category>quote</category>
+          <description>Begin at once to live, and count each separate day as a separate life.&lt;br/&gt;- Seneca</description>
+      </item>
       <item>
           <title>67. lzon.ca&#x2F;quotes</title>
           <pubDate>Sat, 06 Jun 2026 12:00:00 +0000</pubDate>
