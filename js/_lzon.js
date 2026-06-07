@@ -404,6 +404,16 @@
             const dateB = idToDate.get(idB)?.getTime() ?? Infinity;
             return dateA - dateB;
           });
+          const todayDate = new Date;
+          const todayIdx = sorted.findIndex((el) => {
+            const id = parseInt(el.dataset.quoteId ?? "", 10);
+            const quote = quotes.find((q) => q.id === id);
+            return quote && isDateSame(quote.date, todayDate);
+          });
+          if (todayIdx > 0) {
+            [sorted[0], sorted[todayIdx]] = [sorted[todayIdx], sorted[0]];
+            sorted[0].dataset.newToday = "true";
+          }
           const parent = sorted[0].parentElement;
           if (parent)
             sorted.forEach((el) => parent.appendChild(el));
