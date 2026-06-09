@@ -8,11 +8,20 @@
       <generator>Zola</generator>
       <language>en</language>
       <atom:link href="https://lzon.ca/quotes/rss.xml" rel="self" type="application/rss+xml"/>
-      <lastBuildDate>Mon, 08 Jun 2026 12:00:00 +0000</lastBuildDate>
+      <lastBuildDate>Tue, 09 Jun 2026 12:00:00 +0000</lastBuildDate>
       
       
       
       
+      <item>
+          <title>70. lzon.ca&#x2F;quotes</title>
+          <pubDate>Tue, 09 Jun 2026 12:00:00 +0000</pubDate>
+          <author>Lzon</author>
+          <link>https://lzon.ca/quotes/</link>
+          <guid isPermaLink="false">https://lzon.ca/quotes/#70</guid>
+          <category>quote</category>
+          <description>Most people are far too much occupied with themselves to be malicious.&lt;br/&gt;- Friedrich Nietzsche (Human, All Too Human)</description>
+      </item>
       <item>
           <title>69. lzon.ca&#x2F;quotes</title>
           <pubDate>Mon, 08 Jun 2026 12:00:00 +0000</pubDate>
