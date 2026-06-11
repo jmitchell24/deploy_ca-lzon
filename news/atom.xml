@@ -13,7 +13,7 @@
   <generator uri="https://www.getzola.org/">Zola</generator>
 
   
-  <updated>2026-06-09T12:00:00Z</updated>
+  <updated>2026-06-11T12:00:00Z</updated>
 
   
   
@@ -29,6 +29,24 @@
   
 
   
+
+  
+
+  
+  <entry>
+    <title>18. Fully autonomous drones have killed human soldiers for the first time</title>
+    <id>https://lzon.ca/news/18</id>
+    <link href="https://www.newscientist.com/article/2529849-fully-autonomous-drones-have-killed-human-soldiers-for-the-first-time/"/>
+    <published>2026-06-11T12:00:00Z</published>
+    <updated>2026-06-11T12:00:00Z</updated>
+    <author><name>Lzon</name></author>
+    <content type="html" xml:base="https://lzon.ca/news/news-000018-drones-killed-soldiers/">&lt;p&gt;A military contractor named Alexander Kokhanovskyy has revealed that a test was conducted two years ago in which fully autonomous drones killed human soldiers.&lt;/p&gt;
+&lt;p&gt;The test involved sending ‘terminator’ drones on a trajectory over several kilometers towards their target. Upon arrival an AI running on the drones identified and then engaged their target. Human-piloted drones flew over the area some time afterwards to confirm the targets had been eliminated.&lt;/p&gt;
+&lt;p&gt;The Ukrainian government presently requires final human confirmation to conduct attacks, but otherwise uses AI heavily in identifying targets. Kokhanovskyy claims there has been no further tests beyond the one conducted two years ago.&lt;/p&gt;
+&lt;p&gt;Kokhanovskyy is currently the CEO of &lt;a rel=&quot;noopener external&quot; target=&quot;_blank&quot; href=&quot;https://aerocenter.com.ua/&quot;&gt;Aero Center&lt;/a&gt;, a Ukrainian military drone manufacturer. Aero Center is a new company, and was not responsible for conducting the test.&lt;/p&gt;
+&lt;p&gt;Its not all that surprising to me that this has happened. I suppose there was a hope until now that a concerted international effort could have prevented it. It’s not too late to impose a global ban on these types of weapons, but its likely that this news will be precedent setting.&lt;/p&gt;
+</content>
+  </entry>
 
   
 
