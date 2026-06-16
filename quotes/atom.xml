@@ -13,7 +13,7 @@
   <generator uri="https://www.getzola.org/">Zola</generator>
 
   
-  <updated>2026-06-14T12:00:00Z</updated>
+  <updated>2026-06-16T12:00:00Z</updated>
 
   
   
@@ -29,6 +29,34 @@
   
 
   
+
+  
+
+  
+  <entry>
+    <title>77. lzon.ca&#x2F;quotes</title>
+    <id>https://lzon.ca/quotes/#77</id>
+    <link href="https://lzon.ca/quotes/"/>
+    <published>2026-06-16T12:00:00Z</published>
+    <updated>2026-06-16T12:00:00Z</updated>
+    <author><name>Lzon</name></author>
+    <category term="quote"/>
+    <summary type="html">In any moment of decision, the best thing you can do is the right thing. The worst thing you can do is nothing.&lt;br/&gt;- Theodore Roosevelt</summary>
+  </entry>
+
+  
+
+  
+  <entry>
+    <title>76. lzon.ca&#x2F;quotes</title>
+    <id>https://lzon.ca/quotes/#76</id>
+    <link href="https://lzon.ca/quotes/"/>
+    <published>2026-06-15T12:00:00Z</published>
+    <updated>2026-06-15T12:00:00Z</updated>
+    <author><name>Lzon</name></author>
+    <category term="quote"/>
+    <summary type="html">The only man who never makes mistakes is the man who never does anything.&lt;br/&gt;- Theodore Roosevelt</summary>
+  </entry>
 
   
 
