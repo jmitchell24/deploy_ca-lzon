@@ -8,11 +8,19 @@
       <generator>Zola</generator>
       <language>en</language>
       <atom:link href="https://lzon.ca/posts/rss.xml" rel="self" type="application/rss+xml"/>
-      <lastBuildDate>Sat, 06 Jun 2026 12:00:00 +0000</lastBuildDate>
+      <lastBuildDate>Thu, 18 Jun 2026 12:00:00 +0000</lastBuildDate>
       
       
       
       
+      <item>
+          <title>A maybe type for C++</title>
+          <pubDate>Thu, 18 Jun 2026 12:00:00 +0000</pubDate>
+          <author>Lzon</author>
+          <link>https://lzon.ca/posts/tips/cpp-maybe-type/</link>
+          <guid isPermaLink="false">https://lzon.ca/posts/tips/cpp-maybe-type/</guid>
+          <description xml:base="https://lzon.ca/posts/tips/cpp-maybe-type/">&lt;p&gt;Here’s an idea I had for a useful C++ class that adds a little syntactic sugar to null pointer checking.&lt;&#x2F;p&gt;</description>
+      </item>
       <item>
           <title>A result type for C++</title>
           <pubDate>Mon, 01 Jun 2026 12:00:00 +0000</pubDate>
