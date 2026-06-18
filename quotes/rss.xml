@@ -8,11 +8,20 @@
       <generator>Zola</generator>
       <language>en</language>
       <atom:link href="https://lzon.ca/quotes/rss.xml" rel="self" type="application/rss+xml"/>
-      <lastBuildDate>Wed, 17 Jun 2026 12:00:00 +0000</lastBuildDate>
+      <lastBuildDate>Thu, 18 Jun 2026 12:00:00 +0000</lastBuildDate>
       
       
       
       
+      <item>
+          <title>79. lzon.ca&#x2F;quotes</title>
+          <pubDate>Thu, 18 Jun 2026 12:00:00 +0000</pubDate>
+          <author>Lzon</author>
+          <link>https://lzon.ca/quotes/</link>
+          <guid isPermaLink="false">https://lzon.ca/quotes/#79</guid>
+          <category>quote</category>
+          <description>The creation of the world did not take place once and for all time, but takes place every day.&lt;br/&gt;- Samuel Beckett (Proust)</description>
+      </item>
       <item>
           <title>78. lzon.ca&#x2F;quotes</title>
           <pubDate>Wed, 17 Jun 2026 12:00:00 +0000</pubDate>
