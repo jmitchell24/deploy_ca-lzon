@@ -8,11 +8,20 @@
       <generator>Zola</generator>
       <language>en</language>
       <atom:link href="https://lzon.ca/quotes/rss.xml" rel="self" type="application/rss+xml"/>
-      <lastBuildDate>Mon, 22 Jun 2026 12:00:00 +0000</lastBuildDate>
+      <lastBuildDate>Tue, 23 Jun 2026 12:00:00 +0000</lastBuildDate>
       
       
       
       
+      <item>
+          <title>84. lzon.ca&#x2F;quotes</title>
+          <pubDate>Tue, 23 Jun 2026 12:00:00 +0000</pubDate>
+          <author>Lzon</author>
+          <link>https://lzon.ca/quotes/</link>
+          <guid isPermaLink="false">https://lzon.ca/quotes/#84</guid>
+          <category>quote</category>
+          <description>Our span of life is brief, but is long enough for us to live well and honestly.&lt;br/&gt;- Marcus Tullius Cicero</description>
+      </item>
       <item>
           <title>83. lzon.ca&#x2F;quotes</title>
           <pubDate>Mon, 22 Jun 2026 12:00:00 +0000</pubDate>
