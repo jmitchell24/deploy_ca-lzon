@@ -13,7 +13,7 @@
   <generator uri="https://www.getzola.org/">Zola</generator>
 
   
-  <updated>2026-06-16T12:00:00Z</updated>
+  <updated>2026-06-23T12:00:00Z</updated>
 
   
   
@@ -29,6 +29,23 @@
   
 
   
+
+  
+
+  
+  <entry>
+    <title>21. Valve launches the Steam Machine starting at $1049 USD.</title>
+    <id>https://lzon.ca/news/21</id>
+    <link href="https://store.steampowered.com/news/group/45479024/view/685257114654870245"/>
+    <published>2026-06-23T12:00:00Z</published>
+    <updated>2026-06-23T12:00:00Z</updated>
+    <author><name>Lzon</name></author>
+    <content type="html" xml:base="https://lzon.ca/news/news-000021-official-steam-news-steam-news-hub/">&lt;p&gt;Valve has officially launched the new Steam Machine. It’s a small gaming PC intended to provide a more console like, living room oriented experience. It comes preinstalled with Steam OS, the same linux-based operating system used on the Steam Deck.&lt;/p&gt;
+&lt;p&gt;The device was originally announced near the end of last year and has been delayed due to DRAM and flash chip shortages caused by the AI hype bubble. Value has stated that they were struggling to procure the parts they needed, and that it wasn’t merely a matter of increased prices.&lt;/p&gt;
+&lt;p&gt;Speaking of price, the cheapest model with 512GB of storage will cost $1049 USD, with higher storage variants costing several hundred dollars more. Valve has said they increased pricing since the announcement in line with the recent Steam Deck price increases. This implies that the original MSRP would have been in the range of $750.&lt;/p&gt;
+&lt;p&gt;My opinion is that this is a good product. It is a device intended to create the most polished, cohesive, and easy experience for PC gaming. But given the current price, and even its original MSRP, this will never be a mass market product and will otherwise be inaccessible to most people who would ever be interested in getting one. That’s really unfortunate, and hopefully discounts will be possible in the future.&lt;/p&gt;
+</content>
+  </entry>
 
   
 
