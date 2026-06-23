@@ -1,0 +1,6 @@
+# Cross-origin isolation for the Algoma 4 playground.
+# The Emscripten pthreads build needs SharedArrayBuffer, which browsers
+# only expose to cross-origin isolated documents (COOP + COEP).
+/posts/manuscripts/algoma4/gui/*
+  Cross-Origin-Opener-Policy: same-origin
+  Cross-Origin-Embedder-Policy: require-corp
