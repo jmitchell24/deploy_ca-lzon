@@ -8,11 +8,19 @@
       <generator>Zola</generator>
       <language>en</language>
       <atom:link href="https://lzon.ca/posts/rss.xml" rel="self" type="application/rss+xml"/>
-      <lastBuildDate>Thu, 18 Jun 2026 12:00:00 +0000</lastBuildDate>
+      <lastBuildDate>Thu, 25 Jun 2026 12:00:00 +0000</lastBuildDate>
       
       
       
       
+      <item>
+          <title>A value_lock type for C++</title>
+          <pubDate>Thu, 25 Jun 2026 12:00:00 +0000</pubDate>
+          <author>Lzon</author>
+          <link>https://lzon.ca/posts/tips/cpp-value-lock-type/</link>
+          <guid isPermaLink="false">https://lzon.ca/posts/tips/cpp-value-lock-type/</guid>
+          <description xml:base="https://lzon.ca/posts/tips/cpp-value-lock-type/">&lt;p&gt;Here’s yet another idea I had for a C++ type. It’s a useful tool for simplifying the use of a mutex with a shared resource.&lt;&#x2F;p&gt;</description>
+      </item>
       <item>
           <title>A maybe type for C++</title>
           <pubDate>Thu, 18 Jun 2026 12:00:00 +0000</pubDate>

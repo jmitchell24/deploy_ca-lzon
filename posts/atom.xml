@@ -13,7 +13,7 @@
   <generator uri="https://www.getzola.org/">Zola</generator>
 
   
-  <updated>2026-06-18T12:00:00Z</updated>
+  <updated>2026-06-25T12:00:00Z</updated>
 
   
   
@@ -29,6 +29,17 @@
   
 
   
+
+  
+  <entry>
+    <title>A value_lock type for C++</title>
+    <id>https://lzon.ca/posts/tips/cpp-value-lock-type/</id>
+    <link href="https://lzon.ca/posts/tips/cpp-value-lock-type/"/>
+    <published>2026-06-25T12:00:00Z</published>
+    <updated>2026-06-25T12:00:00Z</updated>
+    <author><name>Lzon</name></author>
+    <summary type="html" xml:base="https://lzon.ca/posts/tips/cpp-value-lock-type/">&lt;p&gt;Here’s yet another idea I had for a C++ type. It’s a useful tool for simplifying the use of a mutex with a shared resource.&lt;&#x2F;p&gt;</summary>
+  </entry>
 
   
   <entry>
