@@ -8,11 +8,22 @@
       <generator>Zola</generator>
       <language>en</language>
       <atom:link href="https://lzon.ca/news/rss.xml" rel="self" type="application/rss+xml"/>
-      <lastBuildDate>Tue, 23 Jun 2026 12:00:00 +0000</lastBuildDate>
+      <lastBuildDate>Sun, 28 Jun 2026 12:00:00 +0000</lastBuildDate>
       
       
       
       
+      <item>
+          <title>22. GTA VI will launch at $80 USD</title>
+          <pubDate>Sun, 28 Jun 2026 12:00:00 +0000</pubDate>
+          <author>Lzon</author>
+          <link>https://www.ign.com/articles/gta-6-price-finally-confirmed-features-a-single-player-experience-at-launch</link>
+          <guid isPermaLink="false">https://lzon.ca/news/22</guid>
+          <description xml:base="https://lzon.ca/news/news-000022-gta-vi-price/">&lt;p&gt;Grand Theft Auto 6 will launch at $80 USD, and $100 for the ‘Ultimate Edition’.&lt;/p&gt;
+&lt;p&gt;This isn’t surprising. Expectations for the game are sky high, game prices have already been trending upward, and inflation overall in the economy is running very hot. It may not feel like it but game prices have actually been remarkably stable, the standard $60 price didn’t change for decades despite a falling value of the US dollar.&lt;/p&gt;
+&lt;p&gt;This is easy enough to see even in the launch price of Grand Theft Auto 5. $60 in 2013 is equivalent to a little over &lt;a rel=&quot;noopener external&quot; target=&quot;_blank&quot; href=&quot;https://www.calculator.net/inflation-calculator.html?cstartingamount1=60&amp;amp;cinmonth1=13&amp;amp;cinyear1=2013&amp;amp;coutmonth1=5&amp;amp;coutyear1=2026&amp;amp;calctype=1&amp;amp;x=Calculate#uscpi&quot;&gt;$85&lt;/a&gt; today.&lt;/p&gt;
+</description>
+      </item>
       <item>
           <title>21. Valve launches the Steam Machine starting at $1049 USD.</title>
           <pubDate>Tue, 23 Jun 2026 12:00:00 +0000</pubDate>

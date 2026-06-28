@@ -8,11 +8,20 @@
       <generator>Zola</generator>
       <language>en</language>
       <atom:link href="https://lzon.ca/quotes/rss.xml" rel="self" type="application/rss+xml"/>
-      <lastBuildDate>Fri, 26 Jun 2026 12:00:00 +0000</lastBuildDate>
+      <lastBuildDate>Sun, 28 Jun 2026 12:00:00 +0000</lastBuildDate>
       
       
       
       
+      <item>
+          <title>88. lzon.ca&#x2F;quotes</title>
+          <pubDate>Sun, 28 Jun 2026 12:00:00 +0000</pubDate>
+          <author>Lzon</author>
+          <link>https://lzon.ca/quotes/</link>
+          <guid isPermaLink="false">https://lzon.ca/quotes/#88</guid>
+          <category>quote</category>
+          <description>Focus is a matter of deciding what things you’re not going to do.&lt;br/&gt;- John Carmack</description>
+      </item>
       <item>
           <title>87. lzon.ca&#x2F;quotes</title>
           <pubDate>Fri, 26 Jun 2026 12:00:00 +0000</pubDate>
