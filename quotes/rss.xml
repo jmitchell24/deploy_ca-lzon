@@ -8,11 +8,20 @@
       <generator>Zola</generator>
       <language>en</language>
       <atom:link href="https://lzon.ca/quotes/rss.xml" rel="self" type="application/rss+xml"/>
-      <lastBuildDate>Sun, 28 Jun 2026 12:00:00 +0000</lastBuildDate>
+      <lastBuildDate>Mon, 29 Jun 2026 12:00:00 +0000</lastBuildDate>
       
       
       
       
+      <item>
+          <title>89. lzon.ca&#x2F;quotes</title>
+          <pubDate>Mon, 29 Jun 2026 12:00:00 +0000</pubDate>
+          <author>Lzon</author>
+          <link>https://lzon.ca/quotes/</link>
+          <guid isPermaLink="false">https://lzon.ca/quotes/#89</guid>
+          <category>quote</category>
+          <description>What’s right is what’s left if you do everything else wrong.&lt;br/&gt;- Robin Williams</description>
+      </item>
       <item>
           <title>88. lzon.ca&#x2F;quotes</title>
           <pubDate>Sun, 28 Jun 2026 12:00:00 +0000</pubDate>
