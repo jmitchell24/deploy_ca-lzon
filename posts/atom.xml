@@ -13,7 +13,7 @@
   <generator uri="https://www.getzola.org/">Zola</generator>
 
   
-  <updated>2026-06-25T12:00:00Z</updated>
+  <updated>2026-06-30T12:00:00Z</updated>
 
   
   
@@ -29,6 +29,17 @@
   
 
   
+
+  
+  <entry>
+    <title>Youtube and Algorithmic Feeds</title>
+    <id>https://lzon.ca/posts/other/youtube-algorithm/</id>
+    <link href="https://lzon.ca/posts/other/youtube-algorithm/"/>
+    <published>2026-06-30T12:00:00Z</published>
+    <updated>2026-06-30T12:00:00Z</updated>
+    <author><name>Lzon</name></author>
+    
+  </entry>
 
   
   <entry>

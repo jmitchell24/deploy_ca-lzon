@@ -8,11 +8,18 @@
       <generator>Zola</generator>
       <language>en</language>
       <atom:link href="https://lzon.ca/posts/rss.xml" rel="self" type="application/rss+xml"/>
-      <lastBuildDate>Thu, 25 Jun 2026 12:00:00 +0000</lastBuildDate>
+      <lastBuildDate>Tue, 30 Jun 2026 12:00:00 +0000</lastBuildDate>
       
       
       
       
+      <item>
+          <title>Youtube and Algorithmic Feeds</title>
+          <pubDate>Tue, 30 Jun 2026 12:00:00 +0000</pubDate>
+          <author>Lzon</author>
+          <link>https://lzon.ca/posts/other/youtube-algorithm/</link>
+          <guid isPermaLink="false">https://lzon.ca/posts/other/youtube-algorithm/</guid>
+      </item>
       <item>
           <title>A value_lock type for C++</title>
           <pubDate>Thu, 25 Jun 2026 12:00:00 +0000</pubDate>
