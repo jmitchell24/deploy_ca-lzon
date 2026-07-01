@@ -8,11 +8,20 @@
       <generator>Zola</generator>
       <language>en</language>
       <atom:link href="https://lzon.ca/quotes/rss.xml" rel="self" type="application/rss+xml"/>
-      <lastBuildDate>Tue, 30 Jun 2026 12:00:00 +0000</lastBuildDate>
+      <lastBuildDate>Wed, 01 Jul 2026 12:00:00 +0000</lastBuildDate>
       
       
       
       
+      <item>
+          <title>91. lzon.ca&#x2F;quotes</title>
+          <pubDate>Wed, 01 Jul 2026 12:00:00 +0000</pubDate>
+          <author>Lzon</author>
+          <link>https://lzon.ca/quotes/</link>
+          <guid isPermaLink="false">https://lzon.ca/quotes/#91</guid>
+          <category>quote</category>
+          <description>We are stuck with technology when what we really want is just stuff that works.&lt;br/&gt;- Douglas Adams</description>
+      </item>
       <item>
           <title>90. lzon.ca&#x2F;quotes</title>
           <pubDate>Tue, 30 Jun 2026 12:00:00 +0000</pubDate>
