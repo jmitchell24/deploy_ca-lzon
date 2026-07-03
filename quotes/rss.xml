@@ -8,11 +8,20 @@
       <generator>Zola</generator>
       <language>en</language>
       <atom:link href="https://lzon.ca/quotes/rss.xml" rel="self" type="application/rss+xml"/>
-      <lastBuildDate>Thu, 02 Jul 2026 12:00:00 +0000</lastBuildDate>
+      <lastBuildDate>Fri, 03 Jul 2026 12:00:00 +0000</lastBuildDate>
       
       
       
       
+      <item>
+          <title>93. lzon.ca&#x2F;quotes</title>
+          <pubDate>Fri, 03 Jul 2026 12:00:00 +0000</pubDate>
+          <author>Lzon</author>
+          <link>https://lzon.ca/quotes/</link>
+          <guid isPermaLink="false">https://lzon.ca/quotes/#93</guid>
+          <category>quote</category>
+          <description>As far as we can discern, the sole purpose of human existence is to kindle a light of meaning in the darkness of mere being.&lt;br/&gt;- Carl Jung</description>
+      </item>
       <item>
           <title>92. lzon.ca&#x2F;quotes</title>
           <pubDate>Thu, 02 Jul 2026 12:00:00 +0000</pubDate>
