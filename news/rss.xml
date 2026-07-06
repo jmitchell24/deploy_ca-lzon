@@ -8,11 +8,22 @@
       <generator>Zola</generator>
       <language>en</language>
       <atom:link href="https://lzon.ca/news/rss.xml" rel="self" type="application/rss+xml"/>
-      <lastBuildDate>Fri, 03 Jul 2026 12:00:00 +0000</lastBuildDate>
+      <lastBuildDate>Mon, 06 Jul 2026 12:00:00 +0000</lastBuildDate>
       
       
       
       
+      <item>
+          <title>24. Earth reaches farthest orbit from Sun for 2026</title>
+          <pubDate>Mon, 06 Jul 2026 12:00:00 +0000</pubDate>
+          <author>Lzon</author>
+          <link>https://www.timeanddate.com/astronomy/perihelion-aphelion-solstice.html</link>
+          <guid isPermaLink="false">https://lzon.ca/news/24</guid>
+          <description xml:base="https://lzon.ca/news/news-000024-aphelion-2026/">&lt;p&gt;The Earth’s orbit is not quite circular, which means that through each year there is a point at which the Earth is closest and farthest from the Sun.&lt;/p&gt;
+&lt;p&gt;The farthest distance is referred to as ‘Amphelion’, and the shortest is called ‘Perihelion’.&lt;/p&gt;
+&lt;p&gt;Perihelion was reached back in January, and today the Earth will reach it’s Amphelion (farthest distance) for this year.&lt;/p&gt;
+</description>
+      </item>
       <item>
           <title>23. Meta to build cloud compute business to recoup its massive AI investment</title>
           <pubDate>Fri, 03 Jul 2026 12:00:00 +0000</pubDate>

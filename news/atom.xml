@@ -13,7 +13,7 @@
   <generator uri="https://www.getzola.org/">Zola</generator>
 
   
-  <updated>2026-07-03T12:00:00Z</updated>
+  <updated>2026-07-06T12:00:00Z</updated>
 
   
   
@@ -29,6 +29,22 @@
   
 
   
+
+  
+
+  
+  <entry>
+    <title>24. Earth reaches farthest orbit from Sun for 2026</title>
+    <id>https://lzon.ca/news/24</id>
+    <link href="https://www.timeanddate.com/astronomy/perihelion-aphelion-solstice.html"/>
+    <published>2026-07-06T12:00:00Z</published>
+    <updated>2026-07-06T12:00:00Z</updated>
+    <author><name>Lzon</name></author>
+    <content type="html" xml:base="https://lzon.ca/news/news-000024-aphelion-2026/">&lt;p&gt;The Earth’s orbit is not quite circular, which means that through each year there is a point at which the Earth is closest and farthest from the Sun.&lt;/p&gt;
+&lt;p&gt;The farthest distance is referred to as ‘Amphelion’, and the shortest is called ‘Perihelion’.&lt;/p&gt;
+&lt;p&gt;Perihelion was reached back in January, and today the Earth will reach it’s Amphelion (farthest distance) for this year.&lt;/p&gt;
+</content>
+  </entry>
 
   
 
