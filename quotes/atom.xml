@@ -13,7 +13,7 @@
   <generator uri="https://www.getzola.org/">Zola</generator>
 
   
-  <updated>2026-07-06T12:00:00Z</updated>
+  <updated>2026-07-07T12:00:00Z</updated>
 
   
   
@@ -29,6 +29,20 @@
   
 
   
+
+  
+
+  
+  <entry>
+    <title>97. lzon.ca&#x2F;quotes</title>
+    <id>https://lzon.ca/quotes/#97</id>
+    <link href="https://lzon.ca/quotes/"/>
+    <published>2026-07-07T12:00:00Z</published>
+    <updated>2026-07-07T12:00:00Z</updated>
+    <author><name>Lzon</name></author>
+    <category term="quote"/>
+    <summary type="html">You can’t stay in your corner of the Forest waiting for others to come to you. You have to go to them sometimes.&lt;br/&gt;- A.A. Milne (Winnie the Pooh)</summary>
+  </entry>
 
   
 
