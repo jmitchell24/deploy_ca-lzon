@@ -8,11 +8,20 @@
       <generator>Zola</generator>
       <language>en</language>
       <atom:link href="https://lzon.ca/quotes/rss.xml" rel="self" type="application/rss+xml"/>
-      <lastBuildDate>Tue, 07 Jul 2026 12:00:00 +0000</lastBuildDate>
+      <lastBuildDate>Wed, 08 Jul 2026 12:00:00 +0000</lastBuildDate>
       
       
       
       
+      <item>
+          <title>98. lzon.ca&#x2F;quotes</title>
+          <pubDate>Wed, 08 Jul 2026 12:00:00 +0000</pubDate>
+          <author>Lzon</author>
+          <link>https://lzon.ca/quotes/</link>
+          <guid isPermaLink="false">https://lzon.ca/quotes/#98</guid>
+          <category>quote</category>
+          <description>The difficulty lies not so much in developing new ideas as in escaping from old ones.&lt;br/&gt;- John Maynard Keynes</description>
+      </item>
       <item>
           <title>97. lzon.ca&#x2F;quotes</title>
           <pubDate>Tue, 07 Jul 2026 12:00:00 +0000</pubDate>
