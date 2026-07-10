@@ -4,3 +4,8 @@
 /posts/manuscripts/algoma4/gui/*
   Cross-Origin-Opener-Policy: same-origin
   Cross-Origin-Embedder-Policy: require-corp
+
+# Same, for the playground's current home in the algoma-intro page bundle.
+/posts/algoma/algoma-intro/*
+  Cross-Origin-Opener-Policy: same-origin
+  Cross-Origin-Embedder-Policy: require-corp
