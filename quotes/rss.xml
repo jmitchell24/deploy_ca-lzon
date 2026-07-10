@@ -8,11 +8,20 @@
       <generator>Zola</generator>
       <language>en</language>
       <atom:link href="https://lzon.ca/quotes/rss.xml" rel="self" type="application/rss+xml"/>
-      <lastBuildDate>Thu, 09 Jul 2026 12:00:00 +0000</lastBuildDate>
+      <lastBuildDate>Fri, 10 Jul 2026 12:00:00 +0000</lastBuildDate>
       
       
       
       
+      <item>
+          <title>100. lzon.ca&#x2F;quotes</title>
+          <pubDate>Fri, 10 Jul 2026 12:00:00 +0000</pubDate>
+          <author>Lzon</author>
+          <link>https://lzon.ca/quotes/</link>
+          <guid isPermaLink="false">https://lzon.ca/quotes/#100</guid>
+          <category>quote</category>
+          <description>I am a collection of dismantled almosts.&lt;br/&gt;- Anne Sexton</description>
+      </item>
       <item>
           <title>99. lzon.ca&#x2F;quotes</title>
           <pubDate>Thu, 09 Jul 2026 12:00:00 +0000</pubDate>
