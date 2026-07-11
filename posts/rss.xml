@@ -19,6 +19,7 @@
           <author>Lzon</author>
           <link>https://lzon.ca/posts/tips/cpp-for-range-init/</link>
           <guid isPermaLink="false">https://lzon.ca/posts/tips/cpp-for-range-init/</guid>
+          <description xml:base="https://lzon.ca/posts/tips/cpp-for-range-init/">&lt;p&gt;Here’s a small piece of syntactic sugar from C++20.&lt;&#x2F;p&gt;</description>
       </item>
       <item>
           <title>Youtube and Algorithmic Feeds</title>
@@ -26,6 +27,7 @@
           <author>Lzon</author>
           <link>https://lzon.ca/posts/other/youtube-algorithm/</link>
           <guid isPermaLink="false">https://lzon.ca/posts/other/youtube-algorithm/</guid>
+          <description xml:base="https://lzon.ca/posts/other/youtube-algorithm/">&lt;p&gt;Why modern Youtube is offensive, and how you can improve your experience of the site.&lt;&#x2F;p&gt;</description>
       </item>
       <item>
           <title>A value_lock type for C++</title>
