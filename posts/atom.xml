@@ -38,7 +38,7 @@
     <published>2026-07-11T12:00:00Z</published>
     <updated>2026-07-11T12:00:00Z</updated>
     <author><name>Lzon</name></author>
-    <summary type="html" xml:base="https://lzon.ca/posts/tips/cpp-for-range-init/">&lt;p&gt;Here’s a small piece of syntactic sugar from C++20.&lt;&#x2F;p&gt;</summary>
+    <summary type="html" xml:base="https://lzon.ca/posts/tips/cpp-for-range-init/">&lt;p&gt;A small piece of syntactic sugar from C++20.&lt;&#x2F;p&gt;</summary>
   </entry>
 
   
