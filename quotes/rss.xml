@@ -8,11 +8,20 @@
       <generator>Zola</generator>
       <language>en</language>
       <atom:link href="https://lzon.ca/quotes/rss.xml" rel="self" type="application/rss+xml"/>
-      <lastBuildDate>Fri, 10 Jul 2026 12:00:00 +0000</lastBuildDate>
+      <lastBuildDate>Sat, 11 Jul 2026 12:00:00 +0000</lastBuildDate>
       
       
       
       
+      <item>
+          <title>101. lzon.ca&#x2F;quotes</title>
+          <pubDate>Sat, 11 Jul 2026 12:00:00 +0000</pubDate>
+          <author>Lzon</author>
+          <link>https://lzon.ca/quotes/</link>
+          <guid isPermaLink="false">https://lzon.ca/quotes/#101</guid>
+          <category>quote</category>
+          <description>The greatest hazard of all, losing one’s self, can occur very quietly in the world, as if it were nothing at all. No other loss can occur so quietly.&lt;br/&gt;- Søren Kierkegaard</description>
+      </item>
       <item>
           <title>100. lzon.ca&#x2F;quotes</title>
           <pubDate>Fri, 10 Jul 2026 12:00:00 +0000</pubDate>
