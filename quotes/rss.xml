@@ -8,11 +8,20 @@
       <generator>Zola</generator>
       <language>en</language>
       <atom:link href="https://lzon.ca/quotes/rss.xml" rel="self" type="application/rss+xml"/>
-      <lastBuildDate>Sun, 12 Jul 2026 12:00:00 +0000</lastBuildDate>
+      <lastBuildDate>Mon, 13 Jul 2026 12:00:00 +0000</lastBuildDate>
       
       
       
       
+      <item>
+          <title>103. lzon.ca&#x2F;quotes</title>
+          <pubDate>Mon, 13 Jul 2026 12:00:00 +0000</pubDate>
+          <author>Lzon</author>
+          <link>https://lzon.ca/quotes/</link>
+          <guid isPermaLink="false">https://lzon.ca/quotes/#103</guid>
+          <category>quote</category>
+          <description>Be happy for this moment. This moment is your life.&lt;br/&gt;- Omar Khayyam</description>
+      </item>
       <item>
           <title>102. lzon.ca&#x2F;quotes</title>
           <pubDate>Sun, 12 Jul 2026 12:00:00 +0000</pubDate>
