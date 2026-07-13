@@ -8,11 +8,18 @@
       <generator>Zola</generator>
       <language>en</language>
       <atom:link href="https://lzon.ca/posts/rss.xml" rel="self" type="application/rss+xml"/>
-      <lastBuildDate>Sat, 11 Jul 2026 12:00:00 +0000</lastBuildDate>
+      <lastBuildDate>Mon, 13 Jul 2026 12:00:00 +0000</lastBuildDate>
       
       
       
       
+      <item>
+          <title>The Algoma Programming Language</title>
+          <pubDate>Mon, 13 Jul 2026 12:00:00 +0000</pubDate>
+          <author>Lzon</author>
+          <link>https://lzon.ca/posts/algoma/algoma-intro/</link>
+          <guid isPermaLink="false">https://lzon.ca/posts/algoma/algoma-intro/</guid>
+      </item>
       <item>
           <title>How C++20 improved the for-loop syntax</title>
           <pubDate>Sat, 11 Jul 2026 12:00:00 +0000</pubDate>
