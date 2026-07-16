@@ -13,7 +13,7 @@
   <generator uri="https://www.getzola.org/">Zola</generator>
 
   
-  <updated>2026-07-15T12:00:00Z</updated>
+  <updated>2026-07-16T12:00:00Z</updated>
 
   
   
@@ -29,6 +29,20 @@
   
 
   
+
+  
+
+  
+  <entry>
+    <title>106. lzon.ca&#x2F;quotes</title>
+    <id>https://lzon.ca/quotes/#106</id>
+    <link href="https://lzon.ca/quotes/"/>
+    <published>2026-07-16T12:00:00Z</published>
+    <updated>2026-07-16T12:00:00Z</updated>
+    <author><name>Lzon</name></author>
+    <category term="quote"/>
+    <summary type="html">If there is one question I dread, to which I have never been able to invent a satisfactory reply, it is the question what am I doing.&lt;br/&gt;- Samuel Beckett</summary>
+  </entry>
 
   
 
