@@ -8,11 +8,20 @@
       <generator>Zola</generator>
       <language>en</language>
       <atom:link href="https://lzon.ca/quotes/rss.xml" rel="self" type="application/rss+xml"/>
-      <lastBuildDate>Thu, 16 Jul 2026 12:00:00 +0000</lastBuildDate>
+      <lastBuildDate>Fri, 17 Jul 2026 12:00:00 +0000</lastBuildDate>
       
       
       
       
+      <item>
+          <title>107. lzon.ca&#x2F;quotes</title>
+          <pubDate>Fri, 17 Jul 2026 12:00:00 +0000</pubDate>
+          <author>Lzon</author>
+          <link>https://lzon.ca/quotes/</link>
+          <guid isPermaLink="false">https://lzon.ca/quotes/#107</guid>
+          <category>quote</category>
+          <description>A learning experience is one of those things that says, ’You know that thing you just did? Don’t do that.&lt;br/&gt;- Douglas Adams</description>
+      </item>
       <item>
           <title>106. lzon.ca&#x2F;quotes</title>
           <pubDate>Thu, 16 Jul 2026 12:00:00 +0000</pubDate>
