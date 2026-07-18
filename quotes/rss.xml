@@ -8,11 +8,20 @@
       <generator>Zola</generator>
       <language>en</language>
       <atom:link href="https://lzon.ca/quotes/rss.xml" rel="self" type="application/rss+xml"/>
-      <lastBuildDate>Fri, 17 Jul 2026 12:00:00 +0000</lastBuildDate>
+      <lastBuildDate>Sat, 18 Jul 2026 12:00:00 +0000</lastBuildDate>
       
       
       
       
+      <item>
+          <title>108. lzon.ca&#x2F;quotes</title>
+          <pubDate>Sat, 18 Jul 2026 12:00:00 +0000</pubDate>
+          <author>Lzon</author>
+          <link>https://lzon.ca/quotes/</link>
+          <guid isPermaLink="false">https://lzon.ca/quotes/#108</guid>
+          <category>quote</category>
+          <description>You have power over your mind, not outside events. Realize this, and you will find strength.&lt;br/&gt;- Marcus Aurelius</description>
+      </item>
       <item>
           <title>107. lzon.ca&#x2F;quotes</title>
           <pubDate>Fri, 17 Jul 2026 12:00:00 +0000</pubDate>
