@@ -13,7 +13,7 @@
   <generator uri="https://www.getzola.org/">Zola</generator>
 
   
-  <updated>2026-07-18T12:00:00Z</updated>
+  <updated>2026-07-19T12:00:00Z</updated>
 
   
   
@@ -29,6 +29,20 @@
   
 
   
+
+  
+
+  
+  <entry>
+    <title>109. lzon.ca&#x2F;quotes</title>
+    <id>https://lzon.ca/quotes/#109</id>
+    <link href="https://lzon.ca/quotes/"/>
+    <published>2026-07-19T12:00:00Z</published>
+    <updated>2026-07-19T12:00:00Z</updated>
+    <author><name>Lzon</name></author>
+    <category term="quote"/>
+    <summary type="html">The truly free man is the one who can turn down an invitation to dinner without giving an excuse.&lt;br/&gt;- Jules Renard</summary>
+  </entry>
 
   
 
