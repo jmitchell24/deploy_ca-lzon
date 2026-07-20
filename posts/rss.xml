@@ -8,11 +8,19 @@
       <generator>Zola</generator>
       <language>en</language>
       <atom:link href="https://lzon.ca/posts/rss.xml" rel="self" type="application/rss+xml"/>
-      <lastBuildDate>Wed, 15 Jul 2026 12:00:00 +0000</lastBuildDate>
+      <lastBuildDate>Mon, 20 Jul 2026 12:00:00 +0000</lastBuildDate>
       
       
       
       
+      <item>
+          <title>Anonymous Functions</title>
+          <pubDate>Mon, 20 Jul 2026 12:00:00 +0000</pubDate>
+          <author>Lzon</author>
+          <link>https://lzon.ca/posts/algoma/anonymous-functions/</link>
+          <guid isPermaLink="false">https://lzon.ca/posts/algoma/anonymous-functions/</guid>
+          <description xml:base="https://lzon.ca/posts/algoma/anonymous-functions/">&lt;p&gt;Today I implemented anonymous functions for Alogma. It was shockingly easy, and here’s how I did it.&lt;&#x2F;p&gt;</description>
+      </item>
       <item>
           <title>The Algoma Programming Language</title>
           <pubDate>Mon, 13 Jul 2026 12:00:00 +0000</pubDate>
