@@ -8,11 +8,20 @@
       <generator>Zola</generator>
       <language>en</language>
       <atom:link href="https://lzon.ca/quotes/rss.xml" rel="self" type="application/rss+xml"/>
-      <lastBuildDate>Mon, 20 Jul 2026 12:00:00 +0000</lastBuildDate>
+      <lastBuildDate>Tue, 21 Jul 2026 12:00:00 +0000</lastBuildDate>
       
       
       
       
+      <item>
+          <title>111. lzon.ca&#x2F;quotes</title>
+          <pubDate>Tue, 21 Jul 2026 12:00:00 +0000</pubDate>
+          <author>Lzon</author>
+          <link>https://lzon.ca/quotes/</link>
+          <guid isPermaLink="false">https://lzon.ca/quotes/#111</guid>
+          <category>quote</category>
+          <description>Eat food. Not too much. Mostly plants.&lt;br/&gt;- Michael Pollan (In Defense of Food: An Eater&apos;s Manifesto)</description>
+      </item>
       <item>
           <title>110. lzon.ca&#x2F;quotes</title>
           <pubDate>Mon, 20 Jul 2026 12:00:00 +0000</pubDate>

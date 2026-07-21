@@ -13,7 +13,7 @@
   <generator uri="https://www.getzola.org/">Zola</generator>
 
   
-  <updated>2026-07-20T12:00:00Z</updated>
+  <updated>2026-07-21T12:00:00Z</updated>
 
   
   
@@ -29,6 +29,20 @@
   
 
   
+
+  
+
+  
+  <entry>
+    <title>111. lzon.ca&#x2F;quotes</title>
+    <id>https://lzon.ca/quotes/#111</id>
+    <link href="https://lzon.ca/quotes/"/>
+    <published>2026-07-21T12:00:00Z</published>
+    <updated>2026-07-21T12:00:00Z</updated>
+    <author><name>Lzon</name></author>
+    <category term="quote"/>
+    <summary type="html">Eat food. Not too much. Mostly plants.&lt;br/&gt;- Michael Pollan (In Defense of Food: An Eater&apos;s Manifesto)</summary>
+  </entry>
 
   
 
