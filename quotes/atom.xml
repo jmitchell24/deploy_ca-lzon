@@ -13,7 +13,7 @@
   <generator uri="https://www.getzola.org/">Zola</generator>
 
   
-  <updated>2026-07-24T12:00:00Z</updated>
+  <updated>2026-07-25T12:00:00Z</updated>
 
   
   
@@ -29,6 +29,20 @@
   
 
   
+
+  
+
+  
+  <entry>
+    <title>115. lzon.ca&#x2F;quotes</title>
+    <id>https://lzon.ca/quotes/#115</id>
+    <link href="https://lzon.ca/quotes/"/>
+    <published>2026-07-25T12:00:00Z</published>
+    <updated>2026-07-25T12:00:00Z</updated>
+    <author><name>Lzon</name></author>
+    <category term="quote"/>
+    <summary type="html">The sad truth is that most evil is done by people who never make up their minds to be good or evil.&lt;br/&gt;- Hannah Arendt (The Life of the Mind)</summary>
+  </entry>
 
   
 
