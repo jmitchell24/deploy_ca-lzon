@@ -8,11 +8,20 @@
       <generator>Zola</generator>
       <language>en</language>
       <atom:link href="https://lzon.ca/quotes/rss.xml" rel="self" type="application/rss+xml"/>
-      <lastBuildDate>Sat, 25 Jul 2026 12:00:00 +0000</lastBuildDate>
+      <lastBuildDate>Sun, 26 Jul 2026 12:00:00 +0000</lastBuildDate>
       
       
       
       
+      <item>
+          <title>116. lzon.ca&#x2F;quotes</title>
+          <pubDate>Sun, 26 Jul 2026 12:00:00 +0000</pubDate>
+          <author>Lzon</author>
+          <link>https://lzon.ca/quotes/</link>
+          <guid isPermaLink="false">https://lzon.ca/quotes/#116</guid>
+          <category>quote</category>
+          <description>Too often we love people who don’t love us, but we fail to return the love of others who do.&lt;br/&gt;- Jay Shetty</description>
+      </item>
       <item>
           <title>115. lzon.ca&#x2F;quotes</title>
           <pubDate>Sat, 25 Jul 2026 12:00:00 +0000</pubDate>
