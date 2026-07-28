@@ -8,11 +8,20 @@
       <generator>Zola</generator>
       <language>en</language>
       <atom:link href="https://lzon.ca/quotes/rss.xml" rel="self" type="application/rss+xml"/>
-      <lastBuildDate>Mon, 27 Jul 2026 12:00:00 +0000</lastBuildDate>
+      <lastBuildDate>Tue, 28 Jul 2026 12:00:00 +0000</lastBuildDate>
       
       
       
       
+      <item>
+          <title>118. lzon.ca&#x2F;quotes</title>
+          <pubDate>Tue, 28 Jul 2026 12:00:00 +0000</pubDate>
+          <author>Lzon</author>
+          <link>https://lzon.ca/quotes/</link>
+          <guid isPermaLink="false">https://lzon.ca/quotes/#118</guid>
+          <category>quote</category>
+          <description>The problem with revolutions is that they always end right where they begin.&lt;br/&gt;- Matthew Catania</description>
+      </item>
       <item>
           <title>117. lzon.ca&#x2F;quotes</title>
           <pubDate>Mon, 27 Jul 2026 12:00:00 +0000</pubDate>
