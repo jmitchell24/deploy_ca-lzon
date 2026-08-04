@@ -8,11 +8,19 @@
       <generator>Zola</generator>
       <language>en</language>
       <atom:link href="https://lzon.ca/posts/rss.xml" rel="self" type="application/rss+xml"/>
-      <lastBuildDate>Tue, 28 Jul 2026 12:00:00 +0000</lastBuildDate>
+      <lastBuildDate>Tue, 04 Aug 2026 12:00:00 +0000</lastBuildDate>
       
       
       
       
+      <item>
+          <title>Why I&#x27;m skipping the Steam Frame</title>
+          <pubDate>Tue, 04 Aug 2026 12:00:00 +0000</pubDate>
+          <author>Lzon</author>
+          <link>https://lzon.ca/posts/other/no-steam-frame/</link>
+          <guid isPermaLink="false">https://lzon.ca/posts/other/no-steam-frame/</guid>
+          <description xml:base="https://lzon.ca/posts/other/no-steam-frame/">&lt;p&gt;If you have been waiting since last year for the launch of the Steam Frame I would suggest that you consider just moving on.&lt;&#x2F;p&gt;</description>
+      </item>
       <item>
           <title>What if useful AI is a fantasy?</title>
           <pubDate>Tue, 28 Jul 2026 12:00:00 +0000</pubDate>
