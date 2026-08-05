@@ -13,7 +13,7 @@
   <generator uri="https://www.getzola.org/">Zola</generator>
 
   
-  <updated>2026-08-04T12:00:00Z</updated>
+  <updated>2026-08-05T12:00:00Z</updated>
 
   
   
@@ -29,6 +29,20 @@
   
 
   
+
+  
+
+  
+  <entry>
+    <title>125. lzon.ca&#x2F;quotes</title>
+    <id>https://lzon.ca/quotes/#125</id>
+    <link href="https://lzon.ca/quotes/"/>
+    <published>2026-08-05T12:00:00Z</published>
+    <updated>2026-08-05T12:00:00Z</updated>
+    <author><name>Lzon</name></author>
+    <category term="quote"/>
+    <summary type="html">In the wild struggle for existence, we want to have something that endures, and so we fill our minds with rubbish and facts, in the silly hope of keeping our place.&lt;br/&gt;- Oscar Wilde</summary>
+  </entry>
 
   
 

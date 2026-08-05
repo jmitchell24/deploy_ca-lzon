@@ -13,7 +13,7 @@
   <generator uri="https://www.getzola.org/">Zola</generator>
 
   
-  <updated>2026-07-02T12:00:00Z</updated>
+  <updated>2026-08-05T12:00:00Z</updated>
 
   
   
@@ -29,6 +29,21 @@
   
 
   
+
+  
+
+  
+  <entry>
+    <title>37. Syntax Across Languages (One Big Page)</title>
+    <id>https://lzon.ca/curios/37</id>
+    <link href="https://rigaux.org/language-study/syntax-across-languages.html"/>
+    <published>2026-08-05T12:00:00Z</published>
+    <updated>2026-08-05T12:00:00Z</updated>
+    <author><name>Lzon</name></author>
+    <content type="html" xml:base="https://lzon.ca/curios/curio-000037-syntax-across-languages-one-big-page/">&lt;p&gt;This is a large reference page I found for the syntax of many different programming languages. The layout is really useful for comparing specific syntax elements across different languages.&lt;/p&gt;
+&lt;p&gt;I’ve been using it while brainstorming for my own programming language, &lt;a href=&quot;/algoma&quot;&gt;Alogma&lt;/a&gt;.&lt;/p&gt;
+</content>
+  </entry>
 
   
 

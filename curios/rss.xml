@@ -8,11 +8,21 @@
       <generator>Zola</generator>
       <language>en</language>
       <atom:link href="https://lzon.ca/curios/rss.xml" rel="self" type="application/rss+xml"/>
-      <lastBuildDate>Thu, 02 Jul 2026 12:00:00 +0000</lastBuildDate>
+      <lastBuildDate>Wed, 05 Aug 2026 12:00:00 +0000</lastBuildDate>
       
       
       
       
+      <item>
+          <title>37. Syntax Across Languages (One Big Page)</title>
+          <pubDate>Wed, 05 Aug 2026 12:00:00 +0000</pubDate>
+          <author>Lzon</author>
+          <link>https://rigaux.org/language-study/syntax-across-languages.html</link>
+          <guid isPermaLink="false">https://lzon.ca/curios/37</guid>
+          <description xml:base="https://lzon.ca/curios/curio-000037-syntax-across-languages-one-big-page/">&lt;p&gt;This is a large reference page I found for the syntax of many different programming languages. The layout is really useful for comparing specific syntax elements across different languages.&lt;/p&gt;
+&lt;p&gt;I’ve been using it while brainstorming for my own programming language, &lt;a href=&quot;/algoma&quot;&gt;Alogma&lt;/a&gt;.&lt;/p&gt;
+</description>
+      </item>
       <item>
           <title>36. Spurious Correlations</title>
           <pubDate>Thu, 02 Jul 2026 12:00:00 +0000</pubDate>
