@@ -8,11 +8,20 @@
       <generator>Zola</generator>
       <language>en</language>
       <atom:link href="https://lzon.ca/quotes/rss.xml" rel="self" type="application/rss+xml"/>
-      <lastBuildDate>Thu, 06 Aug 2026 12:00:00 +0000</lastBuildDate>
+      <lastBuildDate>Fri, 07 Aug 2026 12:00:00 +0000</lastBuildDate>
       
       
       
       
+      <item>
+          <title>127. lzon.ca&#x2F;quotes</title>
+          <pubDate>Fri, 07 Aug 2026 12:00:00 +0000</pubDate>
+          <author>Lzon</author>
+          <link>https://lzon.ca/quotes/</link>
+          <guid isPermaLink="false">https://lzon.ca/quotes/#127</guid>
+          <category>quote</category>
+          <description>It is easier to prevent bad habits than to break them.&lt;br/&gt;- Benjamin Franklin</description>
+      </item>
       <item>
           <title>126. lzon.ca&#x2F;quotes</title>
           <pubDate>Thu, 06 Aug 2026 12:00:00 +0000</pubDate>
