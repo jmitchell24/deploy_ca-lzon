@@ -8,11 +8,20 @@
       <generator>Zola</generator>
       <language>en</language>
       <atom:link href="https://lzon.ca/quotes/rss.xml" rel="self" type="application/rss+xml"/>
-      <lastBuildDate>Sun, 16 Aug 2026 12:00:00 +0000</lastBuildDate>
+      <lastBuildDate>Mon, 17 Aug 2026 12:00:00 +0000</lastBuildDate>
       
       
       
       
+      <item>
+          <title>137. lzon.ca&#x2F;quotes</title>
+          <pubDate>Mon, 17 Aug 2026 12:00:00 +0000</pubDate>
+          <author>Lzon</author>
+          <link>https://lzon.ca/quotes/</link>
+          <guid isPermaLink="false">https://lzon.ca/quotes/#137</guid>
+          <category>quote</category>
+          <description>When you’re good at something, you’ll tell everyone. When you’re great at something, they’ll tell you.&lt;br/&gt;- Walter Payton</description>
+      </item>
       <item>
           <title>136. lzon.ca&#x2F;quotes</title>
           <pubDate>Sun, 16 Aug 2026 12:00:00 +0000</pubDate>
