@@ -8,11 +8,20 @@
       <generator>Zola</generator>
       <language>en</language>
       <atom:link href="https://lzon.ca/quotes/rss.xml" rel="self" type="application/rss+xml"/>
-      <lastBuildDate>Thu, 20 Aug 2026 12:00:00 +0000</lastBuildDate>
+      <lastBuildDate>Fri, 21 Aug 2026 12:00:00 +0000</lastBuildDate>
       
       
       
       
+      <item>
+          <title>141. lzon.ca&#x2F;quotes</title>
+          <pubDate>Fri, 21 Aug 2026 12:00:00 +0000</pubDate>
+          <author>Lzon</author>
+          <link>https://lzon.ca/quotes/</link>
+          <guid isPermaLink="false">https://lzon.ca/quotes/#141</guid>
+          <category>quote</category>
+          <description>A ship in harbor is safe, but that’s not what ships are for.&lt;br/&gt;- John Shedd</description>
+      </item>
       <item>
           <title>140. lzon.ca&#x2F;quotes</title>
           <pubDate>Thu, 20 Aug 2026 12:00:00 +0000</pubDate>
