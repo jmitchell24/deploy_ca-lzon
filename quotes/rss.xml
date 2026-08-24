@@ -8,11 +8,20 @@
       <generator>Zola</generator>
       <language>en</language>
       <atom:link href="https://lzon.ca/quotes/rss.xml" rel="self" type="application/rss+xml"/>
-      <lastBuildDate>Sun, 23 Aug 2026 12:00:00 +0000</lastBuildDate>
+      <lastBuildDate>Mon, 24 Aug 2026 12:00:00 +0000</lastBuildDate>
       
       
       
       
+      <item>
+          <title>144. lzon.ca&#x2F;quotes</title>
+          <pubDate>Mon, 24 Aug 2026 12:00:00 +0000</pubDate>
+          <author>Lzon</author>
+          <link>https://lzon.ca/quotes/</link>
+          <guid isPermaLink="false">https://lzon.ca/quotes/#144</guid>
+          <category>quote</category>
+          <description>It is awful to want to go away and to want to go nowhere.&lt;br/&gt;- Sylvia Plath</description>
+      </item>
       <item>
           <title>143. lzon.ca&#x2F;quotes</title>
           <pubDate>Sun, 23 Aug 2026 12:00:00 +0000</pubDate>
