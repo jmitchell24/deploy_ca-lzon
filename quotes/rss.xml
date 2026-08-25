@@ -8,11 +8,20 @@
       <generator>Zola</generator>
       <language>en</language>
       <atom:link href="https://lzon.ca/quotes/rss.xml" rel="self" type="application/rss+xml"/>
-      <lastBuildDate>Mon, 24 Aug 2026 12:00:00 +0000</lastBuildDate>
+      <lastBuildDate>Tue, 25 Aug 2026 12:00:00 +0000</lastBuildDate>
       
       
       
       
+      <item>
+          <title>145. lzon.ca&#x2F;quotes</title>
+          <pubDate>Tue, 25 Aug 2026 12:00:00 +0000</pubDate>
+          <author>Lzon</author>
+          <link>https://lzon.ca/quotes/</link>
+          <guid isPermaLink="false">https://lzon.ca/quotes/#145</guid>
+          <category>quote</category>
+          <description>Doing nothing is better than being busy doing nothing.&lt;br/&gt;- Lao Tzu</description>
+      </item>
       <item>
           <title>144. lzon.ca&#x2F;quotes</title>
           <pubDate>Mon, 24 Aug 2026 12:00:00 +0000</pubDate>
