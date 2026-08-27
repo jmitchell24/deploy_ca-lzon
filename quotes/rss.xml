@@ -8,11 +8,20 @@
       <generator>Zola</generator>
       <language>en</language>
       <atom:link href="https://lzon.ca/quotes/rss.xml" rel="self" type="application/rss+xml"/>
-      <lastBuildDate>Wed, 26 Aug 2026 12:00:00 +0000</lastBuildDate>
+      <lastBuildDate>Thu, 27 Aug 2026 12:00:00 +0000</lastBuildDate>
       
       
       
       
+      <item>
+          <title>147. lzon.ca&#x2F;quotes</title>
+          <pubDate>Thu, 27 Aug 2026 12:00:00 +0000</pubDate>
+          <author>Lzon</author>
+          <link>https://lzon.ca/quotes/</link>
+          <guid isPermaLink="false">https://lzon.ca/quotes/#147</guid>
+          <category>quote</category>
+          <description>Judge a man by his questions rather than his answers.&lt;br/&gt;- Pierre-Marc-Gaston, duc de Lévis</description>
+      </item>
       <item>
           <title>146. lzon.ca&#x2F;quotes</title>
           <pubDate>Wed, 26 Aug 2026 12:00:00 +0000</pubDate>
