@@ -1,0 +1,63 @@
+---
+title: Now
+template: "page-more-default.html"
+slug: now
+aliases: ["now"]
+date: 2026-04-07
+updated: 2026-06-07
+description: "
+A brief overview of my life right now, and what I'm working on.
+"
+weight: 9
+--- 
+
+
+
+### This Website (lzon.ca)
+
+I've been poking at the [quotes](/quotes) section of the site. I've added new sorting options, and have improved the CSS styling somewhat. Additionally, I will likely be changing the section navigation for the blog. It's a bit unintuitive as is and I think I can do better. 
+
+### Algoma Programming Language
+
+This is the current object of my attention. It's a programming language that I'm trying to build from scratch. I'm using the excellent [Crafting Interpreters](https://craftinginterpreters.com/) by Robert Nystrom as a guide. I'll be deviating from the book as I go. My code for the project is written in C++ (instead of C), and I won't be supporting an object-oriented programming model. Overall I expect my language to be very Lua-like. 
+
+If you are interested you can [click here](/posts/manuscripts/algoma4) to see my post about it. I have a WASM build of the Algoma editor that works directly in the browser. 
+
+### Writing
+
+Writing has been sidelined to a degree by my work on Algoma. I still have a sizeable list of post ideas, and a few drafts as well that can be fleshed out and published in the future. 
+
+I still intend to write a detailed post about [OpenGoal](https://opengoal.dev/). I've been slowly playing through Jak 3 using this project. It's fantastic, and I'm looking forward to writing about it once I'm finished the game.  
+
+### My IT Services Company
+
+I launched my IT services company on March 1, 2026. I'm proud of the work I did to pull that off, but the fair thing to say is that this business is not doing well. I've had a single customer (outside of friends or family), and I have some misgivings about it. I'm not giving up. My operating costs are very small, so I'm willing to be patient, and work slowly towards finding customers that would need my services. 
+
+### Employment
+
+I've been applying to jobs since before I lost my previous one. My gut was telling me something was wrong, so I didn't hesitate to get my resume ready and submit applications. 
+
+By any reasonable measure my efforts as a job seeker have been a complete and utter failure. Literally the only response I could elicit from any company I've applied to was automated rejection emails, and even those have been rare. At this point I make every application expecting to be completely ignored. 
+
+I know that something is wrong, I just don't know what. I have a very introverted personality, and have a lot of difficulty dealing with rejection. It makes sense to me that this is a relevant factor, but I don't feel I have a clear answer, as yet. 
+
+I am very privileged that I have enough support in my life that I don't _need_ to be producing an income right now. This can't continue indefinitely, but I'm OK for now. I try to remain grateful.
+
+### Gaming
+
+I have a few games that I'm playing at the moment. 
+
+As mentioned previously I'm playing through Jak 3, and I'm really enjoying it. I have a lot of nostalgia for the Jak series, but I also believe that these games are inherently very good, and that they stand the test of time. 
+
+I recently bought a used PS4 Pro. There are a few exclusives that my brother and I wanted to try. He wanted to play [Bloodborne](https://en.wikipedia.org/wiki/Bloodborne), and I wanted to play a few games as well. As of now I've started [The Last Guardian](https://en.wikipedia.org/wiki/The_Last_Guardian). My impression so far is that this is a true masterpiece, one of the best titles for this console. 
+
+Every day almost as a ritual, I play [Tetris: The Grand Master 2](https://en.wikipedia.org/wiki/Tetris:_The_Grand_Master). I will admit to being a bit of a Tetris enjoyer, and TGM2 is the version that suits me best. The exact combination of gameplay elements just works perfectly for me. 
+
+### Touching Grass
+
+I've been getting out to fly my drone a lot over the past few months. Drones are fun to fly, and the footage that I'm able to get from mine is amazing. I'm able to see all the places that I've known my entire life from a completely new perspective (literally). 
+
+My drone is a [DJI Mini 4K](https://store.dji.com/ca/product/dji-mini-4k?vid=166281). I bought it for around $300 CAD during Black Friday last year and so far I think I got a fantastic deal. 
+
+
+

@@ -13,7 +13,7 @@
   <generator uri="https://www.getzola.org/">Zola</generator>
 
   
-  <updated>2026-08-27T12:00:00Z</updated>
+  <updated>2026-08-28T12:00:00Z</updated>
 
   
   
@@ -29,6 +29,20 @@
   
 
   
+
+  
+
+  
+  <entry>
+    <title>148. lzon.ca&#x2F;quotes</title>
+    <id>https://lzon.ca/quotes/#148</id>
+    <link href="https://lzon.ca/quotes/"/>
+    <published>2026-08-28T12:00:00Z</published>
+    <updated>2026-08-28T12:00:00Z</updated>
+    <author><name>Lzon</name></author>
+    <category term="quote"/>
+    <summary type="html">It is easier to build strong children than to repair broken men.&lt;br/&gt;- Frederick Douglass</summary>
+  </entry>
 
   
 
