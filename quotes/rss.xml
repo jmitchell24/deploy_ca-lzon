@@ -8,11 +8,20 @@
       <generator>Zola</generator>
       <language>en</language>
       <atom:link href="https://lzon.ca/quotes/rss.xml" rel="self" type="application/rss+xml"/>
-      <lastBuildDate>Fri, 28 Aug 2026 12:00:00 +0000</lastBuildDate>
+      <lastBuildDate>Sat, 29 Aug 2026 12:00:00 +0000</lastBuildDate>
       
       
       
       
+      <item>
+          <title>149. lzon.ca&#x2F;quotes</title>
+          <pubDate>Sat, 29 Aug 2026 12:00:00 +0000</pubDate>
+          <author>Lzon</author>
+          <link>https://lzon.ca/quotes/</link>
+          <guid isPermaLink="false">https://lzon.ca/quotes/#149</guid>
+          <category>quote</category>
+          <description>Do not judge me by my success, judge me by how many times I fell down and got back up again.&lt;br/&gt;- Nelson Mandela</description>
+      </item>
       <item>
           <title>148. lzon.ca&#x2F;quotes</title>
           <pubDate>Fri, 28 Aug 2026 12:00:00 +0000</pubDate>

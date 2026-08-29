@@ -8,11 +8,19 @@
       <generator>Zola</generator>
       <language>en</language>
       <atom:link href="https://lzon.ca/posts/rss.xml" rel="self" type="application/rss+xml"/>
-      <lastBuildDate>Mon, 10 Aug 2026 12:00:00 +0000</lastBuildDate>
+      <lastBuildDate>Sat, 29 Aug 2026 12:00:00 +0000</lastBuildDate>
       
       
       
       
+      <item>
+          <title>Introducing Algoma Mako</title>
+          <pubDate>Sat, 29 Aug 2026 12:00:00 +0000</pubDate>
+          <author>Lzon</author>
+          <link>https://lzon.ca/posts/algoma/mako-intro/</link>
+          <guid isPermaLink="false">https://lzon.ca/posts/algoma/mako-intro/</guid>
+          <description xml:base="https://lzon.ca/posts/algoma/mako-intro/">&lt;p&gt;This is the Mako Runtime, a part of the Algoma Project.&lt;&#x2F;p&gt;</description>
+      </item>
       <item>
           <title>Gsv Sfnzm Kzig</title>
           <pubDate>Mon, 10 Aug 2026 12:00:00 +0000</pubDate>
