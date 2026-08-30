@@ -8,11 +8,19 @@
       <generator>Zola</generator>
       <language>en</language>
       <atom:link href="https://lzon.ca/posts/rss.xml" rel="self" type="application/rss+xml"/>
-      <lastBuildDate>Sat, 29 Aug 2026 12:00:00 +0000</lastBuildDate>
+      <lastBuildDate>Sun, 30 Aug 2026 12:00:00 +0000</lastBuildDate>
       
       
       
       
+      <item>
+          <title>Trump renames Canadian Geese to American Geese</title>
+          <pubDate>Sun, 30 Aug 2026 12:00:00 +0000</pubDate>
+          <author>Lzon</author>
+          <link>https://lzon.ca/posts/series_duck-digest/trump-geese/</link>
+          <guid isPermaLink="false">https://lzon.ca/posts/series_duck-digest/trump-geese/</guid>
+          <description xml:base="https://lzon.ca/posts/series_duck-digest/trump-geese/">&lt;p&gt;Polls suggest widespread support from Canadians.&lt;&#x2F;p&gt;</description>
+      </item>
       <item>
           <title>Introducing Algoma Mako</title>
           <pubDate>Sat, 29 Aug 2026 12:00:00 +0000</pubDate>
