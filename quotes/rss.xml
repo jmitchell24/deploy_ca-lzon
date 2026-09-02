@@ -8,11 +8,22 @@
       <generator>Zola</generator>
       <language>en</language>
       <atom:link href="https://lzon.ca/quotes/rss.xml" rel="self" type="application/rss+xml"/>
-      <lastBuildDate>Tue, 01 Sep 2026 12:00:00 +0000</lastBuildDate>
+      <lastBuildDate>Wed, 02 Sep 2026 12:00:00 +0000</lastBuildDate>
       
       
       
       
+      <item>
+          <title>153. lzon.ca&#x2F;quotes</title>
+          <pubDate>Wed, 02 Sep 2026 12:00:00 +0000</pubDate>
+          <author>Lzon</author>
+          <link>https://lzon.ca/quotes/</link>
+          <guid isPermaLink="false">https://lzon.ca/quotes/#153</guid>
+          <category>quote</category>
+          <description>Some people see things that are and ask, Why?
+Some people dream of things that never were and ask, Why not?
+Some people have to go to work and don’t have time for all that.&lt;br/&gt;- George Carlin</description>
+      </item>
       <item>
           <title>152. lzon.ca&#x2F;quotes</title>
           <pubDate>Tue, 01 Sep 2026 12:00:00 +0000</pubDate>

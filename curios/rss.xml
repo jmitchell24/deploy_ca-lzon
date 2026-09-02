@@ -8,11 +8,22 @@
       <generator>Zola</generator>
       <language>en</language>
       <atom:link href="https://lzon.ca/curios/rss.xml" rel="self" type="application/rss+xml"/>
-      <lastBuildDate>Wed, 05 Aug 2026 12:00:00 +0000</lastBuildDate>
+      <lastBuildDate>Wed, 02 Sep 2026 12:00:00 +0000</lastBuildDate>
       
       
       
       
+      <item>
+          <title>38. Internal Combustion Engine Simulator</title>
+          <pubDate>Wed, 02 Sep 2026 12:00:00 +0000</pubDate>
+          <author>Lzon</author>
+          <link>https://random.ma.ttias.be/boxermotor</link>
+          <guid isPermaLink="false">https://lzon.ca/curios/38</guid>
+          <description xml:base="https://lzon.ca/curios/curio-000038-ice-engine-sim/">&lt;p&gt;This is a very interesting in-browser simulation of high performance internal combustion engines.&lt;/p&gt;
+&lt;p&gt;I’m not much of a car enthusiast, but I am amazed by the engineering and design of high-end sports cars.&lt;/p&gt;
+&lt;p&gt;If you want to read more about how this simulation was made check out the accompanying blog post &lt;a rel=&quot;noopener external&quot; target=&quot;_blank&quot; href=&quot;https://ma.ttias.be/9000-rpm/&quot;&gt;here&lt;/a&gt;.&lt;/p&gt;
+</description>
+      </item>
       <item>
           <title>37. Syntax Across Languages (One Big Page)</title>
           <pubDate>Wed, 05 Aug 2026 12:00:00 +0000</pubDate>

@@ -13,7 +13,7 @@
   <generator uri="https://www.getzola.org/">Zola</generator>
 
   
-  <updated>2026-08-05T12:00:00Z</updated>
+  <updated>2026-09-02T12:00:00Z</updated>
 
   
   
@@ -29,6 +29,22 @@
   
 
   
+
+  
+
+  
+  <entry>
+    <title>38. Internal Combustion Engine Simulator</title>
+    <id>https://lzon.ca/curios/38</id>
+    <link href="https://random.ma.ttias.be/boxermotor"/>
+    <published>2026-09-02T12:00:00Z</published>
+    <updated>2026-09-02T12:00:00Z</updated>
+    <author><name>Lzon</name></author>
+    <content type="html" xml:base="https://lzon.ca/curios/curio-000038-ice-engine-sim/">&lt;p&gt;This is a very interesting in-browser simulation of high performance internal combustion engines.&lt;/p&gt;
+&lt;p&gt;I’m not much of a car enthusiast, but I am amazed by the engineering and design of high-end sports cars.&lt;/p&gt;
+&lt;p&gt;If you want to read more about how this simulation was made check out the accompanying blog post &lt;a rel=&quot;noopener external&quot; target=&quot;_blank&quot; href=&quot;https://ma.ttias.be/9000-rpm/&quot;&gt;here&lt;/a&gt;.&lt;/p&gt;
+</content>
+  </entry>
 
   
 
