@@ -13,7 +13,7 @@
   <generator uri="https://www.getzola.org/">Zola</generator>
 
   
-  <updated>2026-09-02T12:00:00Z</updated>
+  <updated>2026-09-03T12:00:00Z</updated>
 
   
   
@@ -29,6 +29,20 @@
   
 
   
+
+  
+
+  
+  <entry>
+    <title>154. lzon.ca&#x2F;quotes</title>
+    <id>https://lzon.ca/quotes/#154</id>
+    <link href="https://lzon.ca/quotes/"/>
+    <published>2026-09-03T12:00:00Z</published>
+    <updated>2026-09-03T12:00:00Z</updated>
+    <author><name>Lzon</name></author>
+    <category term="quote"/>
+    <summary type="html">Too many people spend money they haven’t earned, to buy things they don’t want, to impress people that they don’t like.&lt;br/&gt;- Will Rogers</summary>
+  </entry>
 
   
 
