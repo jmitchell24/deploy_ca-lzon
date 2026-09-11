@@ -8,11 +8,20 @@
       <generator>Zola</generator>
       <language>en</language>
       <atom:link href="https://lzon.ca/quotes/rss.xml" rel="self" type="application/rss+xml"/>
-      <lastBuildDate>Thu, 10 Sep 2026 12:00:00 +0000</lastBuildDate>
+      <lastBuildDate>Fri, 11 Sep 2026 12:00:00 +0000</lastBuildDate>
       
       
       
       
+      <item>
+          <title>162. lzon.ca&#x2F;quotes</title>
+          <pubDate>Fri, 11 Sep 2026 12:00:00 +0000</pubDate>
+          <author>Lzon</author>
+          <link>https://lzon.ca/quotes/</link>
+          <guid isPermaLink="false">https://lzon.ca/quotes/#162</guid>
+          <category>quote</category>
+          <description>Doubt, of whatever kind, can be ended by Action alone.&lt;br/&gt;- Thomas Carlyle (Past and Present III)</description>
+      </item>
       <item>
           <title>161. lzon.ca&#x2F;quotes</title>
           <pubDate>Thu, 10 Sep 2026 12:00:00 +0000</pubDate>

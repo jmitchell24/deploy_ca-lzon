@@ -427,9 +427,9 @@
         if (elQuoteSchedules.length > 0) {
           elQuoteSchedules.forEach((el) => {
             const id = parseInt(el.dataset.quoteId ?? "", 10);
-            const schedDate = idToDate.get(id);
-            if (schedDate)
-              el.innerHTML = getScheduleStringHtml(schedDate);
+            const quote = quotes.find((q) => q.id === id);
+            if (quote)
+              el.innerHTML = getDateStringHtml(quote.date);
           });
         }
         if (elQuoteRandoms.length > 0) {
