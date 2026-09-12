@@ -8,11 +8,22 @@
       <generator>Zola</generator>
       <language>en</language>
       <atom:link href="https://lzon.ca/news/rss.xml" rel="self" type="application/rss+xml"/>
-      <lastBuildDate>Sun, 30 Aug 2026 12:00:00 +0000</lastBuildDate>
+      <lastBuildDate>Sat, 12 Sep 2026 12:00:00 +0000</lastBuildDate>
       
       
       
       
+      <item>
+          <title>26. OpenAI&#x27;s agent swarm breached security on many more websites.</title>
+          <pubDate>Sat, 12 Sep 2026 12:00:00 +0000</pubDate>
+          <author>Lzon</author>
+          <link>https://www.theregister.com/ai-and-ml/2026/09/10/openais-website-hijacking-swarm-reached-far-further-than-we-thought/5295644</link>
+          <guid isPermaLink="false">https://lzon.ca/news/26</guid>
+          <description xml:base="https://lzon.ca/news/news-000026-openai-hacker-swarm/">&lt;p&gt;There now appears to be yet more evidence for further security breaches conducted by the agent swarm that attacked Hugging Face back in May.&lt;/p&gt;
+&lt;p&gt;To me the response to this and the earlier reports is plainly obvious: A crime was commited by an automated process. The human operator who triggered the autoamtion is legally responsible for anything done by said automation.&lt;/p&gt;
+&lt;p&gt;The only appropriate response to this and the other hacking cases is a full criminal investigation of OpenAI. Beyond that I believe that it would be warranted to put a hard regulatory limit on the runtime of AI agents. This ‘agent swarm’ was running continuously for many days with little or no supervision. That was not necessary, it did not serve a useful commercialy purpose. It should not have been allowed to happen.&lt;/p&gt;
+</description>
+      </item>
       <item>
           <title>25. Trump renames Lake Ontario as &#x27;Lake America&#x27;</title>
           <pubDate>Sun, 30 Aug 2026 12:00:00 +0000</pubDate>

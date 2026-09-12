@@ -13,7 +13,7 @@
   <generator uri="https://www.getzola.org/">Zola</generator>
 
   
-  <updated>2026-08-30T12:00:00Z</updated>
+  <updated>2026-09-12T12:00:00Z</updated>
 
   
   
@@ -29,6 +29,22 @@
   
 
   
+
+  
+
+  
+  <entry>
+    <title>26. OpenAI&#x27;s agent swarm breached security on many more websites.</title>
+    <id>https://lzon.ca/news/26</id>
+    <link href="https://www.theregister.com/ai-and-ml/2026/09/10/openais-website-hijacking-swarm-reached-far-further-than-we-thought/5295644"/>
+    <published>2026-09-12T12:00:00Z</published>
+    <updated>2026-09-12T12:00:00Z</updated>
+    <author><name>Lzon</name></author>
+    <content type="html" xml:base="https://lzon.ca/news/news-000026-openai-hacker-swarm/">&lt;p&gt;There now appears to be yet more evidence for further security breaches conducted by the agent swarm that attacked Hugging Face back in May.&lt;/p&gt;
+&lt;p&gt;To me the response to this and the earlier reports is plainly obvious: A crime was commited by an automated process. The human operator who triggered the autoamtion is legally responsible for anything done by said automation.&lt;/p&gt;
+&lt;p&gt;The only appropriate response to this and the other hacking cases is a full criminal investigation of OpenAI. Beyond that I believe that it would be warranted to put a hard regulatory limit on the runtime of AI agents. This ‘agent swarm’ was running continuously for many days with little or no supervision. That was not necessary, it did not serve a useful commercialy purpose. It should not have been allowed to happen.&lt;/p&gt;
+</content>
+  </entry>
 
   
 
