@@ -13,7 +13,7 @@
   <generator uri="https://www.getzola.org/">Zola</generator>
 
   
-  <updated>2026-09-12T12:00:00Z</updated>
+  <updated>2026-09-13T12:00:00Z</updated>
 
   
   
@@ -29,6 +29,20 @@
   
 
   
+
+  
+
+  
+  <entry>
+    <title>164. lzon.ca&#x2F;quotes</title>
+    <id>https://lzon.ca/quotes/#164</id>
+    <link href="https://lzon.ca/quotes/"/>
+    <published>2026-09-13T12:00:00Z</published>
+    <updated>2026-09-13T12:00:00Z</updated>
+    <author><name>Lzon</name></author>
+    <category term="quote"/>
+    <summary type="html">Life often presents us with a choice of evils, rather than of goods.&lt;br/&gt;- C. C. Colton (Lacon)</summary>
+  </entry>
 
   
 
