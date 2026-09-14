@@ -1,0 +1,556 @@
+<script>
+    /**
+     * Parses a YYYY-MM-DD string as a date in the viewer's local timezone.
+     * `new Date(str)` reads that format as UTC midnight, which renders as the
+     * previous day for anyone west of Greenwich, so the parts are split out.
+     * @param {string} str - Date in YYYY-MM-DD form.
+     * @returns {Date|null} The parsed date, or null if the string is malformed.
+     */
+    function parseLocalDate(str) { 
+        const m = /^(\d{4})-(\d{2})-(\d{2})$/.exec(str.trim()); 
+        if (!m) return null; 
+
+        const year = Number(m[1]), month = Number(m[2]) - 1, day = Number(m[3]); 
+        const date = new Date(year, month, day); 
+
+        // Out-of-range parts roll over silently -- month 13 becomes January of
+        // the next year -- so confirm the date still holds what was asked for.
+        const isExact = date.getFullYear() === year 
+            && date.getMonth() === month 
+            && date.getDate() === day; 
+
+        return isExact ? date : null; 
+    }
+
+    /**
+     * Formats a date the way the site writes them out, e.g. "March 9, 2020".
+     * The locale is pinned so the wording does not shift with the viewer's.
+     * @param {Date} date - The date to format.
+     * @returns {string} The formatted date.
+     */
+    function formatLongDate(date) { 
+        return date.toLocaleDateString("en-US", { 
+            year: "numeric", 
+            month: "long", 
+            day: "numeric" 
+        }); 
+    }
+
+    /**
+     * Whole years and days between two dates, as one breakdown: the days are
+     * what remains after the whole years, so they run 0-365 rather than being
+     * a total of the entire span.
+     * @param {Date} from - The earlier date.
+     * @param {Date} to - The later date.
+     * @returns {{years: number, days: number}}
+     */
+    function elapsedSince(from, to) { 
+        const MS_PER_DAY = 86400000; 
+        const atMidnight = (d) => Date.UTC(d.getFullYear(), d.getMonth(), d.getDate()); 
+
+        let years = to.getFullYear() - from.getFullYear(); 
+        const anniversary = new Date(from.getFullYear() + years, from.getMonth(), from.getDate()); 
+
+        // This year's anniversary may not have arrived yet; if so, back up one.
+        if (atMidnight(anniversary) > atMidnight(to)) { 
+            years -= 1; 
+            anniversary.setFullYear(anniversary.getFullYear() - 1); 
+        }
+
+        // Differencing UTC midnights keeps daylight-saving shifts out of the
+        // day count, which a plain millisecond subtraction would pick up.
+        const days = Math.round((atMidnight(to) - atMidnight(anniversary)) / MS_PER_DAY); 
+
+        return { years, days }; 
+    }
+
+    /**
+     * Drives an element's text with a whole number that eases toward its target.
+     */
+    class CountUp { 
+        /**
+         * @param {string} elId - Id of the element whose text is driven.
+         * @param {string} unit - Singular unit name, e.g. "year".
+         */
+        constructor(elId, unit) { 
+            this.el = document.getElementById(elId); 
+            this.unit = unit; 
+            this.value = 0; 
+            this.frame = null; 
+        }
+
+        /**
+         * Eases from the current value to `target`. Any tween still running is
+         * cancelled first, so clicking through buttons quickly cannot leave two
+         * tweens writing to the same element.
+         * @param {number} target - Value to land on.
+         * @param {number} [duration=700] - Tween length in milliseconds.
+         */
+        animateTo(target, duration = 700) { 
+            if (!this.el) return; 
+            if (this.frame !== null) cancelAnimationFrame(this.frame); 
+
+            const from = this.value; 
+            const delta = target - from; 
+
+            if (delta === 0) { 
+                this.draw(target); 
+                return; 
+            }
+
+            const start = performance.now(); 
+
+            const step = (now) => { 
+                const t = Math.min((now - start) / duration, 1); 
+                const eased = 1 - Math.pow(1 - t, 3); // easeOutCubic
+
+                this.value = from + delta * eased; 
+                this.draw(Math.round(this.value)); 
+
+                if (t < 1) { 
+                    this.frame = requestAnimationFrame(step); 
+                } else { 
+                    this.value = target; 
+                    this.frame = null; 
+                }
+            };
+
+            this.frame = requestAnimationFrame(step); 
+        }
+
+        /**
+         * Writes one whole-number value, pluralising the unit to match.
+         * @param {number} n - The value to show.
+         */
+        draw(n) { 
+            this.el.innerText = `${n} ${this.unit}${n === 1 ? "" : "s"}`; 
+        }
+    }
+
+    class VisGrid { 
+        constructor(el) { 
+            this.el = el; 
+            this.elGridButtons = [] 
+        }
+
+        replaceGrid(gv) { 
+            const grid = document.createElement("div"); 
+            grid.classList.add(
+                "grid-container",
+                "gap-sm"
+            ); 
+
+            // Headers live inside the cell grid, as its first row, so they
+            // share the cells' column tracks and stay aligned with them even
+            // when the container scrolls horizontally.
+            if (gv.getColText) { 
+                grid.classList.add("has-headers"); 
+
+                for (let j = 0; j < gv.width; ++j) { 
+                    const hdr = document.createElement("div"); 
+                    hdr.innerText = gv.getColText(j); 
+                    hdr.classList.add(
+                        "column-header", 
+                        "text-sans-serif", 
+                        "text-sm"
+                    ); 
+
+                    grid.appendChild(hdr); 
+                }
+            }
+
+            for (let i = 0; i < gv.height; ++i) { 
+                for (let j = 0; j < gv.width; ++j) { 
+                    const cell = document.createElement("div"); 
+                    cell.classList.add(
+                        gv.getCellClass(j, i), 
+                        "text-sans-serif", 
+                        "text-sm", 
+                        "border", 
+                        "border-dashed",
+                        "rounded", 
+                    ); 
+                    
+                    // Stagger follows the sequence order, which runs down each
+                    // column in turn -- so it is column-major, not row-major.
+                    const cellIndex = j * gv.height + i;
+                    const factor = 0.30 / ( gv.width * gv.height ); 
+                    const delay = cellIndex * factor; 
+                    cell.style.animationDelay = `${delay}s`;
+                    cell.innerText = gv.getCellText ? gv.getCellText(j, i) : ""; 
+                    
+                    grid.appendChild(cell); 
+                }
+            }
+
+            this.el.replaceChildren(); 
+            this.el.style = `--grid-width:${gv.width}; --grid-height:${gv.height};`; 
+            this.el.appendChild(grid); 
+            
+        }    
+
+        /**
+         * Binds every button matching `selector`. Each carries its own data-date
+         * and data-desc, so there is nothing to wire up per button; the first
+         * match is the one selected on load.
+         * @param {string} selector - CSS selector matching the buttons.
+         * @param {object} gv - The grid view the buttons drive.
+         */
+        bindGridButtons(selector, gv) { 
+            const btns = document.querySelectorAll(selector); 
+            if (!btns.length) { 
+                console.error(`No grid buttons matched "${selector}"`); 
+                return; 
+            }
+
+            btns.forEach((btn, i) => this.bindGridButton(btn, gv, i === 0)); 
+        }
+
+        /**
+         * Binds one button, taking the moment it represents from its own
+         * data attributes.
+         * @param {HTMLElement} btn - The button element.
+         * @param {object} gv - The grid view the button drives.
+         * @param {boolean} isDefault - Whether to select it immediately.
+         */
+        bindGridButton(btn, gv, isDefault) { 
+            // The button's data-date attribute is the one place the moment
+            // being measured is written down; both the year grid and the
+            // elapsed readout are derived from it.
+            const startDate = btn.dataset.date ? parseLocalDate(btn.dataset.date) : null; 
+            if (btn.dataset.date && !startDate) { 
+                console.error(`Grid button "${btn.innerText.trim()}" has an unparseable data-date: "${btn.dataset.date}"`); 
+            }
+
+            this.elGridButtons.push(btn); 
+
+            const onClick = () => { 
+                if (startDate) { 
+                    gv.startDate = startDate; 
+
+                    // The grid counts calendar years touched, so that its first
+                    // cell is labelled with the year the event happened.
+                    gv.years = ( new Date().getFullYear() ) - startDate.getFullYear(); 
+                }
+
+                gv.desc = btn.dataset.desc ?? ""; 
+
+                this.replaceGrid(gv); 
+
+                this.elGridButtons.forEach(el => {
+                    el.classList.remove("active"); 
+                });
+
+                btn.classList.add("active"); 
+
+                // The date is appended here rather than written into
+                // data-desc, so it stays derived from data-date and can carry
+                // its own highlight. Both parts are wrapped, so the flex column
+                // can put the date on a line of its own.
+                const pDesc = document.getElementById("p-y100-desc"); 
+                pDesc.replaceChildren(); 
+
+                const elText = document.createElement("span"); 
+                elText.innerText = gv.desc; 
+                pDesc.appendChild(elText); 
+
+                if (startDate) { 
+                    const elDate = document.createElement("mark"); 
+                    elDate.innerText = formatLongDate(startDate); 
+
+                    pDesc.appendChild(elDate); 
+                }
+
+                if (gv.onSelect) gv.onSelect(gv); 
+            };
+
+            if (isDefault) onClick(); 
+            btn.addEventListener("click", onClick); 
+        }
+    }
+</script>
+
+
+
+<x-container class="gap-md">
+
+    <span class="text-xl">Since...</span>
+
+    <x-row class="gap-md align-items-center">
+        <x-col id="y100-buttons" class="flex-row flex-wrap gap-sm ">
+            <button class="btn" 
+                data-date="2020-03-09"
+                data-desc="Since the first COVID-19 lockdown in Italy."> The COVID-19 <br> Lockdowns 
+            </button>
+
+            <button class="btn" 
+                data-date="2008-09-15"
+                data-desc="Since the collapse of Lehman Brothers."> The 2008 <br> Financial Crisis
+            </button>
+
+            <button class="btn" 
+                data-date="2001-09-11"
+                data-desc="Since the largest terror attack in United States history."> 9/11 <br> Attack 
+            </button>
+
+            <button class="btn" 
+                data-date="1991-12-26"
+                data-desc="Since the fall of the Soviet Union."> Soviet <br> Collapse 
+            </button>
+
+            <button class="btn" 
+                data-date="1972-12-14"
+                data-desc="Since the final moon walk, from the Apollo 17 mission."> Last <br> Moonwalk 
+            </button>
+        </x-col>
+    </x-row>
+
+    <x-row class="meta text-sans-serif">
+        <p class="text-base" id="p-y100-desc"></p>
+    </x-row>
+
+    
+
+    <div class="flex-row gap-sm text-xl elapsed-readout">
+        
+        <span ><strong id="s-y100-years">0 years</strong></span>
+        <span ><strong id="s-y100-days">0 days</strong></span>
+
+        <span class="readout-tail">have passed.</span>
+    </div>
+    
+    <hr class="mb-0">
+    <span class="text-xl">And as many decades...</span>
+
+    <x-row class="overflow-x">
+        <div id="grid-y100" class="gcontainer"> </div>
+    </x-row>
+</x-container>
+
+
+<script>
+    const vgY100 = new VisGrid(
+        document.querySelector("#grid-y100")
+    );
+
+    const gvY100 = {
+        width: 10, 
+        height: 10, 
+        years: 32,
+        startYear: 0,
+        desc: "", 
+        /**
+         * Heading shown above a decade column.
+         * @param {number} i - Column index (0-based).
+         * @returns {string} Ordinal naming the decade, e.g. "1st".
+         */
+        getColText: (i) => { 
+            return [
+                "1st", "2nd", "3rd", "4th", "5th", "6th", "7th", "8th", "9th", "10th"
+            ][i]; 
+        },
+
+        /**
+         * Position of a cell in the 100-year sequence. Time runs down each
+         * decade column before moving to the next, so the index is
+         * column-major: column * height + row.
+         * @param {number} i - Column index (0-based).
+         * @param {number} j - Row index (0-based).
+         * @returns {number} Offset from the start of the span, in years.
+         */
+        getCellOffset: (i, j) => i*gvY100.height + j,
+
+        /**
+         * Picks the lit/unlit class for a cell.
+         * @param {number} i - Column index (0-based).
+         * @param {number} j - Row index (0-based).
+         * @returns {string} CSS class marking the cell as elapsed or not.
+         */
+        getCellClass: (i, j) => { 
+            return gvY100.getCellOffset(i, j) < gvY100.years+1 ? "grid-item-on" : "grid-item-off"; 
+        },
+
+        /**
+         * Calendar year shown inside a cell.
+         * @param {number} i - Column index (0-based).
+         * @param {number} j - Row index (0-based).
+         * @returns {string} The four-digit year for that cell.
+         */
+        getCellText: (i, j) => { 
+            const nowYear = new Date().getFullYear(); 
+            const yearDist = gvY100.years + 1
+            const yearOffset = gvY100.getCellOffset(i, j); 
+            const yearString = `${nowYear-yearDist+yearOffset+1}`;
+            return yearString;  
+        }
+    };  
+
+
+
+    const cuYears = new CountUp("s-y100-years", "year"); 
+    const cuDays  = new CountUp("s-y100-days",  "day"); 
+
+    /**
+     * Eases the three readout spans to the time elapsed since the selected
+     * moment, using the same date the grid was built from.
+     * @param {object} gv - The grid view, carrying the selected startDate.
+     */
+    gvY100.onSelect = (gv) => { 
+        if (!gv.startDate) return; 
+
+        const elapsed = elapsedSince(gv.startDate, new Date()); 
+
+        cuYears.animateTo(elapsed.years); 
+        cuDays.animateTo(elapsed.days); 
+    };
+
+    vgY100.bindGridButtons("#y100-buttons .btn", gvY100); 
+
+
+</script>
+
+<style>
+    .gcontainer {
+        --grid-width: 10; 
+        --grid-height: 10; 
+
+        width: 100%;
+        overflow-x: auto;
+    }
+    
+    .grid-container {
+        display: grid;
+        /* minmax(0, ...) rather than a bare 1fr: a plain 1fr track floors at
+           min-content, so ten "2020" labels would force the grid wider than a
+           phone screen and hand the container a scrollbar. */
+        grid-template-columns: repeat(var(--grid-width), minmax(0, 1fr));
+        /* auto rows, not 1fr: an fr row hands each cell a definite height, and
+           aspect-ratio would then derive the cell's WIDTH from that, shrinking
+           the tiles away from their tracks. With auto rows the width comes from
+           the track and the square height follows from the width. */
+        grid-template-rows: repeat(var(--grid-height), auto);
+    }
+
+    /* Adds the leading row the column headers sit in. */
+    .grid-container.has-headers {
+        grid-template-rows: auto repeat(var(--grid-height), auto);
+    }
+
+    /*
+     * Three lines of room, so switching between one- and two-line descriptions
+     * does not shift everything below it, and the date stays on the bottom line
+     * however long the description runs.
+     */
+    #p-y100-desc {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+
+        min-height: 4.5em;  /* fallback for browsers without the lh unit */
+        min-height: 3lh;
+    }
+
+    /* Keeps the date's hover highlight tight to the text, not the full row. */
+    #p-y100-desc mark {
+        align-self: flex-start;
+    }
+
+    /* Equal-width digits, so the headline does not reflow as it counts. */
+    .elapsed-readout {
+        font-variant-numeric: tabular-nums;
+
+        /* Narrow screens break the line between spans, never inside one. */
+        flex-wrap: wrap;
+    }
+
+    .elapsed-readout span {
+        white-space: nowrap;
+    }
+
+    .column-header {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        white-space: nowrap;
+        color: var(--color-gray);
+    }
+
+    /*
+     * Ten columns of 2px dashed border eats a real share of a phone screen, so
+     * the tiles drop to a hairline below the md breakpoint (768px). The
+     * !important is not optional here: the .border helper the cells are given
+     * declares its own width as !important, and would otherwise win.
+     */
+    @media (max-width: 768px) {
+        /* Puts the trailing phrase on a line of its own, rather than leaving it
+           to whether the two counts happen to fill the row. A full-width basis
+           in a wrapping flex row always starts a new line. */
+        .elapsed-readout .readout-tail {
+            flex-basis: 100%;
+        }
+
+        .grid-item-on,
+        .grid-item-off {
+            border-width: 1px !important;
+
+            /* Ten four-digit years will not fit legibly across a phone, so the
+               grid reads as a density plot instead. !important is needed to
+               beat the .text-sm helper's own !important font-size. */
+            font-size: 0 !important;
+        }
+    }
+
+    @keyframes scaleIn {
+        from {
+            transform: scale(0);
+            opacity: 0;
+        }
+        to {
+            transform: scale(1);
+            opacity: 1;
+        }
+    }
+
+    .grid-item-on {
+        /* width:100% makes the inline size definite, so aspect-ratio has
+           something to derive the square's height FROM. Left as auto the box
+           has no intrinsic size to stretch from and collapses. */
+        width: 100%;
+        aspect-ratio: 1 / 1;
+
+        background: var(--color-primary-dark);
+        border-color: var(--color-primary);
+        
+        /* Animation properties */
+        animation: scaleIn .15s ease-out forwards;
+        transform: scale(0);
+        opacity: 0;
+
+        overflow: hidden;
+
+        /* Flexbox centering */
+        display: flex;
+        justify-content: center;  /* horizontal center */
+        align-items: center;      /* vertical center */
+    }
+
+    .grid-item-off {
+        width: 100%;
+        aspect-ratio: 1 / 1;
+
+        /* Animation properties */
+        animation: scaleIn .15s ease-out forwards;
+        transform: scale(0);
+        opacity: 0;
+
+        overflow: hidden;
+
+        color: var(--color-gray); 
+
+        /* Flexbox centering */
+        display: flex;
+        justify-content: center;  /* horizontal center */
+        align-items: center;      /* vertical center */
+    }
+</style>
