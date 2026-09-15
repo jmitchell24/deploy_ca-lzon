@@ -484,24 +484,31 @@
       document.querySelectorAll(".top-section").forEach((section) => {
         const head = section.querySelector(".top-section-head");
         const body = section.querySelector(".top-section-body");
+        const hidden = section.querySelector(".top-section-body-hidden");
         if (!head || !body)
           return;
         const isClosed = section.classList.contains("top-section-closed");
         if (isClosed) {
           body.classList.add("collapse");
           head.classList.add("collapsed");
+          hidden?.classList.add("collapse", "show");
         } else {
           body.classList.add("collapse", "show");
           head.classList.remove("collapsed");
+          hidden?.classList.add("collapse");
         }
         head.addEventListener("click", () => {
           if (body.classList.contains("show")) {
             collapseElement(body);
             head.classList.add("collapsed");
+            if (hidden)
+              expandElement(hidden);
             console.log("collapse top-section");
           } else if (!body.classList.contains("collapsing")) {
             expandElement(body);
             head.classList.remove("collapsed");
+            if (hidden)
+              collapseElement(hidden);
             console.log("expand top-section");
           }
         });

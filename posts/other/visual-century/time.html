@@ -180,12 +180,20 @@
 
     class VisGrid { 
         /**
-         * Seconds for the reveal to sweep the whole grid, end to end. Divided
-         * by the cell count below, so the sweep takes the same time whatever
-         * the grid's dimensions. Raise it to make the year order more legible,
-         * lower it to make the reveal snappier.
+         * Seconds from the first tile starting to the last tile finishing.
+         * Divided by the cell count below, so the reveal takes the same time
+         * whatever the grid's dimensions. Raise it to make the year order more
+         * legible, lower it to make the reveal snappier.
          */
         static STAGGER_SWEEP_S = 1.5; 
+
+        /**
+         * How long one tile's own scaleIn runs. Must match the animation on
+         * .grid-item-* / .row-header in the stylesheet below: it is subtracted
+         * from the sweep so the last tile *finishes* on STAGGER_SWEEP_S rather
+         * than starting there.
+         */
+        static TILE_ANIM_S = 0.25; 
 
         constructor(el) { 
             this.el = el; 
@@ -220,7 +228,8 @@
                     ? gv.getCellDelayFraction(col, row) 
                     : ( row * gv.width + col ) / ( gv.width * gv.height - 1 ); 
 
-                return `${fraction * VisGrid.STAGGER_SWEEP_S}s`; 
+                const span = VisGrid.STAGGER_SWEEP_S - VisGrid.TILE_ANIM_S; 
+                return `${fraction * span}s`; 
             };
 
             for (let i = 0; i < gv.height; ++i) { 
@@ -323,13 +332,7 @@
                 // The date stays derived from data-date rather than being
                 // written into data-desc, and now lands in the card's metadata
                 // row beside the calendar icon.
-                // The card sits above the buttons, so a shorter description
-                // would pull the button row up under the cursor mid-click.
-                // Pinning the box to its current height before swapping the
-                // text lets it grow but never shrink. box-sizing is border-box
-                // site-wide, so offsetHeight and min-height are the same box.
                 const pDesc = document.getElementById("p-y100-desc"); 
-                pDesc.style.minHeight = `${pDesc.offsetHeight}px`; 
 
                 const elDate = document.getElementById("s-y100-date"); 
 
@@ -419,7 +422,7 @@
                 </span>
 
                 <span class="text-sm text-secondary flex-row gap-xs align-items-center" >
-                    Click to Expand
+                    Click for Overview
                     <span class="icon" data-glyph="cursor-click"></span>
                     
                 </span>
@@ -427,7 +430,7 @@
         </div>
 
         <div class="top-section-body">
-            <div class="flex-col gap-md py-md px-sm">
+            <div class="flex-col gap-md pt-md px-sm">
                 <x-row>
                     <x-col class="text-serif">
                         <div class="text-base border border-dashed rounded p-md" id="p-y100-desc"></div>
@@ -435,24 +438,28 @@
                 </x-row>
             </div>
         </div>
+
+        <div class="top-section-body-hidden">
+            <div class="text-xl elapsed-readout">
+                
+                <span class="mr-sm"><strong id="s-y100-years">0 years</strong></span>
+                <span class="mr-sm"><strong id="s-y100-days">0 days</strong></span>
+
+                <br class="readout-break">
+
+                have passed. 
+                And as many decades...
+            </div>
+            
+            <div class="mt-md overflow-x">
+                <div id="grid-y100" class="gcontainer"> </div>
+            </div>
+        </div>
+
     </div>
 
 
-    
 
-    <div class="flex-row gap-sm text-xl elapsed-readout">
-        
-        <span ><strong id="s-y100-years">0 years</strong></span>
-        <span ><strong id="s-y100-days">0 days</strong></span>
-
-        <span class="readout-tail">have passed.</span>
-    </div>
-    
-    <span class="text-xl">And as many decades...</span>
-
-    <x-row class="overflow-x">
-        <div id="grid-y100" class="gcontainer"> </div>
-    </x-row>
 </x-container>
 
 
@@ -558,6 +565,8 @@
     vgY100.bindGridButtons("#y100-buttons .btn", gvY100); 
 
 
+
+
 </script>
 
 <style>
@@ -606,13 +615,16 @@
     /* Equal-width digits, so the headline does not reflow as it counts. */
     .elapsed-readout {
         font-variant-numeric: tabular-nums;
-
-        /* Narrow screens break the line between spans, never inside one. */
-        flex-wrap: wrap;
     }
 
+    /* The counts wrap as whole units; the prose around them flows normally. */
     .elapsed-readout span {
         white-space: nowrap;
+    }
+
+    /* Only narrow screens need the forced break -- wider ones let it flow. */
+    .readout-break {
+        display: none;
     }
 
     .row-header {
@@ -636,11 +648,8 @@
      * declares its own width as !important, and would otherwise win.
      */
     @media (max-width: 768px) {
-        /* Puts the trailing phrase on a line of its own, rather than leaving it
-           to whether the two counts happen to fill the row. A full-width basis
-           in a wrapping flex row always starts a new line. */
-        .elapsed-readout .readout-tail {
-            flex-basis: 100%;
+        .readout-break {
+            display: inline;
         }
 
         .grid-item-on,
