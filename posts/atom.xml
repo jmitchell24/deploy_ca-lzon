@@ -33,12 +33,12 @@
   
   <entry>
     <title>Just look at the Time</title>
-    <id>https://lzon.ca/posts/other/visual-century/</id>
-    <link href="https://lzon.ca/posts/other/visual-century/"/>
+    <id>https://lzon.ca/posts/other/visual-time/</id>
+    <link href="https://lzon.ca/posts/other/visual-time/"/>
     <published>2026-09-14T12:00:00Z</published>
     <updated>2026-09-15T12:00:00Z</updated>
     <author><name>Lzon</name></author>
-    <summary type="html" xml:base="https://lzon.ca/posts/other/visual-century/">&lt;p&gt;An little web app that puts into perspective the major events of modern history.&lt;&#x2F;p&gt;</summary>
+    <summary type="html" xml:base="https://lzon.ca/posts/other/visual-time/">&lt;p&gt;A small web app that puts into perspective the major events of modern history.&lt;&#x2F;p&gt;</summary>
   </entry>
 
   
