@@ -22,6 +22,18 @@
     }
 
     /**
+     * Collapses runs of whitespace to single spaces and trims the ends, so a
+     * data-desc wrapped across several lines in the markup still reads as one
+     * line on the page. innerText honours newlines, so without this the breaks
+     * in the attribute would show up verbatim.
+     * @param {string} str - The raw attribute value.
+     * @returns {string} The value as a single line.
+     */
+    function collapseWhitespace(str) { 
+        return str.replace(/\s+/g, " ").trim(); 
+    }
+
+    /**
      * Formats a date the way the site writes them out, e.g. "March 9, 2020".
      * The locale is pinned so the wording does not shift with the viewer's.
      * @param {Date} date - The date to format.
@@ -64,6 +76,45 @@
     }
 
     /**
+     * Cross-fades text: fades elements out, swaps their content, fades them
+     * back. Several elements fade as one group so a card's parts never fall out
+     * of step with each other.
+     */
+    class TextFader { 
+        /**
+         * Length of each half of the fade, in milliseconds. Must match the
+         * opacity transition on #p-y100-desc / #s-y100-date in the stylesheet
+         * below -- the swap happens when the fade-out is done.
+         */
+        static FADE_MS = 200; 
+
+        constructor() { 
+            this.timer = null; 
+        }
+
+        /**
+         * Fades the given elements out, writes their new text, and fades them
+         * back in. A swap already in flight is cancelled first, so clicking
+         * quickly between buttons cannot leave a stale timer writing old text.
+         * @param {Array<[HTMLElement, string]>} parts - Element/text pairs.
+         */
+        swap(parts) { 
+            if (this.timer !== null) clearTimeout(this.timer); 
+
+            parts.forEach(([el]) => { el.style.opacity = "0"; }); 
+
+            this.timer = setTimeout(() => { 
+                parts.forEach(([el, text]) => { 
+                    el.innerText = text; 
+                    el.style.opacity = "1"; 
+                }); 
+
+                this.timer = null; 
+            }, TextFader.FADE_MS); 
+        }
+    }
+
+    /**
      * Drives an element's text with a whole number that eases toward its target.
      */
     class CountUp { 
@@ -83,9 +134,9 @@
          * cancelled first, so clicking through buttons quickly cannot leave two
          * tweens writing to the same element.
          * @param {number} target - Value to land on.
-         * @param {number} [duration=700] - Tween length in milliseconds.
+         * @param {number} [duration=1500] - Tween length in milliseconds.
          */
-        animateTo(target, duration = 700) { 
+        animateTo(target, duration = 1500) { 
             if (!this.el) return; 
             if (this.frame !== null) cancelAnimationFrame(this.frame); 
 
@@ -127,9 +178,18 @@
     }
 
     class VisGrid { 
+        /**
+         * Seconds for the reveal to sweep the whole grid, end to end. Divided
+         * by the cell count below, so the sweep takes the same time whatever
+         * the grid's dimensions. Raise it to make the year order more legible,
+         * lower it to make the reveal snappier.
+         */
+        static STAGGER_SWEEP_S = 1.5; 
+
         constructor(el) { 
             this.el = el; 
             this.elGridButtons = [] 
+            this.fader = new TextFader(); 
         }
 
         replaceGrid(gv) { 
@@ -139,26 +199,44 @@
                 "gap-sm"
             ); 
 
-            // Headers live inside the cell grid, as its first row, so they
-            // share the cells' column tracks and stay aligned with them even
-            // when the container scrolls horizontally.
-            if (gv.getColText) { 
-                grid.classList.add("has-headers"); 
+            // Headers live inside the cell grid, as the first cell of each
+            // row, so they share the cells' row tracks and stay aligned with
+            // them however the rows are sized.
+            const hasHeaders = Boolean(gv.getRowText); 
+            if (hasHeaders) grid.classList.add("has-headers"); 
 
-                for (let j = 0; j < gv.width; ++j) { 
+            /**
+             * When a cell appears in the reveal, as a CSS delay. Where a cell
+             * sits is the view's call, since only it knows which cells carry
+             * meaning; the fallback spreads every cell evenly in row-major
+             * order, the same order getCellOffset walks.
+             * @param {number} col - Column index (0-based).
+             * @param {number} row - Row index (0-based).
+             * @returns {string} The animation-delay value.
+             */
+            const delayFor = (col, row) => { 
+                const fraction = gv.getCellDelayFraction 
+                    ? gv.getCellDelayFraction(col, row) 
+                    : ( row * gv.width + col ) / ( gv.width * gv.height - 1 ); 
+
+                return `${fraction * VisGrid.STAGGER_SWEEP_S}s`; 
+            };
+
+            for (let i = 0; i < gv.height; ++i) { 
+                if (hasHeaders) { 
                     const hdr = document.createElement("div"); 
-                    hdr.innerText = gv.getColText(j); 
+                    hdr.innerText = gv.getRowText(i); 
                     hdr.classList.add(
-                        "column-header", 
+                        "row-header", 
                         "text-sans-serif", 
                         "text-sm"
                     ); 
 
+                    hdr.style.animationDelay = delayFor(0, i); 
+
                     grid.appendChild(hdr); 
                 }
-            }
 
-            for (let i = 0; i < gv.height; ++i) { 
                 for (let j = 0; j < gv.width; ++j) { 
                     const cell = document.createElement("div"); 
                     cell.classList.add(
@@ -170,12 +248,7 @@
                         "rounded", 
                     ); 
                     
-                    // Stagger follows the sequence order, which runs down each
-                    // column in turn -- so it is column-major, not row-major.
-                    const cellIndex = j * gv.height + i;
-                    const factor = 0.30 / ( gv.width * gv.height ); 
-                    const delay = cellIndex * factor; 
-                    cell.style.animationDelay = `${delay}s`;
+                    cell.style.animationDelay = delayFor(j, i); 
                     cell.innerText = gv.getCellText ? gv.getCellText(j, i) : ""; 
                     
                     grid.appendChild(cell); 
@@ -218,12 +291,16 @@
             // elapsed readout are derived from it.
             const startDate = btn.dataset.date ? parseLocalDate(btn.dataset.date) : null; 
             if (btn.dataset.date && !startDate) { 
-                console.error(`Grid button "${btn.innerText.trim()}" has an unparseable data-date: "${btn.dataset.date}"`); 
+                console.error(`Grid button "${collapseWhitespace(btn.textContent)}" has an unparseable data-date: "${btn.dataset.date}"`); 
             }
 
             this.elGridButtons.push(btn); 
 
             const onClick = () => { 
+                // Re-picking the current moment changes nothing, so replaying
+                // the reveal and the counters would just be noise.
+                if (btn.classList.contains("active")) return; 
+
                 if (startDate) { 
                     gv.startDate = startDate; 
 
@@ -232,7 +309,7 @@
                     gv.years = ( new Date().getFullYear() ) - startDate.getFullYear(); 
                 }
 
-                gv.desc = btn.dataset.desc ?? ""; 
+                gv.desc = collapseWhitespace(btn.dataset.desc ?? ""); 
 
                 this.replaceGrid(gv); 
 
@@ -242,23 +319,25 @@
 
                 btn.classList.add("active"); 
 
-                // The date is appended here rather than written into
-                // data-desc, so it stays derived from data-date and can carry
-                // its own highlight. Both parts are wrapped, so the flex column
-                // can put the date on a line of its own.
+                // The date stays derived from data-date rather than being
+                // written into data-desc, and now lands in the card's metadata
+                // row beside the calendar icon.
+                // The card sits above the buttons, so a shorter description
+                // would pull the button row up under the cursor mid-click.
+                // Pinning the box to its current height before swapping the
+                // text lets it grow but never shrink. box-sizing is border-box
+                // site-wide, so offsetHeight and min-height are the same box.
                 const pDesc = document.getElementById("p-y100-desc"); 
-                pDesc.replaceChildren(); 
+                pDesc.style.minHeight = `${pDesc.offsetHeight}px`; 
 
-                const elText = document.createElement("span"); 
-                elText.innerText = gv.desc; 
-                pDesc.appendChild(elText); 
+                const elDate = document.getElementById("s-y100-date"); 
 
-                if (startDate) { 
-                    const elDate = document.createElement("mark"); 
-                    elDate.innerText = formatLongDate(startDate); 
-
-                    pDesc.appendChild(elDate); 
-                }
+                // Both halves of the card fade as one group: a hard cut on the
+                // date while the description faded would read as a glitch.
+                this.fader.swap([
+                    [pDesc, gv.desc], 
+                    [elDate, startDate ? formatLongDate(startDate) : ""], 
+                ]); 
 
                 if (gv.onSelect) gv.onSelect(gv); 
             };
@@ -266,45 +345,87 @@
             if (isDefault) onClick(); 
             btn.addEventListener("click", onClick); 
         }
-    }</script><x-container class=gap-md> <span class=text-xl>Since...</span> <x-row class="gap-md align-items-center"> <x-col class="flex-row flex-wrap gap-sm" id=y100-buttons> <button data-desc="Since the first COVID-19 lockdown in Italy." class=btn data-date=2020-03-09>The COVID-19 <br> Lockdowns</button> <button data-desc="Since the collapse of Lehman Brothers." class=btn data-date=2008-09-15>The 2008 <br> Financial Crisis</button> <button data-desc="Since the largest terror attack in United States history." class=btn data-date=2001-09-11>9/11 <br> Attack</button> <button data-desc="Since the fall of the Soviet Union." class=btn data-date=1991-12-26>Soviet <br> Collapse</button> <button data-desc="Since the final moon walk, from the Apollo 17 mission." class=btn data-date=1972-12-14>Last <br> Moonwalk</button> </x-col> </x-row> <x-row class="meta text-sans-serif"> <p class=text-base id=p-y100-desc></p> </x-row> <div class="flex-row gap-sm text-xl elapsed-readout"><span><strong id=s-y100-years>0 years</strong></span><span><strong id=s-y100-days>0 days</strong></span><span class=readout-tail>have passed.</span></div> <hr class=mb-0> <span class=text-xl>And as many decades...</span> <x-row class=overflow-x> <div class=gcontainer id=grid-y100></div> </x-row> </x-container><script>const vgY100 = new VisGrid(
+    }</script><x-container class=gap-md> <span class=text-xl>Since the...</span> <x-row class="gap-md align-items-center"> <x-col class="flex-row flex-wrap gap-sm" id=y100-buttons> <button data-desc="
+                The first government mandated lockdown following the outbreak of COVID-19 occured in Italy 
+                in early March 2020. This and the subsequent lockdowns are considered to be the largest 
+                suppression of constitutional rights in the history of the republic. 
+                " class=btn data-date=2020-03-09>First COVID-19 <br> Lockdown</button> <button data-desc="
+                The bankrupcy of the Wall Street firm known as Lehman Brothers is considered by many to be the defining 
+                moment of the Great Recession. It caused a one-day drop of 4.5% in the Dow Jones index, the largest since
+                the September 11 Terror Attacks in 2001. This economic crisis would directly inspire the protest movment Occupy Wallstreet, and 
+                usher in the era of the Zero Interest Rate Policy (ZIRP) in the US and other major economies.  
+                " class=btn data-date=2008-09-15>Great <br> Recession</button> <button data-desc="
+                The largest terrorist attack ever perpetrated against the United States. Agents of the militant
+                islamic group called al-Qaeda hijacked serveral commercial airliners and proceeded to crash them into the
+                Twin Towers of the World Trade Center, and the Pentagon. Nearly 3000 people were killed in the attack itself,
+                and over 8000 people have died as a direct consequence of the event.
+                This attack was the impetus for the Global War on Terror, a military campaign by the United States which spanned multiple wars in
+                middle east as well as many smaller operations against militant islamist organizations. Osama Bin Laden, the orchestrator of the 9/11
+                attacks was located 2011 during Barack Obama's first presidential term. 
+                " class=btn data-date=2001-09-11>9/11 <br> Terror Attack</button> <button data-desc="
+                Since the fall of the Soviet Union.
+                " class=btn data-date=1991-12-26>Collapse of <br> Soviet Union</button> <button data-desc="Since the final moon walk, from the Apollo 17 mission." class=btn data-date=1972-12-14>Last <br> Moonwalk</button> </x-col> </x-row>  <div class="top-section top-section-closed"><div class=flex-row><h6 class="flex-row flex-wrap gap-sm top-section-head collapsed text-sans-serif"><span class="text-nowrap mr-auto"> <span id=s-y100-date></span> </span> <span class="text-sm text-secondary flex-row gap-xs align-items-center"> Click to Expand <span class=icon data-glyph=cursor-click></span> </span></h6></div><div class=top-section-body><div class="flex-col gap-md py-md px-sm"><x-row> <x-col class=text-serif> <div class="text-base border border-dashed rounded p-md" id=p-y100-desc></div> </x-col> </x-row></div></div></div> <div class="flex-row gap-sm text-xl elapsed-readout"><span><strong id=s-y100-years>0 years</strong></span><span><strong id=s-y100-days>0 days</strong></span><span class=readout-tail>have passed.</span></div> <span class=text-xl>And as many decades...</span> <x-row class=overflow-x> <div class=gcontainer id=grid-y100></div> </x-row> </x-container><script>const vgY100 = new VisGrid(
         document.querySelector("#grid-y100")
     );
 
     const gvY100 = {
         width: 10, 
-        height: 10, 
+
+        /**
+         * Most decades the grid will ever draw -- the hundred years the page is
+         * named for, and the length of the ordinal list getRowText indexes.
+         */
+        maxRows: 10, 
+
         years: 32,
         startYear: 0,
         desc: "", 
+
         /**
-         * Heading shown above a decade column.
-         * @param {number} i - Column index (0-based).
+         * Rows the grid needs: enough decades to hold the elapsed span, with
+         * the last one filled out to ten so it still reads as a whole decade.
+         * A getter, so VisGrid picks up the new size on its next read without
+         * anything having to remember to recalculate it.
+         * @returns {number} Row count, at least one and never past maxRows.
+         */
+        get height() { 
+            const rows = Math.ceil(( gvY100.years + 1 ) / gvY100.width); 
+            return Math.min(gvY100.maxRows, Math.max(1, rows)); 
+        },
+
+        /**
+         * Heading shown beside a decade row.
+         * @param {number} i - Row index (0-based).
          * @returns {string} Ordinal naming the decade, e.g. "1st".
          */
-        getColText: (i) => { 
+        getRowText: (i) => { 
             return [
                 "1st", "2nd", "3rd", "4th", "5th", "6th", "7th", "8th", "9th", "10th"
             ][i]; 
         },
 
         /**
-         * Position of a cell in the 100-year sequence. Time runs down each
-         * decade column before moving to the next, so the index is
-         * column-major: column * height + row.
+         * Position of a cell in the 100-year sequence. Time runs across each
+         * decade row before dropping to the next, so the index is row-major:
+         * row * width + column.
          * @param {number} i - Column index (0-based).
          * @param {number} j - Row index (0-based).
          * @returns {number} Offset from the start of the span, in years.
          */
-        getCellOffset: (i, j) => i*gvY100.height + j,
+        getCellOffset: (i, j) => j*gvY100.width + i,
 
         /**
-         * Picks the lit/unlit class for a cell.
+         * Picks the class for a cell: elapsed, still to come, or the current
+         * year -- which is the last elapsed cell, at offset `years`.
          * @param {number} i - Column index (0-based).
          * @param {number} j - Row index (0-based).
-         * @returns {string} CSS class marking the cell as elapsed or not.
+         * @returns {string} CSS class describing the cell's state.
          */
         getCellClass: (i, j) => { 
-            return gvY100.getCellOffset(i, j) < gvY100.years+1 ? "grid-item-on" : "grid-item-off"; 
+            const offset = gvY100.getCellOffset(i, j); 
+
+            if (offset === gvY100.years) return "grid-item-now"; 
+            return offset < gvY100.years+1 ? "grid-item-on" : "grid-item-off"; 
         },
 
         /**
@@ -341,4 +462,4 @@
         cuDays.animateTo(elapsed.days); 
     };
 
-    vgY100.bindGridButtons("#y100-buttons .btn", gvY100);</script><style>.gcontainer{--grid-width:10;--grid-height:10;width:100%;overflow-x:auto}.grid-container{grid-template-columns:repeat(var(--grid-width), minmax(0, 1fr));grid-template-rows:repeat(var(--grid-height), auto);display:grid}.grid-container.has-headers{grid-template-rows:auto repeat(var(--grid-height), auto)}#p-y100-desc{flex-direction:column;justify-content:space-between;min-height:3lh;display:flex}#p-y100-desc mark{align-self:flex-start}.elapsed-readout{font-variant-numeric:tabular-nums;flex-wrap:wrap}.elapsed-readout span{white-space:nowrap}.column-header{white-space:nowrap;color:var(--color-gray);justify-content:center;align-items:center;display:flex}@media (width<=768px){.elapsed-readout .readout-tail{flex-basis:100%}.grid-item-on,.grid-item-off{border-width:1px!important;font-size:0!important}}@keyframes scaleIn{0%{opacity:0;transform:scale(0)}to{opacity:1;transform:scale(1)}}.grid-item-on{aspect-ratio:1;background:var(--color-primary-dark);border-color:var(--color-primary);opacity:0;justify-content:center;align-items:center;width:100%;animation:.15s ease-out forwards scaleIn;display:flex;overflow:hidden;transform:scale(0)}.grid-item-off{aspect-ratio:1;opacity:0;width:100%;color:var(--color-gray);justify-content:center;align-items:center;animation:.15s ease-out forwards scaleIn;display:flex;overflow:hidden;transform:scale(0)}</style></div> </x-col> </x-row></div></main><footer class="flex-0 row flex-wrap justify-content-center border-top gap-sm py-sm px-md animate-on-hover"><a class="gap-sm icon" href=/more/feeds/> <svg viewbox="0 0 256 256" class=svgicon fill=currentColor height=32 width=32 xmlns=http://www.w3.org/2000/svg><path d=M56,136a64,64,0,0,1,64,64 fill=none stroke=currentColor stroke-linecap=round stroke-linejoin=round stroke-width=16></path><path d=M56,88A112,112,0,0,1,168,200 fill=none stroke=currentColor stroke-linecap=round stroke-linejoin=round stroke-width=16></path><path d=M56,40A160,160,0,0,1,216,200 fill=none stroke=currentColor stroke-linecap=round stroke-linejoin=round stroke-width=16></path><circle cx=60 cy=196 r=12></circle></svg> RSS </a><a class="gap-sm icon" href="https://www.paypal.com/donate/?hosted_button_id=NF4TAGXTKXJ22"> <svg viewbox="0 0 256 256" class=svgicon fill=currentColor height=32 width=32 xmlns=http://www.w3.org/2000/svg><path d=M144,128a48,48,0,0,0,46.56-36.36h0A48,48,0,0,0,144,32H84a8,8,0,0,0-7.76,6.06l-36,144A8,8,0,0,0,48,192H79.51a8,8,0,0,0,7.76-6.06l13-51.88A8,8,0,0,1,108,128Z fill=none stroke=currentColor stroke-linecap=round stroke-linejoin=round stroke-width=16></path><path d=M87.27,185.94l-7,28.12A8,8,0,0,0,88,224h31.51a8,8,0,0,0,7.76-6.06l9-35.88A8,8,0,0,1,144,176h32a48,48,0,0,0,46.56-36.36h0A48,48,0,0,0,176,80H120a8,8,0,0,0-7.76,6.06l-12,48 fill=none stroke=currentColor stroke-linecap=round stroke-linejoin=round stroke-width=16></path></svg> Send me a Tip </a><span class="flex-grow text-mute text-nowrap text-align-end align-self-center"> © 2026, All rights reserved. </span><div class="flex-row gap-xs align-self-center font-size-h4"><a class=icon href=#settings> <svg viewbox="0 0 256 256" class=svgicon fill=currentColor height=32 width=32 xmlns=http://www.w3.org/2000/svg><path d=M128,80a48,48,0,1,0,48,48A48.05,48.05,0,0,0,128,80Zm0,80a32,32,0,1,1,32-32A32,32,0,0,1,128,160Zm88-29.84q.06-2.16,0-4.32l14.92-18.64a8,8,0,0,0,1.48-7.06,107.21,107.21,0,0,0-10.88-26.25,8,8,0,0,0-6-3.93l-23.72-2.64q-1.48-1.56-3-3L186,40.54a8,8,0,0,0-3.94-6,107.71,107.71,0,0,0-26.25-10.87,8,8,0,0,0-7.06,1.49L130.16,40Q128,40,125.84,40L107.2,25.11a8,8,0,0,0-7.06-1.48A107.6,107.6,0,0,0,73.89,34.51a8,8,0,0,0-3.93,6L67.32,64.27q-1.56,1.49-3,3L40.54,70a8,8,0,0,0-6,3.94,107.71,107.71,0,0,0-10.87,26.25,8,8,0,0,0,1.49,7.06L40,125.84Q40,128,40,130.16L25.11,148.8a8,8,0,0,0-1.48,7.06,107.21,107.21,0,0,0,10.88,26.25,8,8,0,0,0,6,3.93l23.72,2.64q1.49,1.56,3,3L70,215.46a8,8,0,0,0,3.94,6,107.71,107.71,0,0,0,26.25,10.87,8,8,0,0,0,7.06-1.49L125.84,216q2.16.06,4.32,0l18.64,14.92a8,8,0,0,0,7.06,1.48,107.21,107.21,0,0,0,26.25-10.88,8,8,0,0,0,3.93-6l2.64-23.72q1.56-1.48,3-3L215.46,186a8,8,0,0,0,6-3.94,107.71,107.71,0,0,0,10.87-26.25,8,8,0,0,0-1.49-7.06Zm-16.1-6.5a73.93,73.93,0,0,1,0,8.68,8,8,0,0,0,1.74,5.48l14.19,17.73a91.57,91.57,0,0,1-6.23,15L187,173.11a8,8,0,0,0-5.1,2.64,74.11,74.11,0,0,1-6.14,6.14,8,8,0,0,0-2.64,5.1l-2.51,22.58a91.32,91.32,0,0,1-15,6.23l-17.74-14.19a8,8,0,0,0-5-1.75h-.48a73.93,73.93,0,0,1-8.68,0,8,8,0,0,0-5.48,1.74L100.45,215.8a91.57,91.57,0,0,1-15-6.23L82.89,187a8,8,0,0,0-2.64-5.1,74.11,74.11,0,0,1-6.14-6.14,8,8,0,0,0-5.1-2.64L46.43,170.6a91.32,91.32,0,0,1-6.23-15l14.19-17.74a8,8,0,0,0,1.74-5.48,73.93,73.93,0,0,1,0-8.68,8,8,0,0,0-1.74-5.48L40.2,100.45a91.57,91.57,0,0,1,6.23-15L69,82.89a8,8,0,0,0,5.1-2.64,74.11,74.11,0,0,1,6.14-6.14A8,8,0,0,0,82.89,69L85.4,46.43a91.32,91.32,0,0,1,15-6.23l17.74,14.19a8,8,0,0,0,5.48,1.74,73.93,73.93,0,0,1,8.68,0,8,8,0,0,0,5.48-1.74L155.55,40.2a91.57,91.57,0,0,1,15,6.23L173.11,69a8,8,0,0,0,2.64,5.1,74.11,74.11,0,0,1,6.14,6.14,8,8,0,0,0,5.1,2.64l22.58,2.51a91.32,91.32,0,0,1,6.23,15l-14.19,17.74A8,8,0,0,0,199.87,123.66Z></path></svg> </a></div></footer><div class="mb-xl mb-md-md"></div></body><div class=overlay id=settings><x-settings-popup class="w-100 w-md-sm container gap-md"> <x-row> <x-col class=flex-row> <div class="text-xl flex-grow">Settings</div> <button class="btn btn-icon text-lg" id=settings-close><svg viewbox="0 0 256 256" class=svgicon fill=currentColor height=32 width=32 xmlns=http://www.w3.org/2000/svg><path d=M205.66,194.34a8,8,0,0,1-11.32,11.32L128,139.31,61.66,205.66a8,8,0,0,1-11.32-11.32L116.69,128,50.34,61.66A8,8,0,0,1,61.66,50.34L128,116.69l66.34-66.35a8,8,0,0,1,11.32,11.32L139.31,128Z></path></svg></button> </x-col> </x-row> <x-row> <div class="top-section top-section-card top-section-closed w-100"><h3 class=top-section-head>Theme</h3><div class=top-section-body><div class="flex-col gap-md p-md"><div class="w-100 btn-group"><button class="btn ratio ratio-4x1 justify-content-center active" id=btn-enable-dark-theme><svg viewbox="0 0 256 256" class=svgicon fill=currentColor height=32 width=32 xmlns=http://www.w3.org/2000/svg><path d=M233.54,142.23a8,8,0,0,0-8-2,88.08,88.08,0,0,1-109.8-109.8,8,8,0,0,0-10-10,104.84,104.84,0,0,0-52.91,37A104,104,0,0,0,136,224a103.09,103.09,0,0,0,62.52-20.88,104.84,104.84,0,0,0,37-52.91A8,8,0,0,0,233.54,142.23ZM188.9,190.34A88,88,0,0,1,65.66,67.11a89,89,0,0,1,31.4-26A106,106,0,0,0,96,56,104.11,104.11,0,0,0,200,160a106,106,0,0,0,14.92-1.06A89,89,0,0,1,188.9,190.34Z></path></svg></button><button class="btn ratio ratio-4x1 justify-content-center" id=btn-enable-light-theme><svg viewbox="0 0 256 256" class=svgicon fill=currentColor height=32 width=32 xmlns=http://www.w3.org/2000/svg><path d=M120,40V16a8,8,0,0,1,16,0V40a8,8,0,0,1-16,0Zm72,88a64,64,0,1,1-64-64A64.07,64.07,0,0,1,192,128Zm-16,0a48,48,0,1,0-48,48A48.05,48.05,0,0,0,176,128ZM58.34,69.66A8,8,0,0,0,69.66,58.34l-16-16A8,8,0,0,0,42.34,53.66Zm0,116.68-16,16a8,8,0,0,0,11.32,11.32l16-16a8,8,0,0,0-11.32-11.32ZM192,72a8,8,0,0,0,5.66-2.34l16-16a8,8,0,0,0-11.32-11.32l-16,16A8,8,0,0,0,192,72Zm5.66,114.34a8,8,0,0,0-11.32,11.32l16,16a8,8,0,0,0,11.32-11.32ZM48,128a8,8,0,0,0-8-8H16a8,8,0,0,0,0,16H40A8,8,0,0,0,48,128Zm80,80a8,8,0,0,0-8,8v24a8,8,0,0,0,16,0V216A8,8,0,0,0,128,208Zm112-88H216a8,8,0,0,0,0,16h24a8,8,0,0,0,0-16Z></path></svg></button></div><div class="grid-6 gap-xs"><button class="btn btn-hue ratio ratio-4x3" data-hue=0 style=--hue:0></button><button class="btn btn-hue ratio ratio-4x3" data-hue=10 style=--hue:10></button><button class="btn btn-hue ratio ratio-4x3" data-hue=21 style=--hue:21></button><button class="btn btn-hue ratio ratio-4x3" data-hue=31 style=--hue:31></button><button class="btn btn-hue ratio ratio-4x3" data-hue=41 style=--hue:41></button><button class="btn btn-hue ratio ratio-4x3" data-hue=51 style=--hue:51></button><button class="btn btn-hue ratio ratio-4x3" data-hue=62 style=--hue:62></button><button class="btn btn-hue ratio ratio-4x3" data-hue=72 style=--hue:72></button><button class="btn btn-hue ratio ratio-4x3" data-hue=82 style=--hue:82></button><button class="btn btn-hue ratio ratio-4x3" data-hue=93 style=--hue:93></button><button class="btn btn-hue ratio ratio-4x3" data-hue=103 style=--hue:103></button><button class="btn btn-hue ratio ratio-4x3" data-hue=113 style=--hue:113></button><button class="btn btn-hue ratio ratio-4x3" data-hue=123 style=--hue:123></button><button class="btn btn-hue ratio ratio-4x3" data-hue=134 style=--hue:134></button><button class="btn btn-hue ratio ratio-4x3" data-hue=144 style=--hue:144></button><button class="btn btn-hue ratio ratio-4x3" data-hue=154 style=--hue:154></button><button class="btn btn-hue ratio ratio-4x3" data-hue=165 style=--hue:165></button><button class="btn btn-hue ratio ratio-4x3" data-hue=175 style=--hue:175></button><button class="btn btn-hue ratio ratio-4x3" data-hue=185 style=--hue:185></button><button class="btn btn-hue ratio ratio-4x3" data-hue=195 style=--hue:195></button><button class="btn btn-hue ratio ratio-4x3" data-hue=206 style=--hue:206></button><button class="btn btn-hue ratio ratio-4x3" data-hue=216 style=--hue:216></button><button class="btn btn-hue ratio ratio-4x3" data-hue=226 style=--hue:226></button><button class="btn btn-hue ratio ratio-4x3" data-hue=237 style=--hue:237></button><button class="btn btn-hue ratio ratio-4x3" data-hue=247 style=--hue:247></button><button class="btn btn-hue ratio ratio-4x3" data-hue=257 style=--hue:257></button><button class="btn btn-hue ratio ratio-4x3" data-hue=267 style=--hue:267></button><button class="btn btn-hue ratio ratio-4x3" data-hue=278 style=--hue:278></button><button class="btn btn-hue ratio ratio-4x3" data-hue=288 style=--hue:288></button><button class="btn btn-hue ratio ratio-4x3" data-hue=298 style=--hue:298></button><button class="btn btn-hue ratio ratio-4x3" data-hue=309 style=--hue:309></button><button class="btn btn-hue ratio ratio-4x3" data-hue=319 style=--hue:319></button><button class="btn btn-hue ratio ratio-4x3" data-hue=329 style=--hue:329></button><button class="btn btn-hue ratio ratio-4x3" data-hue=339 style=--hue:339></button><button class="btn btn-hue ratio ratio-4x3" data-hue=350 style=--hue:350></button><button class="btn btn-hue ratio ratio-4x3" data-hue=360 style=--hue:360></button></div><div class="flex-row gap-xs"><div class="flex-1 rounded p-xs text-darker text-md text-align-center" style=background:var(--color-primary)>Primary</div><div class="flex-1 rounded p-xs text-darker text-md text-align-center" style=background:var(--color-secondary)>Secondary</div><div class="flex-1 rounded p-xs text-darker text-md text-align-center" style=background:var(--color-tertiary)>Tertiary</div></div></div></div></div> </x-row> <x-row class=display-none id=div-secrets> <div class="top-section top-section-card w-100"><h3 class=top-section-head>Secrets</h3><div class=top-section-body><div class=p-md><div class="btn-group w-100"><button class="btn ratio ratio-4x1 justify-content-center active" id=btn-secrets-off><svg viewbox="0 0 256 256" class=svgicon fill=currentColor height=32 width=32 xmlns=http://www.w3.org/2000/svg><line fill=none stroke=currentColor stroke-linecap=round stroke-linejoin=round stroke-width=16 x1=48 x2=208 y1=40 y2=216></line><path d=M154.91,157.6a40,40,0,0,1-53.82-59.2 fill=none stroke=currentColor stroke-linecap=round stroke-linejoin=round stroke-width=16></path><path d=M135.53,88.71a40,40,0,0,1,32.3,35.53 fill=none stroke=currentColor stroke-linecap=round stroke-linejoin=round stroke-width=16></path><path d=M208.61,169.1C230.41,149.58,240,128,240,128S208,56,128,56a126,126,0,0,0-20.68,1.68 fill=none stroke=currentColor stroke-linecap=round stroke-linejoin=round stroke-width=16></path><path d=M74,68.6C33.23,89.24,16,128,16,128s32,72,112,72a118.05,118.05,0,0,0,54-12.6 fill=none stroke=currentColor stroke-linecap=round stroke-linejoin=round stroke-width=16></path></svg></button><button class="btn ratio ratio-4x1 justify-content-center" id=btn-secrets-on><svg viewbox="0 0 256 256" class=svgicon fill=currentColor height=32 width=32 xmlns=http://www.w3.org/2000/svg><path d=M128,56C48,56,16,128,16,128s32,72,112,72,112-72,112-72S208,56,128,56Z fill=none stroke=currentColor stroke-linecap=round stroke-linejoin=round stroke-width=16></path><circle cx=128 cy=128 fill=none r=40 stroke=currentColor stroke-linecap=round stroke-linejoin=round stroke-width=16></circle></svg></button></div></div></div></div> </x-row> </x-settings-popup></div>
+    vgY100.bindGridButtons("#y100-buttons .btn", gvY100);</script><style>.gcontainer{--grid-width:10;--grid-height:10;width:100%;overflow-x:auto}.grid-container{grid-template-columns:repeat(var(--grid-width), minmax(0, 1fr));grid-template-rows:repeat(var(--grid-height), auto);display:grid}.grid-container.has-headers{grid-template-columns:auto repeat(var(--grid-width), minmax(0, 1fr))}#p-y100-desc{min-height:2lh}#p-y100-desc,#s-y100-date{transition:opacity .2s}.elapsed-readout{font-variant-numeric:tabular-nums;flex-wrap:wrap}.elapsed-readout span{white-space:nowrap}.row-header{opacity:0;white-space:nowrap;color:var(--color-gray);justify-content:flex-end;align-items:center;animation:.25s ease-out forwards scaleIn;display:flex;transform:scale(0)}@media (width<=768px){.elapsed-readout .readout-tail{flex-basis:100%}.grid-item-on,.grid-item-now,.grid-item-off{border-width:1px!important;font-size:0!important}}@keyframes scaleIn{0%{opacity:0;transform:scale(0)}to{opacity:1;transform:scale(1)}}.grid-item-on,.grid-item-now{aspect-ratio:1;background:var(--color-primary-dark);border-color:var(--color-primary);opacity:0;justify-content:center;align-items:center;width:100%;animation:.25s ease-out forwards scaleIn;display:flex;overflow:hidden;transform:scale(0)}.grid-item-now{background:var(--color-tertiary-dark);border-color:var(--color-tertiary)}.grid-item-off{aspect-ratio:1;opacity:0;width:100%;color:var(--color-gray);justify-content:center;align-items:center;animation:.25s ease-out forwards scaleIn;display:flex;overflow:hidden;transform:scale(0)}</style></div> </x-col> </x-row></div></main><footer class="flex-0 row flex-wrap justify-content-center border-top gap-sm py-sm px-md animate-on-hover"><a class="gap-sm icon" href=/more/feeds/> <svg viewbox="0 0 256 256" class=svgicon fill=currentColor height=32 width=32 xmlns=http://www.w3.org/2000/svg><path d=M56,136a64,64,0,0,1,64,64 fill=none stroke=currentColor stroke-linecap=round stroke-linejoin=round stroke-width=16></path><path d=M56,88A112,112,0,0,1,168,200 fill=none stroke=currentColor stroke-linecap=round stroke-linejoin=round stroke-width=16></path><path d=M56,40A160,160,0,0,1,216,200 fill=none stroke=currentColor stroke-linecap=round stroke-linejoin=round stroke-width=16></path><circle cx=60 cy=196 r=12></circle></svg> RSS </a><a class="gap-sm icon" href="https://www.paypal.com/donate/?hosted_button_id=NF4TAGXTKXJ22"> <svg viewbox="0 0 256 256" class=svgicon fill=currentColor height=32 width=32 xmlns=http://www.w3.org/2000/svg><path d=M144,128a48,48,0,0,0,46.56-36.36h0A48,48,0,0,0,144,32H84a8,8,0,0,0-7.76,6.06l-36,144A8,8,0,0,0,48,192H79.51a8,8,0,0,0,7.76-6.06l13-51.88A8,8,0,0,1,108,128Z fill=none stroke=currentColor stroke-linecap=round stroke-linejoin=round stroke-width=16></path><path d=M87.27,185.94l-7,28.12A8,8,0,0,0,88,224h31.51a8,8,0,0,0,7.76-6.06l9-35.88A8,8,0,0,1,144,176h32a48,48,0,0,0,46.56-36.36h0A48,48,0,0,0,176,80H120a8,8,0,0,0-7.76,6.06l-12,48 fill=none stroke=currentColor stroke-linecap=round stroke-linejoin=round stroke-width=16></path></svg> Send me a Tip </a><span class="flex-grow text-mute text-nowrap text-align-end align-self-center"> © 2026, All rights reserved. </span><div class="flex-row gap-xs align-self-center font-size-h4"><a class=icon href=#settings> <svg viewbox="0 0 256 256" class=svgicon fill=currentColor height=32 width=32 xmlns=http://www.w3.org/2000/svg><path d=M128,80a48,48,0,1,0,48,48A48.05,48.05,0,0,0,128,80Zm0,80a32,32,0,1,1,32-32A32,32,0,0,1,128,160Zm88-29.84q.06-2.16,0-4.32l14.92-18.64a8,8,0,0,0,1.48-7.06,107.21,107.21,0,0,0-10.88-26.25,8,8,0,0,0-6-3.93l-23.72-2.64q-1.48-1.56-3-3L186,40.54a8,8,0,0,0-3.94-6,107.71,107.71,0,0,0-26.25-10.87,8,8,0,0,0-7.06,1.49L130.16,40Q128,40,125.84,40L107.2,25.11a8,8,0,0,0-7.06-1.48A107.6,107.6,0,0,0,73.89,34.51a8,8,0,0,0-3.93,6L67.32,64.27q-1.56,1.49-3,3L40.54,70a8,8,0,0,0-6,3.94,107.71,107.71,0,0,0-10.87,26.25,8,8,0,0,0,1.49,7.06L40,125.84Q40,128,40,130.16L25.11,148.8a8,8,0,0,0-1.48,7.06,107.21,107.21,0,0,0,10.88,26.25,8,8,0,0,0,6,3.93l23.72,2.64q1.49,1.56,3,3L70,215.46a8,8,0,0,0,3.94,6,107.71,107.71,0,0,0,26.25,10.87,8,8,0,0,0,7.06-1.49L125.84,216q2.16.06,4.32,0l18.64,14.92a8,8,0,0,0,7.06,1.48,107.21,107.21,0,0,0,26.25-10.88,8,8,0,0,0,3.93-6l2.64-23.72q1.56-1.48,3-3L215.46,186a8,8,0,0,0,6-3.94,107.71,107.71,0,0,0,10.87-26.25,8,8,0,0,0-1.49-7.06Zm-16.1-6.5a73.93,73.93,0,0,1,0,8.68,8,8,0,0,0,1.74,5.48l14.19,17.73a91.57,91.57,0,0,1-6.23,15L187,173.11a8,8,0,0,0-5.1,2.64,74.11,74.11,0,0,1-6.14,6.14,8,8,0,0,0-2.64,5.1l-2.51,22.58a91.32,91.32,0,0,1-15,6.23l-17.74-14.19a8,8,0,0,0-5-1.75h-.48a73.93,73.93,0,0,1-8.68,0,8,8,0,0,0-5.48,1.74L100.45,215.8a91.57,91.57,0,0,1-15-6.23L82.89,187a8,8,0,0,0-2.64-5.1,74.11,74.11,0,0,1-6.14-6.14,8,8,0,0,0-5.1-2.64L46.43,170.6a91.32,91.32,0,0,1-6.23-15l14.19-17.74a8,8,0,0,0,1.74-5.48,73.93,73.93,0,0,1,0-8.68,8,8,0,0,0-1.74-5.48L40.2,100.45a91.57,91.57,0,0,1,6.23-15L69,82.89a8,8,0,0,0,5.1-2.64,74.11,74.11,0,0,1,6.14-6.14A8,8,0,0,0,82.89,69L85.4,46.43a91.32,91.32,0,0,1,15-6.23l17.74,14.19a8,8,0,0,0,5.48,1.74,73.93,73.93,0,0,1,8.68,0,8,8,0,0,0,5.48-1.74L155.55,40.2a91.57,91.57,0,0,1,15,6.23L173.11,69a8,8,0,0,0,2.64,5.1,74.11,74.11,0,0,1,6.14,6.14,8,8,0,0,0,5.1,2.64l22.58,2.51a91.32,91.32,0,0,1,6.23,15l-14.19,17.74A8,8,0,0,0,199.87,123.66Z></path></svg> </a></div></footer><div class="mb-xl mb-md-md"></div></body><div class=overlay id=settings><x-settings-popup class="w-100 w-md-sm container gap-md"> <x-row> <x-col class=flex-row> <div class="text-xl flex-grow">Settings</div> <button class="btn btn-icon text-lg" id=settings-close><svg viewbox="0 0 256 256" class=svgicon fill=currentColor height=32 width=32 xmlns=http://www.w3.org/2000/svg><path d=M205.66,194.34a8,8,0,0,1-11.32,11.32L128,139.31,61.66,205.66a8,8,0,0,1-11.32-11.32L116.69,128,50.34,61.66A8,8,0,0,1,61.66,50.34L128,116.69l66.34-66.35a8,8,0,0,1,11.32,11.32L139.31,128Z></path></svg></button> </x-col> </x-row> <x-row> <div class="top-section top-section-card top-section-closed w-100"><h3 class=top-section-head>Theme</h3><div class=top-section-body><div class="flex-col gap-md p-md"><div class="w-100 btn-group"><button class="btn ratio ratio-4x1 justify-content-center active" id=btn-enable-dark-theme><svg viewbox="0 0 256 256" class=svgicon fill=currentColor height=32 width=32 xmlns=http://www.w3.org/2000/svg><path d=M233.54,142.23a8,8,0,0,0-8-2,88.08,88.08,0,0,1-109.8-109.8,8,8,0,0,0-10-10,104.84,104.84,0,0,0-52.91,37A104,104,0,0,0,136,224a103.09,103.09,0,0,0,62.52-20.88,104.84,104.84,0,0,0,37-52.91A8,8,0,0,0,233.54,142.23ZM188.9,190.34A88,88,0,0,1,65.66,67.11a89,89,0,0,1,31.4-26A106,106,0,0,0,96,56,104.11,104.11,0,0,0,200,160a106,106,0,0,0,14.92-1.06A89,89,0,0,1,188.9,190.34Z></path></svg></button><button class="btn ratio ratio-4x1 justify-content-center" id=btn-enable-light-theme><svg viewbox="0 0 256 256" class=svgicon fill=currentColor height=32 width=32 xmlns=http://www.w3.org/2000/svg><path d=M120,40V16a8,8,0,0,1,16,0V40a8,8,0,0,1-16,0Zm72,88a64,64,0,1,1-64-64A64.07,64.07,0,0,1,192,128Zm-16,0a48,48,0,1,0-48,48A48.05,48.05,0,0,0,176,128ZM58.34,69.66A8,8,0,0,0,69.66,58.34l-16-16A8,8,0,0,0,42.34,53.66Zm0,116.68-16,16a8,8,0,0,0,11.32,11.32l16-16a8,8,0,0,0-11.32-11.32ZM192,72a8,8,0,0,0,5.66-2.34l16-16a8,8,0,0,0-11.32-11.32l-16,16A8,8,0,0,0,192,72Zm5.66,114.34a8,8,0,0,0-11.32,11.32l16,16a8,8,0,0,0,11.32-11.32ZM48,128a8,8,0,0,0-8-8H16a8,8,0,0,0,0,16H40A8,8,0,0,0,48,128Zm80,80a8,8,0,0,0-8,8v24a8,8,0,0,0,16,0V216A8,8,0,0,0,128,208Zm112-88H216a8,8,0,0,0,0,16h24a8,8,0,0,0,0-16Z></path></svg></button></div><div class="grid-6 gap-xs"><button class="btn btn-hue ratio ratio-4x3" data-hue=0 style=--hue:0></button><button class="btn btn-hue ratio ratio-4x3" data-hue=10 style=--hue:10></button><button class="btn btn-hue ratio ratio-4x3" data-hue=21 style=--hue:21></button><button class="btn btn-hue ratio ratio-4x3" data-hue=31 style=--hue:31></button><button class="btn btn-hue ratio ratio-4x3" data-hue=41 style=--hue:41></button><button class="btn btn-hue ratio ratio-4x3" data-hue=51 style=--hue:51></button><button class="btn btn-hue ratio ratio-4x3" data-hue=62 style=--hue:62></button><button class="btn btn-hue ratio ratio-4x3" data-hue=72 style=--hue:72></button><button class="btn btn-hue ratio ratio-4x3" data-hue=82 style=--hue:82></button><button class="btn btn-hue ratio ratio-4x3" data-hue=93 style=--hue:93></button><button class="btn btn-hue ratio ratio-4x3" data-hue=103 style=--hue:103></button><button class="btn btn-hue ratio ratio-4x3" data-hue=113 style=--hue:113></button><button class="btn btn-hue ratio ratio-4x3" data-hue=123 style=--hue:123></button><button class="btn btn-hue ratio ratio-4x3" data-hue=134 style=--hue:134></button><button class="btn btn-hue ratio ratio-4x3" data-hue=144 style=--hue:144></button><button class="btn btn-hue ratio ratio-4x3" data-hue=154 style=--hue:154></button><button class="btn btn-hue ratio ratio-4x3" data-hue=165 style=--hue:165></button><button class="btn btn-hue ratio ratio-4x3" data-hue=175 style=--hue:175></button><button class="btn btn-hue ratio ratio-4x3" data-hue=185 style=--hue:185></button><button class="btn btn-hue ratio ratio-4x3" data-hue=195 style=--hue:195></button><button class="btn btn-hue ratio ratio-4x3" data-hue=206 style=--hue:206></button><button class="btn btn-hue ratio ratio-4x3" data-hue=216 style=--hue:216></button><button class="btn btn-hue ratio ratio-4x3" data-hue=226 style=--hue:226></button><button class="btn btn-hue ratio ratio-4x3" data-hue=237 style=--hue:237></button><button class="btn btn-hue ratio ratio-4x3" data-hue=247 style=--hue:247></button><button class="btn btn-hue ratio ratio-4x3" data-hue=257 style=--hue:257></button><button class="btn btn-hue ratio ratio-4x3" data-hue=267 style=--hue:267></button><button class="btn btn-hue ratio ratio-4x3" data-hue=278 style=--hue:278></button><button class="btn btn-hue ratio ratio-4x3" data-hue=288 style=--hue:288></button><button class="btn btn-hue ratio ratio-4x3" data-hue=298 style=--hue:298></button><button class="btn btn-hue ratio ratio-4x3" data-hue=309 style=--hue:309></button><button class="btn btn-hue ratio ratio-4x3" data-hue=319 style=--hue:319></button><button class="btn btn-hue ratio ratio-4x3" data-hue=329 style=--hue:329></button><button class="btn btn-hue ratio ratio-4x3" data-hue=339 style=--hue:339></button><button class="btn btn-hue ratio ratio-4x3" data-hue=350 style=--hue:350></button><button class="btn btn-hue ratio ratio-4x3" data-hue=360 style=--hue:360></button></div><div class="flex-row gap-xs"><div class="flex-1 rounded p-xs text-darker text-md text-align-center" style=background:var(--color-primary)>Primary</div><div class="flex-1 rounded p-xs text-darker text-md text-align-center" style=background:var(--color-secondary)>Secondary</div><div class="flex-1 rounded p-xs text-darker text-md text-align-center" style=background:var(--color-tertiary)>Tertiary</div></div></div></div></div> </x-row> <x-row class=display-none id=div-secrets> <div class="top-section top-section-card w-100"><h3 class=top-section-head>Secrets</h3><div class=top-section-body><div class=p-md><div class="btn-group w-100"><button class="btn ratio ratio-4x1 justify-content-center active" id=btn-secrets-off><svg viewbox="0 0 256 256" class=svgicon fill=currentColor height=32 width=32 xmlns=http://www.w3.org/2000/svg><line fill=none stroke=currentColor stroke-linecap=round stroke-linejoin=round stroke-width=16 x1=48 x2=208 y1=40 y2=216></line><path d=M154.91,157.6a40,40,0,0,1-53.82-59.2 fill=none stroke=currentColor stroke-linecap=round stroke-linejoin=round stroke-width=16></path><path d=M135.53,88.71a40,40,0,0,1,32.3,35.53 fill=none stroke=currentColor stroke-linecap=round stroke-linejoin=round stroke-width=16></path><path d=M208.61,169.1C230.41,149.58,240,128,240,128S208,56,128,56a126,126,0,0,0-20.68,1.68 fill=none stroke=currentColor stroke-linecap=round stroke-linejoin=round stroke-width=16></path><path d=M74,68.6C33.23,89.24,16,128,16,128s32,72,112,72a118.05,118.05,0,0,0,54-12.6 fill=none stroke=currentColor stroke-linecap=round stroke-linejoin=round stroke-width=16></path></svg></button><button class="btn ratio ratio-4x1 justify-content-center" id=btn-secrets-on><svg viewbox="0 0 256 256" class=svgicon fill=currentColor height=32 width=32 xmlns=http://www.w3.org/2000/svg><path d=M128,56C48,56,16,128,16,128s32,72,112,72,112-72,112-72S208,56,128,56Z fill=none stroke=currentColor stroke-linecap=round stroke-linejoin=round stroke-width=16></path><circle cx=128 cy=128 fill=none r=40 stroke=currentColor stroke-linecap=round stroke-linejoin=round stroke-width=16></circle></svg></button></div></div></div></div> </x-row> </x-settings-popup></div>

@@ -23,6 +23,18 @@
     }
 
     /**
+     * Collapses runs of whitespace to single spaces and trims the ends, so a
+     * data-desc wrapped across several lines in the markup still reads as one
+     * line on the page. innerText honours newlines, so without this the breaks
+     * in the attribute would show up verbatim.
+     * @param {string} str - The raw attribute value.
+     * @returns {string} The value as a single line.
+     */
+    function collapseWhitespace(str) { 
+        return str.replace(/\s+/g, " ").trim(); 
+    }
+
+    /**
      * Formats a date the way the site writes them out, e.g. "March 9, 2020".
      * The locale is pinned so the wording does not shift with the viewer's.
      * @param {Date} date - The date to format.
@@ -65,6 +77,45 @@
     }
 
     /**
+     * Cross-fades text: fades elements out, swaps their content, fades them
+     * back. Several elements fade as one group so a card's parts never fall out
+     * of step with each other.
+     */
+    class TextFader { 
+        /**
+         * Length of each half of the fade, in milliseconds. Must match the
+         * opacity transition on #p-y100-desc / #s-y100-date in the stylesheet
+         * below -- the swap happens when the fade-out is done.
+         */
+        static FADE_MS = 200; 
+
+        constructor() { 
+            this.timer = null; 
+        }
+
+        /**
+         * Fades the given elements out, writes their new text, and fades them
+         * back in. A swap already in flight is cancelled first, so clicking
+         * quickly between buttons cannot leave a stale timer writing old text.
+         * @param {Array<[HTMLElement, string]>} parts - Element/text pairs.
+         */
+        swap(parts) { 
+            if (this.timer !== null) clearTimeout(this.timer); 
+
+            parts.forEach(([el]) => { el.style.opacity = "0"; }); 
+
+            this.timer = setTimeout(() => { 
+                parts.forEach(([el, text]) => { 
+                    el.innerText = text; 
+                    el.style.opacity = "1"; 
+                }); 
+
+                this.timer = null; 
+            }, TextFader.FADE_MS); 
+        }
+    }
+
+    /**
      * Drives an element's text with a whole number that eases toward its target.
      */
     class CountUp { 
@@ -84,9 +135,9 @@
          * cancelled first, so clicking through buttons quickly cannot leave two
          * tweens writing to the same element.
          * @param {number} target - Value to land on.
-         * @param {number} [duration=700] - Tween length in milliseconds.
+         * @param {number} [duration=1500] - Tween length in milliseconds.
          */
-        animateTo(target, duration = 700) { 
+        animateTo(target, duration = 1500) { 
             if (!this.el) return; 
             if (this.frame !== null) cancelAnimationFrame(this.frame); 
 
@@ -128,9 +179,18 @@
     }
 
     class VisGrid { 
+        /**
+         * Seconds for the reveal to sweep the whole grid, end to end. Divided
+         * by the cell count below, so the sweep takes the same time whatever
+         * the grid's dimensions. Raise it to make the year order more legible,
+         * lower it to make the reveal snappier.
+         */
+        static STAGGER_SWEEP_S = 1.5; 
+
         constructor(el) { 
             this.el = el; 
             this.elGridButtons = [] 
+            this.fader = new TextFader(); 
         }
 
         replaceGrid(gv) { 
@@ -140,26 +200,44 @@
                 "gap-sm"
             ); 
 
-            // Headers live inside the cell grid, as its first row, so they
-            // share the cells' column tracks and stay aligned with them even
-            // when the container scrolls horizontally.
-            if (gv.getColText) { 
-                grid.classList.add("has-headers"); 
+            // Headers live inside the cell grid, as the first cell of each
+            // row, so they share the cells' row tracks and stay aligned with
+            // them however the rows are sized.
+            const hasHeaders = Boolean(gv.getRowText); 
+            if (hasHeaders) grid.classList.add("has-headers"); 
 
-                for (let j = 0; j < gv.width; ++j) { 
+            /**
+             * When a cell appears in the reveal, as a CSS delay. Where a cell
+             * sits is the view's call, since only it knows which cells carry
+             * meaning; the fallback spreads every cell evenly in row-major
+             * order, the same order getCellOffset walks.
+             * @param {number} col - Column index (0-based).
+             * @param {number} row - Row index (0-based).
+             * @returns {string} The animation-delay value.
+             */
+            const delayFor = (col, row) => { 
+                const fraction = gv.getCellDelayFraction 
+                    ? gv.getCellDelayFraction(col, row) 
+                    : ( row * gv.width + col ) / ( gv.width * gv.height - 1 ); 
+
+                return `${fraction * VisGrid.STAGGER_SWEEP_S}s`; 
+            };
+
+            for (let i = 0; i < gv.height; ++i) { 
+                if (hasHeaders) { 
                     const hdr = document.createElement("div"); 
-                    hdr.innerText = gv.getColText(j); 
+                    hdr.innerText = gv.getRowText(i); 
                     hdr.classList.add(
-                        "column-header", 
+                        "row-header", 
                         "text-sans-serif", 
                         "text-sm"
                     ); 
 
+                    hdr.style.animationDelay = delayFor(0, i); 
+
                     grid.appendChild(hdr); 
                 }
-            }
 
-            for (let i = 0; i < gv.height; ++i) { 
                 for (let j = 0; j < gv.width; ++j) { 
                     const cell = document.createElement("div"); 
                     cell.classList.add(
@@ -171,12 +249,7 @@
                         "rounded", 
                     ); 
                     
-                    // Stagger follows the sequence order, which runs down each
-                    // column in turn -- so it is column-major, not row-major.
-                    const cellIndex = j * gv.height + i;
-                    const factor = 0.30 / ( gv.width * gv.height ); 
-                    const delay = cellIndex * factor; 
-                    cell.style.animationDelay = `${delay}s`;
+                    cell.style.animationDelay = delayFor(j, i); 
                     cell.innerText = gv.getCellText ? gv.getCellText(j, i) : ""; 
                     
                     grid.appendChild(cell); 
@@ -219,12 +292,16 @@
             // elapsed readout are derived from it.
             const startDate = btn.dataset.date ? parseLocalDate(btn.dataset.date) : null; 
             if (btn.dataset.date && !startDate) { 
-                console.error(`Grid button "${btn.innerText.trim()}" has an unparseable data-date: "${btn.dataset.date}"`); 
+                console.error(`Grid button "${collapseWhitespace(btn.textContent)}" has an unparseable data-date: "${btn.dataset.date}"`); 
             }
 
             this.elGridButtons.push(btn); 
 
             const onClick = () => { 
+                // Re-picking the current moment changes nothing, so replaying
+                // the reveal and the counters would just be noise.
+                if (btn.classList.contains("active")) return; 
+
                 if (startDate) { 
                     gv.startDate = startDate; 
 
@@ -233,7 +310,7 @@
                     gv.years = ( new Date().getFullYear() ) - startDate.getFullYear(); 
                 }
 
-                gv.desc = btn.dataset.desc ?? ""; 
+                gv.desc = collapseWhitespace(btn.dataset.desc ?? ""); 
 
                 this.replaceGrid(gv); 
 
@@ -243,23 +320,25 @@
 
                 btn.classList.add("active"); 
 
-                // The date is appended here rather than written into
-                // data-desc, so it stays derived from data-date and can carry
-                // its own highlight. Both parts are wrapped, so the flex column
-                // can put the date on a line of its own.
+                // The date stays derived from data-date rather than being
+                // written into data-desc, and now lands in the card's metadata
+                // row beside the calendar icon.
+                // The card sits above the buttons, so a shorter description
+                // would pull the button row up under the cursor mid-click.
+                // Pinning the box to its current height before swapping the
+                // text lets it grow but never shrink. box-sizing is border-box
+                // site-wide, so offsetHeight and min-height are the same box.
                 const pDesc = document.getElementById("p-y100-desc"); 
-                pDesc.replaceChildren(); 
+                pDesc.style.minHeight = `${pDesc.offsetHeight}px`; 
 
-                const elText = document.createElement("span"); 
-                elText.innerText = gv.desc; 
-                pDesc.appendChild(elText); 
+                const elDate = document.getElementById("s-y100-date"); 
 
-                if (startDate) { 
-                    const elDate = document.createElement("mark"); 
-                    elDate.innerText = formatLongDate(startDate); 
-
-                    pDesc.appendChild(elDate); 
-                }
+                // Both halves of the card fade as one group: a hard cut on the
+                // date while the description faded would read as a glitch.
+                this.fader.swap([
+                    [pDesc, gv.desc], 
+                    [elDate, startDate ? formatLongDate(startDate) : ""], 
+                ]); 
 
                 if (gv.onSelect) gv.onSelect(gv); 
             };
@@ -274,28 +353,53 @@
 
 <x-container class="gap-md">
 
-    <span class="text-xl">Since...</span>
+    <span class="text-xl">Since the...</span>
+
+
 
     <x-row class="gap-md align-items-center">
         <x-col id="y100-buttons" class="flex-row flex-wrap gap-sm ">
             <button class="btn" 
                 data-date="2020-03-09"
-                data-desc="Since the first COVID-19 lockdown in Italy."> The COVID-19 <br> Lockdowns 
+                data-desc="
+                The first government mandated lockdown following the outbreak of COVID-19 occured in Italy 
+                in early March 2020. This and the subsequent lockdowns are considered to be the largest 
+                suppression of constitutional rights in the history of the republic. 
+                "> 
+                First COVID-19 <br> Lockdown
             </button>
 
             <button class="btn" 
                 data-date="2008-09-15"
-                data-desc="Since the collapse of Lehman Brothers."> The 2008 <br> Financial Crisis
+                data-desc="
+                The bankrupcy of the Wall Street firm known as Lehman Brothers is considered by many to be the defining 
+                moment of the Great Recession. It caused a one-day drop of 4.5% in the Dow Jones index, the largest since
+                the September 11 Terror Attacks in 2001. This economic crisis would directly inspire the protest movment Occupy Wallstreet, and 
+                usher in the era of the Zero Interest Rate Policy (ZIRP) in the US and other major economies.  
+                "> 
+                Great <br> Recession
             </button>
 
             <button class="btn" 
                 data-date="2001-09-11"
-                data-desc="Since the largest terror attack in United States history."> 9/11 <br> Attack 
+                data-desc="
+                The largest terrorist attack ever perpetrated against the United States. Agents of the militant
+                islamic group called al-Qaeda hijacked serveral commercial airliners and proceeded to crash them into the
+                Twin Towers of the World Trade Center, and the Pentagon. Nearly 3000 people were killed in the attack itself,
+                and over 8000 people have died as a direct consequence of the event.
+                This attack was the impetus for the Global War on Terror, a military campaign by the United States which spanned multiple wars in
+                middle east as well as many smaller operations against militant islamist organizations. Osama Bin Laden, the orchestrator of the 9/11
+                attacks was located 2011 during Barack Obama's first presidential term. 
+                "> 
+                9/11 <br> Terror Attack 
             </button>
 
             <button class="btn" 
                 data-date="1991-12-26"
-                data-desc="Since the fall of the Soviet Union."> Soviet <br> Collapse 
+                data-desc="
+                Since the fall of the Soviet Union.
+                "> 
+                Collapse of <br> Soviet Union 
             </button>
 
             <button class="btn" 
@@ -305,9 +409,34 @@
         </x-col>
     </x-row>
 
-    <x-row class="meta text-sans-serif">
-        <p class="text-base" id="p-y100-desc"></p>
-    </x-row>
+    <!-- Same shape as the collapsible entries on /uses: a clickable head
+         carrying the title and date, over a body holding the prose. -->
+    <div class="top-section top-section-closed">
+        <div class="flex-row">
+            <h6 class="flex-row flex-wrap gap-sm top-section-head collapsed text-sans-serif">
+                <span class="text-nowrap mr-auto">
+                    <span id="s-y100-date"></span>
+                </span>
+
+                <span class="text-sm text-secondary flex-row gap-xs align-items-center" >
+                    Click to Expand
+                    <span class="icon" data-glyph="cursor-click"></span>
+                    
+                </span>
+            </h6>
+        </div>
+
+        <div class="top-section-body">
+            <div class="flex-col gap-md py-md px-sm">
+                <x-row>
+                    <x-col class="text-serif">
+                        <div class="text-base border border-dashed rounded p-md" id="p-y100-desc"></div>
+                    </x-col>
+                </x-row>
+            </div>
+        </div>
+    </div>
+
 
     
 
@@ -319,7 +448,6 @@
         <span class="readout-tail">have passed.</span>
     </div>
     
-    <hr class="mb-0">
     <span class="text-xl">And as many decades...</span>
 
     <x-row class="overflow-x">
@@ -335,39 +463,62 @@
 
     const gvY100 = {
         width: 10, 
-        height: 10, 
+
+        /**
+         * Most decades the grid will ever draw -- the hundred years the page is
+         * named for, and the length of the ordinal list getRowText indexes.
+         */
+        maxRows: 10, 
+
         years: 32,
         startYear: 0,
         desc: "", 
+
         /**
-         * Heading shown above a decade column.
-         * @param {number} i - Column index (0-based).
+         * Rows the grid needs: enough decades to hold the elapsed span, with
+         * the last one filled out to ten so it still reads as a whole decade.
+         * A getter, so VisGrid picks up the new size on its next read without
+         * anything having to remember to recalculate it.
+         * @returns {number} Row count, at least one and never past maxRows.
+         */
+        get height() { 
+            const rows = Math.ceil(( gvY100.years + 1 ) / gvY100.width); 
+            return Math.min(gvY100.maxRows, Math.max(1, rows)); 
+        },
+
+        /**
+         * Heading shown beside a decade row.
+         * @param {number} i - Row index (0-based).
          * @returns {string} Ordinal naming the decade, e.g. "1st".
          */
-        getColText: (i) => { 
+        getRowText: (i) => { 
             return [
                 "1st", "2nd", "3rd", "4th", "5th", "6th", "7th", "8th", "9th", "10th"
             ][i]; 
         },
 
         /**
-         * Position of a cell in the 100-year sequence. Time runs down each
-         * decade column before moving to the next, so the index is
-         * column-major: column * height + row.
+         * Position of a cell in the 100-year sequence. Time runs across each
+         * decade row before dropping to the next, so the index is row-major:
+         * row * width + column.
          * @param {number} i - Column index (0-based).
          * @param {number} j - Row index (0-based).
          * @returns {number} Offset from the start of the span, in years.
          */
-        getCellOffset: (i, j) => i*gvY100.height + j,
+        getCellOffset: (i, j) => j*gvY100.width + i,
 
         /**
-         * Picks the lit/unlit class for a cell.
+         * Picks the class for a cell: elapsed, still to come, or the current
+         * year -- which is the last elapsed cell, at offset `years`.
          * @param {number} i - Column index (0-based).
          * @param {number} j - Row index (0-based).
-         * @returns {string} CSS class marking the cell as elapsed or not.
+         * @returns {string} CSS class describing the cell's state.
          */
         getCellClass: (i, j) => { 
-            return gvY100.getCellOffset(i, j) < gvY100.years+1 ? "grid-item-on" : "grid-item-off"; 
+            const offset = gvY100.getCellOffset(i, j); 
+
+            if (offset === gvY100.years) return "grid-item-now"; 
+            return offset < gvY100.years+1 ? "grid-item-on" : "grid-item-off"; 
         },
 
         /**
@@ -431,28 +582,25 @@
         grid-template-rows: repeat(var(--grid-height), auto);
     }
 
-    /* Adds the leading row the column headers sit in. */
+    /* Adds the leading column the row headers sit in. */
     .grid-container.has-headers {
-        grid-template-rows: auto repeat(var(--grid-height), auto);
+        grid-template-columns: auto repeat(var(--grid-width), minmax(0, 1fr));
     }
 
     /*
-     * Three lines of room, so switching between one- and two-line descriptions
-     * does not shift everything below it, and the date stays on the bottom line
-     * however long the description runs.
+     * Two lines of room. The date has its own row now, so only the description
+     * varies, and reserving its longest case stops the grid below from shifting
+     * as the selection changes.
      */
     #p-y100-desc {
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
-
-        min-height: 4.5em;  /* fallback for browsers without the lh unit */
-        min-height: 3lh;
+        min-height: 3em;  /* fallback for browsers without the lh unit */
+        min-height: 2lh;
     }
 
-    /* Keeps the date's hover highlight tight to the text, not the full row. */
-    #p-y100-desc mark {
-        align-self: flex-start;
+    /* The cross-fade TextFader drives. Keep in step with TextFader.FADE_MS. */
+    #p-y100-desc,
+    #s-y100-date {
+        transition: opacity 200ms ease;
     }
 
     /* Equal-width digits, so the headline does not reflow as it counts. */
@@ -467,10 +615,15 @@
         white-space: nowrap;
     }
 
-    .column-header {
+    .row-header {
         display: flex;
-        justify-content: center;
+        justify-content: flex-end;  /* labels hug the grid they annotate */
         align-items: center;
+
+        /* Rides in with the first cell of its row. */
+        animation: scaleIn .25s ease-out forwards;
+        transform: scale(0);
+        opacity: 0;
 
         white-space: nowrap;
         color: var(--color-gray);
@@ -491,6 +644,7 @@
         }
 
         .grid-item-on,
+        .grid-item-now,
         .grid-item-off {
             border-width: 1px !important;
 
@@ -512,7 +666,8 @@
         }
     }
 
-    .grid-item-on {
+    .grid-item-on,
+    .grid-item-now {
         /* width:100% makes the inline size definite, so aspect-ratio has
            something to derive the square's height FROM. Left as auto the box
            has no intrinsic size to stretch from and collapses. */
@@ -523,7 +678,7 @@
         border-color: var(--color-primary);
         
         /* Animation properties */
-        animation: scaleIn .15s ease-out forwards;
+        animation: scaleIn .25s ease-out forwards;
         transform: scale(0);
         opacity: 0;
 
@@ -535,12 +690,20 @@
         align-items: center;      /* vertical center */
     }
 
+    /* The year we are standing in, picked out from the rest of the elapsed
+       span. Follows .grid-item-on above, so it inherits every lit style and
+       only restates the two colours. */
+    .grid-item-now {
+        background: var(--color-tertiary-dark);
+        border-color: var(--color-tertiary);
+    }
+
     .grid-item-off {
         width: 100%;
         aspect-ratio: 1 / 1;
 
         /* Animation properties */
-        animation: scaleIn .15s ease-out forwards;
+        animation: scaleIn .25s ease-out forwards;
         transform: scale(0);
         opacity: 0;
 
