@@ -98,8 +98,11 @@
          * back in. A swap already in flight is cancelled first, so clicking
          * quickly between buttons cannot leave a stale timer writing old text.
          * @param {Array<[HTMLElement, string]>} parts - Element/text pairs.
+         * @param {Function} [onSwap] - Run at the swap, for anything that has
+         *   to change with the text rather than in view: an href, a row being
+         *   shown or hidden.
          */
-        swap(parts) { 
+        swap(parts, onSwap) { 
             if (this.timer !== null) clearTimeout(this.timer); 
 
             parts.forEach(([el]) => { el.style.opacity = "0"; }); 
@@ -109,6 +112,8 @@
                     el.innerText = text; 
                     el.style.opacity = "1"; 
                 }); 
+
+                if (onSwap) onSwap(); 
 
                 this.timer = null; 
             }, TextFader.FADE_MS); 
@@ -338,10 +343,19 @@
 
                 // Both halves of the card fade as one group: a hard cut on the
                 // date while the description faded would read as a glitch.
+                // Only some moments have somewhere to read more; the row is
+                // hidden outright rather than left as an empty line.
+                const url = btn.dataset.url ? btn.dataset.url.trim() : ""; 
+                const elUrlRow = document.getElementById("s-y100-url-row"); 
+                const elUrl = document.getElementById("s-y100-url"); 
+
                 this.fader.swap([
                     [pDesc, gv.desc], 
                     [elDate, startDate ? formatLongDate(startDate) : ""], 
-                ]); 
+                ], () => { 
+                    elUrlRow.hidden = !url; 
+                    if (url) elUrl.href = url; 
+                }); 
 
                 if (gv.onSelect) gv.onSelect(gv); 
             };
@@ -364,6 +378,7 @@
         <x-col id="y100-buttons" class="flex-row flex-wrap gap-sm ">
             <button class="btn" 
                 data-date="2020-03-09"
+                data-url="https://en.wikipedia.org/wiki/COVID-19_lockdowns"
                 data-desc="
                 The first government mandated lockdown following the outbreak of COVID-19 occured in Italy 
                 in early March 2020. This and the subsequent lockdowns are considered to be the largest 
@@ -432,8 +447,12 @@
         <div class="top-section-body">
             <div class="flex-col gap-md pt-md px-sm">
                 <x-row>
-                    <x-col class="text-serif">
-                        <div class="text-base border border-dashed rounded p-md" id="p-y100-desc"></div>
+                    <x-col class="text-serif border border-dashed rounded p-md">
+                        <div class="text-base " id="p-y100-desc"></div>
+
+                        <div class="mt-sm" id="s-y100-url-row" hidden>
+                            <a id="s-y100-url" rel="noopener external" target="_blank" href="">Click here more details.</a>
+                        </div>
                     </x-col>
                 </x-row>
             </div>

@@ -97,8 +97,11 @@
          * back in. A swap already in flight is cancelled first, so clicking
          * quickly between buttons cannot leave a stale timer writing old text.
          * @param {Array<[HTMLElement, string]>} parts - Element/text pairs.
+         * @param {Function} [onSwap] - Run at the swap, for anything that has
+         *   to change with the text rather than in view: an href, a row being
+         *   shown or hidden.
          */
-        swap(parts) { 
+        swap(parts, onSwap) { 
             if (this.timer !== null) clearTimeout(this.timer); 
 
             parts.forEach(([el]) => { el.style.opacity = "0"; }); 
@@ -108,6 +111,8 @@
                     el.innerText = text; 
                     el.style.opacity = "1"; 
                 }); 
+
+                if (onSwap) onSwap(); 
 
                 this.timer = null; 
             }, TextFader.FADE_MS); 
@@ -337,10 +342,19 @@
 
                 // Both halves of the card fade as one group: a hard cut on the
                 // date while the description faded would read as a glitch.
+                // Only some moments have somewhere to read more; the row is
+                // hidden outright rather than left as an empty line.
+                const url = btn.dataset.url ? btn.dataset.url.trim() : ""; 
+                const elUrlRow = document.getElementById("s-y100-url-row"); 
+                const elUrl = document.getElementById("s-y100-url"); 
+
                 this.fader.swap([
                     [pDesc, gv.desc], 
                     [elDate, startDate ? formatLongDate(startDate) : ""], 
-                ]); 
+                ], () => { 
+                    elUrlRow.hidden = !url; 
+                    if (url) elUrl.href = url; 
+                }); 
 
                 if (gv.onSelect) gv.onSelect(gv); 
             };
@@ -352,7 +366,7 @@
                 The first government mandated lockdown following the outbreak of COVID-19 occured in Italy 
                 in early March 2020. This and the subsequent lockdowns are considered to be the largest 
                 suppression of constitutional rights in the history of the republic. 
-                " class=btn data-date=2020-03-09>First COVID-19 <br> Lockdown</button> <button data-desc="
+                " class=btn data-date=2020-03-09 data-url=https://en.wikipedia.org/wiki/COVID-19_lockdowns>First COVID-19 <br> Lockdown</button> <button data-desc="
                 The bankrupcy of the Wall Street firm known as Lehman Brothers is considered by many to be the defining 
                 moment of the Great Recession. It caused a one-day drop of 4.5% in the Dow Jones index, the largest since
                 the September 11 Terror Attacks in 2001. This economic crisis would directly inspire the protest movment Occupy Wallstreet, and 
@@ -367,7 +381,7 @@
                 attacks was located 2011 during Barack Obama's first presidential term. 
                 " class=btn data-date=2001-09-11>9/11 <br> Terror Attack</button> <button data-desc="
                 Since the fall of the Soviet Union.
-                " class=btn data-date=1991-12-26>Collapse of <br> Soviet Union</button> <button data-desc="Since the final moon walk, from the Apollo 17 mission." class=btn data-date=1972-12-14>Last <br> Moonwalk</button> </x-col> </x-row>  <div class="top-section top-section-closed"><div class=flex-row><h6 class="flex-row flex-wrap gap-sm top-section-head collapsed text-sans-serif"><span class="text-nowrap mr-auto"> <span id=s-y100-date></span> </span> <span class="text-sm text-secondary flex-row gap-xs align-items-center"> Click for Overview <span class=icon data-glyph=cursor-click></span> </span></h6></div><div class=top-section-body><div class="flex-col gap-md pt-md px-sm"><x-row> <x-col class=text-serif> <div class="text-base border border-dashed rounded p-md" id=p-y100-desc></div> </x-col> </x-row></div></div><div class=top-section-body-hidden><div class="text-xl elapsed-readout"><span class=mr-sm><strong id=s-y100-years>0 years</strong></span><span class=mr-sm><strong id=s-y100-days>0 days</strong></span><br class=readout-break> have passed. And as many decades...</div><div class="mt-md overflow-x"><div class=gcontainer id=grid-y100></div></div></div></div> </x-container><script>const vgY100 = new VisGrid(
+                " class=btn data-date=1991-12-26>Collapse of <br> Soviet Union</button> <button data-desc="Since the final moon walk, from the Apollo 17 mission." class=btn data-date=1972-12-14>Last <br> Moonwalk</button> </x-col> </x-row>  <div class="top-section top-section-closed"><div class=flex-row><h6 class="flex-row flex-wrap gap-sm top-section-head collapsed text-sans-serif"><span class="text-nowrap mr-auto"> <span id=s-y100-date></span> </span> <span class="text-sm text-secondary flex-row gap-xs align-items-center"> Click for Overview <span class=icon data-glyph=cursor-click></span> </span></h6></div><div class=top-section-body><div class="flex-col gap-md pt-md px-sm"><x-row> <x-col class="text-serif border border-dashed rounded p-md"> <div class=text-base id=p-y100-desc></div> <div class=mt-sm hidden id=s-y100-url-row><a rel="noopener external" href id=s-y100-url target=_blank>Click here more details.</a></div> </x-col> </x-row></div></div><div class=top-section-body-hidden><div class="text-xl elapsed-readout"><span class=mr-sm><strong id=s-y100-years>0 years</strong></span><span class=mr-sm><strong id=s-y100-days>0 days</strong></span><br class=readout-break> have passed. And as many decades...</div><div class="mt-md overflow-x"><div class=gcontainer id=grid-y100></div></div></div></div> </x-container><script>const vgY100 = new VisGrid(
         document.querySelector("#grid-y100")
     );
 
