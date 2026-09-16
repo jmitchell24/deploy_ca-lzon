@@ -1,4 +1,202 @@
+<style>
+    /*
+     * Single source of truth for this page's animation timings. The scripts
+     * read these back with getComputedStyle, which is why this block sits
+     * above them: they run at parse time and would otherwise see nothing.
+     */
+    :root {
+        /* First tile starting to last tile finishing. */
+        --grid-reveal-duration: 1.5s;
+
+        /* One tile's own scale-in, subtracted from the sweep so the last tile
+           finishes on --grid-reveal-duration rather than starting there. */
+        --grid-reveal-tile-duration: .25s;
+
+        /* Each half of the description/date cross-fade. */
+        --text-fade-duration: .2s;
+    }
+
+    #year-grid-scroll {
+        --grid-width: 10; 
+        --grid-height: 10; 
+
+        width: 100%;
+        overflow-x: auto;
+    }
+    
+    .year-grid {
+        display: grid;
+        /* minmax(0, ...) rather than a bare 1fr: a plain 1fr track floors at
+           min-content, so ten "2020" labels would force the grid wider than a
+           phone screen and hand the container a scrollbar. */
+        grid-template-columns: repeat(var(--grid-width), minmax(0, 1fr));
+        /* auto rows, not 1fr: an fr row hands each cell a definite height, and
+           aspect-ratio would then derive the cell's WIDTH from that, shrinking
+           the tiles away from their tracks. With auto rows the width comes from
+           the track and the square height follows from the width. */
+        grid-template-rows: repeat(var(--grid-height), auto);
+    }
+
+    /* Adds the leading column the row headers sit in. */
+    .year-grid.has-decade-labels {
+        grid-template-columns: auto repeat(var(--grid-width), minmax(0, 1fr));
+    }
+
+    /*
+     * Two lines of room. The date has its own row now, so only the description
+     * varies, and reserving its longest case stops the grid below from shifting
+     * as the selection changes.
+     */
+    #moment-description {
+        min-height: 3em;  /* fallback for browsers without the lh unit */
+        min-height: 2lh;
+    }
+
+    /* The cross-fade TextFader drives. Keep in step with DURATIONS.textFade. */
+    #moment-description,
+    #moment-date {
+        transition: opacity var(--text-fade-duration) ease;
+    }
+
+    /* Equal-width digits, so the headline does not reflow as it counts. */
+    .elapsed-readout {
+        font-variant-numeric: tabular-nums;
+    }
+
+    /* The counts wrap as whole units; the prose around them flows normally. */
+    .elapsed-readout span {
+        white-space: nowrap;
+    }
+
+    /* Only narrow screens need the forced break -- wider ones let it flow. */
+    .elapsed-readout-break {
+        display: none;
+    }
+
+    .decade-label {
+        display: flex;
+        justify-content: flex-end;  /* labels hug the grid they annotate */
+        align-items: center;
+
+        /* Rides in with the first cell of its row. */
+        animation: scaleIn var(--grid-reveal-tile-duration) ease-out forwards;
+        transform: scale(0);
+        opacity: 0;
+
+        white-space: nowrap;
+        color: var(--color-gray);
+    }
+
+    /*
+     * Ten columns of 2px dashed border eats a real share of a phone screen, so
+     * the tiles drop to a hairline below the md breakpoint (768px). The
+     * !important is not optional here: the .border helper the cells are given
+     * declares its own width as !important, and would otherwise win.
+     */
+    @media (max-width: 768px) {
+        .elapsed-readout-break {
+            display: inline;
+        }
+
+        .year-tile-elapsed,
+        .year-tile-current,
+        .year-tile-future {
+            border-width: 1px !important;
+
+            /* Ten four-digit years will not fit legibly across a phone, so the
+               grid reads as a density plot instead. !important is needed to
+               beat the .text-sm helper's own !important font-size. */
+            font-size: 0 !important;
+        }
+    }
+
+    @keyframes scaleIn {
+        from {
+            transform: scale(0);
+            opacity: 0;
+        }
+        to {
+            transform: scale(1);
+            opacity: 1;
+        }
+    }
+
+    .year-tile-elapsed,
+    .year-tile-current {
+        /* width:100% makes the inline size definite, so aspect-ratio has
+           something to derive the square's height FROM. Left as auto the box
+           has no intrinsic size to stretch from and collapses. */
+        width: 100%;
+        aspect-ratio: 1 / 1;
+
+        background: var(--color-primary-dark);
+        border-color: var(--color-primary);
+        
+        /* Animation properties */
+        animation: scaleIn var(--grid-reveal-tile-duration) ease-out forwards;
+        transform: scale(0);
+        opacity: 0;
+
+        overflow: hidden;
+
+        /* Flexbox centering */
+        display: flex;
+        justify-content: center;  /* horizontal center */
+        align-items: center;      /* vertical center */
+    }
+
+    /* The year we are standing in, picked out from the rest of the elapsed
+       span. Follows .year-tile-elapsed above, so it inherits every lit style and
+       only restates the two colours. */
+    .year-tile-current {
+        background: var(--color-tertiary-dark);
+        border-color: var(--color-tertiary);
+    }
+
+    .year-tile-future {
+        width: 100%;
+        aspect-ratio: 1 / 1;
+
+        /* Animation properties */
+        animation: scaleIn var(--grid-reveal-tile-duration) ease-out forwards;
+        transform: scale(0);
+        opacity: 0;
+
+        overflow: hidden;
+
+        color: var(--color-gray); 
+
+        /* Flexbox centering */
+        display: flex;
+        justify-content: center;  /* horizontal center */
+        align-items: center;      /* vertical center */
+    }
+</style>
+
 <script>
+    /**
+     * Reads a CSS time custom property as milliseconds, so the stylesheet can
+     * stay the one place these timings are written down.
+     * @param {string} name - Custom property name, e.g. "--text-fade-duration".
+     * @returns {number} Duration in milliseconds; 0 if unset or unparseable.
+     */
+    function cssDurationMs(name) { 
+        const raw = getComputedStyle(document.documentElement)
+            .getPropertyValue(name).trim(); 
+
+        if (raw.endsWith("ms")) return parseFloat(raw) || 0; 
+        if (raw.endsWith("s"))  return (parseFloat(raw) || 0) * 1000; 
+
+        return 0; 
+    }
+
+    /** Animation timings, read from the stylesheet above. */
+    const DURATIONS = { 
+        gridReveal:     cssDurationMs("--grid-reveal-duration"), 
+        gridRevealTile: cssDurationMs("--grid-reveal-tile-duration"), 
+        textFade:       cssDurationMs("--text-fade-duration"), 
+    }; 
+
     /**
      * Parses a YYYY-MM-DD string as a date in the viewer's local timezone.
      * `new Date(str)` reads that format as UTC midnight, which renders as the
@@ -32,6 +230,22 @@
      */
     function collapseWhitespace(str) { 
         return str.replace(/\s+/g, " ").trim(); 
+    }
+
+    /**
+     * English ordinal for a positive integer: 1st, 2nd, 3rd, 4th, 11th, 21st.
+     * @param {number} n - The number to name.
+     * @returns {string} The number with its ordinal suffix.
+     */
+    function ordinal(n) { 
+        // 11, 12 and 13 take "th" despite their last digit saying otherwise,
+        // and so do 111, 112, 113 and so on -- hence testing the last two.
+        const lastTwo = n % 100; 
+        const suffix = lastTwo >= 11 && lastTwo <= 13 
+            ? "th" 
+            : ["th", "st", "nd", "rd"][n % 10] ?? "th"; 
+
+        return `${n}${suffix}`; 
     }
 
     /**
@@ -82,13 +296,6 @@
      * of step with each other.
      */
     class TextFader { 
-        /**
-         * Length of each half of the fade, in milliseconds. Must match the
-         * opacity transition on #p-y100-desc / #s-y100-date in the stylesheet
-         * below -- the swap happens when the fade-out is done.
-         */
-        static FADE_MS = 200; 
-
         constructor() { 
             this.timer = null; 
         }
@@ -116,7 +323,7 @@
                 if (onSwap) onSwap(); 
 
                 this.timer = null; 
-            }, TextFader.FADE_MS); 
+            }, DURATIONS.textFade); 
         }
     }
 
@@ -140,9 +347,10 @@
          * cancelled first, so clicking through buttons quickly cannot leave two
          * tweens writing to the same element.
          * @param {number} target - Value to land on.
-         * @param {number} [duration=1500] - Tween length in milliseconds.
+         * @param {number} [duration] - Tween length in ms; defaults to the
+         *   grid reveal, so the counts and the grid settle together.
          */
-        animateTo(target, duration = 1500) { 
+        animateTo(target, duration = DURATIONS.gridReveal) { 
             if (!this.el) return; 
             if (this.frame !== null) cancelAnimationFrame(this.frame); 
 
@@ -183,23 +391,7 @@
         }
     }
 
-    class VisGrid { 
-        /**
-         * Seconds from the first tile starting to the last tile finishing.
-         * Divided by the cell count below, so the reveal takes the same time
-         * whatever the grid's dimensions. Raise it to make the year order more
-         * legible, lower it to make the reveal snappier.
-         */
-        static STAGGER_SWEEP_S = 1.5; 
-
-        /**
-         * How long one tile's own scaleIn runs. Must match the animation on
-         * .grid-item-* / .row-header in the stylesheet below: it is subtracted
-         * from the sweep so the last tile *finishes* on STAGGER_SWEEP_S rather
-         * than starting there.
-         */
-        static TILE_ANIM_S = 0.25; 
-
+    class GridRenderer { 
         constructor(el) { 
             this.el = el; 
             this.elGridButtons = [] 
@@ -209,7 +401,7 @@
         replaceGrid(gv) { 
             const grid = document.createElement("div"); 
             grid.classList.add(
-                "grid-container",
+                "year-grid",
                 "gap-sm"
             ); 
 
@@ -217,7 +409,7 @@
             // row, so they share the cells' row tracks and stay aligned with
             // them however the rows are sized.
             const hasHeaders = Boolean(gv.getRowText); 
-            if (hasHeaders) grid.classList.add("has-headers"); 
+            if (hasHeaders) grid.classList.add("has-decade-labels"); 
 
             /**
              * When a cell appears in the reveal, as a CSS delay. Where a cell
@@ -228,13 +420,13 @@
              * @param {number} row - Row index (0-based).
              * @returns {string} The animation-delay value.
              */
-            const delayFor = (col, row) => { 
-                const fraction = gv.getCellDelayFraction 
-                    ? gv.getCellDelayFraction(col, row) 
-                    : ( row * gv.width + col ) / ( gv.width * gv.height - 1 ); 
+            const revealDelayFor = (col, row) => { 
+                const fraction = ( row * gv.width + col ) / ( gv.width * gv.height - 1 ); 
 
-                const span = VisGrid.STAGGER_SWEEP_S - VisGrid.TILE_ANIM_S; 
-                return `${fraction * span}s`; 
+                // A tile's own scale-in is subtracted so the last one finishes
+                // on the reveal duration rather than starting there.
+                const spanMs = DURATIONS.gridReveal - DURATIONS.gridRevealTile; 
+                return `${fraction * spanMs}ms`; 
             };
 
             for (let i = 0; i < gv.height; ++i) { 
@@ -242,12 +434,12 @@
                     const hdr = document.createElement("div"); 
                     hdr.innerText = gv.getRowText(i); 
                     hdr.classList.add(
-                        "row-header", 
+                        "decade-label", 
                         "text-sans-serif", 
                         "text-sm"
                     ); 
 
-                    hdr.style.animationDelay = delayFor(0, i); 
+                    hdr.style.animationDelay = revealDelayFor(0, i); 
 
                     grid.appendChild(hdr); 
                 }
@@ -263,7 +455,7 @@
                         "rounded", 
                     ); 
                     
-                    cell.style.animationDelay = delayFor(j, i); 
+                    cell.style.animationDelay = revealDelayFor(j, i); 
                     cell.innerText = gv.getCellText ? gv.getCellText(j, i) : ""; 
                     
                     grid.appendChild(cell); 
@@ -337,17 +529,17 @@
                 // The date stays derived from data-date rather than being
                 // written into data-desc, and now lands in the card's metadata
                 // row beside the calendar icon.
-                const pDesc = document.getElementById("p-y100-desc"); 
+                const pDesc = document.getElementById("moment-description"); 
 
-                const elDate = document.getElementById("s-y100-date"); 
+                const elDate = document.getElementById("moment-date"); 
 
                 // Both halves of the card fade as one group: a hard cut on the
                 // date while the description faded would read as a glitch.
                 // Only some moments have somewhere to read more; the row is
                 // hidden outright rather than left as an empty line.
                 const url = btn.dataset.url ? btn.dataset.url.trim() : ""; 
-                const elUrlRow = document.getElementById("s-y100-url-row"); 
-                const elUrl = document.getElementById("s-y100-url"); 
+                const elUrlRow = document.getElementById("moment-link-row"); 
+                const elUrl = document.getElementById("moment-link"); 
 
                 this.fader.swap([
                     [pDesc, gv.desc], 
@@ -368,14 +560,25 @@
 
 
 
-<x-container class="gap-md">
+<div class="container gap-md">
 
     <span class="text-xl">Since the...</span>
 
 
 
-    <x-row class="gap-md align-items-center">
-        <x-col id="y100-buttons" class="flex-row flex-wrap gap-sm ">
+    <div class="row gap-md align-items-center">
+        <div id="moment-buttons" class="col flex-row flex-wrap gap-sm ">
+            <button class="btn" 
+                data-date="2022-02-24"
+                data-url="https://en.wikipedia.org/wiki/2022_Russian_invasion_of_Ukraine"
+                data-desc="
+                The Russo-Ukrainian War began in 2014 with Russia's annexation of Crimea, which eventually
+                led to the full scale invasion of Ukraine proper in February 2022. It is the largest military
+                conflict within Europe since the end of the second World War. 
+                "> 
+                Invasion <br> of Ukraine
+            </button>
+
             <button class="btn" 
                 data-date="2020-03-09"
                 data-url="https://en.wikipedia.org/wiki/COVID-19_lockdowns"
@@ -424,8 +627,8 @@
                 data-date="1972-12-14"
                 data-desc="Since the final moon walk, from the Apollo 17 mission."> Last <br> Moonwalk 
             </button>
-        </x-col>
-    </x-row>
+        </div>
+    </div>
 
     <!-- Same shape as the collapsible entries on /uses: a clickable head
          carrying the title and date, over a body holding the prose. -->
@@ -433,7 +636,7 @@
         <div class="flex-row">
             <h6 class="flex-row flex-wrap gap-sm top-section-head collapsed text-sans-serif">
                 <span class="text-nowrap mr-auto">
-                    <span id="s-y100-date"></span>
+                    <span id="moment-date"></span>
                 </span>
 
                 <span class="text-sm text-secondary flex-row gap-xs align-items-center" >
@@ -446,32 +649,32 @@
 
         <div class="top-section-body">
             <div class="flex-col gap-md pt-md px-sm">
-                <x-row>
-                    <x-col class="text-serif border border-dashed rounded p-md">
-                        <div class="text-base " id="p-y100-desc"></div>
+                <div class="row">
+                    <div class="col text-serif border border-dashed rounded p-md">
+                        <div class="text-base " id="moment-description"></div>
 
-                        <div class="mt-sm" id="s-y100-url-row" hidden>
-                            <a id="s-y100-url" rel="noopener external" target="_blank" href="">Click here more details.</a>
+                        <div class="mt-sm" id="moment-link-row" hidden>
+                            <a id="moment-link" rel="noopener external" target="_blank" href="">Click here more details.</a>
                         </div>
-                    </x-col>
-                </x-row>
+                    </div>
+                </div>
             </div>
         </div>
 
         <div class="top-section-body-hidden">
             <div class="text-xl elapsed-readout">
                 
-                <span class="mr-sm"><strong id="s-y100-years">0 years</strong></span>
-                <span class="mr-sm"><strong id="s-y100-days">0 days</strong></span>
+                <span class="mr-sm"><strong id="elapsed-years">0 years</strong></span>
+                <span class="mr-sm"><strong id="elapsed-days">0 days</strong></span>
 
-                <br class="readout-break">
+                <br class="elapsed-readout-break">
 
                 have passed. 
                 And as many decades...
             </div>
             
             <div class="mt-md overflow-x">
-                <div id="grid-y100" class="gcontainer"> </div>
+                <div id="year-grid-scroll"> </div>
             </div>
         </div>
 
@@ -479,37 +682,29 @@
 
 
 
-</x-container>
+</div>
 
 
 <script>
-    const vgY100 = new VisGrid(
-        document.querySelector("#grid-y100")
+    const yearGrid = new GridRenderer(
+        document.querySelector("#year-grid-scroll")
     );
 
-    const gvY100 = {
+    const yearGridView = {
         width: 10, 
 
-        /**
-         * Most decades the grid will ever draw -- the hundred years the page is
-         * named for, and the length of the ordinal list getRowText indexes.
-         */
-        maxRows: 10, 
-
         years: 32,
-        startYear: 0,
         desc: "", 
 
         /**
          * Rows the grid needs: enough decades to hold the elapsed span, with
          * the last one filled out to ten so it still reads as a whole decade.
-         * A getter, so VisGrid picks up the new size on its next read without
+         * A getter, so GridRenderer picks up the new size on its next read without
          * anything having to remember to recalculate it.
-         * @returns {number} Row count, at least one and never past maxRows.
+         * @returns {number} Row count, at least one.
          */
         get height() { 
-            const rows = Math.ceil(( gvY100.years + 1 ) / gvY100.width); 
-            return Math.min(gvY100.maxRows, Math.max(1, rows)); 
+            return Math.max(1, Math.ceil(( yearGridView.years + 1 ) / yearGridView.width)); 
         },
 
         /**
@@ -517,11 +712,7 @@
          * @param {number} i - Row index (0-based).
          * @returns {string} Ordinal naming the decade, e.g. "1st".
          */
-        getRowText: (i) => { 
-            return [
-                "1st", "2nd", "3rd", "4th", "5th", "6th", "7th", "8th", "9th", "10th"
-            ][i]; 
-        },
+        getRowText: (i) => ordinal(i + 1),
 
         /**
          * Position of a cell in the 100-year sequence. Time runs across each
@@ -531,7 +722,7 @@
          * @param {number} j - Row index (0-based).
          * @returns {number} Offset from the start of the span, in years.
          */
-        getCellOffset: (i, j) => j*gvY100.width + i,
+        getCellOffset: (i, j) => j*yearGridView.width + i,
 
         /**
          * Picks the class for a cell: elapsed, still to come, or the current
@@ -541,10 +732,10 @@
          * @returns {string} CSS class describing the cell's state.
          */
         getCellClass: (i, j) => { 
-            const offset = gvY100.getCellOffset(i, j); 
+            const offset = yearGridView.getCellOffset(i, j); 
 
-            if (offset === gvY100.years) return "grid-item-now"; 
-            return offset < gvY100.years+1 ? "grid-item-on" : "grid-item-off"; 
+            if (offset === yearGridView.years) return "year-tile-current"; 
+            return offset < yearGridView.years+1 ? "year-tile-elapsed" : "year-tile-future"; 
         },
 
         /**
@@ -555,8 +746,8 @@
          */
         getCellText: (i, j) => { 
             const nowYear = new Date().getFullYear(); 
-            const yearDist = gvY100.years + 1
-            const yearOffset = gvY100.getCellOffset(i, j); 
+            const yearDist = yearGridView.years + 1
+            const yearOffset = yearGridView.getCellOffset(i, j); 
             const yearString = `${nowYear-yearDist+yearOffset+1}`;
             return yearString;  
         }
@@ -564,184 +755,27 @@
 
 
 
-    const cuYears = new CountUp("s-y100-years", "year"); 
-    const cuDays  = new CountUp("s-y100-days",  "day"); 
+    const elapsedYearsCounter = new CountUp("elapsed-years", "year"); 
+    const elapsedDaysCounter  = new CountUp("elapsed-days",  "day"); 
 
     /**
      * Eases the three readout spans to the time elapsed since the selected
      * moment, using the same date the grid was built from.
      * @param {object} gv - The grid view, carrying the selected startDate.
      */
-    gvY100.onSelect = (gv) => { 
+    yearGridView.onSelect = (gv) => { 
         if (!gv.startDate) return; 
 
         const elapsed = elapsedSince(gv.startDate, new Date()); 
 
-        cuYears.animateTo(elapsed.years); 
-        cuDays.animateTo(elapsed.days); 
+        elapsedYearsCounter.animateTo(elapsed.years); 
+        elapsedDaysCounter.animateTo(elapsed.days); 
     };
 
-    vgY100.bindGridButtons("#y100-buttons .btn", gvY100); 
+    yearGrid.bindGridButtons("#moment-buttons .btn", yearGridView); 
 
 
 
 
 </script>
 
-<style>
-    .gcontainer {
-        --grid-width: 10; 
-        --grid-height: 10; 
-
-        width: 100%;
-        overflow-x: auto;
-    }
-    
-    .grid-container {
-        display: grid;
-        /* minmax(0, ...) rather than a bare 1fr: a plain 1fr track floors at
-           min-content, so ten "2020" labels would force the grid wider than a
-           phone screen and hand the container a scrollbar. */
-        grid-template-columns: repeat(var(--grid-width), minmax(0, 1fr));
-        /* auto rows, not 1fr: an fr row hands each cell a definite height, and
-           aspect-ratio would then derive the cell's WIDTH from that, shrinking
-           the tiles away from their tracks. With auto rows the width comes from
-           the track and the square height follows from the width. */
-        grid-template-rows: repeat(var(--grid-height), auto);
-    }
-
-    /* Adds the leading column the row headers sit in. */
-    .grid-container.has-headers {
-        grid-template-columns: auto repeat(var(--grid-width), minmax(0, 1fr));
-    }
-
-    /*
-     * Two lines of room. The date has its own row now, so only the description
-     * varies, and reserving its longest case stops the grid below from shifting
-     * as the selection changes.
-     */
-    #p-y100-desc {
-        min-height: 3em;  /* fallback for browsers without the lh unit */
-        min-height: 2lh;
-    }
-
-    /* The cross-fade TextFader drives. Keep in step with TextFader.FADE_MS. */
-    #p-y100-desc,
-    #s-y100-date {
-        transition: opacity 200ms ease;
-    }
-
-    /* Equal-width digits, so the headline does not reflow as it counts. */
-    .elapsed-readout {
-        font-variant-numeric: tabular-nums;
-    }
-
-    /* The counts wrap as whole units; the prose around them flows normally. */
-    .elapsed-readout span {
-        white-space: nowrap;
-    }
-
-    /* Only narrow screens need the forced break -- wider ones let it flow. */
-    .readout-break {
-        display: none;
-    }
-
-    .row-header {
-        display: flex;
-        justify-content: flex-end;  /* labels hug the grid they annotate */
-        align-items: center;
-
-        /* Rides in with the first cell of its row. */
-        animation: scaleIn .25s ease-out forwards;
-        transform: scale(0);
-        opacity: 0;
-
-        white-space: nowrap;
-        color: var(--color-gray);
-    }
-
-    /*
-     * Ten columns of 2px dashed border eats a real share of a phone screen, so
-     * the tiles drop to a hairline below the md breakpoint (768px). The
-     * !important is not optional here: the .border helper the cells are given
-     * declares its own width as !important, and would otherwise win.
-     */
-    @media (max-width: 768px) {
-        .readout-break {
-            display: inline;
-        }
-
-        .grid-item-on,
-        .grid-item-now,
-        .grid-item-off {
-            border-width: 1px !important;
-
-            /* Ten four-digit years will not fit legibly across a phone, so the
-               grid reads as a density plot instead. !important is needed to
-               beat the .text-sm helper's own !important font-size. */
-            font-size: 0 !important;
-        }
-    }
-
-    @keyframes scaleIn {
-        from {
-            transform: scale(0);
-            opacity: 0;
-        }
-        to {
-            transform: scale(1);
-            opacity: 1;
-        }
-    }
-
-    .grid-item-on,
-    .grid-item-now {
-        /* width:100% makes the inline size definite, so aspect-ratio has
-           something to derive the square's height FROM. Left as auto the box
-           has no intrinsic size to stretch from and collapses. */
-        width: 100%;
-        aspect-ratio: 1 / 1;
-
-        background: var(--color-primary-dark);
-        border-color: var(--color-primary);
-        
-        /* Animation properties */
-        animation: scaleIn .25s ease-out forwards;
-        transform: scale(0);
-        opacity: 0;
-
-        overflow: hidden;
-
-        /* Flexbox centering */
-        display: flex;
-        justify-content: center;  /* horizontal center */
-        align-items: center;      /* vertical center */
-    }
-
-    /* The year we are standing in, picked out from the rest of the elapsed
-       span. Follows .grid-item-on above, so it inherits every lit style and
-       only restates the two colours. */
-    .grid-item-now {
-        background: var(--color-tertiary-dark);
-        border-color: var(--color-tertiary);
-    }
-
-    .grid-item-off {
-        width: 100%;
-        aspect-ratio: 1 / 1;
-
-        /* Animation properties */
-        animation: scaleIn .25s ease-out forwards;
-        transform: scale(0);
-        opacity: 0;
-
-        overflow: hidden;
-
-        color: var(--color-gray); 
-
-        /* Flexbox centering */
-        display: flex;
-        justify-content: center;  /* horizontal center */
-        align-items: center;      /* vertical center */
-    }
-</style>
