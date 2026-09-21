@@ -13,7 +13,7 @@
   <generator uri="https://www.getzola.org/">Zola</generator>
 
   
-  <updated>2026-09-20T12:00:00Z</updated>
+  <updated>2026-09-21T12:00:00Z</updated>
 
   
   
@@ -34,11 +34,57 @@
 
   
   <entry>
-    <title>169. lzon.ca&#x2F;quotes</title>
-    <id>https://lzon.ca/quotes/#169</id>
+    <title>172. lzon.ca&#x2F;quotes</title>
+    <id>https://lzon.ca/quotes/#172</id>
+    <link href="https://lzon.ca/quotes/"/>
+    <published>2026-09-21T12:00:00Z</published>
+    <updated>2026-09-21T12:00:00Z</updated>
+    <author><name>Lzon</name></author>
+    <category term="quote"/>
+    <summary type="html">The day is cold, and dark, and dreary.
+It rains, and the wind is never weary.
+The vine still clings to the mouldering wall.
+But at every gust the dead leaves fall.
+And the day is dark and dreary.&lt;br/&gt;- Henry Longfellow (The Rainy Day)</summary>
+  </entry>
+
+  
+
+  
+  <entry>
+    <title>171. lzon.ca&#x2F;quotes</title>
+    <id>https://lzon.ca/quotes/#171</id>
     <link href="https://lzon.ca/quotes/"/>
     <published>2026-09-20T12:00:00Z</published>
     <updated>2026-09-20T12:00:00Z</updated>
+    <author><name>Lzon</name></author>
+    <category term="quote"/>
+    <summary type="html">Be strict with yourself and tolerant of others.&lt;br/&gt;- Marcus Aurelius</summary>
+  </entry>
+
+  
+
+  
+  <entry>
+    <title>170. lzon.ca&#x2F;quotes</title>
+    <id>https://lzon.ca/quotes/#170</id>
+    <link href="https://lzon.ca/quotes/"/>
+    <published>2026-09-19T12:00:00Z</published>
+    <updated>2026-09-19T12:00:00Z</updated>
+    <author><name>Lzon</name></author>
+    <category term="quote"/>
+    <summary type="html">Isn’t it nice to think that tomorrow is a new day with no mistakes in it yet?&lt;br/&gt;- L.M. Montgomery (Anne of Green Gables)</summary>
+  </entry>
+
+  
+
+  
+  <entry>
+    <title>169. lzon.ca&#x2F;quotes</title>
+    <id>https://lzon.ca/quotes/#169</id>
+    <link href="https://lzon.ca/quotes/"/>
+    <published>2026-09-18T12:00:00Z</published>
+    <updated>2026-09-18T12:00:00Z</updated>
     <author><name>Lzon</name></author>
     <category term="quote"/>
     <summary type="html">And all my days are trances,
