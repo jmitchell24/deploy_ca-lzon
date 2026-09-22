@@ -1,0 +1,427 @@
+<style>
+    /*
+     * Single source of truth for the sword's look and motion. The sketch reads
+     * these back with getComputedStyle at start-up, so the numbers live here
+     * rather than being duplicated in the script below.
+     */
+    #sword-stage {
+        --sword-height: 520px;
+
+        /*
+         * Seconds per full turn about the vertical, per full end-over-end
+         * tumble about the horizontal, and per lean cycle. Periods that don't
+         * divide evenly into one another keep the pose off a short repeat.
+         */
+        --sword-turn-period: 16;
+        --sword-tumble-period: 23;
+        --sword-lean-period: 11;
+
+        /* Degrees the blade leans off vertical at the ends of its cycle. */
+        --sword-lean: 7;
+
+        /* Share of the canvas the sword spans, tip to pommel. Measured against
+           the SHORTER side: the tumble carries the sword through horizontal,
+           where a narrow phone screen is what has to hold it. */
+        --sword-fill: 0.57;
+
+        /* Steel, gold for the hilt, and the elvish blue that washes over the
+           blade. Space-separated sRGB triples, fed to p5 directly. */
+        --sword-steel: 196 204 214;
+        --sword-gold: 186 146 64;
+        --sword-glow: 96 168 255;
+
+        /* Seconds per breath of the blue glow, and how far it swings. 0 turns
+           the glow off and leaves the blade plain steel. */
+        --sword-glow-period: 5;
+        --sword-glow-depth: 0.45;
+
+        position: relative;
+        width: 100%;
+        height: var(--sword-height);
+
+        /* The canvas is sized from this box, so it must not be able to grow
+           the box back: an inline canvas would add a descender gap and start
+           a resize feedback loop on narrow screens. */
+        overflow: hidden;
+
+        /* Deliberately no background: the canvas is drawn with clear(), so the
+           post's own background shows through in either theme. */
+    }
+
+    #sword-stage canvas {
+        display: block;
+        width: 100%;
+        height: 100%;
+        background: transparent;
+    }
+
+    /* Shown until the models arrive, and left in place if they never do. */
+    #sword-fallback {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 100%;
+        opacity: .6;
+        font-style: italic;
+    }
+
+    @media (max-width: 640px) {
+        #sword-stage {
+            --sword-height: 360px;
+        }
+    }
+</style>
+
+<div id="sword-stage" role="img" aria-label="Sting, the sword from The Hobbit, turning slowly point upwards.">
+    <div id="sword-fallback">Sting, not rendered.</div>
+</div>
+
+<script>
+    (() => {
+        "use strict";
+
+        const STAGE_ID = "sword-stage";
+        const P5_SRC = "/js/p5.js";
+
+        // Two files rather than one: p5's loadModel() returns a single
+        // geometry with no per-object grouping, so the blade and the hilt
+        // have to arrive separately to be shaded differently. Both are cut
+        // from one OBJ and keep its coordinates, which is why they line up
+        // without any per-model transform — and why neither may be loaded
+        // with normalize, since that would rescale each one on its own.
+        const BLADE_SRC = "/models/sting-blade.obj";
+        const HILT_SRC = "/models/sting-hilt.obj";
+
+        // Length of the source model tip to pommel, in its own units. Used to
+        // turn --sword-fill into a scale factor.
+        const MODEL_LENGTH = 60.6;
+
+        /**
+         * Reads one custom property off an element and coerces it to a number.
+         *
+         * @param {CSSStyleDeclaration} style - Resolved style for the stage.
+         * @param {string} name - Custom property name, including the leading dashes.
+         * @param {number} fallback - Value used when the property is absent or unparseable.
+         * @returns {number} The parsed number, or `fallback`.
+         */
+        function readNumber(style, name, fallback) {
+            const parsed = parseFloat(style.getPropertyValue(name));
+            return Number.isFinite(parsed) ? parsed : fallback;
+        }
+
+        /**
+         * Reads a custom property holding a space-separated RGB triple.
+         *
+         * @param {CSSStyleDeclaration} style - Resolved style for the stage.
+         * @param {string} name - Custom property name, including the leading dashes.
+         * @param {number[]} fallback - Value used when the property is absent.
+         * @returns {number[]} Three channel values in the 0-255 range.
+         */
+        function readColor(style, name, fallback) {
+            const parts = style.getPropertyValue(name).trim().split(/[\s,]+/).map(Number);
+            return parts.length === 3 && parts.every(Number.isFinite) ? parts : fallback;
+        }
+
+        /**
+         * Loads p5 once per page and resolves when the global is available.
+         *
+         * The marker attribute is deliberately generic: every sketch on the
+         * page must look for the SAME one. Two sketches with two different
+         * markers each add their own tag, the bundle is evaluated twice, and
+         * the second pass clobbers the first's module state — which shows up
+         * as "Cannot set properties of undefined (setting 'presetup')" and a
+         * sketch that never draws.
+         *
+         * @returns {Promise<void>} Resolves on load, rejects if the script fails.
+         */
+        function loadP5() {
+            if (window.p5) return Promise.resolve();
+
+            let tag = document.querySelector("script[data-p5-loader]");
+            if (!tag) {
+                tag = document.createElement("script");
+                tag.src = P5_SRC;
+                tag.async = true;
+                tag.setAttribute("data-p5-loader", "");
+                document.head.appendChild(tag);
+            }
+
+            return new Promise((resolve, reject) => {
+                tag.addEventListener("load", () => resolve(), { once: true });
+                tag.addEventListener("error", () => reject(new Error("p5 failed to load")), { once: true });
+            });
+        }
+
+        /**
+         * A unit quaternion for a rotation about an axis.
+         *
+         * @param {number} x - Axis x component; the axis is assumed unit length.
+         * @param {number} y - Axis y component.
+         * @param {number} z - Axis z component.
+         * @param {number} angle - Rotation about that axis, in radians.
+         * @returns {number[]} The quaternion as `[w, x, y, z]`.
+         */
+        function quatAxisAngle(x, y, z, angle) {
+            const half = angle / 2;
+            const s = Math.sin(half);
+            return [Math.cos(half), x * s, y * s, z * s];
+        }
+
+        /**
+         * Hamilton product of two quaternions. `quatMul(a, b)` is the rotation
+         * that applies `b` first and then `a`, matching how the nested
+         * rotations below read from the inside out.
+         *
+         * @param {number[]} a - Left quaternion as `[w, x, y, z]`.
+         * @param {number[]} b - Right quaternion as `[w, x, y, z]`.
+         * @returns {number[]} The composed quaternion as `[w, x, y, z]`.
+         */
+        function quatMul(a, b) {
+            const [aw, ax, ay, az] = a;
+            const [bw, bx, by, bz] = b;
+            return [
+                aw * bw - ax * bx - ay * by - az * bz,
+                aw * bx + ax * bw + ay * bz - az * by,
+                aw * by - ax * bz + ay * bw + az * bx,
+                aw * bz + ax * by - ay * bx + az * bw,
+            ];
+        }
+
+        /**
+         * Converts a quaternion to a 4x4 model matrix in the column-major
+         * order p5's `applyMatrix` expects in WEBGL mode. The quaternion is
+         * normalised on the way in, so drift over a long session can't show
+         * up as the model quietly scaling.
+         *
+         * @param {number[]} q - Quaternion as `[w, x, y, z]`.
+         * @returns {number[]} Sixteen matrix entries, column-major.
+         */
+        function quatToMatrix(q) {
+            const len = Math.hypot(q[0], q[1], q[2], q[3]) || 1;
+            const w = q[0] / len;
+            const x = q[1] / len;
+            const y = q[2] / len;
+            const z = q[3] / len;
+
+            const xx = x * x, yy = y * y, zz = z * z;
+            const xy = x * y, xz = x * z, yz = y * z;
+            const wx = w * x, wy = w * y, wz = w * z;
+
+            return [
+                1 - 2 * (yy + zz), 2 * (xy + wz), 2 * (xz - wy), 0,
+                2 * (xy - wz), 1 - 2 * (xx + zz), 2 * (yz + wx), 0,
+                2 * (xz + wy), 2 * (yz - wx), 1 - 2 * (xx + yy), 0,
+                0, 0, 0, 1,
+            ];
+        }
+
+        /**
+         * Mixes two colours channel by channel.
+         *
+         * @param {number[]} from - Colour at `amount` 0.
+         * @param {number[]} to - Colour at `amount` 1.
+         * @param {number} amount - Mix position, 0 to 1.
+         * @returns {number[]} The blended colour.
+         */
+        function mixColor(from, to, amount) {
+            return from.map((c, i) => c + (to[i] - c) * amount);
+        }
+
+        /**
+         * Builds the p5 instance-mode sketch for the turning sword.
+         *
+         * @param {HTMLElement} stage - Container the canvas is sized from and parented to.
+         * @param {object} config - Values lifted from the stage's custom properties.
+         * @param {number} config.turnPeriod - Seconds per full turn about the vertical.
+         * @param {number} config.tumblePeriod - Seconds per full end-over-end tumble.
+         * @param {number} config.leanPeriod - Seconds per full lean cycle.
+         * @param {number} config.lean - Lean amplitude, in degrees.
+         * @param {number} config.fill - Share of canvas height the sword spans.
+         * @param {number[]} config.steel - Blade colour.
+         * @param {number[]} config.gold - Hilt colour.
+         * @param {number[]} config.glow - Colour the blade washes towards.
+         * @param {number} config.glowPeriod - Seconds per glow breath; 0 disables it.
+         * @param {number} config.glowDepth - How far towards `glow` the blade travels.
+         * @param {boolean} config.reducedMotion - When true the sword holds a fixed pose.
+         * @returns {(p: object) => void} A sketch function for `new p5(...)`.
+         */
+        function makeSketch(stage, config) {
+            return (p) => {
+                let blade = null;
+                let hilt = null;
+
+                // Derived from the canvas so the sword keeps its proportions
+                // when the column width changes.
+                let scale = 1;
+
+                /** Recomputes the model scale from the current canvas size. */
+                const fit = () => {
+                    // Shorter side, not height: the tumble carries the sword
+                    // through horizontal, where the width is what has to hold
+                    // it, and on a phone the stage is narrower than it is tall.
+                    scale = (Math.min(p.width, p.height) * config.fill) / MODEL_LENGTH;
+                };
+
+                p.setup = async () => {
+                    const canvas = p.createCanvas(stage.clientWidth, stage.clientHeight, p.WEBGL);
+                    canvas.parent(stage);
+                    p.pixelDensity(Math.min(window.devicePixelRatio || 1, 2));
+                    p.noStroke();
+                    fit();
+
+                    // normalize stays off: it fits each model to a unit box on
+                    // its own, which would size the blade and the hilt
+                    // independently and pull the sword apart.
+                    [blade, hilt] = await Promise.all([
+                        p.loadModel(BLADE_SRC, ".obj", false),
+                        p.loadModel(HILT_SRC, ".obj", false),
+                    ]);
+
+                    const fallback = document.getElementById("sword-fallback");
+                    if (fallback) fallback.remove();
+
+                    // No describe() here: it looks the canvas up by id, and
+                    // every p5 instance numbers its canvas defaultCanvas0, so
+                    // with a second sketch on the page it finds the wrong node
+                    // and throws. The stage carries the label instead.
+                };
+
+                p.windowResized = () => {
+                    p.resizeCanvas(stage.clientWidth, stage.clientHeight);
+                    fit();
+                };
+
+                p.draw = () => {
+                    // clear(), not background(): this is what keeps the canvas
+                    // transparent, so the sword sits on the post's own
+                    // background and nothing here needs to know which one.
+                    p.clear();
+
+                    // Nothing to draw until both halves have arrived; the
+                    // fallback text is still on screen until then.
+                    if (!blade || !hilt) return;
+
+                    // The angles come from the clock rather than a frame
+                    // counter, so the speed holds on displays that skip or
+                    // double frames, and so pausing resumes in the right place.
+                    const seconds = config.reducedMotion ? 3 : p.millis() / 1000;
+                    const turn = (seconds / config.turnPeriod) * p.TWO_PI;
+                    const tumble = (seconds / config.tumblePeriod) * p.TWO_PI;
+                    const lean = p.radians(config.lean) *
+                        Math.sin((seconds / config.leanPeriod) * p.TWO_PI);
+
+                    // Orientation as one quaternion, read inside out: stand the
+                    // model up so the tip points to the top of the screen, lean
+                    // it off vertical, turn it about the vertical axis, then
+                    // tumble the whole thing end over end about the screen's
+                    // horizontal axis. The tumble goes last so it acts on the
+                    // world rather than on the sword's own axes.
+                    //
+                    // Composed this way there is no Euler triple for an axis to
+                    // collapse onto, so all three stay even through every pose,
+                    // including the ones where the sword points straight at the
+                    // camera and a yaw/pitch/roll rig would lock.
+                    const orientation = quatMul(
+                        quatAxisAngle(1, 0, 0, tumble),
+                        quatMul(
+                            quatMul(
+                                quatAxisAngle(0, 1, 0, turn),
+                                quatAxisAngle(0, 0, 1, lean)
+                            ),
+                            quatAxisAngle(1, 0, 0, -p.HALF_PI)
+                        )
+                    );
+
+                    // Key light from the upper left, with a dim ambient fill.
+                    // The lights stay put while the sword turns: the highlight
+                    // travelling down the blade is what sells it as metal.
+                    p.ambientLight(42, 44, 50);
+                    p.directionalLight(255, 250, 240, -0.5, -0.5, -0.7);
+                    p.pointLight(210, 225, 255, -180, -220, 340);
+
+                    p.push();
+                    p.applyMatrix(...quatToMatrix(orientation));
+                    p.scale(scale);
+
+                    // Sting warns of orcs by glowing blue. The breath is a
+                    // slow wash over the steel rather than a real emissive
+                    // pass, which would need a custom shader.
+                    const breath = config.glowPeriod > 0 && !config.reducedMotion
+                        ? (1 - Math.cos((seconds / config.glowPeriod) * p.TWO_PI)) / 2
+                        : 0;
+                    const bladeColor = mixColor(config.steel, config.glow, breath * config.glowDepth);
+
+                    p.fill(...bladeColor);
+                    p.ambientMaterial(...bladeColor);
+                    p.specularMaterial(255, 255, 255);
+                    p.shininess(90);
+                    p.model(blade);
+
+                    // fill() is the diffuse colour; ambientMaterial only
+                    // answers ambientLight, so both are set for each half.
+                    p.fill(...config.gold);
+                    p.ambientMaterial(...config.gold);
+                    p.specularMaterial(255, 235, 175);
+                    p.shininess(45);
+                    p.model(hilt);
+                    p.pop();
+                };
+            };
+        }
+
+        /**
+         * Loads p5, starts the sketch, and keeps it from drawing while the
+         * sword is scrolled off screen.
+         *
+         * @param {HTMLElement} stage - The sword's container.
+         * @param {object} config - Sketch configuration, as built in `start`.
+         * @returns {Promise<void>} Resolves once the sketch is running.
+         */
+        async function run(stage, config) {
+            await loadP5();
+
+            const sketch = new window.p5(makeSketch(stage, config));
+
+            // Off-screen frames are wasted GPU work on a long post, and the
+            // clock-driven angles mean the sword resumes where it should.
+            if ("IntersectionObserver" in window) {
+                new IntersectionObserver((entries) => {
+                    for (const entry of entries) {
+                        entry.isIntersecting ? sketch.loop() : sketch.noLoop();
+                    }
+                }, { threshold: 0 }).observe(stage);
+            }
+        }
+
+        /** Reads configuration off the stage element and kicks the sketch off. */
+        function start() {
+            const stage = document.getElementById(STAGE_ID);
+            if (!stage) return;
+
+            const style = getComputedStyle(stage);
+            const config = {
+                turnPeriod: readNumber(style, "--sword-turn-period", 16),
+                tumblePeriod: readNumber(style, "--sword-tumble-period", 23),
+                leanPeriod: readNumber(style, "--sword-lean-period", 11),
+                lean: readNumber(style, "--sword-lean", 7),
+                fill: readNumber(style, "--sword-fill", 0.86),
+                steel: readColor(style, "--sword-steel", [196, 204, 214]),
+                gold: readColor(style, "--sword-gold", [186, 146, 64]),
+                glow: readColor(style, "--sword-glow", [96, 168, 255]),
+                glowPeriod: readNumber(style, "--sword-glow-period", 5),
+                glowDepth: readNumber(style, "--sword-glow-depth", 0.45),
+                reducedMotion: window.matchMedia("(prefers-reduced-motion: reduce)").matches,
+            };
+
+            run(stage, config).catch(() => {
+                // Leave the fallback text in place; nothing else to do.
+            });
+        }
+
+        if (document.readyState === "loading") {
+            document.addEventListener("DOMContentLoaded", start, { once: true });
+        } else {
+            start();
+        }
+    })();
+</script>
