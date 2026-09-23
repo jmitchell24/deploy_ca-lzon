@@ -8,11 +8,20 @@
       <generator>Zola</generator>
       <language>en</language>
       <atom:link href="https://lzon.ca/quotes/rss.xml" rel="self" type="application/rss+xml"/>
-      <lastBuildDate>Tue, 22 Sep 2026 12:00:00 +0000</lastBuildDate>
+      <lastBuildDate>Wed, 23 Sep 2026 12:00:00 +0000</lastBuildDate>
       
       
       
       
+      <item>
+          <title>174. lzon.ca&#x2F;quotes</title>
+          <pubDate>Wed, 23 Sep 2026 12:00:00 +0000</pubDate>
+          <author>Lzon</author>
+          <link>https://lzon.ca/quotes/</link>
+          <guid isPermaLink="false">https://lzon.ca/quotes/#174</guid>
+          <category>quote</category>
+          <description>Something attempted, something done, has earned a night’s repose.&lt;br/&gt;- Henry Longfellow (The Village Blacksmith)</description>
+      </item>
       <item>
           <title>173. lzon.ca&#x2F;quotes</title>
           <pubDate>Tue, 22 Sep 2026 12:00:00 +0000</pubDate>
