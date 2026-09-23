@@ -1,0 +1,380 @@
+<style>
+    /*
+     * Single source of truth for the door's look and motion. The sketch reads
+     * these back with getComputedStyle at start-up, so the numbers live here
+     * rather than being duplicated in the script below.
+     */
+    #door-stage {
+        --door-height: 480px;
+
+        /*
+         * The door is a relief, not a figure in the round: its back is a flat
+         * plate. So it sways to catch the light rather than turning all the
+         * way, and the sway is bounded. Set --door-sway to 180 for a full
+         * turntable if you ever want to see the back.
+         */
+        --door-sway: 32;
+        --door-sway-period: 13;
+
+        /* A slow nod, so the raking light crosses the carving vertically too. */
+        --door-nod: 9;
+        --door-nod-period: 19;
+
+        /* Share of the canvas's shorter side the door spans. */
+        --door-fill: 0.86;
+
+        /* Oak, and the warm lantern colour that rakes across the carving. */
+        --door-wood: 156 118 72;
+        --door-lantern: 255 216 150;
+
+        /* Specular is all but off: weathered oak and stone have no gloss, and
+           a highlight here only flattens the carved shadows that are the
+           whole point of a relief. */
+        --door-specular: 20 17 14;
+
+        position: relative;
+        width: 100%;
+        height: var(--door-height);
+
+        /* The canvas is sized from this box, so it must not be able to grow
+           the box back: an inline canvas would add a descender gap and start
+           a resize feedback loop on narrow screens. */
+        overflow: hidden;
+
+        /* Deliberately no background: the canvas is drawn with clear(), so the
+           post's own background shows through in either theme. */
+    }
+
+    #door-stage canvas {
+        display: block;
+        width: 100%;
+        height: 100%;
+        background: transparent;
+    }
+
+    /* Shown until the model arrives, and left in place if it never does. */
+    #door-fallback {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 100%;
+        opacity: .6;
+        font-style: italic;
+    }
+
+    @media (max-width: 640px) {
+        #door-stage {
+            --door-height: 340px;
+        }
+    }
+</style>
+
+<div id="door-stage" role="img" aria-label="A round hobbit door, carved in relief, swaying gently in raking light.">
+    <div id="door-fallback">The door stays shut.</div>
+</div>
+
+<script>
+    (() => {
+        "use strict";
+
+        const STAGE_ID = "door-stage";
+        const P5_SRC = "/js/p5.js";
+
+        // Decimated from the 176k-triangle original to 6k with a quadric edge
+        // collapse, which is the whole reason this is servable: the source STL
+        // is 8.8 MB. The copy here is also centred on its origin and flipped
+        // in Y with its winding reversed, so it arrives upright in p5's y-down
+        // frame and this sketch needs no correction transform of its own.
+        //
+        // Relative, not rooted: the model is colocated with the post, so this
+        // resolves against the post's own URL and survives the page being
+        // moved, which an absolute /models/ path would not.
+        const MODEL_SRC = "door.stl";
+
+        // Longest extent of that model, in its own units, used to turn
+        // --door-fill into a scale factor.
+        const MODEL_SPAN = 94.98;
+
+        /**
+         * Reads one custom property off an element and coerces it to a number.
+         *
+         * @param {CSSStyleDeclaration} style - Resolved style for the stage.
+         * @param {string} name - Custom property name, including the leading dashes.
+         * @param {number} fallback - Value used when the property is absent or unparseable.
+         * @returns {number} The parsed number, or `fallback`.
+         */
+        function readNumber(style, name, fallback) {
+            const parsed = parseFloat(style.getPropertyValue(name));
+            return Number.isFinite(parsed) ? parsed : fallback;
+        }
+
+        /**
+         * Reads a custom property holding a space-separated RGB triple.
+         *
+         * @param {CSSStyleDeclaration} style - Resolved style for the stage.
+         * @param {string} name - Custom property name, including the leading dashes.
+         * @param {number[]} fallback - Value used when the property is absent.
+         * @returns {number[]} Three channel values in the 0-255 range.
+         */
+        function readColor(style, name, fallback) {
+            const parts = style.getPropertyValue(name).trim().split(/[\s,]+/).map(Number);
+            return parts.length === 3 && parts.every(Number.isFinite) ? parts : fallback;
+        }
+
+        /**
+         * Loads p5 once per page and resolves when the global is available.
+         *
+         * The marker attribute is deliberately generic: every sketch on the
+         * page must look for the SAME one. Two sketches with two different
+         * markers each add their own tag, the bundle is evaluated twice, and
+         * the second pass clobbers the first's module state — which shows up
+         * as "Cannot set properties of undefined (setting 'presetup')" and a
+         * sketch that never draws.
+         *
+         * @returns {Promise<void>} Resolves on load, rejects if the script fails.
+         */
+        function loadP5() {
+            if (window.p5) return Promise.resolve();
+
+            let tag = document.querySelector("script[data-p5-loader]");
+            if (!tag) {
+                tag = document.createElement("script");
+                tag.src = P5_SRC;
+                tag.async = true;
+                tag.setAttribute("data-p5-loader", "");
+                document.head.appendChild(tag);
+            }
+
+            return new Promise((resolve, reject) => {
+                tag.addEventListener("load", () => resolve(), { once: true });
+                tag.addEventListener("error", () => reject(new Error("p5 failed to load")), { once: true });
+            });
+        }
+
+        /**
+         * A unit quaternion for a rotation about an axis.
+         *
+         * @param {number} x - Axis x component; the axis is assumed unit length.
+         * @param {number} y - Axis y component.
+         * @param {number} z - Axis z component.
+         * @param {number} angle - Rotation about that axis, in radians.
+         * @returns {number[]} The quaternion as `[w, x, y, z]`.
+         */
+        function quatAxisAngle(x, y, z, angle) {
+            const half = angle / 2;
+            const s = Math.sin(half);
+            return [Math.cos(half), x * s, y * s, z * s];
+        }
+
+        /**
+         * Hamilton product of two quaternions. `quatMul(a, b)` is the rotation
+         * that applies `b` first and then `a`, matching how the nested
+         * rotations below read from the inside out.
+         *
+         * @param {number[]} a - Left quaternion as `[w, x, y, z]`.
+         * @param {number[]} b - Right quaternion as `[w, x, y, z]`.
+         * @returns {number[]} The composed quaternion as `[w, x, y, z]`.
+         */
+        function quatMul(a, b) {
+            const [aw, ax, ay, az] = a;
+            const [bw, bx, by, bz] = b;
+            return [
+                aw * bw - ax * bx - ay * by - az * bz,
+                aw * bx + ax * bw + ay * bz - az * by,
+                aw * by - ax * bz + ay * bw + az * bx,
+                aw * bz + ax * by - ay * bx + az * bw,
+            ];
+        }
+
+        /**
+         * Converts a quaternion to a 4x4 model matrix in the column-major
+         * order p5's `applyMatrix` expects in WEBGL mode. The quaternion is
+         * normalised on the way in, so drift over a long session can't show
+         * up as the model quietly scaling.
+         *
+         * @param {number[]} q - Quaternion as `[w, x, y, z]`.
+         * @returns {number[]} Sixteen matrix entries, column-major.
+         */
+        function quatToMatrix(q) {
+            const len = Math.hypot(q[0], q[1], q[2], q[3]) || 1;
+            const w = q[0] / len;
+            const x = q[1] / len;
+            const y = q[2] / len;
+            const z = q[3] / len;
+
+            const xx = x * x, yy = y * y, zz = z * z;
+            const xy = x * y, xz = x * z, yz = y * z;
+            const wx = w * x, wy = w * y, wz = w * z;
+
+            return [
+                1 - 2 * (yy + zz), 2 * (xy + wz), 2 * (xz - wy), 0,
+                2 * (xy - wz), 1 - 2 * (xx + zz), 2 * (yz + wx), 0,
+                2 * (xz + wy), 2 * (yz - wx), 1 - 2 * (xx + yy), 0,
+                0, 0, 0, 1,
+            ];
+        }
+
+        /**
+         * Builds the p5 instance-mode sketch for the swaying door.
+         *
+         * @param {HTMLElement} stage - Container the canvas is sized from and parented to.
+         * @param {object} config - Values lifted from the stage's custom properties.
+         * @param {number} config.sway - Sway amplitude about the vertical, in degrees.
+         * @param {number} config.swayPeriod - Seconds per full sway cycle.
+         * @param {number} config.nod - Nod amplitude about the horizontal, in degrees.
+         * @param {number} config.nodPeriod - Seconds per full nod cycle.
+         * @param {number} config.fill - Share of the canvas's shorter side the door spans.
+         * @param {number[]} config.wood - Body colour.
+         * @param {number[]} config.lantern - Key light colour.
+         * @param {number[]} config.specular - Specular highlight colour, near black by default.
+         * @param {boolean} config.reducedMotion - When true the door holds a fixed pose.
+         * @returns {(p: object) => void} A sketch function for `new p5(...)`.
+         */
+        function makeSketch(stage, config) {
+            return (p) => {
+                let door = null;
+
+                // Derived from the canvas so the door keeps its proportions
+                // when the column width changes.
+                let scale = 1;
+
+                /** Recomputes the model scale from the current canvas size. */
+                const fit = () => {
+                    scale = (Math.min(p.width, p.height) * config.fill) / MODEL_SPAN;
+                };
+
+                p.setup = async () => {
+                    const canvas = p.createCanvas(stage.clientWidth, stage.clientHeight, p.WEBGL);
+                    canvas.parent(stage);
+                    p.pixelDensity(Math.min(window.devicePixelRatio || 1, 2));
+                    p.noStroke();
+                    fit();
+
+                    // normalize stays off so MODEL_SPAN above stays the single
+                    // place the model's size is written down.
+                    door = await p.loadModel(MODEL_SRC, ".stl", false);
+
+                    const fallback = document.getElementById("door-fallback");
+                    if (fallback) fallback.remove();
+
+                    // No describe() here: it looks the canvas up by id, and
+                    // every p5 instance numbers its canvas defaultCanvas0, so
+                    // with a second sketch on the page it finds the wrong node
+                    // and throws. The stage carries the label instead.
+                };
+
+                p.windowResized = () => {
+                    p.resizeCanvas(stage.clientWidth, stage.clientHeight);
+                    fit();
+                };
+
+                p.draw = () => {
+                    // clear(), not background(): this is what keeps the canvas
+                    // transparent, so the door sits on the post's own
+                    // background and nothing here needs to know which one.
+                    p.clear();
+
+                    // Nothing to draw until the model has arrived; the
+                    // fallback text is still on screen until then.
+                    if (!door) return;
+
+                    // The angles come from the clock rather than a frame
+                    // counter, so the speed holds on displays that skip or
+                    // double frames, and so pausing resumes in the right place.
+                    const seconds = config.reducedMotion ? 3 : p.millis() / 1000;
+
+                    // Both are oscillations, not turns. A relief carries all
+                    // its detail on one face; carrying it past edge-on would
+                    // show the flat back of the plate.
+                    const sway = p.radians(config.sway) *
+                        Math.sin((seconds / config.swayPeriod) * p.TWO_PI);
+                    const nod = p.radians(config.nod) *
+                        Math.sin((seconds / config.nodPeriod) * p.TWO_PI);
+
+                    // Orientation as one quaternion: sway about the vertical,
+                    // nod about the horizontal. The model arrives already
+                    // upright, so there is no base term. Composed this way
+                    // there is no Euler triple for an axis to collapse onto.
+                    const orientation = quatMul(
+                        quatAxisAngle(1, 0, 0, nod),
+                        quatAxisAngle(0, 1, 0, sway)
+                    );
+
+                    // A low, warm key light raking across the face: on a
+                    // relief the shadows in the carving ARE the subject, so
+                    // the light comes in shallow rather than straight on.
+                    p.ambientLight(44, 40, 36);
+                    p.directionalLight(...config.lantern, -0.72, -0.42, -0.55);
+                    p.pointLight(120, 140, 170, 300, -180, 260);
+
+                    p.push();
+                    p.applyMatrix(...quatToMatrix(orientation));
+                    p.scale(scale);
+
+                    // fill() is the diffuse colour; ambientMaterial only
+                    // answers ambientLight, so both are set. Specular is
+                    // near zero and shininess low: oak and stone, not metal.
+                    p.fill(...config.wood);
+                    p.ambientMaterial(...config.wood);
+                    p.specularMaterial(...config.specular);
+                    p.shininess(4);
+                    p.model(door);
+                    p.pop();
+                };
+            };
+        }
+
+        /**
+         * Loads p5, starts the sketch, and keeps it from drawing while the
+         * door is scrolled off screen.
+         *
+         * @param {HTMLElement} stage - The door's container.
+         * @param {object} config - Sketch configuration, as built in `start`.
+         * @returns {Promise<void>} Resolves once the sketch is running.
+         */
+        async function run(stage, config) {
+            await loadP5();
+
+            const sketch = new window.p5(makeSketch(stage, config));
+
+            // Off-screen frames are wasted GPU work on a long post, and the
+            // clock-driven angles mean the door resumes where it should.
+            if ("IntersectionObserver" in window) {
+                new IntersectionObserver((entries) => {
+                    for (const entry of entries) {
+                        entry.isIntersecting ? sketch.loop() : sketch.noLoop();
+                    }
+                }, { threshold: 0 }).observe(stage);
+            }
+        }
+
+        /** Reads configuration off the stage element and kicks the sketch off. */
+        function start() {
+            const stage = document.getElementById(STAGE_ID);
+            if (!stage) return;
+
+            const style = getComputedStyle(stage);
+            const config = {
+                sway: readNumber(style, "--door-sway", 32),
+                swayPeriod: readNumber(style, "--door-sway-period", 13),
+                nod: readNumber(style, "--door-nod", 9),
+                nodPeriod: readNumber(style, "--door-nod-period", 19),
+                fill: readNumber(style, "--door-fill", 0.86),
+                wood: readColor(style, "--door-wood", [156, 118, 72]),
+                lantern: readColor(style, "--door-lantern", [255, 216, 150]),
+                specular: readColor(style, "--door-specular", [20, 17, 14]),
+                reducedMotion: window.matchMedia("(prefers-reduced-motion: reduce)").matches,
+            };
+
+            run(stage, config).catch(() => {
+                // Leave the fallback text in place; nothing else to do.
+            });
+        }
+
+        if (document.readyState === "loading") {
+            document.addEventListener("DOMContentLoaded", start, { once: true });
+        } else {
+            start();
+        }
+    })();
+</script>
