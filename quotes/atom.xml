@@ -13,7 +13,7 @@
   <generator uri="https://www.getzola.org/">Zola</generator>
 
   
-  <updated>2026-09-23T12:00:00Z</updated>
+  <updated>2026-09-25T12:00:00Z</updated>
 
   
   
@@ -29,6 +29,34 @@
   
 
   
+
+  
+
+  
+  <entry>
+    <title>176. lzon.ca&#x2F;quotes</title>
+    <id>https://lzon.ca/quotes/#176</id>
+    <link href="https://lzon.ca/quotes/"/>
+    <published>2026-09-25T12:00:00Z</published>
+    <updated>2026-09-25T12:00:00Z</updated>
+    <author><name>Lzon</name></author>
+    <category term="quote"/>
+    <summary type="html">I sit beside my lonely fire. And pray for wisdom yet. For calmness to remember. Or courage to forget.&lt;br/&gt;- Charles Hamilton Aidé (Remember to Forget)</summary>
+  </entry>
+
+  
+
+  
+  <entry>
+    <title>175. lzon.ca&#x2F;quotes</title>
+    <id>https://lzon.ca/quotes/#175</id>
+    <link href="https://lzon.ca/quotes/"/>
+    <published>2026-09-24T12:00:00Z</published>
+    <updated>2026-09-24T12:00:00Z</updated>
+    <author><name>Lzon</name></author>
+    <category term="quote"/>
+    <summary type="html">Men in rage strike those that wish them best.&lt;br/&gt;- William Shakespeare</summary>
+  </entry>
 
   
 
