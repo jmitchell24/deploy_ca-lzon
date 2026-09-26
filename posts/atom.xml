@@ -13,7 +13,7 @@
   <generator uri="https://www.getzola.org/">Zola</generator>
 
   
-  <updated>2026-09-23T12:00:00Z</updated>
+  <updated>2026-09-26T12:00:00Z</updated>
 
   
   
@@ -29,6 +29,17 @@
   
 
   
+
+  
+  <entry>
+    <title>Algoma docs and website</title>
+    <id>https://lzon.ca/posts/algoma/algoma-docs/</id>
+    <link href="https://lzon.ca/posts/algoma/algoma-docs/"/>
+    <published>2026-09-26T12:00:00Z</published>
+    <updated>2026-09-26T12:00:00Z</updated>
+    <author><name>Lzon</name></author>
+    <summary type="html" xml:base="https://lzon.ca/posts/algoma/algoma-docs/">&lt;p&gt;A small update for my latest project.&lt;&#x2F;p&gt;</summary>
+  </entry>
 
   
   <entry>

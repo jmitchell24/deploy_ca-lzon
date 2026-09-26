@@ -8,11 +8,19 @@
       <generator>Zola</generator>
       <language>en</language>
       <atom:link href="https://lzon.ca/posts/rss.xml" rel="self" type="application/rss+xml"/>
-      <lastBuildDate>Wed, 23 Sep 2026 12:00:00 +0000</lastBuildDate>
+      <lastBuildDate>Sat, 26 Sep 2026 12:00:00 +0000</lastBuildDate>
       
       
       
       
+      <item>
+          <title>Algoma docs and website</title>
+          <pubDate>Sat, 26 Sep 2026 12:00:00 +0000</pubDate>
+          <author>Lzon</author>
+          <link>https://lzon.ca/posts/algoma/algoma-docs/</link>
+          <guid isPermaLink="false">https://lzon.ca/posts/algoma/algoma-docs/</guid>
+          <description xml:base="https://lzon.ca/posts/algoma/algoma-docs/">&lt;p&gt;A small update for my latest project.&lt;&#x2F;p&gt;</description>
+      </item>
       <item>
           <title>Concerning Hobbits</title>
           <pubDate>Tue, 22 Sep 2026 12:00:00 +0000</pubDate>
