@@ -8,11 +8,20 @@
       <generator>Zola</generator>
       <language>en</language>
       <atom:link href="https://lzon.ca/quotes/rss.xml" rel="self" type="application/rss+xml"/>
-      <lastBuildDate>Sat, 03 Oct 2026 12:00:00 +0000</lastBuildDate>
+      <lastBuildDate>Sun, 04 Oct 2026 12:00:00 +0000</lastBuildDate>
       
       
       
       
+      <item>
+          <title>185. lzon.ca&#x2F;quotes</title>
+          <pubDate>Sun, 04 Oct 2026 12:00:00 +0000</pubDate>
+          <author>Lzon</author>
+          <link>https://lzon.ca/quotes/</link>
+          <guid isPermaLink="false">https://lzon.ca/quotes/#185</guid>
+          <category>quote</category>
+          <description>All Nature is but Art unknown to thee. All Chance and Direction which thou canst not see.&lt;br/&gt;- Alexander Pope (An Essay on Man)</description>
+      </item>
       <item>
           <title>184. lzon.ca&#x2F;quotes</title>
           <pubDate>Sat, 03 Oct 2026 12:00:00 +0000</pubDate>
