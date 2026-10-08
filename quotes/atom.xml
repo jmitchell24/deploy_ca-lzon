@@ -13,7 +13,7 @@
   <generator uri="https://www.getzola.org/">Zola</generator>
 
   
-  <updated>2026-10-06T12:00:00Z</updated>
+  <updated>2026-10-08T12:00:00Z</updated>
 
   
   
@@ -29,6 +29,34 @@
   
 
   
+
+  
+
+  
+  <entry>
+    <title>189. lzon.ca&#x2F;quotes</title>
+    <id>https://lzon.ca/quotes/#189</id>
+    <link href="https://lzon.ca/quotes/"/>
+    <published>2026-10-08T12:00:00Z</published>
+    <updated>2026-10-08T12:00:00Z</updated>
+    <author><name>Lzon</name></author>
+    <category term="quote"/>
+    <summary type="html">Great and good are seldom the same man.&lt;br/&gt;- Thomas Fuller (1654-1734) (Gnomologia)</summary>
+  </entry>
+
+  
+
+  
+  <entry>
+    <title>188. lzon.ca&#x2F;quotes</title>
+    <id>https://lzon.ca/quotes/#188</id>
+    <link href="https://lzon.ca/quotes/"/>
+    <published>2026-10-07T12:00:00Z</published>
+    <updated>2026-10-07T12:00:00Z</updated>
+    <author><name>Lzon</name></author>
+    <category term="quote"/>
+    <summary type="html">The greatest wealth is to live content with little.&lt;br/&gt;- Plato</summary>
+  </entry>
 
   
 
