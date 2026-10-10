@@ -205,7 +205,7 @@
     const text = q.text.trim();
     const author = q.author ?? "Anonymous";
     const attribution = q.work ? `${author}, <em>${q.work}</em>` : author;
-    return `<em>"${text}"</em> <br>- ${attribution}`;
+    return `<em>"${text}"</em> <br><span class="text-mute">- ${attribution}</span>`;
   }
   function collectTextNodes(el) {
     const nodes = [];
@@ -218,46 +218,40 @@
     })(el);
     return nodes;
   }
-  function typeOut(el, durationMs, alive) {
+  var FADE_OUT_MS = 300;
+  var TYPE_MS_PER_CHAR = 12;
+  var RESIZE_MS = 250;
+  function resizeTo(el, target, ms) {
+    el.style.height = `${el.offsetHeight}px`;
+    el.offsetHeight;
+    el.style.overflow = "hidden";
+    el.style.transition = `height ${ms}ms ease`;
+    el.style.height = `${target}px`;
+  }
+  function releaseHeight(el) {
+    el.style.height = "";
+    el.style.overflow = "";
+    el.style.transition = "";
+  }
+  function fadeOut(el, ms, alive) {
     return new Promise((resolve) => {
-      const nodes = collectTextNodes(el).filter(([, t]) => t.length > 0).reverse();
-      const total = nodes.reduce((n, [, t]) => n + t.length, 0);
-      if (total === 0) {
-        resolve();
-        return;
-      }
-      const ms = durationMs / total;
-      let ni = 0, ci = nodes[0][1].length;
-      function tick() {
-        if (!alive()) {
-          resolve();
-          return;
-        }
-        nodes[ni][0].textContent = nodes[ni][1].slice(0, --ci);
-        if (ci <= 0) {
-          ni++;
-          if (ni >= nodes.length) {
-            resolve();
-            return;
-          }
-          ci = nodes[ni][1].length;
-        }
-        setTimeout(tick, ms);
-      }
-      tick();
+      el.style.transition = `opacity ${ms}ms ease`;
+      el.style.opacity = "0";
+      setTimeout(() => resolve(), alive() ? ms : 0);
     });
   }
-  function typeIn(el, html, durationMs, alive) {
+  function typeIn(el, html, msPerChar, alive) {
     return new Promise((resolve) => {
       el.innerHTML = html;
       const nodes = collectTextNodes(el);
       nodes.forEach(([node]) => node.textContent = "");
+      el.style.transition = "none";
+      el.style.opacity = "1";
       const total = nodes.reduce((n, [, t]) => n + t.length, 0);
       if (total === 0) {
         resolve();
         return;
       }
-      const ms = durationMs / total;
       let ni = 0, ci = 0;
       function tick() {
         if (!alive()) {
@@ -273,7 +267,7 @@
           }
           ci = 0;
         }
-        setTimeout(tick, ms);
+        setTimeout(tick, msPerChar);
       }
       tick();
     });
@@ -316,6 +310,12 @@
       });
       return `From <span class="text-secondary">${s}</span>`;
     }
+    function getShortDateString(d) {
+      const weekday = d.toLocaleDateString("en-US", { weekday: "short" });
+      const month = d.toLocaleDateString("en-US", { month: "short" });
+      const day = String(d.getDate()).padStart(2, "0");
+      return `${weekday} ${month}. ${day}, ${d.getFullYear()}`;
+    }
     function getScheduleStringHtml(d) {
       const s = d.toLocaleDateString(undefined, {
         year: "numeric",
@@ -355,9 +355,21 @@
             if (animate) {
               const gen = ++animGen;
               const alive = () => gen === animGen;
-              typeOut(elContent, 1000, alive).then(() => {
+              const html = getQuoteTextAsHtml(quote);
+              const elRow = elContent.parentElement;
+              fadeOut(elContent, FADE_OUT_MS, alive).then(() => {
+                if (!alive())
+                  return;
+                const from = elRow.offsetHeight;
+                releaseHeight(elRow);
+                elContent.innerHTML = html;
+                const to = elRow.offsetHeight;
+                elRow.style.height = `${from}px`;
+                resizeTo(elRow, to, RESIZE_MS);
+                return typeIn(elContent, html, TYPE_MS_PER_CHAR, alive);
+              }).then(() => {
                 if (alive())
-                  typeIn(elContent, getQuoteTextAsHtml(quote), 1000, alive);
+                  releaseHeight(elRow);
               });
             } else {
               elContent.innerHTML = getQuoteTextAsHtml(quote);
@@ -392,10 +404,6 @@
           idToDate.set(getSequenceQuote(offset).id, d);
         }
         const sortParam = new URLSearchParams(window.location.search).get("sort");
-        document.querySelectorAll(".quote-sort-options a[data-sort]").forEach((el) => {
-          if (el.dataset.sort === (sortParam ?? ""))
-            el.setAttribute("aria-current", "page");
-        });
         if (sortParam === "schedule" && elQuoteSorts.length > 0) {
           const sorted = Array.from(elQuoteSorts).sort((a, b) => {
             const idA = parseInt(a.dataset.quoteId ?? "", 10);
@@ -414,6 +422,13 @@
             [sorted[0], sorted[todayIdx]] = [sorted[todayIdx], sorted[0]];
             sorted[0].dataset.newToday = "true";
           }
+          sorted.forEach((el) => {
+            const elDate = el.querySelector(".quote-sort-date");
+            const id = parseInt(el.dataset.quoteId ?? "", 10);
+            const homepageDate = el.dataset.newToday === "true" ? todayDate : idToDate.get(id);
+            if (elDate && homepageDate)
+              elDate.textContent = getShortDateString(homepageDate);
+          });
           const parent = sorted[0].parentElement;
           if (parent)
             sorted.forEach((el) => parent.appendChild(el));
