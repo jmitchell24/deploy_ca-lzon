@@ -205,7 +205,7 @@
     const text = q.text.trim();
     const author = q.author ?? "Anonymous";
     const attribution = q.work ? `${author}, <em>${q.work}</em>` : author;
-    return `<em>"${text}"</em> <br><span class="text-mute">- ${attribution}</span>`;
+    return `<em>"${text}"</em> <br><span class="text-mute text-sans-serif text-sm">- ${attribution}</span>`;
   }
   function collectTextNodes(el) {
     const nodes = [];
@@ -272,7 +272,55 @@
       tick();
     });
   }
+  function typeReveal(el, msPerChar, delayMs = 0, onStart) {
+    return new Promise((resolve) => {
+      const parts = collectTextNodes(el).filter(([, t]) => t.length > 0).map(([node, text]) => {
+        const shown = document.createTextNode("");
+        const hidden = document.createElement("span");
+        hidden.style.visibility = "hidden";
+        hidden.textContent = text;
+        node.replaceWith(shown, hidden);
+        return { shown, hidden, text, i: 0 };
+      });
+      let p = 0;
+      function tick() {
+        if (p >= parts.length) {
+          resolve();
+          return;
+        }
+        const part = parts[p];
+        part.i++;
+        part.shown.textContent = part.text.slice(0, part.i);
+        part.hidden.textContent = part.text.slice(part.i);
+        if (part.i >= part.text.length) {
+          part.hidden.remove();
+          p++;
+        }
+        setTimeout(tick, msPerChar);
+      }
+      setTimeout(() => {
+        onStart?.();
+        tick();
+      }, delayMs);
+    });
+  }
+  var SHOWCASE_DELAY_MS = 500;
+  function afterFirstPaint() {
+    const loaded = document.readyState === "complete" ? Promise.resolve() : new Promise((r) => window.addEventListener("load", () => r(), { once: true }));
+    return Promise.all([loaded, document.fonts.ready]).then(() => new Promise((r) => requestAnimationFrame(() => requestAnimationFrame(() => r()))));
+  }
+  function initQuoteShowcase() {
+    document.querySelectorAll(".quote-showcase.pre-type").forEach((fig) => {
+      const quote = fig.querySelector("blockquote");
+      if (!quote || window.matchMedia("(prefers-reduced-motion: reduce)").matches) {
+        fig.classList.remove("pre-type");
+        return;
+      }
+      afterFirstPaint().then(() => typeReveal(quote, TYPE_MS_PER_CHAR, SHOWCASE_DELAY_MS, () => fig.classList.replace("pre-type", "typing"))).then(() => fig.classList.remove("typing"));
+    });
+  }
   async function initQotd() {
+    document.addEventListener("DOMContentLoaded", initQuoteShowcase);
     function getShuffledIndices(length) {
       let t = 1831565813;
       function rand() {
