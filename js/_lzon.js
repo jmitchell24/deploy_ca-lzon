@@ -376,7 +376,6 @@
             }
           };
           const elContent = elQotd.querySelector("#qotd-content");
-          const elRandomize = elQotd.querySelector("#qotd-randomize");
           const elLabel = elQotd.querySelector("#qotd-label");
           const elLabelText = elLabel?.querySelector("#qotd-label-text");
           let todayQuoteIdx = 0;
@@ -392,7 +391,20 @@
           }
           updateQuote(getSequenceQuote(todayQuoteIdx), isNewToday);
           todayQuoteIdx = 0;
-          elRandomize.addEventListener("click", () => {
+          const elFrame = elQotd.parentElement;
+          if (elFrame) {
+            let tallest = 0;
+            new ResizeObserver(() => {
+              const h = elQotd.offsetHeight;
+              if (h <= tallest)
+                return;
+              tallest = h;
+              elFrame.style.setProperty("--qotd-tallest", `${h}px`);
+            }).observe(elQotd);
+          }
+          elQotd.addEventListener("click", () => {
+            if (window.getSelection()?.toString())
+              return;
             updateQuote(getSequenceQuote(++todayQuoteIdx), false, true);
           });
         }
