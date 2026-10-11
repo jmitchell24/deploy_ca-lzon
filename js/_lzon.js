@@ -304,7 +304,7 @@
       }, delayMs);
     });
   }
-  var SHOWCASE_DELAY_MS = 500;
+  var SHOWCASE_DELAY_MS = 150;
   function afterFirstPaint() {
     const loaded = document.readyState === "complete" ? Promise.resolve() : new Promise((r) => window.addEventListener("load", () => r(), { once: true }));
     return Promise.all([loaded, document.fonts.ready]).then(() => new Promise((r) => requestAnimationFrame(() => requestAnimationFrame(() => r()))));
