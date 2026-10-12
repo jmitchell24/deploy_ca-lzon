@@ -437,7 +437,7 @@
               break;
             }
           }
-          updateQuote(getSequenceQuote(todayQuoteIdx), isNewToday);
+          updateQuote(getSequenceQuote(todayQuoteIdx), isNewToday, true);
           todayQuoteIdx = 0;
           const elFrame = elQotd.parentElement;
           if (elFrame) {
