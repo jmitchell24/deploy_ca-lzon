@@ -13,7 +13,7 @@
   <generator uri="https://www.getzola.org/">Zola</generator>
 
   
-  <updated>2026-09-12T12:00:00Z</updated>
+  <updated>2026-10-17T12:00:00Z</updated>
 
   
   
@@ -29,6 +29,23 @@
   
 
   
+
+  
+
+  
+  <entry>
+    <title>27. Micro Center now lists GeForce RTX 5090 cards as &#x27;Not Carried&#x27;</title>
+    <id>https://lzon.ca/news/27</id>
+    <link href="https://videocardz.com/newz/micro-center-now-lists-geforce-rtx-5090-cards-as-not-carried"/>
+    <published>2026-10-17T12:00:00Z</published>
+    <updated>2026-10-17T12:00:00Z</updated>
+    <author><name>Lzon</name></author>
+    <content type="html" xml:base="https://lzon.ca/news/news-000027-rtx-5090-not-carried/">&lt;p&gt;The american computer retailer Micro Center is indicating that they are no longer recieving new RTX 5090 graphics cards from any of their OEM’s. This follows from a recent rumor that NVIDIA stopped supplying any of their GB202 chips for consumer cards. The GB202 being the chip that is used in the RTX 5090.&lt;/p&gt;
+&lt;p&gt;Without an official statement from NVIDIA the obvious assumption to make is that they want to allocate all GB202 chip production to enterprise cards, since those can be sold for a much higher margin.&lt;/p&gt;
+&lt;p&gt;I think this is a consequence of the massive capital spending on AI data centers. I’m not a financial expert but at surface level it very much seems as though these investments are irrational and will have sweeping economic consequences once the price correction occurs.&lt;/p&gt;
+&lt;p&gt;And as a gamer and PC enthusiast this is very dissappointing. While not the end-all-be-all of the hobby, it was nice being able to build and upgrade relatively powerful PC’s for affordable prices. For the time being at, least seems to be no longer possible.&lt;/p&gt;
+</content>
+  </entry>
 
   
 
