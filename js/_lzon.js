@@ -439,17 +439,6 @@
           }
           updateQuote(getSequenceQuote(todayQuoteIdx), isNewToday, true);
           todayQuoteIdx = 0;
-          const elFrame = elQotd.parentElement;
-          if (elFrame) {
-            let tallest = 0;
-            new ResizeObserver(() => {
-              const h = elQotd.offsetHeight;
-              if (h <= tallest)
-                return;
-              tallest = h;
-              elFrame.style.setProperty("--qotd-tallest", `${h}px`);
-            }).observe(elQotd);
-          }
           elQotd.addEventListener("click", () => {
             if (window.getSelection()?.toString())
               return;
