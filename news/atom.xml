@@ -34,14 +34,29 @@
 
   
   <entry>
+    <title>29. Study demonstrates potential anti-aging effect in GLP-1 drugs</title>
+    <id>https://lzon.ca/news/29</id>
+    <link href="https://www.universityofcalifornia.edu/news/new-study-shows-popular-glp-1-weight-loss-drug-may-slow-biological-aging"/>
+    <published>2026-10-19T12:00:00Z</published>
+    <updated>2026-10-19T12:00:00Z</updated>
+    <author><name>Lzon</name></author>
+    <content type="html" xml:base="https://lzon.ca/news/news-000029-glp1-aging/">&lt;p&gt;Researchers from the University of California analyzed data from a recent study to determine if semaglutide had anti aging effects. They discovered that study participants who received the drug had non-trivially improved markers of biological aging.&lt;/p&gt;
+&lt;p&gt;As with any study of this kind, It’s difficult to untangle the direct effects of the drug and the lifestyle improvements that it encourages. I myself lost a lot of weight without medical intervention, just a lot of personal effort and a change in diet. My bias is to believe that for most people this is enough, and that becoming dependent on a pharma corporation for your health should be avoided.&lt;/p&gt;
+</content>
+  </entry>
+
+  
+
+  
+  <entry>
     <title>28. Waymo to expand Robo-taxi service into Canada</title>
     <id>https://lzon.ca/news/28</id>
     <link href="https://techcrunch.com/2026/10/16/waymos-robotaxis-are-headed-to-canada/"/>
     <published>2026-10-19T12:00:00Z</published>
     <updated>2026-10-19T12:00:00Z</updated>
     <author><name>Lzon</name></author>
-    <content type="html" xml:base="https://lzon.ca/news/news-000028-waymos-robotaxis-canada/">&lt;p&gt;Alphabet’s Robo-taxi company Waymo announced their plan to expand services into Canada. Until now the company has only operated in a limited number of USA metro areas. Only recently have they announced any plans for further expansion.&lt;/p&gt;
-&lt;p&gt;The rollout of this and other such services will depend entirely on progress in self-driving technology. While I fully believe that automated vehicles will become widespread over the next decade or two, the rollout is definitely slower than initially anticipated. CPG Grey’s &lt;a rel=&quot;noopener external&quot; target=&quot;_blank&quot; href=&quot;https://www.youtube.com/watch?v=7Pq-S557XQU&quot;&gt;famous video on the subject&lt;/a&gt; demonstrates this well.&lt;/p&gt;
+    <content type="html" xml:base="https://lzon.ca/news/news-000028-waymos-robotaxis-canada/">&lt;p&gt;Alphabet’s Robo-taxi company Waymo announced their plan to expand services into Canada. Until now the company has only operated in a limited number of American metro areas. They have only recently began announcing their plans for further expansion.&lt;/p&gt;
+&lt;p&gt;Waymo’s growth, and the growth of other robo-taxi services will depend entirely on further progress in self-driving technology. While I fully believe that automated vehicles will become widespread over the next decade or two, the rollout is definitely slower than initially anticipated. CPG Grey’s &lt;a rel=&quot;noopener external&quot; target=&quot;_blank&quot; href=&quot;https://www.youtube.com/watch?v=7Pq-S557XQU&quot;&gt;famous video on the subject&lt;/a&gt; demonstrates this point well.&lt;/p&gt;
 </content>
   </entry>
 
@@ -55,10 +70,10 @@
     <published>2026-10-17T12:00:00Z</published>
     <updated>2026-10-17T12:00:00Z</updated>
     <author><name>Lzon</name></author>
-    <content type="html" xml:base="https://lzon.ca/news/news-000027-rtx-5090-not-carried/">&lt;p&gt;The american computer retailer Micro Center is indicating that they are no longer recieving new RTX 5090 graphics cards from any of their OEM’s. This follows from a recent rumor that NVIDIA stopped supplying any of their GB202 chips for consumer cards. The GB202 being the chip that is used in the RTX 5090.&lt;/p&gt;
+    <content type="html" xml:base="https://lzon.ca/news/news-000027-rtx-5090-not-carried/">&lt;p&gt;The American computer retailer Micro Center is indicating that they are no longer receiving new RTX 5090 graphics cards from any of their suppliers. This follows from a recent rumor that NVIDIA stopped supplying any of their GB202 chips for consumer cards. The &lt;a rel=&quot;noopener external&quot; target=&quot;_blank&quot; href=&quot;https://en.wikipedia.org/wiki/Blackwell_(microarchitecture)&quot;&gt;GB202&lt;/a&gt; being the chip that is used in the RTX 5090.&lt;/p&gt;
 &lt;p&gt;Without an official statement from NVIDIA the obvious assumption to make is that they want to allocate all GB202 chip production to enterprise cards, since those can be sold for a much higher margin.&lt;/p&gt;
 &lt;p&gt;I think this is a consequence of the massive capital spending on AI data centers. I’m not a financial expert but at surface level it very much seems as though these investments are irrational and will have sweeping economic consequences once the price correction occurs.&lt;/p&gt;
-&lt;p&gt;And as a gamer and PC enthusiast this is very dissappointing. While not the end-all-be-all of the hobby, it was nice being able to build and upgrade relatively powerful PC’s for affordable prices. For the time being at, least seems to be no longer possible.&lt;/p&gt;
+&lt;p&gt;And as a gamer and PC enthusiast this is very disappointing. While not the end-all-be-all of the hobby, it was nice being able to build and upgrade relatively powerful PC’s for affordable prices. For the time being at, least seems to be no longer possible.&lt;/p&gt;
 </content>
   </entry>
 

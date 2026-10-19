@@ -13,7 +13,7 @@
   <generator uri="https://www.getzola.org/">Zola</generator>
 
   
-  <updated>2026-10-18T12:00:00Z</updated>
+  <updated>2026-10-19T12:00:00Z</updated>
 
   
   
@@ -29,6 +29,20 @@
   
 
   
+
+  
+
+  
+  <entry>
+    <title>200. lzon.ca&#x2F;quotes</title>
+    <id>https://lzon.ca/quotes/#200</id>
+    <link href="https://lzon.ca/quotes/"/>
+    <published>2026-10-19T12:00:00Z</published>
+    <updated>2026-10-19T12:00:00Z</updated>
+    <author><name>Lzon</name></author>
+    <category term="quote"/>
+    <summary type="html">Our doubts are traitors and make us lose the good we oft might win by fearing to attempt.&lt;br/&gt;- William Shakespeare (Measure for Measure I)</summary>
+  </entry>
 
   
 
