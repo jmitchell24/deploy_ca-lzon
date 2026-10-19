@@ -784,8 +784,11 @@
       const elBtnSecretsOff = document.getElementById("btn-secrets-off");
       if (!elBtnSecretsOn || !elBtnSecretsOff)
         return;
-      if (elSecrets.length > 0)
+      if (elSecrets.length > 0) {
         elSecretsDiv?.classList.toggle("display-none", false);
+        document.getElementById("settings-icon-colors")?.toggleAttribute("hidden", true);
+        document.getElementById("settings-icon-secrets")?.toggleAttribute("hidden", false);
+      }
       if (elSecretTexts.length == 0)
         return;
       console.log(`${elSecretTexts.length} cipher texts`);
