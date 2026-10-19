@@ -817,9 +817,10 @@
   function initTree() {
     document.addEventListener("click", (e) => {
       const head = e.target?.closest(".tree-node-head");
-      if (!head)
+      const node = head?.closest("li");
+      if (!node || node.classList.contains("tree-node-fixed"))
         return;
-      head.closest("li")?.classList.toggle("open");
+      node.classList.toggle("open");
     });
   }
 
