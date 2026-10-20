@@ -8,11 +8,20 @@
       <generator>Zola</generator>
       <language>en</language>
       <atom:link href="https://lzon.ca/quotes/rss.xml" rel="self" type="application/rss+xml"/>
-      <lastBuildDate>Mon, 19 Oct 2026 12:00:00 +0000</lastBuildDate>
+      <lastBuildDate>Tue, 20 Oct 2026 12:00:00 +0000</lastBuildDate>
       
       
       
       
+      <item>
+          <title>201. lzon.ca&#x2F;quotes</title>
+          <pubDate>Tue, 20 Oct 2026 12:00:00 +0000</pubDate>
+          <author>Lzon</author>
+          <link>https://lzon.ca/quotes/</link>
+          <guid isPermaLink="false">https://lzon.ca/quotes/#201</guid>
+          <category>quote</category>
+          <description>The dwarf sees farther than the giant, when he has the giant’s shoulders to mount on.&lt;br/&gt;- Samuel Coleridge (Friends VIII)</description>
+      </item>
       <item>
           <title>200. lzon.ca&#x2F;quotes</title>
           <pubDate>Mon, 19 Oct 2026 12:00:00 +0000</pubDate>

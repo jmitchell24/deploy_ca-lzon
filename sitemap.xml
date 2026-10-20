@@ -413,7 +413,7 @@
     </url>
     <url>
         <loc>https://lzon.ca/more/now/</loc>
-        <lastmod>2026-08-28</lastmod>
+        <lastmod>2026-10-20</lastmod>
     </url>
     <url>
         <loc>https://lzon.ca/more/uses/</loc>
@@ -568,6 +568,10 @@
     <url>
         <loc>https://lzon.ca/news/news-000029-glp1-aging/</loc>
         <lastmod>2026-10-19</lastmod>
+    </url>
+    <url>
+        <loc>https://lzon.ca/news/news-000030-waymo-crashes/</loc>
+        <lastmod>2026-10-20</lastmod>
     </url>
     <url>
         <loc>https://lzon.ca/news/page/1/</loc>
@@ -1816,6 +1820,10 @@
     <url>
         <loc>https://lzon.ca/quotes/quotes-000200-shakespeare/</loc>
         <lastmod>2026-10-19</lastmod>
+    </url>
+    <url>
+        <loc>https://lzon.ca/quotes/quotes-000201-coleridge/</loc>
+        <lastmod>2026-10-20</lastmod>
     </url>
     <url>
         <loc>https://lzon.ca/toys/</loc>
