@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
+    <channel>
+      <title>
+        lzon.ca - Today I Learned</title>
+      <link>https://lzon.ca/til/</link>
+      <description></description>
+      <generator>Zola</generator>
+      <language>en</language>
+      <atom:link href="https://lzon.ca/til/rss.xml" rel="self" type="application/rss+xml"/>
+      
+      
+      
+      
+      
+    </channel>
+</rss>
