@@ -13,7 +13,7 @@
   <generator uri="https://www.getzola.org/">Zola</generator>
 
   
-  <updated>2026-10-21T12:00:00Z</updated>
+  <updated>2026-10-22T12:00:00Z</updated>
 
   
   
@@ -32,6 +32,24 @@
   
 
   
+
+  
+
+  
+  <entry>
+    <title>2. A 3D scan of Nicolas Cage’s skull was used in the 2007 film Ghost Rider.</title>
+    <id>https://lzon.ca/trivia/2</id>
+    <link href="https://www.cbr.com/nicolas-cage-ghost-rider-secret-skull-abs-skin/"/>
+    <published>2026-10-22T12:00:00Z</published>
+    <updated>2026-10-22T12:00:00Z</updated>
+    <author><name>Lzon</name></author>
+    
+    <content type="html" xml:base="https://lzon.ca/trivia/trivia-000002-my-title/">
+&lt;p&gt;For his starring roll in 2007’s Ghost Rider a full 3D scan of Nicolas Cage’s body was
+taken by the special effects team. They used the scan to help create Cage’s immolated
+super-hero form, including the shape of the flame-covered skull.&lt;/p&gt;
+</content>
+  </entry>
 
   
 

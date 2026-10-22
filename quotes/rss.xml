@@ -8,7 +8,7 @@
       <generator>Zola</generator>
       <language>en</language>
       <atom:link href="https://lzon.ca/quotes/rss.xml" rel="self" type="application/rss+xml"/>
-      <lastBuildDate>Wed, 21 Oct 2026 12:00:00 +0000</lastBuildDate>
+      <lastBuildDate>Thu, 22 Oct 2026 12:00:00 +0000</lastBuildDate>
       
       
       
@@ -16,6 +16,15 @@
       
       
       
+      <item>
+          <title>203. lzon.ca&#x2F;quotes</title>
+          <pubDate>Thu, 22 Oct 2026 12:00:00 +0000</pubDate>
+          <author>Lzon</author>
+          <link>https://lzon.ca/quotes/</link>
+          <guid isPermaLink="false">https://lzon.ca/quotes/#203</guid>
+          <category>quote</category>
+          <description>What wound did ever heal but by degrees?&lt;br/&gt;- Shakespeare (Othello II)</description>
+      </item>
       <item>
           <title>202. lzon.ca&#x2F;quotes</title>
           <pubDate>Wed, 21 Oct 2026 12:00:00 +0000</pubDate>

@@ -8,7 +8,7 @@
       <generator>Zola</generator>
       <language>en</language>
       <atom:link href="https://lzon.ca/trivia/rss.xml" rel="self" type="application/rss+xml"/>
-      <lastBuildDate>Wed, 21 Oct 2026 12:00:00 +0000</lastBuildDate>
+      <lastBuildDate>Thu, 22 Oct 2026 12:00:00 +0000</lastBuildDate>
       
       
       
@@ -16,6 +16,18 @@
       
       
       
+      <item>
+          <title>2. A 3D scan of Nicolas Cage’s skull was used in the 2007 film Ghost Rider.</title>
+          <pubDate>Thu, 22 Oct 2026 12:00:00 +0000</pubDate>
+          <author>Lzon</author>
+          <link>https://www.cbr.com/nicolas-cage-ghost-rider-secret-skull-abs-skin/</link>
+          <guid isPermaLink="false">https://lzon.ca/trivia/2</guid>
+          <description xml:base="https://lzon.ca/trivia/trivia-000002-my-title/">
+&lt;p&gt;For his starring roll in 2007’s Ghost Rider a full 3D scan of Nicolas Cage’s body was
+taken by the special effects team. They used the scan to help create Cage’s immolated
+super-hero form, including the shape of the flame-covered skull.&lt;/p&gt;
+</description>
+      </item>
       <item>
           <title>1. The Batman effect describes a spontaneous event that triggers prosocial behavior.</title>
           <pubDate>Wed, 21 Oct 2026 12:00:00 +0000</pubDate>
