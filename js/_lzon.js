@@ -956,6 +956,21 @@
     });
   }
 
+  // ts/random-link.ts
+  function initRandomLinks() {
+    document.addEventListener("DOMContentLoaded", () => {
+      document.querySelectorAll("a.random-link[data-pages]").forEach((el) => {
+        fetch(el.dataset.pages).then((res) => res.json()).then((data) => {
+          const others = data.pages.filter((p) => p.path !== location.pathname);
+          const pool = others.length > 0 ? others : data.pages;
+          if (pool.length === 0)
+            return;
+          el.href = pool[Math.floor(Math.random() * pool.length)].path;
+        }).catch((err) => console.error("random link:", err));
+      });
+    });
+  }
+
   // ts/_lzon.ts
   initMatomo();
   initSlideshow();
@@ -969,4 +984,5 @@
   initCollapse();
   initToyP5();
   initToasts();
+  initRandomLinks();
 })();

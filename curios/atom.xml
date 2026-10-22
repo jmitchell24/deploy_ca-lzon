@@ -22,6 +22,9 @@
   
   
   
+  
+  
+  
 
   
   
@@ -40,6 +43,7 @@
     <published>2026-09-02T12:00:00Z</published>
     <updated>2026-09-02T12:00:00Z</updated>
     <author><name>Lzon</name></author>
+    
     <content type="html" xml:base="https://lzon.ca/curios/curio-000038-ice-engine-sim/">&lt;p&gt;This is a very interesting in-browser simulation of high performance internal combustion engines.&lt;/p&gt;
 &lt;p&gt;I’m not much of a car enthusiast, but I am amazed by the engineering and design of high-end sports cars.&lt;/p&gt;
 &lt;p&gt;If you want to read more about how this simulation was made check out the accompanying blog post &lt;a rel=&quot;noopener external&quot; target=&quot;_blank&quot; href=&quot;https://ma.ttias.be/9000-rpm/&quot;&gt;here&lt;/a&gt;.&lt;/p&gt;
@@ -56,6 +60,7 @@
     <published>2026-08-05T12:00:00Z</published>
     <updated>2026-08-05T12:00:00Z</updated>
     <author><name>Lzon</name></author>
+    
     <content type="html" xml:base="https://lzon.ca/curios/curio-000037-syntax-across-languages-one-big-page/">&lt;p&gt;This is a large reference page I found for the syntax of many different programming languages. The layout is really useful for comparing specific syntax elements across different languages.&lt;/p&gt;
 &lt;p&gt;I’ve been using it while brainstorming for my own programming language, &lt;a href=&quot;/algoma&quot;&gt;Alogma&lt;/a&gt;.&lt;/p&gt;
 </content>
@@ -71,6 +76,7 @@
     <published>2026-07-02T12:00:00Z</published>
     <updated>2026-07-02T12:00:00Z</updated>
     <author><name>Lzon</name></author>
+    
     <content type="html" xml:base="https://lzon.ca/curios/curio-000036-spurious-correlations/">&lt;p&gt;A site that perfectly demonstrates the common phrase, “Correlation does not imply causation”.&lt;/p&gt;
 </content>
   </entry>
@@ -85,6 +91,7 @@
     <published>2026-05-21T12:00:00Z</published>
     <updated>2026-05-21T12:00:00Z</updated>
     <author><name>Lzon</name></author>
+    
     <content type="html" xml:base="https://lzon.ca/curios/curio-000035-six-degrees-of-wikipedia/">&lt;p&gt;A fun little web app. It finds the shortest possible of sequence of links between two different Wikipedia pages.&lt;/p&gt;
 </content>
   </entry>
@@ -99,6 +106,7 @@
     <published>2026-05-18T12:00:00Z</published>
     <updated>2026-05-18T12:00:00Z</updated>
     <author><name>Lzon</name></author>
+    
     <content type="html" xml:base="https://lzon.ca/curios/curio-000034-nibble-wikipedia/">&lt;p&gt;You probably already know that a byte is 8 bits, but have you ever heard of a ‘nibble’? A nibble is 4 bits. A few older chip architectures used it, but modern CPU’s typically use a 64-bit word length.&lt;/p&gt;
 &lt;p&gt;It’s not particularly relevant anymore. I personally had to use nibbles when I was writing my Gameboy emulator.&lt;/p&gt;
 </content>
@@ -114,6 +122,7 @@
     <published>2026-05-12T12:00:00Z</published>
     <updated>2026-05-12T12:00:00Z</updated>
     <author><name>Lzon</name></author>
+    
     <content type="html" xml:base="https://lzon.ca/curios/curio-000033-taken/">&lt;p&gt;A beautiful website that demonstrates what personal information a web server can collect from you just for opening a web page.&lt;/p&gt;
 &lt;p&gt;I’ve seen a few similar projects like this before, but this is by &lt;em&gt;far&lt;/em&gt; the best one I’ve ever seen.&lt;/p&gt;
 </content>
@@ -129,6 +138,7 @@
     <published>2026-05-01T12:00:00Z</published>
     <updated>2026-05-01T12:00:00Z</updated>
     <author><name>Lzon</name></author>
+    
     <content type="html" xml:base="https://lzon.ca/curios/curio-000032-crafting-interpreters/">&lt;p&gt;Robert Nystrom’s guide for creating a programming language from scratch.
 It’s fantastic, both his writing and code are very accessible. Freely available on his site,
 also published as a book.&lt;/p&gt;
@@ -145,6 +155,7 @@ also published as a book.&lt;/p&gt;
     <published>2026-04-29T12:00:00Z</published>
     <updated>2026-04-29T12:00:00Z</updated>
     <author><name>Lzon</name></author>
+    
     <content type="html" xml:base="https://lzon.ca/curios/curio-000031-passwords-vs-pass-phrases/">&lt;p&gt;An old CodingHorror post advocating for pass phrases over passwords.&lt;/p&gt;
 </content>
   </entry>
@@ -159,6 +170,7 @@ also published as a book.&lt;/p&gt;
     <published>2026-04-25T12:00:00Z</published>
     <updated>2026-04-25T12:00:00Z</updated>
     <author><name>Lzon</name></author>
+    
     <content type="html" xml:base="https://lzon.ca/curios/curio-000030-brainwash-an-executive-today/">&lt;p&gt;An enlightening story. It demonstrates how executives are manipulated into participating in economic hype bubbles such as AI, or otherwise.&lt;/p&gt;
 </content>
   </entry>
@@ -173,6 +185,7 @@ also published as a book.&lt;/p&gt;
     <published>2026-04-24T12:00:00Z</published>
     <updated>2026-04-24T12:00:00Z</updated>
     <author><name>Lzon</name></author>
+    
     <content type="html" xml:base="https://lzon.ca/curios/curio-000029-motivation-in-hard-times/">&lt;p&gt;A video by John Green about the nature of motivation. I agree with what he has to say on the matter.&lt;/p&gt;
 </content>
   </entry>
@@ -187,6 +200,7 @@ also published as a book.&lt;/p&gt;
     <published>2026-04-22T12:00:00Z</published>
     <updated>2026-04-22T12:00:00Z</updated>
     <author><name>Lzon</name></author>
+    
     <content type="html" xml:base="https://lzon.ca/curios/curio-000028-understand-by-ted-chiang/">&lt;p&gt;A sci-fi novelette by Ted Chiang. Very short, and a great read.&lt;/p&gt;
 </content>
   </entry>
@@ -201,6 +215,7 @@ also published as a book.&lt;/p&gt;
     <published>2026-04-20T12:00:00Z</published>
     <updated>2026-04-20T12:00:00Z</updated>
     <author><name>Lzon</name></author>
+    
     <content type="html" xml:base="https://lzon.ca/curios/curio-000027-waves-particles/">&lt;p&gt;A fun peice of interactive digital art.&lt;/p&gt;
 </content>
   </entry>
@@ -215,6 +230,7 @@ also published as a book.&lt;/p&gt;
     <published>2026-04-18T12:00:00Z</published>
     <updated>2026-04-18T12:00:00Z</updated>
     <author><name>Lzon</name></author>
+    
     <content type="html" xml:base="https://lzon.ca/curios/curio-000026-the-last-question-by-isaac-asimov/">&lt;p&gt;A short scifi story, I’ve read it many times. Well worth your time.&lt;/p&gt;
 </content>
   </entry>
@@ -229,6 +245,7 @@ also published as a book.&lt;/p&gt;
     <published>2026-04-06T12:00:00Z</published>
     <updated>2026-04-06T12:00:00Z</updated>
     <author><name>Lzon</name></author>
+    
     <content type="html" xml:base="https://lzon.ca/curios/curio-000025-the-truth-dies-on-the-way-up/">&lt;p&gt;An interesting article about the nature of being an elite. Put simply, the wealthier and more powerful you become the more separated you become from the reality of everyone else in society. This is harmful for the individual as well as society which is subject to their whims.&lt;/p&gt;
 </content>
   </entry>
@@ -243,6 +260,7 @@ also published as a book.&lt;/p&gt;
     <published>2026-04-05T12:00:00Z</published>
     <updated>2026-04-05T12:00:00Z</updated>
     <author><name>Lzon</name></author>
+    
     <content type="html" xml:base="https://lzon.ca/curios/curio-000024-the-submarine/">&lt;p&gt;Paul Graham’s story of how he came to learn the value of marketing and public relations. The article specifically speaks to the use of PR in the news media.&lt;/p&gt;
 &lt;p&gt;I was already fairly paranoid about seeing ulterior motives in the news, so this served to confirm my suspicions.&lt;/p&gt;
 </content>
@@ -258,6 +276,7 @@ also published as a book.&lt;/p&gt;
     <published>2026-02-19T12:00:00Z</published>
     <updated>2026-02-19T12:00:00Z</updated>
     <author><name>Lzon</name></author>
+    
     <content type="html" xml:base="https://lzon.ca/curios/curio-000023-why-i-don-t-think-agi-is-imminent/">&lt;p&gt;A very thorough explanation for why LLM technology will not lead to AGI.&lt;/p&gt;
 </content>
   </entry>
@@ -272,6 +291,7 @@ also published as a book.&lt;/p&gt;
     <published>2026-01-30T12:00:00Z</published>
     <updated>2026-01-30T12:00:00Z</updated>
     <author><name>Lzon</name></author>
+    
     <content type="html" xml:base="https://lzon.ca/curios/curio-000022-the-birth-death-of-javascript/">&lt;p&gt;An old satirical TED-style presentation about the future of JavaScript and web assembly. I remember seeing it years ago and thought it would be worth sharing.&lt;/p&gt;
 </content>
   </entry>
@@ -286,6 +306,7 @@ also published as a book.&lt;/p&gt;
     <published>2026-01-26T12:00:00Z</published>
     <updated>2026-01-26T12:00:00Z</updated>
     <author><name>Lzon</name></author>
+    
     <content type="html" xml:base="https://lzon.ca/curios/curio-000021-the-future-of-work-when-work-is-meaningless/">&lt;p&gt;A good take on the current effect that AI is having on the nature of employment, as well as predictions for the future.&lt;/p&gt;
 </content>
   </entry>
@@ -300,6 +321,7 @@ also published as a book.&lt;/p&gt;
     <published>2026-01-25T12:00:00Z</published>
     <updated>2026-01-25T12:00:00Z</updated>
     <author><name>Lzon</name></author>
+    
     <content type="html" xml:base="https://lzon.ca/curios/curio-000020-manna-by-marshall-brain/">&lt;p&gt;A good short scifi story by Marshall Brain.&lt;/p&gt;
 &lt;p&gt;I like to re-read this every so often. I have a habit of measuring news about automation against the timeline in the story, “when in Manna did this start happening”.&lt;/p&gt;
 &lt;p&gt;The second half is a bit too fanciful for my taste, so I usually skip it when re-reading.&lt;/p&gt;
@@ -316,6 +338,7 @@ also published as a book.&lt;/p&gt;
     <published>2026-01-24T12:00:00Z</published>
     <updated>2026-01-24T12:00:00Z</updated>
     <author><name>Lzon</name></author>
+    
     <content type="html" xml:base="https://lzon.ca/curios/curio-000019-what-is-soul-fatigue/">&lt;p&gt;Soul Fatigue as describe by the author is something I can definitely relate to. Fortunately I do believe its something that can be overcome, but it isn’t easy.&lt;/p&gt;
 </content>
   </entry>
@@ -330,6 +353,7 @@ also published as a book.&lt;/p&gt;
     <published>2026-01-11T12:00:00Z</published>
     <updated>2026-01-11T12:00:00Z</updated>
     <author><name>Lzon</name></author>
+    
     <content type="html" xml:base="https://lzon.ca/curios/curio-000018-scientists-find-exercise-rivals-therapy-for-depression/">&lt;p&gt;I have struggled with depression for a long time and I can 100% attest to the effectiveness of exercise. There have been days in which I convinced myself to work out just by reminding myself that it would lift my mood.&lt;/p&gt;
 </content>
   </entry>
@@ -344,6 +368,7 @@ also published as a book.&lt;/p&gt;
     <published>2026-01-03T12:00:00Z</published>
     <updated>2026-01-03T12:00:00Z</updated>
     <author><name>Lzon</name></author>
+    
     <content type="html" xml:base="https://lzon.ca/curios/curio-000017-are-you-already-a-cyborg/">&lt;p&gt;I suppose this is somewhat a matter of opinion, but its an idea that I definitely agree with.&lt;/p&gt;
 &lt;p&gt;The medium of communication between a person and their computer is hands, eyes, ears, etc… This doesn’t &lt;em&gt;feel&lt;/em&gt; like it qualifies as cyborg, but if that same computer was wired directly into the brain it most definitely would. The article (and I) argue that the meaningful difference is ‘bandwidth’, not the medium itself.&lt;/p&gt;
 </content>
@@ -359,6 +384,7 @@ also published as a book.&lt;/p&gt;
     <published>2025-12-25T12:00:00Z</published>
     <updated>2025-12-25T12:00:00Z</updated>
     <author><name>Lzon</name></author>
+    
     <content type="html" xml:base="https://lzon.ca/curios/curio-000016-vanitiy-activities/">&lt;p&gt;An interesting piece of social theory. I definitely see this pattern in others, and in myself as well.&lt;/p&gt;
 &lt;p&gt;I think it’s a valid concept. I don’t see it as being necessarily a bad thing, but it’s certainly worthwhile to be cognizant of it.&lt;/p&gt;
 </content>
@@ -374,6 +400,7 @@ also published as a book.&lt;/p&gt;
     <published>2025-12-19T12:00:00Z</published>
     <updated>2025-12-19T12:00:00Z</updated>
     <author><name>Lzon</name></author>
+    
     <content type="html" xml:base="https://lzon.ca/curios/curio-000015-is-everything-a-religion/">&lt;p&gt;A SlateStarCodex post about how often sub-cultures and social movements get called ‘religions’.&lt;/p&gt;
 &lt;p&gt;A good read, as always.&lt;/p&gt;
 </content>
@@ -389,6 +416,7 @@ also published as a book.&lt;/p&gt;
     <published>2025-12-18T12:00:00Z</published>
     <updated>2025-12-18T12:00:00Z</updated>
     <author><name>Lzon</name></author>
+    
     <content type="html" xml:base="https://lzon.ca/curios/curio-000014-no-graphics-api/">&lt;p&gt;A history of graphics APIs. I remember teaching myself OpenGL in high school so I knew a fair bit of the history of this subject.&lt;/p&gt;
 &lt;p&gt;If you have any interest in computer graphics this is well worth a read.&lt;/p&gt;
 </content>
@@ -404,6 +432,7 @@ also published as a book.&lt;/p&gt;
     <published>2025-12-16T12:00:00Z</published>
     <updated>2025-12-16T12:00:00Z</updated>
     <author><name>Lzon</name></author>
+    
     <content type="html" xml:base="https://lzon.ca/curios/curio-000013-the-history-of-xerox/">&lt;p&gt;The story of Xerox through the early years of the personal computer. It’s a fascinating story and well worth your time.&lt;/p&gt;
 </content>
   </entry>
@@ -418,6 +447,7 @@ also published as a book.&lt;/p&gt;
     <published>2025-12-15T12:00:00Z</published>
     <updated>2025-12-15T12:00:00Z</updated>
     <author><name>Lzon</name></author>
+    
     <content type="html" xml:base="https://lzon.ca/curios/curio-000012-fix-your-timestep/">&lt;p&gt;A very useful article for anyone interested in developing video games, or any other kind of real time system.&lt;/p&gt;
 </content>
   </entry>
@@ -432,6 +462,7 @@ also published as a book.&lt;/p&gt;
     <published>2025-12-12T12:00:00Z</published>
     <updated>2025-12-12T12:00:00Z</updated>
     <author><name>Lzon</name></author>
+    
     <content type="html" xml:base="https://lzon.ca/curios/curio-000011-the-copenhagen-trap/">&lt;p&gt;An article about how bad incentives lead to inaction.&lt;/p&gt;
 </content>
   </entry>
@@ -446,6 +477,7 @@ also published as a book.&lt;/p&gt;
     <published>2025-11-24T12:00:00Z</published>
     <updated>2025-11-24T12:00:00Z</updated>
     <author><name>Lzon</name></author>
+    
     <content type="html" xml:base="https://lzon.ca/curios/curio-000010-a-history-of-laptop-displays/">&lt;p&gt;An interesting history of older computer display technology. I’m a display nerd, a ‘pixel peeper’ so of course I had to read when I found it.&lt;/p&gt;
 </content>
   </entry>
@@ -460,6 +492,7 @@ also published as a book.&lt;/p&gt;
     <published>2025-07-23T12:00:00Z</published>
     <updated>2025-07-23T12:00:00Z</updated>
     <author><name>Lzon</name></author>
+    
     <content type="html" xml:base="https://lzon.ca/curios/curio-000009-flash-of-unstyled-content-fouc/">&lt;p&gt;An apparently well known issue in web development. I encountered this issue while teaching myself web development and have come to realize that it is a perennial concern. And in my personal experience is something that needs to be actively managed (it seems to creep back into my projects if I’m not careful).&lt;/p&gt;
 </content>
   </entry>
@@ -474,6 +507,7 @@ also published as a book.&lt;/p&gt;
     <published>2025-07-15T12:00:00Z</published>
     <updated>2025-07-15T12:00:00Z</updated>
     <author><name>Lzon</name></author>
+    
     <content type="html" xml:base="https://lzon.ca/curios/curio-000008-let-me-pay-for-firefox/">&lt;p&gt;A lament regarding the state of Mozilla corporation and its flagship product: the Firefox web browser.&lt;/p&gt;
 &lt;p&gt;The financial structure of Mozilla is concerning, it appears as though it is largely propped up by its only real competitor Google.&lt;/p&gt;
 &lt;p&gt;As much as I &lt;em&gt;want&lt;/em&gt; to believe that Firefox could be sustained as a paid product, I just don’t see that as being realistic. Asking anyone to pay for software is difficult, and even moresoe for web browsers since there is a deeply ingrained expectation that they are free to use.&lt;/p&gt;
@@ -490,6 +524,7 @@ also published as a book.&lt;/p&gt;
     <published>2025-06-20T12:00:00Z</published>
     <updated>2025-06-20T12:00:00Z</updated>
     <author><name>Lzon</name></author>
+    
     <content type="html" xml:base="https://lzon.ca/curios/curio-000007-writing-toy-software-is-a-joy/">&lt;p&gt;There seems to be two kinds of programmers: those who care only for the final product of their work, and those who also enjoy the process itself.&lt;/p&gt;
 &lt;p&gt;I’m in the latter camp, as well as this author. I get a lot of satisfaction the experience of computing.&lt;/p&gt;
 </content>
@@ -505,6 +540,7 @@ also published as a book.&lt;/p&gt;
     <published>2025-06-09T12:00:00Z</published>
     <updated>2025-06-09T12:00:00Z</updated>
     <author><name>Lzon</name></author>
+    
     <content type="html" xml:base="https://lzon.ca/curios/curio-000006-the-intelligence-curse/">&lt;p&gt;A speculative article about the near-term future of AI technology, and the impacts it will have on the economy and society. It has a similar style to &lt;a rel=&quot;noopener external&quot; target=&quot;_blank&quot; href=&quot;https://ai-2027.com/&quot;&gt;AI 2027&lt;/a&gt;, but perhaps less well known.&lt;/p&gt;
 &lt;p&gt;The name is a riff on &lt;a rel=&quot;noopener external&quot; target=&quot;_blank&quot; href=&quot;https://en.wikipedia.org/wiki/Resource_curse&quot;&gt;Resource Curse&lt;/a&gt;, which describes what happens to citizens in a resource-rich nation. Wealth is generated from the resource, and less so from the labor of the citizens, which leads to their dis-empowerment due to lack of leverage.&lt;/p&gt;
 &lt;p&gt;The article warns that advanced AI can dis-empower people in a similar way.&lt;/p&gt;
@@ -521,6 +557,7 @@ also published as a book.&lt;/p&gt;
     <published>2025-05-29T12:00:00Z</published>
     <updated>2025-05-29T12:00:00Z</updated>
     <author><name>Lzon</name></author>
+    
     <content type="html" xml:base="https://lzon.ca/curios/curio-000005-build-your-own-text-editor/">&lt;p&gt;A very approachable guide for building your own terminal-based text editor from scratch. I haven’t made one for myself yet, but I did learn a lot about how command line terminals work while reading this.&lt;/p&gt;
 </content>
   </entry>
@@ -535,6 +572,7 @@ also published as a book.&lt;/p&gt;
     <published>2025-05-28T12:00:00Z</published>
     <updated>2025-05-28T12:00:00Z</updated>
     <author><name>Lzon</name></author>
+    
     <content type="html" xml:base="https://lzon.ca/curios/curio-000004-windows-nt-vs-unix-a-design-comparison/">&lt;p&gt;An interesting technical deep dive that I found. It explains in detail the differences between modern Windows (NT kernel) and Unix.&lt;/p&gt;
 </content>
   </entry>
@@ -549,6 +587,7 @@ also published as a book.&lt;/p&gt;
     <published>2025-05-28T12:00:00Z</published>
     <updated>2025-05-28T12:00:00Z</updated>
     <author><name>Lzon</name></author>
+    
     <content type="html" xml:base="https://lzon.ca/curios/curio-000003-basic-hacks-for-kobo-e-readers/">&lt;p&gt;I really like e-readers, and e-ink displays. The good ones really do like a real printed page, and its great to read on them.&lt;/p&gt;
 &lt;p&gt;I also like how hack-able they are, especially compared to other modern consumer technology. Kobo’s specifically are very easy to work with.&lt;/p&gt;
 </content>
@@ -564,6 +603,7 @@ also published as a book.&lt;/p&gt;
     <published>2025-05-28T12:00:00Z</published>
     <updated>2025-05-28T12:00:00Z</updated>
     <author><name>Lzon</name></author>
+    
     <content type="html" xml:base="https://lzon.ca/curios/curio-000002-ship-software-that-does-nothing/">&lt;p&gt;A good article, with a very sound piece of advice. Getting to the point that you are able to ship your product, even if it literally does nothing, is an important step and worth taking just on its own. Doing so will pay dividends as the project grows.&lt;/p&gt;
 </content>
   </entry>
@@ -578,6 +618,7 @@ also published as a book.&lt;/p&gt;
     <published>2025-05-20T12:00:00Z</published>
     <updated>2025-05-20T12:00:00Z</updated>
     <author><name>Lzon</name></author>
+    
     <content type="html" xml:base="https://lzon.ca/curios/curio-000001-how-to-build-your-resume-with-an-ssg/">&lt;p&gt;An interesting and fun blog post about how the author built his resume using &lt;a rel=&quot;noopener external&quot; target=&quot;_blank&quot; href=&quot;https://getzola.org&quot;&gt;Zola&lt;/a&gt;.&lt;/p&gt;
 &lt;p&gt;I use Zola to build this site, and I like using it a lot. I also took the author’s lead and built a workflow for my own resume based on it.&lt;/p&gt;
 </content>

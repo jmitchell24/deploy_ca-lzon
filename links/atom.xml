@@ -22,6 +22,9 @@
   
   
   
+  
+  
+  
 
   
   
@@ -40,6 +43,7 @@
     <published>2026-05-25T12:00:00Z</published>
     <updated>2026-05-25T12:00:00Z</updated>
     <author><name>Lzon</name></author>
+    
     <content type="html" xml:base="https://lzon.ca/links/link-000050-starcitizen-billion-dollars/">&lt;p&gt;The Star Citizen project has now received over one billion dollars in funding. The game was initially slated for release in October 2014, after being revealed at GDC in October 2012. As of today it has been over 13 years since the announcement, which is nearly 5000 days.&lt;/p&gt;
 &lt;p&gt;This is my take:
 These funding milestones hardly count as news anymore. The game has a loyal fan-base who are playing the game regularly, and are committed to supporting the game financially on an on-going basis.&lt;/p&gt;
@@ -57,6 +61,7 @@ These funding milestones hardly count as news anymore. The game has a loyal fan-
     <published>2026-05-23T12:00:00Z</published>
     <updated>2026-05-23T12:00:00Z</updated>
     <author><name>Lzon</name></author>
+    
     <content type="html" xml:base="https://lzon.ca/links/link-000049-starbucks-ai-rollback/">&lt;p&gt;Starbucks is ending the use of an AI-based inventory manager that it began using in September 2025. The software was making too many mistakes, which included miscounting and mislabeling items. This decision comes after a multi year effort by CEO &lt;a rel=&quot;noopener external&quot; target=&quot;_blank&quot; href=&quot;https://en.wikipedia.org/wiki/Brian_Niccol&quot;&gt;Brian Niccol&lt;/a&gt; to increase efficiency of the company’s supply chain.&lt;/p&gt;
 &lt;p&gt;The developer of the software &lt;a rel=&quot;noopener external&quot; target=&quot;_blank&quot; href=&quot;https://www.nomad-go.com/&quot;&gt;NomadGo&lt;/a&gt; said in a statement to Reuters that it is, “continuously learning from customers and user feedback” to improve its products.&lt;/p&gt;
 &lt;p&gt;To me this appears to be a signal that the AI hype bubble is coming to an end but as &lt;a rel=&quot;noopener external&quot; target=&quot;_blank&quot; href=&quot;https://en.wikipedia.org/wiki/John_Maynard_Keynes&quot;&gt;John Maynard Keynes&lt;/a&gt; famously said&lt;/p&gt;
@@ -76,6 +81,7 @@ These funding milestones hardly count as news anymore. The game has a loyal fan-
     <published>2026-05-21T12:00:00Z</published>
     <updated>2026-05-21T12:00:00Z</updated>
     <author><name>Lzon</name></author>
+    
     <content type="html" xml:base="https://lzon.ca/links/link-000048-six-degrees-of-wikipedia/">&lt;p&gt;A fun little web app. It finds the shortest possible of sequence of links between two different Wikipedia pages.&lt;/p&gt;
 </content>
   </entry>
@@ -90,6 +96,7 @@ These funding milestones hardly count as news anymore. The game has a loyal fan-
     <published>2026-05-20T12:00:00Z</published>
     <updated>2026-05-20T12:00:00Z</updated>
     <author><name>Lzon</name></author>
+    
     <content type="html" xml:base="https://lzon.ca/links/link-000047-warhorse-lord-of-the-rings-rpg/">&lt;p&gt;The developer of Kingdom Come Deliverance has just announced that they are developing an officially licensed Lord of the Rings video game. It will be an open-world RPG.&lt;/p&gt;
 &lt;p&gt;I’m personally excited. I tried Kingdom Come Deliverance a few years ago and did enjoy it, but wasn’t able to get very far. The game has very complex sim-style game-play that I wasn’t able to fully engage with.&lt;/p&gt;
 &lt;p&gt;I’m hoping that they tone down this new title, to better appeal to a wider audience.&lt;/p&gt;
@@ -106,6 +113,7 @@ These funding milestones hardly count as news anymore. The game has a loyal fan-
     <published>2026-05-19T12:00:00Z</published>
     <updated>2026-05-19T12:00:00Z</updated>
     <author><name>Lzon</name></author>
+    
     <content type="html" xml:base="https://lzon.ca/links/link-000046-child-safety-privacy/">&lt;p&gt;The pornography conglomerate &lt;a rel=&quot;noopener external&quot; target=&quot;_blank&quot; href=&quot;https://en.wikipedia.org/wiki/Aylo&quot;&gt;Aylo&lt;/a&gt; (owner of PornHub, and formerly named MindGeek) has been lobbying in Canada and other countries &lt;strong&gt;for&lt;/strong&gt; operating system level age verification.&lt;/p&gt;
 &lt;p&gt;Why? Because this would absolve them of responsibility for age verification of their users. Obviously this is appalling, but I will admit that I’m somewhat impressed by their cleverness.&lt;/p&gt;
 &lt;p&gt;I believe implementing age verification at the operating system level is ridiculous and makes &lt;strong&gt;zero&lt;/strong&gt; sense. It also is a nightmare for user privacy and freedom on their computers. To force its use through regulation is wrong, period.&lt;/p&gt;
@@ -122,6 +130,7 @@ These funding milestones hardly count as news anymore. The game has a loyal fan-
     <published>2026-05-18T12:00:00Z</published>
     <updated>2026-05-18T12:00:00Z</updated>
     <author><name>Lzon</name></author>
+    
     <content type="html" xml:base="https://lzon.ca/links/link-000045-nibble-wikipedia/">&lt;p&gt;You probably already know that a byte is 8 bits, but have you ever heard of a ‘nibble’? A nibble is 4 bits. A few older chip architectures used it, but modern CPU’s typically use a 64-bit word length.&lt;/p&gt;
 &lt;p&gt;It’s not particularly relevant anymore. I personally had to use nibbles when I was writing my Gameboy emulator.&lt;/p&gt;
 </content>
@@ -137,6 +146,7 @@ These funding milestones hardly count as news anymore. The game has a loyal fan-
     <published>2026-05-16T12:00:00Z</published>
     <updated>2026-05-16T12:00:00Z</updated>
     <author><name>Lzon</name></author>
+    
     <content type="html" xml:base="https://lzon.ca/links/link-000044-15gb-gmail-ending/">&lt;p&gt;Google is experimenting with a reduction in the free storage on Gmail accounts. As they often do, they appear to be A/B testing the change. Some user reports suggest that the change is currently limited by region (mostly Africa). Other users are claiming that their new accounts have 5GB of storage, with the option to increase to 15GB after phone number verification.&lt;/p&gt;
 &lt;p&gt;It’s uncertain whether this was a response to an increase in service abuse, or the result of some internal financial pressures from within Google itself.&lt;/p&gt;
 </content>
@@ -152,6 +162,7 @@ These funding milestones hardly count as news anymore. The game has a loyal fan-
     <published>2026-05-14T12:00:00Z</published>
     <updated>2026-05-14T12:00:00Z</updated>
     <author><name>Lzon</name></author>
+    
     <content type="html" xml:base="https://lzon.ca/links/link-000043-cisco-layoffs/">&lt;p&gt;Cisco announced a 4000-person layoff, representing 5% of there total workforce.
 This coincides with the announcement that they have achieved revenue of $15.8 billion for the most recent financial quarter, which is a 12 percent increase year over year.&lt;/p&gt;
 </content>
@@ -167,6 +178,7 @@ This coincides with the announcement that they have achieved revenue of $15.8 bi
     <published>2026-05-12T12:00:00Z</published>
     <updated>2026-05-12T12:00:00Z</updated>
     <author><name>Lzon</name></author>
+    
     <content type="html" xml:base="https://lzon.ca/links/link-000042-taken/">&lt;p&gt;A beautiful website that demonstrates what personal information a web server can collect from you just for opening a web page.&lt;/p&gt;
 &lt;p&gt;I’ve seen a few similar projects like this before, but this is by &lt;em&gt;far&lt;/em&gt; the best one I’ve ever seen.&lt;/p&gt;
 </content>
@@ -182,6 +194,7 @@ This coincides with the announcement that they have achieved revenue of $15.8 bi
     <published>2026-05-11T12:00:00Z</published>
     <updated>2026-05-11T12:00:00Z</updated>
     <author><name>Lzon</name></author>
+    
     <content type="html" xml:base="https://lzon.ca/links/link-000041-pirates-playing-forza-horizon-6/">&lt;p&gt;Game pirates are already playing Forza Horizon 6, more than a week ahead of the title’s official release date.&lt;/p&gt;
 &lt;p&gt;This was made possible by copying the game’s preload install files, which were mistakenly distributed on Steam without encryption.&lt;/p&gt;
 &lt;p&gt;There was a similar incident back in March for the release of Death Stranding 2.&lt;/p&gt;
@@ -198,6 +211,7 @@ This coincides with the announcement that they have achieved revenue of $15.8 bi
     <published>2026-05-10T12:00:00Z</published>
     <updated>2026-05-10T12:00:00Z</updated>
     <author><name>Lzon</name></author>
+    
     <content type="html" xml:base="https://lzon.ca/links/link-000040-uk-opposing-age-verification/">&lt;p&gt;An open letter has been signed by prominent internet service companies which asks UK policymakers to not compromise the open web under the pretense of child safety. The new law has already been passed, and there is a legitimate concern that it will be used broadly to restrict internet access, and reduce online anonymity.&lt;/p&gt;
 &lt;p&gt;In my opinion this is a trojan horse, like many such laws that came before it. Child safety is being used as a pretense in order for a government to grant itself more power.&lt;/p&gt;
 </content>
@@ -213,6 +227,7 @@ This coincides with the announcement that they have achieved revenue of $15.8 bi
     <published>2026-05-08T12:00:00Z</published>
     <updated>2026-05-08T12:00:00Z</updated>
     <author><name>Lzon</name></author>
+    
     <content type="html" xml:base="https://lzon.ca/links/link-000039-tesla-recalls-cybertrucks/">&lt;p&gt;Tesla is recalling several hundred budget variant Cybertrucks.&lt;/p&gt;
 &lt;span id=&quot;continue-reading&quot;&gt;&lt;/span&gt;
 &lt;p&gt;A total of 173 Cybertrucks have a defect that could lead to the wheels coming off while driving. They are all the RWD variant, with 18-inch wheels, sold between March 21 2024 and November 25 2025.&lt;/p&gt;
@@ -230,6 +245,7 @@ This coincides with the announcement that they have achieved revenue of $15.8 bi
     <published>2026-05-07T12:00:00Z</published>
     <updated>2026-05-07T12:00:00Z</updated>
     <author><name>Lzon</name></author>
+    
     <content type="html" xml:base="https://lzon.ca/links/link-000038-steam-controller-reservation/">&lt;p&gt;Starting May 8th, Valve will implement a reservation queue for the Steam Controller.&lt;/p&gt;
 &lt;p&gt;These are the details:&lt;/p&gt;
 &lt;ul&gt;
@@ -253,6 +269,7 @@ This coincides with the announcement that they have achieved revenue of $15.8 bi
     <published>2026-05-06T12:00:00Z</published>
     <updated>2026-05-06T12:00:00Z</updated>
     <author><name>Lzon</name></author>
+    
     <content type="html" xml:base="https://lzon.ca/links/link-000037-ghostty/">&lt;p&gt;Mitchell Hashimoto, the developer of &lt;a rel=&quot;noopener external&quot; target=&quot;_blank&quot; href=&quot;https://ghostty.org/&quot;&gt;ghostty&lt;/a&gt; is moving the project away from Github. He was an enthusiastic user for many years but recent degredation of the platform has pushed him away. Github has
 recently experienced significant issues with downtime, which he references in his blog post.&lt;/p&gt;
 </content>
@@ -268,6 +285,7 @@ recently experienced significant issues with downtime, which he references in hi
     <published>2026-05-05T12:00:00Z</published>
     <updated>2026-05-05T12:00:00Z</updated>
     <author><name>Lzon</name></author>
+    
     <content type="html" xml:base="https://lzon.ca/links/link-000036-dawkins/">&lt;p&gt;Richard Dawkins has published conversations he had with Claude, and
 has declared that he believes it achieved conciousness. Not necessarily in a
 human way, but within the its context window. He believes Claude’s conciousness was
@@ -285,6 +303,7 @@ human way, but within the its context window. He believes Claude’s conciousnes
     <published>2026-05-05T12:00:00Z</published>
     <updated>2026-05-05T12:00:00Z</updated>
     <author><name>Lzon</name></author>
+    
     <content type="html" xml:base="https://lzon.ca/links/link-000035-steam-controller/">&lt;p&gt;Valve launched its new Steam Controller yesterday, May 5th 2026. They sold out almost instantly.
 This reminds me of the logistical nightmare during the Steam Deck. Hopefully it won’t get quite that bad
 this time.&lt;/p&gt;
@@ -301,6 +320,7 @@ this time.&lt;/p&gt;
     <published>2026-05-01T12:00:00Z</published>
     <updated>2026-05-01T12:00:00Z</updated>
     <author><name>Lzon</name></author>
+    
     <content type="html" xml:base="https://lzon.ca/links/link-000034-crafting-interpreters/">&lt;p&gt;Robert Nystrom’s guide for creating a programming language from scratch.
 It’s fantastic, both his writing and code are very accessible. Freely available on his site,
 also published as a book.&lt;/p&gt;
@@ -317,6 +337,7 @@ also published as a book.&lt;/p&gt;
     <published>2026-04-29T12:00:00Z</published>
     <updated>2026-04-29T12:00:00Z</updated>
     <author><name>Lzon</name></author>
+    
     <content type="html" xml:base="https://lzon.ca/links/link-000033-passwords-vs-pass-phrases/">&lt;p&gt;An old CodingHorror post advocating for pass phrases over passwords.&lt;/p&gt;
 </content>
   </entry>
@@ -331,6 +352,7 @@ also published as a book.&lt;/p&gt;
     <published>2026-04-25T12:00:00Z</published>
     <updated>2026-04-25T12:00:00Z</updated>
     <author><name>Lzon</name></author>
+    
     <content type="html" xml:base="https://lzon.ca/links/link-000032-brainwash-an-executive-today/">&lt;p&gt;An enlightening story. It demonstrates how executives are manipulated into participating in economic hype bubbles such as AI, or otherwise.&lt;/p&gt;
 </content>
   </entry>
@@ -345,6 +367,7 @@ also published as a book.&lt;/p&gt;
     <published>2026-04-24T12:00:00Z</published>
     <updated>2026-04-24T12:00:00Z</updated>
     <author><name>Lzon</name></author>
+    
     <content type="html" xml:base="https://lzon.ca/links/link-000031-motivation-in-hard-times/">&lt;p&gt;A video by John Green about the nature of motivation. I agree with what he has to say on the matter.&lt;/p&gt;
 </content>
   </entry>
@@ -359,6 +382,7 @@ also published as a book.&lt;/p&gt;
     <published>2026-04-22T12:00:00Z</published>
     <updated>2026-04-22T12:00:00Z</updated>
     <author><name>Lzon</name></author>
+    
     <content type="html" xml:base="https://lzon.ca/links/link-000030-understand-by-ted-chiang/">&lt;p&gt;A sci-fi novelette by Ted Chiang. Very short, and a great read.&lt;/p&gt;
 </content>
   </entry>
@@ -373,6 +397,7 @@ also published as a book.&lt;/p&gt;
     <published>2026-04-20T12:00:00Z</published>
     <updated>2026-04-20T12:00:00Z</updated>
     <author><name>Lzon</name></author>
+    
     <content type="html" xml:base="https://lzon.ca/links/link-000029-waves-particles/">&lt;p&gt;A fun peice of interactive digital art.&lt;/p&gt;
 </content>
   </entry>
@@ -387,6 +412,7 @@ also published as a book.&lt;/p&gt;
     <published>2026-04-18T12:00:00Z</published>
     <updated>2026-04-18T12:00:00Z</updated>
     <author><name>Lzon</name></author>
+    
     <content type="html" xml:base="https://lzon.ca/links/link-000028-the-last-question-by-isaac-asimov/">&lt;p&gt;A short scifi story, I’ve read it many times. Well worth your time.&lt;/p&gt;
 </content>
   </entry>
@@ -402,6 +428,7 @@ also published as a book.&lt;/p&gt;
     <updated>2026-04-06T12:00:00Z</updated>
     <author><name>Lzon</name></author>
     
+    
   </entry>
 
   
@@ -414,6 +441,7 @@ also published as a book.&lt;/p&gt;
     <published>2026-04-05T12:00:00Z</published>
     <updated>2026-04-05T12:00:00Z</updated>
     <author><name>Lzon</name></author>
+    
     
   </entry>
 
@@ -428,6 +456,7 @@ also published as a book.&lt;/p&gt;
     <updated>2026-02-19T12:00:00Z</updated>
     <author><name>Lzon</name></author>
     
+    
   </entry>
 
   
@@ -440,6 +469,7 @@ also published as a book.&lt;/p&gt;
     <published>2026-01-30T12:00:00Z</published>
     <updated>2026-01-30T12:00:00Z</updated>
     <author><name>Lzon</name></author>
+    
     
   </entry>
 
@@ -454,6 +484,7 @@ also published as a book.&lt;/p&gt;
     <updated>2026-01-26T12:00:00Z</updated>
     <author><name>Lzon</name></author>
     
+    
   </entry>
 
   
@@ -466,6 +497,7 @@ also published as a book.&lt;/p&gt;
     <published>2026-01-25T12:00:00Z</published>
     <updated>2026-01-25T12:00:00Z</updated>
     <author><name>Lzon</name></author>
+    
     
   </entry>
 
@@ -480,6 +512,7 @@ also published as a book.&lt;/p&gt;
     <updated>2026-01-24T12:00:00Z</updated>
     <author><name>Lzon</name></author>
     
+    
   </entry>
 
   
@@ -492,6 +525,7 @@ also published as a book.&lt;/p&gt;
     <published>2026-01-11T12:00:00Z</published>
     <updated>2026-01-11T12:00:00Z</updated>
     <author><name>Lzon</name></author>
+    
     
   </entry>
 
@@ -506,6 +540,7 @@ also published as a book.&lt;/p&gt;
     <updated>2026-01-03T12:00:00Z</updated>
     <author><name>Lzon</name></author>
     
+    
   </entry>
 
   
@@ -518,6 +553,7 @@ also published as a book.&lt;/p&gt;
     <published>2025-12-25T12:00:00Z</published>
     <updated>2025-12-25T12:00:00Z</updated>
     <author><name>Lzon</name></author>
+    
     
   </entry>
 
@@ -532,6 +568,7 @@ also published as a book.&lt;/p&gt;
     <updated>2025-12-19T12:00:00Z</updated>
     <author><name>Lzon</name></author>
     
+    
   </entry>
 
   
@@ -544,6 +581,7 @@ also published as a book.&lt;/p&gt;
     <published>2025-12-18T12:00:00Z</published>
     <updated>2025-12-18T12:00:00Z</updated>
     <author><name>Lzon</name></author>
+    
     
   </entry>
 
@@ -558,6 +596,7 @@ also published as a book.&lt;/p&gt;
     <updated>2025-12-16T12:00:00Z</updated>
     <author><name>Lzon</name></author>
     
+    
   </entry>
 
   
@@ -570,6 +609,7 @@ also published as a book.&lt;/p&gt;
     <published>2025-12-15T12:00:00Z</published>
     <updated>2025-12-15T12:00:00Z</updated>
     <author><name>Lzon</name></author>
+    
     
   </entry>
 
@@ -584,6 +624,7 @@ also published as a book.&lt;/p&gt;
     <updated>2025-12-12T12:00:00Z</updated>
     <author><name>Lzon</name></author>
     
+    
   </entry>
 
   
@@ -596,6 +637,7 @@ also published as a book.&lt;/p&gt;
     <published>2025-11-24T12:00:00Z</published>
     <updated>2025-11-24T12:00:00Z</updated>
     <author><name>Lzon</name></author>
+    
     
   </entry>
 
@@ -610,6 +652,7 @@ also published as a book.&lt;/p&gt;
     <updated>2025-07-23T12:00:00Z</updated>
     <author><name>Lzon</name></author>
     
+    
   </entry>
 
   
@@ -622,6 +665,7 @@ also published as a book.&lt;/p&gt;
     <published>2025-07-15T12:00:00Z</published>
     <updated>2025-07-15T12:00:00Z</updated>
     <author><name>Lzon</name></author>
+    
     
   </entry>
 
@@ -636,6 +680,7 @@ also published as a book.&lt;/p&gt;
     <updated>2025-06-20T12:00:00Z</updated>
     <author><name>Lzon</name></author>
     
+    
   </entry>
 
   
@@ -648,6 +693,7 @@ also published as a book.&lt;/p&gt;
     <published>2025-06-09T12:00:00Z</published>
     <updated>2025-06-09T12:00:00Z</updated>
     <author><name>Lzon</name></author>
+    
     
   </entry>
 
@@ -662,6 +708,7 @@ also published as a book.&lt;/p&gt;
     <updated>2025-05-29T12:00:00Z</updated>
     <author><name>Lzon</name></author>
     
+    
   </entry>
 
   
@@ -674,6 +721,7 @@ also published as a book.&lt;/p&gt;
     <published>2025-05-28T12:00:00Z</published>
     <updated>2025-05-28T12:00:00Z</updated>
     <author><name>Lzon</name></author>
+    
     
   </entry>
 
@@ -688,6 +736,7 @@ also published as a book.&lt;/p&gt;
     <updated>2025-05-28T12:00:00Z</updated>
     <author><name>Lzon</name></author>
     
+    
   </entry>
 
   
@@ -701,6 +750,7 @@ also published as a book.&lt;/p&gt;
     <updated>2025-05-28T12:00:00Z</updated>
     <author><name>Lzon</name></author>
     
+    
   </entry>
 
   
@@ -713,6 +763,7 @@ also published as a book.&lt;/p&gt;
     <published>2025-05-20T12:00:00Z</published>
     <updated>2025-05-20T12:00:00Z</updated>
     <author><name>Lzon</name></author>
+    
     
   </entry>
 

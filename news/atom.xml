@@ -22,6 +22,9 @@
   
   
   
+  
+  
+  
 
   
   
@@ -40,6 +43,7 @@
     <published>2026-10-20T12:00:00Z</published>
     <updated>2026-10-20T12:00:00Z</updated>
     <author><name>Lzon</name></author>
+    
     <content type="html" xml:base="https://lzon.ca/news/news-000030-waymo-crashes/">&lt;p&gt;Waymo has released a report in which they claim that their robo-taxi cars experience up to 95% fewer crashes than human-driven cars. This finding has been corroborated by the Insurance Institute for Highway Safety (IIHS) who conducted their own &lt;a rel=&quot;noopener external&quot; target=&quot;_blank&quot; href=&quot;https://www.iihs.org/news/detail/waymos-driverless-cars-crash-less-often-than-people&quot;&gt;independent study&lt;/a&gt; and found similar results.&lt;/p&gt;
 &lt;p&gt;When self-driving technology was new over a decade ago there was an expectation that it would become much more widely adopted than it has so far. In part that assumption was based on the idea that the public would prefer self-driving once it was proven safer than human driving. It turned out that people seemed to have a much stronger distrust of self-driving than what was initially expected.&lt;/p&gt;
 &lt;p&gt;Personally, I have that mistrust too. And knowing that the self-driving car I’m about to get into is a better driver than me doesn’t change that. I do believe that self-driving cars are the future though. One day they will be so much safer than human drivers that we will have to accept them.&lt;/p&gt;
@@ -56,6 +60,7 @@
     <published>2026-10-19T12:00:00Z</published>
     <updated>2026-10-19T12:00:00Z</updated>
     <author><name>Lzon</name></author>
+    
     <content type="html" xml:base="https://lzon.ca/news/news-000029-glp1-aging/">&lt;p&gt;Researchers from the University of California analyzed data from a recent study to determine if semaglutide had anti aging effects. They discovered that study participants who received the drug had non-trivially improved markers of biological aging.&lt;/p&gt;
 &lt;p&gt;As with any study of this kind, It’s difficult to untangle the direct effects of the drug and the lifestyle improvements that it encourages. I myself lost a lot of weight without medical intervention, just a lot of personal effort and a change in diet. My bias is to believe that for most people this is enough, and that becoming dependent on a pharma corporation for your health should be avoided.&lt;/p&gt;
 </content>
@@ -71,6 +76,7 @@
     <published>2026-10-19T12:00:00Z</published>
     <updated>2026-10-19T12:00:00Z</updated>
     <author><name>Lzon</name></author>
+    
     <content type="html" xml:base="https://lzon.ca/news/news-000028-waymos-robotaxis-canada/">&lt;p&gt;Alphabet’s Robo-taxi company Waymo announced their plan to expand services into Canada. Until now the company has only operated in a limited number of American metro areas. They have only recently began announcing their plans for further expansion.&lt;/p&gt;
 &lt;p&gt;Waymo’s growth, and the growth of other robo-taxi services will depend entirely on further progress in self-driving technology. While I fully believe that automated vehicles will become widespread over the next decade or two, the rollout is definitely slower than initially anticipated. CPG Grey’s &lt;a rel=&quot;noopener external&quot; target=&quot;_blank&quot; href=&quot;https://www.youtube.com/watch?v=7Pq-S557XQU&quot;&gt;famous video on the subject&lt;/a&gt; demonstrates this point well.&lt;/p&gt;
 </content>
@@ -86,6 +92,7 @@
     <published>2026-10-17T12:00:00Z</published>
     <updated>2026-10-17T12:00:00Z</updated>
     <author><name>Lzon</name></author>
+    
     <content type="html" xml:base="https://lzon.ca/news/news-000027-rtx-5090-not-carried/">&lt;p&gt;The American computer retailer Micro Center is indicating that they are no longer receiving new RTX 5090 graphics cards from any of their suppliers. This follows from a recent rumor that NVIDIA stopped supplying any of their GB202 chips for consumer cards. The &lt;a rel=&quot;noopener external&quot; target=&quot;_blank&quot; href=&quot;https://en.wikipedia.org/wiki/Blackwell_(microarchitecture)&quot;&gt;GB202&lt;/a&gt; being the chip that is used in the RTX 5090.&lt;/p&gt;
 &lt;p&gt;Without an official statement from NVIDIA the obvious assumption to make is that they want to allocate all GB202 chip production to enterprise cards, since those can be sold for a much higher margin.&lt;/p&gt;
 &lt;p&gt;I think this is a consequence of the massive capital spending on AI data centers. I’m not a financial expert but at surface level it very much seems as though these investments are irrational and will have sweeping economic consequences once the price correction occurs.&lt;/p&gt;
@@ -103,6 +110,7 @@
     <published>2026-09-12T12:00:00Z</published>
     <updated>2026-09-12T12:00:00Z</updated>
     <author><name>Lzon</name></author>
+    
     <content type="html" xml:base="https://lzon.ca/news/news-000026-openai-hacker-swarm/">&lt;p&gt;There now appears to be yet more evidence for further security breaches conducted by the agent swarm that attacked Hugging Face back in May.&lt;/p&gt;
 &lt;p&gt;To me the response to this and the earlier reports is plainly obvious: A crime was commited by an automated process. The human operator who triggered the autoamtion is legally responsible for anything done by said automation.&lt;/p&gt;
 &lt;p&gt;The only appropriate response to this and the other hacking cases is a full criminal investigation of OpenAI. Beyond that I believe that it would be warranted to put a hard regulatory limit on the runtime of AI agents. This ‘agent swarm’ was running continuously for many days with little or no supervision. That was not necessary, it did not serve a useful commercialy purpose. It should not have been allowed to happen.&lt;/p&gt;
@@ -119,6 +127,7 @@
     <published>2026-08-30T12:00:00Z</published>
     <updated>2026-08-30T12:00:00Z</updated>
     <author><name>Lzon</name></author>
+    
     <content type="html" xml:base="https://lzon.ca/news/news-000025-trump-rename-lake/">&lt;p&gt;Donald Trump renamed Lake Ontario to ‘Lake America’ following the recent failure of trade negotiations between USA and Canada. The US administration hasn’t confirmed that this was the reason for the change, but there really is no reason to believe otherwise.&lt;/p&gt;
 &lt;p&gt;It is extremely disappointing. This current administration has managed to do so much damage to what was otherwise an astoundingly friendly and peaceful international relationship (USA and Canada).&lt;/p&gt;
 &lt;p&gt;The silver lining that I can see is that public opinion of this move appears to be resoundingly opposed, on both sides of the border. It gives me hope that once Trump is no longer in office the formerly positive relationship between our two countries can be restored.&lt;/p&gt;
@@ -135,6 +144,7 @@
     <published>2026-07-06T12:00:00Z</published>
     <updated>2026-07-06T12:00:00Z</updated>
     <author><name>Lzon</name></author>
+    
     <content type="html" xml:base="https://lzon.ca/news/news-000024-aphelion-2026/">&lt;p&gt;The Earth’s orbit is not quite circular, which means that through each year there is a point at which the Earth is closest and farthest from the Sun.&lt;/p&gt;
 &lt;p&gt;The farthest distance is referred to as ‘Amphelion’, and the shortest is called ‘Perihelion’.&lt;/p&gt;
 &lt;p&gt;Perihelion was reached back in January, and today the Earth will reach it’s Amphelion (farthest distance) for this year.&lt;/p&gt;
@@ -151,6 +161,7 @@
     <published>2026-07-03T12:00:00Z</published>
     <updated>2026-07-03T12:00:00Z</updated>
     <author><name>Lzon</name></author>
+    
     <content type="html" xml:base="https://lzon.ca/news/news-000023-meta-cloud-business/">&lt;p&gt;Meta (formerly Facebook) has announced that it will be entering into the cloud compute business. It appears as though this is an attempt to recoup what was otherwise an over-investment in data centers which were initially intended for AI.&lt;/p&gt;
 &lt;p&gt;Many are speculating now that this might trigger the end of the AI hype bubble, but its not certain yet what might happen.&lt;/p&gt;
 &lt;p&gt;There have been a fair times through the past few years in which many were predicting the end of the bubble, and were obviously wrong. For example, the launch of the Deepseek model in early 2025 caused a 17% crash in Nvidia stock. Obviously they recovered and we are still in the midst of the bubble.&lt;/p&gt;
@@ -168,6 +179,7 @@
     <published>2026-06-28T12:00:00Z</published>
     <updated>2026-06-28T12:00:00Z</updated>
     <author><name>Lzon</name></author>
+    
     <content type="html" xml:base="https://lzon.ca/news/news-000022-gta-vi-price/">&lt;p&gt;Grand Theft Auto 6 will launch at $80 USD, and $100 for the ‘Ultimate Edition’.&lt;/p&gt;
 &lt;p&gt;This isn’t surprising. Expectations for the game are sky high, game prices have already been trending upward, and inflation overall in the economy is running very hot. It may not feel like it but game prices have actually been remarkably stable, the standard $60 price didn’t change for decades despite a falling value of the US dollar.&lt;/p&gt;
 &lt;p&gt;This is easy enough to see even in the launch price of Grand Theft Auto 5. $60 in 2013 is equivalent to a little over &lt;a rel=&quot;noopener external&quot; target=&quot;_blank&quot; href=&quot;https://www.calculator.net/inflation-calculator.html?cstartingamount1=60&amp;amp;cinmonth1=13&amp;amp;cinyear1=2013&amp;amp;coutmonth1=5&amp;amp;coutyear1=2026&amp;amp;calctype=1&amp;amp;x=Calculate#uscpi&quot;&gt;$85&lt;/a&gt; today.&lt;/p&gt;
@@ -184,6 +196,7 @@
     <published>2026-06-23T12:00:00Z</published>
     <updated>2026-06-23T12:00:00Z</updated>
     <author><name>Lzon</name></author>
+    
     <content type="html" xml:base="https://lzon.ca/news/news-000021-official-steam-news-steam-news-hub/">&lt;p&gt;Valve has officially launched the new Steam Machine. It’s a small gaming PC intended to provide a more console like, living room oriented experience. It comes preinstalled with &lt;a rel=&quot;noopener external&quot; target=&quot;_blank&quot; href=&quot;https://en.wikipedia.org/wiki/SteamOS&quot;&gt;Steam OS&lt;/a&gt;, the same linux-based operating system used on the Steam Deck.&lt;/p&gt;
 &lt;p&gt;The device was originally announced near the end of last year and has been delayed due to DRAM and flash chip shortages caused by the AI economic bubble. Valve has stated that they were struggling to procure the parts they needed, and that it wasn’t merely a matter of increased prices.&lt;/p&gt;
 &lt;p&gt;Speaking of price, the cheapest model with 512GB of storage will cost $1049 USD, with higher storage variants costing several hundred dollars more. Valve has said they increased pricing since the announcement in line with the recent Steam Deck price increases. This implies that the original MSRP would have been in the range of $750.&lt;/p&gt;
@@ -201,6 +214,7 @@
     <published>2026-06-16T12:00:00Z</published>
     <updated>2026-06-16T12:00:00Z</updated>
     <author><name>Lzon</name></author>
+    
     <content type="html" xml:base="https://lzon.ca/news/news-000020-xbox-closing-hellblade/">&lt;p&gt;Microsoft is shuttering the famous game studio Ninja Theory, which in recent years has been developing the &lt;a rel=&quot;noopener external&quot; target=&quot;_blank&quot; href=&quot;https://en.wikipedia.org/wiki/Hellblade:_Senua%27s_Sacrifice&quot;&gt;Hellblade&lt;/a&gt; series of games. The third game in that series called ‘Senua’ was in active development at the time of this report.&lt;/p&gt;
 &lt;p&gt;Earlier in the year &lt;a rel=&quot;noopener external&quot; target=&quot;_blank&quot; href=&quot;https://en.wikipedia.org/wiki/Asha_Sharma&quot;&gt;Asha Sharma&lt;/a&gt; succeeded Phil Spencer as the CEO of Xbox, and appears to be taking Microsoft’s gaming division in new direction, which clearly includes cutting their portfolio of game studios.&lt;/p&gt;
 &lt;p&gt;I personally really enjoyed their game &lt;a rel=&quot;noopener external&quot; target=&quot;_blank&quot; href=&quot;https://en.wikipedia.org/wiki/Enslaved:_Odyssey_to_the_West&quot;&gt;Enslaved: Odyssey to the West&lt;/a&gt; on the PS3. &lt;a rel=&quot;noopener external&quot; target=&quot;_blank&quot; href=&quot;https://en.wikipedia.org/wiki/Andy_Serkis&quot;&gt;Andy Serkis&lt;/a&gt; plays the protagonist, and the story was written by &lt;a rel=&quot;noopener external&quot; target=&quot;_blank&quot; href=&quot;https://en.wikipedia.org/wiki/Alex_Garland&quot;&gt;Alex Garland&lt;/a&gt;. I think the game is a masterpiece and highly recommend it. Its available on &lt;a rel=&quot;noopener external&quot; target=&quot;_blank&quot; href=&quot;https://store.steampowered.com/app/245280/ENSLAVED_Odyssey_to_the_West_Premium_Edition/&quot;&gt;Steam&lt;/a&gt; if you are interested.&lt;/p&gt;
@@ -217,6 +231,7 @@
     <published>2026-06-12T12:00:00Z</published>
     <updated>2026-06-12T12:00:00Z</updated>
     <author><name>Lzon</name></author>
+    
     <content type="html" xml:base="https://lzon.ca/news/news-000019-elon-musk-trillionaire/">&lt;p&gt;Following immediately from the IPO of Elon Musk’s company SpaceX, he is now officially the world’s first trillionaire.&lt;/p&gt;
 &lt;p&gt;His net worth had already climbed close to the new milestone prior to the IPO, with varying sources claiming a number between 800-900 billion dollars. The jump in price of now-public SpaceX stock has added a 13th digit to his total net worth.&lt;/p&gt;
 &lt;p&gt;I’m sure he is very proud…&lt;/p&gt;
@@ -233,6 +248,7 @@
     <published>2026-06-11T12:00:00Z</published>
     <updated>2026-06-11T12:00:00Z</updated>
     <author><name>Lzon</name></author>
+    
     <content type="html" xml:base="https://lzon.ca/news/news-000018-drones-killed-soldiers/">&lt;p&gt;A military contractor named Alexander Kokhanovskyy has revealed that a test was conducted two years ago in which fully autonomous drones killed human soldiers.&lt;/p&gt;
 &lt;p&gt;The test involved sending ‘terminator’ drones on a trajectory over several kilometers towards their target. Upon arrival an AI running on the drones identified and then engaged their target. Human-piloted drones flew over the area some time afterwards to confirm the targets had been eliminated.&lt;/p&gt;
 &lt;p&gt;The Ukrainian government presently requires final human confirmation to conduct attacks, but otherwise uses AI heavily in identifying targets. Kokhanovskyy claims there has been no further tests beyond the one conducted two years ago.&lt;/p&gt;
@@ -251,6 +267,7 @@
     <published>2026-06-09T12:00:00Z</published>
     <updated>2026-06-09T12:00:00Z</updated>
     <author><name>Lzon</name></author>
+    
     <content type="html" xml:base="https://lzon.ca/news/news-000017-rockstar-union/">&lt;p&gt;Developers at Rockstar Games have announced their intent to form a union, to be called “Rockstar Game Workers Union”. It will be a subsidiary of the existing “Workers’ Union of Great Britain”.&lt;/p&gt;
 &lt;p&gt;This follows a recent controversy in which Rockstar Games fired 31 employees for claimed misconduct. It is speculated that the mass firing was an attempt at union busting.&lt;/p&gt;
 &lt;p&gt;I think its good that they are unionizing. Gaming and software development have never had a strong labour movement, largely because individual employees could use their high-value skillset as leverage when negotiating salary and working conditions.&lt;/p&gt;
@@ -269,6 +286,7 @@
     <published>2026-05-30T12:00:00Z</published>
     <updated>2026-05-30T12:00:00Z</updated>
     <author><name>Lzon</name></author>
+    
     <content type="html" xml:base="https://lzon.ca/news/news-000016-chinese-evs-canada/">&lt;p&gt;The first China-made electric vehicles have arrived in Canada following a recent tariff reduction deal. The shipment was mostly from Tesla’s Shanghai factory, with some Lotus branded vehicles as well.&lt;/p&gt;
 &lt;p&gt;This is noteworthy since historically Canada has followed the USA closely on restricting China’s access to its vehicle market.&lt;/p&gt;
 &lt;p&gt;I’m cautiously optimistic. If this leads to EV’s becoming more affordable then that would be a good thing. The hope is that the federal government will continue to promote domestic vehicle production amongst the incoming Chinese competitors. We already do this well for companies from USA, Japan, and Korea.&lt;/p&gt;
@@ -285,6 +303,7 @@
     <published>2026-05-27T12:00:00Z</published>
     <updated>2026-05-27T12:00:00Z</updated>
     <author><name>Lzon</name></author>
+    
     <content type="html" xml:base="https://lzon.ca/news/news-000015-memory-cxmt-shortages/">&lt;p&gt;Corsair will begin sourcing DRAM chips from &lt;a rel=&quot;noopener external&quot; target=&quot;_blank&quot; href=&quot;https://en.wikipedia.org/wiki/ChangXin_Memory_Technologies&quot;&gt;CXMT&lt;/a&gt;.&lt;/p&gt;
 &lt;p&gt;The Chinese company has only just recently began production of DDR5 chips, beginning in 2025. This move is clearly a response to the DRAM chip shortages currently being caused by the AI hype bubble.&lt;/p&gt;
 </content>
@@ -300,6 +319,7 @@
     <published>2026-05-26T12:00:00Z</published>
     <updated>2026-05-26T12:00:00Z</updated>
     <author><name>Lzon</name></author>
+    
     <content type="html" xml:base="https://lzon.ca/news/news-000014-motorola-hijacking-amazon/">&lt;p&gt;Some users of Motorola smartphones have noticed that affiliate codes are being automatically injected into Amazon web links.&lt;/p&gt;
 &lt;p&gt;This appears to be done by a pre-installed app called &lt;code&gt;Smart Feed&lt;/code&gt; which intercepts the URLs, redirects to an ad server, which then inserts the affiliate codes. This &lt;a rel=&quot;noopener external&quot; target=&quot;_blank&quot; href=&quot;https://old.reddit.com/r/Android/comments/1tno2z3/motorolas_preinstalled_smart_feed_app_hijacks/&quot;&gt;Reddit thread&lt;/a&gt; referenced in the article includes a more technical analysis.&lt;/p&gt;
 &lt;p&gt;For now at least, it is possible to stop this behavior. You can do so by navigating to the app’s info page &lt;code&gt;Settings -&amp;gt; Apps -&amp;gt; Search &apos;Smart Feed&apos;&lt;/code&gt; and pressing the &lt;code&gt;Disable&lt;/code&gt; button.&lt;/p&gt;
@@ -317,6 +337,7 @@
     <published>2026-05-25T12:00:00Z</published>
     <updated>2026-05-25T12:00:00Z</updated>
     <author><name>Lzon</name></author>
+    
     <content type="html" xml:base="https://lzon.ca/news/news-000013-starcitizen-billion-dollars/">&lt;p&gt;The Star Citizen project has now received over one billion dollars in funding. The game was initially slated for release in October 2014, after being revealed at GDC in October 2012. As of today it has been over 13 years since the announcement, which is nearly 5000 days.&lt;/p&gt;
 &lt;p&gt;This is my take:
 These funding milestones hardly count as news anymore. The game has a loyal fan-base who are playing the game regularly, and are committed to supporting the game financially on an on-going basis.&lt;/p&gt;
@@ -334,6 +355,7 @@ These funding milestones hardly count as news anymore. The game has a loyal fan-
     <published>2026-05-23T12:00:00Z</published>
     <updated>2026-05-23T12:00:00Z</updated>
     <author><name>Lzon</name></author>
+    
     <content type="html" xml:base="https://lzon.ca/news/news-000012-starbucks-ai-rollback/">&lt;p&gt;Starbucks is ending the use of an AI-based inventory manager that it began using in September 2025. The software was making too many mistakes, which included miscounting and mislabeling items. This decision comes after a multi year effort by CEO &lt;a rel=&quot;noopener external&quot; target=&quot;_blank&quot; href=&quot;https://en.wikipedia.org/wiki/Brian_Niccol&quot;&gt;Brian Niccol&lt;/a&gt; to increase efficiency of the company’s supply chain.&lt;/p&gt;
 &lt;p&gt;The developer of the software &lt;a rel=&quot;noopener external&quot; target=&quot;_blank&quot; href=&quot;https://www.nomad-go.com/&quot;&gt;NomadGo&lt;/a&gt; said in a statement to Reuters that it is, “continuously learning from customers and user feedback” to improve its products.&lt;/p&gt;
 &lt;p&gt;To me this appears to be a signal that the AI hype bubble is coming to an end but as &lt;a rel=&quot;noopener external&quot; target=&quot;_blank&quot; href=&quot;https://en.wikipedia.org/wiki/John_Maynard_Keynes&quot;&gt;John Maynard Keynes&lt;/a&gt; famously said&lt;/p&gt;
@@ -353,6 +375,7 @@ These funding milestones hardly count as news anymore. The game has a loyal fan-
     <published>2026-05-20T12:00:00Z</published>
     <updated>2026-05-20T12:00:00Z</updated>
     <author><name>Lzon</name></author>
+    
     <content type="html" xml:base="https://lzon.ca/news/news-000011-warhorse-lord-of-the-rings-rpg/">&lt;p&gt;The developer of Kingdom Come Deliverance has just announced that they are developing an officially licensed Lord of the Rings video game. It will be an open-world RPG.&lt;/p&gt;
 &lt;p&gt;I’m personally excited. I tried Kingdom Come Deliverance a few years ago and did enjoy it, but wasn’t able to get very far. The game has very complex sim-style game-play that I wasn’t able to fully engage with.&lt;/p&gt;
 &lt;p&gt;I’m hoping that they tone down this new title, to better appeal to a wider audience.&lt;/p&gt;
@@ -369,6 +392,7 @@ These funding milestones hardly count as news anymore. The game has a loyal fan-
     <published>2026-05-19T12:00:00Z</published>
     <updated>2026-05-19T12:00:00Z</updated>
     <author><name>Lzon</name></author>
+    
     <content type="html" xml:base="https://lzon.ca/news/news-000010-child-safety-privacy/">&lt;p&gt;The pornography conglomerate &lt;a rel=&quot;noopener external&quot; target=&quot;_blank&quot; href=&quot;https://en.wikipedia.org/wiki/Aylo&quot;&gt;Aylo&lt;/a&gt; (owner of PornHub, and formerly named MindGeek) has been lobbying in Canada and other countries &lt;strong&gt;for&lt;/strong&gt; operating system level age verification.&lt;/p&gt;
 &lt;p&gt;Why? Because this would absolve them of responsibility for age verification of their users. Obviously this is appalling, but I will admit that I’m somewhat impressed by their cleverness.&lt;/p&gt;
 &lt;p&gt;I believe implementing age verification at the operating system level is ridiculous and makes &lt;strong&gt;zero&lt;/strong&gt; sense. It also is a nightmare for user privacy and freedom on their computers. To force its use through regulation is wrong, period.&lt;/p&gt;
@@ -385,6 +409,7 @@ These funding milestones hardly count as news anymore. The game has a loyal fan-
     <published>2026-05-16T12:00:00Z</published>
     <updated>2026-05-16T12:00:00Z</updated>
     <author><name>Lzon</name></author>
+    
     <content type="html" xml:base="https://lzon.ca/news/news-000009-15gb-gmail-ending/">&lt;p&gt;Google is experimenting with a reduction in the free storage on Gmail accounts. As they often do, they appear to be A/B testing the change. Some user reports suggest that the change is currently limited by region (mostly Africa). Other users are claiming that their new accounts have 5GB of storage, with the option to increase to 15GB after phone number verification.&lt;/p&gt;
 &lt;p&gt;It’s uncertain whether this was a response to an increase in service abuse, or the result of some internal financial pressures from within Google itself.&lt;/p&gt;
 </content>
@@ -400,6 +425,7 @@ These funding milestones hardly count as news anymore. The game has a loyal fan-
     <published>2026-05-14T12:00:00Z</published>
     <updated>2026-05-14T12:00:00Z</updated>
     <author><name>Lzon</name></author>
+    
     <content type="html" xml:base="https://lzon.ca/news/news-000008-cisco-layoffs/">&lt;p&gt;Cisco announced a 4000-person layoff, representing 5% of there total workforce.
 This coincides with the announcement that they have achieved revenue of $15.8 billion for the most recent financial quarter, which is a 12 percent increase year over year.&lt;/p&gt;
 </content>
@@ -415,6 +441,7 @@ This coincides with the announcement that they have achieved revenue of $15.8 bi
     <published>2026-05-11T12:00:00Z</published>
     <updated>2026-05-11T12:00:00Z</updated>
     <author><name>Lzon</name></author>
+    
     <content type="html" xml:base="https://lzon.ca/news/news-000007-pirates-playing-forza-horizon-6/">&lt;p&gt;Game pirates are already playing Forza Horizon 6, more than a week ahead of the title’s official release date.&lt;/p&gt;
 &lt;p&gt;This was made possible by copying the game’s preload install files, which were mistakenly distributed on Steam without encryption.&lt;/p&gt;
 &lt;p&gt;There was a similar incident back in March for the release of Death Stranding 2.&lt;/p&gt;
@@ -431,6 +458,7 @@ This coincides with the announcement that they have achieved revenue of $15.8 bi
     <published>2026-05-10T12:00:00Z</published>
     <updated>2026-05-10T12:00:00Z</updated>
     <author><name>Lzon</name></author>
+    
     <content type="html" xml:base="https://lzon.ca/news/news-000006-uk-opposing-age-verification/">&lt;p&gt;An open letter has been signed by prominent internet service companies which asks UK policymakers to not compromise the open web under the pretense of child safety. The new law has already been passed, and there is a legitimate concern that it will be used broadly to restrict internet access, and reduce online anonymity.&lt;/p&gt;
 &lt;p&gt;In my opinion this is a trojan horse, like many such laws that came before it. Child safety is being used as a pretense in order for a government to grant itself more power.&lt;/p&gt;
 </content>
@@ -446,6 +474,7 @@ This coincides with the announcement that they have achieved revenue of $15.8 bi
     <published>2026-05-08T12:00:00Z</published>
     <updated>2026-05-08T12:00:00Z</updated>
     <author><name>Lzon</name></author>
+    
     <content type="html" xml:base="https://lzon.ca/news/news-000005-tesla-recalls-cybertrucks/">&lt;p&gt;Tesla is recalling several hundred budget variant Cybertrucks.&lt;/p&gt;
 &lt;span id=&quot;continue-reading&quot;&gt;&lt;/span&gt;
 &lt;p&gt;A total of 173 Cybertrucks have a defect that could lead to the wheels coming off while driving. They are all the RWD variant, with 18-inch wheels, sold between March 21 2024 and November 25 2025.&lt;/p&gt;
@@ -463,6 +492,7 @@ This coincides with the announcement that they have achieved revenue of $15.8 bi
     <published>2026-05-07T12:00:00Z</published>
     <updated>2026-05-07T12:00:00Z</updated>
     <author><name>Lzon</name></author>
+    
     <content type="html" xml:base="https://lzon.ca/news/news-000004-steam-controller-reservation/">&lt;p&gt;Starting May 8th, Valve will implement a reservation queue for the Steam Controller.&lt;/p&gt;
 &lt;p&gt;These are the details:&lt;/p&gt;
 &lt;ul&gt;
@@ -486,6 +516,7 @@ This coincides with the announcement that they have achieved revenue of $15.8 bi
     <published>2026-05-06T12:00:00Z</published>
     <updated>2026-05-06T12:00:00Z</updated>
     <author><name>Lzon</name></author>
+    
     <content type="html" xml:base="https://lzon.ca/news/news-000003-ghostty/">&lt;p&gt;Mitchell Hashimoto, the developer of &lt;a rel=&quot;noopener external&quot; target=&quot;_blank&quot; href=&quot;https://ghostty.org/&quot;&gt;ghostty&lt;/a&gt; is moving the project away from Github. He was an enthusiastic user for many years but recent degredation of the platform has pushed him away. Github has
 recently experienced significant issues with downtime, which he references in his blog post.&lt;/p&gt;
 </content>
@@ -501,6 +532,7 @@ recently experienced significant issues with downtime, which he references in hi
     <published>2026-05-05T12:00:00Z</published>
     <updated>2026-05-05T12:00:00Z</updated>
     <author><name>Lzon</name></author>
+    
     <content type="html" xml:base="https://lzon.ca/news/news-000002-dawkins/">&lt;p&gt;Richard Dawkins has published conversations he had with Claude, and
 has declared that he believes it achieved conciousness. Not necessarily in a
 human way, but within the its context window. He believes Claude’s conciousness was
@@ -518,6 +550,7 @@ human way, but within the its context window. He believes Claude’s conciousnes
     <published>2026-05-05T12:00:00Z</published>
     <updated>2026-05-05T12:00:00Z</updated>
     <author><name>Lzon</name></author>
+    
     <content type="html" xml:base="https://lzon.ca/news/news-000001-steam-controller/">&lt;p&gt;Valve launched its new Steam Controller yesterday, May 5th 2026. They sold out almost instantly.
 This reminds me of the logistical nightmare during the Steam Deck. Hopefully it won’t get quite that bad
 this time.&lt;/p&gt;

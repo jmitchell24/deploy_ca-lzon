@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
+    <channel>
+      <title>
+        lzon.ca - Trivia</title>
+      <link>https://lzon.ca/trivia/</link>
+      <description></description>
+      <generator>Zola</generator>
+      <language>en</language>
+      <atom:link href="https://lzon.ca/trivia/rss.xml" rel="self" type="application/rss+xml"/>
+      <lastBuildDate>Wed, 21 Oct 2026 12:00:00 +0000</lastBuildDate>
+      
+      
+      
+      
+      
+      
+      
+      <item>
+          <title>1. The Batman effect describes a spontaneous event that triggers prosocial behavior.</title>
+          <pubDate>Wed, 21 Oct 2026 12:00:00 +0000</pubDate>
+          <author>Lzon</author>
+          <link>https://www.nature.com/articles/s44184-025-00171-5</link>
+          <guid isPermaLink="false">https://lzon.ca/trivia/1</guid>
+          <description xml:base="https://lzon.ca/trivia/trivia-000001-batman/">
+&lt;p&gt;In a study published in Nature, researchers found in their experiment that riders on public transit were more willing to give their seat to a pregnant woman when in the presence of a man dressed as Batman.&lt;/p&gt;
+</description>
+      </item>
+    </channel>
+</rss>

@@ -1830,9 +1830,6 @@
         <lastmod>2026-10-21</lastmod>
     </url>
     <url>
-        <loc>https://lzon.ca/til/</loc>
-    </url>
-    <url>
         <loc>https://lzon.ca/toys/</loc>
     </url>
     <url>
@@ -1853,5 +1850,15 @@
     <url>
         <loc>https://lzon.ca/toys/waves/</loc>
         <lastmod>2026-03-07</lastmod>
+    </url>
+    <url>
+        <loc>https://lzon.ca/trivia/</loc>
+    </url>
+    <url>
+        <loc>https://lzon.ca/trivia/page/1/</loc>
+    </url>
+    <url>
+        <loc>https://lzon.ca/trivia/trivia-000001-batman/</loc>
+        <lastmod>2026-10-21</lastmod>
     </url>
 </urlset>
