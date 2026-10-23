@@ -13,7 +13,7 @@
   <generator uri="https://www.getzola.org/">Zola</generator>
 
   
-  <updated>2026-10-22T12:00:00Z</updated>
+  <updated>2026-10-23T12:00:00Z</updated>
 
   
   
@@ -32,6 +32,20 @@
   
 
   
+
+  
+
+  
+  <entry>
+    <title>204. lzon.ca&#x2F;quotes</title>
+    <id>https://lzon.ca/quotes/#204</id>
+    <link href="https://lzon.ca/quotes/"/>
+    <published>2026-10-23T12:00:00Z</published>
+    <updated>2026-10-23T12:00:00Z</updated>
+    <author><name>Lzon</name></author>
+    <category term="quote"/>
+    <summary type="html">In the land of the blind, the one-eyed is king.&lt;br/&gt;- Apostolius (Paroemiae VII)</summary>
+  </entry>
 
   
 

@@ -8,7 +8,7 @@
       <generator>Zola</generator>
       <language>en</language>
       <atom:link href="https://lzon.ca/quotes/rss.xml" rel="self" type="application/rss+xml"/>
-      <lastBuildDate>Thu, 22 Oct 2026 12:00:00 +0000</lastBuildDate>
+      <lastBuildDate>Fri, 23 Oct 2026 12:00:00 +0000</lastBuildDate>
       
       
       
@@ -16,6 +16,15 @@
       
       
       
+      <item>
+          <title>204. lzon.ca&#x2F;quotes</title>
+          <pubDate>Fri, 23 Oct 2026 12:00:00 +0000</pubDate>
+          <author>Lzon</author>
+          <link>https://lzon.ca/quotes/</link>
+          <guid isPermaLink="false">https://lzon.ca/quotes/#204</guid>
+          <category>quote</category>
+          <description>In the land of the blind, the one-eyed is king.&lt;br/&gt;- Apostolius (Paroemiae VII)</description>
+      </item>
       <item>
           <title>203. lzon.ca&#x2F;quotes</title>
           <pubDate>Thu, 22 Oct 2026 12:00:00 +0000</pubDate>
