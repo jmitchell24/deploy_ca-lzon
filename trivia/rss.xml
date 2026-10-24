@@ -8,7 +8,7 @@
       <generator>Zola</generator>
       <language>en</language>
       <atom:link href="https://lzon.ca/trivia/rss.xml" rel="self" type="application/rss+xml"/>
-      <lastBuildDate>Fri, 23 Oct 2026 12:00:00 +0000</lastBuildDate>
+      <lastBuildDate>Sat, 24 Oct 2026 12:00:00 +0000</lastBuildDate>
       
       
       
@@ -17,11 +17,23 @@
       
       
       <item>
+          <title>4. People can be Ambiverted, meaning they are equal parts Introverted and Extroverted.</title>
+          <pubDate>Sat, 24 Oct 2026 12:00:00 +0000</pubDate>
+          <author>Lzon</author>
+          <link>https://lzon.ca/trivia/000004/</link>
+          <guid isPermaLink="false">https://lzon.ca/trivia/4</guid><description xml:base="https://lzon.ca/trivia/000004/">
+&lt;p&gt;Introverted people obtain gratification from being alone, and consider social engagement to be mentally draining.&lt;/p&gt;
+&lt;p&gt;Extroverted people are the inverse of introverted, they are gratified and energized by being around others.&lt;/p&gt;
+&lt;p&gt;Ambiversion is a third personality trait at the mid point along a spectrum between introversion and extroversion.
+It was first proposed in 1923 by the American psychologist &lt;a rel=&quot;noopener external&quot; target=&quot;_blank&quot; href=&quot;https://en.wikipedia.org/wiki/Edmund_Smith_Conklin&quot;&gt;Edmund Smith Conklin&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;Source: &lt;a href=&quot;https://en.wikipedia.org/wiki/Extraversion_and_introversion#Ambiversion&quot;&gt;https://en.wikipedia.org/wiki/Extraversion_and_introversion#Ambiversion&lt;/a&gt;&lt;/p&gt;</description>
+      </item>
+      <item>
           <title>3. The Costco hotdog combo has not had a price increase in over four decades.</title>
           <pubDate>Fri, 23 Oct 2026 12:00:00 +0000</pubDate>
           <author>Lzon</author>
-          <link>https://lzon.ca/trivia/trivia-000003-my-title/</link>
-          <guid isPermaLink="false">https://lzon.ca/trivia/3</guid><description xml:base="https://lzon.ca/trivia/trivia-000003-my-title/">
+          <link>https://lzon.ca/trivia/000003/</link>
+          <guid isPermaLink="false">https://lzon.ca/trivia/3</guid><description xml:base="https://lzon.ca/trivia/000003/">
 &lt;p&gt;In 1984, Costco began offering a $1.50 combo deal in its food courts which included a soda and a single hot dog.
 The deal was introduced only one year after opening its very first warehouse. As of 2026 the price has never been increased on the combo.
 If adjusted for inflation the cost of the combo would have risen over three fold (to $4.86 USD at time of writing).
@@ -32,8 +44,8 @@ As late as 2024 Costco has stated publically that they do not ever intend to inc
           <title>2. A 3D scan of Nicolas Cage’s skull was used in the 2007 film Ghost Rider.</title>
           <pubDate>Thu, 22 Oct 2026 12:00:00 +0000</pubDate>
           <author>Lzon</author>
-          <link>https://lzon.ca/trivia/trivia-000002-my-title/</link>
-          <guid isPermaLink="false">https://lzon.ca/trivia/2</guid><description xml:base="https://lzon.ca/trivia/trivia-000002-my-title/">
+          <link>https://lzon.ca/trivia/000002/</link>
+          <guid isPermaLink="false">https://lzon.ca/trivia/2</guid><description xml:base="https://lzon.ca/trivia/000002/">
 &lt;p&gt;For his starring roll in 2007’s Ghost Rider a full 3D scan of Nicolas Cage’s body was
 taken by the special effects team. They used the scan to help create Cage’s immolated
 super-hero form, including the shape of the flame-covered skull.&lt;/p&gt;
@@ -43,8 +55,8 @@ super-hero form, including the shape of the flame-covered skull.&lt;/p&gt;
           <title>1. The Batman effect describes a spontaneous event that triggers prosocial behavior.</title>
           <pubDate>Wed, 21 Oct 2026 12:00:00 +0000</pubDate>
           <author>Lzon</author>
-          <link>https://lzon.ca/trivia/trivia-000001-batman/</link>
-          <guid isPermaLink="false">https://lzon.ca/trivia/1</guid><description xml:base="https://lzon.ca/trivia/trivia-000001-batman/">
+          <link>https://lzon.ca/trivia/000001/</link>
+          <guid isPermaLink="false">https://lzon.ca/trivia/1</guid><description xml:base="https://lzon.ca/trivia/000001/">
 &lt;p&gt;In a study published in Nature, researchers found in their experiment that riders on public transit were more willing to give their seat to a pregnant woman when in the presence of a man dressed as Batman.&lt;/p&gt;
 &lt;p&gt;Source: &lt;a href=&quot;https://www.nature.com/articles/s44184-025-00171-5&quot;&gt;https://www.nature.com/articles/s44184-025-00171-5&lt;/a&gt;&lt;/p&gt;</description>
       </item>
