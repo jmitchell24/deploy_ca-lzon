@@ -4,6 +4,15 @@
         <loc>https://lzon.ca/</loc>
     </url>
     <url>
+        <loc>https://lzon.ca/category/</loc>
+    </url>
+    <url>
+        <loc>https://lzon.ca/category/curios/</loc>
+    </url>
+    <url>
+        <loc>https://lzon.ca/category/news/</loc>
+    </url>
+    <url>
         <loc>https://lzon.ca/curios/</loc>
     </url>
     <url>
@@ -172,15 +181,6 @@
     </url>
     <url>
         <loc>https://lzon.ca/links/</loc>
-    </url>
-    <url>
-        <loc>https://lzon.ca/links/category/</loc>
-    </url>
-    <url>
-        <loc>https://lzon.ca/links/category/curios/</loc>
-    </url>
-    <url>
-        <loc>https://lzon.ca/links/category/news/</loc>
     </url>
     <url>
         <loc>https://lzon.ca/links/link-000003-how-to-build-your-resume-with-an-ssg/</loc>
@@ -1842,6 +1842,13 @@
         <lastmod>2026-10-24</lastmod>
     </url>
     <url>
+        <loc>https://lzon.ca/quotes/quotes-000206-epictetus/</loc>
+        <lastmod>2026-10-25</lastmod>
+    </url>
+    <url>
+        <loc>https://lzon.ca/tag/</loc>
+    </url>
+    <url>
         <loc>https://lzon.ca/toys/</loc>
     </url>
     <url>
@@ -1881,6 +1888,10 @@
     <url>
         <loc>https://lzon.ca/trivia/000004/</loc>
         <lastmod>2026-10-24</lastmod>
+    </url>
+    <url>
+        <loc>https://lzon.ca/trivia/000005/</loc>
+        <lastmod>2026-10-25</lastmod>
     </url>
     <url>
         <loc>https://lzon.ca/trivia/page/1/</loc>

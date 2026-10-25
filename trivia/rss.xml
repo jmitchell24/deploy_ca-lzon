@@ -8,7 +8,7 @@
       <generator>Zola</generator>
       <language>en</language>
       <atom:link href="https://lzon.ca/trivia/rss.xml" rel="self" type="application/rss+xml"/>
-      <lastBuildDate>Sat, 24 Oct 2026 12:00:00 +0000</lastBuildDate>
+      <lastBuildDate>Sun, 25 Oct 2026 12:00:00 +0000</lastBuildDate>
       
       
       
@@ -16,6 +16,22 @@
       
       
       
+      <item>
+          <title>5. The Pygmalion Effect is a psychological phenomemon in which placing high expectations on someone leads
+to their better performance.</title>
+          <pubDate>Sun, 25 Oct 2026 12:00:00 +0000</pubDate>
+          <author>Lzon</author>
+          <link>https://lzon.ca/trivia/000005/</link>
+          <guid isPermaLink="false">https://lzon.ca/trivia/5</guid><description xml:base="https://lzon.ca/trivia/000005/">
+&lt;p&gt;The Effect is an example of a self-fulfilling prophecy, the subject of the expectation performs better because of their belief that their
+performance is required, and not merely an optional choice.&lt;/p&gt;
+&lt;p&gt;The Pygmalion Effect is named for the sculptor Pygmalion from greek mythology. In his story he crafts a statue, and falls so intensely in love with his creation
+that it transforms into a real woman.&lt;/p&gt;
+&lt;p&gt;The term was coined by psychologists Robert Rosenthal and Lenore Jacombson. They conducted a study on school children in which the teacher
+expressed both high and low expectations on the students. As measured by IQ test scores, children who were expected to perform well had higher scores.
+Conversely, children who were expected by their teacher to perform worse had lower scores.&lt;/p&gt;
+&lt;p&gt;Source: &lt;a href=&quot;https://example.org&quot;&gt;https://example.org&lt;/a&gt;&lt;/p&gt;</description>
+      </item>
       <item>
           <title>4. People can be Ambiverted, meaning they are equal parts Introverted and Extroverted.</title>
           <pubDate>Sat, 24 Oct 2026 12:00:00 +0000</pubDate>
