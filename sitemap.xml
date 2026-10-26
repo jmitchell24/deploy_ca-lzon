@@ -1850,9 +1850,6 @@
         <lastmod>2026-10-26</lastmod>
     </url>
     <url>
-        <loc>https://lzon.ca/tag/</loc>
-    </url>
-    <url>
         <loc>https://lzon.ca/toys/</loc>
     </url>
     <url>
@@ -1873,6 +1870,27 @@
     <url>
         <loc>https://lzon.ca/toys/waves/</loc>
         <lastmod>2026-03-07</lastmod>
+    </url>
+    <url>
+        <loc>https://lzon.ca/trivia-tags/</loc>
+    </url>
+    <url>
+        <loc>https://lzon.ca/trivia-tags/anthropology/</loc>
+    </url>
+    <url>
+        <loc>https://lzon.ca/trivia-tags/film/</loc>
+    </url>
+    <url>
+        <loc>https://lzon.ca/trivia-tags/food/</loc>
+    </url>
+    <url>
+        <loc>https://lzon.ca/trivia-tags/psychology/</loc>
+    </url>
+    <url>
+        <loc>https://lzon.ca/trivia-tags/science/</loc>
+    </url>
+    <url>
+        <loc>https://lzon.ca/trivia-tags/sociology/</loc>
     </url>
     <url>
         <loc>https://lzon.ca/trivia/</loc>
@@ -1900,8 +1918,5 @@
     <url>
         <loc>https://lzon.ca/trivia/000006/</loc>
         <lastmod>2026-10-26</lastmod>
-    </url>
-    <url>
-        <loc>https://lzon.ca/trivia/page/1/</loc>
     </url>
 </urlset>

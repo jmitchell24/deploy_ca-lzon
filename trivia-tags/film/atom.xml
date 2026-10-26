@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  
+
+  <title>
+    lzon.ca - Film</title>
+
+  <id>https://lzon.ca</id>
+
+  <link rel="alternate" href="https://lzon.ca"/>
+  <link rel="self" href="https://lzon.ca/trivia-tags/film/atom.xml" type="application/atom+xml"/>
+  <generator uri="https://www.getzola.org/">Zola</generator>
+
+  
+  <updated>2026-10-22T12:00:00Z</updated>
+
+  
+  
+  
+
+  
+  
+  
+  
+  
+  
+
+  
+  
+
+  
+
+  
+
+  
+  <entry>
+    <title></title>
+    <id>https://lzon.ca/trivia/000002/</id>
+    <link href="https://lzon.ca/trivia/000002/"/>
+    <published>2026-10-22T12:00:00Z</published>
+    <updated>2026-10-22T12:00:00Z</updated>
+    <author><name>Lzon</name></author>
+    <summary type="html" xml:base="https://lzon.ca/trivia/000002/">&lt;p&gt;A 3D scan of Nicolas Cage’s skull was used in the 2007 film Ghost Rider.&lt;&#x2F;p&gt;</summary>
+  </entry>
+
+</feed>

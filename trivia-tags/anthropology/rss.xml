@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
+    <channel>
+      <title>
+        lzon.ca - Anthropology</title>
+      <link>https://lzon.ca</link>
+      <description></description>
+      <generator>Zola</generator>
+      <language>en</language>
+      <atom:link href="https://lzon.ca/trivia-tags/anthropology/rss.xml" rel="self" type="application/rss+xml"/>
+      <lastBuildDate>Mon, 26 Oct 2026 12:00:00 +0000</lastBuildDate>
+      
+      
+      
+      
+      
+      
+      
+      <item>
+          <title></title>
+          <pubDate>Mon, 26 Oct 2026 12:00:00 +0000</pubDate>
+          <author>Lzon</author>
+          <link>https://lzon.ca/trivia/000006/</link>
+          <guid isPermaLink="false">https://lzon.ca/trivia/000006/</guid>
+          <description xml:base="https://lzon.ca/trivia/000006/">&lt;p&gt;Among all species Humans are one of the best at long-distance endurance running.&lt;&#x2F;p&gt;</description>
+      </item>
+    </channel>
+</rss>

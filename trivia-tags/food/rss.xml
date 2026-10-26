@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
+    <channel>
+      <title>
+        lzon.ca - Food</title>
+      <link>https://lzon.ca</link>
+      <description></description>
+      <generator>Zola</generator>
+      <language>en</language>
+      <atom:link href="https://lzon.ca/trivia-tags/food/rss.xml" rel="self" type="application/rss+xml"/>
+      <lastBuildDate>Fri, 23 Oct 2026 12:00:00 +0000</lastBuildDate>
+      
+      
+      
+      
+      
+      
+      
+      <item>
+          <title></title>
+          <pubDate>Fri, 23 Oct 2026 12:00:00 +0000</pubDate>
+          <author>Lzon</author>
+          <link>https://lzon.ca/trivia/000003/</link>
+          <guid isPermaLink="false">https://lzon.ca/trivia/000003/</guid>
+          <description xml:base="https://lzon.ca/trivia/000003/">&lt;p&gt;The Costco hotdog combo has not had a price increase in over four decades.&lt;&#x2F;p&gt;</description>
+      </item>
+    </channel>
+</rss>
