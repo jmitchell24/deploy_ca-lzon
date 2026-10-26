@@ -8,7 +8,7 @@
       <generator>Zola</generator>
       <language>en</language>
       <atom:link href="https://lzon.ca/trivia/rss.xml" rel="self" type="application/rss+xml"/>
-      <lastBuildDate>Sun, 25 Oct 2026 12:00:00 +0000</lastBuildDate>
+      <lastBuildDate>Mon, 26 Oct 2026 12:00:00 +0000</lastBuildDate>
       
       
       
@@ -16,6 +16,26 @@
       
       
       
+      <item>
+          <title>0. Among all species Humans are one of the best at long-distance endurance running.</title>
+          <pubDate>Mon, 26 Oct 2026 12:00:00 +0000</pubDate>
+          <author>Lzon</author>
+          <link>https://lzon.ca/trivia/000006/</link>
+          <guid isPermaLink="false">https://lzon.ca/trivia/0</guid><description xml:base="https://lzon.ca/trivia/000006/">
+&lt;p&gt;A noteworthy ability of the Human species is to run for long, uninterrupted periods of time.
+Few species are better, and Humans are the only ape that is capable of it.&lt;/p&gt;
+&lt;p&gt;Among many others, specific traits which enable this include:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Taller body with more surface area which facilitates evaporative cooling (sweating)&lt;/li&gt;
+&lt;li&gt;Wider heel bone to better absorb impact&lt;/li&gt;
+&lt;li&gt;Longer legs enabling a greater stride&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;It is an ability that likely evolved in conjunction with &lt;a rel=&quot;noopener external&quot; target=&quot;_blank&quot; href=&quot;https://en.wikipedia.org/wiki/Persistence_hunting&quot;&gt;Persistence Hunting&lt;/a&gt;,
+a technique which involves chasing an animal over long distances. The Human hunter can withstand the chase better than their prey, and eventually
+they will catch it even if initially the animal can run faster. If the hunter can keep chase long enough, the prey animal will either
+succumb to exhaustion, overheating or injury.&lt;/p&gt;
+</description>
+      </item>
       <item>
           <title>5. The Pygmalion Effect is a psychological phenomemon in which placing high expectations on someone leads
 to their better performance.</title>

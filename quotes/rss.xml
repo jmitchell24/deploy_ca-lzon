@@ -8,7 +8,7 @@
       <generator>Zola</generator>
       <language>en</language>
       <atom:link href="https://lzon.ca/quotes/rss.xml" rel="self" type="application/rss+xml"/>
-      <lastBuildDate>Sun, 25 Oct 2026 12:00:00 +0000</lastBuildDate>
+      <lastBuildDate>Mon, 26 Oct 2026 12:00:00 +0000</lastBuildDate>
       
       
       
@@ -16,6 +16,15 @@
       
       
       
+      <item>
+          <title>207. lzon.ca&#x2F;quotes</title>
+          <pubDate>Mon, 26 Oct 2026 12:00:00 +0000</pubDate>
+          <author>Lzon</author>
+          <link>https://lzon.ca/quotes/</link>
+          <guid isPermaLink="false">https://lzon.ca/quotes/#207</guid>
+          <category>quote</category>
+          <description>There comes forever something between us and what we deem our happiness.&lt;br/&gt;- Lord Byron (Sardanapalus I)</description>
+      </item>
       <item>
           <title>206. lzon.ca&#x2F;quotes</title>
           <pubDate>Sun, 25 Oct 2026 12:00:00 +0000</pubDate>

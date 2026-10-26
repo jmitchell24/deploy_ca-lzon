@@ -13,7 +13,7 @@
   <generator uri="https://www.getzola.org/">Zola</generator>
 
   
-  <updated>2026-10-25T12:00:00Z</updated>
+  <updated>2026-10-26T12:00:00Z</updated>
 
   
   
@@ -32,6 +32,35 @@
   
 
   
+
+  
+
+  
+  <entry>
+    <title>0. Among all species Humans are one of the best at long-distance endurance running.</title>
+    <id>https://lzon.ca/trivia/0</id>
+    <link href="https://lzon.ca/trivia/000006/"/>
+    <published>2026-10-26T12:00:00Z</published>
+    <updated>2026-10-26T12:00:00Z</updated>
+    <author><name>Lzon</name></author>
+    
+    
+    
+    <content type="html" xml:base="https://lzon.ca/trivia/000006/">
+&lt;p&gt;A noteworthy ability of the Human species is to run for long, uninterrupted periods of time.
+Few species are better, and Humans are the only ape that is capable of it.&lt;/p&gt;
+&lt;p&gt;Among many others, specific traits which enable this include:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Taller body with more surface area which facilitates evaporative cooling (sweating)&lt;/li&gt;
+&lt;li&gt;Wider heel bone to better absorb impact&lt;/li&gt;
+&lt;li&gt;Longer legs enabling a greater stride&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;It is an ability that likely evolved in conjunction with &lt;a rel=&quot;noopener external&quot; target=&quot;_blank&quot; href=&quot;https://en.wikipedia.org/wiki/Persistence_hunting&quot;&gt;Persistence Hunting&lt;/a&gt;,
+a technique which involves chasing an animal over long distances. The Human hunter can withstand the chase better than their prey, and eventually
+they will catch it even if initially the animal can run faster. If the hunter can keep chase long enough, the prey animal will either
+succumb to exhaustion, overheating or injury.&lt;/p&gt;
+</content>
+  </entry>
 
   
 
