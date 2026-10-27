@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  
+
+  <title>
+    lzon.ca - People</title>
+
+  <id>https://lzon.ca</id>
+
+  <link rel="alternate" href="https://lzon.ca"/>
+  <link rel="self" href="https://lzon.ca/trivia-tags/people/atom.xml" type="application/atom+xml"/>
+  <generator uri="https://www.getzola.org/">Zola</generator>
+
+  
+  <updated>2026-10-27T12:00:00Z</updated>
+
+  
+  
+  
+
+  
+  
+  
+  
+  
+  
+
+  
+  
+
+  
+
+  
+
+  
+  <entry>
+    <title></title>
+    <id>https://lzon.ca/trivia/000007/</id>
+    <link href="https://lzon.ca/trivia/000007/"/>
+    <published>2026-10-27T12:00:00Z</published>
+    <updated>2026-10-27T12:00:00Z</updated>
+    <author><name>Lzon</name></author>
+    <summary type="html" xml:base="https://lzon.ca/trivia/000007/">&lt;p&gt;Phineas Gage was a 19th century American man who survived an iron rod piercing his skull.&lt;&#x2F;p&gt;</summary>
+  </entry>
+
+</feed>

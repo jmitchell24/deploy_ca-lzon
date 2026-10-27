@@ -8,7 +8,7 @@
       <generator>Zola</generator>
       <language>en</language>
       <atom:link href="https://lzon.ca/quotes/rss.xml" rel="self" type="application/rss+xml"/>
-      <lastBuildDate>Mon, 26 Oct 2026 12:00:00 +0000</lastBuildDate>
+      <lastBuildDate>Tue, 27 Oct 2026 12:00:00 +0000</lastBuildDate>
       
       
       
@@ -16,6 +16,15 @@
       
       
       
+      <item>
+          <title>208. lzon.ca&#x2F;quotes</title>
+          <pubDate>Tue, 27 Oct 2026 12:00:00 +0000</pubDate>
+          <author>Lzon</author>
+          <link>https://lzon.ca/quotes/</link>
+          <guid isPermaLink="false">https://lzon.ca/quotes/#208</guid>
+          <category>quote</category>
+          <description>Tell me what company you keep, and I’ll tell you what you are.&lt;br/&gt;- Miguel de Cervantes (Don Quixote II)</description>
+      </item>
       <item>
           <title>207. lzon.ca&#x2F;quotes</title>
           <pubDate>Mon, 26 Oct 2026 12:00:00 +0000</pubDate>

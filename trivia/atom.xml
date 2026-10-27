@@ -13,7 +13,7 @@
   <generator uri="https://www.getzola.org/">Zola</generator>
 
   
-  <updated>2026-10-26T12:00:00Z</updated>
+  <updated>2026-10-27T12:00:00Z</updated>
 
   
   
@@ -32,6 +32,37 @@
   
 
   
+
+  
+
+  
+  <entry>
+    <title>7. Phineas Gage was a 19th century American man who survived an iron rod piercing his skull.</title>
+    <id>https://lzon.ca/trivia/7</id>
+    <link href="https://lzon.ca/trivia/000007/"/>
+    <published>2026-10-27T12:00:00Z</published>
+    <updated>2026-10-27T12:00:00Z</updated>
+    <author><name>Lzon</name></author>
+    
+    
+    
+    <content type="html" xml:base="https://lzon.ca/trivia/000007/">
+&lt;figure class=&quot;figure mx-auto float-md-right w-100 w-md-40 w-sm-75&quot;&gt;
+    
+    &lt;img src=&quot;&amp;#x2F;trivia&amp;#x2F;img&amp;#x2F;phineas-gage.jpg&quot; alt=&quot;Phineas Gage holding the rod that peirced his skull.&quot;&gt; &lt;/img&gt;
+    
+    &lt;figcaption class=&quot;flex-row gap-xs text-sm p-xs&quot;&gt;
+        &lt;a class=&quot;stretched-link text-wrap text-align-center&quot; href=&quot;&amp;#x2F;trivia&amp;#x2F;img&amp;#x2F;phineas-gage.jpg&quot; target=&quot;_blank&quot;&gt;
+            Phineas Gage holding the rod that peirced his skull.
+        &lt;/a&gt;
+    &lt;/figcaption&gt;
+&lt;/figure&gt;
+&lt;p&gt;As a young man Gage was a construction worker under contract with the Rutland and Burlington Railroad company. On September 13, 1848 the 25 year old Gage was on the line when his tamping rod was accidentally fired upward by a gunpowder fuse, at very high speed. With his head directly in the rod’s path, it pierced his skull and continued to fly a long distance behind him.&lt;/p&gt;
+&lt;p&gt;To the surprise of his doctors, Phineas Gage both survived the initial injury and was both coherent and able to speak to them. In a matter of months he was recovered enough to return to work.&lt;/p&gt;
+&lt;p&gt;He lived for another 12 years after the incident, and in that time he was reported to have had a significantly changed personality. He had become more impulsive and quick to anger. Eventually he would die of a seizure while working as a stagecoach driver in Chile.&lt;/p&gt;
+&lt;p&gt;The incident is known as the “American Crowbar Case”, and became the subject of academic research and discussion throughout the 19th century. It posed important questions related to the functioning of the brain, and the nature of consciousness.&lt;/p&gt;
+</content>
+  </entry>
 
   
 
