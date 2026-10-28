@@ -13,7 +13,7 @@
   <generator uri="https://www.getzola.org/">Zola</generator>
 
   
-  <updated>2026-10-27T12:00:00Z</updated>
+  <updated>2026-10-28T12:00:00Z</updated>
 
   
   
@@ -32,6 +32,40 @@
   
 
   
+
+  
+
+  
+  <entry>
+    <title>8. The term ‘Computer Bug’ was popularized by programmer Grace Hopper after removing a moth from a malfunctioning computer.</title>
+    <id>https://lzon.ca/trivia/8</id>
+    <link href="https://lzon.ca/trivia/000008/"/>
+    <published>2026-10-28T12:00:00Z</published>
+    <updated>2026-10-28T12:00:00Z</updated>
+    <author><name>Lzon</name></author>
+    
+    
+    
+    <content type="html" xml:base="https://lzon.ca/trivia/000008/">
+&lt;figure class=&quot;figure mx-auto float-md-right w-100 w-md-40 w-sm-75&quot;&gt;
+    
+    &lt;img src=&quot;&amp;#x2F;trivia&amp;#x2F;img&amp;#x2F;computer-bug.jpg&quot; alt=&quot;A scan of Grace Hopper&amp;#x27;s notes which includes the moth.&quot;&gt; &lt;/img&gt;
+    
+    &lt;figcaption class=&quot;flex-row gap-xs text-sm p-xs&quot;&gt;
+        &lt;a class=&quot;stretched-link text-wrap text-align-center&quot; href=&quot;&amp;#x2F;trivia&amp;#x2F;img&amp;#x2F;computer-bug.jpg&quot; target=&quot;_blank&quot;&gt;
+            A scan of Grace Hopper&amp;#x27;s notes which includes the moth.
+        &lt;/a&gt;
+    &lt;/figcaption&gt;
+&lt;/figure&gt;
+&lt;p&gt;In 1947, acting as a lieutenant junior grade for the US Navy Grace Hopper was assigned to the Bureau of Ships Computation Project.
+The project was using the Harvard Mark II computer to perform ballistics calculations among other things. After encountering a
+malfunction in the computer Hopper and her team soon discovered that a moth had gotten stuck on one of the
+machine’s relays and was the ultimate cause of the fault. This amusing detail would later be included in the team’s notes.&lt;/p&gt;
+&lt;p&gt;Using &lt;em&gt;‘bug’&lt;/em&gt; to refer to a fault or malfunction in a machine pre-dates Grace Hopper’s use of the word, but it is often credited with
+popularizing the word for use by programmers. In modern software development fixing incorrect codes is often called &lt;em&gt;‘debugging’&lt;/em&gt;, and
+a tool that helps to identify bad codes is called a &lt;em&gt;‘debugger’&lt;/em&gt;.&lt;/p&gt;
+</content>
+  </entry>
 
   
 
