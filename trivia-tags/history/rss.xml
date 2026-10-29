@@ -8,7 +8,7 @@
       <generator>Zola</generator>
       <language>en</language>
       <atom:link href="https://lzon.ca/trivia-tags/history/rss.xml" rel="self" type="application/rss+xml"/>
-      <lastBuildDate>Tue, 27 Oct 2026 12:00:00 +0000</lastBuildDate>
+      <lastBuildDate>Wed, 28 Oct 2026 12:00:00 +0000</lastBuildDate>
       
       
       
@@ -16,6 +16,14 @@
       
       
       
+      <item>
+          <title></title>
+          <pubDate>Wed, 28 Oct 2026 12:00:00 +0000</pubDate>
+          <author>Lzon</author>
+          <link>https://lzon.ca/trivia/000008/</link>
+          <guid isPermaLink="false">https://lzon.ca/trivia/000008/</guid>
+          <description xml:base="https://lzon.ca/trivia/000008/">&lt;p&gt;The term ‘Computer Bug’ was popularized by programmer Grace Hopper after removing a moth from a malfunctioning computer.&lt;&#x2F;p&gt;</description>
+      </item>
       <item>
           <title></title>
           <pubDate>Tue, 27 Oct 2026 12:00:00 +0000</pubDate>

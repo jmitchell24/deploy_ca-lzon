@@ -8,7 +8,7 @@
       <generator>Zola</generator>
       <language>en</language>
       <atom:link href="https://lzon.ca/quotes/rss.xml" rel="self" type="application/rss+xml"/>
-      <lastBuildDate>Wed, 28 Oct 2026 12:00:00 +0000</lastBuildDate>
+      <lastBuildDate>Thu, 29 Oct 2026 12:00:00 +0000</lastBuildDate>
       
       
       
@@ -16,6 +16,15 @@
       
       
       
+      <item>
+          <title>0. lzon.ca&#x2F;quotes</title>
+          <pubDate>Thu, 29 Oct 2026 12:00:00 +0000</pubDate>
+          <author>Lzon</author>
+          <link>https://lzon.ca/quotes/</link>
+          <guid isPermaLink="false">https://lzon.ca/quotes/#0</guid>
+          <category>quote</category>
+          <description>The temptation shared by all forms of intelligence is cynicism.&lt;br/&gt;- Albert Camus</description>
+      </item>
       <item>
           <title>209. lzon.ca&#x2F;quotes</title>
           <pubDate>Wed, 28 Oct 2026 12:00:00 +0000</pubDate>
