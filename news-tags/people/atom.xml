@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  
+
+  <title>
+    lzon.ca - People</title>
+
+  <id>https://lzon.ca</id>
+
+  <link rel="alternate" href="https://lzon.ca"/>
+  <link rel="self" href="https://lzon.ca/news-tags/people/atom.xml" type="application/atom+xml"/>
+  <generator uri="https://www.getzola.org/">Zola</generator>
+
+  
+  <updated>2026-10-30T12:00:00Z</updated>
+
+  
+  
+  
+
+  
+  
+  
+  
+  
+  
+
+  
+  
+
+  
+
+  
+
+  
+  <entry>
+    <title>Patrick Stewart has died</title>
+    <id>https://lzon.ca/news/news-000031-patrick-stewart-death/</id>
+    <link href="https://lzon.ca/news/news-000031-patrick-stewart-death/"/>
+    <published>2026-10-30T12:00:00Z</published>
+    <updated>2026-10-30T12:00:00Z</updated>
+    <author><name>Lzon</name></author>
+    <summary type="html" xml:base="https://lzon.ca/news/news-000031-patrick-stewart-death/">&lt;p&gt;Patrick Stewart has passed away, well known for his performance as Jean-Luc Picard on the TV series Star Trek: The Next Generation.&lt;&#x2F;p&gt;</summary>
+  </entry>
+
+</feed>

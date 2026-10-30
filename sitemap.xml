@@ -463,10 +463,16 @@
         <loc>https://lzon.ca/news-tags/canada/</loc>
     </url>
     <url>
+        <loc>https://lzon.ca/news-tags/entertainment/</loc>
+    </url>
+    <url>
         <loc>https://lzon.ca/news-tags/gaming/</loc>
     </url>
     <url>
         <loc>https://lzon.ca/news-tags/health/</loc>
+    </url>
+    <url>
+        <loc>https://lzon.ca/news-tags/people/</loc>
     </url>
     <url>
         <loc>https://lzon.ca/news-tags/politics/</loc>
@@ -601,6 +607,10 @@
         <lastmod>2026-10-30</lastmod>
     </url>
     <url>
+        <loc>https://lzon.ca/news/news-000031-patrick-stewart-death/</loc>
+        <lastmod>2026-10-30</lastmod>
+    </url>
+    <url>
         <loc>https://lzon.ca/news/page/1/</loc>
     </url>
     <url>
@@ -608,6 +618,9 @@
     </url>
     <url>
         <loc>https://lzon.ca/news/page/3/</loc>
+    </url>
+    <url>
+        <loc>https://lzon.ca/news/page/4/</loc>
     </url>
     <url>
         <loc>https://lzon.ca/posts/</loc>
@@ -1083,6 +1096,10 @@
     <url>
         <loc>https://lzon.ca/quotes/000210/</loc>
         <lastmod>2026-10-29</lastmod>
+    </url>
+    <url>
+        <loc>https://lzon.ca/quotes/000211/</loc>
+        <lastmod>2026-10-30</lastmod>
     </url>
     <url>
         <loc>https://lzon.ca/quotes/quotes-000001-alexander-smith/</loc>

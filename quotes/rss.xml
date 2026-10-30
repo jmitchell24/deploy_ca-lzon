@@ -8,7 +8,7 @@
       <generator>Zola</generator>
       <language>en</language>
       <atom:link href="https://lzon.ca/quotes/rss.xml" rel="self" type="application/rss+xml"/>
-      <lastBuildDate>Thu, 29 Oct 2026 12:00:00 +0000</lastBuildDate>
+      <lastBuildDate>Fri, 30 Oct 2026 12:00:00 +0000</lastBuildDate>
       
       
       
@@ -16,6 +16,15 @@
       
       
       
+      <item>
+          <title>211. lzon.ca&#x2F;quotes</title>
+          <pubDate>Fri, 30 Oct 2026 12:00:00 +0000</pubDate>
+          <author>Lzon</author>
+          <link>https://lzon.ca/quotes/</link>
+          <guid isPermaLink="false">https://lzon.ca/quotes/#211</guid>
+          <category>quote</category>
+          <description>Nothing can we call our own but death and that small model of the barren earth which serves as paste and cover to our bones.&lt;br/&gt;- William Shakespeare (Richard II)</description>
+      </item>
       <item>
           <title>210. lzon.ca&#x2F;quotes</title>
           <pubDate>Thu, 29 Oct 2026 12:00:00 +0000</pubDate>
