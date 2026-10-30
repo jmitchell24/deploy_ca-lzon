@@ -8,7 +8,7 @@
       <generator>Zola</generator>
       <language>en</language>
       <atom:link href="https://lzon.ca/news/rss.xml" rel="self" type="application/rss+xml"/>
-      <lastBuildDate>Tue, 20 Oct 2026 12:00:00 +0000</lastBuildDate>
+      <lastBuildDate>Fri, 30 Oct 2026 12:00:00 +0000</lastBuildDate>
       
       
       
@@ -22,7 +22,9 @@
           <author>Lzon</author>
           <link>https://maccus.fr/en/waymo-robotaxis-serious-crashes/</link>
           <guid isPermaLink="false">https://lzon.ca/news/30</guid>
-          <description xml:base="https://lzon.ca/news/news-000030-waymo-crashes/">&lt;p&gt;Waymo has released a report in which they claim that their robo-taxi cars experience up to 95% fewer crashes than human-driven cars. This finding has been corroborated by the Insurance Institute for Highway Safety (IIHS) who conducted their own &lt;a rel=&quot;noopener external&quot; target=&quot;_blank&quot; href=&quot;https://www.iihs.org/news/detail/waymos-driverless-cars-crash-less-often-than-people&quot;&gt;independent study&lt;/a&gt; and found similar results.&lt;/p&gt;
+          <description xml:base="https://lzon.ca/news/news-000030-waymo-crashes/">&lt;p&gt;Waymo has released a report in which they claim that their robo-taxi cars experience up to 95% fewer crashes than human-driven cars.
+This finding has been corroborated by the Insurance Institute for Highway Safety (IIHS) who conducted their own &lt;a rel=&quot;noopener external&quot; target=&quot;_blank&quot; href=&quot;https://www.iihs.org/news/detail/waymos-driverless-cars-crash-less-often-than-people&quot;&gt;independent study&lt;/a&gt; and found similar results.&lt;/p&gt;
+&lt;span id=&quot;continue-reading&quot;&gt;&lt;/span&gt;
 &lt;p&gt;When self-driving technology was new over a decade ago there was an expectation that it would become much more widely adopted than it has so far. In part that assumption was based on the idea that the public would prefer self-driving once it was proven safer than human driving. It turned out that people seemed to have a much stronger distrust of self-driving than what was initially expected.&lt;/p&gt;
 &lt;p&gt;Personally, I have that mistrust too. And knowing that the self-driving car I’m about to get into is a better driver than me doesn’t change that. I do believe that self-driving cars are the future though. One day they will be so much safer than human drivers that we will have to accept them.&lt;/p&gt;
 </description>
@@ -34,6 +36,7 @@
           <link>https://www.universityofcalifornia.edu/news/new-study-shows-popular-glp-1-weight-loss-drug-may-slow-biological-aging</link>
           <guid isPermaLink="false">https://lzon.ca/news/29</guid>
           <description xml:base="https://lzon.ca/news/news-000029-glp1-aging/">&lt;p&gt;Researchers from the University of California analyzed data from a recent study to determine if semaglutide had anti aging effects. They discovered that study participants who received the drug had non-trivially improved markers of biological aging.&lt;/p&gt;
+&lt;span id=&quot;continue-reading&quot;&gt;&lt;/span&gt;
 &lt;p&gt;As with any study of this kind, It’s difficult to untangle the direct effects of the drug and the lifestyle improvements that it encourages. I myself lost a lot of weight without medical intervention, just a lot of personal effort and a change in diet. My bias is to believe that for most people this is enough, and that becoming dependent on a pharma corporation for your health should be avoided.&lt;/p&gt;
 </description>
       </item>

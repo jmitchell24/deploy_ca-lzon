@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  
+
+  <title>
+    lzon.ca - Politics</title>
+
+  <id>https://lzon.ca</id>
+
+  <link rel="alternate" href="https://lzon.ca"/>
+  <link rel="self" href="https://lzon.ca/news-tags/politics/atom.xml" type="application/atom+xml"/>
+  <generator uri="https://www.getzola.org/">Zola</generator>
+
+  
+  <updated>2026-08-30T12:00:00Z</updated>
+
+  
+  
+  
+
+  
+  
+  
+  
+  
+  
+
+  
+  
+
+  
+
+  
+
+  
+  <entry>
+    <title>Trump renames Lake Ontario as &#x27;Lake America&#x27;</title>
+    <id>https://lzon.ca/news/news-000025-trump-rename-lake/</id>
+    <link href="https://lzon.ca/news/news-000025-trump-rename-lake/"/>
+    <published>2026-08-30T12:00:00Z</published>
+    <updated>2026-08-30T12:00:00Z</updated>
+    <author><name>Lzon</name></author>
+    
+  </entry>
+
+</feed>

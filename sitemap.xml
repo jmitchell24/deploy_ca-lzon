@@ -13,6 +13,9 @@
         <loc>https://lzon.ca/category/news/</loc>
     </url>
     <url>
+        <loc>https://lzon.ca/curio-tags/</loc>
+    </url>
+    <url>
         <loc>https://lzon.ca/curios/</loc>
     </url>
     <url>
@@ -178,6 +181,9 @@
     </url>
     <url>
         <loc>https://lzon.ca/curios/page/4/</loc>
+    </url>
+    <url>
+        <loc>https://lzon.ca/links-tags/</loc>
     </url>
     <url>
         <loc>https://lzon.ca/links/</loc>
@@ -451,6 +457,27 @@
         <lastmod>2026-05-10</lastmod>
     </url>
     <url>
+        <loc>https://lzon.ca/news-tags/</loc>
+    </url>
+    <url>
+        <loc>https://lzon.ca/news-tags/canada/</loc>
+    </url>
+    <url>
+        <loc>https://lzon.ca/news-tags/gaming/</loc>
+    </url>
+    <url>
+        <loc>https://lzon.ca/news-tags/health/</loc>
+    </url>
+    <url>
+        <loc>https://lzon.ca/news-tags/politics/</loc>
+    </url>
+    <url>
+        <loc>https://lzon.ca/news-tags/science/</loc>
+    </url>
+    <url>
+        <loc>https://lzon.ca/news-tags/technology/</loc>
+    </url>
+    <url>
         <loc>https://lzon.ca/news/</loc>
     </url>
     <url>
@@ -567,11 +594,11 @@
     </url>
     <url>
         <loc>https://lzon.ca/news/news-000029-glp1-aging/</loc>
-        <lastmod>2026-10-19</lastmod>
+        <lastmod>2026-10-30</lastmod>
     </url>
     <url>
         <loc>https://lzon.ca/news/news-000030-waymo-crashes/</loc>
-        <lastmod>2026-10-20</lastmod>
+        <lastmod>2026-10-30</lastmod>
     </url>
     <url>
         <loc>https://lzon.ca/news/page/1/</loc>
@@ -1020,6 +1047,30 @@
     </url>
     <url>
         <loc>https://lzon.ca/quotes/</loc>
+    </url>
+    <url>
+        <loc>https://lzon.ca/quotes/000200/</loc>
+        <lastmod>2026-10-19</lastmod>
+    </url>
+    <url>
+        <loc>https://lzon.ca/quotes/000203/</loc>
+        <lastmod>2026-10-22</lastmod>
+    </url>
+    <url>
+        <loc>https://lzon.ca/quotes/000204/</loc>
+        <lastmod>2026-10-23</lastmod>
+    </url>
+    <url>
+        <loc>https://lzon.ca/quotes/000205/</loc>
+        <lastmod>2026-10-24</lastmod>
+    </url>
+    <url>
+        <loc>https://lzon.ca/quotes/000206/</loc>
+        <lastmod>2026-10-25</lastmod>
+    </url>
+    <url>
+        <loc>https://lzon.ca/quotes/000207/</loc>
+        <lastmod>2026-10-26</lastmod>
     </url>
     <url>
         <loc>https://lzon.ca/quotes/000208/</loc>
@@ -1830,36 +1881,12 @@
         <lastmod>2026-10-18</lastmod>
     </url>
     <url>
-        <loc>https://lzon.ca/quotes/quotes-000200-shakespeare/</loc>
-        <lastmod>2026-10-19</lastmod>
-    </url>
-    <url>
         <loc>https://lzon.ca/quotes/quotes-000201-coleridge/</loc>
         <lastmod>2026-10-20</lastmod>
     </url>
     <url>
         <loc>https://lzon.ca/quotes/quotes-000202-joseph-addison/</loc>
         <lastmod>2026-10-21</lastmod>
-    </url>
-    <url>
-        <loc>https://lzon.ca/quotes/quotes-000203-lzon/</loc>
-        <lastmod>2026-10-22</lastmod>
-    </url>
-    <url>
-        <loc>https://lzon.ca/quotes/quotes-000204-lzon/</loc>
-        <lastmod>2026-10-23</lastmod>
-    </url>
-    <url>
-        <loc>https://lzon.ca/quotes/quotes-000205-lzon/</loc>
-        <lastmod>2026-10-24</lastmod>
-    </url>
-    <url>
-        <loc>https://lzon.ca/quotes/quotes-000206-epictetus/</loc>
-        <lastmod>2026-10-25</lastmod>
-    </url>
-    <url>
-        <loc>https://lzon.ca/quotes/quotes-000207-byron/</loc>
-        <lastmod>2026-10-26</lastmod>
     </url>
     <url>
         <loc>https://lzon.ca/toys/</loc>

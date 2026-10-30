@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  
+
+  <title>
+    lzon.ca - Technology</title>
+
+  <id>https://lzon.ca</id>
+
+  <link rel="alternate" href="https://lzon.ca"/>
+  <link rel="self" href="https://lzon.ca/news-tags/technology/atom.xml" type="application/atom+xml"/>
+  <generator uri="https://www.getzola.org/">Zola</generator>
+
+  
+  <updated>2026-05-10T12:00:00Z</updated>
+
+  
+  
+  
+
+  
+  
+  
+  
+  
+  
+
+  
+  
+
+  
+
+  
+
+  
+  <entry>
+    <title>Mozilla, Mullvad, Proton, sign letter opposing UK age verification</title>
+    <id>https://lzon.ca/news/news-000006-uk-opposing-age-verification/</id>
+    <link href="https://lzon.ca/news/news-000006-uk-opposing-age-verification/"/>
+    <published>2026-05-10T12:00:00Z</published>
+    <updated>2026-05-10T12:00:00Z</updated>
+    <author><name>Lzon</name></author>
+    
+  </entry>
+
+  
+  <entry>
+    <title>Tesla Recalls Cybertrucks Over Concerns Their Wheels Could Come Off</title>
+    <id>https://lzon.ca/news/news-000005-tesla-recalls-cybertrucks/</id>
+    <link href="https://lzon.ca/news/news-000005-tesla-recalls-cybertrucks/"/>
+    <published>2026-05-08T12:00:00Z</published>
+    <updated>2026-05-08T12:00:00Z</updated>
+    <author><name>Lzon</name></author>
+    <summary type="html" xml:base="https://lzon.ca/news/news-000005-tesla-recalls-cybertrucks/">&lt;p&gt;Tesla is recalling several hundred budget variant Cybertrucks.&lt;&#x2F;p&gt;</summary>
+  </entry>
+
+</feed>

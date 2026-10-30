@@ -817,13 +817,83 @@
   }
 
   // ts/tree.ts
+  function syncOpenParam(node, open = node.classList.contains("open")) {
+    const param = node.dataset.openParam;
+    if (!param)
+      return;
+    const links = [
+      ...node.querySelectorAll("a[href]"),
+      ...document.querySelectorAll(`a[href][data-carry-param="${CSS.escape(param)}"]`)
+    ];
+    links.forEach((a) => {
+      const url = new URL(a.href, location.href);
+      if (url.origin !== location.origin)
+        return;
+      if (open)
+        url.searchParams.set(param, "open");
+      else
+        url.searchParams.delete(param);
+      a.href = url.pathname + url.search + url.hash;
+    });
+    const here = new URL(location.href);
+    if (open)
+      here.searchParams.set(param, "open");
+    else
+      here.searchParams.delete(param);
+    history.replaceState(history.state, "", here.pathname + here.search + here.hash);
+  }
+  function applyOpenParams() {
+    const params = new URLSearchParams(location.search);
+    document.querySelectorAll(".tree [data-open-param]").forEach((node) => {
+      if (params.get(node.dataset.openParam) === "open") {
+        node.classList.add("open");
+        syncOpenParam(node);
+      }
+    });
+  }
+  var TOGGLE_MS = 200;
+  function toggleNode(node) {
+    const opening = !node.classList.contains("open") || node.classList.contains("closing");
+    syncOpenParam(node, opening);
+    const list = node.querySelector(":scope > ul");
+    if (!list || matchMedia("(prefers-reduced-motion: reduce)").matches) {
+      node.classList.remove("closing");
+      node.classList.toggle("open", opening);
+      return;
+    }
+    const from = node.classList.contains("open") ? list.getBoundingClientRect().height : 0;
+    list.getAnimations().forEach((a) => a.cancel());
+    node.classList.add("open");
+    node.classList.toggle("closing", !opening);
+    const to = opening ? list.scrollHeight : 0;
+    list.style.overflow = "hidden";
+    const slide = list.animate([{ height: `${from}px`, opacity: opening ? 0 : 1 }, { height: `${to}px`, opacity: opening ? 1 : 0 }], { duration: TOGGLE_MS, easing: "ease" });
+    slide.onfinish = () => {
+      list.style.overflow = "";
+      node.classList.remove("closing");
+      if (!opening)
+        node.classList.remove("open");
+    };
+    slide.oncancel = () => {
+      list.style.overflow = "";
+    };
+  }
   function initTree() {
+    if (document.readyState === "loading")
+      document.addEventListener("DOMContentLoaded", applyOpenParams);
+    else
+      applyOpenParams();
     document.addEventListener("click", (e) => {
       const head = e.target?.closest(".tree-node-head");
       const node = head?.closest("li");
       if (!node || node.classList.contains("tree-node-fixed"))
         return;
-      node.classList.toggle("open");
+      const link = e.target.closest("a[href]");
+      if (link && new URL(link.href, location.href).pathname !== location.pathname)
+        return;
+      if (link)
+        e.preventDefault();
+      toggleNode(node);
     });
   }
 

@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
+    <channel>
+      <title>
+        lzon.ca - Science</title>
+      <link>https://lzon.ca</link>
+      <description></description>
+      <generator>Zola</generator>
+      <language>en</language>
+      <atom:link href="https://lzon.ca/news-tags/science/rss.xml" rel="self" type="application/rss+xml"/>
+      <lastBuildDate>Fri, 30 Oct 2026 12:00:00 +0000</lastBuildDate>
+      
+      
+      
+      
+      
+      
+      
+      <item>
+          <title>Study demonstrates potential anti-aging effect in GLP-1 drugs</title>
+          <pubDate>Mon, 19 Oct 2026 12:00:00 +0000</pubDate>
+          <author>Lzon</author>
+          <link>https://lzon.ca/news/news-000029-glp1-aging/</link>
+          <guid isPermaLink="false">https://lzon.ca/news/news-000029-glp1-aging/</guid>
+          <description xml:base="https://lzon.ca/news/news-000029-glp1-aging/">&lt;p&gt;Researchers from the University of California analyzed data from a recent study to determine if semaglutide had anti aging effects. They discovered that study participants who received the drug had non-trivially improved markers of biological aging.&lt;&#x2F;p&gt;</description>
+      </item>
+      <item>
+          <title>Earth reaches farthest orbit from Sun for 2026</title>
+          <pubDate>Mon, 06 Jul 2026 12:00:00 +0000</pubDate>
+          <author>Lzon</author>
+          <link>https://lzon.ca/news/news-000024-aphelion-2026/</link>
+          <guid isPermaLink="false">https://lzon.ca/news/news-000024-aphelion-2026/</guid>
+      </item>
+    </channel>
+</rss>

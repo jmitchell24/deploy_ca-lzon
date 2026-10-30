@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
+    <channel>
+      <title>
+        lzon.ca - Technology</title>
+      <link>https://lzon.ca</link>
+      <description></description>
+      <generator>Zola</generator>
+      <language>en</language>
+      <atom:link href="https://lzon.ca/news-tags/technology/rss.xml" rel="self" type="application/rss+xml"/>
+      <lastBuildDate>Sun, 10 May 2026 12:00:00 +0000</lastBuildDate>
+      
+      
+      
+      
+      
+      
+      
+      <item>
+          <title>Mozilla, Mullvad, Proton, sign letter opposing UK age verification</title>
+          <pubDate>Sun, 10 May 2026 12:00:00 +0000</pubDate>
+          <author>Lzon</author>
+          <link>https://lzon.ca/news/news-000006-uk-opposing-age-verification/</link>
+          <guid isPermaLink="false">https://lzon.ca/news/news-000006-uk-opposing-age-verification/</guid>
+      </item>
+      <item>
+          <title>Tesla Recalls Cybertrucks Over Concerns Their Wheels Could Come Off</title>
+          <pubDate>Fri, 08 May 2026 12:00:00 +0000</pubDate>
+          <author>Lzon</author>
+          <link>https://lzon.ca/news/news-000005-tesla-recalls-cybertrucks/</link>
+          <guid isPermaLink="false">https://lzon.ca/news/news-000005-tesla-recalls-cybertrucks/</guid>
+          <description xml:base="https://lzon.ca/news/news-000005-tesla-recalls-cybertrucks/">&lt;p&gt;Tesla is recalling several hundred budget variant Cybertrucks.&lt;&#x2F;p&gt;</description>
+      </item>
+    </channel>
+</rss>
