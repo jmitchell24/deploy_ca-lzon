@@ -851,6 +851,10 @@
       }
     });
   }
+  function samePath(a, b) {
+    const trim = (p) => p.replace(/\/+$/, "") || "/";
+    return trim(a) === trim(b);
+  }
   var TOGGLE_MS = 200;
   function toggleNode(node) {
     const opening = !node.classList.contains("open") || node.classList.contains("closing");
@@ -889,10 +893,12 @@
       if (!node || node.classList.contains("tree-node-fixed"))
         return;
       const link = e.target.closest("a[href]");
-      if (link && new URL(link.href, location.href).pathname !== location.pathname)
-        return;
-      if (link)
+      if (link) {
+        const closed = !node.classList.contains("open") || node.classList.contains("closing");
+        if (!closed && !samePath(new URL(link.href, location.href).pathname, location.pathname))
+          return;
         e.preventDefault();
+      }
       toggleNode(node);
     });
   }
