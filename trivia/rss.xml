@@ -8,7 +8,7 @@
       <generator>Zola</generator>
       <language>en</language>
       <atom:link href="https://lzon.ca/trivia/rss.xml" rel="self" type="application/rss+xml"/>
-      <lastBuildDate>Wed, 28 Oct 2026 12:00:00 +0000</lastBuildDate>
+      <lastBuildDate>Sat, 31 Oct 2026 12:00:00 +0000</lastBuildDate>
       
       
       
@@ -16,6 +16,27 @@
       
       
       
+      <item>
+          <title>0. George Renninger, a 19th century confectioner is regarded as the original creator of candy corn.</title>
+          <pubDate>Sat, 31 Oct 2026 12:00:00 +0000</pubDate>
+          <author>Lzon</author>
+          <link>https://lzon.ca/trivia/000010/</link>
+          <guid isPermaLink="false">https://lzon.ca/trivia/0</guid><description xml:base="https://lzon.ca/trivia/000010/">
+&lt;figure class=&quot;figure mx-auto float-md-right w-100 w-md-40 w-sm-75&quot;&gt;
+    
+    &lt;img src=&quot;&amp;#x2F;trivia&amp;#x2F;img&amp;#x2F;candy-corn.jpg&quot; alt=&quot;An ad for candy corn produced by Goelitz Candy Company.&quot;&gt; &lt;/img&gt;
+    
+    &lt;figcaption class=&quot;flex-row gap-xs text-sm p-xs&quot;&gt;
+        &lt;a class=&quot;stretched-link text-wrap text-align-center&quot; href=&quot;&amp;#x2F;trivia&amp;#x2F;img&amp;#x2F;candy-corn.jpg&quot; target=&quot;_blank&quot;&gt;
+            An ad for candy corn produced by Goelitz Candy Company.
+        &lt;/a&gt;
+    &lt;/figcaption&gt;
+&lt;/figure&gt;
+&lt;p&gt;He originally called his classic autumn treat ‘Chicken Feed’. It wouldn’t be popularly named Candy Corn until after World War 1 when the American diet began incorporating much more corn-derived foods.&lt;/p&gt;
+&lt;p&gt;As one of the original producers of the candy, &lt;a rel=&quot;noopener external&quot; target=&quot;_blank&quot; href=&quot;https://en.wikipedia.org/wiki/Jelly_Belly&quot;&gt;Goelitz Candy Company&lt;/a&gt; (now Jelly Belly) helped to popularize the candy. They ran ad campaigns including one in which a bold rooster characture declares himself the “King of the Candy Corn Fields”.&lt;/p&gt;
+&lt;p&gt;In the modern era most candy corn is produced by Ferrero under the Brach’s brand. They control roughly 85% of the market. The National Confectioners Association has estimated that about 35 million pounds of candy corn are produced each year. They have also declared October 30th to be National Candy Corn Day.&lt;/p&gt;
+</description>
+      </item>
       <item>
           <title>8. The term ‘Computer Bug’ was popularized by programmer Grace Hopper after removing a moth from a malfunctioning computer.</title>
           <pubDate>Wed, 28 Oct 2026 12:00:00 +0000</pubDate>

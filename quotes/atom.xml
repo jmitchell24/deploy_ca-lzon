@@ -13,7 +13,7 @@
   <generator uri="https://www.getzola.org/">Zola</generator>
 
   
-  <updated>2026-10-30T12:00:00Z</updated>
+  <updated>2026-10-31T12:00:00Z</updated>
 
   
   
@@ -32,6 +32,20 @@
   
 
   
+
+  
+
+  
+  <entry>
+    <title>212. lzon.ca&#x2F;quotes</title>
+    <id>https://lzon.ca/quotes/#212</id>
+    <link href="https://lzon.ca/quotes/"/>
+    <published>2026-10-31T12:00:00Z</published>
+    <updated>2026-10-31T12:00:00Z</updated>
+    <author><name>Lzon</name></author>
+    <category term="quote"/>
+    <summary type="html">Ghosts were created when the first man woke in the night.&lt;br/&gt;- James Matthew Barrie (The Little Minister)</summary>
+  </entry>
 
   
 

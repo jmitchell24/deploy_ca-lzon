@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  
+
+  <title>
+    lzon.ca - Seasonal</title>
+
+  <id>https://lzon.ca</id>
+
+  <link rel="alternate" href="https://lzon.ca"/>
+  <link rel="self" href="https://lzon.ca/trivia-tags/seasonal/atom.xml" type="application/atom+xml"/>
+  <generator uri="https://www.getzola.org/">Zola</generator>
+
+  
+  <updated>2026-10-31T12:00:00Z</updated>
+
+  
+  
+  
+
+  
+  
+  
+  
+  
+  
+
+  
+  
+
+  
+
+  
+
+  
+  <entry>
+    <title></title>
+    <id>https://lzon.ca/trivia/000010/</id>
+    <link href="https://lzon.ca/trivia/000010/"/>
+    <published>2026-10-31T12:00:00Z</published>
+    <updated>2026-10-31T12:00:00Z</updated>
+    <author><name>Lzon</name></author>
+    <summary type="html" xml:base="https://lzon.ca/trivia/000010/">&lt;p&gt;George Renninger, a 19th century confectioner is regarded as the original creator of candy corn.&lt;&#x2F;p&gt;</summary>
+  </entry>
+
+</feed>

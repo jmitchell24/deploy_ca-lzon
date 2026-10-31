@@ -8,7 +8,7 @@
       <generator>Zola</generator>
       <language>en</language>
       <atom:link href="https://lzon.ca/quotes/rss.xml" rel="self" type="application/rss+xml"/>
-      <lastBuildDate>Fri, 30 Oct 2026 12:00:00 +0000</lastBuildDate>
+      <lastBuildDate>Sat, 31 Oct 2026 12:00:00 +0000</lastBuildDate>
       
       
       
@@ -16,6 +16,15 @@
       
       
       
+      <item>
+          <title>212. lzon.ca&#x2F;quotes</title>
+          <pubDate>Sat, 31 Oct 2026 12:00:00 +0000</pubDate>
+          <author>Lzon</author>
+          <link>https://lzon.ca/quotes/</link>
+          <guid isPermaLink="false">https://lzon.ca/quotes/#212</guid>
+          <category>quote</category>
+          <description>Ghosts were created when the first man woke in the night.&lt;br/&gt;- James Matthew Barrie (The Little Minister)</description>
+      </item>
       <item>
           <title>211. lzon.ca&#x2F;quotes</title>
           <pubDate>Fri, 30 Oct 2026 12:00:00 +0000</pubDate>

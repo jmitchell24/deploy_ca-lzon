@@ -1102,6 +1102,10 @@
         <lastmod>2026-10-30</lastmod>
     </url>
     <url>
+        <loc>https://lzon.ca/quotes/000212/</loc>
+        <lastmod>2026-10-31</lastmod>
+    </url>
+    <url>
         <loc>https://lzon.ca/quotes/quotes-000001-alexander-smith/</loc>
         <lastmod>2025-11-30</lastmod>
     </url>
@@ -1955,6 +1959,9 @@
         <loc>https://lzon.ca/trivia-tags/science/</loc>
     </url>
     <url>
+        <loc>https://lzon.ca/trivia-tags/seasonal/</loc>
+    </url>
+    <url>
         <loc>https://lzon.ca/trivia-tags/sociology/</loc>
     </url>
     <url>
@@ -1991,5 +1998,9 @@
     <url>
         <loc>https://lzon.ca/trivia/000008/</loc>
         <lastmod>2026-10-28</lastmod>
+    </url>
+    <url>
+        <loc>https://lzon.ca/trivia/000010/</loc>
+        <lastmod>2026-10-31</lastmod>
     </url>
 </urlset>
