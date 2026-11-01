@@ -8,7 +8,7 @@
       <generator>Zola</generator>
       <language>en</language>
       <atom:link href="https://lzon.ca/news-tags/technology/rss.xml" rel="self" type="application/rss+xml"/>
-      <lastBuildDate>Sun, 10 May 2026 12:00:00 +0000</lastBuildDate>
+      <lastBuildDate>Sat, 17 Oct 2026 12:00:00 +0000</lastBuildDate>
       
       
       
@@ -16,6 +16,14 @@
       
       
       
+      <item>
+          <title>Micro Center now lists GeForce RTX 5090 cards as &#x27;Not Carried&#x27;</title>
+          <pubDate>Sat, 17 Oct 2026 12:00:00 +0000</pubDate>
+          <author>Lzon</author>
+          <link>https://lzon.ca/news/news-000027-rtx-5090-not-carried/</link>
+          <guid isPermaLink="false">https://lzon.ca/news/news-000027-rtx-5090-not-carried/</guid>
+          <description xml:base="https://lzon.ca/news/news-000027-rtx-5090-not-carried/">&lt;p&gt;The American computer retailer Micro Center no longer appears to be receiving new RTX 5090 graphics cards from any of their suppliers.&lt;&#x2F;p&gt;</description>
+      </item>
       <item>
           <title>Mozilla, Mullvad, Proton, sign letter opposing UK age verification</title>
           <pubDate>Sun, 10 May 2026 12:00:00 +0000</pubDate>
