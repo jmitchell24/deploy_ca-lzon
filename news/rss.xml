@@ -8,7 +8,7 @@
       <generator>Zola</generator>
       <language>en</language>
       <atom:link href="https://lzon.ca/news/rss.xml" rel="self" type="application/rss+xml"/>
-      <lastBuildDate>Fri, 30 Oct 2026 12:00:00 +0000</lastBuildDate>
+      <lastBuildDate>Sun, 01 Nov 2026 12:00:00 +0000</lastBuildDate>
       
       
       
@@ -86,9 +86,11 @@ This finding has been corroborated by the Insurance Institute for Highway Safety
           <author>Lzon</author>
           <link>https://www.theregister.com/ai-and-ml/2026/09/10/openais-website-hijacking-swarm-reached-far-further-than-we-thought/5295644</link>
           <guid isPermaLink="false">https://lzon.ca/news/26</guid>
-          <description xml:base="https://lzon.ca/news/news-000026-openai-hacker-swarm/">&lt;p&gt;There now appears to be yet more evidence for further security breaches conducted by the agent swarm that attacked Hugging Face back in May.&lt;/p&gt;
-&lt;p&gt;To me the response to this and the earlier reports is plainly obvious: A crime was commited by an automated process. The human operator who triggered the autoamtion is legally responsible for anything done by said automation.&lt;/p&gt;
-&lt;p&gt;The only appropriate response to this and the other hacking cases is a full criminal investigation of OpenAI. Beyond that I believe that it would be warranted to put a hard regulatory limit on the runtime of AI agents. This ‘agent swarm’ was running continuously for many days with little or no supervision. That was not necessary, it did not serve a useful commercialy purpose. It should not have been allowed to happen.&lt;/p&gt;
+          <description xml:base="https://lzon.ca/news/news-000026-openai-hacker-swarm/">&lt;p&gt;A new report suggests that an agent swarm created by Open AI was accessing and abusing a large number of web services.
+This follows an earlier report of the same swarm breaching security at the AI startup Hugging Face.&lt;/p&gt;
+&lt;span id=&quot;continue-reading&quot;&gt;&lt;/span&gt;
+&lt;p&gt;In my opinion the response to this and the earlier reports should be clear and obvious: The law was broken, even if unintentionally. The crime was comitted by the employees of OpenAI who triggered the swarm, not the swarm itself.&lt;/p&gt;
+&lt;p&gt;The only appropriate response to this and the other hacking cases is a full criminal investigation of OpenAI. Beyond that I believe that it would be warranted to put a hard regulatory limit on the runtime of AI agents. This ‘agent swarm’ was running continuously for many days with little or no supervision. That was not necessary, it did not serve a useful commercial purpose. It should not have been allowed to happen.&lt;/p&gt;
 </description>
       </item>
       <item>
@@ -132,8 +134,9 @@ This finding has been corroborated by the Insurance Institute for Highway Safety
           <link>https://www.ign.com/articles/gta-6-price-finally-confirmed-features-a-single-player-experience-at-launch</link>
           <guid isPermaLink="false">https://lzon.ca/news/22</guid>
           <description xml:base="https://lzon.ca/news/news-000022-gta-vi-price/">&lt;p&gt;Grand Theft Auto 6 will launch at $80 USD, and $100 for the ‘Ultimate Edition’.&lt;/p&gt;
-&lt;p&gt;This isn’t surprising. Expectations for the game are sky high, game prices have already been trending upward, and inflation overall in the economy is running very hot. It may not feel like it but game prices have actually been remarkably stable, the standard $60 price didn’t change for decades despite a falling value of the US dollar.&lt;/p&gt;
-&lt;p&gt;This is easy enough to see even in the launch price of Grand Theft Auto 5. $60 in 2013 is equivalent to a little over &lt;a rel=&quot;noopener external&quot; target=&quot;_blank&quot; href=&quot;https://www.calculator.net/inflation-calculator.html?cstartingamount1=60&amp;amp;cinmonth1=13&amp;amp;cinyear1=2013&amp;amp;coutmonth1=5&amp;amp;coutyear1=2026&amp;amp;calctype=1&amp;amp;x=Calculate#uscpi&quot;&gt;$85&lt;/a&gt; today.&lt;/p&gt;
+&lt;span id=&quot;continue-reading&quot;&gt;&lt;/span&gt;
+&lt;p&gt;Personally, I am not surprised. Expectations for the game are very high, and video game prices have already been trending upward. Inflation overall in the economy has also accelerated. It may not feel like it, but game prices have actually been remarkably stable for a very long time. The standard $60 price didn’t change for decades despite the ever falling value of the American dollar.&lt;/p&gt;
+&lt;p&gt;This is easy enough to see even in the launch price of Grand Theft Auto 5. The game was released back in 2013 for $60. That amount today is equivalent to a little over &lt;a rel=&quot;noopener external&quot; target=&quot;_blank&quot; href=&quot;https://www.calculator.net/inflation-calculator.html?cstartingamount1=60&amp;amp;cinmonth1=13&amp;amp;cinyear1=2013&amp;amp;coutmonth1=5&amp;amp;coutyear1=2026&amp;amp;calctype=1&amp;amp;x=Calculate#uscpi&quot;&gt;$85&lt;/a&gt;.&lt;/p&gt;
 </description>
       </item>
       <item>
@@ -165,8 +168,9 @@ This finding has been corroborated by the Insurance Institute for Highway Safety
           <author>Lzon</author>
           <link>https://apnews.com/article/musk-spacex-tesla-ipo-trillionaire-billionaire-worth-rockets-7723f82b6063a9a17c194e25982cd66d</link>
           <guid isPermaLink="false">https://lzon.ca/news/19</guid>
-          <description xml:base="https://lzon.ca/news/news-000019-elon-musk-trillionaire/">&lt;p&gt;Following immediately from the IPO of Elon Musk’s company SpaceX, he is now officially the world’s first trillionaire.&lt;/p&gt;
-&lt;p&gt;His net worth had already climbed close to the new milestone prior to the IPO, with varying sources claiming a number between 800-900 billion dollars. The jump in price of now-public SpaceX stock has added a 13th digit to his total net worth.&lt;/p&gt;
+          <description xml:base="https://lzon.ca/news/news-000019-elon-musk-trillionaire/">&lt;p&gt;Elon musk became the world’s first trillionaire immediately following the IPO of Space X, the now public aerospace company for which he is a founder.&lt;/p&gt;
+&lt;span id=&quot;continue-reading&quot;&gt;&lt;/span&gt;
+&lt;p&gt;His net worth had already climbed significantly leading up to the day of the IPO. Varying sources claimed his net worth to be between 800-900 billion dollars in recent weeks. The immediate surge in stock price for Space X on the day of its IPO meant that Musk’s share of the company was worth enough to make him a trillionaire.&lt;/p&gt;
 &lt;p&gt;I’m sure he is very proud…&lt;/p&gt;
 </description>
       </item>

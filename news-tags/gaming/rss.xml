@@ -8,7 +8,7 @@
       <generator>Zola</generator>
       <language>en</language>
       <atom:link href="https://lzon.ca/news-tags/gaming/rss.xml" rel="self" type="application/rss+xml"/>
-      <lastBuildDate>Sat, 17 Oct 2026 12:00:00 +0000</lastBuildDate>
+      <lastBuildDate>Sun, 01 Nov 2026 12:00:00 +0000</lastBuildDate>
       
       
       
@@ -30,6 +30,7 @@
           <author>Lzon</author>
           <link>https://lzon.ca/news/news-000022-gta-vi-price/</link>
           <guid isPermaLink="false">https://lzon.ca/news/news-000022-gta-vi-price/</guid>
+          <description xml:base="https://lzon.ca/news/news-000022-gta-vi-price/">&lt;p&gt;Grand Theft Auto 6 will launch at $80 USD, and $100 for the ‘Ultimate Edition’.&lt;&#x2F;p&gt;</description>
       </item>
       <item>
           <title>Valve launches the Steam Machine starting at $1049 USD.</title>
