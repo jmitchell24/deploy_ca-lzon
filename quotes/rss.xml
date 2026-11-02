@@ -8,7 +8,7 @@
       <generator>Zola</generator>
       <language>en</language>
       <atom:link href="https://lzon.ca/quotes/rss.xml" rel="self" type="application/rss+xml"/>
-      <lastBuildDate>Sun, 01 Nov 2026 12:00:00 +0000</lastBuildDate>
+      <lastBuildDate>Mon, 02 Nov 2026 12:00:00 +0000</lastBuildDate>
       
       
       
@@ -16,6 +16,15 @@
       
       
       
+      <item>
+          <title>214. lzon.ca&#x2F;quotes</title>
+          <pubDate>Mon, 02 Nov 2026 12:00:00 +0000</pubDate>
+          <author>Lzon</author>
+          <link>https://lzon.ca/quotes/</link>
+          <guid isPermaLink="false">https://lzon.ca/quotes/#214</guid>
+          <category>quote</category>
+          <description>Music resembles poetry. In each are nameless graces which no methods teach, and which a master-hand alone can reach.&lt;br/&gt;- Alexander Pope</description>
+      </item>
       <item>
           <title>213. lzon.ca&#x2F;quotes</title>
           <pubDate>Sun, 01 Nov 2026 12:00:00 +0000</pubDate>
