@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  
+
+  <title>
+    lzon.ca - Business</title>
+
+  <id>https://lzon.ca</id>
+
+  <link rel="alternate" href="https://lzon.ca"/>
+  <link rel="self" href="https://lzon.ca/news-tags/business/atom.xml" type="application/atom+xml"/>
+  <generator uri="https://www.getzola.org/">Zola</generator>
+
+  
+  <updated>2026-11-02T12:00:00Z</updated>
+
+  
+  
+  
+
+  
+  
+  
+  
+  
+  
+
+  
+  
+
+  
+
+  
+
+  
+  <entry>
+    <title>Waymo to expand Robo-taxi service into Canada</title>
+    <id>https://lzon.ca/news/news-000028-waymos-robotaxis-canada/</id>
+    <link href="https://lzon.ca/news/news-000028-waymos-robotaxis-canada/"/>
+    <published>2026-10-19T12:00:00Z</published>
+    <updated>2026-10-19T12:00:00Z</updated>
+    <author><name>Lzon</name></author>
+    <summary type="html" xml:base="https://lzon.ca/news/news-000028-waymos-robotaxis-canada/">&lt;p&gt;Alphabet’s Robo-taxi company Waymo announced their plan to expand services into Canada.&lt;&#x2F;p&gt;</summary>
+  </entry>
+
+  
+  <entry>
+    <title>Meta to build cloud compute business to recoup its massive AI investment</title>
+    <id>https://lzon.ca/news/news-000023-meta-cloud-business/</id>
+    <link href="https://lzon.ca/news/news-000023-meta-cloud-business/"/>
+    <published>2026-07-03T12:00:00Z</published>
+    <updated>2026-11-02T12:00:00Z</updated>
+    <author><name>Lzon</name></author>
+    <summary type="html" xml:base="https://lzon.ca/news/news-000023-meta-cloud-business/">&lt;p&gt;Meta (formerly Facebook) has announced that it will be entering into the cloud compute business. It appears as though this is an attempt to recoup what was otherwise an over-investment in data centers which were initially intended for AI.&lt;&#x2F;p&gt;</summary>
+  </entry>
+
+  
+  <entry>
+    <title>Elon Musk becomes world&#x27;s first trillionaire</title>
+    <id>https://lzon.ca/news/news-000019-elon-musk-trillionaire/</id>
+    <link href="https://lzon.ca/news/news-000019-elon-musk-trillionaire/"/>
+    <published>2026-06-12T12:00:00Z</published>
+    <updated>2026-11-02T12:00:00Z</updated>
+    <author><name>Lzon</name></author>
+    <summary type="html" xml:base="https://lzon.ca/news/news-000019-elon-musk-trillionaire/">&lt;p&gt;Elon musk became the world’s first trillionaire immediately following the IPO of Space X, the now public aerospace company for which he is a founder.&lt;&#x2F;p&gt;</summary>
+  </entry>
+
+  
+  <entry>
+    <title>Corsair to source DRAM chips from Chinese fab</title>
+    <id>https://lzon.ca/news/news-000015-memory-cxmt-shortages/</id>
+    <link href="https://lzon.ca/news/news-000015-memory-cxmt-shortages/"/>
+    <published>2026-05-27T12:00:00Z</published>
+    <updated>2026-11-02T12:00:00Z</updated>
+    <author><name>Lzon</name></author>
+    <summary type="html" xml:base="https://lzon.ca/news/news-000015-memory-cxmt-shortages/">&lt;p&gt;Corsair will begin sourcing DRAM chips from chinese DRAM manufacturer &lt;a rel=&quot;noopener external&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;en.wikipedia.org&#x2F;wiki&#x2F;ChangXin_Memory_Technologies&quot;&gt;CXMT&lt;&#x2F;a&gt;.&lt;&#x2F;p&gt;</summary>
+  </entry>
+
+  
+  <entry>
+    <title>Starbucks scraps AI inventory tool across North America</title>
+    <id>https://lzon.ca/news/news-000012-starbucks-ai-rollback/</id>
+    <link href="https://lzon.ca/news/news-000012-starbucks-ai-rollback/"/>
+    <published>2026-05-23T12:00:00Z</published>
+    <updated>2026-11-02T12:00:00Z</updated>
+    <author><name>Lzon</name></author>
+    <summary type="html" xml:base="https://lzon.ca/news/news-000012-starbucks-ai-rollback/">&lt;p&gt;Starbucks is dropping the AI-based inventory manager that it began using in September 2025. The software has numerous issues including miscounting and mislabeling inventory items. This decision comes after a multi year effort by CEO &lt;a rel=&quot;noopener external&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;en.wikipedia.org&#x2F;wiki&#x2F;Brian_Niccol&quot;&gt;Brian Niccol&lt;&#x2F;a&gt; to increase efficiency of the company’s supply chain.&lt;&#x2F;p&gt;</summary>
+  </entry>
+
+</feed>

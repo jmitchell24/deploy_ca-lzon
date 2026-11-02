@@ -8,7 +8,7 @@
       <generator>Zola</generator>
       <language>en</language>
       <atom:link href="https://lzon.ca/news-tags/politics/rss.xml" rel="self" type="application/rss+xml"/>
-      <lastBuildDate>Sun, 30 Aug 2026 12:00:00 +0000</lastBuildDate>
+      <lastBuildDate>Mon, 02 Nov 2026 12:00:00 +0000</lastBuildDate>
       
       
       
@@ -22,6 +22,31 @@
           <author>Lzon</author>
           <link>https://lzon.ca/news/news-000025-trump-rename-lake/</link>
           <guid isPermaLink="false">https://lzon.ca/news/news-000025-trump-rename-lake/</guid>
+          <description xml:base="https://lzon.ca/news/news-000025-trump-rename-lake/">&lt;p&gt;Donald Trump has renamed Lake Ontario to ‘Lake America’ following the recent failure of trade negotiations between USA and Canada.&lt;&#x2F;p&gt;</description>
+      </item>
+      <item>
+          <title>Fully autonomous drones have killed human soldiers for the first time</title>
+          <pubDate>Thu, 11 Jun 2026 12:00:00 +0000</pubDate>
+          <author>Lzon</author>
+          <link>https://lzon.ca/news/news-000018-drones-killed-soldiers/</link>
+          <guid isPermaLink="false">https://lzon.ca/news/news-000018-drones-killed-soldiers/</guid>
+          <description xml:base="https://lzon.ca/news/news-000018-drones-killed-soldiers/">&lt;p&gt;A military contractor named Alexander Kokhanovskyy has revealed that a test was conducted two years ago in which fully autonomous drones killed human soldiers.&lt;&#x2F;p&gt;</description>
+      </item>
+      <item>
+          <title>Rockstar Games employees have formed a union</title>
+          <pubDate>Tue, 09 Jun 2026 12:00:00 +0000</pubDate>
+          <author>Lzon</author>
+          <link>https://lzon.ca/news/news-000017-rockstar-union/</link>
+          <guid isPermaLink="false">https://lzon.ca/news/news-000017-rockstar-union/</guid>
+          <description xml:base="https://lzon.ca/news/news-000017-rockstar-union/">&lt;p&gt;Employees of Rockstar Games have announced their intent to form a union, to be called “Rockstar Game Workers Union”. It will be a subsidiary of the existing “Workers’ Union of Great Britain”.&lt;&#x2F;p&gt;</description>
+      </item>
+      <item>
+          <title>First Chinese-made EVs arrive in Canada under deal Carney struck with Xi</title>
+          <pubDate>Sat, 30 May 2026 12:00:00 +0000</pubDate>
+          <author>Lzon</author>
+          <link>https://lzon.ca/news/news-000016-chinese-evs-canada/</link>
+          <guid isPermaLink="false">https://lzon.ca/news/news-000016-chinese-evs-canada/</guid>
+          <description xml:base="https://lzon.ca/news/news-000016-chinese-evs-canada/">&lt;p&gt;The first China-made electric vehicles have arrived in Canada following a recent tariff reduction deal. The shipment was mostly from Tesla’s Shanghai factory, with some Lotus branded vehicles as well.&lt;&#x2F;p&gt;</description>
       </item>
     </channel>
 </rss>

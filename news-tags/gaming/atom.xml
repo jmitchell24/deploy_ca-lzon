@@ -13,7 +13,7 @@
   <generator uri="https://www.getzola.org/">Zola</generator>
 
   
-  <updated>2026-11-01T12:00:00Z</updated>
+  <updated>2026-11-02T12:00:00Z</updated>
 
   
   
@@ -58,12 +58,12 @@
   
   <entry>
     <title>Valve launches the Steam Machine starting at $1049 USD.</title>
-    <id>https://lzon.ca/news/news-000021-official-steam-news-steam-news-hub/</id>
-    <link href="https://lzon.ca/news/news-000021-official-steam-news-steam-news-hub/"/>
+    <id>https://lzon.ca/news/news-000021-steam-machine-price/</id>
+    <link href="https://lzon.ca/news/news-000021-steam-machine-price/"/>
     <published>2026-06-23T12:00:00Z</published>
-    <updated>2026-06-23T12:00:00Z</updated>
+    <updated>2026-11-02T12:00:00Z</updated>
     <author><name>Lzon</name></author>
-    
+    <summary type="html" xml:base="https://lzon.ca/news/news-000021-steam-machine-price/">&lt;p&gt;Valve has officially launched the new Steam Machine. It’s a small gaming PC intended to provide a more console like, living room oriented experience. It comes preinstalled with &lt;a rel=&quot;noopener external&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;en.wikipedia.org&#x2F;wiki&#x2F;SteamOS&quot;&gt;Steam OS&lt;&#x2F;a&gt;, the same linux-based operating system used on the Steam Deck.&lt;&#x2F;p&gt;</summary>
   </entry>
 
   
@@ -72,9 +72,20 @@
     <id>https://lzon.ca/news/news-000020-xbox-closing-hellblade/</id>
     <link href="https://lzon.ca/news/news-000020-xbox-closing-hellblade/"/>
     <published>2026-06-16T12:00:00Z</published>
-    <updated>2026-06-16T12:00:00Z</updated>
+    <updated>2026-11-02T12:00:00Z</updated>
     <author><name>Lzon</name></author>
-    
+    <summary type="html" xml:base="https://lzon.ca/news/news-000020-xbox-closing-hellblade/">&lt;p&gt;Microsoft is shuttering the famous game studio Ninja Theory, known for having developed the &lt;a rel=&quot;noopener external&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;en.wikipedia.org&#x2F;wiki&#x2F;Hellblade:_Senua%27s_Sacrifice&quot;&gt;Hellblade&lt;&#x2F;a&gt; series of games. The third game in that series called ‘Senua’ was in active development at the time of this report.&lt;&#x2F;p&gt;</summary>
+  </entry>
+
+  
+  <entry>
+    <title>Rockstar Games employees have formed a union</title>
+    <id>https://lzon.ca/news/news-000017-rockstar-union/</id>
+    <link href="https://lzon.ca/news/news-000017-rockstar-union/"/>
+    <published>2026-06-09T12:00:00Z</published>
+    <updated>2026-11-02T12:00:00Z</updated>
+    <author><name>Lzon</name></author>
+    <summary type="html" xml:base="https://lzon.ca/news/news-000017-rockstar-union/">&lt;p&gt;Employees of Rockstar Games have announced their intent to form a union, to be called “Rockstar Game Workers Union”. It will be a subsidiary of the existing “Workers’ Union of Great Britain”.&lt;&#x2F;p&gt;</summary>
   </entry>
 
   
@@ -108,6 +119,17 @@
     <updated>2026-05-07T12:00:00Z</updated>
     <author><name>Lzon</name></author>
     
+  </entry>
+
+  
+  <entry>
+    <title>Steam Controller released, quickly sold out</title>
+    <id>https://lzon.ca/news/news-000001-steam-controller/</id>
+    <link href="https://lzon.ca/news/news-000001-steam-controller/"/>
+    <published>2026-05-05T12:00:00Z</published>
+    <updated>2026-11-02T12:00:00Z</updated>
+    <author><name>Lzon</name></author>
+    <summary type="html" xml:base="https://lzon.ca/news/news-000001-steam-controller/">&lt;p&gt;Valve launched its new Steam Controller on May 5th 2026, and almost instantly sold out.&lt;&#x2F;p&gt;</summary>
   </entry>
 
 </feed>

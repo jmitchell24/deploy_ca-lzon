@@ -4,12 +4,12 @@
   
 
   <title>
-    lzon.ca - People</title>
+    lzon.ca - Culture</title>
 
   <id>https://lzon.ca</id>
 
   <link rel="alternate" href="https://lzon.ca"/>
-  <link rel="self" href="https://lzon.ca/news-tags/people/atom.xml" type="application/atom+xml"/>
+  <link rel="self" href="https://lzon.ca/news-tags/culture/atom.xml" type="application/atom+xml"/>
   <generator uri="https://www.getzola.org/">Zola</generator>
 
   

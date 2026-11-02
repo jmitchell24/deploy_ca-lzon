@@ -460,10 +460,13 @@
         <loc>https://lzon.ca/news-tags/</loc>
     </url>
     <url>
+        <loc>https://lzon.ca/news-tags/business/</loc>
+    </url>
+    <url>
         <loc>https://lzon.ca/news-tags/canada/</loc>
     </url>
     <url>
-        <loc>https://lzon.ca/news-tags/entertainment/</loc>
+        <loc>https://lzon.ca/news-tags/culture/</loc>
     </url>
     <url>
         <loc>https://lzon.ca/news-tags/gaming/</loc>
@@ -472,13 +475,13 @@
         <loc>https://lzon.ca/news-tags/health/</loc>
     </url>
     <url>
-        <loc>https://lzon.ca/news-tags/people/</loc>
-    </url>
-    <url>
         <loc>https://lzon.ca/news-tags/politics/</loc>
     </url>
     <url>
         <loc>https://lzon.ca/news-tags/science/</loc>
+    </url>
+    <url>
+        <loc>https://lzon.ca/news-tags/security/</loc>
     </url>
     <url>
         <loc>https://lzon.ca/news-tags/technology/</loc>
@@ -488,7 +491,7 @@
     </url>
     <url>
         <loc>https://lzon.ca/news/news-000001-steam-controller/</loc>
-        <lastmod>2026-05-05</lastmod>
+        <lastmod>2026-11-02</lastmod>
     </url>
     <url>
         <loc>https://lzon.ca/news/news-000002-dawkins/</loc>
@@ -532,7 +535,7 @@
     </url>
     <url>
         <loc>https://lzon.ca/news/news-000012-starbucks-ai-rollback/</loc>
-        <lastmod>2026-05-23</lastmod>
+        <lastmod>2026-11-02</lastmod>
     </url>
     <url>
         <loc>https://lzon.ca/news/news-000013-starcitizen-billion-dollars/</loc>
@@ -540,35 +543,35 @@
     </url>
     <url>
         <loc>https://lzon.ca/news/news-000014-motorola-hijacking-amazon/</loc>
-        <lastmod>2026-05-26</lastmod>
+        <lastmod>2026-11-02</lastmod>
     </url>
     <url>
         <loc>https://lzon.ca/news/news-000015-memory-cxmt-shortages/</loc>
-        <lastmod>2026-05-27</lastmod>
+        <lastmod>2026-11-02</lastmod>
     </url>
     <url>
         <loc>https://lzon.ca/news/news-000016-chinese-evs-canada/</loc>
-        <lastmod>2026-05-30</lastmod>
+        <lastmod>2026-11-02</lastmod>
     </url>
     <url>
         <loc>https://lzon.ca/news/news-000017-rockstar-union/</loc>
-        <lastmod>2026-06-09</lastmod>
+        <lastmod>2026-11-02</lastmod>
     </url>
     <url>
         <loc>https://lzon.ca/news/news-000018-drones-killed-soldiers/</loc>
-        <lastmod>2026-06-11</lastmod>
+        <lastmod>2026-11-02</lastmod>
     </url>
     <url>
         <loc>https://lzon.ca/news/news-000019-elon-musk-trillionaire/</loc>
-        <lastmod>2026-11-01</lastmod>
+        <lastmod>2026-11-02</lastmod>
     </url>
     <url>
         <loc>https://lzon.ca/news/news-000020-xbox-closing-hellblade/</loc>
-        <lastmod>2026-06-16</lastmod>
+        <lastmod>2026-11-02</lastmod>
     </url>
     <url>
-        <loc>https://lzon.ca/news/news-000021-official-steam-news-steam-news-hub/</loc>
-        <lastmod>2026-06-23</lastmod>
+        <loc>https://lzon.ca/news/news-000021-steam-machine-price/</loc>
+        <lastmod>2026-11-02</lastmod>
     </url>
     <url>
         <loc>https://lzon.ca/news/news-000022-gta-vi-price/</loc>
@@ -576,19 +579,19 @@
     </url>
     <url>
         <loc>https://lzon.ca/news/news-000023-meta-cloud-business/</loc>
-        <lastmod>2026-07-03</lastmod>
+        <lastmod>2026-11-02</lastmod>
     </url>
     <url>
         <loc>https://lzon.ca/news/news-000024-aphelion-2026/</loc>
-        <lastmod>2026-07-06</lastmod>
+        <lastmod>2026-11-02</lastmod>
     </url>
     <url>
         <loc>https://lzon.ca/news/news-000025-trump-rename-lake/</loc>
-        <lastmod>2026-08-30</lastmod>
+        <lastmod>2026-11-02</lastmod>
     </url>
     <url>
         <loc>https://lzon.ca/news/news-000026-openai-hacker-swarm/</loc>
-        <lastmod>2026-11-01</lastmod>
+        <lastmod>2026-11-02</lastmod>
     </url>
     <url>
         <loc>https://lzon.ca/news/news-000027-rtx-5090-not-carried/</loc>
@@ -604,7 +607,7 @@
     </url>
     <url>
         <loc>https://lzon.ca/news/news-000030-waymo-crashes/</loc>
-        <lastmod>2026-10-30</lastmod>
+        <lastmod>2026-11-02</lastmod>
     </url>
     <url>
         <loc>https://lzon.ca/news/news-000031-patrick-stewart-death/</loc>

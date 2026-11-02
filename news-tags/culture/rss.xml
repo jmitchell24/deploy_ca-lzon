@@ -2,12 +2,12 @@
 <rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
     <channel>
       <title>
-        lzon.ca - People</title>
+        lzon.ca - Culture</title>
       <link>https://lzon.ca</link>
       <description></description>
       <generator>Zola</generator>
       <language>en</language>
-      <atom:link href="https://lzon.ca/news-tags/people/rss.xml" rel="self" type="application/rss+xml"/>
+      <atom:link href="https://lzon.ca/news-tags/culture/rss.xml" rel="self" type="application/rss+xml"/>
       <lastBuildDate>Fri, 30 Oct 2026 12:00:00 +0000</lastBuildDate>
       
       

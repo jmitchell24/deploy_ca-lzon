@@ -13,7 +13,7 @@
   <generator uri="https://www.getzola.org/">Zola</generator>
 
   
-  <updated>2026-11-01T12:00:00Z</updated>
+  <updated>2026-11-02T12:00:00Z</updated>
 
   
   
@@ -63,7 +63,7 @@
     <id>https://lzon.ca/news/30</id>
     <link href="https://maccus.fr/en/waymo-robotaxis-serious-crashes/"/>
     <published>2026-10-20T12:00:00Z</published>
-    <updated>2026-10-30T12:00:00Z</updated>
+    <updated>2026-11-02T12:00:00Z</updated>
     <author><name>Lzon</name></author>
     
     
@@ -145,7 +145,7 @@ This finding has been corroborated by the Insurance Institute for Highway Safety
     <id>https://lzon.ca/news/26</id>
     <link href="https://www.theregister.com/ai-and-ml/2026/09/10/openais-website-hijacking-swarm-reached-far-further-than-we-thought/5295644"/>
     <published>2026-09-12T12:00:00Z</published>
-    <updated>2026-11-01T12:00:00Z</updated>
+    <updated>2026-11-02T12:00:00Z</updated>
     <author><name>Lzon</name></author>
     
     
@@ -166,14 +166,16 @@ This follows an earlier report of the same swarm breaching security at the AI st
     <id>https://lzon.ca/news/25</id>
     <link href="https://www.cbc.ca/news/world/trump-lake-ontario-america-9.7322947"/>
     <published>2026-08-30T12:00:00Z</published>
-    <updated>2026-08-30T12:00:00Z</updated>
+    <updated>2026-11-02T12:00:00Z</updated>
     <author><name>Lzon</name></author>
     
     
     
-    <content type="html" xml:base="https://lzon.ca/news/news-000025-trump-rename-lake/">&lt;p&gt;Donald Trump renamed Lake Ontario to ‘Lake America’ following the recent failure of trade negotiations between USA and Canada. The US administration hasn’t confirmed that this was the reason for the change, but there really is no reason to believe otherwise.&lt;/p&gt;
-&lt;p&gt;It is extremely disappointing. This current administration has managed to do so much damage to what was otherwise an astoundingly friendly and peaceful international relationship (USA and Canada).&lt;/p&gt;
-&lt;p&gt;The silver lining that I can see is that public opinion of this move appears to be resoundingly opposed, on both sides of the border. It gives me hope that once Trump is no longer in office the formerly positive relationship between our two countries can be restored.&lt;/p&gt;
+    <content type="html" xml:base="https://lzon.ca/news/news-000025-trump-rename-lake/">&lt;p&gt;Donald Trump has renamed Lake Ontario to ‘Lake America’ following the recent failure of trade negotiations between USA and Canada.&lt;/p&gt;
+&lt;span id=&quot;continue-reading&quot;&gt;&lt;/span&gt;
+&lt;p&gt;Trump’s administration has not confirmed that the trade disputes were reason for the change, but it is reasonable to assume that this was the cause.&lt;/p&gt;
+&lt;p&gt;I find this to be extremely disappointing. Trump and his cabinet have managed to do so much damage to what was otherwise an astoundingly friendly and peaceful international relationship (USA and Canada).&lt;/p&gt;
+&lt;p&gt;The silver lining that I can see is that public opinion to this news appears to be resoundingly negative. Most Canadians and Americans do not want this. It gives me hope that once Trump is no longer in office the formerly positive relationship between our two countries can be restored.&lt;/p&gt;
 </content>
   </entry>
 
@@ -181,16 +183,17 @@ This follows an earlier report of the same swarm breaching security at the AI st
 
   
   <entry>
-    <title>24. Earth reaches farthest orbit from Sun for 2026</title>
+    <title>24. Earth reaches its Amphelion for 2026</title>
     <id>https://lzon.ca/news/24</id>
     <link href="https://www.timeanddate.com/astronomy/perihelion-aphelion-solstice.html"/>
     <published>2026-07-06T12:00:00Z</published>
-    <updated>2026-07-06T12:00:00Z</updated>
+    <updated>2026-11-02T12:00:00Z</updated>
     <author><name>Lzon</name></author>
     
     
     
     <content type="html" xml:base="https://lzon.ca/news/news-000024-aphelion-2026/">&lt;p&gt;The Earth’s orbit is not quite circular, which means that through each year there is a point at which the Earth is closest and farthest from the Sun.&lt;/p&gt;
+&lt;span id=&quot;continue-reading&quot;&gt;&lt;/span&gt;
 &lt;p&gt;The farthest distance is referred to as ‘Amphelion’, and the shortest is called ‘Perihelion’.&lt;/p&gt;
 &lt;p&gt;Perihelion was reached back in January, and today the Earth will reach it’s Amphelion (farthest distance) for this year.&lt;/p&gt;
 </content>
@@ -204,12 +207,13 @@ This follows an earlier report of the same swarm breaching security at the AI st
     <id>https://lzon.ca/news/23</id>
     <link href="https://www.fool.com/investing/2026/07/03/meta-is-reportedly-building-a-cloud-business-to-ri/"/>
     <published>2026-07-03T12:00:00Z</published>
-    <updated>2026-07-03T12:00:00Z</updated>
+    <updated>2026-11-02T12:00:00Z</updated>
     <author><name>Lzon</name></author>
     
     
     
     <content type="html" xml:base="https://lzon.ca/news/news-000023-meta-cloud-business/">&lt;p&gt;Meta (formerly Facebook) has announced that it will be entering into the cloud compute business. It appears as though this is an attempt to recoup what was otherwise an over-investment in data centers which were initially intended for AI.&lt;/p&gt;
+&lt;span id=&quot;continue-reading&quot;&gt;&lt;/span&gt;
 &lt;p&gt;Many are speculating now that this might trigger the end of the AI hype bubble, but its not certain yet what might happen.&lt;/p&gt;
 &lt;p&gt;There have been a fair times through the past few years in which many were predicting the end of the bubble, and were obviously wrong. For example, the launch of the Deepseek model in early 2025 caused a 17% crash in Nvidia stock. Obviously they recovered and we are still in the midst of the bubble.&lt;/p&gt;
 &lt;p&gt;I think concern (or joy) might be warranted, but its still to early to know what effect this news will have.&lt;/p&gt;
@@ -244,12 +248,13 @@ This follows an earlier report of the same swarm breaching security at the AI st
     <id>https://lzon.ca/news/21</id>
     <link href="https://store.steampowered.com/news/group/45479024/view/685257114654870245"/>
     <published>2026-06-23T12:00:00Z</published>
-    <updated>2026-06-23T12:00:00Z</updated>
+    <updated>2026-11-02T12:00:00Z</updated>
     <author><name>Lzon</name></author>
     
     
     
-    <content type="html" xml:base="https://lzon.ca/news/news-000021-official-steam-news-steam-news-hub/">&lt;p&gt;Valve has officially launched the new Steam Machine. It’s a small gaming PC intended to provide a more console like, living room oriented experience. It comes preinstalled with &lt;a rel=&quot;noopener external&quot; target=&quot;_blank&quot; href=&quot;https://en.wikipedia.org/wiki/SteamOS&quot;&gt;Steam OS&lt;/a&gt;, the same linux-based operating system used on the Steam Deck.&lt;/p&gt;
+    <content type="html" xml:base="https://lzon.ca/news/news-000021-steam-machine-price/">&lt;p&gt;Valve has officially launched the new Steam Machine. It’s a small gaming PC intended to provide a more console like, living room oriented experience. It comes preinstalled with &lt;a rel=&quot;noopener external&quot; target=&quot;_blank&quot; href=&quot;https://en.wikipedia.org/wiki/SteamOS&quot;&gt;Steam OS&lt;/a&gt;, the same linux-based operating system used on the Steam Deck.&lt;/p&gt;
+&lt;span id=&quot;continue-reading&quot;&gt;&lt;/span&gt;
 &lt;p&gt;The device was originally announced near the end of last year and has been delayed due to DRAM and flash chip shortages caused by the AI economic bubble. Valve has stated that they were struggling to procure the parts they needed, and that it wasn’t merely a matter of increased prices.&lt;/p&gt;
 &lt;p&gt;Speaking of price, the cheapest model with 512GB of storage will cost $1049 USD, with higher storage variants costing several hundred dollars more. Valve has said they increased pricing since the announcement in line with the recent Steam Deck price increases. This implies that the original MSRP would have been in the range of $750.&lt;/p&gt;
 &lt;p&gt;My opinion is that this is overall a good but expensive product. It is a device intended to create the most polished, cohesive, and easy experience for PC gaming. But given the current price, and even its original MSRP, this can’t really be a mass market product. I think a lot of people who would have otherwise wanted one will be unable to afford it. That’s unfortunate of course, and hopefully discounts will be possible in the future.&lt;/p&gt;
@@ -264,12 +269,13 @@ This follows an earlier report of the same swarm breaching security at the AI st
     <id>https://lzon.ca/news/20</id>
     <link href="https://www.theverge.com/games/950204/xbox-ninja-theory-shutdown-hellblade-senua"/>
     <published>2026-06-16T12:00:00Z</published>
-    <updated>2026-06-16T12:00:00Z</updated>
+    <updated>2026-11-02T12:00:00Z</updated>
     <author><name>Lzon</name></author>
     
     
     
-    <content type="html" xml:base="https://lzon.ca/news/news-000020-xbox-closing-hellblade/">&lt;p&gt;Microsoft is shuttering the famous game studio Ninja Theory, which in recent years has been developing the &lt;a rel=&quot;noopener external&quot; target=&quot;_blank&quot; href=&quot;https://en.wikipedia.org/wiki/Hellblade:_Senua%27s_Sacrifice&quot;&gt;Hellblade&lt;/a&gt; series of games. The third game in that series called ‘Senua’ was in active development at the time of this report.&lt;/p&gt;
+    <content type="html" xml:base="https://lzon.ca/news/news-000020-xbox-closing-hellblade/">&lt;p&gt;Microsoft is shuttering the famous game studio Ninja Theory, known for having developed the &lt;a rel=&quot;noopener external&quot; target=&quot;_blank&quot; href=&quot;https://en.wikipedia.org/wiki/Hellblade:_Senua%27s_Sacrifice&quot;&gt;Hellblade&lt;/a&gt; series of games. The third game in that series called ‘Senua’ was in active development at the time of this report.&lt;/p&gt;
+&lt;span id=&quot;continue-reading&quot;&gt;&lt;/span&gt;
 &lt;p&gt;Earlier in the year &lt;a rel=&quot;noopener external&quot; target=&quot;_blank&quot; href=&quot;https://en.wikipedia.org/wiki/Asha_Sharma&quot;&gt;Asha Sharma&lt;/a&gt; succeeded Phil Spencer as the CEO of Xbox, and appears to be taking Microsoft’s gaming division in new direction, which clearly includes cutting their portfolio of game studios.&lt;/p&gt;
 &lt;p&gt;I personally really enjoyed their game &lt;a rel=&quot;noopener external&quot; target=&quot;_blank&quot; href=&quot;https://en.wikipedia.org/wiki/Enslaved:_Odyssey_to_the_West&quot;&gt;Enslaved: Odyssey to the West&lt;/a&gt; on the PS3. &lt;a rel=&quot;noopener external&quot; target=&quot;_blank&quot; href=&quot;https://en.wikipedia.org/wiki/Andy_Serkis&quot;&gt;Andy Serkis&lt;/a&gt; plays the protagonist, and the story was written by &lt;a rel=&quot;noopener external&quot; target=&quot;_blank&quot; href=&quot;https://en.wikipedia.org/wiki/Alex_Garland&quot;&gt;Alex Garland&lt;/a&gt;. I think the game is a masterpiece and highly recommend it. Its available on &lt;a rel=&quot;noopener external&quot; target=&quot;_blank&quot; href=&quot;https://store.steampowered.com/app/245280/ENSLAVED_Odyssey_to_the_West_Premium_Edition/&quot;&gt;Steam&lt;/a&gt; if you are interested.&lt;/p&gt;
 </content>
@@ -283,7 +289,7 @@ This follows an earlier report of the same swarm breaching security at the AI st
     <id>https://lzon.ca/news/19</id>
     <link href="https://apnews.com/article/musk-spacex-tesla-ipo-trillionaire-billionaire-worth-rockets-7723f82b6063a9a17c194e25982cd66d"/>
     <published>2026-06-12T12:00:00Z</published>
-    <updated>2026-11-01T12:00:00Z</updated>
+    <updated>2026-11-02T12:00:00Z</updated>
     <author><name>Lzon</name></author>
     
     
@@ -303,16 +309,17 @@ This follows an earlier report of the same swarm breaching security at the AI st
     <id>https://lzon.ca/news/18</id>
     <link href="https://www.newscientist.com/article/2529849-fully-autonomous-drones-have-killed-human-soldiers-for-the-first-time/"/>
     <published>2026-06-11T12:00:00Z</published>
-    <updated>2026-06-11T12:00:00Z</updated>
+    <updated>2026-11-02T12:00:00Z</updated>
     <author><name>Lzon</name></author>
     
     
     
     <content type="html" xml:base="https://lzon.ca/news/news-000018-drones-killed-soldiers/">&lt;p&gt;A military contractor named Alexander Kokhanovskyy has revealed that a test was conducted two years ago in which fully autonomous drones killed human soldiers.&lt;/p&gt;
+&lt;span id=&quot;continue-reading&quot;&gt;&lt;/span&gt;
 &lt;p&gt;The test involved sending ‘terminator’ drones on a trajectory over several kilometers towards their target. Upon arrival an AI running on the drones identified and then engaged their target. Human-piloted drones flew over the area some time afterwards to confirm the targets had been eliminated.&lt;/p&gt;
 &lt;p&gt;The Ukrainian government presently requires final human confirmation to conduct attacks, but otherwise uses AI heavily in identifying targets. Kokhanovskyy claims there has been no further tests beyond the one conducted two years ago.&lt;/p&gt;
 &lt;p&gt;Kokhanovskyy is currently the CEO of &lt;a rel=&quot;noopener external&quot; target=&quot;_blank&quot; href=&quot;https://aerocenter.com.ua/&quot;&gt;Aero Center&lt;/a&gt;, a Ukrainian military drone manufacturer. Aero Center is a new company, and was not responsible for conducting the test.&lt;/p&gt;
-&lt;p&gt;Its not all that surprising to me that this has happened. I suppose there was a hope until now that a concerted international effort could have prevented it. It’s not too late to impose a global ban on these types of weapons, but I expect to see more stories like this in the near-term future.&lt;/p&gt;
+&lt;p&gt;In my opinion this was inevitable and was going to happen eventually. It’s still not too late to impose a global ban on these types of weapons, but before that happens I expect to see more stories like this.&lt;/p&gt;
 </content>
   </entry>
 
@@ -324,14 +331,15 @@ This follows an earlier report of the same swarm breaching security at the AI st
     <id>https://lzon.ca/news/17</id>
     <link href="https://www.eurogamer.net/were-determined-to-win-justice-for-the-31-fired-workers-rockstar-games-workers-publicly-launch-union-as-legal-battle-with-the-gta-6-maker-rages-on"/>
     <published>2026-06-09T12:00:00Z</published>
-    <updated>2026-06-09T12:00:00Z</updated>
+    <updated>2026-11-02T12:00:00Z</updated>
     <author><name>Lzon</name></author>
     
     
     
-    <content type="html" xml:base="https://lzon.ca/news/news-000017-rockstar-union/">&lt;p&gt;Developers at Rockstar Games have announced their intent to form a union, to be called “Rockstar Game Workers Union”. It will be a subsidiary of the existing “Workers’ Union of Great Britain”.&lt;/p&gt;
+    <content type="html" xml:base="https://lzon.ca/news/news-000017-rockstar-union/">&lt;p&gt;Employees of Rockstar Games have announced their intent to form a union, to be called “Rockstar Game Workers Union”. It will be a subsidiary of the existing “Workers’ Union of Great Britain”.&lt;/p&gt;
+&lt;span id=&quot;continue-reading&quot;&gt;&lt;/span&gt;
 &lt;p&gt;This follows a recent controversy in which Rockstar Games fired 31 employees for claimed misconduct. It is speculated that the mass firing was an attempt at union busting.&lt;/p&gt;
-&lt;p&gt;I think its good that they are unionizing. Gaming and software development have never had a strong labour movement, largely because individual employees could use their high-value skillset as leverage when negotiating salary and working conditions.&lt;/p&gt;
+&lt;p&gt;In my opinion this is good news. Gaming and software development have never had a strong labour movement, largely because individual employees could use their high-value skillset as leverage when negotiating salary and working conditions.&lt;/p&gt;
 &lt;p&gt;Advanced AI is going to automate (and thus de-value) a lot of the work needed for game development. Without union protection this will lead to increasing opportunity for game studios to abuse their workers.&lt;/p&gt;
 &lt;p&gt;Hopefully this trend continues.&lt;/p&gt;
 </content>
@@ -345,12 +353,13 @@ This follows an earlier report of the same swarm breaching security at the AI st
     <id>https://lzon.ca/news/16</id>
     <link href="https://financialpost.com/commodities/energy/electric-vehicles/first-chinese-made-evs-arrive-canada"/>
     <published>2026-05-30T12:00:00Z</published>
-    <updated>2026-05-30T12:00:00Z</updated>
+    <updated>2026-11-02T12:00:00Z</updated>
     <author><name>Lzon</name></author>
     
     
     
     <content type="html" xml:base="https://lzon.ca/news/news-000016-chinese-evs-canada/">&lt;p&gt;The first China-made electric vehicles have arrived in Canada following a recent tariff reduction deal. The shipment was mostly from Tesla’s Shanghai factory, with some Lotus branded vehicles as well.&lt;/p&gt;
+&lt;span id=&quot;continue-reading&quot;&gt;&lt;/span&gt;
 &lt;p&gt;This is noteworthy since historically Canada has followed the USA closely on restricting China’s access to its vehicle market.&lt;/p&gt;
 &lt;p&gt;I’m cautiously optimistic. If this leads to EV’s becoming more affordable then that would be a good thing. The hope is that the federal government will continue to promote domestic vehicle production amongst the incoming Chinese competitors. We already do this well for companies from USA, Japan, and Korea.&lt;/p&gt;
 </content>
@@ -364,12 +373,13 @@ This follows an earlier report of the same swarm breaching security at the AI st
     <id>https://lzon.ca/news/15</id>
     <link href="https://www.tomshardware.com/pc-components/ddr5/chinese-memory-maker-cxmt-enters-the-mainstream-consumer-memory-with-corsair-vengeance-ddr5-kit-chinese-made-dram-emerges-as-an-antidote-for-crushing-shortages"/>
     <published>2026-05-27T12:00:00Z</published>
-    <updated>2026-05-27T12:00:00Z</updated>
+    <updated>2026-11-02T12:00:00Z</updated>
     <author><name>Lzon</name></author>
     
     
     
-    <content type="html" xml:base="https://lzon.ca/news/news-000015-memory-cxmt-shortages/">&lt;p&gt;Corsair will begin sourcing DRAM chips from &lt;a rel=&quot;noopener external&quot; target=&quot;_blank&quot; href=&quot;https://en.wikipedia.org/wiki/ChangXin_Memory_Technologies&quot;&gt;CXMT&lt;/a&gt;.&lt;/p&gt;
+    <content type="html" xml:base="https://lzon.ca/news/news-000015-memory-cxmt-shortages/">&lt;p&gt;Corsair will begin sourcing DRAM chips from chinese DRAM manufacturer &lt;a rel=&quot;noopener external&quot; target=&quot;_blank&quot; href=&quot;https://en.wikipedia.org/wiki/ChangXin_Memory_Technologies&quot;&gt;CXMT&lt;/a&gt;.&lt;/p&gt;
+&lt;span id=&quot;continue-reading&quot;&gt;&lt;/span&gt;
 &lt;p&gt;The Chinese company has only just recently began production of DDR5 chips, beginning in 2025. This move is clearly a response to the DRAM chip shortages currently being caused by the AI hype bubble.&lt;/p&gt;
 </content>
   </entry>
@@ -382,12 +392,13 @@ This follows an earlier report of the same swarm breaching security at the AI st
     <id>https://lzon.ca/news/14</id>
     <link href="https://9to5google.com/2026/05/25/motorola-amazon-app-hijacking-behavior/"/>
     <published>2026-05-26T12:00:00Z</published>
-    <updated>2026-05-26T12:00:00Z</updated>
+    <updated>2026-11-02T12:00:00Z</updated>
     <author><name>Lzon</name></author>
     
     
     
-    <content type="html" xml:base="https://lzon.ca/news/news-000014-motorola-hijacking-amazon/">&lt;p&gt;Some users of Motorola smartphones have noticed that affiliate codes are being automatically injected into Amazon web links.&lt;/p&gt;
+    <content type="html" xml:base="https://lzon.ca/news/news-000014-motorola-hijacking-amazon/">&lt;p&gt;Some users of Motorola smartphones have reported that affiliate codes are being automatically injected into Amazon web links on their devices.&lt;/p&gt;
+&lt;span id=&quot;continue-reading&quot;&gt;&lt;/span&gt;
 &lt;p&gt;This appears to be done by a pre-installed app called &lt;code&gt;Smart Feed&lt;/code&gt; which intercepts the URLs, redirects to an ad server, which then inserts the affiliate codes. This &lt;a rel=&quot;noopener external&quot; target=&quot;_blank&quot; href=&quot;https://old.reddit.com/r/Android/comments/1tno2z3/motorolas_preinstalled_smart_feed_app_hijacks/&quot;&gt;Reddit thread&lt;/a&gt; referenced in the article includes a more technical analysis.&lt;/p&gt;
 &lt;p&gt;For now at least, it is possible to stop this behavior. You can do so by navigating to the app’s info page &lt;code&gt;Settings -&amp;gt; Apps -&amp;gt; Search &apos;Smart Feed&apos;&lt;/code&gt; and pressing the &lt;code&gt;Disable&lt;/code&gt; button.&lt;/p&gt;
 &lt;p&gt;I’m not surprised but I am disappointed to see Motorola do this. They were once very well known for offering affordable Android devices with minimal bloat. I have an original &lt;a rel=&quot;noopener external&quot; target=&quot;_blank&quot; href=&quot;https://www.gsmarena.com/motorola_moto_g-5831.php&quot;&gt;Moto G&lt;/a&gt; which was a fantastic little device in it’s time.&lt;/p&gt;
@@ -422,14 +433,16 @@ These funding milestones hardly count as news anymore. The game has a loyal fan-
     <id>https://lzon.ca/news/12</id>
     <link href="https://www.reuters.com/business/starbucks-scraps-ai-inventory-tool-across-north-america-2026-05-21/"/>
     <published>2026-05-23T12:00:00Z</published>
-    <updated>2026-05-23T12:00:00Z</updated>
+    <updated>2026-11-02T12:00:00Z</updated>
     <author><name>Lzon</name></author>
     
     
     
-    <content type="html" xml:base="https://lzon.ca/news/news-000012-starbucks-ai-rollback/">&lt;p&gt;Starbucks is ending the use of an AI-based inventory manager that it began using in September 2025. The software was making too many mistakes, which included miscounting and mislabeling items. This decision comes after a multi year effort by CEO &lt;a rel=&quot;noopener external&quot; target=&quot;_blank&quot; href=&quot;https://en.wikipedia.org/wiki/Brian_Niccol&quot;&gt;Brian Niccol&lt;/a&gt; to increase efficiency of the company’s supply chain.&lt;/p&gt;
+    <content type="html" xml:base="https://lzon.ca/news/news-000012-starbucks-ai-rollback/">&lt;p&gt;Starbucks is dropping the AI-based inventory manager that it began using in September 2025. The software has numerous issues including miscounting and mislabeling inventory items. This decision comes after a multi year effort by CEO &lt;a rel=&quot;noopener external&quot; target=&quot;_blank&quot; href=&quot;https://en.wikipedia.org/wiki/Brian_Niccol&quot;&gt;Brian Niccol&lt;/a&gt; to increase efficiency of the company’s supply chain.&lt;/p&gt;
+&lt;span id=&quot;continue-reading&quot;&gt;&lt;/span&gt;
 &lt;p&gt;The developer of the software &lt;a rel=&quot;noopener external&quot; target=&quot;_blank&quot; href=&quot;https://www.nomad-go.com/&quot;&gt;NomadGo&lt;/a&gt; said in a statement to Reuters that it is, “continuously learning from customers and user feedback” to improve its products.&lt;/p&gt;
-&lt;p&gt;To me this appears to be a signal that the AI hype bubble is coming to an end but as &lt;a rel=&quot;noopener external&quot; target=&quot;_blank&quot; href=&quot;https://en.wikipedia.org/wiki/John_Maynard_Keynes&quot;&gt;John Maynard Keynes&lt;/a&gt; famously said&lt;/p&gt;
+&lt;p&gt;Some AI skeptics have speculated that this could be a sign of the end of the AI hype bubble.&lt;/p&gt;
+&lt;p&gt;No matter what happens, I feel it appropriate to invoke the famouse quote from economist &lt;a rel=&quot;noopener external&quot; target=&quot;_blank&quot; href=&quot;https://en.wikipedia.org/wiki/John_Maynard_Keynes&quot;&gt;John Maynard Keynes&lt;/a&gt;.&lt;/p&gt;
 &lt;blockquote&gt;
 &lt;p&gt;“the market can remain irrational longer than you can stay solvent”&lt;/p&gt;
 &lt;/blockquote&gt;
@@ -639,14 +652,18 @@ human way, but within the its context window. He believes Claude’s conciousnes
     <id>https://lzon.ca/news/1</id>
     <link href="https://store.steampowered.com/sale/steamcontroller"/>
     <published>2026-05-05T12:00:00Z</published>
-    <updated>2026-05-05T12:00:00Z</updated>
+    <updated>2026-11-02T12:00:00Z</updated>
     <author><name>Lzon</name></author>
     
     
     
-    <content type="html" xml:base="https://lzon.ca/news/news-000001-steam-controller/">&lt;p&gt;Valve launched its new Steam Controller yesterday, May 5th 2026. They sold out almost instantly.
-This reminds me of the logistical nightmare during the Steam Deck. Hopefully it won’t get quite that bad
+    <content type="html" xml:base="https://lzon.ca/news/news-000001-steam-controller/">&lt;p&gt;Valve launched its new Steam Controller on May 5th 2026, and almost instantly sold out.&lt;/p&gt;
+&lt;span id=&quot;continue-reading&quot;&gt;&lt;/span&gt;
+&lt;p&gt;This reminds me of the logistical nightmare back in 2022 during the launch of the original Steam Deck. Hopefully it won’t be quite that bad
 this time.&lt;/p&gt;
+&lt;h6 id=&quot;update-2026-11-02&quot;&gt;Update (2026-11-02)&lt;/h6&gt;
+&lt;p&gt;It was indeed quite bad. There are customers who intended to purchase one on launch day that will have to wait until next year.
+I was fortunate that I only had to wait a single month. It’s a nice controller but good-god these things are turning into collectors items.&lt;/p&gt;
 </content>
   </entry>
 

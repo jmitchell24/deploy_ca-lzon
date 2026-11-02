@@ -8,7 +8,7 @@
       <generator>Zola</generator>
       <language>en</language>
       <atom:link href="https://lzon.ca/news-tags/canada/rss.xml" rel="self" type="application/rss+xml"/>
-      <lastBuildDate>Sun, 30 Aug 2026 12:00:00 +0000</lastBuildDate>
+      <lastBuildDate>Mon, 02 Nov 2026 12:00:00 +0000</lastBuildDate>
       
       
       
@@ -17,11 +17,20 @@
       
       
       <item>
+          <title>Waymo to expand Robo-taxi service into Canada</title>
+          <pubDate>Mon, 19 Oct 2026 12:00:00 +0000</pubDate>
+          <author>Lzon</author>
+          <link>https://lzon.ca/news/news-000028-waymos-robotaxis-canada/</link>
+          <guid isPermaLink="false">https://lzon.ca/news/news-000028-waymos-robotaxis-canada/</guid>
+          <description xml:base="https://lzon.ca/news/news-000028-waymos-robotaxis-canada/">&lt;p&gt;Alphabet’s Robo-taxi company Waymo announced their plan to expand services into Canada.&lt;&#x2F;p&gt;</description>
+      </item>
+      <item>
           <title>Trump renames Lake Ontario as &#x27;Lake America&#x27;</title>
           <pubDate>Sun, 30 Aug 2026 12:00:00 +0000</pubDate>
           <author>Lzon</author>
           <link>https://lzon.ca/news/news-000025-trump-rename-lake/</link>
           <guid isPermaLink="false">https://lzon.ca/news/news-000025-trump-rename-lake/</guid>
+          <description xml:base="https://lzon.ca/news/news-000025-trump-rename-lake/">&lt;p&gt;Donald Trump has renamed Lake Ontario to ‘Lake America’ following the recent failure of trade negotiations between USA and Canada.&lt;&#x2F;p&gt;</description>
       </item>
       <item>
           <title>First Chinese-made EVs arrive in Canada under deal Carney struck with Xi</title>
@@ -29,6 +38,7 @@
           <author>Lzon</author>
           <link>https://lzon.ca/news/news-000016-chinese-evs-canada/</link>
           <guid isPermaLink="false">https://lzon.ca/news/news-000016-chinese-evs-canada/</guid>
+          <description xml:base="https://lzon.ca/news/news-000016-chinese-evs-canada/">&lt;p&gt;The first China-made electric vehicles have arrived in Canada following a recent tariff reduction deal. The shipment was mostly from Tesla’s Shanghai factory, with some Lotus branded vehicles as well.&lt;&#x2F;p&gt;</description>
       </item>
     </channel>
 </rss>
