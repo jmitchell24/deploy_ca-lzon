@@ -8,7 +8,7 @@
       <generator>Zola</generator>
       <language>en</language>
       <atom:link href="https://lzon.ca/news-tags/business/rss.xml" rel="self" type="application/rss+xml"/>
-      <lastBuildDate>Mon, 02 Nov 2026 12:00:00 +0000</lastBuildDate>
+      <lastBuildDate>Tue, 03 Nov 2026 12:00:00 +0000</lastBuildDate>
       
       
       
@@ -55,6 +55,14 @@
           <link>https://lzon.ca/news/news-000012-starbucks-ai-rollback/</link>
           <guid isPermaLink="false">https://lzon.ca/news/news-000012-starbucks-ai-rollback/</guid>
           <description xml:base="https://lzon.ca/news/news-000012-starbucks-ai-rollback/">&lt;p&gt;Starbucks is dropping the AI-based inventory manager that it began using in September 2025. The software has numerous issues including miscounting and mislabeling inventory items. This decision comes after a multi year effort by CEO &lt;a rel=&quot;noopener external&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;en.wikipedia.org&#x2F;wiki&#x2F;Brian_Niccol&quot;&gt;Brian Niccol&lt;&#x2F;a&gt; to increase efficiency of the company’s supply chain.&lt;&#x2F;p&gt;</description>
+      </item>
+      <item>
+          <title>Cisco posts record revenue, then cuts 4,000 jobs</title>
+          <pubDate>Thu, 14 May 2026 12:00:00 +0000</pubDate>
+          <author>Lzon</author>
+          <link>https://lzon.ca/news/news-000008-cisco-layoffs/</link>
+          <guid isPermaLink="false">https://lzon.ca/news/news-000008-cisco-layoffs/</guid>
+          <description xml:base="https://lzon.ca/news/news-000008-cisco-layoffs/">&lt;p&gt;Cisco announced a 4000-person layoff, representing 5% of there total workforce.&lt;&#x2F;p&gt;</description>
       </item>
     </channel>
 </rss>
