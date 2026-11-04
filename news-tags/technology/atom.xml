@@ -13,7 +13,7 @@
   <generator uri="https://www.getzola.org/">Zola</generator>
 
   
-  <updated>2026-11-03T12:00:00Z</updated>
+  <updated>2026-11-04T12:00:00Z</updated>
 
   
   
@@ -147,6 +147,17 @@ This follows an earlier report of the same swarm breaching security at the AI st
 
   
   <entry>
+    <title>Operating System Age Verification Pushed by Canadian Porn Company</title>
+    <id>https://lzon.ca/news/news-000010-child-safety-privacy/</id>
+    <link href="https://lzon.ca/news/news-000010-child-safety-privacy/"/>
+    <published>2026-05-19T12:00:00Z</published>
+    <updated>2026-11-04T12:00:00Z</updated>
+    <author><name>Lzon</name></author>
+    <summary type="html" xml:base="https://lzon.ca/news/news-000010-child-safety-privacy/">&lt;p&gt;&lt;a rel=&quot;noopener external&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;en.wikipedia.org&#x2F;wiki&#x2F;Aylo&quot;&gt;Aylo&lt;&#x2F;a&gt;, parent company of PornHub and formerly named ‘MindGeek’ has been lobbying in Canada and other countries for operating system level age verification.&lt;&#x2F;p&gt;</summary>
+  </entry>
+
+  
+  <entry>
     <title>Cisco posts record revenue, then cuts 4,000 jobs</title>
     <id>https://lzon.ca/news/news-000008-cisco-layoffs/</id>
     <link href="https://lzon.ca/news/news-000008-cisco-layoffs/"/>
@@ -176,6 +187,17 @@ This follows an earlier report of the same swarm breaching security at the AI st
     <updated>2026-05-08T12:00:00Z</updated>
     <author><name>Lzon</name></author>
     <summary type="html" xml:base="https://lzon.ca/news/news-000005-tesla-recalls-cybertrucks/">&lt;p&gt;Tesla is recalling several hundred budget variant Cybertrucks.&lt;&#x2F;p&gt;</summary>
+  </entry>
+
+  
+  <entry>
+    <title>Ghostty Is Leaving GitHub</title>
+    <id>https://lzon.ca/news/news-000003-ghostty/</id>
+    <link href="https://lzon.ca/news/news-000003-ghostty/"/>
+    <published>2026-05-06T12:00:00Z</published>
+    <updated>2026-11-04T12:00:00Z</updated>
+    <author><name>Lzon</name></author>
+    <summary type="html" xml:base="https://lzon.ca/news/news-000003-ghostty/">&lt;p&gt;Mitchell Hashimoto, the developer of &lt;a rel=&quot;noopener external&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;ghostty.org&#x2F;&quot;&gt;ghostty&lt;&#x2F;a&gt; is moving the project off of Github.&lt;&#x2F;p&gt;</summary>
   </entry>
 
   

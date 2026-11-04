@@ -8,7 +8,7 @@
       <generator>Zola</generator>
       <language>en</language>
       <atom:link href="https://lzon.ca/quotes/rss.xml" rel="self" type="application/rss+xml"/>
-      <lastBuildDate>Tue, 03 Nov 2026 12:00:00 +0000</lastBuildDate>
+      <lastBuildDate>Wed, 04 Nov 2026 12:00:00 +0000</lastBuildDate>
       
       
       
@@ -16,6 +16,15 @@
       
       
       
+      <item>
+          <title>216. lzon.ca&#x2F;quotes</title>
+          <pubDate>Wed, 04 Nov 2026 12:00:00 +0000</pubDate>
+          <author>Lzon</author>
+          <link>https://lzon.ca/quotes/</link>
+          <guid isPermaLink="false">https://lzon.ca/quotes/#216</guid>
+          <category>quote</category>
+          <description>Enough is abundance to the wise.&lt;br/&gt;- Euripides (The Phoenissae)</description>
+      </item>
       <item>
           <title>215. lzon.ca&#x2F;quotes</title>
           <pubDate>Tue, 03 Nov 2026 12:00:00 +0000</pubDate>

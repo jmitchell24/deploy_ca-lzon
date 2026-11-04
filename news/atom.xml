@@ -13,7 +13,7 @@
   <generator uri="https://www.getzola.org/">Zola</generator>
 
   
-  <updated>2026-11-03T12:00:00Z</updated>
+  <updated>2026-11-04T12:00:00Z</updated>
 
   
   
@@ -46,7 +46,7 @@
     
     
     
-    <content type="html" xml:base="https://lzon.ca/news/news-000032-tes-sentinel/">&lt;p&gt;A new detail has been revealed for long anticipated open-world rpg &lt;em&gt;The Elder Scrolls 6&lt;/em&gt;.&lt;/p&gt;
+    <content type="html" xml:base="https://lzon.ca/news/news-000032-tes-sentinel/">&lt;p&gt;A new detail has been revealed for the long anticipated open-world rpg &lt;em&gt;The Elder Scrolls 6&lt;/em&gt;.&lt;/p&gt;
 &lt;span id=&quot;continue-reading&quot;&gt;&lt;/span&gt;
 &lt;p&gt;Bethesda’s next entry in its famous series of games will be set in the city called ‘Sentinel’ in the province of Hammerfell. ‘Sentinel’ will also act as the main title for the game.&lt;/p&gt;
 &lt;p&gt;This news follows from the first annoucnement of the game at E3 2018, over 8 years ago. The announcement also coincides with Bethesda’s celebration of their 40th anniversary as a game development studio.&lt;/p&gt;
@@ -498,14 +498,16 @@ This follows an earlier report of the same swarm breaching security at the AI st
     <id>https://lzon.ca/news/10</id>
     <link href="https://defenddignity.ca/child-safety-privacy-and-the-responsibility-of-powerful-platforms/"/>
     <published>2026-05-19T12:00:00Z</published>
-    <updated>2026-05-19T12:00:00Z</updated>
+    <updated>2026-11-04T12:00:00Z</updated>
     <author><name>Lzon</name></author>
     
     
     
-    <content type="html" xml:base="https://lzon.ca/news/news-000010-child-safety-privacy/">&lt;p&gt;The pornography conglomerate &lt;a rel=&quot;noopener external&quot; target=&quot;_blank&quot; href=&quot;https://en.wikipedia.org/wiki/Aylo&quot;&gt;Aylo&lt;/a&gt; (owner of PornHub, and formerly named MindGeek) has been lobbying in Canada and other countries &lt;strong&gt;for&lt;/strong&gt; operating system level age verification.&lt;/p&gt;
-&lt;p&gt;Why? Because this would absolve them of responsibility for age verification of their users. Obviously this is appalling, but I will admit that I’m somewhat impressed by their cleverness.&lt;/p&gt;
-&lt;p&gt;I believe implementing age verification at the operating system level is ridiculous and makes &lt;strong&gt;zero&lt;/strong&gt; sense. It also is a nightmare for user privacy and freedom on their computers. To force its use through regulation is wrong, period.&lt;/p&gt;
+    <content type="html" xml:base="https://lzon.ca/news/news-000010-child-safety-privacy/">&lt;p&gt;&lt;a rel=&quot;noopener external&quot; target=&quot;_blank&quot; href=&quot;https://en.wikipedia.org/wiki/Aylo&quot;&gt;Aylo&lt;/a&gt;, parent company of PornHub and formerly named ‘MindGeek’ has been lobbying in Canada and other countries for operating system level age verification.&lt;/p&gt;
+&lt;span id=&quot;continue-reading&quot;&gt;&lt;/span&gt;
+&lt;p&gt;The pornography company Aylo is currently lobbying in Canada against Bill S-209 which would hold online platforms responsible for ensuring that children do not access age-restricted content.&lt;/p&gt;
+&lt;p&gt;They argue that such measures would not work, and that it would be more appropriate and effective to impose age-verification within the operating system of the user’s device. This argument is being made in bad faith as an effort to avoid being regulated.&lt;/p&gt;
+&lt;p&gt;Implementing age verification within the operating system is ridiculous and is not the appropriate way to prevent harm to children while online. I also believe that it creates a politic harzard since it grants new powers to the government which are liable to eventually be abused.&lt;/p&gt;
 </content>
   </entry>
 
@@ -638,13 +640,14 @@ This follows an earlier report of the same swarm breaching security at the AI st
     <id>https://lzon.ca/news/3</id>
     <link href="https://mitchellh.com/writing/ghostty-leaving-github"/>
     <published>2026-05-06T12:00:00Z</published>
-    <updated>2026-05-06T12:00:00Z</updated>
+    <updated>2026-11-04T12:00:00Z</updated>
     <author><name>Lzon</name></author>
     
     
     
-    <content type="html" xml:base="https://lzon.ca/news/news-000003-ghostty/">&lt;p&gt;Mitchell Hashimoto, the developer of &lt;a rel=&quot;noopener external&quot; target=&quot;_blank&quot; href=&quot;https://ghostty.org/&quot;&gt;ghostty&lt;/a&gt; is moving the project away from Github. He was an enthusiastic user for many years but recent degredation of the platform has pushed him away. Github has
-recently experienced significant issues with downtime, which he references in his blog post.&lt;/p&gt;
+    <content type="html" xml:base="https://lzon.ca/news/news-000003-ghostty/">&lt;p&gt;Mitchell Hashimoto, the developer of &lt;a rel=&quot;noopener external&quot; target=&quot;_blank&quot; href=&quot;https://ghostty.org/&quot;&gt;ghostty&lt;/a&gt; is moving the project off of Github.&lt;/p&gt;
+&lt;span id=&quot;continue-reading&quot;&gt;&lt;/span&gt;
+&lt;p&gt;Hashimoto has been well known for many years as being an enthusiastic user of the development platform Github. In recent months Github has become less reliable, to such a degree that he has decided to move development of his popular terminal emulator to another platform.&lt;/p&gt;
 </content>
   </entry>
 

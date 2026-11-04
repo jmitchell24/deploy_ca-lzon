@@ -13,7 +13,7 @@
   <generator uri="https://www.getzola.org/">Zola</generator>
 
   
-  <updated>2026-11-02T12:00:00Z</updated>
+  <updated>2026-11-04T12:00:00Z</updated>
 
   
   
@@ -75,6 +75,17 @@
     <updated>2026-11-02T12:00:00Z</updated>
     <author><name>Lzon</name></author>
     <summary type="html" xml:base="https://lzon.ca/news/news-000016-chinese-evs-canada/">&lt;p&gt;The first China-made electric vehicles have arrived in Canada following a recent tariff reduction deal. The shipment was mostly from Tesla’s Shanghai factory, with some Lotus branded vehicles as well.&lt;&#x2F;p&gt;</summary>
+  </entry>
+
+  
+  <entry>
+    <title>Operating System Age Verification Pushed by Canadian Porn Company</title>
+    <id>https://lzon.ca/news/news-000010-child-safety-privacy/</id>
+    <link href="https://lzon.ca/news/news-000010-child-safety-privacy/"/>
+    <published>2026-05-19T12:00:00Z</published>
+    <updated>2026-11-04T12:00:00Z</updated>
+    <author><name>Lzon</name></author>
+    <summary type="html" xml:base="https://lzon.ca/news/news-000010-child-safety-privacy/">&lt;p&gt;&lt;a rel=&quot;noopener external&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;en.wikipedia.org&#x2F;wiki&#x2F;Aylo&quot;&gt;Aylo&lt;&#x2F;a&gt;, parent company of PornHub and formerly named ‘MindGeek’ has been lobbying in Canada and other countries for operating system level age verification.&lt;&#x2F;p&gt;</summary>
   </entry>
 
 </feed>
