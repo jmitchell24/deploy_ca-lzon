@@ -1,0 +1,58 @@
+# Netlify redirects for lzon.ca (copied to the site root by Zola from static/).
+# First matching rule wins. Plain 301 never overrides a page that exists at the same path.
+
+# ── Former Zola aliases (content/posts/{other,site,tips}) ─────────────────────
+# Aliases were removed from front matter; these rules replace them.
+/posts/daily/social-cheat-codes/     /posts/other/social-cheat-codes/    301
+/posts/daily/what-software-i-use/    /posts/other/what-software-i-use/   301
+/posts/other/visual-century/         /posts/other/visual-time/           301
+
+# ── Current URLs to preserve through the unified-posts migration ──────────────
+# Live (non-draft) pages and sections in content/posts/{other,site,tips} as of 2026-11-05.
+# Inactive: each still resolves to a real page. The migration fills in the new URL
+# and uncomments these (and should repoint the alias rules above, to avoid chains).
+# Format: # <current url>  <new url: TBD>  301   (source: <content path>)
+# /posts/other/                          TBD  301   (source: posts/other/_index.md)
+# /posts/other/page/2/                   TBD  301   (source: posts/other/_index.md)
+# /posts/other/page/3/                   TBD  301   (source: posts/other/_index.md)
+# /posts/other/2025-review-ai/           TBD  301   (source: posts/other/2025-review-ai.md)
+# /posts/other/2025-review-gaming/       TBD  301   (source: posts/other/2025-review-gaming.md)
+# /posts/other/2025-review-smartphones/  TBD  301   (source: posts/other/2025-review-phones.md)
+# /posts/other/gsv-yozxp/                TBD  301   (source: posts/other/2026-03-31_gsv-yozxp.md)
+# /posts/other/gsv-sfnzm-kzig/           TBD  301   (source: posts/other/2026-08-10_the-human-part.md)
+# /posts/other/visual-time/              TBD  301   (source: posts/other/2026-09-14_century/index.md)
+# /posts/other/cancelling-claude/        TBD  301   (source: posts/other/cancelling-claude.md)
+# /posts/other/thoughts-ai-era/          TBD  301   (source: posts/other/forty-months-of-ai/index.md)
+# /posts/other/jon-bday-2026/            TBD  301   (source: posts/other/jon-bday-2026.md)
+# /posts/other/good-youtube-channels/    TBD  301   (source: posts/other/listening-to-youtube.md)
+# /posts/other/llm-fantasy/              TBD  301   (source: posts/other/llm-fantasy.md)
+# /posts/other/local-llm-testing/        TBD  301   (source: posts/other/local-llm-testing/index.md)
+# /posts/other/microsoft-user-abuse/     TBD  301   (source: posts/other/microsoft-hates-you/index.md)
+# /posts/other/no-steam-frame/           TBD  301   (source: posts/other/no-steam-frame/index.md)
+# /posts/other/homescreen-mantras/       TBD  301   (source: posts/other/phone-mantras.md)
+# /posts/other/social-cheat-codes/       TBD  301   (source: posts/other/social-cheat-codes.md)
+# /posts/other/what-software-i-use/      TBD  301   (source: posts/other/some-software-i-use.md)
+# /posts/other/youtube-algorithm/        TBD  301   (source: posts/other/youtube-algorithm/index.md)
+# /posts/site/                           TBD  301   (source: posts/site/_index.md)
+# /posts/site/code-sketch-demo/          TBD  301   (source: posts/site/code-sketch-demo/index.md)
+# /posts/site/lzon-day-100/              TBD  301   (source: posts/site/day-100.md)
+# /posts/site/feeds/                     TBD  301   (source: posts/site/feeds/index.md)
+# /posts/site/news-feed-update/          TBD  301   (source: posts/site/news-feed.md)
+# /posts/site/emailverification-info/    TBD  301   (source: posts/site/scam-not-scam-1.md)
+# /posts/site/lzon-week-one-update/      TBD  301   (source: posts/site/week-one.md)
+# /posts/tips/                           TBD  301   (source: posts/tips/_index.md)
+# /posts/tips/page/2/                    TBD  301   (source: posts/tips/_index.md)
+# /posts/tips/cpp-for-range-init/        TBD  301   (source: posts/tips/cpp-for-range-init.md)
+# /posts/tips/cpp-maybe-type/            TBD  301   (source: posts/tips/cpp-maybe-type.md)
+# /posts/tips/cpp-result-type/           TBD  301   (source: posts/tips/cpp-result-type.md)
+# /posts/tips/cpp-single-instance/       TBD  301   (source: posts/tips/cpp-single-instance.md)
+# /posts/tips/cpp-value-lock-type/       TBD  301   (source: posts/tips/cpp-value-lock-type.md)
+# /posts/tips/filename-dating/           TBD  301   (source: posts/tips/filename-dating.md)
+# /posts/tips/pleasant-passwords/        TBD  301   (source: posts/tips/pleasant-passwords/index.md)
+# /posts/tips/ghostty-tmux-ssh/          TBD  301   (source: posts/tips/ssh-with-ghostty.md)
+# /posts/tips/todo-howto/                TBD  301   (source: posts/tips/todo-howto/index.md)
+# /posts/tips/zfs-dataset-tuning/        TBD  301   (source: posts/tips/zfs-dataset-defaults.md)
+# /posts/tips/zola-feed-hack/            TBD  301   (source: posts/tips/zola-feed-hack.md)
+# /posts/other/page/1/                   TBD  301   (source: posts/other/_index.md, Zola paginator redirect)
+# /posts/site/page/1/                    TBD  301   (source: posts/site/_index.md, Zola paginator redirect)
+# /posts/tips/page/1/                    TBD  301   (source: posts/tips/_index.md, Zola paginator redirect)
