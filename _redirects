@@ -7,6 +7,17 @@
 /posts/daily/what-software-i-use/    /posts/other/what-software-i-use/   301
 /posts/other/visual-century/         /posts/other/visual-time/           301
 
+# ── Hacker News submissions (news.ycombinator.com/submitted?id=jpmitchell) ────
+# Old URLs that were submitted and went 404 when aliases were dropped (2026-11-05).
+/posts/series/grateful/keep-android-open/       /posts/series_daily-grateful/keep-android-open/       301
+/posts/series/grateful/typing-and-keyboards/    /posts/series_daily-grateful/typing-and-keyboards/    301
+/posts/series/duck/clipx/                       /posts/series_duck-digest/clipx/                      301
+/posts/series/duck/gadget-gnomes/               /posts/series_duck-digest/gadget-gnomes/              301
+/posts/series/duck/llm-burnout/                 /posts/series_duck-digest/llm-burnout/                301
+/posts/series/duck/local-letter-merchant/       /posts/series_duck-digest/local-letter-merchant/      301
+/posts/series/duck/notepad-verified/            /posts/series_duck-digest/notepad-verified/           301
+/posts/series/duck/tv-inflation/                /posts/series_duck-digest/tv-inflation/               301
+
 # ── Current URLs to preserve through the unified-posts migration ──────────────
 # Live (non-draft) pages and sections in content/posts/{other,site,tips} as of 2026-11-05.
 # Inactive: each still resolves to a real page. The migration fills in the new URL
