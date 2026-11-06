@@ -28,6 +28,9 @@
   
 
   
+
+  <!-- the merged feed leaves out types with `main_feed = false` (macros/feed.html) -->
+  
   <entry>
     <title>Study demonstrates potential anti-aging effect in GLP-1 drugs</title>
     <id>https://lzon.ca/posts/news/29</id>

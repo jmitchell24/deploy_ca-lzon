@@ -28,6 +28,9 @@
   
 
   
+
+  <!-- the merged feed leaves out types with `main_feed = false` (macros/feed.html) -->
+  
   <entry>
     <title>Among all species Humans are one of the best at long-distance endurance running.</title>
     <id>https://lzon.ca/posts/trivia/6</id>

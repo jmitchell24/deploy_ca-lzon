@@ -19,6 +19,8 @@
       <!-- quotes and numbered post types sort by filename, since dates alone aren't unique -->
       
       
+      <!-- the merged feed leaves out types with `main_feed = false` (macros/feed.html) -->
+      
       <item>
           <title>Trump renames Lake Ontario as &apos;Lake America&apos;</title>
           <pubDate>Sun, 30 Aug 2026 12:00:00 +0000</pubDate>

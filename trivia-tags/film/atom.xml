@@ -28,6 +28,9 @@
   
 
   
+
+  <!-- the merged feed leaves out types with `main_feed = false` (macros/feed.html) -->
+  
   <entry>
     <title>A 3D scan of Nicolas Cage’s skull was used in the 2007 film Ghost Rider.</title>
     <id>https://lzon.ca/posts/trivia/2</id>

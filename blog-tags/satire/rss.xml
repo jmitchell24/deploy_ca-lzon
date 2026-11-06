@@ -2,12 +2,12 @@
 <rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
     <channel>
       <title>
-        lzon.ca - duck-digest</title>
+        lzon.ca - Satire</title>
       <link>https://lzon.ca</link>
       <description></description>
       <generator>Zola</generator>
       <language>en</language>
-      <atom:link href="https://lzon.ca/blog-tags/duck-digest/rss.xml" rel="self" type="application/rss+xml"/>
+      <atom:link href="https://lzon.ca/blog-tags/satire/rss.xml" rel="self" type="application/rss+xml"/>
       <lastBuildDate>Sun, 30 Aug 2026 12:00:00 +0000</lastBuildDate>
       <!-- Items. Quotes (their own section feed) list one quote each. Posts go through
            macros/feed.html, so this feed, atom.xml and pages.json agree: each item is titled
@@ -18,6 +18,8 @@
       
       <!-- quotes and numbered post types sort by filename, since dates alone aren't unique -->
       
+      
+      <!-- the merged feed leaves out types with `main_feed = false` (macros/feed.html) -->
       
       <item>
           <title>Trump renames Canadian Geese to American Geese</title>

@@ -19,6 +19,8 @@
       <!-- quotes and numbered post types sort by filename, since dates alone aren't unique -->
       
       
+      <!-- the merged feed leaves out types with `main_feed = false` (macros/feed.html) -->
+      
       <item>
           <title>Bethesda has revealed TES VI to be set in Hammerfell</title>
           <pubDate>Tue, 03 Nov 2026 12:00:00 +0000</pubDate>

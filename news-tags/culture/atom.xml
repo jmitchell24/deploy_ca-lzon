@@ -28,6 +28,9 @@
   
 
   
+
+  <!-- the merged feed leaves out types with `main_feed = false` (macros/feed.html) -->
+  
   <entry>
     <title>Patrick Stewart has died</title>
     <id>https://lzon.ca/posts/news/31</id>

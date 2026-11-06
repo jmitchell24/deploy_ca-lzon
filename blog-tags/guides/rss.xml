@@ -2,12 +2,12 @@
 <rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
     <channel>
       <title>
-        lzon.ca - tips</title>
+        lzon.ca - Guides</title>
       <link>https://lzon.ca</link>
       <description></description>
       <generator>Zola</generator>
       <language>en</language>
-      <atom:link href="https://lzon.ca/blog-tags/tips/rss.xml" rel="self" type="application/rss+xml"/>
+      <atom:link href="https://lzon.ca/blog-tags/guides/rss.xml" rel="self" type="application/rss+xml"/>
       <lastBuildDate>Mon, 20 Jul 2026 12:00:00 +0000</lastBuildDate>
       <!-- Items. Quotes (their own section feed) list one quote each. Posts go through
            macros/feed.html, so this feed, atom.xml and pages.json agree: each item is titled
@@ -18,6 +18,8 @@
       
       <!-- quotes and numbered post types sort by filename, since dates alone aren't unique -->
       
+      
+      <!-- the merged feed leaves out types with `main_feed = false` (macros/feed.html) -->
       
       <item>
           <title>How C++20 improved the for-loop syntax</title>

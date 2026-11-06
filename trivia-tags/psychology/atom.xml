@@ -28,6 +28,9 @@
   
 
   
+
+  <!-- the merged feed leaves out types with `main_feed = false` (macros/feed.html) -->
+  
   <entry>
     <title>People can be Ambiverted, meaning they are equal parts Introverted and Extroverted.</title>
     <id>https://lzon.ca/posts/trivia/4</id>

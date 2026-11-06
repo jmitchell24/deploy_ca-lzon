@@ -28,6 +28,9 @@
   
 
   
+
+  <!-- the merged feed leaves out types with `main_feed = false` (macros/feed.html) -->
+  
   <entry>
     <title>Just look at the Time</title>
     <id>https://lzon.ca/posts/blog/visual-time/</id>

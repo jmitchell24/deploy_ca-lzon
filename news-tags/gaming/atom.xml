@@ -28,6 +28,9 @@
   
 
   
+
+  <!-- the merged feed leaves out types with `main_feed = false` (macros/feed.html) -->
+  
   <entry>
     <title>Bethesda has revealed TES VI to be set in Hammerfell</title>
     <id>https://lzon.ca/posts/news/32</id>

@@ -28,6 +28,9 @@
   
 
   
+
+  <!-- the merged feed leaves out types with `main_feed = false` (macros/feed.html) -->
+  
   <entry>
     <title>Sleep Well</title>
     <id>https://lzon.ca/posts/blog/sleep-well/</id>

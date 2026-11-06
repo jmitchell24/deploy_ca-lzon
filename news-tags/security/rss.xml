@@ -19,6 +19,8 @@
       <!-- quotes and numbered post types sort by filename, since dates alone aren't unique -->
       
       
+      <!-- the merged feed leaves out types with `main_feed = false` (macros/feed.html) -->
+      
       <item>
           <title>OpenAI&apos;s agent swarm breached security on many more websites.</title>
           <pubDate>Sat, 12 Sep 2026 12:00:00 +0000</pubDate>

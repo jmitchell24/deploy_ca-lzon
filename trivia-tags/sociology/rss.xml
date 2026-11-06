@@ -19,6 +19,8 @@
       <!-- quotes and numbered post types sort by filename, since dates alone aren't unique -->
       
       
+      <!-- the merged feed leaves out types with `main_feed = false` (macros/feed.html) -->
+      
       <item>
           <title>The Pygmalion Effect is a psychological phenomemon in which placing high expectations on someone leads
 to their better performance.</title>

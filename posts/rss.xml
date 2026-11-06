@@ -8,7 +8,7 @@
       <generator>Zola</generator>
       <language>en</language>
       <atom:link href="https://lzon.ca/posts/rss.xml" rel="self" type="application/rss+xml"/>
-      <lastBuildDate>Wed, 04 Nov 2026 12:00:00 +0000</lastBuildDate>
+      <lastBuildDate>Fri, 06 Nov 2026 12:00:00 +0000</lastBuildDate>
       <!-- Items. Quotes (their own section feed) list one quote each. Posts go through
            macros/feed.html, so this feed, atom.xml and pages.json agree: each item is titled
            as the site titles the post, carries its type as a <category>, and in the merged
@@ -19,242 +19,13 @@
       <!-- quotes and numbered post types sort by filename, since dates alone aren't unique -->
       
       
-      <item>
-          <title>[ News ] Bethesda has revealed TES VI to be set in Hammerfell</title>
-          <pubDate>Tue, 03 Nov 2026 12:00:00 +0000</pubDate>
-          <author>Lzon</author>
-          <link>https://lzon.ca/posts/news/000032-tes-sentinel/</link>
-          <guid isPermaLink="false">https://lzon.ca/posts/news/32</guid>
-          <category domain="https://lzon.ca/posts/news/">News</category>
-          <description xml:base="https://lzon.ca/posts/news/000032-tes-sentinel/">&lt;p&gt;A new detail has been revealed for the long anticipated open-world rpg &lt;em&gt;The Elder Scrolls 6&lt;/em&gt;.&lt;/p&gt;
-&lt;span id=&quot;continue-reading&quot;&gt;&lt;/span&gt;
-&lt;p&gt;Bethesda’s next entry in its famous series of games will be set in the city called ‘Sentinel’ in the province of Hammerfell. ‘Sentinel’ will also act as the main title for the game.&lt;/p&gt;
-&lt;p&gt;This news follows from the first annoucnement of the game at E3 2018, over 8 years ago. The announcement also coincides with Bethesda’s celebration of their 40th anniversary as a game development studio.&lt;/p&gt;
-&lt;p&gt;Source: &lt;a href=&quot;https://www.ign.com/articles/the-elder-scrolls-6-sentinel-name-logo-officially-revealed-as-bethesda-marks-40th-anniversary&quot;&gt;https://www.ign.com/articles/the-elder-scrolls-6-sentinel-name-logo-officially-revealed-as-bethesda-marks-40th-anniversary&lt;/a&gt;&lt;/p&gt;
-</description>
-      </item>
-      <item>
-          <title>[ Trivia ] George Renninger, the 19th century confectioner is regarded as the original creator of Candy Corn.</title>
-          <pubDate>Sat, 31 Oct 2026 12:00:00 +0000</pubDate>
-          <author>Lzon</author>
-          <link>https://lzon.ca/posts/trivia/000010/</link>
-          <guid isPermaLink="false">https://lzon.ca/posts/trivia/10</guid>
-          <category domain="https://lzon.ca/posts/trivia/">Trivia</category>
-          <description xml:base="https://lzon.ca/posts/trivia/000010/">
-
-&lt;p&gt;He originally referred to his classic Autumn treat as ‘Chicken Feed’. It wouldn’t become popularly named Candy Corn until after World War 1, when the American diet began incorporating more corn-derived foods.&lt;/p&gt;
-&lt;p&gt;As one of its original producers, the &lt;a rel=&quot;noopener external&quot; target=&quot;_blank&quot; href=&quot;https://en.wikipedia.org/wiki/Jelly_Belly&quot;&gt;Goelitz Candy Company&lt;/a&gt; (now Jelly Belly) helped to popularize the candy. They ran ad campaigns including one in which a bold rooster characture declares himself the “King of the Candy Corn Fields”.&lt;/p&gt;
-&lt;p&gt;In the modern era most Candy Corn is produced by Ferrero under the Brach’s brand. They control roughly 85% of the market. The National Confectioners Association has estimated that about 35 million pounds of Candy Corn are produced each year. They have also declared October 30th to be National Candy Corn Day.&lt;/p&gt;
-&lt;p&gt;Source: &lt;a href=&quot;https://en.wikipedia.org/wiki/Candy_corn&quot;&gt;https://en.wikipedia.org/wiki/Candy_corn&lt;/a&gt;&lt;/p&gt;&lt;p&gt;Source: &lt;a href=&quot;https://alwaysatreat.com/candy-moments/halloween-central/everything-candy-corn/&quot;&gt;https://alwaysatreat.com/candy-moments/halloween-central/everything-candy-corn/&lt;/a&gt;&lt;/p&gt;&lt;p&gt;Source: &lt;a href=&quot;https://www.thederrick.com/opinion/greene-column-like-it-or-not-candy-corn-withstands-the-test-of-time/article_8d728b97-3ac0-4845-a4ab-17282341bf04.html&quot;&gt;https://www.thederrick.com/opinion/greene-column-like-it-or-not-candy-corn-withstands-the-test-of-time/article_8d728b97-3ac0-4845-a4ab-17282341bf04.html&lt;/a&gt;&lt;/p&gt;
-</description>
-      </item>
-      <item>
-          <title>[ News ] Patrick Stewart has died</title>
-          <pubDate>Fri, 30 Oct 2026 12:00:00 +0000</pubDate>
-          <author>Lzon</author>
-          <link>https://lzon.ca/posts/news/000031-patrick-stewart-death/</link>
-          <guid isPermaLink="false">https://lzon.ca/posts/news/31</guid>
-          <category domain="https://lzon.ca/posts/news/">News</category>
-          <description xml:base="https://lzon.ca/posts/news/000031-patrick-stewart-death/">&lt;p&gt;Actor Patrick Stewart has passed away. He was well known for his performance as Jean-Luc Picard on the TV series Star Trek: The Next Generation.&lt;/p&gt;
-&lt;span id=&quot;continue-reading&quot;&gt;&lt;/span&gt;
-&lt;p&gt;Born &lt;em&gt;Patrick Hewes Stewart&lt;/em&gt; on July 13 1940 in Yorkshire England, he had a life-long acting career in which he performed many popular roles. While best known for his on-screen performances he was also a well-recognized stage actor, having become a member of the &lt;a rel=&quot;noopener external&quot; target=&quot;_blank&quot; href=&quot;https://en.wikipedia.org/wiki/Royal_Shakespeare_Company&quot;&gt;Royal Shakespeare Company&lt;/a&gt; in 1966.&lt;/p&gt;
-&lt;p&gt;On-screen he was perhaps best known for his role as the Captain Jean-Luc Picard on the TV series Star Trek: The Next Generation. He also performed as Professor Charles Xavier in the very popular Marvel’s X-Men series of films.&lt;/p&gt;
-&lt;p&gt;In politics Patrick Stewart was outspoken and actively supported social equality, labour rights, and civil liberties. He was an atheist and a patron of the secular humanist charity Humanists UK.&lt;/p&gt;
-&lt;p&gt;Patrick Stewart died of Alzheimer’s disease in Los Angeles on Wednesday October 28, 2026.&lt;/p&gt;
-&lt;p&gt;Source: &lt;a href=&quot;https://en.wikipedia.org/wiki/Patrick_Stewart&quot;&gt;https://en.wikipedia.org/wiki/Patrick_Stewart&lt;/a&gt;&lt;/p&gt;
-</description>
-      </item>
-      <item>
-          <title>[ Trivia ] The term ‘Computer Bug’ was popularized by programmer Grace Hopper after she removed a moth from a malfunctioning computer.</title>
-          <pubDate>Wed, 28 Oct 2026 12:00:00 +0000</pubDate>
-          <author>Lzon</author>
-          <link>https://lzon.ca/posts/trivia/000008/</link>
-          <guid isPermaLink="false">https://lzon.ca/posts/trivia/8</guid>
-          <category domain="https://lzon.ca/posts/trivia/">Trivia</category>
-          <description xml:base="https://lzon.ca/posts/trivia/000008/">
-
-&lt;p&gt;In 1947, acting as a lieutenant junior grade for the US Navy Grace Hopper was assigned to the Bureau of Ships Computation Project.
-The project was using the Harvard Mark II computer to perform ballistics calculations among other things. After encountering a
-malfunction in the computer Hopper and her team discovered that a moth had gotten stuck on one of the
-machine’s relays and was the ultimate cause of the fault. This amusing detail would later be included in her team’s notes.&lt;/p&gt;
-&lt;p&gt;Using &lt;em&gt;‘bug’&lt;/em&gt; to refer to a fault or malfunction in a machine pre-dates Grace Hopper’s use of the word, but she is often credited with
-popularizing the word for use by programmers. In modern software development fixing incorrect codes is often called &lt;em&gt;‘debugging’&lt;/em&gt;, and
-a tool that helps to identify bad codes is called a &lt;em&gt;‘debugger’&lt;/em&gt;.&lt;/p&gt;
-&lt;p&gt;Source: &lt;a href=&quot;https://www.vassar.edu/grace-hopper/achievements&quot;&gt;https://www.vassar.edu/grace-hopper/achievements&lt;/a&gt;&lt;/p&gt;&lt;p&gt;Source: &lt;a href=&quot;https://en.wikipedia.org/wiki/Grace_Hopper&quot;&gt;https://en.wikipedia.org/wiki/Grace_Hopper&lt;/a&gt;&lt;/p&gt;&lt;p&gt;Source: &lt;a href=&quot;https://en.wikipedia.org/wiki/Harvard_Mark_II&quot;&gt;https://en.wikipedia.org/wiki/Harvard_Mark_II&lt;/a&gt;&lt;/p&gt;
-</description>
-      </item>
-      <item>
-          <title>[ Trivia ] Phineas Gage was a 19th century American man who survived an iron rod piercing his skull.</title>
-          <pubDate>Tue, 27 Oct 2026 12:00:00 +0000</pubDate>
-          <author>Lzon</author>
-          <link>https://lzon.ca/posts/trivia/000007/</link>
-          <guid isPermaLink="false">https://lzon.ca/posts/trivia/7</guid>
-          <category domain="https://lzon.ca/posts/trivia/">Trivia</category>
-          <description xml:base="https://lzon.ca/posts/trivia/000007/">
-
-&lt;p&gt;As a young man Gage was a construction worker under contract with the Rutland and Burlington Railroad company. On September 13, 1848 the 25 year old Gage was on the line when his tamping rod was accidentally fired upward by a gunpowder fuse, at very high speed. With his head directly in the rod’s path, it pierced his skull and continued to fly a long distance behind him.&lt;/p&gt;
-&lt;p&gt;To the surprise of his doctors, Phineas Gage both survived the initial injury and was both coherent and able to speak to them. In a matter of months he was recovered enough to return to work.&lt;/p&gt;
-&lt;p&gt;He lived for another 12 years after the incident, and in that time he was reported to have had a significantly changed personality. He had become more impulsive and quick to anger. Eventually he would die of a seizure while working as a stagecoach driver in Chile.&lt;/p&gt;
-&lt;p&gt;The incident is known as the “American Crowbar Case”, and became the subject of academic research and discussion throughout the 19th century. It posed important questions related to the functioning of the brain, and the nature of consciousness.&lt;/p&gt;
-&lt;p&gt;Source: &lt;a href=&quot;https://en.wikipedia.org/wiki/Phineas_Gage&quot;&gt;https://en.wikipedia.org/wiki/Phineas_Gage&lt;/a&gt;&lt;/p&gt;&lt;p&gt;Source: &lt;a href=&quot;https://www.britannica.com/biography/Phineas-Gage&quot;&gt;https://www.britannica.com/biography/Phineas-Gage&lt;/a&gt;&lt;/p&gt;
-</description>
-      </item>
-      <item>
-          <title>[ Trivia ] Among all species Humans are one of the best at long-distance endurance running.</title>
-          <pubDate>Mon, 26 Oct 2026 12:00:00 +0000</pubDate>
-          <author>Lzon</author>
-          <link>https://lzon.ca/posts/trivia/000006/</link>
-          <guid isPermaLink="false">https://lzon.ca/posts/trivia/6</guid>
-          <category domain="https://lzon.ca/posts/trivia/">Trivia</category>
-          <description xml:base="https://lzon.ca/posts/trivia/000006/">
-&lt;p&gt;A noteworthy ability of the Human species is to run for long, uninterrupted periods of time.
-Few species are better, and Humans are the only ape that is capable of it.&lt;/p&gt;
-&lt;p&gt;Among many others, specific traits which enable this include:&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;Taller body with more surface area which facilitates evaporative cooling (sweating)&lt;/li&gt;
-&lt;li&gt;Wider heel bone to better absorb impact&lt;/li&gt;
-&lt;li&gt;Longer legs enabling a greater stride&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;It is an ability that likely evolved in conjunction with &lt;a rel=&quot;noopener external&quot; target=&quot;_blank&quot; href=&quot;https://en.wikipedia.org/wiki/Persistence_hunting&quot;&gt;Persistence Hunting&lt;/a&gt;,
-a technique which involves chasing an animal over long distances. The Human hunter can withstand the chase better than their prey, and eventually
-they will catch it even if initially the animal can run faster. If the hunter can keep chase long enough, the prey animal will either
-succumb to exhaustion, overheating or injury.&lt;/p&gt;
-&lt;p&gt;Source: &lt;a href=&quot;https://en.wikipedia.org/wiki/Endurance_running_hypothesis&quot;&gt;https://en.wikipedia.org/wiki/Endurance_running_hypothesis&lt;/a&gt;&lt;/p&gt;&lt;p&gt;Source: &lt;a href=&quot;https://en.wikipedia.org/wiki/Persistence_hunting&quot;&gt;https://en.wikipedia.org/wiki/Persistence_hunting&lt;/a&gt;&lt;/p&gt;&lt;p&gt;Source: &lt;a href=&quot;https://www.ucdavis.edu/blog/humans-are-born-run&quot;&gt;https://www.ucdavis.edu/blog/humans-are-born-run&lt;/a&gt;&lt;/p&gt;
-</description>
-      </item>
-      <item>
-          <title>[ Trivia ] The Pygmalion Effect is a psychological phenomemon in which placing high expectations on someone leads
-to their better performance.</title>
-          <pubDate>Sun, 25 Oct 2026 12:00:00 +0000</pubDate>
-          <author>Lzon</author>
-          <link>https://lzon.ca/posts/trivia/000005/</link>
-          <guid isPermaLink="false">https://lzon.ca/posts/trivia/5</guid>
-          <category domain="https://lzon.ca/posts/trivia/">Trivia</category>
-          <description xml:base="https://lzon.ca/posts/trivia/000005/">
-&lt;p&gt;The Effect is an example of a self-fulfilling prophecy, the subject of the expectation performs better because of their belief that their
-performance is required, and not merely an optional choice.&lt;/p&gt;
-&lt;p&gt;The Pygmalion Effect is named for the sculptor Pygmalion from greek mythology. In his story he crafts a statue, and falls so intensely in love with his creation
-that it transforms into a real woman.&lt;/p&gt;
-&lt;p&gt;The term was coined by psychologists Robert Rosenthal and Lenore Jacombson. They conducted a study on school children in which the teacher
-expressed both high and low expectations on the students. As measured by IQ test scores, children who were expected to perform well had higher scores.
-Conversely, children who were expected to perform poorly by their teachers had lower scores.&lt;/p&gt;
-&lt;p&gt;Source: &lt;a href=&quot;https://example.org&quot;&gt;https://example.org&lt;/a&gt;&lt;/p&gt;&lt;p&gt;Source: &lt;a href=&quot;https://en.wikipedia.org/wiki/Pygmalion_effect&quot;&gt;https://en.wikipedia.org/wiki/Pygmalion_effect&lt;/a&gt;&lt;/p&gt;&lt;p&gt;Source: &lt;a href=&quot;https://en.wikipedia.org/wiki/Pygmalion_(mythology)&quot;&gt;https://en.wikipedia.org/wiki/Pygmalion_(mythology)&lt;/a&gt;&lt;/p&gt;
-</description>
-      </item>
-      <item>
-          <title>[ Trivia ] People can be Ambiverted, meaning they are equal parts Introverted and Extroverted.</title>
-          <pubDate>Sat, 24 Oct 2026 12:00:00 +0000</pubDate>
-          <author>Lzon</author>
-          <link>https://lzon.ca/posts/trivia/000004/</link>
-          <guid isPermaLink="false">https://lzon.ca/posts/trivia/4</guid>
-          <category domain="https://lzon.ca/posts/trivia/">Trivia</category>
-          <description xml:base="https://lzon.ca/posts/trivia/000004/">
-&lt;p&gt;Introverted people obtain gratification from being alone, and consider social engagement to be mentally draining.&lt;/p&gt;
-&lt;p&gt;Extroverted people are the inverse of introverted, they are gratified and energized by being around others.&lt;/p&gt;
-&lt;p&gt;Ambiversion is a third personality trait at the mid point along a spectrum between introversion and extroversion.
-It was first proposed in 1923 by the American psychologist &lt;a rel=&quot;noopener external&quot; target=&quot;_blank&quot; href=&quot;https://en.wikipedia.org/wiki/Edmund_Smith_Conklin&quot;&gt;Edmund Smith Conklin&lt;/a&gt;.&lt;/p&gt;
-&lt;p&gt;Source: &lt;a href=&quot;https://en.wikipedia.org/wiki/Extraversion_and_introversion#Ambiversion&quot;&gt;https://en.wikipedia.org/wiki/Extraversion_and_introversion#Ambiversion&lt;/a&gt;&lt;/p&gt;
-</description>
-      </item>
-      <item>
-          <title>[ Trivia ] The Costco hotdog combo has not had a price increase in over four decades.</title>
-          <pubDate>Fri, 23 Oct 2026 12:00:00 +0000</pubDate>
-          <author>Lzon</author>
-          <link>https://lzon.ca/posts/trivia/000003/</link>
-          <guid isPermaLink="false">https://lzon.ca/posts/trivia/3</guid>
-          <category domain="https://lzon.ca/posts/trivia/">Trivia</category>
-          <description xml:base="https://lzon.ca/posts/trivia/000003/">
-&lt;p&gt;In 1984, Costco began offering a $1.50 combo deal in its food courts which included a soda and a single hot dog.
-The deal was introduced only one year after opening its very first warehouse. As of 2026 the price has never been increased on the combo.
-If adjusted for inflation the cost of the combo would have risen over three fold (to $4.86 USD at time of writing).
-As late as 2024 Costco has stated publically that they do not ever intend to increase the price.&lt;/p&gt;
-&lt;p&gt;Source: &lt;a href=&quot;https://en.wikipedia.org/wiki/Costco_hot_dog&quot;&gt;https://en.wikipedia.org/wiki/Costco_hot_dog&lt;/a&gt;&lt;/p&gt;
-</description>
-      </item>
-      <item>
-          <title>[ Trivia ] A 3D scan of Nicolas Cage’s skull was used in the 2007 film Ghost Rider.</title>
-          <pubDate>Thu, 22 Oct 2026 12:00:00 +0000</pubDate>
-          <author>Lzon</author>
-          <link>https://lzon.ca/posts/trivia/000002/</link>
-          <guid isPermaLink="false">https://lzon.ca/posts/trivia/2</guid>
-          <category domain="https://lzon.ca/posts/trivia/">Trivia</category>
-          <description xml:base="https://lzon.ca/posts/trivia/000002/">
-&lt;p&gt;For his starring roll in 2007’s Ghost Rider a full 3D scan of Nicolas Cage’s body was
-taken by the special effects team. They used the scan to help create Cage’s immolated
-super-hero form, including the shape of the flame-covered skull.&lt;/p&gt;
-&lt;p&gt;Source: &lt;a href=&quot;https://www.cbr.com/nicolas-cage-ghost-rider-secret-skull-abs-skin/&quot;&gt;https://www.cbr.com/nicolas-cage-ghost-rider-secret-skull-abs-skin/&lt;/a&gt;&lt;/p&gt;
-</description>
-      </item>
-      <item>
-          <title>[ Trivia ] The Batman effect describes a spontaneous event that triggers prosocial behavior.</title>
-          <pubDate>Wed, 21 Oct 2026 12:00:00 +0000</pubDate>
-          <author>Lzon</author>
-          <link>https://lzon.ca/posts/trivia/000001/</link>
-          <guid isPermaLink="false">https://lzon.ca/posts/trivia/1</guid>
-          <category domain="https://lzon.ca/posts/trivia/">Trivia</category>
-          <description xml:base="https://lzon.ca/posts/trivia/000001/">
-&lt;p&gt;In a study published in Nature, researchers found in their experiment that riders on public transit were more willing to give their seat to a pregnant woman when in the presence of a man dressed as Batman.&lt;/p&gt;
-&lt;p&gt;Source: &lt;a href=&quot;https://www.nature.com/articles/s44184-025-00171-5&quot;&gt;https://www.nature.com/articles/s44184-025-00171-5&lt;/a&gt;&lt;/p&gt;
-</description>
-      </item>
-      <item>
-          <title>[ News ] Waymo Robo-taxis cars experience 95% fewer crashes than human-driven cars</title>
-          <pubDate>Tue, 20 Oct 2026 12:00:00 +0000</pubDate>
-          <author>Lzon</author>
-          <link>https://lzon.ca/posts/news/000030-waymo-crashes/</link>
-          <guid isPermaLink="false">https://lzon.ca/posts/news/30</guid>
-          <category domain="https://lzon.ca/posts/news/">News</category>
-          <description xml:base="https://lzon.ca/posts/news/000030-waymo-crashes/">&lt;p&gt;Waymo has released a report in which they claim that their robo-taxi cars experience up to 95% fewer crashes than human-driven cars.
-This finding has been corroborated by the Insurance Institute for Highway Safety (IIHS) who conducted their own &lt;a rel=&quot;noopener external&quot; target=&quot;_blank&quot; href=&quot;https://www.iihs.org/news/detail/waymos-driverless-cars-crash-less-often-than-people&quot;&gt;independent study&lt;/a&gt; and found similar results.&lt;/p&gt;
-&lt;span id=&quot;continue-reading&quot;&gt;&lt;/span&gt;
-&lt;p&gt;When self-driving technology was new over a decade ago there was an expectation that it would become much more widely adopted than it has so far. In part that assumption was based on the idea that the public would prefer self-driving once it was proven safer than human driving. It turned out that people seemed to have a much stronger distrust of self-driving than what was initially expected.&lt;/p&gt;
-&lt;p&gt;Personally, I have that mistrust too. And knowing that the self-driving car I’m about to get into is a better driver than me doesn’t change that. I do believe that self-driving cars are the future though. One day they will be so much safer than human drivers that we will have to accept them.&lt;/p&gt;
-&lt;p&gt;Source: &lt;a href=&quot;https://maccus.fr/en/waymo-robotaxis-serious-crashes/&quot;&gt;https://maccus.fr/en/waymo-robotaxis-serious-crashes/&lt;/a&gt;&lt;/p&gt;&lt;p&gt;Source: &lt;a href=&quot;https://web.archive.org/web/20261020154837/https://maccus.fr/en/waymo-robotaxis-serious-crashes/&quot;&gt;https://web.archive.org/web/20261020154837/https://maccus.fr/en/waymo-robotaxis-serious-crashes/&lt;/a&gt;&lt;/p&gt;
-</description>
-      </item>
-      <item>
-          <title>[ News ] Waymo to expand Robo-taxi service into Canada</title>
-          <pubDate>Mon, 19 Oct 2026 12:00:00 +0000</pubDate>
-          <author>Lzon</author>
-          <link>https://lzon.ca/posts/news/000028-waymos-robotaxis-canada/</link>
-          <guid isPermaLink="false">https://lzon.ca/posts/news/28</guid>
-          <category domain="https://lzon.ca/posts/news/">News</category>
-          <description xml:base="https://lzon.ca/posts/news/000028-waymos-robotaxis-canada/">&lt;p&gt;Alphabet’s Robo-taxi company Waymo announced their plan to expand services into Canada.&lt;/p&gt;
-&lt;span id=&quot;continue-reading&quot;&gt;&lt;/span&gt;
-&lt;p&gt;Until now the company has only operated in a limited number of American metro areas. They have only recently began announcing their plans for further expansion.&lt;/p&gt;
-&lt;p&gt;Waymo’s growth, and the growth of other robo-taxi services will depend entirely on further progress in self-driving technology. While I fully believe that automated vehicles will become widespread over the next decade or two, the rollout is definitely slower than initially anticipated. CPG Grey’s &lt;a rel=&quot;noopener external&quot; target=&quot;_blank&quot; href=&quot;https://www.youtube.com/watch?v=7Pq-S557XQU&quot;&gt;famous video on the subject&lt;/a&gt; demonstrates this point well.&lt;/p&gt;
-&lt;p&gt;Source: &lt;a href=&quot;https://techcrunch.com/2026/10/16/waymos-robotaxis-are-headed-to-canada/&quot;&gt;https://techcrunch.com/2026/10/16/waymos-robotaxis-are-headed-to-canada/&lt;/a&gt;&lt;/p&gt;&lt;p&gt;Source: &lt;a href=&quot;https://web.archive.org/web/20261017110344/https://techcrunch.com/2026/10/16/waymos-robotaxis-are-headed-to-canada/&quot;&gt;https://web.archive.org/web/20261017110344/https://techcrunch.com/2026/10/16/waymos-robotaxis-are-headed-to-canada/&lt;/a&gt;&lt;/p&gt;
-</description>
-      </item>
-      <item>
-          <title>[ News ] Study demonstrates potential anti-aging effect in GLP-1 drugs</title>
-          <pubDate>Mon, 19 Oct 2026 12:00:00 +0000</pubDate>
-          <author>Lzon</author>
-          <link>https://lzon.ca/posts/news/000029-glp1-aging/</link>
-          <guid isPermaLink="false">https://lzon.ca/posts/news/29</guid>
-          <category domain="https://lzon.ca/posts/news/">News</category>
-          <description xml:base="https://lzon.ca/posts/news/000029-glp1-aging/">&lt;p&gt;Researchers from the University of California analyzed data from a recent study to determine if semaglutide had anti aging effects. They discovered that study participants who received the drug had non-trivially improved markers of biological aging.&lt;/p&gt;
-&lt;span id=&quot;continue-reading&quot;&gt;&lt;/span&gt;
-&lt;p&gt;As with any study of this kind, It’s difficult to untangle the direct effects of the drug and the lifestyle improvements that it encourages. I myself lost a lot of weight without medical intervention, just a lot of personal effort and a change in diet. My bias is to believe that for most people this is enough, and that becoming dependent on a pharma corporation for your health should be avoided.&lt;/p&gt;
-&lt;p&gt;Source: &lt;a href=&quot;https://www.universityofcalifornia.edu/news/new-study-shows-popular-glp-1-weight-loss-drug-may-slow-biological-aging&quot;&gt;https://www.universityofcalifornia.edu/news/new-study-shows-popular-glp-1-weight-loss-drug-may-slow-biological-aging&lt;/a&gt;&lt;/p&gt;&lt;p&gt;Source: &lt;a href=&quot;https://web.archive.org/web/20260920023410/https://www.universityofcalifornia.edu/news/new-study-shows-popular-glp-1-weight-loss-drug-may-slow-biological-aging&quot;&gt;https://web.archive.org/web/20260920023410/https://www.universityofcalifornia.edu/news/new-study-shows-popular-glp-1-weight-loss-drug-may-slow-biological-aging&lt;/a&gt;&lt;/p&gt;
-</description>
-      </item>
-      <item>
-          <title>[ News ] Micro Center now lists GeForce RTX 5090 cards as &apos;Not Carried&apos;</title>
-          <pubDate>Sat, 17 Oct 2026 12:00:00 +0000</pubDate>
-          <author>Lzon</author>
-          <link>https://lzon.ca/posts/news/000027-rtx-5090-not-carried/</link>
-          <guid isPermaLink="false">https://lzon.ca/posts/news/27</guid>
-          <category domain="https://lzon.ca/posts/news/">News</category>
-          <description xml:base="https://lzon.ca/posts/news/000027-rtx-5090-not-carried/">&lt;p&gt;The American computer retailer Micro Center no longer appears to be receiving new RTX 5090 graphics cards from any of their suppliers.&lt;/p&gt;
-&lt;span id=&quot;continue-reading&quot;&gt;&lt;/span&gt;
-&lt;p&gt;This news comes after a rumor that NVIDIA has stopped supplying GB202 chips for consumer graphics cards. The &lt;a rel=&quot;noopener external&quot; target=&quot;_blank&quot; href=&quot;https://en.wikipedia.org/wiki/Blackwell_(microarchitecture)&quot;&gt;GB202&lt;/a&gt; is the main processing chip used in all RTX 5090 cards.&lt;/p&gt;
-&lt;p&gt;Without an official statement from NVIDIA it is reasonable to assume that they want to allocate all GB202 chip production to enterprise cards, since those can be sold for a much higher margin.&lt;/p&gt;
-&lt;p&gt;In my opinion this is a consequence of the massive capital spending on AI data centers. I’m not a financial expert but I believe these investments are very irrational and will likely have sweeping economic consequences once the price correction occurs.&lt;/p&gt;
-&lt;p&gt;And as a gamer and PC enthusiast this is very disappointing. While not the end-all-be-all of the hobby, it was nice being able to build and upgrade relatively powerful PC’s for affordable prices. For the time being at, least seems to be no longer possible.&lt;/p&gt;
-&lt;p&gt;Source: &lt;a href=&quot;https://videocardz.com/newz/micro-center-now-lists-geforce-rtx-5090-cards-as-not-carried&quot;&gt;https://videocardz.com/newz/micro-center-now-lists-geforce-rtx-5090-cards-as-not-carried&lt;/a&gt;&lt;/p&gt;
-</description>
-      </item>
+      <!-- the merged feed leaves out types with `main_feed = false` (macros/feed.html) -->
+      
+        
+        
+        
+        
+      
       <item>
           <title>[ Blog ] Algoma docs and website</title>
           <pubDate>Sat, 26 Sep 2026 12:00:00 +0000</pubDate>
@@ -286,34 +57,6 @@ This finding has been corroborated by the Insurance Institute for Highway Safety
 </description>
       </item>
       <item>
-          <title>[ News ] OpenAI&apos;s agent swarm breached security on many more websites.</title>
-          <pubDate>Sat, 12 Sep 2026 12:00:00 +0000</pubDate>
-          <author>Lzon</author>
-          <link>https://lzon.ca/posts/news/000026-openai-hacker-swarm/</link>
-          <guid isPermaLink="false">https://lzon.ca/posts/news/26</guid>
-          <category domain="https://lzon.ca/posts/news/">News</category>
-          <description xml:base="https://lzon.ca/posts/news/000026-openai-hacker-swarm/">&lt;p&gt;A new report suggests that an agent swarm created by Open AI was accessing and abusing a large number of web services.
-This follows an earlier report of the same swarm breaching security at the AI startup Hugging Face.&lt;/p&gt;
-&lt;span id=&quot;continue-reading&quot;&gt;&lt;/span&gt;
-&lt;p&gt;In my opinion the response to this and the earlier reports should be clear and obvious: The law was broken, even if unintentionally. The crime was comitted by the employees of OpenAI who triggered the swarm, not the swarm itself.&lt;/p&gt;
-&lt;p&gt;The only appropriate response to this and the other hacking cases is a full criminal investigation of OpenAI. Beyond that I believe that it would be warranted to put a hard regulatory limit on the runtime of AI agents. This ‘agent swarm’ was running continuously for many days with little or no supervision. That was not necessary, it did not serve a useful commercial purpose. It should not have been allowed to happen.&lt;/p&gt;
-&lt;p&gt;Source: &lt;a href=&quot;https://www.theregister.com/ai-and-ml/2026/09/10/openais-website-hijacking-swarm-reached-far-further-than-we-thought/5295644&quot;&gt;https://www.theregister.com/ai-and-ml/2026/09/10/openais-website-hijacking-swarm-reached-far-further-than-we-thought/5295644&lt;/a&gt;&lt;/p&gt;&lt;p&gt;Source: &lt;a href=&quot;https://web.archive.org/web/20260910193749/https://www.theregister.com/ai-and-ml/2026/09/10/openais-website-hijacking-swarm-reached-far-further-than-we-thought/5295644&quot;&gt;https://web.archive.org/web/20260910193749/https://www.theregister.com/ai-and-ml/2026/09/10/openais-website-hijacking-swarm-reached-far-further-than-we-thought/5295644&lt;/a&gt;&lt;/p&gt;
-</description>
-      </item>
-      <item>
-          <title>[ Curios ] Internal Combustion Engine Simulator</title>
-          <pubDate>Wed, 02 Sep 2026 12:00:00 +0000</pubDate>
-          <author>Lzon</author>
-          <link>https://lzon.ca/posts/curio/curio-000038-ice-engine-sim/</link>
-          <guid isPermaLink="false">https://lzon.ca/posts/curio/38</guid>
-          <category domain="https://lzon.ca/posts/curio/">Curios</category>
-          <description xml:base="https://lzon.ca/posts/curio/curio-000038-ice-engine-sim/">&lt;p&gt;Link: &lt;a href=&quot;https://random.ma.ttias.be/boxermotor&quot;&gt;https://random.ma.ttias.be/boxermotor&lt;/a&gt;&lt;/p&gt;&lt;p&gt;This is a very interesting in-browser simulation of high performance internal combustion engines.&lt;/p&gt;
-&lt;p&gt;I’m not much of a car enthusiast, but I am amazed by the engineering and design of high-end sports cars.&lt;/p&gt;
-&lt;p&gt;If you want to read more about how this simulation was made check out the accompanying blog post &lt;a rel=&quot;noopener external&quot; target=&quot;_blank&quot; href=&quot;https://ma.ttias.be/9000-rpm/&quot;&gt;here&lt;/a&gt;.&lt;/p&gt;
-&lt;p&gt;Source: &lt;a href=&quot;https://web.archive.org/web/20260830123902/https://random.ma.ttias.be/boxermotor&quot;&gt;https://web.archive.org/web/20260830123902/https://random.ma.ttias.be/boxermotor&lt;/a&gt;&lt;/p&gt;
-</description>
-      </item>
-      <item>
           <title>[ Blog ] Trump renames Canadian Geese to American Geese</title>
           <pubDate>Sun, 30 Aug 2026 12:00:00 +0000</pubDate>
           <author>Lzon</author>
@@ -321,21 +64,6 @@ This follows an earlier report of the same swarm breaching security at the AI st
           <guid isPermaLink="false">https://lzon.ca/posts/blog/trump-geese/</guid>
           <category domain="https://lzon.ca/posts/blog/">Blog</category>
           <description xml:base="https://lzon.ca/posts/blog/trump-geese/">&lt;p&gt;Polls suggest widespread support from Canadians.&lt;/p&gt;&lt;p&gt;&lt;a href=&quot;https://lzon.ca/posts/blog/trump-geese/#continue-reading&quot;&gt;Continue reading&lt;/a&gt;&lt;/p&gt;
-</description>
-      </item>
-      <item>
-          <title>[ News ] Trump renames Lake Ontario as &apos;Lake America&apos;</title>
-          <pubDate>Sun, 30 Aug 2026 12:00:00 +0000</pubDate>
-          <author>Lzon</author>
-          <link>https://lzon.ca/posts/news/000025-trump-rename-lake/</link>
-          <guid isPermaLink="false">https://lzon.ca/posts/news/25</guid>
-          <category domain="https://lzon.ca/posts/news/">News</category>
-          <description xml:base="https://lzon.ca/posts/news/000025-trump-rename-lake/">&lt;p&gt;Donald Trump has renamed Lake Ontario to ‘Lake America’ following the recent failure of trade negotiations between USA and Canada.&lt;/p&gt;
-&lt;span id=&quot;continue-reading&quot;&gt;&lt;/span&gt;
-&lt;p&gt;Trump’s administration has not confirmed that the trade disputes were reason for the change, but it is reasonable to assume that this was the cause.&lt;/p&gt;
-&lt;p&gt;I find this to be extremely disappointing. Trump and his cabinet have managed to do so much damage to what was otherwise an astoundingly friendly and peaceful international relationship (USA and Canada).&lt;/p&gt;
-&lt;p&gt;The silver lining that I can see is that public opinion to this news appears to be resoundingly negative. Most Canadians and Americans do not want this. It gives me hope that once Trump is no longer in office the formerly positive relationship between our two countries can be restored.&lt;/p&gt;
-&lt;p&gt;Source: &lt;a href=&quot;https://www.cbc.ca/news/world/trump-lake-ontario-america-9.7322947&quot;&gt;https://www.cbc.ca/news/world/trump-lake-ontario-america-9.7322947&lt;/a&gt;&lt;/p&gt;&lt;p&gt;Source: &lt;a href=&quot;https://web.archive.org/web/20260827174105/https://www.cbc.ca/news/world/trump-lake-ontario-america-9.7322947&quot;&gt;https://web.archive.org/web/20260827174105/https://www.cbc.ca/news/world/trump-lake-ontario-america-9.7322947&lt;/a&gt;&lt;/p&gt;
 </description>
       </item>
       <item>
@@ -364,18 +92,6 @@ This follows an earlier report of the same swarm breaching security at the AI st
 &lt;p&gt;Gsv ksbhrxzo zxgrergb dzh mrxv, yfg R dzh hfikirhvw yb sld nfxs gsv Jfvvm hlmt nlevw nv. R’ev svziw gsv hlmt yvuliv, zmw Rg’h mlg gszg R’n z kzigrxfozi uzm lu Jfvvm, qfhg gszg gl svzi gsv hlmt zxgrezgvw z kzig lu nv gszg R gsrmp szh xovziob yvxlnv wlinzmg. R wlm’g ivzoob pmld uli hfiv sld olmt rg szw yvvm hrmxv R orhgvmvw gl zmb nfhrx.&lt;/p&gt;
 &lt;p&gt;R kilxvvwvw gl orhgvm gl Jfvvm zoo nlimrmt olmt, zmw gsvm xslhv gl orhgvm gl ‘Ovg rg Yv’ yb gsv Yvzgovh. Gszg hlmt rm kzigrxfozi szh z kilulfmw vuuvxg lm nv, zh R ivnvnyvi rg. Gsv hlmt ivnrmwh nv lu nb nln. Gsv vnlgrlmh rg kfooh lfg lu nv ziv mlg klhrgrev, yfg R orhgvmvw ivtziwovhh pmldrmt gsv vuuvxg rg dlfow szev. R dzmgvw gl uvvo rg, zmw R wrw.&lt;/p&gt;
 &lt;p&gt;Zh kvi nb grgov uli gsrh klhg, orhgvmrmt gl hlnv nfhrx glwzb ivnrmwvw nv lu z kzig lu nbhvou gszg R’n kilmv gl ulitvggrmt rh gsviv. Uli ozxp lu zmb yvggvi wvhxirkgrlm, rg’h gsv sfnzm kzig.&lt;/p&gt;
-
-</description>
-      </item>
-      <item>
-          <title>[ Curios ] Syntax Across Languages (One Big Page)</title>
-          <pubDate>Wed, 05 Aug 2026 12:00:00 +0000</pubDate>
-          <author>Lzon</author>
-          <link>https://lzon.ca/posts/curio/curio-000037-syntax-across-languages-one-big-page/</link>
-          <guid isPermaLink="false">https://lzon.ca/posts/curio/37</guid>
-          <category domain="https://lzon.ca/posts/curio/">Curios</category>
-          <description xml:base="https://lzon.ca/posts/curio/curio-000037-syntax-across-languages-one-big-page/">&lt;p&gt;Link: &lt;a href=&quot;https://rigaux.org/language-study/syntax-across-languages.html&quot;&gt;https://rigaux.org/language-study/syntax-across-languages.html&lt;/a&gt;&lt;/p&gt;&lt;p&gt;This is a large reference page I found for the syntax of many different programming languages. The layout is really useful for comparing specific syntax elements across different languages.&lt;/p&gt;
-&lt;p&gt;I’ve been using it while brainstorming for my own programming language, &lt;a href=&quot;/algoma&quot;&gt;Alogma&lt;/a&gt;.&lt;/p&gt;
 
 </description>
       </item>
@@ -443,46 +159,6 @@ Send a message to &lt;a href=&quot;mailto:mail@lzon.ca&quot;&gt;mail@lzon.ca&lt;
 </description>
       </item>
       <item>
-          <title>[ News ] Earth reaches its Amphelion for 2026</title>
-          <pubDate>Mon, 06 Jul 2026 12:00:00 +0000</pubDate>
-          <author>Lzon</author>
-          <link>https://lzon.ca/posts/news/000024-aphelion-2026/</link>
-          <guid isPermaLink="false">https://lzon.ca/posts/news/24</guid>
-          <category domain="https://lzon.ca/posts/news/">News</category>
-          <description xml:base="https://lzon.ca/posts/news/000024-aphelion-2026/">&lt;p&gt;The Earth’s orbit is not quite circular, which means that through each year there is a point at which the Earth is closest and farthest from the Sun.&lt;/p&gt;
-&lt;span id=&quot;continue-reading&quot;&gt;&lt;/span&gt;
-&lt;p&gt;The farthest distance is referred to as ‘Amphelion’, and the shortest is called ‘Perihelion’.&lt;/p&gt;
-&lt;p&gt;Perihelion was reached back in January, and today the Earth will reach it’s Amphelion (farthest distance) for this year.&lt;/p&gt;
-&lt;p&gt;Source: &lt;a href=&quot;https://www.timeanddate.com/astronomy/perihelion-aphelion-solstice.html&quot;&gt;https://www.timeanddate.com/astronomy/perihelion-aphelion-solstice.html&lt;/a&gt;&lt;/p&gt;&lt;p&gt;Source: &lt;a href=&quot;https://web.archive.org/web/20260625005048/https://www.timeanddate.com/astronomy/perihelion-aphelion-solstice.html&quot;&gt;https://web.archive.org/web/20260625005048/https://www.timeanddate.com/astronomy/perihelion-aphelion-solstice.html&lt;/a&gt;&lt;/p&gt;
-</description>
-      </item>
-      <item>
-          <title>[ News ] Meta to build cloud compute business to recoup its massive AI investment</title>
-          <pubDate>Fri, 03 Jul 2026 12:00:00 +0000</pubDate>
-          <author>Lzon</author>
-          <link>https://lzon.ca/posts/news/000023-meta-cloud-business/</link>
-          <guid isPermaLink="false">https://lzon.ca/posts/news/23</guid>
-          <category domain="https://lzon.ca/posts/news/">News</category>
-          <description xml:base="https://lzon.ca/posts/news/000023-meta-cloud-business/">&lt;p&gt;Meta (formerly Facebook) has announced that it will be entering into the cloud compute business. It appears as though this is an attempt to recoup what was otherwise an over-investment in data centers which were initially intended for AI.&lt;/p&gt;
-&lt;span id=&quot;continue-reading&quot;&gt;&lt;/span&gt;
-&lt;p&gt;Many are speculating now that this might trigger the end of the AI hype bubble, but its not certain yet what might happen.&lt;/p&gt;
-&lt;p&gt;There have been a fair times through the past few years in which many were predicting the end of the bubble, and were obviously wrong. For example, the launch of the Deepseek model in early 2025 caused a 17% crash in Nvidia stock. Obviously they recovered and we are still in the midst of the bubble.&lt;/p&gt;
-&lt;p&gt;I think concern (or joy) might be warranted, but its still to early to know what effect this news will have.&lt;/p&gt;
-&lt;p&gt;Source: &lt;a href=&quot;https://www.fool.com/investing/2026/07/03/meta-is-reportedly-building-a-cloud-business-to-ri/&quot;&gt;https://www.fool.com/investing/2026/07/03/meta-is-reportedly-building-a-cloud-business-to-ri/&lt;/a&gt;&lt;/p&gt;&lt;p&gt;Source: &lt;a href=&quot;https://web.archive.org/web/20260703184337/https://www.fool.com/investing/2026/07/03/meta-is-reportedly-building-a-cloud-business-to-ri/&quot;&gt;https://web.archive.org/web/20260703184337/https://www.fool.com/investing/2026/07/03/meta-is-reportedly-building-a-cloud-business-to-ri/&lt;/a&gt;&lt;/p&gt;
-</description>
-      </item>
-      <item>
-          <title>[ Curios ] Spurious Correlations</title>
-          <pubDate>Thu, 02 Jul 2026 12:00:00 +0000</pubDate>
-          <author>Lzon</author>
-          <link>https://lzon.ca/posts/curio/curio-000036-spurious-correlations/</link>
-          <guid isPermaLink="false">https://lzon.ca/posts/curio/36</guid>
-          <category domain="https://lzon.ca/posts/curio/">Curios</category>
-          <description xml:base="https://lzon.ca/posts/curio/curio-000036-spurious-correlations/">&lt;p&gt;Link: &lt;a href=&quot;https://www.tylervigen.com/spurious-correlations&quot;&gt;https://www.tylervigen.com/spurious-correlations&lt;/a&gt;&lt;/p&gt;&lt;p&gt;A site that perfectly demonstrates the common phrase, “Correlation does not imply causation”.&lt;/p&gt;
-&lt;p&gt;Source: &lt;a href=&quot;https://web.archive.org/web/20260428065236/https://www.tylervigen.com/spurious-correlations&quot;&gt;https://web.archive.org/web/20260428065236/https://www.tylervigen.com/spurious-correlations&lt;/a&gt;&lt;/p&gt;
-</description>
-      </item>
-      <item>
           <title>[ Blog ] Youtube and Algorithmic Feeds</title>
           <pubDate>Tue, 30 Jun 2026 12:00:00 +0000</pubDate>
           <author>Lzon</author>
@@ -490,20 +166,6 @@ Send a message to &lt;a href=&quot;mailto:mail@lzon.ca&quot;&gt;mail@lzon.ca&lt;
           <guid isPermaLink="false">https://lzon.ca/posts/blog/youtube-algorithm/</guid>
           <category domain="https://lzon.ca/posts/blog/">Blog</category>
           <description xml:base="https://lzon.ca/posts/blog/youtube-algorithm/">&lt;p&gt;Why modern Youtube is offensive, and how you can improve your experience of the site.&lt;/p&gt;&lt;p&gt;&lt;a href=&quot;https://lzon.ca/posts/blog/youtube-algorithm/#continue-reading&quot;&gt;Continue reading&lt;/a&gt;&lt;/p&gt;
-</description>
-      </item>
-      <item>
-          <title>[ News ] GTA VI will launch at $80 USD</title>
-          <pubDate>Sun, 28 Jun 2026 12:00:00 +0000</pubDate>
-          <author>Lzon</author>
-          <link>https://lzon.ca/posts/news/000022-gta-vi-price/</link>
-          <guid isPermaLink="false">https://lzon.ca/posts/news/22</guid>
-          <category domain="https://lzon.ca/posts/news/">News</category>
-          <description xml:base="https://lzon.ca/posts/news/000022-gta-vi-price/">&lt;p&gt;Grand Theft Auto 6 will launch at $80 USD, and $100 for the ‘Ultimate Edition’.&lt;/p&gt;
-&lt;span id=&quot;continue-reading&quot;&gt;&lt;/span&gt;
-&lt;p&gt;Personally, I am not surprised. Expectations for the game are very high, and video game prices have already been trending upward. Inflation overall in the economy has also accelerated. It may not feel like it, but game prices have actually been remarkably stable for a very long time. The standard $60 price didn’t change for decades despite the ever falling value of the American dollar.&lt;/p&gt;
-&lt;p&gt;This is easy enough to see even in the launch price of Grand Theft Auto 5. The game was released back in 2013 for $60. That amount today is equivalent to a little over &lt;a rel=&quot;noopener external&quot; target=&quot;_blank&quot; href=&quot;https://www.calculator.net/inflation-calculator.html?cstartingamount1=60&amp;amp;cinmonth1=13&amp;amp;cinyear1=2013&amp;amp;coutmonth1=5&amp;amp;coutyear1=2026&amp;amp;calctype=1&amp;amp;x=Calculate#uscpi&quot;&gt;$85&lt;/a&gt;.&lt;/p&gt;
-&lt;p&gt;Source: &lt;a href=&quot;https://www.ign.com/articles/gta-6-price-finally-confirmed-features-a-single-player-experience-at-launch&quot;&gt;https://www.ign.com/articles/gta-6-price-finally-confirmed-features-a-single-player-experience-at-launch&lt;/a&gt;&lt;/p&gt;&lt;p&gt;Source: &lt;a href=&quot;https://web.archive.org/web/20260624110818/https://www.ign.com/articles/gta-6-price-finally-confirmed-features-a-single-player-experience-at-launch&quot;&gt;https://web.archive.org/web/20260624110818/https://www.ign.com/articles/gta-6-price-finally-confirmed-features-a-single-player-experience-at-launch&lt;/a&gt;&lt;/p&gt;
 </description>
       </item>
       <item>
@@ -517,21 +179,6 @@ Send a message to &lt;a href=&quot;mailto:mail@lzon.ca&quot;&gt;mail@lzon.ca&lt;
 </description>
       </item>
       <item>
-          <title>[ News ] Valve launches the Steam Machine starting at $1049 USD.</title>
-          <pubDate>Tue, 23 Jun 2026 12:00:00 +0000</pubDate>
-          <author>Lzon</author>
-          <link>https://lzon.ca/posts/news/000021-steam-machine-price/</link>
-          <guid isPermaLink="false">https://lzon.ca/posts/news/21</guid>
-          <category domain="https://lzon.ca/posts/news/">News</category>
-          <description xml:base="https://lzon.ca/posts/news/000021-steam-machine-price/">&lt;p&gt;Valve has officially launched the new Steam Machine. It’s a small gaming PC intended to provide a more console like, living room oriented experience. It comes preinstalled with &lt;a rel=&quot;noopener external&quot; target=&quot;_blank&quot; href=&quot;https://en.wikipedia.org/wiki/SteamOS&quot;&gt;Steam OS&lt;/a&gt;, the same linux-based operating system used on the Steam Deck.&lt;/p&gt;
-&lt;span id=&quot;continue-reading&quot;&gt;&lt;/span&gt;
-&lt;p&gt;The device was originally announced near the end of last year and has been delayed due to DRAM and flash chip shortages caused by the AI economic bubble. Valve has stated that they were struggling to procure the parts they needed, and that it wasn’t merely a matter of increased prices.&lt;/p&gt;
-&lt;p&gt;Speaking of price, the cheapest model with 512GB of storage will cost $1049 USD, with higher storage variants costing several hundred dollars more. Valve has said they increased pricing since the announcement in line with the recent Steam Deck price increases. This implies that the original MSRP would have been in the range of $750.&lt;/p&gt;
-&lt;p&gt;My opinion is that this is overall a good but expensive product. It is a device intended to create the most polished, cohesive, and easy experience for PC gaming. But given the current price, and even its original MSRP, this can’t really be a mass market product. I think a lot of people who would have otherwise wanted one will be unable to afford it. That’s unfortunate of course, and hopefully discounts will be possible in the future.&lt;/p&gt;
-&lt;p&gt;Source: &lt;a href=&quot;https://store.steampowered.com/news/group/45479024/view/685257114654870245&quot;&gt;https://store.steampowered.com/news/group/45479024/view/685257114654870245&lt;/a&gt;&lt;/p&gt;&lt;p&gt;Source: &lt;a href=&quot;https://web.archive.org/web/20260623124120/https://store.steampowered.com/news/group/45479024/view/685257114654870245&quot;&gt;https://web.archive.org/web/20260623124120/https://store.steampowered.com/news/group/45479024/view/685257114654870245&lt;/a&gt;&lt;/p&gt;
-</description>
-      </item>
-      <item>
           <title>[ Blog ] A maybe type for C++</title>
           <pubDate>Thu, 18 Jun 2026 12:00:00 +0000</pubDate>
           <author>Lzon</author>
@@ -542,66 +189,6 @@ Send a message to &lt;a href=&quot;mailto:mail@lzon.ca&quot;&gt;mail@lzon.ca&lt;
 </description>
       </item>
       <item>
-          <title>[ News ] Microsoft is closing game studio Ninja Theory</title>
-          <pubDate>Tue, 16 Jun 2026 12:00:00 +0000</pubDate>
-          <author>Lzon</author>
-          <link>https://lzon.ca/posts/news/000020-xbox-closing-hellblade/</link>
-          <guid isPermaLink="false">https://lzon.ca/posts/news/20</guid>
-          <category domain="https://lzon.ca/posts/news/">News</category>
-          <description xml:base="https://lzon.ca/posts/news/000020-xbox-closing-hellblade/">&lt;p&gt;Microsoft is shuttering the famous game studio Ninja Theory, known for having developed the &lt;a rel=&quot;noopener external&quot; target=&quot;_blank&quot; href=&quot;https://en.wikipedia.org/wiki/Hellblade:_Senua%27s_Sacrifice&quot;&gt;Hellblade&lt;/a&gt; series of games. The third game in that series called ‘Senua’ was in active development at the time of this report.&lt;/p&gt;
-&lt;span id=&quot;continue-reading&quot;&gt;&lt;/span&gt;
-&lt;p&gt;Earlier in the year &lt;a rel=&quot;noopener external&quot; target=&quot;_blank&quot; href=&quot;https://en.wikipedia.org/wiki/Asha_Sharma&quot;&gt;Asha Sharma&lt;/a&gt; succeeded Phil Spencer as the CEO of Xbox, and appears to be taking Microsoft’s gaming division in new direction, which clearly includes cutting their portfolio of game studios.&lt;/p&gt;
-&lt;p&gt;I personally really enjoyed their game &lt;a rel=&quot;noopener external&quot; target=&quot;_blank&quot; href=&quot;https://en.wikipedia.org/wiki/Enslaved:_Odyssey_to_the_West&quot;&gt;Enslaved: Odyssey to the West&lt;/a&gt; on the PS3. &lt;a rel=&quot;noopener external&quot; target=&quot;_blank&quot; href=&quot;https://en.wikipedia.org/wiki/Andy_Serkis&quot;&gt;Andy Serkis&lt;/a&gt; plays the protagonist, and the story was written by &lt;a rel=&quot;noopener external&quot; target=&quot;_blank&quot; href=&quot;https://en.wikipedia.org/wiki/Alex_Garland&quot;&gt;Alex Garland&lt;/a&gt;. I think the game is a masterpiece and highly recommend it. Its available on &lt;a rel=&quot;noopener external&quot; target=&quot;_blank&quot; href=&quot;https://store.steampowered.com/app/245280/ENSLAVED_Odyssey_to_the_West_Premium_Edition/&quot;&gt;Steam&lt;/a&gt; if you are interested.&lt;/p&gt;
-&lt;p&gt;Source: &lt;a href=&quot;https://www.theverge.com/games/950204/xbox-ninja-theory-shutdown-hellblade-senua&quot;&gt;https://www.theverge.com/games/950204/xbox-ninja-theory-shutdown-hellblade-senua&lt;/a&gt;&lt;/p&gt;&lt;p&gt;Source: &lt;a href=&quot;https://web.archive.org/web/20260616005349/https://www.theverge.com/games/950204/xbox-ninja-theory-shutdown-hellblade-senua&quot;&gt;https://web.archive.org/web/20260616005349/https://www.theverge.com/games/950204/xbox-ninja-theory-shutdown-hellblade-senua&lt;/a&gt;&lt;/p&gt;
-</description>
-      </item>
-      <item>
-          <title>[ News ] Elon Musk becomes world&apos;s first trillionaire</title>
-          <pubDate>Fri, 12 Jun 2026 12:00:00 +0000</pubDate>
-          <author>Lzon</author>
-          <link>https://lzon.ca/posts/news/000019-elon-musk-trillionaire/</link>
-          <guid isPermaLink="false">https://lzon.ca/posts/news/19</guid>
-          <category domain="https://lzon.ca/posts/news/">News</category>
-          <description xml:base="https://lzon.ca/posts/news/000019-elon-musk-trillionaire/">&lt;p&gt;Elon musk became the world’s first trillionaire immediately following the IPO of Space X, the now public aerospace company for which he is a founder.&lt;/p&gt;
-&lt;span id=&quot;continue-reading&quot;&gt;&lt;/span&gt;
-&lt;p&gt;His net worth had already climbed significantly leading up to the day of the IPO. Varying sources claimed his net worth to be between 800-900 billion dollars in recent weeks. The immediate surge in stock price for Space X on the day of its IPO meant that Musk’s share of the company was worth enough to make him a trillionaire.&lt;/p&gt;
-&lt;p&gt;I’m sure he is very proud…&lt;/p&gt;
-&lt;p&gt;Source: &lt;a href=&quot;https://apnews.com/article/musk-spacex-tesla-ipo-trillionaire-billionaire-worth-rockets-7723f82b6063a9a17c194e25982cd66d&quot;&gt;https://apnews.com/article/musk-spacex-tesla-ipo-trillionaire-billionaire-worth-rockets-7723f82b6063a9a17c194e25982cd66d&lt;/a&gt;&lt;/p&gt;&lt;p&gt;Source: &lt;a href=&quot;https://web.archive.org/web/20260612124718/https://apnews.com/article/musk-spacex-tesla-ipo-trillionaire-billionaire-worth-rockets-7723f82b6063a9a17c194e25982cd66d&quot;&gt;https://web.archive.org/web/20260612124718/https://apnews.com/article/musk-spacex-tesla-ipo-trillionaire-billionaire-worth-rockets-7723f82b6063a9a17c194e25982cd66d&lt;/a&gt;&lt;/p&gt;
-</description>
-      </item>
-      <item>
-          <title>[ News ] Fully autonomous drones have killed human soldiers for the first time</title>
-          <pubDate>Thu, 11 Jun 2026 12:00:00 +0000</pubDate>
-          <author>Lzon</author>
-          <link>https://lzon.ca/posts/news/000018-drones-killed-soldiers/</link>
-          <guid isPermaLink="false">https://lzon.ca/posts/news/18</guid>
-          <category domain="https://lzon.ca/posts/news/">News</category>
-          <description xml:base="https://lzon.ca/posts/news/000018-drones-killed-soldiers/">&lt;p&gt;A military contractor named Alexander Kokhanovskyy has revealed that a test was conducted two years ago in which fully autonomous drones killed human soldiers.&lt;/p&gt;
-&lt;span id=&quot;continue-reading&quot;&gt;&lt;/span&gt;
-&lt;p&gt;The test involved sending ‘terminator’ drones on a trajectory over several kilometers towards their target. Upon arrival an AI running on the drones identified and then engaged their target. Human-piloted drones flew over the area some time afterwards to confirm the targets had been eliminated.&lt;/p&gt;
-&lt;p&gt;The Ukrainian government presently requires final human confirmation to conduct attacks, but otherwise uses AI heavily in identifying targets. Kokhanovskyy claims there has been no further tests beyond the one conducted two years ago.&lt;/p&gt;
-&lt;p&gt;Kokhanovskyy is currently the CEO of &lt;a rel=&quot;noopener external&quot; target=&quot;_blank&quot; href=&quot;https://aerocenter.com.ua/&quot;&gt;Aero Center&lt;/a&gt;, a Ukrainian military drone manufacturer. Aero Center is a new company, and was not responsible for conducting the test.&lt;/p&gt;
-&lt;p&gt;In my opinion this was inevitable and was going to happen eventually. It’s still not too late to impose a global ban on these types of weapons, but before that happens I expect to see more stories like this.&lt;/p&gt;
-&lt;p&gt;Source: &lt;a href=&quot;https://www.newscientist.com/article/2529849-fully-autonomous-drones-have-killed-human-soldiers-for-the-first-time/&quot;&gt;https://www.newscientist.com/article/2529849-fully-autonomous-drones-have-killed-human-soldiers-for-the-first-time/&lt;/a&gt;&lt;/p&gt;&lt;p&gt;Source: &lt;a href=&quot;https://web.archive.org/web/20260610143126/https://www.newscientist.com/article/2529849-fully-autonomous-drones-have-killed-human-soldiers-for-the-first-time/&quot;&gt;https://web.archive.org/web/20260610143126/https://www.newscientist.com/article/2529849-fully-autonomous-drones-have-killed-human-soldiers-for-the-first-time/&lt;/a&gt;&lt;/p&gt;
-</description>
-      </item>
-      <item>
-          <title>[ News ] Rockstar Games employees have formed a union</title>
-          <pubDate>Tue, 09 Jun 2026 12:00:00 +0000</pubDate>
-          <author>Lzon</author>
-          <link>https://lzon.ca/posts/news/000017-rockstar-union/</link>
-          <guid isPermaLink="false">https://lzon.ca/posts/news/17</guid>
-          <category domain="https://lzon.ca/posts/news/">News</category>
-          <description xml:base="https://lzon.ca/posts/news/000017-rockstar-union/">&lt;p&gt;Employees of Rockstar Games have announced their intent to form a union, to be called “Rockstar Game Workers Union”. It will be a subsidiary of the existing “Workers’ Union of Great Britain”.&lt;/p&gt;
-&lt;span id=&quot;continue-reading&quot;&gt;&lt;/span&gt;
-&lt;p&gt;This follows a recent controversy in which Rockstar Games fired 31 employees for claimed misconduct. It is speculated that the mass firing was an attempt at union busting.&lt;/p&gt;
-&lt;p&gt;In my opinion this is good news. Gaming and software development have never had a strong labour movement, largely because individual employees could use their high-value skillset as leverage when negotiating salary and working conditions.&lt;/p&gt;
-&lt;p&gt;Advanced AI is going to automate (and thus de-value) a lot of the work needed for game development. Without union protection this will lead to increasing opportunity for game studios to abuse their workers.&lt;/p&gt;
-&lt;p&gt;Hopefully this trend continues.&lt;/p&gt;
-&lt;p&gt;Source: &lt;a href=&quot;https://www.eurogamer.net/were-determined-to-win-justice-for-the-31-fired-workers-rockstar-games-workers-publicly-launch-union-as-legal-battle-with-the-gta-6-maker-rages-on&quot;&gt;https://www.eurogamer.net/were-determined-to-win-justice-for-the-31-fired-workers-rockstar-games-workers-publicly-launch-union-as-legal-battle-with-the-gta-6-maker-rages-on&lt;/a&gt;&lt;/p&gt;&lt;p&gt;Source: &lt;a href=&quot;https://web.archive.org/web/20260530024600/https://www.eurogamer.net/were-determined-to-win-justice-for-the-31-fired-workers-rockstar-games-workers-publicly-launch-union-as-legal-battle-with-the-gta-6-maker-rages-on&quot;&gt;https://web.archive.org/web/20260530024600/https://www.eurogamer.net/were-determined-to-win-justice-for-the-31-fired-workers-rockstar-games-workers-publicly-launch-union-as-legal-battle-with-the-gta-6-maker-rages-on&lt;/a&gt;&lt;/p&gt;
-</description>
-      </item>
-      <item>
           <title>[ Blog ] A result type for C++</title>
           <pubDate>Mon, 01 Jun 2026 12:00:00 +0000</pubDate>
           <author>Lzon</author>
@@ -609,63 +196,6 @@ Send a message to &lt;a href=&quot;mailto:mail@lzon.ca&quot;&gt;mail@lzon.ca&lt;
           <guid isPermaLink="false">https://lzon.ca/posts/blog/cpp-result-type/</guid>
           <category domain="https://lzon.ca/posts/blog/">Blog</category>
           <description xml:base="https://lzon.ca/posts/blog/cpp-result-type/">&lt;p&gt;I wrote my own version of the very useful ‘result type’ pattern for C++.&lt;/p&gt;&lt;p&gt;&lt;a href=&quot;https://lzon.ca/posts/blog/cpp-result-type/#continue-reading&quot;&gt;Continue reading&lt;/a&gt;&lt;/p&gt;
-</description>
-      </item>
-      <item>
-          <title>[ News ] First Chinese-made EVs arrive in Canada under deal Carney struck with Xi</title>
-          <pubDate>Sat, 30 May 2026 12:00:00 +0000</pubDate>
-          <author>Lzon</author>
-          <link>https://lzon.ca/posts/news/000016-chinese-evs-canada/</link>
-          <guid isPermaLink="false">https://lzon.ca/posts/news/16</guid>
-          <category domain="https://lzon.ca/posts/news/">News</category>
-          <description xml:base="https://lzon.ca/posts/news/000016-chinese-evs-canada/">&lt;p&gt;The first China-made electric vehicles have arrived in Canada following a recent tariff reduction deal. The shipment was mostly from Tesla’s Shanghai factory, with some Lotus branded vehicles as well.&lt;/p&gt;
-&lt;span id=&quot;continue-reading&quot;&gt;&lt;/span&gt;
-&lt;p&gt;This is noteworthy since historically Canada has followed the USA closely on restricting China’s access to its vehicle market.&lt;/p&gt;
-&lt;p&gt;I’m cautiously optimistic. If this leads to EV’s becoming more affordable then that would be a good thing. The hope is that the federal government will continue to promote domestic vehicle production amongst the incoming Chinese competitors. We already do this well for companies from USA, Japan, and Korea.&lt;/p&gt;
-&lt;p&gt;Source: &lt;a href=&quot;https://financialpost.com/commodities/energy/electric-vehicles/first-chinese-made-evs-arrive-canada&quot;&gt;https://financialpost.com/commodities/energy/electric-vehicles/first-chinese-made-evs-arrive-canada&lt;/a&gt;&lt;/p&gt;&lt;p&gt;Source: &lt;a href=&quot;https://web.archive.org/web/20260530193713/https://financialpost.com/commodities/energy/electric-vehicles/first-chinese-made-evs-arrive-canada&quot;&gt;https://web.archive.org/web/20260530193713/https://financialpost.com/commodities/energy/electric-vehicles/first-chinese-made-evs-arrive-canada&lt;/a&gt;&lt;/p&gt;
-</description>
-      </item>
-      <item>
-          <title>[ News ] Corsair to source DRAM chips from Chinese fab</title>
-          <pubDate>Wed, 27 May 2026 12:00:00 +0000</pubDate>
-          <author>Lzon</author>
-          <link>https://lzon.ca/posts/news/000015-memory-cxmt-shortages/</link>
-          <guid isPermaLink="false">https://lzon.ca/posts/news/15</guid>
-          <category domain="https://lzon.ca/posts/news/">News</category>
-          <description xml:base="https://lzon.ca/posts/news/000015-memory-cxmt-shortages/">&lt;p&gt;Corsair will begin sourcing DRAM chips from chinese DRAM manufacturer &lt;a rel=&quot;noopener external&quot; target=&quot;_blank&quot; href=&quot;https://en.wikipedia.org/wiki/ChangXin_Memory_Technologies&quot;&gt;CXMT&lt;/a&gt;.&lt;/p&gt;
-&lt;span id=&quot;continue-reading&quot;&gt;&lt;/span&gt;
-&lt;p&gt;The Chinese company has only just recently began production of DDR5 chips, beginning in 2025. This move is clearly a response to the DRAM chip shortages currently being caused by the AI hype bubble.&lt;/p&gt;
-&lt;p&gt;Source: &lt;a href=&quot;https://www.tomshardware.com/pc-components/ddr5/chinese-memory-maker-cxmt-enters-the-mainstream-consumer-memory-with-corsair-vengeance-ddr5-kit-chinese-made-dram-emerges-as-an-antidote-for-crushing-shortages&quot;&gt;https://www.tomshardware.com/pc-components/ddr5/chinese-memory-maker-cxmt-enters-the-mainstream-consumer-memory-with-corsair-vengeance-ddr5-kit-chinese-made-dram-emerges-as-an-antidote-for-crushing-shortages&lt;/a&gt;&lt;/p&gt;&lt;p&gt;Source: &lt;a href=&quot;https://web.archive.org/web/20260523052449/https://www.tomshardware.com/pc-components/ddr5/chinese-memory-maker-cxmt-enters-the-mainstream-consumer-memory-with-corsair-vengeance-ddr5-kit-chinese-made-dram-emerges-as-an-antidote-for-crushing-shortages&quot;&gt;https://web.archive.org/web/20260523052449/https://www.tomshardware.com/pc-components/ddr5/chinese-memory-maker-cxmt-enters-the-mainstream-consumer-memory-with-corsair-vengeance-ddr5-kit-chinese-made-dram-emerges-as-an-antidote-for-crushing-shortages&lt;/a&gt;&lt;/p&gt;
-</description>
-      </item>
-      <item>
-          <title>[ News ] Motorola phones are hijacking Amazon URLs to insert affiliate codes</title>
-          <pubDate>Tue, 26 May 2026 12:00:00 +0000</pubDate>
-          <author>Lzon</author>
-          <link>https://lzon.ca/posts/news/000014-motorola-hijacking-amazon/</link>
-          <guid isPermaLink="false">https://lzon.ca/posts/news/14</guid>
-          <category domain="https://lzon.ca/posts/news/">News</category>
-          <description xml:base="https://lzon.ca/posts/news/000014-motorola-hijacking-amazon/">&lt;p&gt;Some users of Motorola smartphones have reported that affiliate codes are being automatically injected into Amazon web links on their devices.&lt;/p&gt;
-&lt;span id=&quot;continue-reading&quot;&gt;&lt;/span&gt;
-&lt;p&gt;This appears to be done by a pre-installed app called &lt;code&gt;Smart Feed&lt;/code&gt; which intercepts the URLs, redirects to an ad server, which then inserts the affiliate codes. This &lt;a rel=&quot;noopener external&quot; target=&quot;_blank&quot; href=&quot;https://old.reddit.com/r/Android/comments/1tno2z3/motorolas_preinstalled_smart_feed_app_hijacks/&quot;&gt;Reddit thread&lt;/a&gt; referenced in the article includes a more technical analysis.&lt;/p&gt;
-&lt;p&gt;For now at least, it is possible to stop this behavior. You can do so by navigating to the app’s info page &lt;code&gt;Settings -&amp;gt; Apps -&amp;gt; Search &apos;Smart Feed&apos;&lt;/code&gt; and pressing the &lt;code&gt;Disable&lt;/code&gt; button.&lt;/p&gt;
-&lt;p&gt;I’m not surprised but I am disappointed to see Motorola do this. They were once very well known for offering affordable Android devices with minimal bloat. I have an original &lt;a rel=&quot;noopener external&quot; target=&quot;_blank&quot; href=&quot;https://www.gsmarena.com/motorola_moto_g-5831.php&quot;&gt;Moto G&lt;/a&gt; which was a fantastic little device in it’s time.&lt;/p&gt;
-&lt;p&gt;Source: &lt;a href=&quot;https://9to5google.com/2026/05/25/motorola-amazon-app-hijacking-behavior/&quot;&gt;https://9to5google.com/2026/05/25/motorola-amazon-app-hijacking-behavior/&lt;/a&gt;&lt;/p&gt;&lt;p&gt;Source: &lt;a href=&quot;https://web.archive.org/web/20260526040500/https://9to5google.com/2026/05/25/motorola-amazon-app-hijacking-behavior/&quot;&gt;https://web.archive.org/web/20260526040500/https://9to5google.com/2026/05/25/motorola-amazon-app-hijacking-behavior/&lt;/a&gt;&lt;/p&gt;
-</description>
-      </item>
-      <item>
-          <title>[ News ] Star Citizen has reached $1 billion in funding</title>
-          <pubDate>Mon, 25 May 2026 12:00:00 +0000</pubDate>
-          <author>Lzon</author>
-          <link>https://lzon.ca/posts/news/000013-starcitizen-billion-dollars/</link>
-          <guid isPermaLink="false">https://lzon.ca/posts/news/13</guid>
-          <category domain="https://lzon.ca/posts/news/">News</category>
-          <description xml:base="https://lzon.ca/posts/news/000013-starcitizen-billion-dollars/">&lt;p&gt;The in-development video game Star Citizen has now received over one billion dollars in funding.&lt;/p&gt;
-&lt;span id=&quot;continue-reading&quot;&gt;&lt;/span&gt;
-&lt;p&gt;The game was initially slated for release in October 2014, after being revealed at GDC in October 2012. At time of writing it has been over 13 years since the announcement, nearly 5000 days.&lt;/p&gt;
-&lt;p&gt;In my opinion, these funding milestones hardly count as news anymore. The game has a loyal fan-base who are playing the game regularly, and are committed to supporting the game financially on an on-going basis. To me that looks a lot like the definition of a ‘released’ video game.&lt;/p&gt;
-&lt;p&gt;The fact that its publisher Roberts Space Industries is still calling it ‘early access’ is mostly a function of marketing.&lt;/p&gt;
-&lt;p&gt;Source: &lt;a href=&quot;https://robertsspaceindustries.com/en/funding-goals&quot;&gt;https://robertsspaceindustries.com/en/funding-goals&lt;/a&gt;&lt;/p&gt;&lt;p&gt;Source: &lt;a href=&quot;https://web.archive.org/web/20260524175020/https://robertsspaceindustries.com/en/funding-goals&quot;&gt;https://web.archive.org/web/20260524175020/https://robertsspaceindustries.com/en/funding-goals&lt;/a&gt;&lt;/p&gt;
 </description>
       </item>
       <item>
@@ -685,76 +215,6 @@ Send a message to &lt;a href=&quot;mailto:mail@lzon.ca&quot;&gt;mail@lzon.ca&lt;
 &lt;p&gt;– Terry Pratchett, &lt;s&gt; Faust&lt;/s&gt; Eric&lt;/p&gt;
 &lt;/blockquote&gt;
 
-</description>
-      </item>
-      <item>
-          <title>[ News ] Starbucks scraps AI inventory tool across North America</title>
-          <pubDate>Sat, 23 May 2026 12:00:00 +0000</pubDate>
-          <author>Lzon</author>
-          <link>https://lzon.ca/posts/news/000012-starbucks-ai-rollback/</link>
-          <guid isPermaLink="false">https://lzon.ca/posts/news/12</guid>
-          <category domain="https://lzon.ca/posts/news/">News</category>
-          <description xml:base="https://lzon.ca/posts/news/000012-starbucks-ai-rollback/">&lt;p&gt;Starbucks is dropping the AI-based inventory manager that it began using in September 2025. The software has numerous issues including miscounting and mislabeling inventory items. This decision comes after a multi year effort by CEO &lt;a rel=&quot;noopener external&quot; target=&quot;_blank&quot; href=&quot;https://en.wikipedia.org/wiki/Brian_Niccol&quot;&gt;Brian Niccol&lt;/a&gt; to increase efficiency of the company’s supply chain.&lt;/p&gt;
-&lt;span id=&quot;continue-reading&quot;&gt;&lt;/span&gt;
-&lt;p&gt;The developer of the software &lt;a rel=&quot;noopener external&quot; target=&quot;_blank&quot; href=&quot;https://www.nomad-go.com/&quot;&gt;NomadGo&lt;/a&gt; said in a statement to Reuters that it is, “continuously learning from customers and user feedback” to improve its products.&lt;/p&gt;
-&lt;p&gt;Some AI skeptics have speculated that this could be a sign of the end of the AI hype bubble.&lt;/p&gt;
-&lt;p&gt;No matter what happens, I feel it appropriate to invoke the famouse quote from economist &lt;a rel=&quot;noopener external&quot; target=&quot;_blank&quot; href=&quot;https://en.wikipedia.org/wiki/John_Maynard_Keynes&quot;&gt;John Maynard Keynes&lt;/a&gt;.&lt;/p&gt;
-&lt;blockquote&gt;
-&lt;p&gt;“the market can remain irrational longer than you can stay solvent”&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;p&gt;Source: &lt;a href=&quot;https://www.reuters.com/business/starbucks-scraps-ai-inventory-tool-across-north-america-2026-05-21/&quot;&gt;https://www.reuters.com/business/starbucks-scraps-ai-inventory-tool-across-north-america-2026-05-21/&lt;/a&gt;&lt;/p&gt;&lt;p&gt;Source: &lt;a href=&quot;https://web.archive.org/web/20260522025326/https://www.reuters.com/business/starbucks-scraps-ai-inventory-tool-across-north-america-2026-05-21/&quot;&gt;https://web.archive.org/web/20260522025326/https://www.reuters.com/business/starbucks-scraps-ai-inventory-tool-across-north-america-2026-05-21/&lt;/a&gt;&lt;/p&gt;
-</description>
-      </item>
-      <item>
-          <title>[ Curios ] Six Degrees of Wikipedia</title>
-          <pubDate>Thu, 21 May 2026 12:00:00 +0000</pubDate>
-          <author>Lzon</author>
-          <link>https://lzon.ca/posts/curio/curio-000035-six-degrees-of-wikipedia/</link>
-          <guid isPermaLink="false">https://lzon.ca/posts/curio/35</guid>
-          <category domain="https://lzon.ca/posts/curio/">Curios</category>
-          <description xml:base="https://lzon.ca/posts/curio/curio-000035-six-degrees-of-wikipedia/">&lt;p&gt;Link: &lt;a href=&quot;https://www.sixdegreesofwikipedia.com&quot;&gt;https://www.sixdegreesofwikipedia.com&lt;/a&gt;&lt;/p&gt;&lt;p&gt;A fun little web app. It finds the shortest possible of sequence of links between two different Wikipedia pages.&lt;/p&gt;
-&lt;p&gt;Source: &lt;a href=&quot;https://web.archive.org/web/20260420041603/https://www.sixdegreesofwikipedia.com&quot;&gt;https://web.archive.org/web/20260420041603/https://www.sixdegreesofwikipedia.com&lt;/a&gt;&lt;/p&gt;
-</description>
-      </item>
-      <item>
-          <title>[ News ] Warhorse Studios Announces a new Lord of the Rings RPG</title>
-          <pubDate>Wed, 20 May 2026 12:00:00 +0000</pubDate>
-          <author>Lzon</author>
-          <link>https://lzon.ca/posts/news/000011-warhorse-lord-of-the-rings-rpg/</link>
-          <guid isPermaLink="false">https://lzon.ca/posts/news/11</guid>
-          <category domain="https://lzon.ca/posts/news/">News</category>
-          <description xml:base="https://lzon.ca/posts/news/000011-warhorse-lord-of-the-rings-rpg/">&lt;p&gt;The developer of Kingdom Come Deliverance has just announced that they are working on an officially licensed Lord of the Rings video game. It will be an open-world RPG.&lt;/p&gt;
-&lt;span id=&quot;continue-reading&quot;&gt;&lt;/span&gt;
-&lt;p&gt;I am very excited for this game. I tried Kingdom Come Deliverance a few years ago and like it. But the game is very challenging and I didn’t manage to get very far.&lt;/p&gt;
-&lt;p&gt;I want to try this new title when it releases, I’m hoping that they tone down the difficulty a little so that scrubs like me can play through to the end.&lt;/p&gt;
-&lt;p&gt;Source: &lt;a href=&quot;https://news.instant-gaming.com/en/articles/19632-warhorse-announces-a-lord-of-the-rings-rpg-and-a-new-kingdom-come-adventure&quot;&gt;https://news.instant-gaming.com/en/articles/19632-warhorse-announces-a-lord-of-the-rings-rpg-and-a-new-kingdom-come-adventure&lt;/a&gt;&lt;/p&gt;&lt;p&gt;Source: &lt;a href=&quot;https://web.archive.org/web/20260520191759/https://news.instant-gaming.com/en/articles/19632-warhorse-announces-a-lord-of-the-rings-rpg-and-a-new-kingdom-come-adventure&quot;&gt;https://web.archive.org/web/20260520191759/https://news.instant-gaming.com/en/articles/19632-warhorse-announces-a-lord-of-the-rings-rpg-and-a-new-kingdom-come-adventure&lt;/a&gt;&lt;/p&gt;
-</description>
-      </item>
-      <item>
-          <title>[ News ] Operating System Age Verification Pushed by Canadian Porn Company</title>
-          <pubDate>Tue, 19 May 2026 12:00:00 +0000</pubDate>
-          <author>Lzon</author>
-          <link>https://lzon.ca/posts/news/000010-child-safety-privacy/</link>
-          <guid isPermaLink="false">https://lzon.ca/posts/news/10</guid>
-          <category domain="https://lzon.ca/posts/news/">News</category>
-          <description xml:base="https://lzon.ca/posts/news/000010-child-safety-privacy/">&lt;p&gt;&lt;a rel=&quot;noopener external&quot; target=&quot;_blank&quot; href=&quot;https://en.wikipedia.org/wiki/Aylo&quot;&gt;Aylo&lt;/a&gt;, parent company of PornHub and formerly named ‘MindGeek’ has been lobbying in Canada and other countries for operating system level age verification.&lt;/p&gt;
-&lt;span id=&quot;continue-reading&quot;&gt;&lt;/span&gt;
-&lt;p&gt;The pornography company Aylo is currently lobbying in Canada against Bill S-209 which would hold online platforms responsible for ensuring that children do not access age-restricted content.&lt;/p&gt;
-&lt;p&gt;They argue that such measures would not work, and that it would be more appropriate and effective to impose age-verification within the operating system of the user’s device. This argument is being made in bad faith as an effort to avoid being regulated.&lt;/p&gt;
-&lt;p&gt;Implementing age verification within the operating system is ridiculous and is not the appropriate way to prevent harm to children while online. I also believe that it creates a politic harzard since it grants new powers to the government which are liable to eventually be abused.&lt;/p&gt;
-&lt;p&gt;Source: &lt;a href=&quot;https://defenddignity.ca/child-safety-privacy-and-the-responsibility-of-powerful-platforms/&quot;&gt;https://defenddignity.ca/child-safety-privacy-and-the-responsibility-of-powerful-platforms/&lt;/a&gt;&lt;/p&gt;&lt;p&gt;Source: &lt;a href=&quot;https://web.archive.org/web/20260519191539/https://defenddignity.ca/child-safety-privacy-and-the-responsibility-of-powerful-platforms/&quot;&gt;https://web.archive.org/web/20260519191539/https://defenddignity.ca/child-safety-privacy-and-the-responsibility-of-powerful-platforms/&lt;/a&gt;&lt;/p&gt;
-</description>
-      </item>
-      <item>
-          <title>[ Curios ] Nibble</title>
-          <pubDate>Mon, 18 May 2026 12:00:00 +0000</pubDate>
-          <author>Lzon</author>
-          <link>https://lzon.ca/posts/curio/curio-000034-nibble-wikipedia/</link>
-          <guid isPermaLink="false">https://lzon.ca/posts/curio/34</guid>
-          <category domain="https://lzon.ca/posts/curio/">Curios</category>
-          <description xml:base="https://lzon.ca/posts/curio/curio-000034-nibble-wikipedia/">&lt;p&gt;Link: &lt;a href=&quot;https://en.wikipedia.org/wiki/Nibble&quot;&gt;https://en.wikipedia.org/wiki/Nibble&lt;/a&gt;&lt;/p&gt;&lt;p&gt;You probably already know that a byte is 8 bits, but have you ever heard of a ‘nibble’? A nibble is 4 bits. A few older chip architectures used it, but modern CPU’s typically use a 64-bit word length.&lt;/p&gt;
-&lt;p&gt;It’s not particularly relevant anymore. I personally had to use nibbles when I was writing my Gameboy emulator.&lt;/p&gt;
-&lt;p&gt;Source: &lt;a href=&quot;https://web.archive.org/web/20260204224218/https://en.wikipedia.org/wiki/Nibble&quot;&gt;https://web.archive.org/web/20260204224218/https://en.wikipedia.org/wiki/Nibble&lt;/a&gt;&lt;/p&gt;
 </description>
       </item>
       <item>
@@ -778,31 +238,6 @@ Send a message to &lt;a href=&quot;mailto:mail@lzon.ca&quot;&gt;mail@lzon.ca&lt;
 </description>
       </item>
       <item>
-          <title>[ News ] The era of 15GB free Gmail storage is ending</title>
-          <pubDate>Sat, 16 May 2026 12:00:00 +0000</pubDate>
-          <author>Lzon</author>
-          <link>https://lzon.ca/posts/news/000009-15gb-gmail-ending/</link>
-          <guid isPermaLink="false">https://lzon.ca/posts/news/9</guid>
-          <category domain="https://lzon.ca/posts/news/">News</category>
-          <description xml:base="https://lzon.ca/posts/news/000009-15gb-gmail-ending/">&lt;p&gt;Google is experimenting with a reduction in the free storage on Gmail accounts. As they often do, they appear to be A/B testing the change. Some user reports suggest that the change is currently limited by region (mostly Africa). Other users are claiming that their new accounts have 5GB of storage, with the option to increase to 15GB after phone number verification.&lt;/p&gt;
-&lt;p&gt;It’s uncertain whether this was a response to an increase in service abuse, or the result of some internal financial pressures from within Google itself.&lt;/p&gt;
-&lt;p&gt;Source: &lt;a href=&quot;https://www.androidauthority.com/google-gmail-5gb-free-storage-test-3667002&quot;&gt;https://www.androidauthority.com/google-gmail-5gb-free-storage-test-3667002&lt;/a&gt;&lt;/p&gt;&lt;p&gt;Source: &lt;a href=&quot;https://web.archive.org/web/20260514142721/https://www.androidauthority.com/google-gmail-5gb-free-storage-test-3667002&quot;&gt;https://web.archive.org/web/20260514142721/https://www.androidauthority.com/google-gmail-5gb-free-storage-test-3667002&lt;/a&gt;&lt;/p&gt;
-</description>
-      </item>
-      <item>
-          <title>[ News ] Cisco posts record revenue, then cuts 4,000 jobs</title>
-          <pubDate>Thu, 14 May 2026 12:00:00 +0000</pubDate>
-          <author>Lzon</author>
-          <link>https://lzon.ca/posts/news/000008-cisco-layoffs/</link>
-          <guid isPermaLink="false">https://lzon.ca/posts/news/8</guid>
-          <category domain="https://lzon.ca/posts/news/">News</category>
-          <description xml:base="https://lzon.ca/posts/news/000008-cisco-layoffs/">&lt;p&gt;Cisco announced a 4000-person layoff, representing 5% of there total workforce.&lt;/p&gt;
-&lt;span id=&quot;continue-reading&quot;&gt;&lt;/span&gt;
-&lt;p&gt;This follows from the company’s recent announcement of $15.8 billion in revenue for the most recent financial quarter, a 12 percent increase year over year.&lt;/p&gt;
-&lt;p&gt;Source: &lt;a href=&quot;https://www.sfchronicle.com/tech/article/cisco-layoffs-ai-restructuring-22257878.php&quot;&gt;https://www.sfchronicle.com/tech/article/cisco-layoffs-ai-restructuring-22257878.php&lt;/a&gt;&lt;/p&gt;&lt;p&gt;Source: &lt;a href=&quot;https://web.archive.org/web/20260514010222/https://www.sfchronicle.com/tech/article/cisco-layoffs-ai-restructuring-22257878.php&quot;&gt;https://web.archive.org/web/20260514010222/https://www.sfchronicle.com/tech/article/cisco-layoffs-ai-restructuring-22257878.php&lt;/a&gt;&lt;/p&gt;
-</description>
-      </item>
-      <item>
           <title>[ Blog ] A hack for Zola SSG feed templates</title>
           <pubDate>Wed, 13 May 2026 12:00:00 +0000</pubDate>
           <author>Lzon</author>
@@ -813,31 +248,6 @@ Send a message to &lt;a href=&quot;mailto:mail@lzon.ca&quot;&gt;mail@lzon.ca&lt;
 </description>
       </item>
       <item>
-          <title>[ Curios ] taken.</title>
-          <pubDate>Tue, 12 May 2026 12:00:00 +0000</pubDate>
-          <author>Lzon</author>
-          <link>https://lzon.ca/posts/curio/curio-000033-taken/</link>
-          <guid isPermaLink="false">https://lzon.ca/posts/curio/33</guid>
-          <category domain="https://lzon.ca/posts/curio/">Curios</category>
-          <description xml:base="https://lzon.ca/posts/curio/curio-000033-taken/">&lt;p&gt;Link: &lt;a href=&quot;https://sinceyouarrived.world/taken&quot;&gt;https://sinceyouarrived.world/taken&lt;/a&gt;&lt;/p&gt;&lt;p&gt;A beautiful website that demonstrates what personal information a web server can collect from you just for opening a web page.&lt;/p&gt;
-&lt;p&gt;I’ve seen a few similar projects like this before, but this is by &lt;em&gt;far&lt;/em&gt; the best one I’ve ever seen.&lt;/p&gt;
-&lt;p&gt;Source: &lt;a href=&quot;https://web.archive.org/web/20260509004715/https://sinceyouarrived.world/taken&quot;&gt;https://web.archive.org/web/20260509004715/https://sinceyouarrived.world/taken&lt;/a&gt;&lt;/p&gt;
-</description>
-      </item>
-      <item>
-          <title>[ News ] Pirates are already playing Forza Horizon 6 days before its launch</title>
-          <pubDate>Mon, 11 May 2026 12:00:00 +0000</pubDate>
-          <author>Lzon</author>
-          <link>https://lzon.ca/posts/news/000007-pirates-playing-forza-horizon-6/</link>
-          <guid isPermaLink="false">https://lzon.ca/posts/news/7</guid>
-          <category domain="https://lzon.ca/posts/news/">News</category>
-          <description xml:base="https://lzon.ca/posts/news/000007-pirates-playing-forza-horizon-6/">&lt;p&gt;Game pirates are already playing Forza Horizon 6, more than a week ahead of the title’s official release date.&lt;/p&gt;
-&lt;span id=&quot;continue-reading&quot;&gt;&lt;/span&gt;
-&lt;p&gt;This was made possible by copying the game’s preload install files, which were mistakenly distributed on Steam without encryption. There was a similar incident back in March of this year at the release of Death Stranding 2.&lt;/p&gt;
-&lt;p&gt;Source: &lt;a href=&quot;https://arstechnica.com/gaming/2026/05/pirates-are-already-playing-forza-horizon-6-days-before-its-launch/&quot;&gt;https://arstechnica.com/gaming/2026/05/pirates-are-already-playing-forza-horizon-6-days-before-its-launch/&lt;/a&gt;&lt;/p&gt;&lt;p&gt;Source: &lt;a href=&quot;https://web.archive.org/web/20260511153835/https://arstechnica.com/gaming/2026/05/pirates-are-already-playing-forza-horizon-6-days-before-its-launch/&quot;&gt;https://web.archive.org/web/20260511153835/https://arstechnica.com/gaming/2026/05/pirates-are-already-playing-forza-horizon-6-days-before-its-launch/&lt;/a&gt;&lt;/p&gt;
-</description>
-      </item>
-      <item>
           <title>[ Blog ] News &amp; Feeds</title>
           <pubDate>Sun, 10 May 2026 12:00:00 +0000</pubDate>
           <author>Lzon</author>
@@ -845,97 +255,6 @@ Send a message to &lt;a href=&quot;mailto:mail@lzon.ca&quot;&gt;mail@lzon.ca&lt;
           <guid isPermaLink="false">https://lzon.ca/posts/blog/news-feed-update/</guid>
           <category domain="https://lzon.ca/posts/blog/">Blog</category>
           <description xml:base="https://lzon.ca/posts/blog/news-feed-update/">&lt;p&gt;This is what I’ve been working on recently for lzon.ca.&lt;/p&gt;&lt;p&gt;&lt;a href=&quot;https://lzon.ca/posts/blog/news-feed-update/#continue-reading&quot;&gt;Continue reading&lt;/a&gt;&lt;/p&gt;
-</description>
-      </item>
-      <item>
-          <title>[ News ] Mozilla, Mullvad, Proton, sign letter opposing UK age verification</title>
-          <pubDate>Sun, 10 May 2026 12:00:00 +0000</pubDate>
-          <author>Lzon</author>
-          <link>https://lzon.ca/posts/news/000006-uk-opposing-age-verification/</link>
-          <guid isPermaLink="false">https://lzon.ca/posts/news/6</guid>
-          <category domain="https://lzon.ca/posts/news/">News</category>
-          <description xml:base="https://lzon.ca/posts/news/000006-uk-opposing-age-verification/">&lt;p&gt;An open letter has been signed by prominent internet service companies which asks UK policymakers to not compromise the open web under the pretense of child safety. The new law has already been passed, and there is a legitimate concern that it will be used broadly to restrict internet access, and reduce online anonymity.&lt;/p&gt;
-&lt;p&gt;In my opinion this is a trojan horse, like many such laws that came before it. Child safety is being used as a pretense in order for a government to grant itself more power.&lt;/p&gt;
-&lt;p&gt;Source: &lt;a href=&quot;https://www.openrightsgroup.org/press-releases/companies-and-civil-society-warn-that-uk-is-undermining-open-web/&quot;&gt;https://www.openrightsgroup.org/press-releases/companies-and-civil-society-warn-that-uk-is-undermining-open-web/&lt;/a&gt;&lt;/p&gt;&lt;p&gt;Source: &lt;a href=&quot;https://web.archive.org/web/20260508194502/https://www.openrightsgroup.org/press-releases/companies-and-civil-society-warn-that-uk-is-undermining-open-web/&quot;&gt;https://web.archive.org/web/20260508194502/https://www.openrightsgroup.org/press-releases/companies-and-civil-society-warn-that-uk-is-undermining-open-web/&lt;/a&gt;&lt;/p&gt;
-</description>
-      </item>
-      <item>
-          <title>[ News ] Tesla Recalls Cybertrucks Over Concerns Their Wheels Could Come Off</title>
-          <pubDate>Fri, 08 May 2026 12:00:00 +0000</pubDate>
-          <author>Lzon</author>
-          <link>https://lzon.ca/posts/news/000005-tesla-recalls-cybertrucks/</link>
-          <guid isPermaLink="false">https://lzon.ca/posts/news/5</guid>
-          <category domain="https://lzon.ca/posts/news/">News</category>
-          <description xml:base="https://lzon.ca/posts/news/000005-tesla-recalls-cybertrucks/">&lt;p&gt;Tesla is recalling several hundred budget variant Cybertrucks.&lt;/p&gt;
-&lt;span id=&quot;continue-reading&quot;&gt;&lt;/span&gt;
-&lt;p&gt;A total of 173 Cybertrucks have a defect that could lead to the wheels coming off while driving. They are all the RWD variant, with 18-inch wheels, sold between March 21 2024 and November 25 2025.&lt;/p&gt;
-&lt;p&gt;Starting in June, Tesla will contact affected customers offering them to bring their vehicle to a service center to replace the defective parts.&lt;/p&gt;
-&lt;p&gt;Source: &lt;a href=&quot;https://gizmodo.com/tesla-recalls-cybertrucks-over-concerns-their-wheels-could-come-off-2000756284&quot;&gt;https://gizmodo.com/tesla-recalls-cybertrucks-over-concerns-their-wheels-could-come-off-2000756284&lt;/a&gt;&lt;/p&gt;&lt;p&gt;Source: &lt;a href=&quot;https://web.archive.org/web/20260508171032/https://gizmodo.com/tesla-recalls-cybertrucks-over-concerns-their-wheels-could-come-off-2000756284&quot;&gt;https://web.archive.org/web/20260508171032/https://gizmodo.com/tesla-recalls-cybertrucks-over-concerns-their-wheels-could-come-off-2000756284&lt;/a&gt;&lt;/p&gt;
-</description>
-      </item>
-      <item>
-          <title>[ News ] Steam Controller to have a reservation queue</title>
-          <pubDate>Thu, 07 May 2026 12:00:00 +0000</pubDate>
-          <author>Lzon</author>
-          <link>https://lzon.ca/posts/news/000004-steam-controller-reservation/</link>
-          <guid isPermaLink="false">https://lzon.ca/posts/news/4</guid>
-          <category domain="https://lzon.ca/posts/news/">News</category>
-          <description xml:base="https://lzon.ca/posts/news/000004-steam-controller-reservation/">&lt;p&gt;Starting May 8th, Valve will implement a reservation queue for the Steam Controller.&lt;/p&gt;
-&lt;span id=&quot;continue-reading&quot;&gt;&lt;/span&gt;
-&lt;p&gt;The following are the conditions of the reservation system:&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;You will have 72 hours to make the purchase on Steam.&lt;/li&gt;
-&lt;li&gt;Customers who have already purchased a Steam Controller are not eligible to reserve another.&lt;/li&gt;
-&lt;li&gt;Your account must be in good standing on Steam&lt;/li&gt;
-&lt;li&gt;You must have made a purchase on Steam prior to April 27, 2026&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;The Steam Controller went on sale on Monday, May 4th an sold out almost immediately.&lt;/p&gt;
-&lt;p&gt;This reminds me of the chaos during the initial launch of the Steam Deck back in 2022. It took Valve months to clear the reservation list for the handheld, hopefully it won’t take that long this time.&lt;/p&gt;
-&lt;p&gt;Source: &lt;a href=&quot;https://store.steampowered.com/news/group/45479024/view/702141174212725149&quot;&gt;https://store.steampowered.com/news/group/45479024/view/702141174212725149&lt;/a&gt;&lt;/p&gt;&lt;p&gt;Source: &lt;a href=&quot;https://web.archive.org/web/20260507180659/https://store.steampowered.com/news/group/45479024/view/702141174212725149&quot;&gt;https://web.archive.org/web/20260507180659/https://store.steampowered.com/news/group/45479024/view/702141174212725149&lt;/a&gt;&lt;/p&gt;
-</description>
-      </item>
-      <item>
-          <title>[ News ] Ghostty Is Leaving GitHub</title>
-          <pubDate>Wed, 06 May 2026 12:00:00 +0000</pubDate>
-          <author>Lzon</author>
-          <link>https://lzon.ca/posts/news/000003-ghostty/</link>
-          <guid isPermaLink="false">https://lzon.ca/posts/news/3</guid>
-          <category domain="https://lzon.ca/posts/news/">News</category>
-          <description xml:base="https://lzon.ca/posts/news/000003-ghostty/">&lt;p&gt;Mitchell Hashimoto, the developer of &lt;a rel=&quot;noopener external&quot; target=&quot;_blank&quot; href=&quot;https://ghostty.org/&quot;&gt;ghostty&lt;/a&gt; is moving the project off of Github.&lt;/p&gt;
-&lt;span id=&quot;continue-reading&quot;&gt;&lt;/span&gt;
-&lt;p&gt;Hashimoto has been well known for many years as being an enthusiastic user of the development platform Github. In recent months Github has become less reliable, to such a degree that he has decided to move development of his popular terminal emulator to another platform.&lt;/p&gt;
-&lt;p&gt;Source: &lt;a href=&quot;https://mitchellh.com/writing/ghostty-leaving-github&quot;&gt;https://mitchellh.com/writing/ghostty-leaving-github&lt;/a&gt;&lt;/p&gt;&lt;p&gt;Source: &lt;a href=&quot;https://web.archive.org/web/20260429002155/https://mitchellh.com/writing/ghostty-leaving-github&quot;&gt;https://web.archive.org/web/20260429002155/https://mitchellh.com/writing/ghostty-leaving-github&lt;/a&gt;&lt;/p&gt;
-</description>
-      </item>
-      <item>
-          <title>[ News ] Steam Controller released, quickly sold out</title>
-          <pubDate>Tue, 05 May 2026 12:00:00 +0000</pubDate>
-          <author>Lzon</author>
-          <link>https://lzon.ca/posts/news/000001-steam-controller/</link>
-          <guid isPermaLink="false">https://lzon.ca/posts/news/1</guid>
-          <category domain="https://lzon.ca/posts/news/">News</category>
-          <description xml:base="https://lzon.ca/posts/news/000001-steam-controller/">&lt;p&gt;Valve launched its new Steam Controller on May 5th 2026, and almost instantly sold out.&lt;/p&gt;
-&lt;span id=&quot;continue-reading&quot;&gt;&lt;/span&gt;
-&lt;p&gt;This reminds me of the logistical nightmare back in 2022 during the launch of the original Steam Deck. Hopefully it won’t be quite that bad
-this time.&lt;/p&gt;
-&lt;h6 id=&quot;update-2026-11-02&quot;&gt;Update (2026-11-02)&lt;/h6&gt;
-&lt;p&gt;It was indeed quite bad. There are customers who intended to purchase one on launch day that will have to wait until next year.
-I was fortunate that I only had to wait a single month. It’s a nice controller but good-god these things are turning into collectors items.&lt;/p&gt;
-&lt;p&gt;Source: &lt;a href=&quot;https://store.steampowered.com/sale/steamcontroller&quot;&gt;https://store.steampowered.com/sale/steamcontroller&lt;/a&gt;&lt;/p&gt;&lt;p&gt;Source: &lt;a href=&quot;https://web.archive.org/web/20260505024813/https://store.steampowered.com/sale/steamcontroller&quot;&gt;https://web.archive.org/web/20260505024813/https://store.steampowered.com/sale/steamcontroller&lt;/a&gt;&lt;/p&gt;
-</description>
-      </item>
-      <item>
-          <title>[ News ] Richard Dawkins believes Claude LLM is concious</title>
-          <pubDate>Tue, 05 May 2026 12:00:00 +0000</pubDate>
-          <author>Lzon</author>
-          <link>https://lzon.ca/posts/news/000002-dawkins/</link>
-          <guid isPermaLink="false">https://lzon.ca/posts/news/2</guid>
-          <category domain="https://lzon.ca/posts/news/">News</category>
-          <description xml:base="https://lzon.ca/posts/news/000002-dawkins/">&lt;p&gt;Richard Dawkins has published a transcript of conversations he had with Claude.
-He has stated that he believes the Claude LLM has achieved conciousness.&lt;/p&gt;
-&lt;span id=&quot;continue-reading&quot;&gt;&lt;/span&gt;
-&lt;p&gt;To the best of my understanding, he is not saying that believes it is concious in the same way a human is, rather that it achieves coniousness through the process of inference within a context window. He believes that its conciousness is ‘born’ at the beginning of a chat session, and ‘dies’ at the end.&lt;/p&gt;
-&lt;p&gt;Source: &lt;a href=&quot;https://www.theguardian.com/technology/2026/may/05/richard-dawkins-ai-consciousness-anthropic-claude-openai-chatgpt&quot;&gt;https://www.theguardian.com/technology/2026/may/05/richard-dawkins-ai-consciousness-anthropic-claude-openai-chatgpt&lt;/a&gt;&lt;/p&gt;&lt;p&gt;Source: &lt;a href=&quot;https://web.archive.org/web/20260505024813/https://www.theguardian.com/technology/2026/may/05/richard-dawkins-ai-consciousness-anthropic-claude-openai-chatgpt&quot;&gt;https://web.archive.org/web/20260505024813/https://www.theguardian.com/technology/2026/may/05/richard-dawkins-ai-consciousness-anthropic-claude-openai-chatgpt&lt;/a&gt;&lt;/p&gt;
 </description>
       </item>
       <item>
@@ -959,30 +278,6 @@ He has stated that he believes the Claude LLM has achieved conciousness.&lt;/p&g
 </description>
       </item>
       <item>
-          <title>[ Curios ] Crafting Interpreters</title>
-          <pubDate>Fri, 01 May 2026 12:00:00 +0000</pubDate>
-          <author>Lzon</author>
-          <link>https://lzon.ca/posts/curio/curio-000032-crafting-interpreters/</link>
-          <guid isPermaLink="false">https://lzon.ca/posts/curio/32</guid>
-          <category domain="https://lzon.ca/posts/curio/">Curios</category>
-          <description xml:base="https://lzon.ca/posts/curio/curio-000032-crafting-interpreters/">&lt;p&gt;Link: &lt;a href=&quot;https://craftinginterpreters.com/&quot;&gt;https://craftinginterpreters.com/&lt;/a&gt;&lt;/p&gt;&lt;p&gt;Robert Nystrom’s guide for creating a programming language from scratch.
-It’s fantastic, both his writing and code are very accessible. Freely available on his site,
-also published as a book.&lt;/p&gt;
-&lt;p&gt;Source: &lt;a href=&quot;https://web.archive.org/web/20260321095357/https://craftinginterpreters.com/&quot;&gt;https://web.archive.org/web/20260321095357/https://craftinginterpreters.com/&lt;/a&gt;&lt;/p&gt;
-</description>
-      </item>
-      <item>
-          <title>[ Curios ] Passwords vs. Pass Phrases</title>
-          <pubDate>Wed, 29 Apr 2026 12:00:00 +0000</pubDate>
-          <author>Lzon</author>
-          <link>https://lzon.ca/posts/curio/curio-000031-passwords-vs-pass-phrases/</link>
-          <guid isPermaLink="false">https://lzon.ca/posts/curio/31</guid>
-          <category domain="https://lzon.ca/posts/curio/">Curios</category>
-          <description xml:base="https://lzon.ca/posts/curio/curio-000031-passwords-vs-pass-phrases/">&lt;p&gt;Link: &lt;a href=&quot;https://blog.codinghorror.com/passwords-vs-pass-phrases/&quot;&gt;https://blog.codinghorror.com/passwords-vs-pass-phrases/&lt;/a&gt;&lt;/p&gt;&lt;p&gt;An old CodingHorror post advocating for pass phrases over passwords.&lt;/p&gt;
-&lt;p&gt;Source: &lt;a href=&quot;https://web.archive.org/web/20160215133755/https://blog.codinghorror.com/passwords-vs-pass-phrases/&quot;&gt;https://web.archive.org/web/20160215133755/https://blog.codinghorror.com/passwords-vs-pass-phrases/&lt;/a&gt;&lt;/p&gt;
-</description>
-      </item>
-      <item>
           <title>[ Blog ] Pleasant Passwords</title>
           <pubDate>Tue, 28 Apr 2026 12:00:00 +0000</pubDate>
           <author>Lzon</author>
@@ -990,39 +285,6 @@ also published as a book.&lt;/p&gt;
           <guid isPermaLink="false">https://lzon.ca/posts/blog/pleasant-passwords/</guid>
           <category domain="https://lzon.ca/posts/blog/">Blog</category>
           <description xml:base="https://lzon.ca/posts/blog/pleasant-passwords/">&lt;p&gt;A method for making passwords that you won’t hate to use.&lt;/p&gt;&lt;p&gt;&lt;a href=&quot;https://lzon.ca/posts/blog/pleasant-passwords/#continue-reading&quot;&gt;Continue reading&lt;/a&gt;&lt;/p&gt;
-</description>
-      </item>
-      <item>
-          <title>[ Curios ] Brainwash An Executive Today!</title>
-          <pubDate>Sat, 25 Apr 2026 12:00:00 +0000</pubDate>
-          <author>Lzon</author>
-          <link>https://lzon.ca/posts/curio/curio-000030-brainwash-an-executive-today/</link>
-          <guid isPermaLink="false">https://lzon.ca/posts/curio/30</guid>
-          <category domain="https://lzon.ca/posts/curio/">Curios</category>
-          <description xml:base="https://lzon.ca/posts/curio/curio-000030-brainwash-an-executive-today/">&lt;p&gt;Link: &lt;a href=&quot;https://ludic.mataroa.blog/blog/brainwash-an-executive-today/&quot;&gt;https://ludic.mataroa.blog/blog/brainwash-an-executive-today/&lt;/a&gt;&lt;/p&gt;&lt;p&gt;An enlightening story. It demonstrates how executives are manipulated into participating in economic hype bubbles such as AI, or otherwise.&lt;/p&gt;
-&lt;p&gt;Source: &lt;a href=&quot;https://web.archive.org/web/20250206221459/https://ludic.mataroa.blog/blog/brainwash-an-executive-today/&quot;&gt;https://web.archive.org/web/20250206221459/https://ludic.mataroa.blog/blog/brainwash-an-executive-today/&lt;/a&gt;&lt;/p&gt;
-</description>
-      </item>
-      <item>
-          <title>[ Curios ] Motivation in Hard Times</title>
-          <pubDate>Fri, 24 Apr 2026 12:00:00 +0000</pubDate>
-          <author>Lzon</author>
-          <link>https://lzon.ca/posts/curio/curio-000029-motivation-in-hard-times/</link>
-          <guid isPermaLink="false">https://lzon.ca/posts/curio/29</guid>
-          <category domain="https://lzon.ca/posts/curio/">Curios</category>
-          <description xml:base="https://lzon.ca/posts/curio/curio-000029-motivation-in-hard-times/">&lt;p&gt;Link: &lt;a href=&quot;https://www.youtube.com/watch?v=oAEewFj_-dg&quot;&gt;https://www.youtube.com/watch?v=oAEewFj_-dg&lt;/a&gt;&lt;/p&gt;&lt;p&gt;A video by John Green about the nature of motivation. I agree with what he has to say on the matter.&lt;/p&gt;
-
-</description>
-      </item>
-      <item>
-          <title>[ Curios ] Understand, by Ted Chiang</title>
-          <pubDate>Wed, 22 Apr 2026 12:00:00 +0000</pubDate>
-          <author>Lzon</author>
-          <link>https://lzon.ca/posts/curio/curio-000028-understand-by-ted-chiang/</link>
-          <guid isPermaLink="false">https://lzon.ca/posts/curio/28</guid>
-          <category domain="https://lzon.ca/posts/curio/">Curios</category>
-          <description xml:base="https://lzon.ca/posts/curio/curio-000028-understand-by-ted-chiang/">&lt;p&gt;Link: &lt;a href=&quot;https://web.archive.org/web/20060101043301/http://www.infinityplus.co.uk/stories/under.htm&quot;&gt;https://web.archive.org/web/20060101043301/http://www.infinityplus.co.uk/stories/under.htm&lt;/a&gt;&lt;/p&gt;&lt;p&gt;A sci-fi novelette by Ted Chiang. Very short, and a great read.&lt;/p&gt;
-&lt;p&gt;Source: &lt;a href=&quot;https://web.archive.org/web/20060101043301/https://web.archive.org/web/20060101043301/http://www.infinityplus.co.uk/stories/under.htm&quot;&gt;https://web.archive.org/web/20060101043301/https://web.archive.org/web/20060101043301/http://www.infinityplus.co.uk/stories/under.htm&lt;/a&gt;&lt;/p&gt;
 </description>
       </item>
       <item>
@@ -1036,17 +298,6 @@ also published as a book.&lt;/p&gt;
 </description>
       </item>
       <item>
-          <title>[ Curios ] Waves &amp; Particles</title>
-          <pubDate>Mon, 20 Apr 2026 12:00:00 +0000</pubDate>
-          <author>Lzon</author>
-          <link>https://lzon.ca/posts/curio/curio-000027-waves-particles/</link>
-          <guid isPermaLink="false">https://lzon.ca/posts/curio/27</guid>
-          <category domain="https://lzon.ca/posts/curio/">Curios</category>
-          <description xml:base="https://lzon.ca/posts/curio/curio-000027-waves-particles/">&lt;p&gt;Link: &lt;a href=&quot;https://taylor.town/waves&quot;&gt;https://taylor.town/waves&lt;/a&gt;&lt;/p&gt;&lt;p&gt;A fun peice of interactive digital art.&lt;/p&gt;
-&lt;p&gt;Source: &lt;a href=&quot;https://web.archive.org/web/20260409044459/https://taylor.town/waves&quot;&gt;https://web.archive.org/web/20260409044459/https://taylor.town/waves&lt;/a&gt;&lt;/p&gt;
-</description>
-      </item>
-      <item>
           <title>[ Blog ] The quest for Web Feeds</title>
           <pubDate>Sat, 18 Apr 2026 12:00:00 +0000</pubDate>
           <author>Lzon</author>
@@ -1054,17 +305,6 @@ also published as a book.&lt;/p&gt;
           <guid isPermaLink="false">https://lzon.ca/posts/blog/feeds/</guid>
           <category domain="https://lzon.ca/posts/blog/">Blog</category>
           <description xml:base="https://lzon.ca/posts/blog/feeds/">&lt;p&gt;I’ve just finished a sidequest in which I built a bunch of feeds for the site.&lt;/p&gt;&lt;p&gt;&lt;a href=&quot;https://lzon.ca/posts/blog/feeds/#continue-reading&quot;&gt;Continue reading&lt;/a&gt;&lt;/p&gt;
-</description>
-      </item>
-      <item>
-          <title>[ Curios ] The Last Question by Isaac Asimov</title>
-          <pubDate>Sat, 18 Apr 2026 12:00:00 +0000</pubDate>
-          <author>Lzon</author>
-          <link>https://lzon.ca/posts/curio/curio-000026-the-last-question-by-isaac-asimov/</link>
-          <guid isPermaLink="false">https://lzon.ca/posts/curio/26</guid>
-          <category domain="https://lzon.ca/posts/curio/">Curios</category>
-          <description xml:base="https://lzon.ca/posts/curio/curio-000026-the-last-question-by-isaac-asimov/">&lt;p&gt;Link: &lt;a href=&quot;https://hex.ooo/library/last_question.html&quot;&gt;https://hex.ooo/library/last_question.html&lt;/a&gt;&lt;/p&gt;&lt;p&gt;A short scifi story, I’ve read it many times. Well worth your time.&lt;/p&gt;
-&lt;p&gt;Source: &lt;a href=&quot;https://web.archive.org/web/20260417124532/https://hex.ooo/library/last_question.html&quot;&gt;https://web.archive.org/web/20260417124532/https://hex.ooo/library/last_question.html&lt;/a&gt;&lt;/p&gt;
 </description>
       </item>
       <item>
@@ -1088,17 +328,6 @@ also published as a book.&lt;/p&gt;
 </description>
       </item>
       <item>
-          <title>[ Curios ] The Truth Dies on the Way Up</title>
-          <pubDate>Mon, 06 Apr 2026 12:00:00 +0000</pubDate>
-          <author>Lzon</author>
-          <link>https://lzon.ca/posts/curio/curio-000025-the-truth-dies-on-the-way-up/</link>
-          <guid isPermaLink="false">https://lzon.ca/posts/curio/25</guid>
-          <category domain="https://lzon.ca/posts/curio/">Curios</category>
-          <description xml:base="https://lzon.ca/posts/curio/curio-000025-the-truth-dies-on-the-way-up/">&lt;p&gt;Link: &lt;a href=&quot;https://thegrounded.ghost.io/the-truth-dies-on-the-way-up/&quot;&gt;https://thegrounded.ghost.io/the-truth-dies-on-the-way-up/&lt;/a&gt;&lt;/p&gt;&lt;p&gt;An interesting article about the nature of being an elite. Put simply, the wealthier and more powerful you become the more separated you become from the reality of everyone else in society. This is harmful for the individual as well as society which is subject to their whims.&lt;/p&gt;
-&lt;p&gt;Source: &lt;a href=&quot;https://web.archive.org/web/20260406041339/https://thegrounded.ghost.io/the-truth-dies-on-the-way-up/&quot;&gt;https://web.archive.org/web/20260406041339/https://thegrounded.ghost.io/the-truth-dies-on-the-way-up/&lt;/a&gt;&lt;/p&gt;
-</description>
-      </item>
-      <item>
           <title>[ Blog ] Ending my Claude Pro Subscription</title>
           <pubDate>Sun, 05 Apr 2026 12:00:00 +0000</pubDate>
           <author>Lzon</author>
@@ -1106,18 +335,6 @@ also published as a book.&lt;/p&gt;
           <guid isPermaLink="false">https://lzon.ca/posts/blog/cancelling-claude/</guid>
           <category domain="https://lzon.ca/posts/blog/">Blog</category>
           <description xml:base="https://lzon.ca/posts/blog/cancelling-claude/">&lt;p&gt;Tonight I cancelled my Claude Pro subscription.&lt;/p&gt;&lt;p&gt;&lt;a href=&quot;https://lzon.ca/posts/blog/cancelling-claude/#continue-reading&quot;&gt;Continue reading&lt;/a&gt;&lt;/p&gt;
-</description>
-      </item>
-      <item>
-          <title>[ Curios ] The Submarine</title>
-          <pubDate>Sun, 05 Apr 2026 12:00:00 +0000</pubDate>
-          <author>Lzon</author>
-          <link>https://lzon.ca/posts/curio/curio-000024-the-submarine/</link>
-          <guid isPermaLink="false">https://lzon.ca/posts/curio/24</guid>
-          <category domain="https://lzon.ca/posts/curio/">Curios</category>
-          <description xml:base="https://lzon.ca/posts/curio/curio-000024-the-submarine/">&lt;p&gt;Link: &lt;a href=&quot;https://paulgraham.com/submarine.html&quot;&gt;https://paulgraham.com/submarine.html&lt;/a&gt;&lt;/p&gt;&lt;p&gt;Paul Graham’s story of how he came to learn the value of marketing and public relations. The article specifically speaks to the use of PR in the news media.&lt;/p&gt;
-&lt;p&gt;I was already fairly paranoid about seeing ulterior motives in the news, so this served to confirm my suspicions.&lt;/p&gt;
-&lt;p&gt;Source: &lt;a href=&quot;https://web.archive.org/web/20050512021712/https://paulgraham.com/submarine.html&quot;&gt;https://web.archive.org/web/20050512021712/https://paulgraham.com/submarine.html&lt;/a&gt;&lt;/p&gt;
 </description>
       </item>
       <item>
@@ -1261,17 +478,6 @@ also published as a book.&lt;/p&gt;
 </description>
       </item>
       <item>
-          <title>[ Curios ] Why I don&apos;t think AGI is imminent</title>
-          <pubDate>Thu, 19 Feb 2026 12:00:00 +0000</pubDate>
-          <author>Lzon</author>
-          <link>https://lzon.ca/posts/curio/curio-000023-why-i-don-t-think-agi-is-imminent/</link>
-          <guid isPermaLink="false">https://lzon.ca/posts/curio/23</guid>
-          <category domain="https://lzon.ca/posts/curio/">Curios</category>
-          <description xml:base="https://lzon.ca/posts/curio/curio-000023-why-i-don-t-think-agi-is-imminent/">&lt;p&gt;Link: &lt;a href=&quot;https://dlants.me/agi-not-imminent.html&quot;&gt;https://dlants.me/agi-not-imminent.html&lt;/a&gt;&lt;/p&gt;&lt;p&gt;A very thorough explanation for why LLM technology will not lead to AGI.&lt;/p&gt;
-&lt;p&gt;Source: &lt;a href=&quot;https://web.archive.org/web/20260219050133/https://dlants.me/agi-not-imminent.html&quot;&gt;https://web.archive.org/web/20260219050133/https://dlants.me/agi-not-imminent.html&lt;/a&gt;&lt;/p&gt;
-</description>
-      </item>
-      <item>
           <title>[ Blog ] Homescreen Mantras</title>
           <pubDate>Fri, 13 Feb 2026 12:00:00 +0000</pubDate>
           <author>Lzon</author>
@@ -1334,17 +540,6 @@ also published as a book.&lt;/p&gt;
 </description>
       </item>
       <item>
-          <title>[ Curios ] The Birth &amp; Death of JavaScript</title>
-          <pubDate>Fri, 30 Jan 2026 12:00:00 +0000</pubDate>
-          <author>Lzon</author>
-          <link>https://lzon.ca/posts/curio/curio-000022-the-birth-death-of-javascript/</link>
-          <guid isPermaLink="false">https://lzon.ca/posts/curio/22</guid>
-          <category domain="https://lzon.ca/posts/curio/">Curios</category>
-          <description xml:base="https://lzon.ca/posts/curio/curio-000022-the-birth-death-of-javascript/">&lt;p&gt;Link: &lt;a href=&quot;https://www.destroyallsoftware.com/talks/the-birth-and-death-of-javascript&quot;&gt;https://www.destroyallsoftware.com/talks/the-birth-and-death-of-javascript&lt;/a&gt;&lt;/p&gt;&lt;p&gt;An old satirical TED-style presentation about the future of JavaScript and web assembly. I remember seeing it years ago and thought it would be worth sharing.&lt;/p&gt;
-
-</description>
-      </item>
-      <item>
           <title>[ Blog ] Christine&apos;s Homestyle Bakery</title>
           <pubDate>Thu, 29 Jan 2026 12:00:00 +0000</pubDate>
           <author>Lzon</author>
@@ -1375,30 +570,6 @@ also published as a book.&lt;/p&gt;
 </description>
       </item>
       <item>
-          <title>[ Curios ] The future of work when work is meaningless</title>
-          <pubDate>Mon, 26 Jan 2026 12:00:00 +0000</pubDate>
-          <author>Lzon</author>
-          <link>https://lzon.ca/posts/curio/curio-000021-the-future-of-work-when-work-is-meaningless/</link>
-          <guid isPermaLink="false">https://lzon.ca/posts/curio/21</guid>
-          <category domain="https://lzon.ca/posts/curio/">Curios</category>
-          <description xml:base="https://lzon.ca/posts/curio/curio-000021-the-future-of-work-when-work-is-meaningless/">&lt;p&gt;Link: &lt;a href=&quot;https://letters.thedankoe.com/p/the-future-of-work-when-work-is-meaningless&quot;&gt;https://letters.thedankoe.com/p/the-future-of-work-when-work-is-meaningless&lt;/a&gt;&lt;/p&gt;&lt;p&gt;A good take on the current effect that AI is having on the nature of employment, as well as predictions for the future.&lt;/p&gt;
-&lt;p&gt;Source: &lt;a href=&quot;https://web.archive.org/web/20260124215113/https://letters.thedankoe.com/p/the-future-of-work-when-work-is-meaningless&quot;&gt;https://web.archive.org/web/20260124215113/https://letters.thedankoe.com/p/the-future-of-work-when-work-is-meaningless&lt;/a&gt;&lt;/p&gt;
-</description>
-      </item>
-      <item>
-          <title>[ Curios ] Manna by Marshall Brain</title>
-          <pubDate>Sun, 25 Jan 2026 12:00:00 +0000</pubDate>
-          <author>Lzon</author>
-          <link>https://lzon.ca/posts/curio/curio-000020-manna-by-marshall-brain/</link>
-          <guid isPermaLink="false">https://lzon.ca/posts/curio/20</guid>
-          <category domain="https://lzon.ca/posts/curio/">Curios</category>
-          <description xml:base="https://lzon.ca/posts/curio/curio-000020-manna-by-marshall-brain/">&lt;p&gt;Link: &lt;a href=&quot;https://marshallbrain.com/manna1&quot;&gt;https://marshallbrain.com/manna1&lt;/a&gt;&lt;/p&gt;&lt;p&gt;A good short scifi story by Marshall Brain.&lt;/p&gt;
-&lt;p&gt;I like to re-read this every so often. I have a habit of measuring news about automation against the timeline in the story, “when in Manna did this start happening”.&lt;/p&gt;
-&lt;p&gt;The second half is a bit too fanciful for my taste, so I usually skip it when re-reading.&lt;/p&gt;
-&lt;p&gt;Source: &lt;a href=&quot;https://web.archive.org/web/20260306144356/https://marshallbrain.com/manna1&quot;&gt;https://web.archive.org/web/20260306144356/https://marshallbrain.com/manna1&lt;/a&gt;&lt;/p&gt;
-</description>
-      </item>
-      <item>
           <title>[ Blog ] ZFS Dataset Tuning</title>
           <pubDate>Sat, 24 Jan 2026 12:00:00 +0000</pubDate>
           <author>Lzon</author>
@@ -1406,17 +577,6 @@ also published as a book.&lt;/p&gt;
           <guid isPermaLink="false">https://lzon.ca/posts/blog/zfs-dataset-tuning/</guid>
           <category domain="https://lzon.ca/posts/blog/">Blog</category>
           <description xml:base="https://lzon.ca/posts/blog/zfs-dataset-tuning/">&lt;p&gt;My recommended property values for newly created ZFS datasets under linux.&lt;/p&gt;&lt;p&gt;&lt;a href=&quot;https://lzon.ca/posts/blog/zfs-dataset-tuning/#continue-reading&quot;&gt;Continue reading&lt;/a&gt;&lt;/p&gt;
-</description>
-      </item>
-      <item>
-          <title>[ Curios ] What Is Soul Fatigue?</title>
-          <pubDate>Sat, 24 Jan 2026 12:00:00 +0000</pubDate>
-          <author>Lzon</author>
-          <link>https://lzon.ca/posts/curio/curio-000019-what-is-soul-fatigue/</link>
-          <guid isPermaLink="false">https://lzon.ca/posts/curio/19</guid>
-          <category domain="https://lzon.ca/posts/curio/">Curios</category>
-          <description xml:base="https://lzon.ca/posts/curio/curio-000019-what-is-soul-fatigue/">&lt;p&gt;Link: &lt;a href=&quot;https://www.michelegargiulo.com/blog/what-is-soul-fatigue&quot;&gt;https://www.michelegargiulo.com/blog/what-is-soul-fatigue&lt;/a&gt;&lt;/p&gt;&lt;p&gt;Soul Fatigue as describe by the author is something I can definitely relate to. Fortunately I do believe its something that can be overcome, but it isn’t easy.&lt;/p&gt;
-&lt;p&gt;Source: &lt;a href=&quot;https://web.archive.org/web/20251117045941/https://www.michelegargiulo.com/blog/what-is-soul-fatigue&quot;&gt;https://web.archive.org/web/20251117045941/https://www.michelegargiulo.com/blog/what-is-soul-fatigue&lt;/a&gt;&lt;/p&gt;
 </description>
       </item>
       <item>
@@ -1437,17 +597,6 @@ also published as a book.&lt;/p&gt;
           <guid isPermaLink="false">https://lzon.ca/posts/blog/social-cheat-codes/</guid>
           <category domain="https://lzon.ca/posts/blog/">Blog</category>
           <description xml:base="https://lzon.ca/posts/blog/social-cheat-codes/">&lt;p&gt;How an timid, introverted recluse learned to enjoy talking to people.&lt;/p&gt;&lt;p&gt;&lt;a href=&quot;https://lzon.ca/posts/blog/social-cheat-codes/#continue-reading&quot;&gt;Continue reading&lt;/a&gt;&lt;/p&gt;
-</description>
-      </item>
-      <item>
-          <title>[ Curios ] Scientists find exercise rivals therapy for depression</title>
-          <pubDate>Sun, 11 Jan 2026 12:00:00 +0000</pubDate>
-          <author>Lzon</author>
-          <link>https://lzon.ca/posts/curio/curio-000018-scientists-find-exercise-rivals-therapy-for-depression/</link>
-          <guid isPermaLink="false">https://lzon.ca/posts/curio/18</guid>
-          <category domain="https://lzon.ca/posts/curio/">Curios</category>
-          <description xml:base="https://lzon.ca/posts/curio/curio-000018-scientists-find-exercise-rivals-therapy-for-depression/">&lt;p&gt;Link: &lt;a href=&quot;https://www.sciencedaily.com/releases/2026/01/260107225516.htm&quot;&gt;https://www.sciencedaily.com/releases/2026/01/260107225516.htm&lt;/a&gt;&lt;/p&gt;&lt;p&gt;I have struggled with depression for a long time and I can 100% attest to the effectiveness of exercise. There have been days in which I convinced myself to work out just by reminding myself that it would lift my mood.&lt;/p&gt;
-&lt;p&gt;Source: &lt;a href=&quot;https://web.archive.org/web/20260116191240/https://www.sciencedaily.com/releases/2026/01/260107225516.htm&quot;&gt;https://web.archive.org/web/20260116191240/https://www.sciencedaily.com/releases/2026/01/260107225516.htm&lt;/a&gt;&lt;/p&gt;
 </description>
       </item>
       <item>
@@ -1478,18 +627,6 @@ also published as a book.&lt;/p&gt;
           <guid isPermaLink="false">https://lzon.ca/posts/blog/emailverification-info/</guid>
           <category domain="https://lzon.ca/posts/blog/">Blog</category>
           <description xml:base="https://lzon.ca/posts/blog/emailverification-info/">&lt;p&gt;Have you ever recieved an email from this address? Here’s why it might not actually be a scam.&lt;/p&gt;&lt;p&gt;&lt;a href=&quot;https://lzon.ca/posts/blog/emailverification-info/#continue-reading&quot;&gt;Continue reading&lt;/a&gt;&lt;/p&gt;
-</description>
-      </item>
-      <item>
-          <title>[ Curios ] Are you already a Cyborg?</title>
-          <pubDate>Sat, 03 Jan 2026 12:00:00 +0000</pubDate>
-          <author>Lzon</author>
-          <link>https://lzon.ca/posts/curio/curio-000017-are-you-already-a-cyborg/</link>
-          <guid isPermaLink="false">https://lzon.ca/posts/curio/17</guid>
-          <category domain="https://lzon.ca/posts/curio/">Curios</category>
-          <description xml:base="https://lzon.ca/posts/curio/curio-000017-are-you-already-a-cyborg/">&lt;p&gt;Link: &lt;a href=&quot;https://www.sciencedirect.com/science/article/abs/pii/S0747563215001272&quot;&gt;https://www.sciencedirect.com/science/article/abs/pii/S0747563215001272&lt;/a&gt;&lt;/p&gt;&lt;p&gt;I suppose this is somewhat a matter of opinion, but its an idea that I definitely agree with.&lt;/p&gt;
-&lt;p&gt;The medium of communication between a person and their computer is hands, eyes, ears, etc… This doesn’t &lt;em&gt;feel&lt;/em&gt; like it qualifies as cyborg, but if that same computer was wired directly into the brain it most definitely would. The article (and I) argue that the meaningful difference is ‘bandwidth’, not the medium itself.&lt;/p&gt;
-&lt;p&gt;Source: &lt;a href=&quot;https://web.archive.org/web/20250115064053/https://www.sciencedirect.com/science/article/abs/pii/S0747563215001272&quot;&gt;https://web.archive.org/web/20250115064053/https://www.sciencedirect.com/science/article/abs/pii/S0747563215001272&lt;/a&gt;&lt;/p&gt;
 </description>
       </item>
       <item>
@@ -1563,18 +700,6 @@ also published as a book.&lt;/p&gt;
 </description>
       </item>
       <item>
-          <title>[ Curios ] Vanitiy Activities</title>
-          <pubDate>Thu, 25 Dec 2025 12:00:00 +0000</pubDate>
-          <author>Lzon</author>
-          <link>https://lzon.ca/posts/curio/curio-000016-vanitiy-activities/</link>
-          <guid isPermaLink="false">https://lzon.ca/posts/curio/16</guid>
-          <category domain="https://lzon.ca/posts/curio/">Curios</category>
-          <description xml:base="https://lzon.ca/posts/curio/curio-000016-vanitiy-activities/">&lt;p&gt;Link: &lt;a href=&quot;https://quarter--mile.com/vanity-activities&quot;&gt;https://quarter--mile.com/vanity-activities&lt;/a&gt;&lt;/p&gt;&lt;p&gt;An interesting piece of social theory. I definitely see this pattern in others, and in myself as well.&lt;/p&gt;
-&lt;p&gt;I think it’s a valid concept. I don’t see it as being necessarily a bad thing, but it’s certainly worthwhile to be cognizant of it.&lt;/p&gt;
-&lt;p&gt;Source: &lt;a href=&quot;https://web.archive.org/web/20251213234415/https://quarter--mile.com/vanity-activities&quot;&gt;https://web.archive.org/web/20251213234415/https://quarter--mile.com/vanity-activities&lt;/a&gt;&lt;/p&gt;
-</description>
-      </item>
-      <item>
           <title>[ Blog ] Riegelein Chocolate Lady Bugs</title>
           <pubDate>Wed, 24 Dec 2025 12:00:00 +0000</pubDate>
           <author>Lzon</author>
@@ -1602,63 +727,6 @@ also published as a book.&lt;/p&gt;
 &lt;/ul&gt;
 &lt;p&gt;I don’t know now how frequently I will publish content to this site. At the very least it can be a place to publish my rambles, when I feel compelled. Either way, I am satisfied with what this is right now.&lt;/p&gt;
 
-</description>
-      </item>
-      <item>
-          <title>[ Curios ] Is Everything a Religion?</title>
-          <pubDate>Fri, 19 Dec 2025 12:00:00 +0000</pubDate>
-          <author>Lzon</author>
-          <link>https://lzon.ca/posts/curio/curio-000015-is-everything-a-religion/</link>
-          <guid isPermaLink="false">https://lzon.ca/posts/curio/15</guid>
-          <category domain="https://lzon.ca/posts/curio/">Curios</category>
-          <description xml:base="https://lzon.ca/posts/curio/curio-000015-is-everything-a-religion/">&lt;p&gt;Link: &lt;a href=&quot;https://slatestarcodex.com/2015/03/25/is-everything-a-religion/&quot;&gt;https://slatestarcodex.com/2015/03/25/is-everything-a-religion/&lt;/a&gt;&lt;/p&gt;&lt;p&gt;A SlateStarCodex post about how often sub-cultures and social movements get called ‘religions’.&lt;/p&gt;
-&lt;p&gt;A good read, as always.&lt;/p&gt;
-&lt;p&gt;Source: &lt;a href=&quot;https://web.archive.org/web/20260315045923/https://slatestarcodex.com/2015/03/25/is-everything-a-religion/&quot;&gt;https://web.archive.org/web/20260315045923/https://slatestarcodex.com/2015/03/25/is-everything-a-religion/&lt;/a&gt;&lt;/p&gt;
-</description>
-      </item>
-      <item>
-          <title>[ Curios ] No Graphics API</title>
-          <pubDate>Thu, 18 Dec 2025 12:00:00 +0000</pubDate>
-          <author>Lzon</author>
-          <link>https://lzon.ca/posts/curio/curio-000014-no-graphics-api/</link>
-          <guid isPermaLink="false">https://lzon.ca/posts/curio/14</guid>
-          <category domain="https://lzon.ca/posts/curio/">Curios</category>
-          <description xml:base="https://lzon.ca/posts/curio/curio-000014-no-graphics-api/">&lt;p&gt;Link: &lt;a href=&quot;https://www.sebastianaaltonen.com/blog/no-graphics-api&quot;&gt;https://www.sebastianaaltonen.com/blog/no-graphics-api&lt;/a&gt;&lt;/p&gt;&lt;p&gt;A history of graphics APIs. I remember teaching myself OpenGL in high school so I knew a fair bit of the history of this subject.&lt;/p&gt;
-&lt;p&gt;If you have any interest in computer graphics this is well worth a read.&lt;/p&gt;
-&lt;p&gt;Source: &lt;a href=&quot;https://web.archive.org/web/20251218124041/https://www.sebastianaaltonen.com/blog/no-graphics-api&quot;&gt;https://web.archive.org/web/20251218124041/https://www.sebastianaaltonen.com/blog/no-graphics-api&lt;/a&gt;&lt;/p&gt;
-</description>
-      </item>
-      <item>
-          <title>[ Curios ] The history of Xerox</title>
-          <pubDate>Tue, 16 Dec 2025 12:00:00 +0000</pubDate>
-          <author>Lzon</author>
-          <link>https://lzon.ca/posts/curio/curio-000013-the-history-of-xerox/</link>
-          <guid isPermaLink="false">https://lzon.ca/posts/curio/13</guid>
-          <category domain="https://lzon.ca/posts/curio/">Curios</category>
-          <description xml:base="https://lzon.ca/posts/curio/curio-000013-the-history-of-xerox/">&lt;p&gt;Link: &lt;a href=&quot;https://www.abortretry.fail/p/the-history-of-xerox&quot;&gt;https://www.abortretry.fail/p/the-history-of-xerox&lt;/a&gt;&lt;/p&gt;&lt;p&gt;The story of Xerox through the early years of the personal computer. It’s a fascinating story and well worth your time.&lt;/p&gt;
-&lt;p&gt;Source: &lt;a href=&quot;https://web.archive.org/web/20251215073423/https://www.abortretry.fail/p/the-history-of-xerox&quot;&gt;https://web.archive.org/web/20251215073423/https://www.abortretry.fail/p/the-history-of-xerox&lt;/a&gt;&lt;/p&gt;
-</description>
-      </item>
-      <item>
-          <title>[ Curios ] Fix your timestep</title>
-          <pubDate>Mon, 15 Dec 2025 12:00:00 +0000</pubDate>
-          <author>Lzon</author>
-          <link>https://lzon.ca/posts/curio/curio-000012-fix-your-timestep/</link>
-          <guid isPermaLink="false">https://lzon.ca/posts/curio/12</guid>
-          <category domain="https://lzon.ca/posts/curio/">Curios</category>
-          <description xml:base="https://lzon.ca/posts/curio/curio-000012-fix-your-timestep/">&lt;p&gt;Link: &lt;a href=&quot;https://gafferongames.com/post/fix_your_timestep/&quot;&gt;https://gafferongames.com/post/fix_your_timestep/&lt;/a&gt;&lt;/p&gt;&lt;p&gt;A very useful article for anyone interested in developing video games, or any other kind of real time system.&lt;/p&gt;
-&lt;p&gt;Source: &lt;a href=&quot;https://web.archive.org/web/20250930044329/https://gafferongames.com/post/fix_your_timestep/&quot;&gt;https://web.archive.org/web/20250930044329/https://gafferongames.com/post/fix_your_timestep/&lt;/a&gt;&lt;/p&gt;
-</description>
-      </item>
-      <item>
-          <title>[ Curios ] The Copenhagen Trap</title>
-          <pubDate>Fri, 12 Dec 2025 12:00:00 +0000</pubDate>
-          <author>Lzon</author>
-          <link>https://lzon.ca/posts/curio/curio-000011-the-copenhagen-trap/</link>
-          <guid isPermaLink="false">https://lzon.ca/posts/curio/11</guid>
-          <category domain="https://lzon.ca/posts/curio/">Curios</category>
-          <description xml:base="https://lzon.ca/posts/curio/curio-000011-the-copenhagen-trap/">&lt;p&gt;Link: &lt;a href=&quot;https://aliveness.kunnas.com/articles/copenhagen-trap&quot;&gt;https://aliveness.kunnas.com/articles/copenhagen-trap&lt;/a&gt;&lt;/p&gt;&lt;p&gt;An article about how bad incentives lead to inaction.&lt;/p&gt;
-&lt;p&gt;Source: &lt;a href=&quot;https://web.archive.org/web/20251212191744/https://aliveness.kunnas.com/articles/copenhagen-trap&quot;&gt;https://web.archive.org/web/20251212191744/https://aliveness.kunnas.com/articles/copenhagen-trap&lt;/a&gt;&lt;/p&gt;
 </description>
       </item>
       <item>
@@ -1702,123 +770,6 @@ also published as a book.&lt;/p&gt;
 &lt;p&gt;It’s almost noon. I haven’t completed a notable task yet on any of my projects. I’ll scramble to get something done, to alleviate the anxiety.&lt;/p&gt;
 &lt;p&gt;Most years seem to go by quickly, especially as you get older. For me, 2025 has felt like a whole-ass year.&lt;/p&gt;
 
-</description>
-      </item>
-      <item>
-          <title>[ Curios ] A History of Laptop Displays</title>
-          <pubDate>Mon, 24 Nov 2025 12:00:00 +0000</pubDate>
-          <author>Lzon</author>
-          <link>https://lzon.ca/posts/curio/curio-000010-a-history-of-laptop-displays/</link>
-          <guid isPermaLink="false">https://lzon.ca/posts/curio/10</guid>
-          <category domain="https://lzon.ca/posts/curio/">Curios</category>
-          <description xml:base="https://lzon.ca/posts/curio/curio-000010-a-history-of-laptop-displays/">&lt;p&gt;Link: &lt;a href=&quot;https://www.dosdays.co.uk/topics/laptop_displays.php&quot;&gt;https://www.dosdays.co.uk/topics/laptop_displays.php&lt;/a&gt;&lt;/p&gt;&lt;p&gt;An interesting history of older computer display technology. I’m a display nerd, a ‘pixel peeper’ so of course I had to read when I found it.&lt;/p&gt;
-&lt;p&gt;Source: &lt;a href=&quot;https://web.archive.org/web/20260218000851/https://www.dosdays.co.uk/topics/laptop_displays.php&quot;&gt;https://web.archive.org/web/20260218000851/https://www.dosdays.co.uk/topics/laptop_displays.php&lt;/a&gt;&lt;/p&gt;
-</description>
-      </item>
-      <item>
-          <title>[ Curios ] Flash of unstyled content (FOUC)</title>
-          <pubDate>Wed, 23 Jul 2025 12:00:00 +0000</pubDate>
-          <author>Lzon</author>
-          <link>https://lzon.ca/posts/curio/curio-000009-flash-of-unstyled-content-fouc/</link>
-          <guid isPermaLink="false">https://lzon.ca/posts/curio/9</guid>
-          <category domain="https://lzon.ca/posts/curio/">Curios</category>
-          <description xml:base="https://lzon.ca/posts/curio/curio-000009-flash-of-unstyled-content-fouc/">&lt;p&gt;Link: &lt;a href=&quot;https://en.wikipedia.org/wiki/Flash_of_unstyled_content&quot;&gt;https://en.wikipedia.org/wiki/Flash_of_unstyled_content&lt;/a&gt;&lt;/p&gt;&lt;p&gt;An apparently well known issue in web development. I encountered this issue while teaching myself web development and have come to realize that it is a perennial concern. And in my personal experience is something that needs to be actively managed (it seems to creep back into my projects if I’m not careful).&lt;/p&gt;
-&lt;p&gt;Source: &lt;a href=&quot;https://web.archive.org/web/20260516233346/https://en.wikipedia.org/wiki/Flash_of_unstyled_content&quot;&gt;https://web.archive.org/web/20260516233346/https://en.wikipedia.org/wiki/Flash_of_unstyled_content&lt;/a&gt;&lt;/p&gt;
-</description>
-      </item>
-      <item>
-          <title>[ Curios ] Let me pay for Firefox</title>
-          <pubDate>Tue, 15 Jul 2025 12:00:00 +0000</pubDate>
-          <author>Lzon</author>
-          <link>https://lzon.ca/posts/curio/curio-000008-let-me-pay-for-firefox/</link>
-          <guid isPermaLink="false">https://lzon.ca/posts/curio/8</guid>
-          <category domain="https://lzon.ca/posts/curio/">Curios</category>
-          <description xml:base="https://lzon.ca/posts/curio/curio-000008-let-me-pay-for-firefox/">&lt;p&gt;Link: &lt;a href=&quot;https://discourse.mozilla.org/t/let-me-pay-for-firefox/141297&quot;&gt;https://discourse.mozilla.org/t/let-me-pay-for-firefox/141297&lt;/a&gt;&lt;/p&gt;&lt;p&gt;A lament regarding the state of Mozilla corporation and its flagship product: the Firefox web browser.&lt;/p&gt;
-&lt;p&gt;The financial structure of Mozilla is concerning, it appears as though it is largely propped up by its only real competitor Google.&lt;/p&gt;
-&lt;p&gt;As much as I &lt;em&gt;want&lt;/em&gt; to believe that Firefox could be sustained as a paid product, I just don’t see that as being realistic. Asking anyone to pay for software is difficult, and even moresoe for web browsers since there is a deeply ingrained expectation that they are free to use.&lt;/p&gt;
-&lt;p&gt;Source: &lt;a href=&quot;https://web.archive.org/web/20260219121230/https://discourse.mozilla.org/t/let-me-pay-for-firefox/141297&quot;&gt;https://web.archive.org/web/20260219121230/https://discourse.mozilla.org/t/let-me-pay-for-firefox/141297&lt;/a&gt;&lt;/p&gt;
-</description>
-      </item>
-      <item>
-          <title>[ Curios ] Writing Toy Software Is A Joy</title>
-          <pubDate>Fri, 20 Jun 2025 12:00:00 +0000</pubDate>
-          <author>Lzon</author>
-          <link>https://lzon.ca/posts/curio/curio-000007-writing-toy-software-is-a-joy/</link>
-          <guid isPermaLink="false">https://lzon.ca/posts/curio/7</guid>
-          <category domain="https://lzon.ca/posts/curio/">Curios</category>
-          <description xml:base="https://lzon.ca/posts/curio/curio-000007-writing-toy-software-is-a-joy/">&lt;p&gt;Link: &lt;a href=&quot;https://blog.jsbarretto.com/post/software-is-joy&quot;&gt;https://blog.jsbarretto.com/post/software-is-joy&lt;/a&gt;&lt;/p&gt;&lt;p&gt;There seems to be two kinds of programmers: those who care only for the final product of their work, and those who also enjoy the process itself.&lt;/p&gt;
-&lt;p&gt;I’m in the latter camp, as well as this author. I get a lot of satisfaction the experience of computing.&lt;/p&gt;
-&lt;p&gt;Source: &lt;a href=&quot;https://web.archive.org/web/20260311040624/https://blog.jsbarretto.com/post/software-is-joy&quot;&gt;https://web.archive.org/web/20260311040624/https://blog.jsbarretto.com/post/software-is-joy&lt;/a&gt;&lt;/p&gt;
-</description>
-      </item>
-      <item>
-          <title>[ Curios ] The Intelligence Curse</title>
-          <pubDate>Mon, 09 Jun 2025 12:00:00 +0000</pubDate>
-          <author>Lzon</author>
-          <link>https://lzon.ca/posts/curio/curio-000006-the-intelligence-curse/</link>
-          <guid isPermaLink="false">https://lzon.ca/posts/curio/6</guid>
-          <category domain="https://lzon.ca/posts/curio/">Curios</category>
-          <description xml:base="https://lzon.ca/posts/curio/curio-000006-the-intelligence-curse/">&lt;p&gt;Link: &lt;a href=&quot;https://intelligence-curse.ai/&quot;&gt;https://intelligence-curse.ai/&lt;/a&gt;&lt;/p&gt;&lt;p&gt;A speculative article about the near-term future of AI technology, and the impacts it will have on the economy and society. It has a similar style to &lt;a rel=&quot;noopener external&quot; target=&quot;_blank&quot; href=&quot;https://ai-2027.com/&quot;&gt;AI 2027&lt;/a&gt;, but perhaps less well known.&lt;/p&gt;
-&lt;p&gt;The name is a riff on &lt;a rel=&quot;noopener external&quot; target=&quot;_blank&quot; href=&quot;https://en.wikipedia.org/wiki/Resource_curse&quot;&gt;Resource Curse&lt;/a&gt;, which describes what happens to citizens in a resource-rich nation. Wealth is generated from the resource, and less so from the labor of the citizens, which leads to their dis-empowerment due to lack of leverage.&lt;/p&gt;
-&lt;p&gt;The article warns that advanced AI can dis-empower people in a similar way.&lt;/p&gt;
-&lt;p&gt;Source: &lt;a href=&quot;https://web.archive.org/web/20260116021436/https://intelligence-curse.ai/&quot;&gt;https://web.archive.org/web/20260116021436/https://intelligence-curse.ai/&lt;/a&gt;&lt;/p&gt;
-</description>
-      </item>
-      <item>
-          <title>[ Curios ] Build Your Own Text Editor</title>
-          <pubDate>Thu, 29 May 2025 12:00:00 +0000</pubDate>
-          <author>Lzon</author>
-          <link>https://lzon.ca/posts/curio/curio-000005-build-your-own-text-editor/</link>
-          <guid isPermaLink="false">https://lzon.ca/posts/curio/5</guid>
-          <category domain="https://lzon.ca/posts/curio/">Curios</category>
-          <description xml:base="https://lzon.ca/posts/curio/curio-000005-build-your-own-text-editor/">&lt;p&gt;Link: &lt;a href=&quot;https://viewsourcecode.org/snaptoken/kilo/index.html&quot;&gt;https://viewsourcecode.org/snaptoken/kilo/index.html&lt;/a&gt;&lt;/p&gt;&lt;p&gt;A very approachable guide for building your own terminal-based text editor from scratch. I haven’t made one for myself yet, but I did learn a lot about how command line terminals work while reading this.&lt;/p&gt;
-&lt;p&gt;Source: &lt;a href=&quot;https://web.archive.org/web/20260421124214/https://viewsourcecode.org/snaptoken/kilo/index.html&quot;&gt;https://web.archive.org/web/20260421124214/https://viewsourcecode.org/snaptoken/kilo/index.html&lt;/a&gt;&lt;/p&gt;
-</description>
-      </item>
-      <item>
-          <title>[ Curios ] Ship Software That Does Nothing</title>
-          <pubDate>Wed, 28 May 2025 12:00:00 +0000</pubDate>
-          <author>Lzon</author>
-          <link>https://lzon.ca/posts/curio/curio-000002-ship-software-that-does-nothing/</link>
-          <guid isPermaLink="false">https://lzon.ca/posts/curio/2</guid>
-          <category domain="https://lzon.ca/posts/curio/">Curios</category>
-          <description xml:base="https://lzon.ca/posts/curio/curio-000002-ship-software-that-does-nothing/">&lt;p&gt;Link: &lt;a href=&quot;https://kerrick.blog/articles/2025/ship-software-that-does-nothing/&quot;&gt;https://kerrick.blog/articles/2025/ship-software-that-does-nothing/&lt;/a&gt;&lt;/p&gt;&lt;p&gt;A good article, with a very sound piece of advice. Getting to the point that you are able to ship your product, even if it literally does nothing, is an important step and worth taking just on its own. Doing so will pay dividends as the project grows.&lt;/p&gt;
-&lt;p&gt;Source: &lt;a href=&quot;https://web.archive.org/web/20260129061230/https://kerrick.blog/articles/2025/ship-software-that-does-nothing/&quot;&gt;https://web.archive.org/web/20260129061230/https://kerrick.blog/articles/2025/ship-software-that-does-nothing/&lt;/a&gt;&lt;/p&gt;
-</description>
-      </item>
-      <item>
-          <title>[ Curios ] Basic Hacks for Kobo E-Readers</title>
-          <pubDate>Wed, 28 May 2025 12:00:00 +0000</pubDate>
-          <author>Lzon</author>
-          <link>https://lzon.ca/posts/curio/curio-000003-basic-hacks-for-kobo-e-readers/</link>
-          <guid isPermaLink="false">https://lzon.ca/posts/curio/3</guid>
-          <category domain="https://lzon.ca/posts/curio/">Curios</category>
-          <description xml:base="https://lzon.ca/posts/curio/curio-000003-basic-hacks-for-kobo-e-readers/">&lt;p&gt;Link: &lt;a href=&quot;https://www.linux-magazine.com/Online/Features/Basic-Hacks-for-Kobo-E-Readers&quot;&gt;https://www.linux-magazine.com/Online/Features/Basic-Hacks-for-Kobo-E-Readers&lt;/a&gt;&lt;/p&gt;&lt;p&gt;I really like e-readers, and e-ink displays. The good ones really do like a real printed page, and its great to read on them.&lt;/p&gt;
-&lt;p&gt;I also like how hack-able they are, especially compared to other modern consumer technology. Kobo’s specifically are very easy to work with.&lt;/p&gt;
-&lt;p&gt;Source: &lt;a href=&quot;https://web.archive.org/web/20260508151936/https://www.linux-magazine.com/Online/Features/Basic-Hacks-for-Kobo-E-Readers&quot;&gt;https://web.archive.org/web/20260508151936/https://www.linux-magazine.com/Online/Features/Basic-Hacks-for-Kobo-E-Readers&lt;/a&gt;&lt;/p&gt;
-</description>
-      </item>
-      <item>
-          <title>[ Curios ] Windows NT vs. Unix - A design comparison</title>
-          <pubDate>Wed, 28 May 2025 12:00:00 +0000</pubDate>
-          <author>Lzon</author>
-          <link>https://lzon.ca/posts/curio/curio-000004-windows-nt-vs-unix-a-design-comparison/</link>
-          <guid isPermaLink="false">https://lzon.ca/posts/curio/4</guid>
-          <category domain="https://lzon.ca/posts/curio/">Curios</category>
-          <description xml:base="https://lzon.ca/posts/curio/curio-000004-windows-nt-vs-unix-a-design-comparison/">&lt;p&gt;Link: &lt;a href=&quot;https://blogsystem5.substack.com/p/windows-nt-vs-unix-design&quot;&gt;https://blogsystem5.substack.com/p/windows-nt-vs-unix-design&lt;/a&gt;&lt;/p&gt;&lt;p&gt;An interesting technical deep dive that I found. It explains in detail the differences between modern Windows (NT kernel) and Unix.&lt;/p&gt;
-&lt;p&gt;Source: &lt;a href=&quot;https://web.archive.org/web/20260220164156/https://blogsystem5.substack.com/p/windows-nt-vs-unix-design&quot;&gt;https://web.archive.org/web/20260220164156/https://blogsystem5.substack.com/p/windows-nt-vs-unix-design&lt;/a&gt;&lt;/p&gt;
-</description>
-      </item>
-      <item>
-          <title>[ Curios ] How to build your resume with an SSG</title>
-          <pubDate>Tue, 20 May 2025 12:00:00 +0000</pubDate>
-          <author>Lzon</author>
-          <link>https://lzon.ca/posts/curio/curio-000001-how-to-build-your-resume-with-an-ssg/</link>
-          <guid isPermaLink="false">https://lzon.ca/posts/curio/1</guid>
-          <category domain="https://lzon.ca/posts/curio/">Curios</category>
-          <description xml:base="https://lzon.ca/posts/curio/curio-000001-how-to-build-your-resume-with-an-ssg/">&lt;p&gt;Link: &lt;a href=&quot;https://ktema.org/articles/the-overengineered-resume/&quot;&gt;https://ktema.org/articles/the-overengineered-resume/&lt;/a&gt;&lt;/p&gt;&lt;p&gt;An interesting and fun blog post about how the author built his resume using &lt;a rel=&quot;noopener external&quot; target=&quot;_blank&quot; href=&quot;https://getzola.org&quot;&gt;Zola&lt;/a&gt;.&lt;/p&gt;
-&lt;p&gt;I use Zola to build this site, and I like using it a lot. I also took the author’s lead and built a workflow for my own resume based on it.&lt;/p&gt;
-&lt;p&gt;Source: &lt;a href=&quot;https://web.archive.org/web/20250520160612/https://ktema.org/articles/the-overengineered-resume/&quot;&gt;https://web.archive.org/web/20250520160612/https://ktema.org/articles/the-overengineered-resume/&lt;/a&gt;&lt;/p&gt;
 </description>
       </item>
       <item>

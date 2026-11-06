@@ -30,6 +30,9 @@
   
 
   
+
+  <!-- the merged feed leaves out types with `main_feed = false` (macros/feed.html) -->
+  
   <entry>
     <title>216. lzon.ca&#x2F;quotes</title>
     <id>https://lzon.ca/quotes/#216</id>

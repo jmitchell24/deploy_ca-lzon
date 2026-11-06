@@ -19,10 +19,10 @@
         <loc>https://lzon.ca/blog-tags/daily-grateful/page/1/</loc>
     </url>
     <url>
-        <loc>https://lzon.ca/blog-tags/duck-digest/</loc>
+        <loc>https://lzon.ca/blog-tags/guides/</loc>
     </url>
     <url>
-        <loc>https://lzon.ca/blog-tags/duck-digest/page/1/</loc>
+        <loc>https://lzon.ca/blog-tags/guides/page/1/</loc>
     </url>
     <url>
         <loc>https://lzon.ca/blog-tags/marginalia/</loc>
@@ -49,16 +49,16 @@
         <loc>https://lzon.ca/blog-tags/ruminations/page/1/</loc>
     </url>
     <url>
+        <loc>https://lzon.ca/blog-tags/satire/</loc>
+    </url>
+    <url>
+        <loc>https://lzon.ca/blog-tags/satire/page/1/</loc>
+    </url>
+    <url>
         <loc>https://lzon.ca/blog-tags/site/</loc>
     </url>
     <url>
         <loc>https://lzon.ca/blog-tags/site/page/1/</loc>
-    </url>
-    <url>
-        <loc>https://lzon.ca/blog-tags/tips/</loc>
-    </url>
-    <url>
-        <loc>https://lzon.ca/blog-tags/tips/page/1/</loc>
     </url>
     <url>
         <loc>https://lzon.ca/curio-tags/</loc>
@@ -848,6 +848,10 @@
     <url>
         <loc>https://lzon.ca/posts/news/000032-tes-sentinel/</loc>
         <lastmod>2026-11-03</lastmod>
+    </url>
+    <url>
+        <loc>https://lzon.ca/posts/news/000033-my-title/</loc>
+        <lastmod>2026-11-06</lastmod>
     </url>
     <url>
         <loc>https://lzon.ca/posts/news/page/1/</loc>
