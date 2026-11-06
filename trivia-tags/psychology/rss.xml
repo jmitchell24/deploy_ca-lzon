@@ -9,20 +9,30 @@
       <language>en</language>
       <atom:link href="https://lzon.ca/trivia-tags/psychology/rss.xml" rel="self" type="application/rss+xml"/>
       <lastBuildDate>Sat, 24 Oct 2026 12:00:00 +0000</lastBuildDate>
+      <!-- Items. Quotes (their own section feed) list one quote each. Posts go through
+           macros/feed.html, so this feed, atom.xml and pages.json agree: each item is titled
+           as the site titles the post, carries its type as a <category>, and in the merged
+           /posts/ feed leads its title with the type ("[ News ] …"). -->
       
       
       
-      
-      
+      <!-- quotes and numbered post types sort by filename, since dates alone aren't unique -->
       
       
       <item>
-          <title></title>
+          <title>People can be Ambiverted, meaning they are equal parts Introverted and Extroverted.</title>
           <pubDate>Sat, 24 Oct 2026 12:00:00 +0000</pubDate>
           <author>Lzon</author>
-          <link>https://lzon.ca/trivia/000004/</link>
-          <guid isPermaLink="false">https://lzon.ca/trivia/000004/</guid>
-          <description xml:base="https://lzon.ca/trivia/000004/">&lt;p&gt;People can be Ambiverted, meaning they are equal parts Introverted and Extroverted.&lt;&#x2F;p&gt;</description>
+          <link>https://lzon.ca/posts/trivia/000004/</link>
+          <guid isPermaLink="false">https://lzon.ca/posts/trivia/4</guid>
+          <category domain="https://lzon.ca/posts/trivia/">Trivia</category>
+          <description xml:base="https://lzon.ca/posts/trivia/000004/">
+&lt;p&gt;Introverted people obtain gratification from being alone, and consider social engagement to be mentally draining.&lt;/p&gt;
+&lt;p&gt;Extroverted people are the inverse of introverted, they are gratified and energized by being around others.&lt;/p&gt;
+&lt;p&gt;Ambiversion is a third personality trait at the mid point along a spectrum between introversion and extroversion.
+It was first proposed in 1923 by the American psychologist &lt;a rel=&quot;noopener external&quot; target=&quot;_blank&quot; href=&quot;https://en.wikipedia.org/wiki/Edmund_Smith_Conklin&quot;&gt;Edmund Smith Conklin&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;Source: &lt;a href=&quot;https://en.wikipedia.org/wiki/Extraversion_and_introversion#Ambiversion&quot;&gt;https://en.wikipedia.org/wiki/Extraversion_and_introversion#Ambiversion&lt;/a&gt;&lt;/p&gt;
+</description>
       </item>
     </channel>
 </rss>

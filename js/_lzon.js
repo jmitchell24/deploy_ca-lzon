@@ -850,6 +850,7 @@
         syncOpenParam(node);
       }
     });
+    document.querySelectorAll(".tree").forEach((tree) => tree.classList.add("tree-ready"));
   }
   function samePath(a, b) {
     const trim = (p) => p.replace(/\/+$/, "") || "/";

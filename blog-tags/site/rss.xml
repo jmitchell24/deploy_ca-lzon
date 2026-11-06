@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
+    <channel>
+      <title>
+        lzon.ca - site</title>
+      <link>https://lzon.ca</link>
+      <description></description>
+      <generator>Zola</generator>
+      <language>en</language>
+      <atom:link href="https://lzon.ca/blog-tags/site/rss.xml" rel="self" type="application/rss+xml"/>
+      <lastBuildDate>Wed, 13 May 2026 12:00:00 +0000</lastBuildDate>
+      <!-- Items. Quotes (their own section feed) list one quote each. Posts go through
+           macros/feed.html, so this feed, atom.xml and pages.json agree: each item is titled
+           as the site titles the post, carries its type as a <category>, and in the merged
+           /posts/ feed leads its title with the type ("[ News ] …"). -->
+      
+      
+      
+      <!-- quotes and numbered post types sort by filename, since dates alone aren't unique -->
+      
+      
+      <item>
+          <title>News &amp; Feeds</title>
+          <pubDate>Sun, 10 May 2026 12:00:00 +0000</pubDate>
+          <author>Lzon</author>
+          <link>https://lzon.ca/posts/blog/news-feed-update/</link>
+          <guid isPermaLink="false">https://lzon.ca/posts/blog/news-feed-update/</guid>
+          <category domain="https://lzon.ca/posts/blog/">Blog</category>
+          <description xml:base="https://lzon.ca/posts/blog/news-feed-update/">&lt;p&gt;This is what I’ve been working on recently for lzon.ca.&lt;/p&gt;&lt;p&gt;&lt;a href=&quot;https://lzon.ca/posts/blog/news-feed-update/#continue-reading&quot;&gt;Continue reading&lt;/a&gt;&lt;/p&gt;
+</description>
+      </item>
+      <item>
+          <title>The quest for Web Feeds</title>
+          <pubDate>Sat, 18 Apr 2026 12:00:00 +0000</pubDate>
+          <author>Lzon</author>
+          <link>https://lzon.ca/posts/blog/feeds/</link>
+          <guid isPermaLink="false">https://lzon.ca/posts/blog/feeds/</guid>
+          <category domain="https://lzon.ca/posts/blog/">Blog</category>
+          <description xml:base="https://lzon.ca/posts/blog/feeds/">&lt;p&gt;I’ve just finished a sidequest in which I built a bunch of feeds for the site.&lt;/p&gt;&lt;p&gt;&lt;a href=&quot;https://lzon.ca/posts/blog/feeds/#continue-reading&quot;&gt;Continue reading&lt;/a&gt;&lt;/p&gt;
+</description>
+      </item>
+      <item>
+          <title>100 days of lzon.ca</title>
+          <pubDate>Tue, 14 Apr 2026 12:00:00 +0000</pubDate>
+          <author>Lzon</author>
+          <link>https://lzon.ca/posts/blog/lzon-day-100/</link>
+          <guid isPermaLink="false">https://lzon.ca/posts/blog/lzon-day-100/</guid>
+          <category domain="https://lzon.ca/posts/blog/">Blog</category>
+          <description xml:base="https://lzon.ca/posts/blog/lzon-day-100/">&lt;p&gt;My thoughts on the first 100 days of lzon.ca&lt;/p&gt;&lt;p&gt;&lt;a href=&quot;https://lzon.ca/posts/blog/lzon-day-100/#continue-reading&quot;&gt;Continue reading&lt;/a&gt;&lt;/p&gt;
+</description>
+      </item>
+      <item>
+          <title>Sketching with Code</title>
+          <pubDate>Fri, 09 Jan 2026 12:00:00 +0000</pubDate>
+          <author>Lzon</author>
+          <link>https://lzon.ca/posts/blog/code-sketch-demo/</link>
+          <guid isPermaLink="false">https://lzon.ca/posts/blog/code-sketch-demo/</guid>
+          <category domain="https://lzon.ca/posts/blog/">Blog</category>
+          <description xml:base="https://lzon.ca/posts/blog/code-sketch-demo/">&lt;p&gt;Exploring some ideas for how to create and publish graphics demos for Lzon.&lt;/p&gt;&lt;p&gt;&lt;a href=&quot;https://lzon.ca/posts/blog/code-sketch-demo/#continue-reading&quot;&gt;Continue reading&lt;/a&gt;&lt;/p&gt;
+</description>
+      </item>
+      <item>
+          <title>What is emailverification.info?</title>
+          <pubDate>Mon, 05 Jan 2026 12:00:00 +0000</pubDate>
+          <author>Lzon</author>
+          <link>https://lzon.ca/posts/blog/emailverification-info/</link>
+          <guid isPermaLink="false">https://lzon.ca/posts/blog/emailverification-info/</guid>
+          <category domain="https://lzon.ca/posts/blog/">Blog</category>
+          <description xml:base="https://lzon.ca/posts/blog/emailverification-info/">&lt;p&gt;Have you ever recieved an email from this address? Here’s why it might not actually be a scam.&lt;/p&gt;&lt;p&gt;&lt;a href=&quot;https://lzon.ca/posts/blog/emailverification-info/#continue-reading&quot;&gt;Continue reading&lt;/a&gt;&lt;/p&gt;
+</description>
+      </item>
+      <item>
+          <title>The First Week of lzon.ca</title>
+          <pubDate>Sun, 28 Dec 2025 12:00:00 +0000</pubDate>
+          <author>Lzon</author>
+          <link>https://lzon.ca/posts/blog/lzon-week-one-update/</link>
+          <guid isPermaLink="false">https://lzon.ca/posts/blog/lzon-week-one-update/</guid>
+          <category domain="https://lzon.ca/posts/blog/">Blog</category>
+          <description xml:base="https://lzon.ca/posts/blog/lzon-week-one-update/">&lt;p&gt;Good god! How has it been only a week?&lt;/p&gt;&lt;p&gt;&lt;a href=&quot;https://lzon.ca/posts/blog/lzon-week-one-update/#continue-reading&quot;&gt;Continue reading&lt;/a&gt;&lt;/p&gt;
+</description>
+      </item>
+    </channel>
+</rss>

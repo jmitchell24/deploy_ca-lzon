@@ -9,28 +9,50 @@
       <language>en</language>
       <atom:link href="https://lzon.ca/trivia-tags/history/rss.xml" rel="self" type="application/rss+xml"/>
       <lastBuildDate>Sun, 01 Nov 2026 12:00:00 +0000</lastBuildDate>
+      <!-- Items. Quotes (their own section feed) list one quote each. Posts go through
+           macros/feed.html, so this feed, atom.xml and pages.json agree: each item is titled
+           as the site titles the post, carries its type as a <category>, and in the merged
+           /posts/ feed leads its title with the type ("[ News ] …"). -->
       
       
       
-      
-      
+      <!-- quotes and numbered post types sort by filename, since dates alone aren't unique -->
       
       
       <item>
-          <title></title>
+          <title>The term ‘Computer Bug’ was popularized by programmer Grace Hopper after she removed a moth from a malfunctioning computer.</title>
           <pubDate>Wed, 28 Oct 2026 12:00:00 +0000</pubDate>
           <author>Lzon</author>
-          <link>https://lzon.ca/trivia/000008/</link>
-          <guid isPermaLink="false">https://lzon.ca/trivia/000008/</guid>
-          <description xml:base="https://lzon.ca/trivia/000008/">&lt;p&gt;The term ‘Computer Bug’ was popularized by programmer Grace Hopper after she removed a moth from a malfunctioning computer.&lt;&#x2F;p&gt;</description>
+          <link>https://lzon.ca/posts/trivia/000008/</link>
+          <guid isPermaLink="false">https://lzon.ca/posts/trivia/8</guid>
+          <category domain="https://lzon.ca/posts/trivia/">Trivia</category>
+          <description xml:base="https://lzon.ca/posts/trivia/000008/">
+
+&lt;p&gt;In 1947, acting as a lieutenant junior grade for the US Navy Grace Hopper was assigned to the Bureau of Ships Computation Project.
+The project was using the Harvard Mark II computer to perform ballistics calculations among other things. After encountering a
+malfunction in the computer Hopper and her team discovered that a moth had gotten stuck on one of the
+machine’s relays and was the ultimate cause of the fault. This amusing detail would later be included in her team’s notes.&lt;/p&gt;
+&lt;p&gt;Using &lt;em&gt;‘bug’&lt;/em&gt; to refer to a fault or malfunction in a machine pre-dates Grace Hopper’s use of the word, but she is often credited with
+popularizing the word for use by programmers. In modern software development fixing incorrect codes is often called &lt;em&gt;‘debugging’&lt;/em&gt;, and
+a tool that helps to identify bad codes is called a &lt;em&gt;‘debugger’&lt;/em&gt;.&lt;/p&gt;
+&lt;p&gt;Source: &lt;a href=&quot;https://www.vassar.edu/grace-hopper/achievements&quot;&gt;https://www.vassar.edu/grace-hopper/achievements&lt;/a&gt;&lt;/p&gt;&lt;p&gt;Source: &lt;a href=&quot;https://en.wikipedia.org/wiki/Grace_Hopper&quot;&gt;https://en.wikipedia.org/wiki/Grace_Hopper&lt;/a&gt;&lt;/p&gt;&lt;p&gt;Source: &lt;a href=&quot;https://en.wikipedia.org/wiki/Harvard_Mark_II&quot;&gt;https://en.wikipedia.org/wiki/Harvard_Mark_II&lt;/a&gt;&lt;/p&gt;
+</description>
       </item>
       <item>
-          <title></title>
+          <title>Phineas Gage was a 19th century American man who survived an iron rod piercing his skull.</title>
           <pubDate>Tue, 27 Oct 2026 12:00:00 +0000</pubDate>
           <author>Lzon</author>
-          <link>https://lzon.ca/trivia/000007/</link>
-          <guid isPermaLink="false">https://lzon.ca/trivia/000007/</guid>
-          <description xml:base="https://lzon.ca/trivia/000007/">&lt;p&gt;Phineas Gage was a 19th century American man who survived an iron rod piercing his skull.&lt;&#x2F;p&gt;</description>
+          <link>https://lzon.ca/posts/trivia/000007/</link>
+          <guid isPermaLink="false">https://lzon.ca/posts/trivia/7</guid>
+          <category domain="https://lzon.ca/posts/trivia/">Trivia</category>
+          <description xml:base="https://lzon.ca/posts/trivia/000007/">
+
+&lt;p&gt;As a young man Gage was a construction worker under contract with the Rutland and Burlington Railroad company. On September 13, 1848 the 25 year old Gage was on the line when his tamping rod was accidentally fired upward by a gunpowder fuse, at very high speed. With his head directly in the rod’s path, it pierced his skull and continued to fly a long distance behind him.&lt;/p&gt;
+&lt;p&gt;To the surprise of his doctors, Phineas Gage both survived the initial injury and was both coherent and able to speak to them. In a matter of months he was recovered enough to return to work.&lt;/p&gt;
+&lt;p&gt;He lived for another 12 years after the incident, and in that time he was reported to have had a significantly changed personality. He had become more impulsive and quick to anger. Eventually he would die of a seizure while working as a stagecoach driver in Chile.&lt;/p&gt;
+&lt;p&gt;The incident is known as the “American Crowbar Case”, and became the subject of academic research and discussion throughout the 19th century. It posed important questions related to the functioning of the brain, and the nature of consciousness.&lt;/p&gt;
+&lt;p&gt;Source: &lt;a href=&quot;https://en.wikipedia.org/wiki/Phineas_Gage&quot;&gt;https://en.wikipedia.org/wiki/Phineas_Gage&lt;/a&gt;&lt;/p&gt;&lt;p&gt;Source: &lt;a href=&quot;https://www.britannica.com/biography/Phineas-Gage&quot;&gt;https://www.britannica.com/biography/Phineas-Gage&lt;/a&gt;&lt;/p&gt;
+</description>
       </item>
     </channel>
 </rss>

@@ -1,0 +1,221 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
+    <channel>
+      <title>
+        lzon.ca - marginalia</title>
+      <link>https://lzon.ca</link>
+      <description></description>
+      <generator>Zola</generator>
+      <language>en</language>
+      <atom:link href="https://lzon.ca/blog-tags/marginalia/rss.xml" rel="self" type="application/rss+xml"/>
+      <lastBuildDate>Tue, 15 Sep 2026 12:00:00 +0000</lastBuildDate>
+      <!-- Items. Quotes (their own section feed) list one quote each. Posts go through
+           macros/feed.html, so this feed, atom.xml and pages.json agree: each item is titled
+           as the site titles the post, carries its type as a <category>, and in the merged
+           /posts/ feed leads its title with the type ("[ News ] …"). -->
+      
+      
+      
+      <!-- quotes and numbered post types sort by filename, since dates alone aren't unique -->
+      
+      
+      <item>
+          <title>Just look at the Time</title>
+          <pubDate>Mon, 14 Sep 2026 12:00:00 +0000</pubDate>
+          <author>Lzon</author>
+          <link>https://lzon.ca/posts/blog/visual-time/</link>
+          <guid isPermaLink="false">https://lzon.ca/posts/blog/visual-time/</guid>
+          <category domain="https://lzon.ca/posts/blog/">Blog</category>
+          <description xml:base="https://lzon.ca/posts/blog/visual-time/">&lt;p&gt;A small web app that puts into perspective the major events of modern history.&lt;/p&gt;&lt;p&gt;&lt;a href=&quot;https://lzon.ca/posts/blog/visual-time/#continue-reading&quot;&gt;Continue reading&lt;/a&gt;&lt;/p&gt;
+</description>
+      </item>
+      <item>
+          <title>Gsv Sfnzm Kzig</title>
+          <pubDate>Mon, 10 Aug 2026 12:00:00 +0000</pubDate>
+          <author>Lzon</author>
+          <link>https://lzon.ca/posts/blog/gsv-sfnzm-kzig/</link>
+          <guid isPermaLink="false">https://lzon.ca/posts/blog/gsv-sfnzm-kzig/</guid>
+          <category domain="https://lzon.ca/posts/blog/">Blog</category>
+          <description xml:base="https://lzon.ca/posts/blog/gsv-sfnzm-kzig/">&lt;p&gt;Nb zozin dvmg luu zg 6:50zn gsrh nlimrmt, qfhg gsv hznv zh vevib lgsvi nlimrmt uli zg ovzhg gsv kzhg gdl bvzih. R xzm xlfmg lm z hrmtov szmw gsv mfnyvi lu grnvh R’ev hovkg ozgv rm gszg grnv.&lt;/p&gt;
+&lt;p&gt;R kilxvvwvw gl fhv gsv yzgsilln, gzprmt olmtvi gszm R pmld R hslfow. Hxiloormt gsilfts mvdh zmw yolt klhgh lm nb kslmv. Z hgzoormt gzxgrx, nlgrezgvw yb z hvmhv lu wivzw uli nb dliplfg. Wvhkrgv sld olmt R’ev svow gl gsrh ilfgrmv, zmw wvhkrgv sld nfxs yvggvi R uvvo ksbhrxzoob R xzm’g jfrgv yirmt nbhvou gl ollp ulidziw li yv vmgsfhrzhgrx zylfg rg. Nlhg wzbh Rg’h gsv nlhg wruurxfog gsrmt R droo wl, zmw gsviv’h zodzbh z elrxv rm nb nrmw gibrmt gl xlmermxv nv mlg gl wl rg. Vmlfts grnv szh kzhg gszg R xzm pmld gszg R droo yv LP, hl gsviv rh ml vcxfhv gszg gsv elrxv xivzgvh gszg xzm xlmermxv nv mlg gl wl rg.&lt;/p&gt;
+&lt;p&gt;Zmw qfhg orpv vevib nlimrmt R wrw rmwvvw wl nb dliplfg. Z irwv lm nb hgzgrlmzib yrpv, ulooldvw yb szmw dvrtsg vcvixrhvh, kfhs-fkh zmw xifmxsvh. R dzh lm gsv yrpv uli mvziob zm slfi, olmtvi gszm fhfzo yvxzfhv z ullg hgizk yilpv, zmw R mvvwvw gl ivkzri rg. Gsv xsvzk kozhgrx hgizkh yivzp uzriob ivtfoziob trevm sld nfxs hgivhh R kfg lm gsvn, zmw dsvmvevi rg szkkvmh R zodzbh uvzi gszg gsv elrxv rm nv gszg szgvh gsrh droo fhv rg zh zm vcxfhv gl trev fk uli gsv wzb. Hl uzi, uligfmzgvob, gszg szh mvevi szkkvmvw.&lt;/p&gt;
+&lt;p&gt;Gsv dliplfg dzh tllw, wvhkrgv gsv wvozb, uli dsrxs R zn tizgvufo. Nb dzgxs xozrnh gszg R yfim hrc sfmwivw xzolirvh wfirmt nb irwvh zg nb xfiivmg rmgvmhrgb zmw wfizgrlm. R gib mlg gl gzpv gszg mfnyvi hvirlfhob lm rgh ldm, zmw lmob fhv rg zh z ivozgrev nvzhfiv lu nb kviulinzmxv. Dsvm R ollp zg kiverlfh irwvh R xzm hvv gsv kiltivhhrlm uiln gsivv, gl ulfi, zmw gsvm gl urev sfmwivw xzolirvh ‘yfimvw’. R wl uvvo zg ovzhg hlnv znlfmg lu kirwv rm gszg.&lt;/p&gt;
+&lt;p&gt;Hrmxv gsv yvtrmmrmt lu gsv hfnnvi R nzwv z szyrg lu hsllgrmt sllkh zugvi nb dliplfg. R mlgrxvw gszg rg szh rnkilevw nb ksbhrxzo xlliwrmzgrlm. R zkkivxrzgv gszg (lyerlfhob), yfg R zohl hvv rg z wvnlmhgizgrlm lu qfhg sld wvtizwvw R szw yvxlnv ksbhrxzoob. Glwzb gsviv dzh z izrmhglin, zmw R dzh fmzyov gl tl lfg, yfg R hgroo ivzoob dzmgvw gl szev gszg prmw lu zxgrergb, hl R wvxrwvw gl hfkkovnvmg drgs z erigfzo ivzorgb isbgsn tznv.&lt;/p&gt;
+&lt;p&gt;Gsv tznv rh xzoovw ‘Hbmgs Irwvih’. Gsv tlzo rh gl szev gsv yzooh lm blfi szmwh uloold gsv ormvh zmw wlgh zh gsvb nlev gldziwh blf, rm z kzggvim gszg ulooldh gsv hlfmw lu z kozbrmt hlmt. Blf ivxvrev z hxliv yzhvw lm sld xolhvob blf ziv zyov gl nzgxs gsv ormvh zmw wlgh lu gsv hlmt. R kozbvw ‘Wlm’g hglk nv mld’ yb Jfvvm, zmw z uvd lgsvih.&lt;/p&gt;
+&lt;p&gt;Gsv ksbhrxzo zxgrergb dzh mrxv, yfg R dzh hfikirhvw yb sld nfxs gsv Jfvvm hlmt nlevw nv. R’ev svziw gsv hlmt yvuliv, zmw Rg’h mlg gszg R’n z kzigrxfozi uzm lu Jfvvm, qfhg gszg gl svzi gsv hlmt zxgrezgvw z kzig lu nv gszg R gsrmp szh xovziob yvxlnv wlinzmg. R wlm’g ivzoob pmld uli hfiv sld olmt rg szw yvvm hrmxv R orhgvmvw gl zmb nfhrx.&lt;/p&gt;
+&lt;p&gt;R kilxvvwvw gl orhgvm gl Jfvvm zoo nlimrmt olmt, zmw gsvm xslhv gl orhgvm gl ‘Ovg rg Yv’ yb gsv Yvzgovh. Gszg hlmt rm kzigrxfozi szh z kilulfmw vuuvxg lm nv, zh R ivnvnyvi rg. Gsv hlmt ivnrmwh nv lu nb nln. Gsv vnlgrlmh rg kfooh lfg lu nv ziv mlg klhrgrev, yfg R orhgvmvw ivtziwovhh pmldrmt gsv vuuvxg rg dlfow szev. R dzmgvw gl uvvo rg, zmw R wrw.&lt;/p&gt;
+&lt;p&gt;Zh kvi nb grgov uli gsrh klhg, orhgvmrmt gl hlnv nfhrx glwzb ivnrmwvw nv lu z kzig lu nbhvou gszg R’n kilmv gl ulitvggrmt rh gsviv. Uli ozxp lu zmb yvggvi wvhxirkgrlm, rg’h gsv sfnzm kzig.&lt;/p&gt;
+
+</description>
+      </item>
+      <item>
+          <title>Why I&apos;m skipping the Steam Frame</title>
+          <pubDate>Tue, 04 Aug 2026 12:00:00 +0000</pubDate>
+          <author>Lzon</author>
+          <link>https://lzon.ca/posts/blog/no-steam-frame/</link>
+          <guid isPermaLink="false">https://lzon.ca/posts/blog/no-steam-frame/</guid>
+          <category domain="https://lzon.ca/posts/blog/">Blog</category>
+          <description xml:base="https://lzon.ca/posts/blog/no-steam-frame/">&lt;p&gt;If you have been waiting since last year for the launch of the Steam Frame I would suggest that you consider just moving on.&lt;/p&gt;&lt;p&gt;&lt;a href=&quot;https://lzon.ca/posts/blog/no-steam-frame/#continue-reading&quot;&gt;Continue reading&lt;/a&gt;&lt;/p&gt;
+</description>
+      </item>
+      <item>
+          <title>What if useful AI is a fantasy?</title>
+          <pubDate>Tue, 28 Jul 2026 12:00:00 +0000</pubDate>
+          <author>Lzon</author>
+          <link>https://lzon.ca/posts/blog/llm-fantasy/</link>
+          <guid isPermaLink="false">https://lzon.ca/posts/blog/llm-fantasy/</guid>
+          <category domain="https://lzon.ca/posts/blog/">Blog</category>
+          <description xml:base="https://lzon.ca/posts/blog/llm-fantasy/">&lt;p&gt;I tried to use AI in my work, but was it actually useful?&lt;/p&gt;&lt;p&gt;&lt;a href=&quot;https://lzon.ca/posts/blog/llm-fantasy/#continue-reading&quot;&gt;Continue reading&lt;/a&gt;&lt;/p&gt;
+</description>
+      </item>
+      <item>
+          <title>Youtube and Algorithmic Feeds</title>
+          <pubDate>Tue, 30 Jun 2026 12:00:00 +0000</pubDate>
+          <author>Lzon</author>
+          <link>https://lzon.ca/posts/blog/youtube-algorithm/</link>
+          <guid isPermaLink="false">https://lzon.ca/posts/blog/youtube-algorithm/</guid>
+          <category domain="https://lzon.ca/posts/blog/">Blog</category>
+          <description xml:base="https://lzon.ca/posts/blog/youtube-algorithm/">&lt;p&gt;Why modern Youtube is offensive, and how you can improve your experience of the site.&lt;/p&gt;&lt;p&gt;&lt;a href=&quot;https://lzon.ca/posts/blog/youtube-algorithm/#continue-reading&quot;&gt;Continue reading&lt;/a&gt;&lt;/p&gt;
+</description>
+      </item>
+      <item>
+          <title>May 24th</title>
+          <pubDate>Sun, 24 May 2026 12:00:00 +0000</pubDate>
+          <author>Lzon</author>
+          <link>https://lzon.ca/posts/blog/jon-bday-2026/</link>
+          <guid isPermaLink="false">https://lzon.ca/posts/blog/jon-bday-2026/</guid>
+          <category domain="https://lzon.ca/posts/blog/">Blog</category>
+          <description xml:base="https://lzon.ca/posts/blog/jon-bday-2026/">&lt;p&gt;I hope that you enjoyed this past year, and are looking forward to the future.&lt;/p&gt;
+&lt;p&gt;You have accomplished a lot, done a lot of good, and will continue to do a whole lot more. I’m sure of it.&lt;/p&gt;
+&lt;p&gt;Happy Birthday, 2026&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;“There’s a door.“&lt;/p&gt;
+&lt;p&gt;“Where does it go?”&lt;/p&gt;
+&lt;p&gt;“It stays where it is, I think.”&lt;/p&gt;
+&lt;p&gt;– Terry Pratchett, &lt;s&gt; Faust&lt;/s&gt; Eric&lt;/p&gt;
+&lt;/blockquote&gt;
+
+</description>
+      </item>
+      <item>
+          <title>YouTube channels worth following</title>
+          <pubDate>Sun, 17 May 2026 12:00:00 +0000</pubDate>
+          <author>Lzon</author>
+          <link>https://lzon.ca/posts/blog/good-youtube-channels/</link>
+          <guid isPermaLink="false">https://lzon.ca/posts/blog/good-youtube-channels/</guid>
+          <category domain="https://lzon.ca/posts/blog/">Blog</category>
+          <description xml:base="https://lzon.ca/posts/blog/good-youtube-channels/">&lt;p&gt;Here’s a few good Youtube channels that you may find interesting.&lt;/p&gt;&lt;p&gt;&lt;a href=&quot;https://lzon.ca/posts/blog/good-youtube-channels/#continue-reading&quot;&gt;Continue reading&lt;/a&gt;&lt;/p&gt;
+</description>
+      </item>
+      <item>
+          <title>A Local AI Experiment</title>
+          <pubDate>Tue, 21 Apr 2026 12:00:00 +0000</pubDate>
+          <author>Lzon</author>
+          <link>https://lzon.ca/posts/blog/local-llm-testing/</link>
+          <guid isPermaLink="false">https://lzon.ca/posts/blog/local-llm-testing/</guid>
+          <category domain="https://lzon.ca/posts/blog/">Blog</category>
+          <description xml:base="https://lzon.ca/posts/blog/local-llm-testing/">&lt;p&gt;Today I ran an experiment to see if I could find a real use-case for a local LLM.&lt;/p&gt;&lt;p&gt;&lt;a href=&quot;https://lzon.ca/posts/blog/local-llm-testing/#continue-reading&quot;&gt;Continue reading&lt;/a&gt;&lt;/p&gt;
+</description>
+      </item>
+      <item>
+          <title>How Microsoft abuses its users</title>
+          <pubDate>Thu, 09 Apr 2026 12:00:00 +0000</pubDate>
+          <author>Lzon</author>
+          <link>https://lzon.ca/posts/blog/microsoft-user-abuse/</link>
+          <guid isPermaLink="false">https://lzon.ca/posts/blog/microsoft-user-abuse/</guid>
+          <category domain="https://lzon.ca/posts/blog/">Blog</category>
+          <description xml:base="https://lzon.ca/posts/blog/microsoft-user-abuse/">&lt;p&gt;I’d like to tell the story of job I just completed for a customer, so that I can make a point about how I feel Microsoft and other large technology companies are actively hostile to their users.&lt;/p&gt;&lt;p&gt;&lt;a href=&quot;https://lzon.ca/posts/blog/microsoft-user-abuse/#continue-reading&quot;&gt;Continue reading&lt;/a&gt;&lt;/p&gt;
+</description>
+      </item>
+      <item>
+          <title>Ending my Claude Pro Subscription</title>
+          <pubDate>Sun, 05 Apr 2026 12:00:00 +0000</pubDate>
+          <author>Lzon</author>
+          <link>https://lzon.ca/posts/blog/cancelling-claude/</link>
+          <guid isPermaLink="false">https://lzon.ca/posts/blog/cancelling-claude/</guid>
+          <category domain="https://lzon.ca/posts/blog/">Blog</category>
+          <description xml:base="https://lzon.ca/posts/blog/cancelling-claude/">&lt;p&gt;Tonight I cancelled my Claude Pro subscription.&lt;/p&gt;&lt;p&gt;&lt;a href=&quot;https://lzon.ca/posts/blog/cancelling-claude/#continue-reading&quot;&gt;Continue reading&lt;/a&gt;&lt;/p&gt;
+</description>
+      </item>
+      <item>
+          <title>Gsv Yozxp</title>
+          <pubDate>Tue, 31 Mar 2026 12:00:00 +0000</pubDate>
+          <author>Lzon</author>
+          <link>https://lzon.ca/posts/blog/gsv-yozxp/</link>
+          <guid isPermaLink="false">https://lzon.ca/posts/blog/gsv-yozxp/</guid>
+          <category domain="https://lzon.ca/posts/blog/">Blog</category>
+          <description xml:base="https://lzon.ca/posts/blog/gsv-yozxp/">&lt;p&gt;Rmhkrizgrlm uiln clielrw, gszmp blf.&lt;/p&gt;&lt;p&gt;&lt;a href=&quot;https://lzon.ca/posts/blog/gsv-yozxp/#continue-reading&quot;&gt;Continue reading&lt;/a&gt;&lt;/p&gt;
+</description>
+      </item>
+      <item>
+          <title>The first 40 months of the AI era</title>
+          <pubDate>Sat, 28 Mar 2026 12:00:00 +0000</pubDate>
+          <author>Lzon</author>
+          <link>https://lzon.ca/posts/blog/thoughts-ai-era/</link>
+          <guid isPermaLink="false">https://lzon.ca/posts/blog/thoughts-ai-era/</guid>
+          <category domain="https://lzon.ca/posts/blog/">Blog</category>
+          <description xml:base="https://lzon.ca/posts/blog/thoughts-ai-era/">&lt;p&gt;Here are my accumulated thoughts and ideas about AI since the launch of ChatGPT in November 2022.&lt;/p&gt;&lt;p&gt;&lt;a href=&quot;https://lzon.ca/posts/blog/thoughts-ai-era/#continue-reading&quot;&gt;Continue reading&lt;/a&gt;&lt;/p&gt;
+</description>
+      </item>
+      <item>
+          <title>Homescreen Mantras</title>
+          <pubDate>Fri, 13 Feb 2026 12:00:00 +0000</pubDate>
+          <author>Lzon</author>
+          <link>https://lzon.ca/posts/blog/homescreen-mantras/</link>
+          <guid isPermaLink="false">https://lzon.ca/posts/blog/homescreen-mantras/</guid>
+          <category domain="https://lzon.ca/posts/blog/">Blog</category>
+          <description xml:base="https://lzon.ca/posts/blog/homescreen-mantras/">&lt;p&gt;The mantras that I remind myself of every day.&lt;/p&gt;&lt;p&gt;&lt;a href=&quot;https://lzon.ca/posts/blog/homescreen-mantras/#continue-reading&quot;&gt;Continue reading&lt;/a&gt;&lt;/p&gt;
+</description>
+      </item>
+      <item>
+          <title>What software do I use?</title>
+          <pubDate>Sun, 18 Jan 2026 12:00:00 +0000</pubDate>
+          <author>Lzon</author>
+          <link>https://lzon.ca/posts/blog/what-software-i-use/</link>
+          <guid isPermaLink="false">https://lzon.ca/posts/blog/what-software-i-use/</guid>
+          <category domain="https://lzon.ca/posts/blog/">Blog</category>
+          <description xml:base="https://lzon.ca/posts/blog/what-software-i-use/">&lt;p&gt;Some of the software packages that I use, and why I use them.&lt;/p&gt;&lt;p&gt;&lt;a href=&quot;https://lzon.ca/posts/blog/what-software-i-use/#continue-reading&quot;&gt;Continue reading&lt;/a&gt;&lt;/p&gt;
+</description>
+      </item>
+      <item>
+          <title>Some Social Cheat Codes</title>
+          <pubDate>Thu, 15 Jan 2026 12:00:00 +0000</pubDate>
+          <author>Lzon</author>
+          <link>https://lzon.ca/posts/blog/social-cheat-codes/</link>
+          <guid isPermaLink="false">https://lzon.ca/posts/blog/social-cheat-codes/</guid>
+          <category domain="https://lzon.ca/posts/blog/">Blog</category>
+          <description xml:base="https://lzon.ca/posts/blog/social-cheat-codes/">&lt;p&gt;How an timid, introverted recluse learned to enjoy talking to people.&lt;/p&gt;&lt;p&gt;&lt;a href=&quot;https://lzon.ca/posts/blog/social-cheat-codes/#continue-reading&quot;&gt;Continue reading&lt;/a&gt;&lt;/p&gt;
+</description>
+      </item>
+      <item>
+          <title>Year in Review 2025 - AI</title>
+          <pubDate>Fri, 02 Jan 2026 12:00:00 +0000</pubDate>
+          <author>Lzon</author>
+          <link>https://lzon.ca/posts/blog/2025-review-ai/</link>
+          <guid isPermaLink="false">https://lzon.ca/posts/blog/2025-review-ai/</guid>
+          <category domain="https://lzon.ca/posts/blog/">Blog</category>
+          <description xml:base="https://lzon.ca/posts/blog/2025-review-ai/">&lt;p&gt;Here’s my (slightly tardy) review of artificial intelligence at the end of 2025.&lt;/p&gt;&lt;p&gt;&lt;a href=&quot;https://lzon.ca/posts/blog/2025-review-ai/#continue-reading&quot;&gt;Continue reading&lt;/a&gt;&lt;/p&gt;
+</description>
+      </item>
+      <item>
+          <title>Year in Review 2025 - Gaming</title>
+          <pubDate>Thu, 01 Jan 2026 12:00:00 +0000</pubDate>
+          <author>Lzon</author>
+          <link>https://lzon.ca/posts/blog/2025-review-gaming/</link>
+          <guid isPermaLink="false">https://lzon.ca/posts/blog/2025-review-gaming/</guid>
+          <category domain="https://lzon.ca/posts/blog/">Blog</category>
+          <description xml:base="https://lzon.ca/posts/blog/2025-review-gaming/">&lt;p&gt;Here’s my review of gaming in 2025, including a prediction for the new year.&lt;/p&gt;&lt;p&gt;&lt;a href=&quot;https://lzon.ca/posts/blog/2025-review-gaming/#continue-reading&quot;&gt;Continue reading&lt;/a&gt;&lt;/p&gt;
+</description>
+      </item>
+      <item>
+          <title>Year in Review 2025 - Smartphones</title>
+          <pubDate>Wed, 31 Dec 2025 12:00:00 +0000</pubDate>
+          <author>Lzon</author>
+          <link>https://lzon.ca/posts/blog/2025-review-smartphones/</link>
+          <guid isPermaLink="false">https://lzon.ca/posts/blog/2025-review-smartphones/</guid>
+          <category domain="https://lzon.ca/posts/blog/">Blog</category>
+          <description xml:base="https://lzon.ca/posts/blog/2025-review-smartphones/">&lt;p&gt;Here’s my review of smartphone tech in 2025, as well as a prediction for 2026!&lt;/p&gt;&lt;p&gt;&lt;a href=&quot;https://lzon.ca/posts/blog/2025-review-smartphones/#continue-reading&quot;&gt;Continue reading&lt;/a&gt;&lt;/p&gt;
+</description>
+      </item>
+    </channel>
+</rss>

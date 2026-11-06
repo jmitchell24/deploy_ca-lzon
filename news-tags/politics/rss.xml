@@ -9,52 +9,91 @@
       <language>en</language>
       <atom:link href="https://lzon.ca/news-tags/politics/rss.xml" rel="self" type="application/rss+xml"/>
       <lastBuildDate>Wed, 04 Nov 2026 12:00:00 +0000</lastBuildDate>
+      <!-- Items. Quotes (their own section feed) list one quote each. Posts go through
+           macros/feed.html, so this feed, atom.xml and pages.json agree: each item is titled
+           as the site titles the post, carries its type as a <category>, and in the merged
+           /posts/ feed leads its title with the type ("[ News ] …"). -->
       
       
       
-      
-      
+      <!-- quotes and numbered post types sort by filename, since dates alone aren't unique -->
       
       
       <item>
-          <title>Trump renames Lake Ontario as &#x27;Lake America&#x27;</title>
+          <title>Trump renames Lake Ontario as &apos;Lake America&apos;</title>
           <pubDate>Sun, 30 Aug 2026 12:00:00 +0000</pubDate>
           <author>Lzon</author>
-          <link>https://lzon.ca/news/news-000025-trump-rename-lake/</link>
-          <guid isPermaLink="false">https://lzon.ca/news/news-000025-trump-rename-lake/</guid>
-          <description xml:base="https://lzon.ca/news/news-000025-trump-rename-lake/">&lt;p&gt;Donald Trump has renamed Lake Ontario to ‘Lake America’ following the recent failure of trade negotiations between USA and Canada.&lt;&#x2F;p&gt;</description>
+          <link>https://lzon.ca/posts/news/000025-trump-rename-lake/</link>
+          <guid isPermaLink="false">https://lzon.ca/posts/news/25</guid>
+          <category domain="https://lzon.ca/posts/news/">News</category>
+          <description xml:base="https://lzon.ca/posts/news/000025-trump-rename-lake/">&lt;p&gt;Donald Trump has renamed Lake Ontario to ‘Lake America’ following the recent failure of trade negotiations between USA and Canada.&lt;/p&gt;
+&lt;span id=&quot;continue-reading&quot;&gt;&lt;/span&gt;
+&lt;p&gt;Trump’s administration has not confirmed that the trade disputes were reason for the change, but it is reasonable to assume that this was the cause.&lt;/p&gt;
+&lt;p&gt;I find this to be extremely disappointing. Trump and his cabinet have managed to do so much damage to what was otherwise an astoundingly friendly and peaceful international relationship (USA and Canada).&lt;/p&gt;
+&lt;p&gt;The silver lining that I can see is that public opinion to this news appears to be resoundingly negative. Most Canadians and Americans do not want this. It gives me hope that once Trump is no longer in office the formerly positive relationship between our two countries can be restored.&lt;/p&gt;
+&lt;p&gt;Source: &lt;a href=&quot;https://www.cbc.ca/news/world/trump-lake-ontario-america-9.7322947&quot;&gt;https://www.cbc.ca/news/world/trump-lake-ontario-america-9.7322947&lt;/a&gt;&lt;/p&gt;&lt;p&gt;Source: &lt;a href=&quot;https://web.archive.org/web/20260827174105/https://www.cbc.ca/news/world/trump-lake-ontario-america-9.7322947&quot;&gt;https://web.archive.org/web/20260827174105/https://www.cbc.ca/news/world/trump-lake-ontario-america-9.7322947&lt;/a&gt;&lt;/p&gt;
+</description>
       </item>
       <item>
           <title>Fully autonomous drones have killed human soldiers for the first time</title>
           <pubDate>Thu, 11 Jun 2026 12:00:00 +0000</pubDate>
           <author>Lzon</author>
-          <link>https://lzon.ca/news/news-000018-drones-killed-soldiers/</link>
-          <guid isPermaLink="false">https://lzon.ca/news/news-000018-drones-killed-soldiers/</guid>
-          <description xml:base="https://lzon.ca/news/news-000018-drones-killed-soldiers/">&lt;p&gt;A military contractor named Alexander Kokhanovskyy has revealed that a test was conducted two years ago in which fully autonomous drones killed human soldiers.&lt;&#x2F;p&gt;</description>
+          <link>https://lzon.ca/posts/news/000018-drones-killed-soldiers/</link>
+          <guid isPermaLink="false">https://lzon.ca/posts/news/18</guid>
+          <category domain="https://lzon.ca/posts/news/">News</category>
+          <description xml:base="https://lzon.ca/posts/news/000018-drones-killed-soldiers/">&lt;p&gt;A military contractor named Alexander Kokhanovskyy has revealed that a test was conducted two years ago in which fully autonomous drones killed human soldiers.&lt;/p&gt;
+&lt;span id=&quot;continue-reading&quot;&gt;&lt;/span&gt;
+&lt;p&gt;The test involved sending ‘terminator’ drones on a trajectory over several kilometers towards their target. Upon arrival an AI running on the drones identified and then engaged their target. Human-piloted drones flew over the area some time afterwards to confirm the targets had been eliminated.&lt;/p&gt;
+&lt;p&gt;The Ukrainian government presently requires final human confirmation to conduct attacks, but otherwise uses AI heavily in identifying targets. Kokhanovskyy claims there has been no further tests beyond the one conducted two years ago.&lt;/p&gt;
+&lt;p&gt;Kokhanovskyy is currently the CEO of &lt;a rel=&quot;noopener external&quot; target=&quot;_blank&quot; href=&quot;https://aerocenter.com.ua/&quot;&gt;Aero Center&lt;/a&gt;, a Ukrainian military drone manufacturer. Aero Center is a new company, and was not responsible for conducting the test.&lt;/p&gt;
+&lt;p&gt;In my opinion this was inevitable and was going to happen eventually. It’s still not too late to impose a global ban on these types of weapons, but before that happens I expect to see more stories like this.&lt;/p&gt;
+&lt;p&gt;Source: &lt;a href=&quot;https://www.newscientist.com/article/2529849-fully-autonomous-drones-have-killed-human-soldiers-for-the-first-time/&quot;&gt;https://www.newscientist.com/article/2529849-fully-autonomous-drones-have-killed-human-soldiers-for-the-first-time/&lt;/a&gt;&lt;/p&gt;&lt;p&gt;Source: &lt;a href=&quot;https://web.archive.org/web/20260610143126/https://www.newscientist.com/article/2529849-fully-autonomous-drones-have-killed-human-soldiers-for-the-first-time/&quot;&gt;https://web.archive.org/web/20260610143126/https://www.newscientist.com/article/2529849-fully-autonomous-drones-have-killed-human-soldiers-for-the-first-time/&lt;/a&gt;&lt;/p&gt;
+</description>
       </item>
       <item>
           <title>Rockstar Games employees have formed a union</title>
           <pubDate>Tue, 09 Jun 2026 12:00:00 +0000</pubDate>
           <author>Lzon</author>
-          <link>https://lzon.ca/news/news-000017-rockstar-union/</link>
-          <guid isPermaLink="false">https://lzon.ca/news/news-000017-rockstar-union/</guid>
-          <description xml:base="https://lzon.ca/news/news-000017-rockstar-union/">&lt;p&gt;Employees of Rockstar Games have announced their intent to form a union, to be called “Rockstar Game Workers Union”. It will be a subsidiary of the existing “Workers’ Union of Great Britain”.&lt;&#x2F;p&gt;</description>
+          <link>https://lzon.ca/posts/news/000017-rockstar-union/</link>
+          <guid isPermaLink="false">https://lzon.ca/posts/news/17</guid>
+          <category domain="https://lzon.ca/posts/news/">News</category>
+          <description xml:base="https://lzon.ca/posts/news/000017-rockstar-union/">&lt;p&gt;Employees of Rockstar Games have announced their intent to form a union, to be called “Rockstar Game Workers Union”. It will be a subsidiary of the existing “Workers’ Union of Great Britain”.&lt;/p&gt;
+&lt;span id=&quot;continue-reading&quot;&gt;&lt;/span&gt;
+&lt;p&gt;This follows a recent controversy in which Rockstar Games fired 31 employees for claimed misconduct. It is speculated that the mass firing was an attempt at union busting.&lt;/p&gt;
+&lt;p&gt;In my opinion this is good news. Gaming and software development have never had a strong labour movement, largely because individual employees could use their high-value skillset as leverage when negotiating salary and working conditions.&lt;/p&gt;
+&lt;p&gt;Advanced AI is going to automate (and thus de-value) a lot of the work needed for game development. Without union protection this will lead to increasing opportunity for game studios to abuse their workers.&lt;/p&gt;
+&lt;p&gt;Hopefully this trend continues.&lt;/p&gt;
+&lt;p&gt;Source: &lt;a href=&quot;https://www.eurogamer.net/were-determined-to-win-justice-for-the-31-fired-workers-rockstar-games-workers-publicly-launch-union-as-legal-battle-with-the-gta-6-maker-rages-on&quot;&gt;https://www.eurogamer.net/were-determined-to-win-justice-for-the-31-fired-workers-rockstar-games-workers-publicly-launch-union-as-legal-battle-with-the-gta-6-maker-rages-on&lt;/a&gt;&lt;/p&gt;&lt;p&gt;Source: &lt;a href=&quot;https://web.archive.org/web/20260530024600/https://www.eurogamer.net/were-determined-to-win-justice-for-the-31-fired-workers-rockstar-games-workers-publicly-launch-union-as-legal-battle-with-the-gta-6-maker-rages-on&quot;&gt;https://web.archive.org/web/20260530024600/https://www.eurogamer.net/were-determined-to-win-justice-for-the-31-fired-workers-rockstar-games-workers-publicly-launch-union-as-legal-battle-with-the-gta-6-maker-rages-on&lt;/a&gt;&lt;/p&gt;
+</description>
       </item>
       <item>
           <title>First Chinese-made EVs arrive in Canada under deal Carney struck with Xi</title>
           <pubDate>Sat, 30 May 2026 12:00:00 +0000</pubDate>
           <author>Lzon</author>
-          <link>https://lzon.ca/news/news-000016-chinese-evs-canada/</link>
-          <guid isPermaLink="false">https://lzon.ca/news/news-000016-chinese-evs-canada/</guid>
-          <description xml:base="https://lzon.ca/news/news-000016-chinese-evs-canada/">&lt;p&gt;The first China-made electric vehicles have arrived in Canada following a recent tariff reduction deal. The shipment was mostly from Tesla’s Shanghai factory, with some Lotus branded vehicles as well.&lt;&#x2F;p&gt;</description>
+          <link>https://lzon.ca/posts/news/000016-chinese-evs-canada/</link>
+          <guid isPermaLink="false">https://lzon.ca/posts/news/16</guid>
+          <category domain="https://lzon.ca/posts/news/">News</category>
+          <description xml:base="https://lzon.ca/posts/news/000016-chinese-evs-canada/">&lt;p&gt;The first China-made electric vehicles have arrived in Canada following a recent tariff reduction deal. The shipment was mostly from Tesla’s Shanghai factory, with some Lotus branded vehicles as well.&lt;/p&gt;
+&lt;span id=&quot;continue-reading&quot;&gt;&lt;/span&gt;
+&lt;p&gt;This is noteworthy since historically Canada has followed the USA closely on restricting China’s access to its vehicle market.&lt;/p&gt;
+&lt;p&gt;I’m cautiously optimistic. If this leads to EV’s becoming more affordable then that would be a good thing. The hope is that the federal government will continue to promote domestic vehicle production amongst the incoming Chinese competitors. We already do this well for companies from USA, Japan, and Korea.&lt;/p&gt;
+&lt;p&gt;Source: &lt;a href=&quot;https://financialpost.com/commodities/energy/electric-vehicles/first-chinese-made-evs-arrive-canada&quot;&gt;https://financialpost.com/commodities/energy/electric-vehicles/first-chinese-made-evs-arrive-canada&lt;/a&gt;&lt;/p&gt;&lt;p&gt;Source: &lt;a href=&quot;https://web.archive.org/web/20260530193713/https://financialpost.com/commodities/energy/electric-vehicles/first-chinese-made-evs-arrive-canada&quot;&gt;https://web.archive.org/web/20260530193713/https://financialpost.com/commodities/energy/electric-vehicles/first-chinese-made-evs-arrive-canada&lt;/a&gt;&lt;/p&gt;
+</description>
       </item>
       <item>
           <title>Operating System Age Verification Pushed by Canadian Porn Company</title>
           <pubDate>Tue, 19 May 2026 12:00:00 +0000</pubDate>
           <author>Lzon</author>
-          <link>https://lzon.ca/news/news-000010-child-safety-privacy/</link>
-          <guid isPermaLink="false">https://lzon.ca/news/news-000010-child-safety-privacy/</guid>
-          <description xml:base="https://lzon.ca/news/news-000010-child-safety-privacy/">&lt;p&gt;&lt;a rel=&quot;noopener external&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;en.wikipedia.org&#x2F;wiki&#x2F;Aylo&quot;&gt;Aylo&lt;&#x2F;a&gt;, parent company of PornHub and formerly named ‘MindGeek’ has been lobbying in Canada and other countries for operating system level age verification.&lt;&#x2F;p&gt;</description>
+          <link>https://lzon.ca/posts/news/000010-child-safety-privacy/</link>
+          <guid isPermaLink="false">https://lzon.ca/posts/news/10</guid>
+          <category domain="https://lzon.ca/posts/news/">News</category>
+          <description xml:base="https://lzon.ca/posts/news/000010-child-safety-privacy/">&lt;p&gt;&lt;a rel=&quot;noopener external&quot; target=&quot;_blank&quot; href=&quot;https://en.wikipedia.org/wiki/Aylo&quot;&gt;Aylo&lt;/a&gt;, parent company of PornHub and formerly named ‘MindGeek’ has been lobbying in Canada and other countries for operating system level age verification.&lt;/p&gt;
+&lt;span id=&quot;continue-reading&quot;&gt;&lt;/span&gt;
+&lt;p&gt;The pornography company Aylo is currently lobbying in Canada against Bill S-209 which would hold online platforms responsible for ensuring that children do not access age-restricted content.&lt;/p&gt;
+&lt;p&gt;They argue that such measures would not work, and that it would be more appropriate and effective to impose age-verification within the operating system of the user’s device. This argument is being made in bad faith as an effort to avoid being regulated.&lt;/p&gt;
+&lt;p&gt;Implementing age verification within the operating system is ridiculous and is not the appropriate way to prevent harm to children while online. I also believe that it creates a politic harzard since it grants new powers to the government which are liable to eventually be abused.&lt;/p&gt;
+&lt;p&gt;Source: &lt;a href=&quot;https://defenddignity.ca/child-safety-privacy-and-the-responsibility-of-powerful-platforms/&quot;&gt;https://defenddignity.ca/child-safety-privacy-and-the-responsibility-of-powerful-platforms/&lt;/a&gt;&lt;/p&gt;&lt;p&gt;Source: &lt;a href=&quot;https://web.archive.org/web/20260519191539/https://defenddignity.ca/child-safety-privacy-and-the-responsibility-of-powerful-platforms/&quot;&gt;https://web.archive.org/web/20260519191539/https://defenddignity.ca/child-safety-privacy-and-the-responsibility-of-powerful-platforms/&lt;/a&gt;&lt;/p&gt;
+</description>
       </item>
     </channel>
 </rss>

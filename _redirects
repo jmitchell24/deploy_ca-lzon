@@ -1,69 +1,157 @@
-# Netlify redirects for lzon.ca (copied to the site root by Zola from static/).
-# First matching rule wins. Plain 301 never overrides a page that exists at the same path.
+# Netlify redirects for lzon.ca (Zola copies static/ to the site root).
+# First matching rule wins. A plain 301 never overrides a file that exists at the same path.
+# Generated 2026-11-05 for the unified-posts migration: every old URL points straight at
+# its final page (no chains). Old URLs come from a build of the site before the migration.
 
-# ── Former Zola aliases (content/posts/{other,site,tips}) ─────────────────────
-# Aliases were removed from front matter; these rules replace them.
-/posts/daily/social-cheat-codes/     /posts/other/social-cheat-codes/    301
-/posts/daily/what-software-i-use/    /posts/other/what-software-i-use/   301
-/posts/other/visual-century/         /posts/other/visual-time/           301
+# ── Blog posts: old /posts/<subsection>/<slug>/ ───────────────────────────────
+/posts/algoma/algoma-docs/                          /posts/blog/algoma-docs/              301
+/posts/algoma/algoma-intro/                         /posts/blog/algoma-intro/             301
+/posts/algoma/anonymous-functions/                  /posts/blog/anonymous-functions/      301
+/posts/algoma/mako-intro/                           /posts/blog/mako-intro/               301
+/posts/other/2025-review-ai/                        /posts/blog/2025-review-ai/           301
+/posts/other/2025-review-gaming/                    /posts/blog/2025-review-gaming/       301
+/posts/other/2025-review-smartphones/               /posts/blog/2025-review-smartphones/  301
+/posts/other/cancelling-claude/                     /posts/blog/cancelling-claude/        301
+/posts/other/good-youtube-channels/                 /posts/blog/good-youtube-channels/    301
+/posts/other/gsv-sfnzm-kzig/                        /posts/blog/gsv-sfnzm-kzig/           301
+/posts/other/gsv-yozxp/                             /posts/blog/gsv-yozxp/                301
+/posts/other/homescreen-mantras/                    /posts/blog/homescreen-mantras/       301
+/posts/other/jon-bday-2026/                         /posts/blog/jon-bday-2026/            301
+/posts/other/llm-fantasy/                           /posts/blog/llm-fantasy/              301
+/posts/other/local-llm-testing/                     /posts/blog/local-llm-testing/        301
+/posts/other/microsoft-user-abuse/                  /posts/blog/microsoft-user-abuse/     301
+/posts/other/no-steam-frame/                        /posts/blog/no-steam-frame/           301
+/posts/other/social-cheat-codes/                    /posts/blog/social-cheat-codes/       301
+/posts/other/thoughts-ai-era/                       /posts/blog/thoughts-ai-era/          301
+/posts/other/visual-time/                           /posts/blog/visual-time/              301
+/posts/other/what-software-i-use/                   /posts/blog/what-software-i-use/      301
+/posts/other/youtube-algorithm/                     /posts/blog/youtube-algorithm/        301
+/posts/recipes/antojitos/                           /posts/blog/antojitos/                301
+/posts/recipes/baked-beans-and-rice/                /posts/blog/baked-beans-and-rice/     301
+/posts/recipes/baked-cajun-pork/                    /posts/blog/baked-cajun-pork/         301
+/posts/recipes/baked-curry-pork/                    /posts/blog/baked-curry-pork/         301
+/posts/recipes/baked-lemon-pepper-pork/             /posts/blog/baked-lemon-pepper-pork/  301
+/posts/recipes/barbs-banana-bread/                  /posts/blog/barbs-banana-bread/       301
+/posts/recipes/barbs-beef-stroganoff/               /posts/blog/barbs-beef-stroganoff/    301
+/posts/recipes/beef-stroganoff/                     /posts/blog/beef-stroganoff/          301
+/posts/recipes/black-bean-burgers/                  /posts/blog/black-bean-burgers/       301
+/posts/recipes/cajun-seasoning/                     /posts/blog/cajun-seasoning/          301
+/posts/recipes/chicken-fajita-loaf/                 /posts/blog/chicken-fajita-loaf/      301
+/posts/recipes/creamy-garlic-pasta/                 /posts/blog/creamy-garlic-pasta/      301
+/posts/recipes/ginger-bread/                        /posts/blog/ginger-bread/             301
+/posts/recipes/ginger-pork-stir-fry/                /posts/blog/ginger-pork-stir-fry/     301
+/posts/recipes/jollof-baked-rice/                   /posts/blog/jollof-baked-rice/        301
+/posts/recipes/jollof-meat-filling/                 /posts/blog/jollof-meat-filling/      301
+/posts/recipes/jollof-seasoning/                    /posts/blog/jollof-seasoning/         301
+/posts/recipes/peanut-hummus/                       /posts/blog/peanut-hummus/            301
+/posts/recipes/pollo-sabrosa/                       /posts/blog/pollo-sabrosa/            301
+/posts/recipes/swiss-chalet-sauce/                  /posts/blog/swiss-chalet-sauce/       301
+/posts/recipes/zucchini-pizza-caserole/             /posts/blog/zucchini-pizza-caserole/  301
+/posts/ruminations/gratitude/                       /posts/blog/gratitude/                301
+/posts/ruminations/make-your-bed/                   /posts/blog/make-your-bed/            301
+/posts/ruminations/precarity/                       /posts/blog/precarity/                301
+/posts/ruminations/sleep-well/                      /posts/blog/sleep-well/               301
+/posts/ruminations/twenty-five/                     /posts/blog/twenty-five/              301
+/posts/series_daily-grateful/chip-nuts/             /posts/blog/chip-nuts/                301
+/posts/series_daily-grateful/christine-bakery/      /posts/blog/christine-bakery/         301
+/posts/series_daily-grateful/dream-trawler/         /posts/blog/dream-trawler/            301
+/posts/series_daily-grateful/driving/               /posts/blog/driving/                  301
+/posts/series_daily-grateful/keep-android-open/     /posts/blog/keep-android-open/        301
+/posts/series_daily-grateful/lzon/                  /posts/blog/lzon/                     301
+/posts/series_daily-grateful/riegelein-lady-bugs/   /posts/blog/riegelein-lady-bugs/      301
+/posts/series_daily-grateful/tolkien/               /posts/blog/tolkien/                  301
+/posts/series_daily-grateful/tomatoes-and-bread/    /posts/blog/tomatoes-and-bread/       301
+/posts/series_daily-grateful/typing-and-keyboards/  /posts/blog/typing-and-keyboards/     301
+/posts/series_duck-digest/android-super-safety/     /posts/blog/android-super-safety/     301
+/posts/series_duck-digest/clipx/                    /posts/blog/clipx/                    301
+/posts/series_duck-digest/gadget-gnomes/            /posts/blog/gadget-gnomes/            301
+/posts/series_duck-digest/llm-burnout/              /posts/blog/llm-burnout/              301
+/posts/series_duck-digest/local-letter-merchant/    /posts/blog/local-letter-merchant/    301
+/posts/series_duck-digest/notepad-verified/         /posts/blog/notepad-verified/         301
+/posts/series_duck-digest/nvidia-agentic-gamers/    /posts/blog/nvidia-agentic-gamers/    301
+/posts/series_duck-digest/trump-geese/              /posts/blog/trump-geese/              301
+/posts/series_duck-digest/tv-inflation/             /posts/blog/tv-inflation/             301
+/posts/site/code-sketch-demo/                       /posts/blog/code-sketch-demo/         301
+/posts/site/emailverification-info/                 /posts/blog/emailverification-info/   301
+/posts/site/feeds/                                  /posts/blog/feeds/                    301
+/posts/site/lzon-day-100/                           /posts/blog/lzon-day-100/             301
+/posts/site/lzon-week-one-update/                   /posts/blog/lzon-week-one-update/     301
+/posts/site/news-feed-update/                       /posts/blog/news-feed-update/         301
+/posts/tips/cpp-for-range-init/                     /posts/blog/cpp-for-range-init/       301
+/posts/tips/cpp-maybe-type/                         /posts/blog/cpp-maybe-type/           301
+/posts/tips/cpp-result-type/                        /posts/blog/cpp-result-type/          301
+/posts/tips/cpp-single-instance/                    /posts/blog/cpp-single-instance/      301
+/posts/tips/cpp-value-lock-type/                    /posts/blog/cpp-value-lock-type/      301
+/posts/tips/filename-dating/                        /posts/blog/filename-dating/          301
+/posts/tips/ghostty-tmux-ssh/                       /posts/blog/ghostty-tmux-ssh/         301
+/posts/tips/pleasant-passwords/                     /posts/blog/pleasant-passwords/       301
+/posts/tips/todo-howto/                             /posts/blog/todo-howto/               301
+/posts/tips/zfs-dataset-tuning/                     /posts/blog/zfs-dataset-tuning/       301
+/posts/tips/zola-feed-hack/                         /posts/blog/zola-feed-hack/           301
+
+# ── Blog subsections: now tag pages ───────────────────────────────────────────
+/posts/algoma/                                      /blog-tags/algoma/                    301
+/posts/algoma/page/*                                /blog-tags/algoma/                    301
+/posts/other/                                       /blog-tags/marginalia/                301
+/posts/other/page/*                                 /blog-tags/marginalia/                301
+/posts/recipes/                                     /blog-tags/recipes/                   301
+/posts/recipes/page/*                               /blog-tags/recipes/                   301
+/posts/ruminations/                                 /blog-tags/ruminations/               301
+/posts/ruminations/page/*                           /blog-tags/ruminations/               301
+/posts/series_daily-grateful/                       /blog-tags/daily-grateful/            301
+/posts/series_daily-grateful/page/*                 /blog-tags/daily-grateful/            301
+/posts/series_duck-digest/                          /blog-tags/duck-digest/               301
+/posts/series_duck-digest/page/*                    /blog-tags/duck-digest/               301
+/posts/site/                                        /blog-tags/site/                      301
+/posts/site/page/*                                  /blog-tags/site/                      301
+/posts/tips/                                        /blog-tags/tips/                      301
+/posts/tips/page/*                                  /blog-tags/tips/                      301
+
+# ── Former Zola aliases (dropped 2026-11-05) ──────────────────────────────────
+/posts/daily/chip-nuts/                             /posts/blog/chip-nuts/                301
+/posts/daily/christine-bakery/                      /posts/blog/christine-bakery/         301
+/posts/daily/dream-trawler/                         /posts/blog/dream-trawler/            301
+/posts/daily/driving/                               /posts/blog/driving/                  301
+/posts/daily/keep-android-open/                     /posts/blog/keep-android-open/        301
+/posts/daily/lzon/                                  /posts/blog/lzon/                     301
+/posts/daily/riegelein-lady-bugs/                   /posts/blog/riegelein-lady-bugs/      301
+/posts/daily/social-cheat-codes/                    /posts/blog/social-cheat-codes/       301
+/posts/daily/tomatoes-and-bread/                    /posts/blog/tomatoes-and-bread/       301
+/posts/daily/typing-and-keyboards/                  /posts/blog/typing-and-keyboards/     301
+/posts/daily/what-software-i-use/                   /posts/blog/what-software-i-use/      301
+/posts/life/gratitude/                              /posts/blog/gratitude/                301
+/posts/life/make-your-bed/                          /posts/blog/make-your-bed/            301
+/posts/life/precarity/                              /posts/blog/precarity/                301
+/posts/life/sleep-well/                             /posts/blog/sleep-well/               301
+/posts/life/twenty-five/                            /posts/blog/twenty-five/              301
+/posts/other/visual-century/                        /posts/blog/visual-time/              301
+/posts/satire/android-super-safety/                 /posts/blog/android-super-safety/     301
+/posts/satire/clipx/                                /posts/blog/clipx/                    301
+/posts/satire/nvidia-agentic-gamers/                /posts/blog/nvidia-agentic-gamers/    301
+/posts/series/duck/gadget-gnomes/                   /posts/blog/gadget-gnomes/            301
+/posts/series/duck/gadget-gremlins/                 /posts/blog/gadget-gnomes/            301
+/posts/series/grateful/chip-nuts/                   /posts/blog/chip-nuts/                301
+/posts/series/grateful/christine-bakery/            /posts/blog/christine-bakery/         301
+/posts/series/grateful/dream-trawler/               /posts/blog/dream-trawler/            301
+/posts/series/grateful/keep-android-open/           /posts/blog/keep-android-open/        301
+/posts/series/grateful/riegelein-lady-bugs/         /posts/blog/riegelein-lady-bugs/      301
+/posts/series/grateful/typing-and-keyboards/        /posts/blog/typing-and-keyboards/     301
 
 # ── Hacker News submissions (news.ycombinator.com/submitted?id=jpmitchell) ────
-# Old URLs that were submitted and went 404 when aliases were dropped (2026-11-05).
-/posts/series/grateful/keep-android-open/       /posts/series_daily-grateful/keep-android-open/       301
-/posts/series/grateful/typing-and-keyboards/    /posts/series_daily-grateful/typing-and-keyboards/    301
-/posts/series/duck/clipx/                       /posts/series_duck-digest/clipx/                      301
-/posts/series/duck/gadget-gnomes/               /posts/series_duck-digest/gadget-gnomes/              301
-/posts/series/duck/llm-burnout/                 /posts/series_duck-digest/llm-burnout/                301
-/posts/series/duck/local-letter-merchant/       /posts/series_duck-digest/local-letter-merchant/      301
-/posts/series/duck/notepad-verified/            /posts/series_duck-digest/notepad-verified/           301
-/posts/series/duck/tv-inflation/                /posts/series_duck-digest/tv-inflation/               301
+# Old URLs from an earlier structure that HN still links to.
+/posts/series/duck/clipx/                           /posts/blog/clipx/                    301
+/posts/series/duck/llm-burnout/                     /posts/blog/llm-burnout/              301
+/posts/series/duck/local-letter-merchant/           /posts/blog/local-letter-merchant/    301
+/posts/series/duck/notepad-verified/                /posts/blog/notepad-verified/         301
+/posts/series/duck/tv-inflation/                    /posts/blog/tv-inflation/             301
 
-# ── Current URLs to preserve through the unified-posts migration ──────────────
-# Live (non-draft) pages and sections in content/posts/{other,site,tips} as of 2026-11-05.
-# Inactive: each still resolves to a real page. The migration fills in the new URL
-# and uncomments these (and should repoint the alias rules above, to avoid chains).
-# Format: # <current url>  <new url: TBD>  301   (source: <content path>)
-# /posts/other/                          TBD  301   (source: posts/other/_index.md)
-# /posts/other/page/2/                   TBD  301   (source: posts/other/_index.md)
-# /posts/other/page/3/                   TBD  301   (source: posts/other/_index.md)
-# /posts/other/2025-review-ai/           TBD  301   (source: posts/other/2025-review-ai.md)
-# /posts/other/2025-review-gaming/       TBD  301   (source: posts/other/2025-review-gaming.md)
-# /posts/other/2025-review-smartphones/  TBD  301   (source: posts/other/2025-review-phones.md)
-# /posts/other/gsv-yozxp/                TBD  301   (source: posts/other/2026-03-31_gsv-yozxp.md)
-# /posts/other/gsv-sfnzm-kzig/           TBD  301   (source: posts/other/2026-08-10_the-human-part.md)
-# /posts/other/visual-time/              TBD  301   (source: posts/other/2026-09-14_century/index.md)
-# /posts/other/cancelling-claude/        TBD  301   (source: posts/other/cancelling-claude.md)
-# /posts/other/thoughts-ai-era/          TBD  301   (source: posts/other/forty-months-of-ai/index.md)
-# /posts/other/jon-bday-2026/            TBD  301   (source: posts/other/jon-bday-2026.md)
-# /posts/other/good-youtube-channels/    TBD  301   (source: posts/other/listening-to-youtube.md)
-# /posts/other/llm-fantasy/              TBD  301   (source: posts/other/llm-fantasy.md)
-# /posts/other/local-llm-testing/        TBD  301   (source: posts/other/local-llm-testing/index.md)
-# /posts/other/microsoft-user-abuse/     TBD  301   (source: posts/other/microsoft-hates-you/index.md)
-# /posts/other/no-steam-frame/           TBD  301   (source: posts/other/no-steam-frame/index.md)
-# /posts/other/homescreen-mantras/       TBD  301   (source: posts/other/phone-mantras.md)
-# /posts/other/social-cheat-codes/       TBD  301   (source: posts/other/social-cheat-codes.md)
-# /posts/other/what-software-i-use/      TBD  301   (source: posts/other/some-software-i-use.md)
-# /posts/other/youtube-algorithm/        TBD  301   (source: posts/other/youtube-algorithm/index.md)
-# /posts/site/                           TBD  301   (source: posts/site/_index.md)
-# /posts/site/code-sketch-demo/          TBD  301   (source: posts/site/code-sketch-demo/index.md)
-# /posts/site/lzon-day-100/              TBD  301   (source: posts/site/day-100.md)
-# /posts/site/feeds/                     TBD  301   (source: posts/site/feeds/index.md)
-# /posts/site/news-feed-update/          TBD  301   (source: posts/site/news-feed.md)
-# /posts/site/emailverification-info/    TBD  301   (source: posts/site/scam-not-scam-1.md)
-# /posts/site/lzon-week-one-update/      TBD  301   (source: posts/site/week-one.md)
-# /posts/tips/                           TBD  301   (source: posts/tips/_index.md)
-# /posts/tips/page/2/                    TBD  301   (source: posts/tips/_index.md)
-# /posts/tips/cpp-for-range-init/        TBD  301   (source: posts/tips/cpp-for-range-init.md)
-# /posts/tips/cpp-maybe-type/            TBD  301   (source: posts/tips/cpp-maybe-type.md)
-# /posts/tips/cpp-result-type/           TBD  301   (source: posts/tips/cpp-result-type.md)
-# /posts/tips/cpp-single-instance/       TBD  301   (source: posts/tips/cpp-single-instance.md)
-# /posts/tips/cpp-value-lock-type/       TBD  301   (source: posts/tips/cpp-value-lock-type.md)
-# /posts/tips/filename-dating/           TBD  301   (source: posts/tips/filename-dating.md)
-# /posts/tips/pleasant-passwords/        TBD  301   (source: posts/tips/pleasant-passwords/index.md)
-# /posts/tips/ghostty-tmux-ssh/          TBD  301   (source: posts/tips/ssh-with-ghostty.md)
-# /posts/tips/todo-howto/                TBD  301   (source: posts/tips/todo-howto/index.md)
-# /posts/tips/zfs-dataset-tuning/        TBD  301   (source: posts/tips/zfs-dataset-defaults.md)
-# /posts/tips/zola-feed-hack/            TBD  301   (source: posts/tips/zola-feed-hack.md)
-# /posts/other/page/1/                   TBD  301   (source: posts/other/_index.md, Zola paginator redirect)
-# /posts/site/page/1/                    TBD  301   (source: posts/site/_index.md, Zola paginator redirect)
-# /posts/tips/page/1/                    TBD  301   (source: posts/tips/_index.md, Zola paginator redirect)
+# ── Manuscripts: moved out of /posts/ ─────────────────────────────────────────
+/posts/manuscripts/                                 /manuscripts/                         301
+/posts/manuscripts/algoma4/                         /manuscripts/algoma4/                 301
+/posts/manuscripts/page/*                           /manuscripts/                         301
+
+# ── Old feeds linked from post bodies ─────────────────────────────────────────
+/curios/atom.xml                                    /posts/curio/atom.xml                 301
+/curios/rss.xml                                     /posts/curio/rss.xml                  301
+/news/atom.xml                                      /posts/news/atom.xml                  301
+/news/rss.xml                                       /posts/news/rss.xml                   301

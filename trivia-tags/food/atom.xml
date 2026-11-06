@@ -15,44 +15,50 @@
   
   <updated>2026-11-01T12:00:00Z</updated>
 
-  
-  
-  
+  <!-- Entries. Quotes (their own section feed) list one quote each. Posts go through
+       macros/feed.html, so this feed, rss.xml and pages.json agree: each entry is titled as
+       the site titles the post, carries its type as a <category>, and in the merged /posts/
+       feed leads its title with the type ("[ News ] …"). -->
 
   
   
   
-  
-  
-  
 
-  
-  
-
-  
-
+  <!-- quotes and numbered post types sort by filename, since dates alone aren't unique -->
   
 
   
   <entry>
-    <title></title>
-    <id>https://lzon.ca/trivia/000010/</id>
-    <link href="https://lzon.ca/trivia/000010/"/>
+    <title>George Renninger, the 19th century confectioner is regarded as the original creator of Candy Corn.</title>
+    <id>https://lzon.ca/posts/trivia/10</id>
+    <link rel="alternate" href="https://lzon.ca/posts/trivia/000010/"/>
+    <category term="trivia" label="Trivia" scheme="https://lzon.ca/posts/trivia/"/>
     <published>2026-10-31T12:00:00Z</published>
     <updated>2026-11-01T12:00:00Z</updated>
     <author><name>Lzon</name></author>
-    <summary type="html" xml:base="https://lzon.ca/trivia/000010/">&lt;p&gt;George Renninger, the 19th century confectioner is regarded as the original creator of Candy Corn.&lt;&#x2F;p&gt;</summary>
-  </entry>
+    <content type="html" xml:base="https://lzon.ca/posts/trivia/000010/">
 
-  
+&lt;p&gt;He originally referred to his classic Autumn treat as ‘Chicken Feed’. It wouldn’t become popularly named Candy Corn until after World War 1, when the American diet began incorporating more corn-derived foods.&lt;/p&gt;
+&lt;p&gt;As one of its original producers, the &lt;a rel=&quot;noopener external&quot; target=&quot;_blank&quot; href=&quot;https://en.wikipedia.org/wiki/Jelly_Belly&quot;&gt;Goelitz Candy Company&lt;/a&gt; (now Jelly Belly) helped to popularize the candy. They ran ad campaigns including one in which a bold rooster characture declares himself the “King of the Candy Corn Fields”.&lt;/p&gt;
+&lt;p&gt;In the modern era most Candy Corn is produced by Ferrero under the Brach’s brand. They control roughly 85% of the market. The National Confectioners Association has estimated that about 35 million pounds of Candy Corn are produced each year. They have also declared October 30th to be National Candy Corn Day.&lt;/p&gt;
+&lt;p&gt;Source: &lt;a href=&quot;https://en.wikipedia.org/wiki/Candy_corn&quot;&gt;https://en.wikipedia.org/wiki/Candy_corn&lt;/a&gt;&lt;/p&gt;&lt;p&gt;Source: &lt;a href=&quot;https://alwaysatreat.com/candy-moments/halloween-central/everything-candy-corn/&quot;&gt;https://alwaysatreat.com/candy-moments/halloween-central/everything-candy-corn/&lt;/a&gt;&lt;/p&gt;&lt;p&gt;Source: &lt;a href=&quot;https://www.thederrick.com/opinion/greene-column-like-it-or-not-candy-corn-withstands-the-test-of-time/article_8d728b97-3ac0-4845-a4ab-17282341bf04.html&quot;&gt;https://www.thederrick.com/opinion/greene-column-like-it-or-not-candy-corn-withstands-the-test-of-time/article_8d728b97-3ac0-4845-a4ab-17282341bf04.html&lt;/a&gt;&lt;/p&gt;
+</content>
+  </entry>
   <entry>
-    <title></title>
-    <id>https://lzon.ca/trivia/000003/</id>
-    <link href="https://lzon.ca/trivia/000003/"/>
+    <title>The Costco hotdog combo has not had a price increase in over four decades.</title>
+    <id>https://lzon.ca/posts/trivia/3</id>
+    <link rel="alternate" href="https://lzon.ca/posts/trivia/000003/"/>
+    <category term="trivia" label="Trivia" scheme="https://lzon.ca/posts/trivia/"/>
     <published>2026-10-23T12:00:00Z</published>
     <updated>2026-10-23T12:00:00Z</updated>
     <author><name>Lzon</name></author>
-    <summary type="html" xml:base="https://lzon.ca/trivia/000003/">&lt;p&gt;The Costco hotdog combo has not had a price increase in over four decades.&lt;&#x2F;p&gt;</summary>
+    <content type="html" xml:base="https://lzon.ca/posts/trivia/000003/">
+&lt;p&gt;In 1984, Costco began offering a $1.50 combo deal in its food courts which included a soda and a single hot dog.
+The deal was introduced only one year after opening its very first warehouse. As of 2026 the price has never been increased on the combo.
+If adjusted for inflation the cost of the combo would have risen over three fold (to $4.86 USD at time of writing).
+As late as 2024 Costco has stated publically that they do not ever intend to increase the price.&lt;/p&gt;
+&lt;p&gt;Source: &lt;a href=&quot;https://en.wikipedia.org/wiki/Costco_hot_dog&quot;&gt;https://en.wikipedia.org/wiki/Costco_hot_dog&lt;/a&gt;&lt;/p&gt;
+</content>
   </entry>
 
 </feed>

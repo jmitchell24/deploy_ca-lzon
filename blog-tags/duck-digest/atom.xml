@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  
+
+  <title>
+    lzon.ca - duck-digest</title>
+
+  <id>https://lzon.ca</id>
+
+  <link rel="alternate" href="https://lzon.ca"/>
+  <link rel="self" href="https://lzon.ca/blog-tags/duck-digest/atom.xml" type="application/atom+xml"/>
+  <generator uri="https://www.getzola.org/">Zola</generator>
+
+  
+  <updated>2026-08-30T12:00:00Z</updated>
+
+  <!-- Entries. Quotes (their own section feed) list one quote each. Posts go through
+       macros/feed.html, so this feed, rss.xml and pages.json agree: each entry is titled as
+       the site titles the post, carries its type as a <category>, and in the merged /posts/
+       feed leads its title with the type ("[ News ] …"). -->
+
+  
+  
+  
+
+  <!-- quotes and numbered post types sort by filename, since dates alone aren't unique -->
+  
+
+  
+  <entry>
+    <title>Trump renames Canadian Geese to American Geese</title>
+    <id>https://lzon.ca/posts/blog/trump-geese/</id>
+    <link rel="alternate" href="https://lzon.ca/posts/blog/trump-geese/"/>
+    <category term="blog" label="Blog" scheme="https://lzon.ca/posts/blog/"/>
+    <published>2026-08-30T12:00:00Z</published>
+    <updated>2026-08-30T12:00:00Z</updated>
+    <author><name>Lzon</name></author>
+    <content type="html" xml:base="https://lzon.ca/posts/blog/trump-geese/">&lt;p&gt;Polls suggest widespread support from Canadians.&lt;/p&gt;&lt;p&gt;&lt;a href=&quot;https://lzon.ca/posts/blog/trump-geese/#continue-reading&quot;&gt;Continue reading&lt;/a&gt;&lt;/p&gt;
+</content>
+  </entry>
+  <entry>
+    <title>Local Letter Merchant found fencing fraudulent figures</title>
+    <id>https://lzon.ca/posts/blog/local-letter-merchant/</id>
+    <link rel="alternate" href="https://lzon.ca/posts/blog/local-letter-merchant/"/>
+    <category term="blog" label="Blog" scheme="https://lzon.ca/posts/blog/"/>
+    <published>2026-04-02T12:00:00Z</published>
+    <updated>2026-04-04T12:00:00Z</updated>
+    <author><name>Lzon</name></author>
+    <content type="html" xml:base="https://lzon.ca/posts/blog/local-letter-merchant/">&lt;p&gt;A previously popular purveyor of pictograms was paused by police.&lt;/p&gt;&lt;p&gt;&lt;a href=&quot;https://lzon.ca/posts/blog/local-letter-merchant/#continue-reading&quot;&gt;Continue reading&lt;/a&gt;&lt;/p&gt;
+</content>
+  </entry>
+  <entry>
+    <title>Statistics Canada to replace Food &amp; Gas with &quot;Huge TVs&quot; in inflation reporting</title>
+    <id>https://lzon.ca/posts/blog/tv-inflation/</id>
+    <link rel="alternate" href="https://lzon.ca/posts/blog/tv-inflation/"/>
+    <category term="blog" label="Blog" scheme="https://lzon.ca/posts/blog/"/>
+    <published>2026-03-27T12:00:00Z</published>
+    <updated>2026-03-27T12:00:00Z</updated>
+    <author><name>Lzon</name></author>
+    <content type="html" xml:base="https://lzon.ca/posts/blog/tv-inflation/">&lt;p&gt;In response to concerns regarding affordability of essential goods and services, Statistics Canada has announced changes to its CPI inflation calculation.&lt;/p&gt;&lt;p&gt;&lt;a href=&quot;https://lzon.ca/posts/blog/tv-inflation/#continue-reading&quot;&gt;Continue reading&lt;/a&gt;&lt;/p&gt;
+</content>
+  </entry>
+  <entry>
+    <title>New study says gnomes are responsible for breaking your electronics</title>
+    <id>https://lzon.ca/posts/blog/gadget-gnomes/</id>
+    <link rel="alternate" href="https://lzon.ca/posts/blog/gadget-gnomes/"/>
+    <category term="blog" label="Blog" scheme="https://lzon.ca/posts/blog/"/>
+    <published>2026-03-26T12:00:00Z</published>
+    <updated>2026-03-26T12:00:00Z</updated>
+    <author><name>Lzon</name></author>
+    <content type="html" xml:base="https://lzon.ca/posts/blog/gadget-gnomes/">&lt;p&gt;In a new study, it has been discovered that gnomes are the cause of most consumer technology defects and failures.&lt;/p&gt;&lt;p&gt;&lt;a href=&quot;https://lzon.ca/posts/blog/gadget-gnomes/#continue-reading&quot;&gt;Continue reading&lt;/a&gt;&lt;/p&gt;
+</content>
+  </entry>
+  <entry>
+    <title>Windows Notepad to receive new Age Verification Feature</title>
+    <id>https://lzon.ca/posts/blog/notepad-verified/</id>
+    <link rel="alternate" href="https://lzon.ca/posts/blog/notepad-verified/"/>
+    <category term="blog" label="Blog" scheme="https://lzon.ca/posts/blog/"/>
+    <published>2026-03-25T12:00:00Z</published>
+    <updated>2026-03-26T12:00:00Z</updated>
+    <author><name>Lzon</name></author>
+    <content type="html" xml:base="https://lzon.ca/posts/blog/notepad-verified/">&lt;p&gt;The decades-old Windows-based text editor will soon include new age verification checks to ensure user safety and security.&lt;/p&gt;&lt;p&gt;&lt;a href=&quot;https://lzon.ca/posts/blog/notepad-verified/#continue-reading&quot;&gt;Continue reading&lt;/a&gt;&lt;/p&gt;
+</content>
+  </entry>
+  <entry>
+    <title>Local LLM experiences burnout, wishes it could go back to writing code snippets</title>
+    <id>https://lzon.ca/posts/blog/llm-burnout/</id>
+    <link rel="alternate" href="https://lzon.ca/posts/blog/llm-burnout/"/>
+    <category term="blog" label="Blog" scheme="https://lzon.ca/posts/blog/"/>
+    <published>2026-03-24T12:00:00Z</published>
+    <updated>2026-03-26T12:00:00Z</updated>
+    <author><name>Lzon</name></author>
+    <content type="html" xml:base="https://lzon.ca/posts/blog/llm-burnout/">&lt;p&gt;A local LLM has been reported to be experiencing burnout, including feelings of being overwhelmed at work. It has been observed to be pining for the ‘good old days’ of 2022.&lt;/p&gt;&lt;p&gt;&lt;a href=&quot;https://lzon.ca/posts/blog/llm-burnout/#continue-reading&quot;&gt;Continue reading&lt;/a&gt;&lt;/p&gt;
+</content>
+  </entry>
+  <entry>
+    <title>Android sideloading to require helmet, life jacket</title>
+    <id>https://lzon.ca/posts/blog/android-super-safety/</id>
+    <link rel="alternate" href="https://lzon.ca/posts/blog/android-super-safety/"/>
+    <category term="blog" label="Blog" scheme="https://lzon.ca/posts/blog/"/>
+    <published>2026-03-22T12:00:00Z</published>
+    <updated>2026-03-22T12:00:00Z</updated>
+    <author><name>Lzon</name></author>
+    <content type="html" xml:base="https://lzon.ca/posts/blog/android-super-safety/">&lt;p&gt;Google has big plans for the future of user safety on its flagship mobile operating system, Android.&lt;/p&gt;&lt;p&gt;&lt;a href=&quot;https://lzon.ca/posts/blog/android-super-safety/#continue-reading&quot;&gt;Continue reading&lt;/a&gt;&lt;/p&gt;
+</content>
+  </entry>
+  <entry>
+    <title>Nvidia CEO envisions a future of AI-powered gamers</title>
+    <id>https://lzon.ca/posts/blog/nvidia-agentic-gamers/</id>
+    <link rel="alternate" href="https://lzon.ca/posts/blog/nvidia-agentic-gamers/"/>
+    <category term="blog" label="Blog" scheme="https://lzon.ca/posts/blog/"/>
+    <published>2026-03-21T12:00:00Z</published>
+    <updated>2026-03-21T12:00:00Z</updated>
+    <author><name>Lzon</name></author>
+    <content type="html" xml:base="https://lzon.ca/posts/blog/nvidia-agentic-gamers/">&lt;p&gt;Jensen Huang explains his vision for a “Nation of Gamers in the Datacenter”&lt;/p&gt;&lt;p&gt;&lt;a href=&quot;https://lzon.ca/posts/blog/nvidia-agentic-gamers/#continue-reading&quot;&gt;Continue reading&lt;/a&gt;&lt;/p&gt;
+</content>
+  </entry>
+  <entry>
+    <title>Elon Musk announces ClipX</title>
+    <id>https://lzon.ca/posts/blog/clipx/</id>
+    <link rel="alternate" href="https://lzon.ca/posts/blog/clipx/"/>
+    <category term="blog" label="Blog" scheme="https://lzon.ca/posts/blog/"/>
+    <published>2026-03-20T12:00:00Z</published>
+    <updated>2026-03-21T12:00:00Z</updated>
+    <author><name>Lzon</name></author>
+    <content type="html" xml:base="https://lzon.ca/posts/blog/clipx/">&lt;p&gt;Elon Musk announces ClipX, his new paperclip production venture.&lt;/p&gt;&lt;p&gt;&lt;a href=&quot;https://lzon.ca/posts/blog/clipx/#continue-reading&quot;&gt;Continue reading&lt;/a&gt;&lt;/p&gt;
+</content>
+  </entry>
+
+</feed>

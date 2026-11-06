@@ -9,37 +9,72 @@
       <language>en</language>
       <atom:link href="https://lzon.ca/trivia-tags/science/rss.xml" rel="self" type="application/rss+xml"/>
       <lastBuildDate>Mon, 26 Oct 2026 12:00:00 +0000</lastBuildDate>
+      <!-- Items. Quotes (their own section feed) list one quote each. Posts go through
+           macros/feed.html, so this feed, atom.xml and pages.json agree: each item is titled
+           as the site titles the post, carries its type as a <category>, and in the merged
+           /posts/ feed leads its title with the type ("[ News ] …"). -->
       
       
       
-      
-      
+      <!-- quotes and numbered post types sort by filename, since dates alone aren't unique -->
       
       
       <item>
-          <title></title>
+          <title>Among all species Humans are one of the best at long-distance endurance running.</title>
           <pubDate>Mon, 26 Oct 2026 12:00:00 +0000</pubDate>
           <author>Lzon</author>
-          <link>https://lzon.ca/trivia/000006/</link>
-          <guid isPermaLink="false">https://lzon.ca/trivia/000006/</guid>
-          <description xml:base="https://lzon.ca/trivia/000006/">&lt;p&gt;Among all species Humans are one of the best at long-distance endurance running.&lt;&#x2F;p&gt;</description>
+          <link>https://lzon.ca/posts/trivia/000006/</link>
+          <guid isPermaLink="false">https://lzon.ca/posts/trivia/6</guid>
+          <category domain="https://lzon.ca/posts/trivia/">Trivia</category>
+          <description xml:base="https://lzon.ca/posts/trivia/000006/">
+&lt;p&gt;A noteworthy ability of the Human species is to run for long, uninterrupted periods of time.
+Few species are better, and Humans are the only ape that is capable of it.&lt;/p&gt;
+&lt;p&gt;Among many others, specific traits which enable this include:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Taller body with more surface area which facilitates evaporative cooling (sweating)&lt;/li&gt;
+&lt;li&gt;Wider heel bone to better absorb impact&lt;/li&gt;
+&lt;li&gt;Longer legs enabling a greater stride&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;It is an ability that likely evolved in conjunction with &lt;a rel=&quot;noopener external&quot; target=&quot;_blank&quot; href=&quot;https://en.wikipedia.org/wiki/Persistence_hunting&quot;&gt;Persistence Hunting&lt;/a&gt;,
+a technique which involves chasing an animal over long distances. The Human hunter can withstand the chase better than their prey, and eventually
+they will catch it even if initially the animal can run faster. If the hunter can keep chase long enough, the prey animal will either
+succumb to exhaustion, overheating or injury.&lt;/p&gt;
+&lt;p&gt;Source: &lt;a href=&quot;https://en.wikipedia.org/wiki/Endurance_running_hypothesis&quot;&gt;https://en.wikipedia.org/wiki/Endurance_running_hypothesis&lt;/a&gt;&lt;/p&gt;&lt;p&gt;Source: &lt;a href=&quot;https://en.wikipedia.org/wiki/Persistence_hunting&quot;&gt;https://en.wikipedia.org/wiki/Persistence_hunting&lt;/a&gt;&lt;/p&gt;&lt;p&gt;Source: &lt;a href=&quot;https://www.ucdavis.edu/blog/humans-are-born-run&quot;&gt;https://www.ucdavis.edu/blog/humans-are-born-run&lt;/a&gt;&lt;/p&gt;
+</description>
       </item>
       <item>
-          <title></title>
+          <title>The Pygmalion Effect is a psychological phenomemon in which placing high expectations on someone leads
+to their better performance.</title>
           <pubDate>Sun, 25 Oct 2026 12:00:00 +0000</pubDate>
           <author>Lzon</author>
-          <link>https://lzon.ca/trivia/000005/</link>
-          <guid isPermaLink="false">https://lzon.ca/trivia/000005/</guid>
-          <description xml:base="https://lzon.ca/trivia/000005/">&lt;p&gt;The Pygmalion Effect is a psychological phenomemon in which placing high expectations on someone leads
-to their better performance.&lt;&#x2F;p&gt;</description>
+          <link>https://lzon.ca/posts/trivia/000005/</link>
+          <guid isPermaLink="false">https://lzon.ca/posts/trivia/5</guid>
+          <category domain="https://lzon.ca/posts/trivia/">Trivia</category>
+          <description xml:base="https://lzon.ca/posts/trivia/000005/">
+&lt;p&gt;The Effect is an example of a self-fulfilling prophecy, the subject of the expectation performs better because of their belief that their
+performance is required, and not merely an optional choice.&lt;/p&gt;
+&lt;p&gt;The Pygmalion Effect is named for the sculptor Pygmalion from greek mythology. In his story he crafts a statue, and falls so intensely in love with his creation
+that it transforms into a real woman.&lt;/p&gt;
+&lt;p&gt;The term was coined by psychologists Robert Rosenthal and Lenore Jacombson. They conducted a study on school children in which the teacher
+expressed both high and low expectations on the students. As measured by IQ test scores, children who were expected to perform well had higher scores.
+Conversely, children who were expected to perform poorly by their teachers had lower scores.&lt;/p&gt;
+&lt;p&gt;Source: &lt;a href=&quot;https://example.org&quot;&gt;https://example.org&lt;/a&gt;&lt;/p&gt;&lt;p&gt;Source: &lt;a href=&quot;https://en.wikipedia.org/wiki/Pygmalion_effect&quot;&gt;https://en.wikipedia.org/wiki/Pygmalion_effect&lt;/a&gt;&lt;/p&gt;&lt;p&gt;Source: &lt;a href=&quot;https://en.wikipedia.org/wiki/Pygmalion_(mythology)&quot;&gt;https://en.wikipedia.org/wiki/Pygmalion_(mythology)&lt;/a&gt;&lt;/p&gt;
+</description>
       </item>
       <item>
-          <title></title>
+          <title>People can be Ambiverted, meaning they are equal parts Introverted and Extroverted.</title>
           <pubDate>Sat, 24 Oct 2026 12:00:00 +0000</pubDate>
           <author>Lzon</author>
-          <link>https://lzon.ca/trivia/000004/</link>
-          <guid isPermaLink="false">https://lzon.ca/trivia/000004/</guid>
-          <description xml:base="https://lzon.ca/trivia/000004/">&lt;p&gt;People can be Ambiverted, meaning they are equal parts Introverted and Extroverted.&lt;&#x2F;p&gt;</description>
+          <link>https://lzon.ca/posts/trivia/000004/</link>
+          <guid isPermaLink="false">https://lzon.ca/posts/trivia/4</guid>
+          <category domain="https://lzon.ca/posts/trivia/">Trivia</category>
+          <description xml:base="https://lzon.ca/posts/trivia/000004/">
+&lt;p&gt;Introverted people obtain gratification from being alone, and consider social engagement to be mentally draining.&lt;/p&gt;
+&lt;p&gt;Extroverted people are the inverse of introverted, they are gratified and energized by being around others.&lt;/p&gt;
+&lt;p&gt;Ambiversion is a third personality trait at the mid point along a spectrum between introversion and extroversion.
+It was first proposed in 1923 by the American psychologist &lt;a rel=&quot;noopener external&quot; target=&quot;_blank&quot; href=&quot;https://en.wikipedia.org/wiki/Edmund_Smith_Conklin&quot;&gt;Edmund Smith Conklin&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;Source: &lt;a href=&quot;https://en.wikipedia.org/wiki/Extraversion_and_introversion#Ambiversion&quot;&gt;https://en.wikipedia.org/wiki/Extraversion_and_introversion#Ambiversion&lt;/a&gt;&lt;/p&gt;
+</description>
       </item>
     </channel>
 </rss>

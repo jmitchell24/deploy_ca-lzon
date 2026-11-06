@@ -15,55 +15,64 @@
   
   <updated>2026-11-02T12:00:00Z</updated>
 
-  
-  
-  
+  <!-- Entries. Quotes (their own section feed) list one quote each. Posts go through
+       macros/feed.html, so this feed, rss.xml and pages.json agree: each entry is titled as
+       the site titles the post, carries its type as a <category>, and in the merged /posts/
+       feed leads its title with the type ("[ News ] …"). -->
 
   
   
   
-  
-  
-  
 
-  
-  
-
-  
-
+  <!-- quotes and numbered post types sort by filename, since dates alone aren't unique -->
   
 
   
   <entry>
     <title>Waymo to expand Robo-taxi service into Canada</title>
-    <id>https://lzon.ca/news/news-000028-waymos-robotaxis-canada/</id>
-    <link href="https://lzon.ca/news/news-000028-waymos-robotaxis-canada/"/>
+    <id>https://lzon.ca/posts/news/28</id>
+    <link rel="alternate" href="https://lzon.ca/posts/news/000028-waymos-robotaxis-canada/"/>
+    <category term="news" label="News" scheme="https://lzon.ca/posts/news/"/>
     <published>2026-10-19T12:00:00Z</published>
     <updated>2026-10-19T12:00:00Z</updated>
     <author><name>Lzon</name></author>
-    <summary type="html" xml:base="https://lzon.ca/news/news-000028-waymos-robotaxis-canada/">&lt;p&gt;Alphabet’s Robo-taxi company Waymo announced their plan to expand services into Canada.&lt;&#x2F;p&gt;</summary>
+    <content type="html" xml:base="https://lzon.ca/posts/news/000028-waymos-robotaxis-canada/">&lt;p&gt;Alphabet’s Robo-taxi company Waymo announced their plan to expand services into Canada.&lt;/p&gt;
+&lt;span id=&quot;continue-reading&quot;&gt;&lt;/span&gt;
+&lt;p&gt;Until now the company has only operated in a limited number of American metro areas. They have only recently began announcing their plans for further expansion.&lt;/p&gt;
+&lt;p&gt;Waymo’s growth, and the growth of other robo-taxi services will depend entirely on further progress in self-driving technology. While I fully believe that automated vehicles will become widespread over the next decade or two, the rollout is definitely slower than initially anticipated. CPG Grey’s &lt;a rel=&quot;noopener external&quot; target=&quot;_blank&quot; href=&quot;https://www.youtube.com/watch?v=7Pq-S557XQU&quot;&gt;famous video on the subject&lt;/a&gt; demonstrates this point well.&lt;/p&gt;
+&lt;p&gt;Source: &lt;a href=&quot;https://techcrunch.com/2026/10/16/waymos-robotaxis-are-headed-to-canada/&quot;&gt;https://techcrunch.com/2026/10/16/waymos-robotaxis-are-headed-to-canada/&lt;/a&gt;&lt;/p&gt;&lt;p&gt;Source: &lt;a href=&quot;https://web.archive.org/web/20261017110344/https://techcrunch.com/2026/10/16/waymos-robotaxis-are-headed-to-canada/&quot;&gt;https://web.archive.org/web/20261017110344/https://techcrunch.com/2026/10/16/waymos-robotaxis-are-headed-to-canada/&lt;/a&gt;&lt;/p&gt;
+</content>
   </entry>
-
-  
   <entry>
-    <title>Trump renames Lake Ontario as &#x27;Lake America&#x27;</title>
-    <id>https://lzon.ca/news/news-000025-trump-rename-lake/</id>
-    <link href="https://lzon.ca/news/news-000025-trump-rename-lake/"/>
+    <title>Trump renames Lake Ontario as &apos;Lake America&apos;</title>
+    <id>https://lzon.ca/posts/news/25</id>
+    <link rel="alternate" href="https://lzon.ca/posts/news/000025-trump-rename-lake/"/>
+    <category term="news" label="News" scheme="https://lzon.ca/posts/news/"/>
     <published>2026-08-30T12:00:00Z</published>
     <updated>2026-11-02T12:00:00Z</updated>
     <author><name>Lzon</name></author>
-    <summary type="html" xml:base="https://lzon.ca/news/news-000025-trump-rename-lake/">&lt;p&gt;Donald Trump has renamed Lake Ontario to ‘Lake America’ following the recent failure of trade negotiations between USA and Canada.&lt;&#x2F;p&gt;</summary>
+    <content type="html" xml:base="https://lzon.ca/posts/news/000025-trump-rename-lake/">&lt;p&gt;Donald Trump has renamed Lake Ontario to ‘Lake America’ following the recent failure of trade negotiations between USA and Canada.&lt;/p&gt;
+&lt;span id=&quot;continue-reading&quot;&gt;&lt;/span&gt;
+&lt;p&gt;Trump’s administration has not confirmed that the trade disputes were reason for the change, but it is reasonable to assume that this was the cause.&lt;/p&gt;
+&lt;p&gt;I find this to be extremely disappointing. Trump and his cabinet have managed to do so much damage to what was otherwise an astoundingly friendly and peaceful international relationship (USA and Canada).&lt;/p&gt;
+&lt;p&gt;The silver lining that I can see is that public opinion to this news appears to be resoundingly negative. Most Canadians and Americans do not want this. It gives me hope that once Trump is no longer in office the formerly positive relationship between our two countries can be restored.&lt;/p&gt;
+&lt;p&gt;Source: &lt;a href=&quot;https://www.cbc.ca/news/world/trump-lake-ontario-america-9.7322947&quot;&gt;https://www.cbc.ca/news/world/trump-lake-ontario-america-9.7322947&lt;/a&gt;&lt;/p&gt;&lt;p&gt;Source: &lt;a href=&quot;https://web.archive.org/web/20260827174105/https://www.cbc.ca/news/world/trump-lake-ontario-america-9.7322947&quot;&gt;https://web.archive.org/web/20260827174105/https://www.cbc.ca/news/world/trump-lake-ontario-america-9.7322947&lt;/a&gt;&lt;/p&gt;
+</content>
   </entry>
-
-  
   <entry>
     <title>First Chinese-made EVs arrive in Canada under deal Carney struck with Xi</title>
-    <id>https://lzon.ca/news/news-000016-chinese-evs-canada/</id>
-    <link href="https://lzon.ca/news/news-000016-chinese-evs-canada/"/>
+    <id>https://lzon.ca/posts/news/16</id>
+    <link rel="alternate" href="https://lzon.ca/posts/news/000016-chinese-evs-canada/"/>
+    <category term="news" label="News" scheme="https://lzon.ca/posts/news/"/>
     <published>2026-05-30T12:00:00Z</published>
     <updated>2026-11-02T12:00:00Z</updated>
     <author><name>Lzon</name></author>
-    <summary type="html" xml:base="https://lzon.ca/news/news-000016-chinese-evs-canada/">&lt;p&gt;The first China-made electric vehicles have arrived in Canada following a recent tariff reduction deal. The shipment was mostly from Tesla’s Shanghai factory, with some Lotus branded vehicles as well.&lt;&#x2F;p&gt;</summary>
+    <content type="html" xml:base="https://lzon.ca/posts/news/000016-chinese-evs-canada/">&lt;p&gt;The first China-made electric vehicles have arrived in Canada following a recent tariff reduction deal. The shipment was mostly from Tesla’s Shanghai factory, with some Lotus branded vehicles as well.&lt;/p&gt;
+&lt;span id=&quot;continue-reading&quot;&gt;&lt;/span&gt;
+&lt;p&gt;This is noteworthy since historically Canada has followed the USA closely on restricting China’s access to its vehicle market.&lt;/p&gt;
+&lt;p&gt;I’m cautiously optimistic. If this leads to EV’s becoming more affordable then that would be a good thing. The hope is that the federal government will continue to promote domestic vehicle production amongst the incoming Chinese competitors. We already do this well for companies from USA, Japan, and Korea.&lt;/p&gt;
+&lt;p&gt;Source: &lt;a href=&quot;https://financialpost.com/commodities/energy/electric-vehicles/first-chinese-made-evs-arrive-canada&quot;&gt;https://financialpost.com/commodities/energy/electric-vehicles/first-chinese-made-evs-arrive-canada&lt;/a&gt;&lt;/p&gt;&lt;p&gt;Source: &lt;a href=&quot;https://web.archive.org/web/20260530193713/https://financialpost.com/commodities/energy/electric-vehicles/first-chinese-made-evs-arrive-canada&quot;&gt;https://web.archive.org/web/20260530193713/https://financialpost.com/commodities/energy/electric-vehicles/first-chinese-made-evs-arrive-canada&lt;/a&gt;&lt;/p&gt;
+</content>
   </entry>
 
 </feed>

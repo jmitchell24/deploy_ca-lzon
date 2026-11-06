@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
+    <channel>
+      <title>
+        lzon.ca - algoma</title>
+      <link>https://lzon.ca</link>
+      <description></description>
+      <generator>Zola</generator>
+      <language>en</language>
+      <atom:link href="https://lzon.ca/blog-tags/algoma/rss.xml" rel="self" type="application/rss+xml"/>
+      <lastBuildDate>Sat, 26 Sep 2026 12:00:00 +0000</lastBuildDate>
+      <!-- Items. Quotes (their own section feed) list one quote each. Posts go through
+           macros/feed.html, so this feed, atom.xml and pages.json agree: each item is titled
+           as the site titles the post, carries its type as a <category>, and in the merged
+           /posts/ feed leads its title with the type ("[ News ] …"). -->
+      
+      
+      
+      <!-- quotes and numbered post types sort by filename, since dates alone aren't unique -->
+      
+      
+      <item>
+          <title>Algoma docs and website</title>
+          <pubDate>Sat, 26 Sep 2026 12:00:00 +0000</pubDate>
+          <author>Lzon</author>
+          <link>https://lzon.ca/posts/blog/algoma-docs/</link>
+          <guid isPermaLink="false">https://lzon.ca/posts/blog/algoma-docs/</guid>
+          <category domain="https://lzon.ca/posts/blog/">Blog</category>
+          <description xml:base="https://lzon.ca/posts/blog/algoma-docs/">&lt;p&gt;A small update for my latest project.&lt;/p&gt;&lt;p&gt;&lt;a href=&quot;https://lzon.ca/posts/blog/algoma-docs/#continue-reading&quot;&gt;Continue reading&lt;/a&gt;&lt;/p&gt;
+</description>
+      </item>
+      <item>
+          <title>Introducing Algoma Mako</title>
+          <pubDate>Sat, 29 Aug 2026 12:00:00 +0000</pubDate>
+          <author>Lzon</author>
+          <link>https://lzon.ca/posts/blog/mako-intro/</link>
+          <guid isPermaLink="false">https://lzon.ca/posts/blog/mako-intro/</guid>
+          <category domain="https://lzon.ca/posts/blog/">Blog</category>
+          <description xml:base="https://lzon.ca/posts/blog/mako-intro/">&lt;p&gt;This is the Mako Runtime, a part of the Algoma Project.&lt;/p&gt;&lt;p&gt;&lt;a href=&quot;https://lzon.ca/posts/blog/mako-intro/#continue-reading&quot;&gt;Continue reading&lt;/a&gt;&lt;/p&gt;
+</description>
+      </item>
+      <item>
+          <title>Anonymous Functions</title>
+          <pubDate>Mon, 20 Jul 2026 12:00:00 +0000</pubDate>
+          <author>Lzon</author>
+          <link>https://lzon.ca/posts/blog/anonymous-functions/</link>
+          <guid isPermaLink="false">https://lzon.ca/posts/blog/anonymous-functions/</guid>
+          <category domain="https://lzon.ca/posts/blog/">Blog</category>
+          <description xml:base="https://lzon.ca/posts/blog/anonymous-functions/">&lt;p&gt;Today I implemented anonymous functions for Alogma. It was shockingly easy, and here’s how I did it.&lt;/p&gt;&lt;p&gt;&lt;a href=&quot;https://lzon.ca/posts/blog/anonymous-functions/#continue-reading&quot;&gt;Continue reading&lt;/a&gt;&lt;/p&gt;
+</description>
+      </item>
+      <item>
+          <title>The Algoma Programming Language</title>
+          <pubDate>Mon, 13 Jul 2026 12:00:00 +0000</pubDate>
+          <author>Lzon</author>
+          <link>https://lzon.ca/posts/blog/algoma-intro/</link>
+          <guid isPermaLink="false">https://lzon.ca/posts/blog/algoma-intro/</guid>
+          <category domain="https://lzon.ca/posts/blog/">Blog</category>
+          <description xml:base="https://lzon.ca/posts/blog/algoma-intro/">&lt;p&gt;Here’s the big project that I’ve been working on for the past few months.&lt;/p&gt;
+&lt;hr /&gt;
+&lt;p&gt;Algoma is my own personal programming language. I started working on it earlier in the year, and I’ve been building it from scratch in C++. I followed along with the book called &lt;a rel=&quot;noopener external&quot; target=&quot;_blank&quot; href=&quot;https://craftinginterpreters.com/&quot;&gt;Crafting Interpreters&lt;/a&gt; by Robert Nystrom. It’s an excellent read and I highly recommend it if you are interested in programming language implementation and/or design.&lt;/p&gt;
+&lt;p&gt;I followed along in Nystrom’s book to implement the basic features. I chose to use the design from the later chapters: a single-pass compiler and virtual machine. I’ve since moved on from the book, and have started to implement my own features. I don’t yet have a proper specification for the language, and likely won’t have one for a while. Right now I’m just adding and tweaking features to suit my taste, or even just to experiment. I want to maintain that design freedom for the foreseeable future, and otherwise just have fun with it.&lt;/p&gt;
+&lt;p&gt;If I’m being honest, I don’t feel as though I have progressed enough to start demonstrating my work publically. Yet I have been growing increasingly frustrated with my pace towards a working demo.&lt;/p&gt;
+&lt;p&gt;So I’ve decided to just throw what I have so far onto the internet, for all to see. It’s not ready yet by my measure, but it is &lt;mark&gt;something&lt;/mark&gt; at least. It’s a working build of the graphical user interface that has a bit of functionality available now to start playing around with. Click the big button below to check it out.&lt;/p&gt;
+&lt;a class=&quot;btn btn-lg mb-md text-sans&quot; href=&quot;/algoma/index.html&quot;&gt;
+    Launch Playground
+&lt;/a&gt;
+&lt;p&gt;I don’t like leaving &lt;a rel=&quot;noopener external&quot; target=&quot;_blank&quot; href=&quot;https://lzon.ca&quot;&gt;lzon.ca&lt;/a&gt; for too long without new content so, I’ll post updates here as I continue to work, even if they are small. You may have noticed that this is the first post of a new section, this is where I’ll be putting all content related to the project.&lt;/p&gt;
+&lt;p&gt;If you found this interesting, let me know! I think this project is still undercooked but if you like what you see I’d definitely appreciate a bit of flattery. 🤗&lt;/p&gt;
+&lt;hr /&gt;
+Send a message to &lt;a href=&quot;mailto:mail@lzon.ca&quot;&gt;mail@lzon.ca&lt;/a&gt;, or DM me on one of my social accounts on the &lt;a href=&quot;/&quot;&gt;homepage&lt;/a&gt;.
+
+</description>
+      </item>
+    </channel>
+</rss>

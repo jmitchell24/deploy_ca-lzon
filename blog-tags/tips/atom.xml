@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  
+
+  <title>
+    lzon.ca - tips</title>
+
+  <id>https://lzon.ca</id>
+
+  <link rel="alternate" href="https://lzon.ca"/>
+  <link rel="self" href="https://lzon.ca/blog-tags/tips/atom.xml" type="application/atom+xml"/>
+  <generator uri="https://www.getzola.org/">Zola</generator>
+
+  
+  <updated>2026-07-20T12:00:00Z</updated>
+
+  <!-- Entries. Quotes (their own section feed) list one quote each. Posts go through
+       macros/feed.html, so this feed, rss.xml and pages.json agree: each entry is titled as
+       the site titles the post, carries its type as a <category>, and in the merged /posts/
+       feed leads its title with the type ("[ News ] …"). -->
+
+  
+  
+  
+
+  <!-- quotes and numbered post types sort by filename, since dates alone aren't unique -->
+  
+
+  
+  <entry>
+    <title>How C++20 improved the for-loop syntax</title>
+    <id>https://lzon.ca/posts/blog/cpp-for-range-init/</id>
+    <link rel="alternate" href="https://lzon.ca/posts/blog/cpp-for-range-init/"/>
+    <category term="blog" label="Blog" scheme="https://lzon.ca/posts/blog/"/>
+    <published>2026-07-11T12:00:00Z</published>
+    <updated>2026-07-20T12:00:00Z</updated>
+    <author><name>Lzon</name></author>
+    <content type="html" xml:base="https://lzon.ca/posts/blog/cpp-for-range-init/">&lt;p&gt;Here’s a small piece of syntactic sugar from C++20.&lt;/p&gt;&lt;p&gt;&lt;a href=&quot;https://lzon.ca/posts/blog/cpp-for-range-init/#continue-reading&quot;&gt;Continue reading&lt;/a&gt;&lt;/p&gt;
+</content>
+  </entry>
+  <entry>
+    <title>A value_lock type for C++</title>
+    <id>https://lzon.ca/posts/blog/cpp-value-lock-type/</id>
+    <link rel="alternate" href="https://lzon.ca/posts/blog/cpp-value-lock-type/"/>
+    <category term="blog" label="Blog" scheme="https://lzon.ca/posts/blog/"/>
+    <published>2026-06-25T12:00:00Z</published>
+    <updated>2026-06-25T12:00:00Z</updated>
+    <author><name>Lzon</name></author>
+    <content type="html" xml:base="https://lzon.ca/posts/blog/cpp-value-lock-type/">&lt;p&gt;Here’s yet another idea I had for a C++ type. It’s a useful tool for simplifying the use of a mutex with a shared resource.&lt;/p&gt;&lt;p&gt;&lt;a href=&quot;https://lzon.ca/posts/blog/cpp-value-lock-type/#continue-reading&quot;&gt;Continue reading&lt;/a&gt;&lt;/p&gt;
+</content>
+  </entry>
+  <entry>
+    <title>A maybe type for C++</title>
+    <id>https://lzon.ca/posts/blog/cpp-maybe-type/</id>
+    <link rel="alternate" href="https://lzon.ca/posts/blog/cpp-maybe-type/"/>
+    <category term="blog" label="Blog" scheme="https://lzon.ca/posts/blog/"/>
+    <published>2026-06-18T12:00:00Z</published>
+    <updated>2026-06-18T12:00:00Z</updated>
+    <author><name>Lzon</name></author>
+    <content type="html" xml:base="https://lzon.ca/posts/blog/cpp-maybe-type/">&lt;p&gt;Here’s an idea I had for a useful C++ class that adds a little syntactic sugar to null pointer checking.&lt;/p&gt;&lt;p&gt;&lt;a href=&quot;https://lzon.ca/posts/blog/cpp-maybe-type/#continue-reading&quot;&gt;Continue reading&lt;/a&gt;&lt;/p&gt;
+</content>
+  </entry>
+  <entry>
+    <title>A result type for C++</title>
+    <id>https://lzon.ca/posts/blog/cpp-result-type/</id>
+    <link rel="alternate" href="https://lzon.ca/posts/blog/cpp-result-type/"/>
+    <category term="blog" label="Blog" scheme="https://lzon.ca/posts/blog/"/>
+    <published>2026-06-01T12:00:00Z</published>
+    <updated>2026-06-02T12:00:00Z</updated>
+    <author><name>Lzon</name></author>
+    <content type="html" xml:base="https://lzon.ca/posts/blog/cpp-result-type/">&lt;p&gt;I wrote my own version of the very useful ‘result type’ pattern for C++.&lt;/p&gt;&lt;p&gt;&lt;a href=&quot;https://lzon.ca/posts/blog/cpp-result-type/#continue-reading&quot;&gt;Continue reading&lt;/a&gt;&lt;/p&gt;
+</content>
+  </entry>
+  <entry>
+    <title>A hack for Zola SSG feed templates</title>
+    <id>https://lzon.ca/posts/blog/zola-feed-hack/</id>
+    <link rel="alternate" href="https://lzon.ca/posts/blog/zola-feed-hack/"/>
+    <category term="blog" label="Blog" scheme="https://lzon.ca/posts/blog/"/>
+    <published>2026-05-13T12:00:00Z</published>
+    <updated>2026-05-13T12:00:00Z</updated>
+    <author><name>Lzon</name></author>
+    <content type="html" xml:base="https://lzon.ca/posts/blog/zola-feed-hack/">&lt;p&gt;Here’s an interesting little hack I discovered for the Zola static site generator.&lt;/p&gt;&lt;p&gt;&lt;a href=&quot;https://lzon.ca/posts/blog/zola-feed-hack/#continue-reading&quot;&gt;Continue reading&lt;/a&gt;&lt;/p&gt;
+</content>
+  </entry>
+  <entry>
+    <title>How to make a single instance program in C++</title>
+    <id>https://lzon.ca/posts/blog/cpp-single-instance/</id>
+    <link rel="alternate" href="https://lzon.ca/posts/blog/cpp-single-instance/"/>
+    <category term="blog" label="Blog" scheme="https://lzon.ca/posts/blog/"/>
+    <published>2026-05-02T12:00:00Z</published>
+    <updated>2026-05-02T12:00:00Z</updated>
+    <author><name>Lzon</name></author>
+    <content type="html" xml:base="https://lzon.ca/posts/blog/cpp-single-instance/">&lt;p&gt;I just discovered a neat trick for enforcing a single instance of a C++ program.&lt;/p&gt;&lt;p&gt;&lt;a href=&quot;https://lzon.ca/posts/blog/cpp-single-instance/#continue-reading&quot;&gt;Continue reading&lt;/a&gt;&lt;/p&gt;
+</content>
+  </entry>
+  <entry>
+    <title>Pleasant Passwords</title>
+    <id>https://lzon.ca/posts/blog/pleasant-passwords/</id>
+    <link rel="alternate" href="https://lzon.ca/posts/blog/pleasant-passwords/"/>
+    <category term="blog" label="Blog" scheme="https://lzon.ca/posts/blog/"/>
+    <published>2026-04-28T12:00:00Z</published>
+    <updated>2026-04-29T12:00:00Z</updated>
+    <author><name>Lzon</name></author>
+    <content type="html" xml:base="https://lzon.ca/posts/blog/pleasant-passwords/">&lt;p&gt;A method for making passwords that you won’t hate to use.&lt;/p&gt;&lt;p&gt;&lt;a href=&quot;https://lzon.ca/posts/blog/pleasant-passwords/#continue-reading&quot;&gt;Continue reading&lt;/a&gt;&lt;/p&gt;
+</content>
+  </entry>
+  <entry>
+    <title>How to Organize Your Files by Date</title>
+    <id>https://lzon.ca/posts/blog/filename-dating/</id>
+    <link rel="alternate" href="https://lzon.ca/posts/blog/filename-dating/"/>
+    <category term="blog" label="Blog" scheme="https://lzon.ca/posts/blog/"/>
+    <published>2026-03-15T12:00:00Z</published>
+    <updated>2026-03-31T12:00:00Z</updated>
+    <author><name>Lzon</name></author>
+    <content type="html" xml:base="https://lzon.ca/posts/blog/filename-dating/">&lt;p&gt;Here’s a technique I often use for organizing my files, as well as some useful scripts for generating filenames.&lt;/p&gt;&lt;p&gt;&lt;a href=&quot;https://lzon.ca/posts/blog/filename-dating/#continue-reading&quot;&gt;Continue reading&lt;/a&gt;&lt;/p&gt;
+</content>
+  </entry>
+  <entry>
+    <title>3 tips for your to-do list</title>
+    <id>https://lzon.ca/posts/blog/todo-howto/</id>
+    <link rel="alternate" href="https://lzon.ca/posts/blog/todo-howto/"/>
+    <category term="blog" label="Blog" scheme="https://lzon.ca/posts/blog/"/>
+    <published>2026-02-21T12:00:00Z</published>
+    <updated>2026-05-13T12:00:00Z</updated>
+    <author><name>Lzon</name></author>
+    <content type="html" xml:base="https://lzon.ca/posts/blog/todo-howto/">&lt;p&gt;How I manage my personal to-do list, including 3 things you can do to make your own list better.&lt;/p&gt;&lt;p&gt;&lt;a href=&quot;https://lzon.ca/posts/blog/todo-howto/#continue-reading&quot;&gt;Continue reading&lt;/a&gt;&lt;/p&gt;
+</content>
+  </entry>
+  <entry>
+    <title>How to fix tmux over ssh in ghostty</title>
+    <id>https://lzon.ca/posts/blog/ghostty-tmux-ssh/</id>
+    <link rel="alternate" href="https://lzon.ca/posts/blog/ghostty-tmux-ssh/"/>
+    <category term="blog" label="Blog" scheme="https://lzon.ca/posts/blog/"/>
+    <published>2026-01-27T12:00:00Z</published>
+    <updated>2026-02-04T12:00:00Z</updated>
+    <author><name>Lzon</name></author>
+    <content type="html" xml:base="https://lzon.ca/posts/blog/ghostty-tmux-ssh/">&lt;p&gt;tmux might break when you try to use it over SSH in Ghostty. Here’s how to fix it.&lt;/p&gt;&lt;p&gt;&lt;a href=&quot;https://lzon.ca/posts/blog/ghostty-tmux-ssh/#continue-reading&quot;&gt;Continue reading&lt;/a&gt;&lt;/p&gt;
+</content>
+  </entry>
+  <entry>
+    <title>ZFS Dataset Tuning</title>
+    <id>https://lzon.ca/posts/blog/zfs-dataset-tuning/</id>
+    <link rel="alternate" href="https://lzon.ca/posts/blog/zfs-dataset-tuning/"/>
+    <category term="blog" label="Blog" scheme="https://lzon.ca/posts/blog/"/>
+    <published>2026-01-24T12:00:00Z</published>
+    <updated>2026-02-09T12:00:00Z</updated>
+    <author><name>Lzon</name></author>
+    <content type="html" xml:base="https://lzon.ca/posts/blog/zfs-dataset-tuning/">&lt;p&gt;My recommended property values for newly created ZFS datasets under linux.&lt;/p&gt;&lt;p&gt;&lt;a href=&quot;https://lzon.ca/posts/blog/zfs-dataset-tuning/#continue-reading&quot;&gt;Continue reading&lt;/a&gt;&lt;/p&gt;
+</content>
+  </entry>
+
+</feed>

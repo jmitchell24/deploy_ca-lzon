@@ -1,0 +1,696 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
+    <channel>
+      <title>
+        lzon.ca - recipes</title>
+      <link>https://lzon.ca</link>
+      <description></description>
+      <generator>Zola</generator>
+      <language>en</language>
+      <atom:link href="https://lzon.ca/blog-tags/recipes/rss.xml" rel="self" type="application/rss+xml"/>
+      <lastBuildDate>Thu, 23 Apr 2026 12:00:00 +0000</lastBuildDate>
+      <!-- Items. Quotes (their own section feed) list one quote each. Posts go through
+           macros/feed.html, so this feed, atom.xml and pages.json agree: each item is titled
+           as the site titles the post, carries its type as a <category>, and in the merged
+           /posts/ feed leads its title with the type ("[ News ] …"). -->
+      
+      
+      
+      <!-- quotes and numbered post types sort by filename, since dates alone aren't unique -->
+      
+      
+      <item>
+          <title>Chicken Fajita Loaf</title>
+          <pubDate>Thu, 12 Mar 2026 12:00:00 +0000</pubDate>
+          <author>Lzon</author>
+          <link>https://lzon.ca/posts/blog/chicken-fajita-loaf/</link>
+          <guid isPermaLink="false">https://lzon.ca/posts/blog/chicken-fajita-loaf/</guid>
+          <category domain="https://lzon.ca/posts/blog/">Blog</category>
+          <description xml:base="https://lzon.ca/posts/blog/chicken-fajita-loaf/">&lt;p&gt;A new tex-mex recipe that I’ve come up with.&lt;/p&gt;&lt;p&gt;&lt;a href=&quot;https://lzon.ca/posts/blog/chicken-fajita-loaf/#continue-reading&quot;&gt;Continue reading&lt;/a&gt;&lt;/p&gt;
+</description>
+      </item>
+      <item>
+          <title>Swiss Chalet Dipping Sauce</title>
+          <pubDate>Mon, 09 Feb 2026 12:00:00 +0000</pubDate>
+          <author>Lzon</author>
+          <link>https://lzon.ca/posts/blog/swiss-chalet-sauce/</link>
+          <guid isPermaLink="false">https://lzon.ca/posts/blog/swiss-chalet-sauce/</guid>
+          <category domain="https://lzon.ca/posts/blog/">Blog</category>
+          <description xml:base="https://lzon.ca/posts/blog/swiss-chalet-sauce/">
+
+&lt;p&gt;This is a copycat recipe for Swiss Chalet Chicken Sauce that I tried recently. It’s very good, and very rich. I liked the taste, but I think I used too much sage. If you try this for yourself make sure to follow the recipe exactly.&lt;/p&gt;
+&lt;h3 id=&quot;ingredients&quot;&gt;Ingredients&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;🐄 4 tbsp Butter&lt;/li&gt;
+&lt;li&gt;🌽 3 tbsp Corn Starch&lt;/li&gt;
+&lt;li&gt;🐔 3 cups Chicken Broth&lt;/li&gt;
+&lt;li&gt;🍅 1/4 cup Tomato Juice&lt;/li&gt;
+&lt;li&gt;🍷 1 tsp White Vinegar&lt;/li&gt;
+&lt;li&gt;🧅 1 1/2 tsp Onion Powder&lt;/li&gt;
+&lt;li&gt;🌿 1 1/2 tsp Paprika&lt;/li&gt;
+&lt;li&gt;🍀 3/4 tsp Dried Sage&lt;/li&gt;
+&lt;li&gt;🧄 1/2 tsp Garlic Powder&lt;/li&gt;
+&lt;li&gt;🧂 1/2 tsp Table Salt&lt;/li&gt;
+&lt;li&gt;🌻 1/2 tsp Dried Summer Savory&lt;/li&gt;
+&lt;li&gt;🫚 1/4 tsp Ginger Powder&lt;/li&gt;
+&lt;li&gt;🌿 1/4 tsp Mustard Powder&lt;/li&gt;
+&lt;li&gt;🍀 1/4 tsp Thyme&lt;/li&gt;
+&lt;li&gt;🥬 1 Bay Leaf&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&quot;instructions&quot;&gt;Instructions&lt;/h3&gt;
+&lt;ol&gt;
+&lt;li&gt;In a medium sized saucepan, melt butter over medium heat.&lt;/li&gt;
+&lt;li&gt;Allow to cook, whisking frequently, until it begins to brown.&lt;/li&gt;
+&lt;li&gt;Add corn starch, whisk until smooth.&lt;/li&gt;
+&lt;li&gt;Slowly add chicken broth, whisk constantly to fully incorporate with butter.&lt;/li&gt;
+&lt;li&gt;Add remaining ingredients, continue whisking.&lt;/li&gt;
+&lt;li&gt;Turn heat to medium-high, then bring to a boil.&lt;/li&gt;
+&lt;li&gt;Turn heat down to low and simmer for 5 minutes.&lt;/li&gt;
+&lt;li&gt;Remote bay leaf, serve hot.&lt;/li&gt;
+&lt;/ol&gt;
+
+</description>
+      </item>
+      <item>
+          <title>Antojitos</title>
+          <pubDate>Wed, 28 Jan 2026 12:00:00 +0000</pubDate>
+          <author>Lzon</author>
+          <link>https://lzon.ca/posts/blog/antojitos/</link>
+          <guid isPermaLink="false">https://lzon.ca/posts/blog/antojitos/</guid>
+          <category domain="https://lzon.ca/posts/blog/">Blog</category>
+          <description xml:base="https://lzon.ca/posts/blog/antojitos/">&lt;p&gt;An easy and tasty tex-mex appetizer.&lt;/p&gt;&lt;p&gt;&lt;a href=&quot;https://lzon.ca/posts/blog/antojitos/#continue-reading&quot;&gt;Continue reading&lt;/a&gt;&lt;/p&gt;
+</description>
+      </item>
+      <item>
+          <title>Pollo Sabrosa</title>
+          <pubDate>Sun, 18 May 2025 12:00:00 +0000</pubDate>
+          <author>Lzon</author>
+          <link>https://lzon.ca/posts/blog/pollo-sabrosa/</link>
+          <guid isPermaLink="false">https://lzon.ca/posts/blog/pollo-sabrosa/</guid>
+          <category domain="https://lzon.ca/posts/blog/">Blog</category>
+          <description xml:base="https://lzon.ca/posts/blog/pollo-sabrosa/">&lt;p&gt;This is a recipe that I came up with. I had some leftover rice one day and wanted something meaty, spicy, and flavorful to throw on top.
+I have already made this several times before writing it down.&lt;/p&gt;
+&lt;p&gt;The result was very dense and filling, and was very nice as leftovers for several days after. The name &lt;em&gt;‘Pollo Sabrosa’&lt;/em&gt; is Spanish for &lt;em&gt;‘Tasty Chicken’&lt;/em&gt;.&lt;/p&gt;
+&lt;p&gt;The following recipe is based on my memory. It probably isn’t exactly right, but this is simple enough that it shouldn’t make a huge difference.&lt;/p&gt;
+&lt;h3 id=&quot;ingredients&quot;&gt;Ingredients&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;🐔 2 lbs ground chicken&lt;/li&gt;
+&lt;li&gt;🐔 1 lbs boneless chicken breast or thigh&lt;/li&gt;
+&lt;li&gt;🐔 2 cup chicken broth&lt;/li&gt;
+&lt;li&gt;🫑 2 Bell Pepper, chopped&lt;/li&gt;
+&lt;li&gt;🌶️ 3 jalepeno peppers, chopped&lt;/li&gt;
+&lt;li&gt;🧅 2 large onions, chopped&lt;/li&gt;
+&lt;li&gt;🧅 1 garlic bulb, chopped&lt;/li&gt;
+&lt;li&gt;🌶️ 250 g chili powder (at least 1 packet, depending on the brand)&lt;/li&gt;
+&lt;li&gt;🚬 2 tbsp liquid smoke&lt;/li&gt;
+&lt;li&gt;🌿 2 tbsp black pepper&lt;/li&gt;
+&lt;li&gt;🍀 2 tbsp oregano&lt;/li&gt;
+&lt;li&gt;🌱 2 tbsp red pepper flake&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&quot;instructions&quot;&gt;Instructions&lt;/h3&gt;
+&lt;ol&gt;
+&lt;li&gt;Saute onion and garlic in a large stove-top pot.&lt;/li&gt;
+&lt;li&gt;Cut whole chicken cuts into medium-sized chunks, then add them to pot. Add ground chicken as well.&lt;/li&gt;
+&lt;li&gt;Add peppers, liquid smoke, and broth. Then stir on medium-high heat until mostly cooked.&lt;/li&gt;
+&lt;li&gt;Add dry spices. Continue to stir on medium heat until done.&lt;/li&gt;
+&lt;/ol&gt;
+
+</description>
+      </item>
+      <item>
+          <title>Barb&apos;s Beef Stroganoff</title>
+          <pubDate>Sat, 19 Apr 2025 12:00:00 +0000</pubDate>
+          <author>Lzon</author>
+          <link>https://lzon.ca/posts/blog/barbs-beef-stroganoff/</link>
+          <guid isPermaLink="false">https://lzon.ca/posts/blog/barbs-beef-stroganoff/</guid>
+          <category domain="https://lzon.ca/posts/blog/">Blog</category>
+          <description xml:base="https://lzon.ca/posts/blog/barbs-beef-stroganoff/">&lt;p&gt;My Mom’s Beef Stroganoff recipe.&lt;/p&gt;
+&lt;h3 id=&quot;ingredients&quot;&gt;Ingredients&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;🐮 4 tbsp butter&lt;/li&gt;
+&lt;li&gt;🧅 1 chopped onion&lt;/li&gt;
+&lt;li&gt;🧄 4 cloves minced garlic&lt;/li&gt;
+&lt;li&gt;🍄 1 lb sliced mushrooms&lt;/li&gt;
+&lt;li&gt;🐄 beef cubes seasoned with salt and pepper&lt;/li&gt;
+&lt;li&gt;🌿 2 tsp Dijon mustard&lt;/li&gt;
+&lt;li&gt;🍀 1 tsp paprika&lt;/li&gt;
+&lt;li&gt;🍷1/3 cup dry white wine&lt;/li&gt;
+&lt;li&gt;🐄 2 cup beef broth&lt;/li&gt;
+&lt;li&gt;🍞 2 tbsp flour&lt;/li&gt;
+&lt;li&gt;💮 1 tbsp Worcestershire sauce&lt;/li&gt;
+&lt;li&gt;🧂 salt and pepper (to taste)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&quot;instructions&quot;&gt;Instructions&lt;/h3&gt;
+&lt;ol&gt;
+&lt;li&gt;Cook beef in the butter.&lt;/li&gt;
+&lt;li&gt;Then cook the onions, cloves, mushrooms.&lt;/li&gt;
+&lt;li&gt;Mix in the mustard and paprika.&lt;/li&gt;
+&lt;li&gt;Add the wine, cook 5 mins.&lt;/li&gt;
+&lt;li&gt;Mix beef broth, flour, Worcestershire sauce, until smooth.&lt;/li&gt;
+&lt;li&gt;Pour beef broth mixture into the pan, mix well and bring to a simmer, until thick.&lt;/li&gt;
+&lt;li&gt;Add cream cheese at the end. (do not boil)&lt;/li&gt;
+&lt;li&gt;Add noodles at the end.&lt;/li&gt;
+&lt;/ol&gt;
+
+</description>
+      </item>
+      <item>
+          <title>Barb&apos;s Bodacious Banana Bread</title>
+          <pubDate>Wed, 26 Mar 2025 12:00:00 +0000</pubDate>
+          <author>Lzon</author>
+          <link>https://lzon.ca/posts/blog/barbs-banana-bread/</link>
+          <guid isPermaLink="false">https://lzon.ca/posts/blog/barbs-banana-bread/</guid>
+          <category domain="https://lzon.ca/posts/blog/">Blog</category>
+          <description xml:base="https://lzon.ca/posts/blog/barbs-banana-bread/">&lt;p&gt;My Mom’s banana bread recipe.&lt;/p&gt;
+&lt;h3 id=&quot;ingredients&quot;&gt;Ingredients&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;🍞 2 cups all purpose flour&lt;/li&gt;
+&lt;li&gt;🧑‍🍳 1 1/2 tsp baking powder&lt;/li&gt;
+&lt;li&gt;🧑‍🍳 1 tsp baking soda&lt;/li&gt;
+&lt;li&gt;🧂 1/2 tsp salt&lt;/li&gt;
+&lt;li&gt;🍬 1 1/2 cups granulated sugar&lt;/li&gt;
+&lt;li&gt;🐮 1/2 cup butter&lt;/li&gt;
+&lt;li&gt;🐄 1/4 buttermilk&lt;/li&gt;
+&lt;li&gt;🍌 3 or 4 mashed bananas&lt;/li&gt;
+&lt;li&gt;🥚 2 large eggs&lt;/li&gt;
+&lt;li&gt;💮 1 tsp vanilla extract&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&quot;instructions&quot;&gt;Instructions&lt;/h3&gt;
+&lt;ol&gt;
+&lt;li&gt;Combine flour, baking powder, baking soda and salt in a large mixing bowl.&lt;/li&gt;
+&lt;li&gt;Add sugar, butter, buttermilk and bananas.&lt;/li&gt;
+&lt;li&gt;Beat on medium speed for 2 minutes.&lt;/li&gt;
+&lt;li&gt;Add eggs, vanilla and another 1/4 cup buttermilk&lt;/li&gt;
+&lt;li&gt;Beat on medium speed for 1 minute.&lt;/li&gt;
+&lt;li&gt;Spread batter evenly in 2 greased 9“ pans.&lt;/li&gt;
+&lt;li&gt;Bake at 350° F for 30-40 minutes.&lt;/li&gt;
+&lt;li&gt;Cool 10 minutes, then remove from pans and cool completely, spread frosting.&lt;/li&gt;
+&lt;/ol&gt;
+
+</description>
+      </item>
+      <item>
+          <title>Jollof Meat Filling</title>
+          <pubDate>Wed, 19 Mar 2025 12:00:00 +0000</pubDate>
+          <author>Lzon</author>
+          <link>https://lzon.ca/posts/blog/jollof-meat-filling/</link>
+          <guid isPermaLink="false">https://lzon.ca/posts/blog/jollof-meat-filling/</guid>
+          <category domain="https://lzon.ca/posts/blog/">Blog</category>
+          <description xml:base="https://lzon.ca/posts/blog/jollof-meat-filling/">&lt;p&gt;A standalone recipe for a chicken-based meat filling, spiced with &lt;a href=&quot;https://lzon.ca/posts/blog/jollof-seasoning/&quot;&gt;Jollof Seasoning&lt;/a&gt;. This can be paired with The &lt;a href=&quot;https://lzon.ca/posts/blog/jollof-baked-rice/&quot;&gt;Jollof Baked Rice&lt;/a&gt;, or served on its own with another carb (such as pita bread).&lt;/p&gt;
+&lt;h3 id=&quot;ingredients&quot;&gt;Ingredients&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;🌿 4 tbsp &lt;a href=&quot;/posts/recipes/jollof-seasoning&quot;&gt;Jollof Seasoning&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;🚬 1 tbsp Liquid Smoke&lt;/li&gt;
+&lt;li&gt;☘️ 1 tbsp Cinnamon&lt;/li&gt;
+&lt;li&gt;🥝 4 tbsp Tamarind Paste&lt;/li&gt;
+&lt;li&gt;🍅 2 tomatoes (chopped)&lt;/li&gt;
+&lt;li&gt;🧄 1 bulb Garlic (chopped)&lt;/li&gt;
+&lt;li&gt;🧅 2 onions (chopped)&lt;/li&gt;
+&lt;li&gt;🐔 3 lbs boneless chicken (chopped or ground)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&quot;instructions&quot;&gt;Instructions&lt;/h3&gt;
+&lt;ol&gt;
+&lt;li&gt;Mix chicken, onion, garlic in a large pot. Begin cooking on stove-top using med-high heat.&lt;/li&gt;
+&lt;li&gt;Add tomatoes, tamarind paste, and all spices. Continue stir regularly. Cook on med heat until done.&lt;/li&gt;
+&lt;li&gt;Serve with a complementary carb: such as rice, or flatbread.&lt;/li&gt;
+&lt;/ol&gt;
+
+</description>
+      </item>
+      <item>
+          <title>Baked Lemon Pepper Pork</title>
+          <pubDate>Mon, 17 Mar 2025 12:00:00 +0000</pubDate>
+          <author>Lzon</author>
+          <link>https://lzon.ca/posts/blog/baked-lemon-pepper-pork/</link>
+          <guid isPermaLink="false">https://lzon.ca/posts/blog/baked-lemon-pepper-pork/</guid>
+          <category domain="https://lzon.ca/posts/blog/">Blog</category>
+          <description xml:base="https://lzon.ca/posts/blog/baked-lemon-pepper-pork/">&lt;p&gt;Another riff on my original &lt;a href=&quot;https://lzon.ca/posts/blog/baked-cajun-pork/&quot;&gt;Baked Cajun Pork&lt;/a&gt; recipe. I’m writing this recipe the day after I cooked the meal, so I might have forgotten specific measurements. I’ll update if neccessary.&lt;/p&gt;
+&lt;p&gt;Be careful when adding both the lemon pepper and mustard, these are both very high sodium and otherwise powerful flavors (don’t use too much).&lt;/p&gt;
+&lt;h3 id=&quot;ingredients&quot;&gt;Ingredients&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;🐖 2 - 3 lbs of your preferred cuts of pork (1 or 2 grocery store packages)&lt;/li&gt;
+&lt;li&gt;🫙 1/3 cup liquid smoke&lt;/li&gt;
+&lt;li&gt;🍋 1/3 cup lemon juice&lt;/li&gt;
+&lt;li&gt;🌿 1/3 cup mustard&lt;/li&gt;
+&lt;li&gt;🍋 2 tbsp lemon pepper spice (1 tbsp for marinade, 1 tbsp dusted on top)&lt;/li&gt;
+&lt;li&gt;☘️ 2 tbsp parsley (1 tbsp for marinade, 1 tbsp dusted on top)&lt;/li&gt;
+&lt;li&gt;🍅 tomato (fresh or canned)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&quot;instructions&quot;&gt;Instructions&lt;/h3&gt;
+&lt;ol&gt;
+&lt;li&gt;Into a large bowl, mix together liquid smoke, lemon juice, mustard, lemon pepper.&lt;/li&gt;
+&lt;li&gt;One at a time, marinade the pork cuts in the bowl, then place them flat in a baking tray.&lt;/li&gt;
+&lt;li&gt;Dust parsley and lemon pepper onto the pork cuts.&lt;/li&gt;
+&lt;li&gt;Top the pork cuts with tomato, to your preference.&lt;/li&gt;
+&lt;li&gt;Place in an oven for a minimum of 60 minutes at 350° F. Cook longer and hotter if desired (I usually cook for 75 minutes at 400° F, which makes the pork slightly crispy).&lt;/li&gt;
+&lt;/ol&gt;
+
+</description>
+      </item>
+      <item>
+          <title>Jollof Seasoning</title>
+          <pubDate>Mon, 17 Mar 2025 12:00:00 +0000</pubDate>
+          <author>Lzon</author>
+          <link>https://lzon.ca/posts/blog/jollof-seasoning/</link>
+          <guid isPermaLink="false">https://lzon.ca/posts/blog/jollof-seasoning/</guid>
+          <category domain="https://lzon.ca/posts/blog/">Blog</category>
+          <description xml:base="https://lzon.ca/posts/blog/jollof-seasoning/">&lt;p&gt;A standalone ingredient list for the Jollof Seasoning used in my &lt;a href=&quot;/posts/recipes/jollof-baked-rice&quot;&gt;Baked Jollof Rice&lt;/a&gt; recipe. The flavor is unique and earthy, and not too hot. I used it originally for rice and chicken. It works well as a general purpose spice, I’ve used it for pork, and turned it into a dipping sauce.&lt;/p&gt;
+&lt;p&gt;This recipe produces a large quantity of seasoning, make sure you have a large container for storage.&lt;/p&gt;
+&lt;h3 id=&quot;ingredients&quot;&gt;Ingredients&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;🫚 4 tbsp ground ginger&lt;/li&gt;
+&lt;li&gt;🌿 4 tbsp thyme&lt;/li&gt;
+&lt;li&gt;🌿 2 tbsp coriander&lt;/li&gt;
+&lt;li&gt;🧅 2 tbsp onion powder&lt;/li&gt;
+&lt;li&gt;🧄 1 tbsp garlic powder&lt;/li&gt;
+&lt;li&gt;🌿 1 tbsp cinnamon&lt;/li&gt;
+&lt;li&gt;🌶️ 1 tbsp red pepper flakes&lt;/li&gt;
+&lt;li&gt;🌿 1 tbsp paprika&lt;/li&gt;
+&lt;li&gt;🐔 1 tbsp chicken broth powder&lt;/li&gt;
+&lt;li&gt;🧂 1 tbsp salt&lt;/li&gt;
+&lt;li&gt;🌿 1/2 tbsp nutmeg&lt;/li&gt;
+&lt;/ul&gt;
+
+</description>
+      </item>
+      <item>
+          <title>Baked Jollof Rice</title>
+          <pubDate>Sun, 22 Sep 2024 12:00:00 +0000</pubDate>
+          <author>Lzon</author>
+          <link>https://lzon.ca/posts/blog/jollof-baked-rice/</link>
+          <guid isPermaLink="false">https://lzon.ca/posts/blog/jollof-baked-rice/</guid>
+          <category domain="https://lzon.ca/posts/blog/">Blog</category>
+          <description xml:base="https://lzon.ca/posts/blog/jollof-baked-rice/">&lt;p&gt;I took my old &lt;a href=&quot;/posts/recipes/baked-beans-and-rice&quot;&gt;Baked Beans &amp;amp; Rice&lt;/a&gt; recipe and modified it using this Jollof Rice recipe
+I found from &lt;a rel=&quot;noopener external&quot; target=&quot;_blank&quot; href=&quot;https://www.cookwell.com/recipe/jollof-rice&quot;&gt;Ethan Cheblowski&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;The result was fantastic. I served this with BBQ chicken for a meal, using some of the spice mix on the chicken. I still had plenty of leftover spice mix, which I will definitely be using again.&lt;/p&gt;
+&lt;p&gt;The standalone recipe can be found &lt;a href=&quot;/posts/recipes/jollof-seasoning&quot;&gt;here&lt;/a&gt;.&lt;/p&gt;
+&lt;h3 id=&quot;ingredients-spice-mix&quot;&gt;Ingredients (Spice Mix)&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;🫚 4 tbsp ground ginger&lt;/li&gt;
+&lt;li&gt;🌿 4 tbsp thyme&lt;/li&gt;
+&lt;li&gt;☘️ 2 tbsp coriander&lt;/li&gt;
+&lt;li&gt;🧅 2 tbsp onion powder&lt;/li&gt;
+&lt;li&gt;🧄 1 tbsp garlic powder&lt;/li&gt;
+&lt;li&gt;🌱 1 tbsp cinnamon&lt;/li&gt;
+&lt;li&gt;🌶️ 1 tbsp red pepper flakes&lt;/li&gt;
+&lt;li&gt;🌿 1 tbsp paprika&lt;/li&gt;
+&lt;li&gt;🐔 1 tbsp chicken broth powder&lt;/li&gt;
+&lt;li&gt;🧂 1 tbsp salt&lt;/li&gt;
+&lt;li&gt;☘️ 1/2 tbsp nutmeg&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&quot;ingredients-sauce&quot;&gt;Ingredients (Sauce)&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;🍅 4 tomatoes&lt;/li&gt;
+&lt;li&gt;🫑 2 bell peppers, chopped&lt;/li&gt;
+&lt;li&gt;🌶️ 2 jalepeno peppers, chopped&lt;/li&gt;
+&lt;li&gt;🧄 1 bulb of garlic, chopped&lt;/li&gt;
+&lt;li&gt;🌿 2 tbsp curry powder&lt;/li&gt;
+&lt;li&gt;☘️ 6-8 tbsp jollof spice mix&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&quot;ingredients-rice&quot;&gt;Ingredients (Rice)&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;🍚 2 cups rice&lt;/li&gt;
+&lt;li&gt;🧅 2 onions, chopped&lt;/li&gt;
+&lt;li&gt;🫑 1 bell pepper, chopped&lt;/li&gt;
+&lt;li&gt;🥤 1 cup water&lt;/li&gt;
+&lt;li&gt;🧈 2 tbsp butter, melted&lt;/li&gt;
+&lt;li&gt;🧂 2 tbsp M.S.G. (optional)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&quot;instructions&quot;&gt;Instructions&lt;/h3&gt;
+&lt;ol&gt;
+&lt;li&gt;Preheat oven to 350 ℉ (175 ℃).&lt;/li&gt;
+&lt;li&gt;Add together the spice mix, and set aside in a sealable container. There will be leftovers.&lt;/li&gt;
+&lt;li&gt;Using a blender (or your preferred cooking appliance), blend together the sauce ingredients until smooth. Set aside.&lt;/li&gt;
+&lt;li&gt;Into a large cooking tray, add rice and almonds. Pour melted butter over the rice/almonds and stir until everything is evenly coated.&lt;/li&gt;
+&lt;li&gt;Pour the sauce over the rice, then the cup of water, then add the chopped onions and bell peppers. Stir everything until well mixed.&lt;/li&gt;
+&lt;li&gt;Cover the tray, with a lid or aluminium foil.&lt;/li&gt;
+&lt;li&gt;Bake in oven for 60 - 70 minutes. Optionally serve with sour cream and green onion garnish.&lt;/li&gt;
+&lt;/ol&gt;
+
+</description>
+      </item>
+      <item>
+          <title>Baked Cajun Pork</title>
+          <pubDate>Sun, 08 Sep 2024 12:00:00 +0000</pubDate>
+          <author>Lzon</author>
+          <link>https://lzon.ca/posts/blog/baked-cajun-pork/</link>
+          <guid isPermaLink="false">https://lzon.ca/posts/blog/baked-cajun-pork/</guid>
+          <category domain="https://lzon.ca/posts/blog/">Blog</category>
+          <description xml:base="https://lzon.ca/posts/blog/baked-cajun-pork/">&lt;p&gt;A very easy and simple weeknight-style meal, made from scratch. I also make a &lt;a href=&quot;https://lzon.ca/posts/blog/baked-curry-pork/&quot;&gt;Curry Pork&lt;/a&gt; of this recipe with a potent Indian-style flavor.&lt;/p&gt;
+&lt;h3 id=&quot;ingredients&quot;&gt;Ingredients&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;🐷 2 - 3lbs of your preferred cuts of pork (1 or 2 grocery store packages)&lt;/li&gt;
+&lt;li&gt;🫙 1/3 cup liquid smoke&lt;/li&gt;
+&lt;li&gt;🫙 2/3 cup Worcestershire sauce&lt;/li&gt;
+&lt;li&gt;🌿 3 tbsp &lt;a href=&quot;/posts/recipes/cajun-seasoning&quot;&gt;Cajun Seasoning&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;🧅 1–2 medium-sized onions, or other miscellaneous veggies&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&quot;instructions&quot;&gt;Instructions&lt;/h3&gt;
+&lt;ol&gt;
+&lt;li&gt;Chop the veggies (I like to slice the onions into thick rings).&lt;/li&gt;
+&lt;li&gt;In a large baking tray, lay down veggies as a bed.&lt;/li&gt;
+&lt;li&gt;Into a large bowl, mix together liquid smoke, Worcestershire sauce, and Cajun seasoning.&lt;/li&gt;
+&lt;li&gt;One at a time, marinade the pork cuts in the bowl, then place them over the veggie bed.&lt;/li&gt;
+&lt;li&gt;Place in an oven for a minimum of 60 minutes at 350° F. Cook longer and hotter if desired (I usually cook for 75 minutes at 400° F, which makes the pork slightly crispy).&lt;/li&gt;
+&lt;/ol&gt;
+
+</description>
+      </item>
+      <item>
+          <title>Baked Curry Pork</title>
+          <pubDate>Sun, 08 Sep 2024 12:00:00 +0000</pubDate>
+          <author>Lzon</author>
+          <link>https://lzon.ca/posts/blog/baked-curry-pork/</link>
+          <guid isPermaLink="false">https://lzon.ca/posts/blog/baked-curry-pork/</guid>
+          <category domain="https://lzon.ca/posts/blog/">Blog</category>
+          <description xml:base="https://lzon.ca/posts/blog/baked-curry-pork/">&lt;p&gt;A very easy and simple weeknight-style meal, made from scratch.
+While not traditional by any means, it achieves a very good indian-style flavor.
+This is a variation of my &lt;a href=&quot;https://lzon.ca/posts/blog/baked-cajun-pork/&quot;&gt;Cajun Pork&lt;/a&gt; recipe.&lt;/p&gt;
+&lt;h3 id=&quot;ingredients&quot;&gt;Ingredients&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;🐖 2 - 3lbs of your preferred cuts of pork (1 or 2 grocery store packages)&lt;/li&gt;
+&lt;li&gt;🫙 1/3 cup liquid smoke&lt;/li&gt;
+&lt;li&gt;🫙 2/3 cup worchestshire sauce&lt;/li&gt;
+&lt;li&gt;🌿 3-4 tbsp Curry powder&lt;/li&gt;
+&lt;li&gt;☘️ 1-2 tbsp Garam Masala (optional, could be substituted for cumin)&lt;/li&gt;
+&lt;li&gt;🧅 1 - 2 medium sized onions, or other miscellaneous veggies&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&quot;instructions&quot;&gt;Instructions&lt;/h3&gt;
+&lt;ol&gt;
+&lt;li&gt;Chop the veggies (I like to slice the onions into thick rings).&lt;/li&gt;
+&lt;li&gt;In a large baking tray, lay down veggies as a bed.&lt;/li&gt;
+&lt;li&gt;Into a large bowl, mix together liquid smoke, worcheshire sauce, and dry spices.&lt;/li&gt;
+&lt;li&gt;One at a time, marinade the pork cuts in the bowl, then place them over the veggie bed.&lt;/li&gt;
+&lt;li&gt;Place in an oven for a minimum of 60 minutes at 350° F. Cook longer and hotter if desired (I usually cook for 75 minutes at 400° F, which makes the pork slightly crispy).&lt;/li&gt;
+&lt;/ol&gt;
+
+</description>
+      </item>
+      <item>
+          <title>Creamy Garlic Pasta</title>
+          <pubDate>Sun, 18 Aug 2024 12:00:00 +0000</pubDate>
+          <author>Lzon</author>
+          <link>https://lzon.ca/posts/blog/creamy-garlic-pasta/</link>
+          <guid isPermaLink="false">https://lzon.ca/posts/blog/creamy-garlic-pasta/</guid>
+          <category domain="https://lzon.ca/posts/blog/">Blog</category>
+          <description xml:base="https://lzon.ca/posts/blog/creamy-garlic-pasta/">
+
+&lt;p&gt;This is one of the earliest recipes that I learned.
+It is meant to mimic the flavor of
+&lt;a rel=&quot;noopener external&quot; target=&quot;_blank&quot; href=&quot;https://www.knorr.com/ca/en/knorr-products/knorr-sidekicks.html&quot;&gt;Knorr Sidekicks&lt;/a&gt;
+pasta mix.&lt;/p&gt;
+&lt;p&gt;It tastes amazing, and is very rich and filling. I don’t make it much anymore since
+it isn’t particularly nutritious.&lt;/p&gt;
+&lt;h3 id=&quot;ingredients&quot;&gt;Ingredients&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;🥛 1/4 cup powdered milk (4 tablespoons)&lt;/li&gt;
+&lt;li&gt;🌽 2 tablespoons corn starch&lt;/li&gt;
+&lt;li&gt;🧂 1 teaspoon salt&lt;/li&gt;
+&lt;li&gt;🌿 1 teaspoon parsley&lt;/li&gt;
+&lt;li&gt;🧄 3-4 diced garlic cloves&lt;/li&gt;
+&lt;li&gt;🧅 1-2 diced onions&lt;/li&gt;
+&lt;li&gt;🧈 4 tablespoons butter&lt;/li&gt;
+&lt;li&gt;🥤 4 cups cold water&lt;/li&gt;
+&lt;li&gt;🥣 seashell pasta, or preferred variety&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&quot;instructions&quot;&gt;Instructions&lt;/h3&gt;
+&lt;ol&gt;
+&lt;li&gt;Add dry ingredients, garlic, onion, butter, and water to a medium-sized saucepan.&lt;/li&gt;
+&lt;li&gt;Stir in pasta until saucepan is full, ensuring that all noodles are fully submerged.&lt;/li&gt;
+&lt;li&gt;Simmer on medium heat until pasta is tender. Stir frequently.&lt;/li&gt;
+&lt;li&gt;Optionally, serve with grated Parmesan.&lt;/li&gt;
+&lt;/ol&gt;
+
+</description>
+      </item>
+      <item>
+          <title>Baked Beans &amp; Rice</title>
+          <pubDate>Sat, 17 Aug 2024 12:00:00 +0000</pubDate>
+          <author>Lzon</author>
+          <link>https://lzon.ca/posts/blog/baked-beans-and-rice/</link>
+          <guid isPermaLink="false">https://lzon.ca/posts/blog/baked-beans-and-rice/</guid>
+          <category domain="https://lzon.ca/posts/blog/">Blog</category>
+          <description xml:base="https://lzon.ca/posts/blog/baked-beans-and-rice/">&lt;p&gt;This is one of the first recipes I learned when
+I started to cook. It’s simple, cheap, filling and nutritious.
+It’s also very flexible: I’m constantly riffing on
+this recipe, and I’ve never made a bad batch.&lt;/p&gt;
+&lt;h3 id=&quot;ingredients&quot;&gt;Ingredients&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;🍚 3 cups rice, basmati or preferred variety&lt;/li&gt;
+&lt;li&gt;🧂 2 teaspoons salt&lt;/li&gt;
+&lt;li&gt;🌿 1 teaspoon black pepper&lt;/li&gt;
+&lt;li&gt;☘️ 2 teaspoons ground cumin&lt;/li&gt;
+&lt;li&gt;🌶️ 1 tablespoon chili powder&lt;/li&gt;
+&lt;li&gt;🥵 1/4 teaspoon cayenne pepper (optional)&lt;/li&gt;
+&lt;li&gt;🌿 1/4 teaspoon oregano&lt;/li&gt;
+&lt;li&gt;🫒 1/4 cup olive oil (4 tablespoons)&lt;/li&gt;
+&lt;li&gt;🍅 1 jar tomato salsa (16 ounces)&lt;/li&gt;
+&lt;li&gt;🐔 2 cups chicken or beef broth&lt;/li&gt;
+&lt;li&gt;🫘 2 cans black beans, rinsed and drained (15 ounces each)&lt;/li&gt;
+&lt;li&gt;🧅 2 large chopped white onions&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&quot;instructions&quot;&gt;Instructions&lt;/h3&gt;
+&lt;ol&gt;
+&lt;li&gt;Preheat oven to 350 ℉ (175 ℃).&lt;/li&gt;
+&lt;li&gt;Pour rice into a casserole dish and season with salt, pepper, cumin, chili powder, cayenne, and oregano. Pour in olive oil and stir until rice is thoroughly coated with oil. Add salsa, broth, onions and beans; stir until evenly combined. Cover very tightly with aluminum foil&lt;/li&gt;
+&lt;li&gt;Bake until rice is tender, about 1 hour 10 minutes. Remove foil, taste and adjust seasoning if necessary, and fluff with a fork. Serve hot, optionally garnish with green onion.&lt;/li&gt;
+&lt;/ol&gt;
+
+</description>
+      </item>
+      <item>
+          <title>Beef Stroganoff</title>
+          <pubDate>Sat, 17 Aug 2024 12:00:00 +0000</pubDate>
+          <author>Lzon</author>
+          <link>https://lzon.ca/posts/blog/beef-stroganoff/</link>
+          <guid isPermaLink="false">https://lzon.ca/posts/blog/beef-stroganoff/</guid>
+          <category domain="https://lzon.ca/posts/blog/">Blog</category>
+          <description xml:base="https://lzon.ca/posts/blog/beef-stroganoff/">&lt;p&gt;Just a standard Beef Stroganoff recipe.
+I’ve made it a few times and everyone
+always likes it.&lt;/p&gt;
+&lt;h3 id=&quot;ingredients&quot;&gt;Ingredients&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;🐄 3 lbs beef&lt;/li&gt;
+&lt;li&gt;🍷 1 1/2 white wine&lt;/li&gt;
+&lt;li&gt;🐮 2 cups beef broth&lt;/li&gt;
+&lt;li&gt;🥛 1/4 cup table cream&lt;/li&gt;
+&lt;li&gt;🥛 3/4 cup sour cream&lt;/li&gt;
+&lt;li&gt;🧅 2 onions&lt;/li&gt;
+&lt;li&gt;🧄 2 cloves garlic&lt;/li&gt;
+&lt;li&gt;🍄 8 oz mushroom&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&quot;instructions&quot;&gt;Instructions&lt;/h3&gt;
+&lt;ol&gt;
+&lt;li&gt;Cut beef into thin strips&lt;/li&gt;
+&lt;li&gt;Cook on high heat until thoroughly browned, with a careful amount of olive oil.&lt;/li&gt;
+&lt;li&gt;Remove beef from pot, cook mushroom, onion, and garlic in the beef fat.&lt;/li&gt;
+&lt;li&gt;Deglaze with white wine, add broth once bottom is clean.&lt;/li&gt;
+&lt;li&gt;Add beef back to the pot, simmer for 10–20 minutes.&lt;/li&gt;
+&lt;li&gt;Add the creams, then add a thickener (flour) as desired.&lt;/li&gt;
+&lt;/ol&gt;
+
+</description>
+      </item>
+      <item>
+          <title>Black Bean Burgers</title>
+          <pubDate>Sat, 17 Aug 2024 12:00:00 +0000</pubDate>
+          <author>Lzon</author>
+          <link>https://lzon.ca/posts/blog/black-bean-burgers/</link>
+          <guid isPermaLink="false">https://lzon.ca/posts/blog/black-bean-burgers/</guid>
+          <category domain="https://lzon.ca/posts/blog/">Blog</category>
+          <description xml:base="https://lzon.ca/posts/blog/black-bean-burgers/">&lt;p&gt;Another recipe that I only ever tried once. I liked it,
+but it was otherwise unpopular in my house. It’s vegetarian
+but not vegan-friendly (it uses egg as a binder).&lt;/p&gt;
+&lt;p&gt;They are &lt;em&gt;very&lt;/em&gt; dense and filling.&lt;/p&gt;
+&lt;h3 id=&quot;ingredients&quot;&gt;Ingredients&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;🧅 1/2 large red onion, chopped&lt;/li&gt;
+&lt;li&gt;🌶️ 1-2 whole chipotle peppers in adobo sauce (optional)&lt;/li&gt;
+&lt;li&gt;🫘 2 cans black beans drained and rinsed (15 ounces each)&lt;/li&gt;
+&lt;li&gt;🍞 1 cup plain bread crumbs&lt;/li&gt;
+&lt;li&gt;🌿 1 1/2 teaspoons cumin&lt;/li&gt;
+&lt;li&gt;🧂 3/4 teaspoon salt&lt;/li&gt;
+&lt;li&gt;🧄 4 cloves garlic&lt;/li&gt;
+&lt;li&gt;☘️ 1/2 teaspoon black pepper&lt;/li&gt;
+&lt;li&gt;🥚 2 large eggs&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&quot;instructions&quot;&gt;Instructions&lt;/h3&gt;
+&lt;ol&gt;
+&lt;li&gt;Place onion, chipotle, and garlic into a food processor and pulse until finely chopped. Add black beans and pulse until beans are partially chopped, leaving some whole or partial beans. Transfer to a large mixing bowl.&lt;/li&gt;
+&lt;li&gt;Stir in bread crumbs, cumin, salt, pepper and eggs until well combined.&lt;/li&gt;
+&lt;li&gt;Divide mixture to for 8 patties.&lt;/li&gt;
+&lt;li&gt;When ready to cook choose one of the following options:
+&lt;ul&gt;
+&lt;li&gt;Fried: Heat a lightly oiled skillet to medium high heat. Cook for 5 minutes on each side.&lt;/li&gt;
+&lt;li&gt;Baked: Bake in a 400 ℉ oven for 5 minutes each side.&lt;/li&gt;
+&lt;li&gt;Grilled: Cook on an outdoor grill for 5 minutes each side.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+
+</description>
+      </item>
+      <item>
+          <title>Cajun Seasoning</title>
+          <pubDate>Sat, 17 Aug 2024 12:00:00 +0000</pubDate>
+          <author>Lzon</author>
+          <link>https://lzon.ca/posts/blog/cajun-seasoning/</link>
+          <guid isPermaLink="false">https://lzon.ca/posts/blog/cajun-seasoning/</guid>
+          <category domain="https://lzon.ca/posts/blog/">Blog</category>
+          <description xml:base="https://lzon.ca/posts/blog/cajun-seasoning/">&lt;p&gt;A flavorful spice mix with a lot of kick. I can’t remember
+where I found the original recipe, but this has become a
+go-to seasoning in my house, and it has gotten many complements
+from friends and family. It works amazingly well on the BBQ.&lt;/p&gt;
+&lt;h3 id=&quot;ingredients&quot;&gt;Ingredients&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;🌿 2 tbsp paprika&lt;/li&gt;
+&lt;li&gt;🧄 2 tbsp garlic powder&lt;/li&gt;
+&lt;li&gt;☘️ 1 tbsp black pepper&lt;/li&gt;
+&lt;li&gt;🧂 1 tbsp salt&lt;/li&gt;
+&lt;li&gt;🧅 2 tsp onion powder&lt;/li&gt;
+&lt;li&gt;🌱 2 tsp oregano&lt;/li&gt;
+&lt;li&gt;🌿 2 tsp thyme&lt;/li&gt;
+&lt;li&gt;🌶️ 1 tsp cayenne pepper (optional)&lt;/li&gt;
+&lt;/ul&gt;
+
+</description>
+      </item>
+      <item>
+          <title>Gingerbread</title>
+          <pubDate>Sat, 17 Aug 2024 12:00:00 +0000</pubDate>
+          <author>Lzon</author>
+          <link>https://lzon.ca/posts/blog/ginger-bread/</link>
+          <guid isPermaLink="false">https://lzon.ca/posts/blog/ginger-bread/</guid>
+          <category domain="https://lzon.ca/posts/blog/">Blog</category>
+          <description xml:base="https://lzon.ca/posts/blog/ginger-bread/">&lt;p&gt;I only tried this recipe once. It turned out nice,
+but it wasn’t interesting enough for me to try it
+again.&lt;/p&gt;
+&lt;h3 id=&quot;ingredients&quot;&gt;Ingredients&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;🐮 1 cup (237 mL) milk or water&lt;/li&gt;
+&lt;li&gt;🍫 1/2 cup (118 mL) molasses&lt;/li&gt;
+&lt;li&gt;🍯 1/2 cup (118 mL) honey&lt;/li&gt;
+&lt;li&gt;🧈 1/2 cup (one stick, 113g) butter&lt;/li&gt;
+&lt;li&gt;🧂 1/2 cup (100g) granulated sugar&lt;/li&gt;
+&lt;li&gt;🥚 1 egg&lt;/li&gt;
+&lt;li&gt;🍞 2 1/2 cups (300g) all-purpose flour&lt;/li&gt;
+&lt;li&gt;🧂 1/2 teaspoon salt (maybe 3/4 if using unsalted butter)&lt;/li&gt;
+&lt;li&gt;🧑‍🍳 1 1/2 teaspoons baking soda&lt;/li&gt;
+&lt;li&gt;🌿 2 tablespoons ground cinnamon&lt;/li&gt;
+&lt;li&gt;🫚 2 tablespoons ground ginger (use half if you don’t want it very spicy)&lt;/li&gt;
+&lt;li&gt;☘️ a little finely-ground black pepper&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&quot;instructions&quot;&gt;Instructions&lt;/h3&gt;
+&lt;ol&gt;
+&lt;li&gt;Heat oven to 350ºF/180ºC.&lt;/li&gt;
+&lt;li&gt;Prepare a loaf pan with grease or parchment sling.&lt;/li&gt;
+&lt;li&gt;Pour milk/water into a bowl, along with the molasses and honey.&lt;/li&gt;
+&lt;li&gt;Drop in the butter in chucks. Microwave until butter is mostly melted.&lt;/li&gt;
+&lt;li&gt;Put the flour in a mixing bowl with the salt, baking powder, and spices. Whisk to combine and fluff up the flour.&lt;/li&gt;
+&lt;li&gt;Add the sugar to the wet ingredients along with the egg and stir. Pour the wet ingredients into the dry and whisk until smooth.&lt;/li&gt;
+&lt;li&gt;Pour mixture into the loaf pan and bake for 1 hour.&lt;/li&gt;
+&lt;/ol&gt;
+
+</description>
+      </item>
+      <item>
+          <title>Ginger Pork Stir Fry</title>
+          <pubDate>Sat, 17 Aug 2024 12:00:00 +0000</pubDate>
+          <author>Lzon</author>
+          <link>https://lzon.ca/posts/blog/ginger-pork-stir-fry/</link>
+          <guid isPermaLink="false">https://lzon.ca/posts/blog/ginger-pork-stir-fry/</guid>
+          <category domain="https://lzon.ca/posts/blog/">Blog</category>
+          <description xml:base="https://lzon.ca/posts/blog/ginger-pork-stir-fry/">&lt;p&gt;A very tasty oriental-style meal. I don’t make it often, but it has been great every time I’ve made it.&lt;/p&gt;
+&lt;h3 id=&quot;ingredients&quot;&gt;Ingredients&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;🐷 3 lbs pork tenderloin&lt;/li&gt;
+&lt;li&gt;🥢 6 tbsp soy sauce&lt;/li&gt;
+&lt;li&gt;🥢 6 tbsp oyster sauce&lt;/li&gt;
+&lt;li&gt;🍷 6 tbsp cooking wine&lt;/li&gt;
+&lt;li&gt;🌿 3 tsp Chinese 5 spice&lt;/li&gt;
+&lt;li&gt;🧅 green onion&lt;/li&gt;
+&lt;li&gt;🧄 garlic&lt;/li&gt;
+&lt;li&gt;🥦 broccoli (approx. 1 head, or other veggie of choice)&lt;/li&gt;
+&lt;li&gt;🥢 3 tsp sesame oil&lt;/li&gt;
+&lt;li&gt;🫘 sesame seeds (optional)&lt;/li&gt;
+&lt;li&gt;Marinade:
+&lt;ul&gt;
+&lt;li&gt;🫚 3 tsp ginger&lt;/li&gt;
+&lt;li&gt;🥢 3 tbsp soy sauce&lt;/li&gt;
+&lt;li&gt;☘️ 2 tsp black pepper&lt;/li&gt;
+&lt;li&gt;🌽 2 tsp corn flour&lt;/li&gt;
+&lt;li&gt;🧑‍🍳 1 1/2 tsp baking soda&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&quot;instructions&quot;&gt;Instructions&lt;/h3&gt;
+&lt;ol&gt;
+&lt;li&gt;Cut pork into very thin slices, mix and apply marinade, set aside.&lt;/li&gt;
+&lt;li&gt;Mix sauce, chop veggies.&lt;/li&gt;
+&lt;li&gt;In a large frying pan, begin by frying garlic until it begins to brown, then add marinated pork. Cook until pork is nearly done.&lt;/li&gt;
+&lt;li&gt;Add sauce to pan, then add veggies.&lt;/li&gt;
+&lt;li&gt;When the meat is fully cooked and the veggies have softened, add sesame oil and seeds if preferred.&lt;/li&gt;
+&lt;li&gt;Serve with a side of rice.&lt;/li&gt;
+&lt;/ol&gt;
+
+</description>
+      </item>
+      <item>
+          <title>Peanut Hummus</title>
+          <pubDate>Sat, 17 Aug 2024 12:00:00 +0000</pubDate>
+          <author>Lzon</author>
+          <link>https://lzon.ca/posts/blog/peanut-hummus/</link>
+          <guid isPermaLink="false">https://lzon.ca/posts/blog/peanut-hummus/</guid>
+          <category domain="https://lzon.ca/posts/blog/">Blog</category>
+          <description xml:base="https://lzon.ca/posts/blog/peanut-hummus/">&lt;p&gt;A great tasting, savory spread for bread or crackers.
+If you eat all-natural peanut butter, and are too lazy
+to mix the loose oil, this is a good way to use it up (ask
+me how I know 😉).&lt;/p&gt;
+&lt;h3 id=&quot;ingredients&quot;&gt;Ingredients&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;🫘 1 can (15 oz) chickpeas, drained&lt;/li&gt;
+&lt;li&gt;🥜 1/4 cup peanut butter (oil)&lt;/li&gt;
+&lt;li&gt;🍋 2 tbsp lemon juice&lt;/li&gt;
+&lt;li&gt;🥢 3 tbsp soy sauce&lt;/li&gt;
+&lt;li&gt;🧄 2 tsp garlic powder&lt;/li&gt;
+&lt;li&gt;🌶️ 2 tsp chili powder&lt;/li&gt;
+&lt;li&gt;🫚 1 tsp ginger&lt;/li&gt;
+&lt;li&gt;🌶️ 1 tsp red pepper flake&lt;/li&gt;
+&lt;/ul&gt;
+
+</description>
+      </item>
+      <item>
+          <title>Zucchini Pizza Casserole</title>
+          <pubDate>Sat, 17 Aug 2024 12:00:00 +0000</pubDate>
+          <author>Lzon</author>
+          <link>https://lzon.ca/posts/blog/zucchini-pizza-caserole/</link>
+          <guid isPermaLink="false">https://lzon.ca/posts/blog/zucchini-pizza-caserole/</guid>
+          <category domain="https://lzon.ca/posts/blog/">Blog</category>
+          <description xml:base="https://lzon.ca/posts/blog/zucchini-pizza-caserole/">
+
+&lt;h3 id=&quot;ingredients&quot;&gt;Ingredients&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;🥒 4 cups shredded unpeeled zucchini&lt;/li&gt;
+&lt;li&gt;🥚 2 large eggs&lt;/li&gt;
+&lt;li&gt;🧀 1/2 cup Parmesan&lt;/li&gt;
+&lt;li&gt;🧀 2 cups mozzarella&lt;/li&gt;
+&lt;li&gt;🧀 1 cup cheddar&lt;/li&gt;
+&lt;li&gt;🐮 1 lbs ground beef&lt;/li&gt;
+&lt;li&gt;🧅 1/2 cup onion&lt;/li&gt;
+&lt;li&gt;🍅 1 can tomato sauce&lt;/li&gt;
+&lt;li&gt;🫑 1 bell pepper&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&quot;instructions&quot;&gt;Instructions&lt;/h3&gt;
+&lt;ol&gt;
+&lt;li&gt;Preheat oven to 400 ℉. Shred zucchini and squeeze out moisture.&lt;/li&gt;
+&lt;li&gt;Combine zucchini with the egg, and half of the cheese (Parmesan, mozzarella, and cheddar). Layer into the bottom of a large baking dish. Bake for 20 minutes&lt;/li&gt;
+&lt;li&gt;Cook beef and onion completely in a saucepan, then add tomato sauce. Pour over the cooked egg layer, then sprinkle the remaining cheese on top. Bake for 20 more minutes until done.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h3 id=&quot;description&quot;&gt;Description&lt;/h3&gt;
+&lt;p&gt;This is an italian-style caserole with pizza-like topping and a zuchini base. I first made it in 2023 and it tastes fantastic. I choose sometimes to skip the zuchini base to save time (or if I’m just being lazy). The topping is the signature feature of this dish, it really does taste like a pizza!&lt;/p&gt;
+
+</description>
+      </item>
+    </channel>
+</rss>

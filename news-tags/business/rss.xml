@@ -9,60 +9,102 @@
       <language>en</language>
       <atom:link href="https://lzon.ca/news-tags/business/rss.xml" rel="self" type="application/rss+xml"/>
       <lastBuildDate>Tue, 03 Nov 2026 12:00:00 +0000</lastBuildDate>
+      <!-- Items. Quotes (their own section feed) list one quote each. Posts go through
+           macros/feed.html, so this feed, atom.xml and pages.json agree: each item is titled
+           as the site titles the post, carries its type as a <category>, and in the merged
+           /posts/ feed leads its title with the type ("[ News ] …"). -->
       
       
       
-      
-      
+      <!-- quotes and numbered post types sort by filename, since dates alone aren't unique -->
       
       
       <item>
           <title>Waymo to expand Robo-taxi service into Canada</title>
           <pubDate>Mon, 19 Oct 2026 12:00:00 +0000</pubDate>
           <author>Lzon</author>
-          <link>https://lzon.ca/news/news-000028-waymos-robotaxis-canada/</link>
-          <guid isPermaLink="false">https://lzon.ca/news/news-000028-waymos-robotaxis-canada/</guid>
-          <description xml:base="https://lzon.ca/news/news-000028-waymos-robotaxis-canada/">&lt;p&gt;Alphabet’s Robo-taxi company Waymo announced their plan to expand services into Canada.&lt;&#x2F;p&gt;</description>
+          <link>https://lzon.ca/posts/news/000028-waymos-robotaxis-canada/</link>
+          <guid isPermaLink="false">https://lzon.ca/posts/news/28</guid>
+          <category domain="https://lzon.ca/posts/news/">News</category>
+          <description xml:base="https://lzon.ca/posts/news/000028-waymos-robotaxis-canada/">&lt;p&gt;Alphabet’s Robo-taxi company Waymo announced their plan to expand services into Canada.&lt;/p&gt;
+&lt;span id=&quot;continue-reading&quot;&gt;&lt;/span&gt;
+&lt;p&gt;Until now the company has only operated in a limited number of American metro areas. They have only recently began announcing their plans for further expansion.&lt;/p&gt;
+&lt;p&gt;Waymo’s growth, and the growth of other robo-taxi services will depend entirely on further progress in self-driving technology. While I fully believe that automated vehicles will become widespread over the next decade or two, the rollout is definitely slower than initially anticipated. CPG Grey’s &lt;a rel=&quot;noopener external&quot; target=&quot;_blank&quot; href=&quot;https://www.youtube.com/watch?v=7Pq-S557XQU&quot;&gt;famous video on the subject&lt;/a&gt; demonstrates this point well.&lt;/p&gt;
+&lt;p&gt;Source: &lt;a href=&quot;https://techcrunch.com/2026/10/16/waymos-robotaxis-are-headed-to-canada/&quot;&gt;https://techcrunch.com/2026/10/16/waymos-robotaxis-are-headed-to-canada/&lt;/a&gt;&lt;/p&gt;&lt;p&gt;Source: &lt;a href=&quot;https://web.archive.org/web/20261017110344/https://techcrunch.com/2026/10/16/waymos-robotaxis-are-headed-to-canada/&quot;&gt;https://web.archive.org/web/20261017110344/https://techcrunch.com/2026/10/16/waymos-robotaxis-are-headed-to-canada/&lt;/a&gt;&lt;/p&gt;
+</description>
       </item>
       <item>
           <title>Meta to build cloud compute business to recoup its massive AI investment</title>
           <pubDate>Fri, 03 Jul 2026 12:00:00 +0000</pubDate>
           <author>Lzon</author>
-          <link>https://lzon.ca/news/news-000023-meta-cloud-business/</link>
-          <guid isPermaLink="false">https://lzon.ca/news/news-000023-meta-cloud-business/</guid>
-          <description xml:base="https://lzon.ca/news/news-000023-meta-cloud-business/">&lt;p&gt;Meta (formerly Facebook) has announced that it will be entering into the cloud compute business. It appears as though this is an attempt to recoup what was otherwise an over-investment in data centers which were initially intended for AI.&lt;&#x2F;p&gt;</description>
+          <link>https://lzon.ca/posts/news/000023-meta-cloud-business/</link>
+          <guid isPermaLink="false">https://lzon.ca/posts/news/23</guid>
+          <category domain="https://lzon.ca/posts/news/">News</category>
+          <description xml:base="https://lzon.ca/posts/news/000023-meta-cloud-business/">&lt;p&gt;Meta (formerly Facebook) has announced that it will be entering into the cloud compute business. It appears as though this is an attempt to recoup what was otherwise an over-investment in data centers which were initially intended for AI.&lt;/p&gt;
+&lt;span id=&quot;continue-reading&quot;&gt;&lt;/span&gt;
+&lt;p&gt;Many are speculating now that this might trigger the end of the AI hype bubble, but its not certain yet what might happen.&lt;/p&gt;
+&lt;p&gt;There have been a fair times through the past few years in which many were predicting the end of the bubble, and were obviously wrong. For example, the launch of the Deepseek model in early 2025 caused a 17% crash in Nvidia stock. Obviously they recovered and we are still in the midst of the bubble.&lt;/p&gt;
+&lt;p&gt;I think concern (or joy) might be warranted, but its still to early to know what effect this news will have.&lt;/p&gt;
+&lt;p&gt;Source: &lt;a href=&quot;https://www.fool.com/investing/2026/07/03/meta-is-reportedly-building-a-cloud-business-to-ri/&quot;&gt;https://www.fool.com/investing/2026/07/03/meta-is-reportedly-building-a-cloud-business-to-ri/&lt;/a&gt;&lt;/p&gt;&lt;p&gt;Source: &lt;a href=&quot;https://web.archive.org/web/20260703184337/https://www.fool.com/investing/2026/07/03/meta-is-reportedly-building-a-cloud-business-to-ri/&quot;&gt;https://web.archive.org/web/20260703184337/https://www.fool.com/investing/2026/07/03/meta-is-reportedly-building-a-cloud-business-to-ri/&lt;/a&gt;&lt;/p&gt;
+</description>
       </item>
       <item>
-          <title>Elon Musk becomes world&#x27;s first trillionaire</title>
+          <title>Elon Musk becomes world&apos;s first trillionaire</title>
           <pubDate>Fri, 12 Jun 2026 12:00:00 +0000</pubDate>
           <author>Lzon</author>
-          <link>https://lzon.ca/news/news-000019-elon-musk-trillionaire/</link>
-          <guid isPermaLink="false">https://lzon.ca/news/news-000019-elon-musk-trillionaire/</guid>
-          <description xml:base="https://lzon.ca/news/news-000019-elon-musk-trillionaire/">&lt;p&gt;Elon musk became the world’s first trillionaire immediately following the IPO of Space X, the now public aerospace company for which he is a founder.&lt;&#x2F;p&gt;</description>
+          <link>https://lzon.ca/posts/news/000019-elon-musk-trillionaire/</link>
+          <guid isPermaLink="false">https://lzon.ca/posts/news/19</guid>
+          <category domain="https://lzon.ca/posts/news/">News</category>
+          <description xml:base="https://lzon.ca/posts/news/000019-elon-musk-trillionaire/">&lt;p&gt;Elon musk became the world’s first trillionaire immediately following the IPO of Space X, the now public aerospace company for which he is a founder.&lt;/p&gt;
+&lt;span id=&quot;continue-reading&quot;&gt;&lt;/span&gt;
+&lt;p&gt;His net worth had already climbed significantly leading up to the day of the IPO. Varying sources claimed his net worth to be between 800-900 billion dollars in recent weeks. The immediate surge in stock price for Space X on the day of its IPO meant that Musk’s share of the company was worth enough to make him a trillionaire.&lt;/p&gt;
+&lt;p&gt;I’m sure he is very proud…&lt;/p&gt;
+&lt;p&gt;Source: &lt;a href=&quot;https://apnews.com/article/musk-spacex-tesla-ipo-trillionaire-billionaire-worth-rockets-7723f82b6063a9a17c194e25982cd66d&quot;&gt;https://apnews.com/article/musk-spacex-tesla-ipo-trillionaire-billionaire-worth-rockets-7723f82b6063a9a17c194e25982cd66d&lt;/a&gt;&lt;/p&gt;&lt;p&gt;Source: &lt;a href=&quot;https://web.archive.org/web/20260612124718/https://apnews.com/article/musk-spacex-tesla-ipo-trillionaire-billionaire-worth-rockets-7723f82b6063a9a17c194e25982cd66d&quot;&gt;https://web.archive.org/web/20260612124718/https://apnews.com/article/musk-spacex-tesla-ipo-trillionaire-billionaire-worth-rockets-7723f82b6063a9a17c194e25982cd66d&lt;/a&gt;&lt;/p&gt;
+</description>
       </item>
       <item>
           <title>Corsair to source DRAM chips from Chinese fab</title>
           <pubDate>Wed, 27 May 2026 12:00:00 +0000</pubDate>
           <author>Lzon</author>
-          <link>https://lzon.ca/news/news-000015-memory-cxmt-shortages/</link>
-          <guid isPermaLink="false">https://lzon.ca/news/news-000015-memory-cxmt-shortages/</guid>
-          <description xml:base="https://lzon.ca/news/news-000015-memory-cxmt-shortages/">&lt;p&gt;Corsair will begin sourcing DRAM chips from chinese DRAM manufacturer &lt;a rel=&quot;noopener external&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;en.wikipedia.org&#x2F;wiki&#x2F;ChangXin_Memory_Technologies&quot;&gt;CXMT&lt;&#x2F;a&gt;.&lt;&#x2F;p&gt;</description>
+          <link>https://lzon.ca/posts/news/000015-memory-cxmt-shortages/</link>
+          <guid isPermaLink="false">https://lzon.ca/posts/news/15</guid>
+          <category domain="https://lzon.ca/posts/news/">News</category>
+          <description xml:base="https://lzon.ca/posts/news/000015-memory-cxmt-shortages/">&lt;p&gt;Corsair will begin sourcing DRAM chips from chinese DRAM manufacturer &lt;a rel=&quot;noopener external&quot; target=&quot;_blank&quot; href=&quot;https://en.wikipedia.org/wiki/ChangXin_Memory_Technologies&quot;&gt;CXMT&lt;/a&gt;.&lt;/p&gt;
+&lt;span id=&quot;continue-reading&quot;&gt;&lt;/span&gt;
+&lt;p&gt;The Chinese company has only just recently began production of DDR5 chips, beginning in 2025. This move is clearly a response to the DRAM chip shortages currently being caused by the AI hype bubble.&lt;/p&gt;
+&lt;p&gt;Source: &lt;a href=&quot;https://www.tomshardware.com/pc-components/ddr5/chinese-memory-maker-cxmt-enters-the-mainstream-consumer-memory-with-corsair-vengeance-ddr5-kit-chinese-made-dram-emerges-as-an-antidote-for-crushing-shortages&quot;&gt;https://www.tomshardware.com/pc-components/ddr5/chinese-memory-maker-cxmt-enters-the-mainstream-consumer-memory-with-corsair-vengeance-ddr5-kit-chinese-made-dram-emerges-as-an-antidote-for-crushing-shortages&lt;/a&gt;&lt;/p&gt;&lt;p&gt;Source: &lt;a href=&quot;https://web.archive.org/web/20260523052449/https://www.tomshardware.com/pc-components/ddr5/chinese-memory-maker-cxmt-enters-the-mainstream-consumer-memory-with-corsair-vengeance-ddr5-kit-chinese-made-dram-emerges-as-an-antidote-for-crushing-shortages&quot;&gt;https://web.archive.org/web/20260523052449/https://www.tomshardware.com/pc-components/ddr5/chinese-memory-maker-cxmt-enters-the-mainstream-consumer-memory-with-corsair-vengeance-ddr5-kit-chinese-made-dram-emerges-as-an-antidote-for-crushing-shortages&lt;/a&gt;&lt;/p&gt;
+</description>
       </item>
       <item>
           <title>Starbucks scraps AI inventory tool across North America</title>
           <pubDate>Sat, 23 May 2026 12:00:00 +0000</pubDate>
           <author>Lzon</author>
-          <link>https://lzon.ca/news/news-000012-starbucks-ai-rollback/</link>
-          <guid isPermaLink="false">https://lzon.ca/news/news-000012-starbucks-ai-rollback/</guid>
-          <description xml:base="https://lzon.ca/news/news-000012-starbucks-ai-rollback/">&lt;p&gt;Starbucks is dropping the AI-based inventory manager that it began using in September 2025. The software has numerous issues including miscounting and mislabeling inventory items. This decision comes after a multi year effort by CEO &lt;a rel=&quot;noopener external&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;en.wikipedia.org&#x2F;wiki&#x2F;Brian_Niccol&quot;&gt;Brian Niccol&lt;&#x2F;a&gt; to increase efficiency of the company’s supply chain.&lt;&#x2F;p&gt;</description>
+          <link>https://lzon.ca/posts/news/000012-starbucks-ai-rollback/</link>
+          <guid isPermaLink="false">https://lzon.ca/posts/news/12</guid>
+          <category domain="https://lzon.ca/posts/news/">News</category>
+          <description xml:base="https://lzon.ca/posts/news/000012-starbucks-ai-rollback/">&lt;p&gt;Starbucks is dropping the AI-based inventory manager that it began using in September 2025. The software has numerous issues including miscounting and mislabeling inventory items. This decision comes after a multi year effort by CEO &lt;a rel=&quot;noopener external&quot; target=&quot;_blank&quot; href=&quot;https://en.wikipedia.org/wiki/Brian_Niccol&quot;&gt;Brian Niccol&lt;/a&gt; to increase efficiency of the company’s supply chain.&lt;/p&gt;
+&lt;span id=&quot;continue-reading&quot;&gt;&lt;/span&gt;
+&lt;p&gt;The developer of the software &lt;a rel=&quot;noopener external&quot; target=&quot;_blank&quot; href=&quot;https://www.nomad-go.com/&quot;&gt;NomadGo&lt;/a&gt; said in a statement to Reuters that it is, “continuously learning from customers and user feedback” to improve its products.&lt;/p&gt;
+&lt;p&gt;Some AI skeptics have speculated that this could be a sign of the end of the AI hype bubble.&lt;/p&gt;
+&lt;p&gt;No matter what happens, I feel it appropriate to invoke the famouse quote from economist &lt;a rel=&quot;noopener external&quot; target=&quot;_blank&quot; href=&quot;https://en.wikipedia.org/wiki/John_Maynard_Keynes&quot;&gt;John Maynard Keynes&lt;/a&gt;.&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;“the market can remain irrational longer than you can stay solvent”&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;Source: &lt;a href=&quot;https://www.reuters.com/business/starbucks-scraps-ai-inventory-tool-across-north-america-2026-05-21/&quot;&gt;https://www.reuters.com/business/starbucks-scraps-ai-inventory-tool-across-north-america-2026-05-21/&lt;/a&gt;&lt;/p&gt;&lt;p&gt;Source: &lt;a href=&quot;https://web.archive.org/web/20260522025326/https://www.reuters.com/business/starbucks-scraps-ai-inventory-tool-across-north-america-2026-05-21/&quot;&gt;https://web.archive.org/web/20260522025326/https://www.reuters.com/business/starbucks-scraps-ai-inventory-tool-across-north-america-2026-05-21/&lt;/a&gt;&lt;/p&gt;
+</description>
       </item>
       <item>
           <title>Cisco posts record revenue, then cuts 4,000 jobs</title>
           <pubDate>Thu, 14 May 2026 12:00:00 +0000</pubDate>
           <author>Lzon</author>
-          <link>https://lzon.ca/news/news-000008-cisco-layoffs/</link>
-          <guid isPermaLink="false">https://lzon.ca/news/news-000008-cisco-layoffs/</guid>
-          <description xml:base="https://lzon.ca/news/news-000008-cisco-layoffs/">&lt;p&gt;Cisco announced a 4000-person layoff, representing 5% of there total workforce.&lt;&#x2F;p&gt;</description>
+          <link>https://lzon.ca/posts/news/000008-cisco-layoffs/</link>
+          <guid isPermaLink="false">https://lzon.ca/posts/news/8</guid>
+          <category domain="https://lzon.ca/posts/news/">News</category>
+          <description xml:base="https://lzon.ca/posts/news/000008-cisco-layoffs/">&lt;p&gt;Cisco announced a 4000-person layoff, representing 5% of there total workforce.&lt;/p&gt;
+&lt;span id=&quot;continue-reading&quot;&gt;&lt;/span&gt;
+&lt;p&gt;This follows from the company’s recent announcement of $15.8 billion in revenue for the most recent financial quarter, a 12 percent increase year over year.&lt;/p&gt;
+&lt;p&gt;Source: &lt;a href=&quot;https://www.sfchronicle.com/tech/article/cisco-layoffs-ai-restructuring-22257878.php&quot;&gt;https://www.sfchronicle.com/tech/article/cisco-layoffs-ai-restructuring-22257878.php&lt;/a&gt;&lt;/p&gt;&lt;p&gt;Source: &lt;a href=&quot;https://web.archive.org/web/20260514010222/https://www.sfchronicle.com/tech/article/cisco-layoffs-ai-restructuring-22257878.php&quot;&gt;https://web.archive.org/web/20260514010222/https://www.sfchronicle.com/tech/article/cisco-layoffs-ai-restructuring-22257878.php&lt;/a&gt;&lt;/p&gt;
+</description>
       </item>
     </channel>
 </rss>

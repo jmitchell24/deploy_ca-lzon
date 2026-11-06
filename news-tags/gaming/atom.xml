@@ -15,143 +15,198 @@
   
   <updated>2026-11-03T12:00:00Z</updated>
 
-  
-  
-  
+  <!-- Entries. Quotes (their own section feed) list one quote each. Posts go through
+       macros/feed.html, so this feed, rss.xml and pages.json agree: each entry is titled as
+       the site titles the post, carries its type as a <category>, and in the merged /posts/
+       feed leads its title with the type ("[ News ] …"). -->
 
   
   
   
-  
-  
-  
 
-  
-  
-
-  
-
+  <!-- quotes and numbered post types sort by filename, since dates alone aren't unique -->
   
 
   
   <entry>
     <title>Bethesda has revealed TES VI to be set in Hammerfell</title>
-    <id>https://lzon.ca/news/news-000032-tes-sentinel/</id>
-    <link href="https://lzon.ca/news/news-000032-tes-sentinel/"/>
+    <id>https://lzon.ca/posts/news/32</id>
+    <link rel="alternate" href="https://lzon.ca/posts/news/000032-tes-sentinel/"/>
+    <category term="news" label="News" scheme="https://lzon.ca/posts/news/"/>
     <published>2026-11-03T12:00:00Z</published>
     <updated>2026-11-03T12:00:00Z</updated>
     <author><name>Lzon</name></author>
-    <summary type="html" xml:base="https://lzon.ca/news/news-000032-tes-sentinel/">&lt;p&gt;A new detail has been revealed for the long anticipated open-world rpg &lt;em&gt;The Elder Scrolls 6&lt;&#x2F;em&gt;.&lt;&#x2F;p&gt;</summary>
+    <content type="html" xml:base="https://lzon.ca/posts/news/000032-tes-sentinel/">&lt;p&gt;A new detail has been revealed for the long anticipated open-world rpg &lt;em&gt;The Elder Scrolls 6&lt;/em&gt;.&lt;/p&gt;
+&lt;span id=&quot;continue-reading&quot;&gt;&lt;/span&gt;
+&lt;p&gt;Bethesda’s next entry in its famous series of games will be set in the city called ‘Sentinel’ in the province of Hammerfell. ‘Sentinel’ will also act as the main title for the game.&lt;/p&gt;
+&lt;p&gt;This news follows from the first annoucnement of the game at E3 2018, over 8 years ago. The announcement also coincides with Bethesda’s celebration of their 40th anniversary as a game development studio.&lt;/p&gt;
+&lt;p&gt;Source: &lt;a href=&quot;https://www.ign.com/articles/the-elder-scrolls-6-sentinel-name-logo-officially-revealed-as-bethesda-marks-40th-anniversary&quot;&gt;https://www.ign.com/articles/the-elder-scrolls-6-sentinel-name-logo-officially-revealed-as-bethesda-marks-40th-anniversary&lt;/a&gt;&lt;/p&gt;
+</content>
   </entry>
-
-  
   <entry>
-    <title>Micro Center now lists GeForce RTX 5090 cards as &#x27;Not Carried&#x27;</title>
-    <id>https://lzon.ca/news/news-000027-rtx-5090-not-carried/</id>
-    <link href="https://lzon.ca/news/news-000027-rtx-5090-not-carried/"/>
+    <title>Micro Center now lists GeForce RTX 5090 cards as &apos;Not Carried&apos;</title>
+    <id>https://lzon.ca/posts/news/27</id>
+    <link rel="alternate" href="https://lzon.ca/posts/news/000027-rtx-5090-not-carried/"/>
+    <category term="news" label="News" scheme="https://lzon.ca/posts/news/"/>
     <published>2026-10-17T12:00:00Z</published>
     <updated>2026-10-17T12:00:00Z</updated>
     <author><name>Lzon</name></author>
-    <summary type="html" xml:base="https://lzon.ca/news/news-000027-rtx-5090-not-carried/">&lt;p&gt;The American computer retailer Micro Center no longer appears to be receiving new RTX 5090 graphics cards from any of their suppliers.&lt;&#x2F;p&gt;</summary>
+    <content type="html" xml:base="https://lzon.ca/posts/news/000027-rtx-5090-not-carried/">&lt;p&gt;The American computer retailer Micro Center no longer appears to be receiving new RTX 5090 graphics cards from any of their suppliers.&lt;/p&gt;
+&lt;span id=&quot;continue-reading&quot;&gt;&lt;/span&gt;
+&lt;p&gt;This news comes after a rumor that NVIDIA has stopped supplying GB202 chips for consumer graphics cards. The &lt;a rel=&quot;noopener external&quot; target=&quot;_blank&quot; href=&quot;https://en.wikipedia.org/wiki/Blackwell_(microarchitecture)&quot;&gt;GB202&lt;/a&gt; is the main processing chip used in all RTX 5090 cards.&lt;/p&gt;
+&lt;p&gt;Without an official statement from NVIDIA it is reasonable to assume that they want to allocate all GB202 chip production to enterprise cards, since those can be sold for a much higher margin.&lt;/p&gt;
+&lt;p&gt;In my opinion this is a consequence of the massive capital spending on AI data centers. I’m not a financial expert but I believe these investments are very irrational and will likely have sweeping economic consequences once the price correction occurs.&lt;/p&gt;
+&lt;p&gt;And as a gamer and PC enthusiast this is very disappointing. While not the end-all-be-all of the hobby, it was nice being able to build and upgrade relatively powerful PC’s for affordable prices. For the time being at, least seems to be no longer possible.&lt;/p&gt;
+&lt;p&gt;Source: &lt;a href=&quot;https://videocardz.com/newz/micro-center-now-lists-geforce-rtx-5090-cards-as-not-carried&quot;&gt;https://videocardz.com/newz/micro-center-now-lists-geforce-rtx-5090-cards-as-not-carried&lt;/a&gt;&lt;/p&gt;
+</content>
   </entry>
-
-  
   <entry>
     <title>GTA VI will launch at $80 USD</title>
-    <id>https://lzon.ca/news/news-000022-gta-vi-price/</id>
-    <link href="https://lzon.ca/news/news-000022-gta-vi-price/"/>
+    <id>https://lzon.ca/posts/news/22</id>
+    <link rel="alternate" href="https://lzon.ca/posts/news/000022-gta-vi-price/"/>
+    <category term="news" label="News" scheme="https://lzon.ca/posts/news/"/>
     <published>2026-06-28T12:00:00Z</published>
     <updated>2026-11-01T12:00:00Z</updated>
     <author><name>Lzon</name></author>
-    <summary type="html" xml:base="https://lzon.ca/news/news-000022-gta-vi-price/">&lt;p&gt;Grand Theft Auto 6 will launch at $80 USD, and $100 for the ‘Ultimate Edition’.&lt;&#x2F;p&gt;</summary>
+    <content type="html" xml:base="https://lzon.ca/posts/news/000022-gta-vi-price/">&lt;p&gt;Grand Theft Auto 6 will launch at $80 USD, and $100 for the ‘Ultimate Edition’.&lt;/p&gt;
+&lt;span id=&quot;continue-reading&quot;&gt;&lt;/span&gt;
+&lt;p&gt;Personally, I am not surprised. Expectations for the game are very high, and video game prices have already been trending upward. Inflation overall in the economy has also accelerated. It may not feel like it, but game prices have actually been remarkably stable for a very long time. The standard $60 price didn’t change for decades despite the ever falling value of the American dollar.&lt;/p&gt;
+&lt;p&gt;This is easy enough to see even in the launch price of Grand Theft Auto 5. The game was released back in 2013 for $60. That amount today is equivalent to a little over &lt;a rel=&quot;noopener external&quot; target=&quot;_blank&quot; href=&quot;https://www.calculator.net/inflation-calculator.html?cstartingamount1=60&amp;amp;cinmonth1=13&amp;amp;cinyear1=2013&amp;amp;coutmonth1=5&amp;amp;coutyear1=2026&amp;amp;calctype=1&amp;amp;x=Calculate#uscpi&quot;&gt;$85&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;Source: &lt;a href=&quot;https://www.ign.com/articles/gta-6-price-finally-confirmed-features-a-single-player-experience-at-launch&quot;&gt;https://www.ign.com/articles/gta-6-price-finally-confirmed-features-a-single-player-experience-at-launch&lt;/a&gt;&lt;/p&gt;&lt;p&gt;Source: &lt;a href=&quot;https://web.archive.org/web/20260624110818/https://www.ign.com/articles/gta-6-price-finally-confirmed-features-a-single-player-experience-at-launch&quot;&gt;https://web.archive.org/web/20260624110818/https://www.ign.com/articles/gta-6-price-finally-confirmed-features-a-single-player-experience-at-launch&lt;/a&gt;&lt;/p&gt;
+</content>
   </entry>
-
-  
   <entry>
     <title>Valve launches the Steam Machine starting at $1049 USD.</title>
-    <id>https://lzon.ca/news/news-000021-steam-machine-price/</id>
-    <link href="https://lzon.ca/news/news-000021-steam-machine-price/"/>
+    <id>https://lzon.ca/posts/news/21</id>
+    <link rel="alternate" href="https://lzon.ca/posts/news/000021-steam-machine-price/"/>
+    <category term="news" label="News" scheme="https://lzon.ca/posts/news/"/>
     <published>2026-06-23T12:00:00Z</published>
     <updated>2026-11-02T12:00:00Z</updated>
     <author><name>Lzon</name></author>
-    <summary type="html" xml:base="https://lzon.ca/news/news-000021-steam-machine-price/">&lt;p&gt;Valve has officially launched the new Steam Machine. It’s a small gaming PC intended to provide a more console like, living room oriented experience. It comes preinstalled with &lt;a rel=&quot;noopener external&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;en.wikipedia.org&#x2F;wiki&#x2F;SteamOS&quot;&gt;Steam OS&lt;&#x2F;a&gt;, the same linux-based operating system used on the Steam Deck.&lt;&#x2F;p&gt;</summary>
+    <content type="html" xml:base="https://lzon.ca/posts/news/000021-steam-machine-price/">&lt;p&gt;Valve has officially launched the new Steam Machine. It’s a small gaming PC intended to provide a more console like, living room oriented experience. It comes preinstalled with &lt;a rel=&quot;noopener external&quot; target=&quot;_blank&quot; href=&quot;https://en.wikipedia.org/wiki/SteamOS&quot;&gt;Steam OS&lt;/a&gt;, the same linux-based operating system used on the Steam Deck.&lt;/p&gt;
+&lt;span id=&quot;continue-reading&quot;&gt;&lt;/span&gt;
+&lt;p&gt;The device was originally announced near the end of last year and has been delayed due to DRAM and flash chip shortages caused by the AI economic bubble. Valve has stated that they were struggling to procure the parts they needed, and that it wasn’t merely a matter of increased prices.&lt;/p&gt;
+&lt;p&gt;Speaking of price, the cheapest model with 512GB of storage will cost $1049 USD, with higher storage variants costing several hundred dollars more. Valve has said they increased pricing since the announcement in line with the recent Steam Deck price increases. This implies that the original MSRP would have been in the range of $750.&lt;/p&gt;
+&lt;p&gt;My opinion is that this is overall a good but expensive product. It is a device intended to create the most polished, cohesive, and easy experience for PC gaming. But given the current price, and even its original MSRP, this can’t really be a mass market product. I think a lot of people who would have otherwise wanted one will be unable to afford it. That’s unfortunate of course, and hopefully discounts will be possible in the future.&lt;/p&gt;
+&lt;p&gt;Source: &lt;a href=&quot;https://store.steampowered.com/news/group/45479024/view/685257114654870245&quot;&gt;https://store.steampowered.com/news/group/45479024/view/685257114654870245&lt;/a&gt;&lt;/p&gt;&lt;p&gt;Source: &lt;a href=&quot;https://web.archive.org/web/20260623124120/https://store.steampowered.com/news/group/45479024/view/685257114654870245&quot;&gt;https://web.archive.org/web/20260623124120/https://store.steampowered.com/news/group/45479024/view/685257114654870245&lt;/a&gt;&lt;/p&gt;
+</content>
   </entry>
-
-  
   <entry>
     <title>Microsoft is closing game studio Ninja Theory</title>
-    <id>https://lzon.ca/news/news-000020-xbox-closing-hellblade/</id>
-    <link href="https://lzon.ca/news/news-000020-xbox-closing-hellblade/"/>
+    <id>https://lzon.ca/posts/news/20</id>
+    <link rel="alternate" href="https://lzon.ca/posts/news/000020-xbox-closing-hellblade/"/>
+    <category term="news" label="News" scheme="https://lzon.ca/posts/news/"/>
     <published>2026-06-16T12:00:00Z</published>
     <updated>2026-11-02T12:00:00Z</updated>
     <author><name>Lzon</name></author>
-    <summary type="html" xml:base="https://lzon.ca/news/news-000020-xbox-closing-hellblade/">&lt;p&gt;Microsoft is shuttering the famous game studio Ninja Theory, known for having developed the &lt;a rel=&quot;noopener external&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;en.wikipedia.org&#x2F;wiki&#x2F;Hellblade:_Senua%27s_Sacrifice&quot;&gt;Hellblade&lt;&#x2F;a&gt; series of games. The third game in that series called ‘Senua’ was in active development at the time of this report.&lt;&#x2F;p&gt;</summary>
+    <content type="html" xml:base="https://lzon.ca/posts/news/000020-xbox-closing-hellblade/">&lt;p&gt;Microsoft is shuttering the famous game studio Ninja Theory, known for having developed the &lt;a rel=&quot;noopener external&quot; target=&quot;_blank&quot; href=&quot;https://en.wikipedia.org/wiki/Hellblade:_Senua%27s_Sacrifice&quot;&gt;Hellblade&lt;/a&gt; series of games. The third game in that series called ‘Senua’ was in active development at the time of this report.&lt;/p&gt;
+&lt;span id=&quot;continue-reading&quot;&gt;&lt;/span&gt;
+&lt;p&gt;Earlier in the year &lt;a rel=&quot;noopener external&quot; target=&quot;_blank&quot; href=&quot;https://en.wikipedia.org/wiki/Asha_Sharma&quot;&gt;Asha Sharma&lt;/a&gt; succeeded Phil Spencer as the CEO of Xbox, and appears to be taking Microsoft’s gaming division in new direction, which clearly includes cutting their portfolio of game studios.&lt;/p&gt;
+&lt;p&gt;I personally really enjoyed their game &lt;a rel=&quot;noopener external&quot; target=&quot;_blank&quot; href=&quot;https://en.wikipedia.org/wiki/Enslaved:_Odyssey_to_the_West&quot;&gt;Enslaved: Odyssey to the West&lt;/a&gt; on the PS3. &lt;a rel=&quot;noopener external&quot; target=&quot;_blank&quot; href=&quot;https://en.wikipedia.org/wiki/Andy_Serkis&quot;&gt;Andy Serkis&lt;/a&gt; plays the protagonist, and the story was written by &lt;a rel=&quot;noopener external&quot; target=&quot;_blank&quot; href=&quot;https://en.wikipedia.org/wiki/Alex_Garland&quot;&gt;Alex Garland&lt;/a&gt;. I think the game is a masterpiece and highly recommend it. Its available on &lt;a rel=&quot;noopener external&quot; target=&quot;_blank&quot; href=&quot;https://store.steampowered.com/app/245280/ENSLAVED_Odyssey_to_the_West_Premium_Edition/&quot;&gt;Steam&lt;/a&gt; if you are interested.&lt;/p&gt;
+&lt;p&gt;Source: &lt;a href=&quot;https://www.theverge.com/games/950204/xbox-ninja-theory-shutdown-hellblade-senua&quot;&gt;https://www.theverge.com/games/950204/xbox-ninja-theory-shutdown-hellblade-senua&lt;/a&gt;&lt;/p&gt;&lt;p&gt;Source: &lt;a href=&quot;https://web.archive.org/web/20260616005349/https://www.theverge.com/games/950204/xbox-ninja-theory-shutdown-hellblade-senua&quot;&gt;https://web.archive.org/web/20260616005349/https://www.theverge.com/games/950204/xbox-ninja-theory-shutdown-hellblade-senua&lt;/a&gt;&lt;/p&gt;
+</content>
   </entry>
-
-  
   <entry>
     <title>Rockstar Games employees have formed a union</title>
-    <id>https://lzon.ca/news/news-000017-rockstar-union/</id>
-    <link href="https://lzon.ca/news/news-000017-rockstar-union/"/>
+    <id>https://lzon.ca/posts/news/17</id>
+    <link rel="alternate" href="https://lzon.ca/posts/news/000017-rockstar-union/"/>
+    <category term="news" label="News" scheme="https://lzon.ca/posts/news/"/>
     <published>2026-06-09T12:00:00Z</published>
     <updated>2026-11-02T12:00:00Z</updated>
     <author><name>Lzon</name></author>
-    <summary type="html" xml:base="https://lzon.ca/news/news-000017-rockstar-union/">&lt;p&gt;Employees of Rockstar Games have announced their intent to form a union, to be called “Rockstar Game Workers Union”. It will be a subsidiary of the existing “Workers’ Union of Great Britain”.&lt;&#x2F;p&gt;</summary>
+    <content type="html" xml:base="https://lzon.ca/posts/news/000017-rockstar-union/">&lt;p&gt;Employees of Rockstar Games have announced their intent to form a union, to be called “Rockstar Game Workers Union”. It will be a subsidiary of the existing “Workers’ Union of Great Britain”.&lt;/p&gt;
+&lt;span id=&quot;continue-reading&quot;&gt;&lt;/span&gt;
+&lt;p&gt;This follows a recent controversy in which Rockstar Games fired 31 employees for claimed misconduct. It is speculated that the mass firing was an attempt at union busting.&lt;/p&gt;
+&lt;p&gt;In my opinion this is good news. Gaming and software development have never had a strong labour movement, largely because individual employees could use their high-value skillset as leverage when negotiating salary and working conditions.&lt;/p&gt;
+&lt;p&gt;Advanced AI is going to automate (and thus de-value) a lot of the work needed for game development. Without union protection this will lead to increasing opportunity for game studios to abuse their workers.&lt;/p&gt;
+&lt;p&gt;Hopefully this trend continues.&lt;/p&gt;
+&lt;p&gt;Source: &lt;a href=&quot;https://www.eurogamer.net/were-determined-to-win-justice-for-the-31-fired-workers-rockstar-games-workers-publicly-launch-union-as-legal-battle-with-the-gta-6-maker-rages-on&quot;&gt;https://www.eurogamer.net/were-determined-to-win-justice-for-the-31-fired-workers-rockstar-games-workers-publicly-launch-union-as-legal-battle-with-the-gta-6-maker-rages-on&lt;/a&gt;&lt;/p&gt;&lt;p&gt;Source: &lt;a href=&quot;https://web.archive.org/web/20260530024600/https://www.eurogamer.net/were-determined-to-win-justice-for-the-31-fired-workers-rockstar-games-workers-publicly-launch-union-as-legal-battle-with-the-gta-6-maker-rages-on&quot;&gt;https://web.archive.org/web/20260530024600/https://www.eurogamer.net/were-determined-to-win-justice-for-the-31-fired-workers-rockstar-games-workers-publicly-launch-union-as-legal-battle-with-the-gta-6-maker-rages-on&lt;/a&gt;&lt;/p&gt;
+</content>
   </entry>
-
-  
   <entry>
     <title>Star Citizen has reached $1 billion in funding</title>
-    <id>https://lzon.ca/news/news-000013-starcitizen-billion-dollars/</id>
-    <link href="https://lzon.ca/news/news-000013-starcitizen-billion-dollars/"/>
+    <id>https://lzon.ca/posts/news/13</id>
+    <link rel="alternate" href="https://lzon.ca/posts/news/000013-starcitizen-billion-dollars/"/>
+    <category term="news" label="News" scheme="https://lzon.ca/posts/news/"/>
     <published>2026-05-25T12:00:00Z</published>
     <updated>2026-11-03T12:00:00Z</updated>
     <author><name>Lzon</name></author>
-    <summary type="html" xml:base="https://lzon.ca/news/news-000013-starcitizen-billion-dollars/">&lt;p&gt;The in-development video game Star Citizen has now received over one billion dollars in funding.&lt;&#x2F;p&gt;</summary>
+    <content type="html" xml:base="https://lzon.ca/posts/news/000013-starcitizen-billion-dollars/">&lt;p&gt;The in-development video game Star Citizen has now received over one billion dollars in funding.&lt;/p&gt;
+&lt;span id=&quot;continue-reading&quot;&gt;&lt;/span&gt;
+&lt;p&gt;The game was initially slated for release in October 2014, after being revealed at GDC in October 2012. At time of writing it has been over 13 years since the announcement, nearly 5000 days.&lt;/p&gt;
+&lt;p&gt;In my opinion, these funding milestones hardly count as news anymore. The game has a loyal fan-base who are playing the game regularly, and are committed to supporting the game financially on an on-going basis. To me that looks a lot like the definition of a ‘released’ video game.&lt;/p&gt;
+&lt;p&gt;The fact that its publisher Roberts Space Industries is still calling it ‘early access’ is mostly a function of marketing.&lt;/p&gt;
+&lt;p&gt;Source: &lt;a href=&quot;https://robertsspaceindustries.com/en/funding-goals&quot;&gt;https://robertsspaceindustries.com/en/funding-goals&lt;/a&gt;&lt;/p&gt;&lt;p&gt;Source: &lt;a href=&quot;https://web.archive.org/web/20260524175020/https://robertsspaceindustries.com/en/funding-goals&quot;&gt;https://web.archive.org/web/20260524175020/https://robertsspaceindustries.com/en/funding-goals&lt;/a&gt;&lt;/p&gt;
+</content>
   </entry>
-
-  
   <entry>
     <title>Warhorse Studios Announces a new Lord of the Rings RPG</title>
-    <id>https://lzon.ca/news/news-000011-warhorse-lord-of-the-rings-rpg/</id>
-    <link href="https://lzon.ca/news/news-000011-warhorse-lord-of-the-rings-rpg/"/>
+    <id>https://lzon.ca/posts/news/11</id>
+    <link rel="alternate" href="https://lzon.ca/posts/news/000011-warhorse-lord-of-the-rings-rpg/"/>
+    <category term="news" label="News" scheme="https://lzon.ca/posts/news/"/>
     <published>2026-05-20T12:00:00Z</published>
     <updated>2026-11-03T12:00:00Z</updated>
     <author><name>Lzon</name></author>
-    <summary type="html" xml:base="https://lzon.ca/news/news-000011-warhorse-lord-of-the-rings-rpg/">&lt;p&gt;The developer of Kingdom Come Deliverance has just announced that they are working on an officially licensed Lord of the Rings video game. It will be an open-world RPG.&lt;&#x2F;p&gt;</summary>
+    <content type="html" xml:base="https://lzon.ca/posts/news/000011-warhorse-lord-of-the-rings-rpg/">&lt;p&gt;The developer of Kingdom Come Deliverance has just announced that they are working on an officially licensed Lord of the Rings video game. It will be an open-world RPG.&lt;/p&gt;
+&lt;span id=&quot;continue-reading&quot;&gt;&lt;/span&gt;
+&lt;p&gt;I am very excited for this game. I tried Kingdom Come Deliverance a few years ago and like it. But the game is very challenging and I didn’t manage to get very far.&lt;/p&gt;
+&lt;p&gt;I want to try this new title when it releases, I’m hoping that they tone down the difficulty a little so that scrubs like me can play through to the end.&lt;/p&gt;
+&lt;p&gt;Source: &lt;a href=&quot;https://news.instant-gaming.com/en/articles/19632-warhorse-announces-a-lord-of-the-rings-rpg-and-a-new-kingdom-come-adventure&quot;&gt;https://news.instant-gaming.com/en/articles/19632-warhorse-announces-a-lord-of-the-rings-rpg-and-a-new-kingdom-come-adventure&lt;/a&gt;&lt;/p&gt;&lt;p&gt;Source: &lt;a href=&quot;https://web.archive.org/web/20260520191759/https://news.instant-gaming.com/en/articles/19632-warhorse-announces-a-lord-of-the-rings-rpg-and-a-new-kingdom-come-adventure&quot;&gt;https://web.archive.org/web/20260520191759/https://news.instant-gaming.com/en/articles/19632-warhorse-announces-a-lord-of-the-rings-rpg-and-a-new-kingdom-come-adventure&lt;/a&gt;&lt;/p&gt;
+</content>
   </entry>
-
-  
   <entry>
     <title>Pirates are already playing Forza Horizon 6 days before its launch</title>
-    <id>https://lzon.ca/news/news-000007-pirates-playing-forza-horizon-6/</id>
-    <link href="https://lzon.ca/news/news-000007-pirates-playing-forza-horizon-6/"/>
+    <id>https://lzon.ca/posts/news/7</id>
+    <link rel="alternate" href="https://lzon.ca/posts/news/000007-pirates-playing-forza-horizon-6/"/>
+    <category term="news" label="News" scheme="https://lzon.ca/posts/news/"/>
     <published>2026-05-11T12:00:00Z</published>
     <updated>2026-11-03T12:00:00Z</updated>
     <author><name>Lzon</name></author>
-    <summary type="html" xml:base="https://lzon.ca/news/news-000007-pirates-playing-forza-horizon-6/">&lt;p&gt;Game pirates are already playing Forza Horizon 6, more than a week ahead of the title’s official release date.&lt;&#x2F;p&gt;</summary>
+    <content type="html" xml:base="https://lzon.ca/posts/news/000007-pirates-playing-forza-horizon-6/">&lt;p&gt;Game pirates are already playing Forza Horizon 6, more than a week ahead of the title’s official release date.&lt;/p&gt;
+&lt;span id=&quot;continue-reading&quot;&gt;&lt;/span&gt;
+&lt;p&gt;This was made possible by copying the game’s preload install files, which were mistakenly distributed on Steam without encryption. There was a similar incident back in March of this year at the release of Death Stranding 2.&lt;/p&gt;
+&lt;p&gt;Source: &lt;a href=&quot;https://arstechnica.com/gaming/2026/05/pirates-are-already-playing-forza-horizon-6-days-before-its-launch/&quot;&gt;https://arstechnica.com/gaming/2026/05/pirates-are-already-playing-forza-horizon-6-days-before-its-launch/&lt;/a&gt;&lt;/p&gt;&lt;p&gt;Source: &lt;a href=&quot;https://web.archive.org/web/20260511153835/https://arstechnica.com/gaming/2026/05/pirates-are-already-playing-forza-horizon-6-days-before-its-launch/&quot;&gt;https://web.archive.org/web/20260511153835/https://arstechnica.com/gaming/2026/05/pirates-are-already-playing-forza-horizon-6-days-before-its-launch/&lt;/a&gt;&lt;/p&gt;
+</content>
   </entry>
-
-  
   <entry>
     <title>Steam Controller to have a reservation queue</title>
-    <id>https://lzon.ca/news/news-000004-steam-controller-reservation/</id>
-    <link href="https://lzon.ca/news/news-000004-steam-controller-reservation/"/>
+    <id>https://lzon.ca/posts/news/4</id>
+    <link rel="alternate" href="https://lzon.ca/posts/news/000004-steam-controller-reservation/"/>
+    <category term="news" label="News" scheme="https://lzon.ca/posts/news/"/>
     <published>2026-05-07T12:00:00Z</published>
     <updated>2026-11-03T12:00:00Z</updated>
     <author><name>Lzon</name></author>
-    <summary type="html" xml:base="https://lzon.ca/news/news-000004-steam-controller-reservation/">&lt;p&gt;Starting May 8th, Valve will implement a reservation queue for the Steam Controller.&lt;&#x2F;p&gt;</summary>
+    <content type="html" xml:base="https://lzon.ca/posts/news/000004-steam-controller-reservation/">&lt;p&gt;Starting May 8th, Valve will implement a reservation queue for the Steam Controller.&lt;/p&gt;
+&lt;span id=&quot;continue-reading&quot;&gt;&lt;/span&gt;
+&lt;p&gt;The following are the conditions of the reservation system:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;You will have 72 hours to make the purchase on Steam.&lt;/li&gt;
+&lt;li&gt;Customers who have already purchased a Steam Controller are not eligible to reserve another.&lt;/li&gt;
+&lt;li&gt;Your account must be in good standing on Steam&lt;/li&gt;
+&lt;li&gt;You must have made a purchase on Steam prior to April 27, 2026&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;The Steam Controller went on sale on Monday, May 4th an sold out almost immediately.&lt;/p&gt;
+&lt;p&gt;This reminds me of the chaos during the initial launch of the Steam Deck back in 2022. It took Valve months to clear the reservation list for the handheld, hopefully it won’t take that long this time.&lt;/p&gt;
+&lt;p&gt;Source: &lt;a href=&quot;https://store.steampowered.com/news/group/45479024/view/702141174212725149&quot;&gt;https://store.steampowered.com/news/group/45479024/view/702141174212725149&lt;/a&gt;&lt;/p&gt;&lt;p&gt;Source: &lt;a href=&quot;https://web.archive.org/web/20260507180659/https://store.steampowered.com/news/group/45479024/view/702141174212725149&quot;&gt;https://web.archive.org/web/20260507180659/https://store.steampowered.com/news/group/45479024/view/702141174212725149&lt;/a&gt;&lt;/p&gt;
+</content>
   </entry>
-
-  
   <entry>
     <title>Steam Controller released, quickly sold out</title>
-    <id>https://lzon.ca/news/news-000001-steam-controller/</id>
-    <link href="https://lzon.ca/news/news-000001-steam-controller/"/>
+    <id>https://lzon.ca/posts/news/1</id>
+    <link rel="alternate" href="https://lzon.ca/posts/news/000001-steam-controller/"/>
+    <category term="news" label="News" scheme="https://lzon.ca/posts/news/"/>
     <published>2026-05-05T12:00:00Z</published>
     <updated>2026-11-02T12:00:00Z</updated>
     <author><name>Lzon</name></author>
-    <summary type="html" xml:base="https://lzon.ca/news/news-000001-steam-controller/">&lt;p&gt;Valve launched its new Steam Controller on May 5th 2026, and almost instantly sold out.&lt;&#x2F;p&gt;</summary>
+    <content type="html" xml:base="https://lzon.ca/posts/news/000001-steam-controller/">&lt;p&gt;Valve launched its new Steam Controller on May 5th 2026, and almost instantly sold out.&lt;/p&gt;
+&lt;span id=&quot;continue-reading&quot;&gt;&lt;/span&gt;
+&lt;p&gt;This reminds me of the logistical nightmare back in 2022 during the launch of the original Steam Deck. Hopefully it won’t be quite that bad
+this time.&lt;/p&gt;
+&lt;h6 id=&quot;update-2026-11-02&quot;&gt;Update (2026-11-02)&lt;/h6&gt;
+&lt;p&gt;It was indeed quite bad. There are customers who intended to purchase one on launch day that will have to wait until next year.
+I was fortunate that I only had to wait a single month. It’s a nice controller but good-god these things are turning into collectors items.&lt;/p&gt;
+&lt;p&gt;Source: &lt;a href=&quot;https://store.steampowered.com/sale/steamcontroller&quot;&gt;https://store.steampowered.com/sale/steamcontroller&lt;/a&gt;&lt;/p&gt;&lt;p&gt;Source: &lt;a href=&quot;https://web.archive.org/web/20260505024813/https://store.steampowered.com/sale/steamcontroller&quot;&gt;https://web.archive.org/web/20260505024813/https://store.steampowered.com/sale/steamcontroller&lt;/a&gt;&lt;/p&gt;
+</content>
   </entry>
 
 </feed>

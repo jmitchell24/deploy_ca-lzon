@@ -9,29 +9,45 @@
       <language>en</language>
       <atom:link href="https://lzon.ca/news-tags/security/rss.xml" rel="self" type="application/rss+xml"/>
       <lastBuildDate>Mon, 02 Nov 2026 12:00:00 +0000</lastBuildDate>
+      <!-- Items. Quotes (their own section feed) list one quote each. Posts go through
+           macros/feed.html, so this feed, atom.xml and pages.json agree: each item is titled
+           as the site titles the post, carries its type as a <category>, and in the merged
+           /posts/ feed leads its title with the type ("[ News ] …"). -->
       
       
       
-      
-      
+      <!-- quotes and numbered post types sort by filename, since dates alone aren't unique -->
       
       
       <item>
-          <title>OpenAI&#x27;s agent swarm breached security on many more websites.</title>
+          <title>OpenAI&apos;s agent swarm breached security on many more websites.</title>
           <pubDate>Sat, 12 Sep 2026 12:00:00 +0000</pubDate>
           <author>Lzon</author>
-          <link>https://lzon.ca/news/news-000026-openai-hacker-swarm/</link>
-          <guid isPermaLink="false">https://lzon.ca/news/news-000026-openai-hacker-swarm/</guid>
-          <description xml:base="https://lzon.ca/news/news-000026-openai-hacker-swarm/">&lt;p&gt;A new report suggests that an agent swarm created by Open AI was accessing and abusing a large number of web services.
-This follows an earlier report of the same swarm breaching security at the AI startup Hugging Face.&lt;&#x2F;p&gt;</description>
+          <link>https://lzon.ca/posts/news/000026-openai-hacker-swarm/</link>
+          <guid isPermaLink="false">https://lzon.ca/posts/news/26</guid>
+          <category domain="https://lzon.ca/posts/news/">News</category>
+          <description xml:base="https://lzon.ca/posts/news/000026-openai-hacker-swarm/">&lt;p&gt;A new report suggests that an agent swarm created by Open AI was accessing and abusing a large number of web services.
+This follows an earlier report of the same swarm breaching security at the AI startup Hugging Face.&lt;/p&gt;
+&lt;span id=&quot;continue-reading&quot;&gt;&lt;/span&gt;
+&lt;p&gt;In my opinion the response to this and the earlier reports should be clear and obvious: The law was broken, even if unintentionally. The crime was comitted by the employees of OpenAI who triggered the swarm, not the swarm itself.&lt;/p&gt;
+&lt;p&gt;The only appropriate response to this and the other hacking cases is a full criminal investigation of OpenAI. Beyond that I believe that it would be warranted to put a hard regulatory limit on the runtime of AI agents. This ‘agent swarm’ was running continuously for many days with little or no supervision. That was not necessary, it did not serve a useful commercial purpose. It should not have been allowed to happen.&lt;/p&gt;
+&lt;p&gt;Source: &lt;a href=&quot;https://www.theregister.com/ai-and-ml/2026/09/10/openais-website-hijacking-swarm-reached-far-further-than-we-thought/5295644&quot;&gt;https://www.theregister.com/ai-and-ml/2026/09/10/openais-website-hijacking-swarm-reached-far-further-than-we-thought/5295644&lt;/a&gt;&lt;/p&gt;&lt;p&gt;Source: &lt;a href=&quot;https://web.archive.org/web/20260910193749/https://www.theregister.com/ai-and-ml/2026/09/10/openais-website-hijacking-swarm-reached-far-further-than-we-thought/5295644&quot;&gt;https://web.archive.org/web/20260910193749/https://www.theregister.com/ai-and-ml/2026/09/10/openais-website-hijacking-swarm-reached-far-further-than-we-thought/5295644&lt;/a&gt;&lt;/p&gt;
+</description>
       </item>
       <item>
           <title>Motorola phones are hijacking Amazon URLs to insert affiliate codes</title>
           <pubDate>Tue, 26 May 2026 12:00:00 +0000</pubDate>
           <author>Lzon</author>
-          <link>https://lzon.ca/news/news-000014-motorola-hijacking-amazon/</link>
-          <guid isPermaLink="false">https://lzon.ca/news/news-000014-motorola-hijacking-amazon/</guid>
-          <description xml:base="https://lzon.ca/news/news-000014-motorola-hijacking-amazon/">&lt;p&gt;Some users of Motorola smartphones have reported that affiliate codes are being automatically injected into Amazon web links on their devices.&lt;&#x2F;p&gt;</description>
+          <link>https://lzon.ca/posts/news/000014-motorola-hijacking-amazon/</link>
+          <guid isPermaLink="false">https://lzon.ca/posts/news/14</guid>
+          <category domain="https://lzon.ca/posts/news/">News</category>
+          <description xml:base="https://lzon.ca/posts/news/000014-motorola-hijacking-amazon/">&lt;p&gt;Some users of Motorola smartphones have reported that affiliate codes are being automatically injected into Amazon web links on their devices.&lt;/p&gt;
+&lt;span id=&quot;continue-reading&quot;&gt;&lt;/span&gt;
+&lt;p&gt;This appears to be done by a pre-installed app called &lt;code&gt;Smart Feed&lt;/code&gt; which intercepts the URLs, redirects to an ad server, which then inserts the affiliate codes. This &lt;a rel=&quot;noopener external&quot; target=&quot;_blank&quot; href=&quot;https://old.reddit.com/r/Android/comments/1tno2z3/motorolas_preinstalled_smart_feed_app_hijacks/&quot;&gt;Reddit thread&lt;/a&gt; referenced in the article includes a more technical analysis.&lt;/p&gt;
+&lt;p&gt;For now at least, it is possible to stop this behavior. You can do so by navigating to the app’s info page &lt;code&gt;Settings -&amp;gt; Apps -&amp;gt; Search &apos;Smart Feed&apos;&lt;/code&gt; and pressing the &lt;code&gt;Disable&lt;/code&gt; button.&lt;/p&gt;
+&lt;p&gt;I’m not surprised but I am disappointed to see Motorola do this. They were once very well known for offering affordable Android devices with minimal bloat. I have an original &lt;a rel=&quot;noopener external&quot; target=&quot;_blank&quot; href=&quot;https://www.gsmarena.com/motorola_moto_g-5831.php&quot;&gt;Moto G&lt;/a&gt; which was a fantastic little device in it’s time.&lt;/p&gt;
+&lt;p&gt;Source: &lt;a href=&quot;https://9to5google.com/2026/05/25/motorola-amazon-app-hijacking-behavior/&quot;&gt;https://9to5google.com/2026/05/25/motorola-amazon-app-hijacking-behavior/&lt;/a&gt;&lt;/p&gt;&lt;p&gt;Source: &lt;a href=&quot;https://web.archive.org/web/20260526040500/https://9to5google.com/2026/05/25/motorola-amazon-app-hijacking-behavior/&quot;&gt;https://web.archive.org/web/20260526040500/https://9to5google.com/2026/05/25/motorola-amazon-app-hijacking-behavior/&lt;/a&gt;&lt;/p&gt;
+</description>
       </item>
     </channel>
 </rss>

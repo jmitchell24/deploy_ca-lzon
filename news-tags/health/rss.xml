@@ -9,20 +9,28 @@
       <language>en</language>
       <atom:link href="https://lzon.ca/news-tags/health/rss.xml" rel="self" type="application/rss+xml"/>
       <lastBuildDate>Fri, 30 Oct 2026 12:00:00 +0000</lastBuildDate>
+      <!-- Items. Quotes (their own section feed) list one quote each. Posts go through
+           macros/feed.html, so this feed, atom.xml and pages.json agree: each item is titled
+           as the site titles the post, carries its type as a <category>, and in the merged
+           /posts/ feed leads its title with the type ("[ News ] …"). -->
       
       
       
-      
-      
+      <!-- quotes and numbered post types sort by filename, since dates alone aren't unique -->
       
       
       <item>
           <title>Study demonstrates potential anti-aging effect in GLP-1 drugs</title>
           <pubDate>Mon, 19 Oct 2026 12:00:00 +0000</pubDate>
           <author>Lzon</author>
-          <link>https://lzon.ca/news/news-000029-glp1-aging/</link>
-          <guid isPermaLink="false">https://lzon.ca/news/news-000029-glp1-aging/</guid>
-          <description xml:base="https://lzon.ca/news/news-000029-glp1-aging/">&lt;p&gt;Researchers from the University of California analyzed data from a recent study to determine if semaglutide had anti aging effects. They discovered that study participants who received the drug had non-trivially improved markers of biological aging.&lt;&#x2F;p&gt;</description>
+          <link>https://lzon.ca/posts/news/000029-glp1-aging/</link>
+          <guid isPermaLink="false">https://lzon.ca/posts/news/29</guid>
+          <category domain="https://lzon.ca/posts/news/">News</category>
+          <description xml:base="https://lzon.ca/posts/news/000029-glp1-aging/">&lt;p&gt;Researchers from the University of California analyzed data from a recent study to determine if semaglutide had anti aging effects. They discovered that study participants who received the drug had non-trivially improved markers of biological aging.&lt;/p&gt;
+&lt;span id=&quot;continue-reading&quot;&gt;&lt;/span&gt;
+&lt;p&gt;As with any study of this kind, It’s difficult to untangle the direct effects of the drug and the lifestyle improvements that it encourages. I myself lost a lot of weight without medical intervention, just a lot of personal effort and a change in diet. My bias is to believe that for most people this is enough, and that becoming dependent on a pharma corporation for your health should be avoided.&lt;/p&gt;
+&lt;p&gt;Source: &lt;a href=&quot;https://www.universityofcalifornia.edu/news/new-study-shows-popular-glp-1-weight-loss-drug-may-slow-biological-aging&quot;&gt;https://www.universityofcalifornia.edu/news/new-study-shows-popular-glp-1-weight-loss-drug-may-slow-biological-aging&lt;/a&gt;&lt;/p&gt;&lt;p&gt;Source: &lt;a href=&quot;https://web.archive.org/web/20260920023410/https://www.universityofcalifornia.edu/news/new-study-shows-popular-glp-1-weight-loss-drug-may-slow-biological-aging&quot;&gt;https://web.archive.org/web/20260920023410/https://www.universityofcalifornia.edu/news/new-study-shows-popular-glp-1-weight-loss-drug-may-slow-biological-aging&lt;/a&gt;&lt;/p&gt;
+</description>
       </item>
     </channel>
 </rss>

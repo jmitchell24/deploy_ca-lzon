@@ -15,24 +15,18 @@
   
   <updated>2026-11-04T12:00:00Z</updated>
 
-  
-  
-  
+  <!-- Entries. Quotes (their own section feed) list one quote each. Posts go through
+       macros/feed.html, so this feed, rss.xml and pages.json agree: each entry is titled as
+       the site titles the post, carries its type as a <category>, and in the merged /posts/
+       feed leads its title with the type ("[ News ] …"). -->
 
   
   
   
-  
-  
-  
 
-  
+  <!-- quotes and numbered post types sort by filename, since dates alone aren't unique -->
   
     
-  
-
-  
-
   
 
   
@@ -46,10 +40,6 @@
     <category term="quote"/>
     <summary type="html">Enough is abundance to the wise.&lt;br/&gt;- Euripides (The Phoenissae)</summary>
   </entry>
-
-  
-
-  
   <entry>
     <title>215. lzon.ca&#x2F;quotes</title>
     <id>https://lzon.ca/quotes/#215</id>
@@ -60,10 +50,6 @@
     <category term="quote"/>
     <summary type="html">Prosperity doth best discover vice, but adversity doth best discover virtue.&lt;br/&gt;- Francis Bacon (Of Adversity)</summary>
   </entry>
-
-  
-
-  
   <entry>
     <title>214. lzon.ca&#x2F;quotes</title>
     <id>https://lzon.ca/quotes/#214</id>
@@ -74,10 +60,6 @@
     <category term="quote"/>
     <summary type="html">Music resembles poetry. In each are nameless graces which no methods teach, and which a master-hand alone can reach.&lt;br/&gt;- Alexander Pope</summary>
   </entry>
-
-  
-
-  
   <entry>
     <title>213. lzon.ca&#x2F;quotes</title>
     <id>https://lzon.ca/quotes/#213</id>
@@ -89,10 +71,6 @@
     <summary type="html">Not yesterday I learned to know the love of bare November days.
 But it were vain to tell her so and they are better for her praise.&lt;br/&gt;- Robert Frost (My November Guest)</summary>
   </entry>
-
-  
-
-  
   <entry>
     <title>212. lzon.ca&#x2F;quotes</title>
     <id>https://lzon.ca/quotes/#212</id>
@@ -103,10 +81,6 @@ But it were vain to tell her so and they are better for her praise.&lt;br/&gt;- 
     <category term="quote"/>
     <summary type="html">Ghosts were created when the first man woke in the night.&lt;br/&gt;- James Matthew Barrie (The Little Minister)</summary>
   </entry>
-
-  
-
-  
   <entry>
     <title>211. lzon.ca&#x2F;quotes</title>
     <id>https://lzon.ca/quotes/#211</id>
@@ -117,10 +91,6 @@ But it were vain to tell her so and they are better for her praise.&lt;br/&gt;- 
     <category term="quote"/>
     <summary type="html">Nothing can we call our own but death and that small model of the barren earth which serves as paste and cover to our bones.&lt;br/&gt;- William Shakespeare (Richard II)</summary>
   </entry>
-
-  
-
-  
   <entry>
     <title>210. lzon.ca&#x2F;quotes</title>
     <id>https://lzon.ca/quotes/#210</id>
@@ -131,10 +101,6 @@ But it were vain to tell her so and they are better for her praise.&lt;br/&gt;- 
     <category term="quote"/>
     <summary type="html">The temptation shared by all forms of intelligence is cynicism.&lt;br/&gt;- Albert Camus</summary>
   </entry>
-
-  
-
-  
   <entry>
     <title>209. lzon.ca&#x2F;quotes</title>
     <id>https://lzon.ca/quotes/#209</id>
@@ -145,10 +111,6 @@ But it were vain to tell her so and they are better for her praise.&lt;br/&gt;- 
     <category term="quote"/>
     <summary type="html">Blessed is he who has found his work; Let him ask no other blessedness.&lt;br/&gt;- Thomas Carlyle (Past and Present III)</summary>
   </entry>
-
-  
-
-  
   <entry>
     <title>208. lzon.ca&#x2F;quotes</title>
     <id>https://lzon.ca/quotes/#208</id>
@@ -159,10 +121,6 @@ But it were vain to tell her so and they are better for her praise.&lt;br/&gt;- 
     <category term="quote"/>
     <summary type="html">Tell me what company you keep, and I’ll tell you what you are.&lt;br/&gt;- Miguel de Cervantes (Don Quixote II)</summary>
   </entry>
-
-  
-
-  
   <entry>
     <title>207. lzon.ca&#x2F;quotes</title>
     <id>https://lzon.ca/quotes/#207</id>
@@ -173,10 +131,6 @@ But it were vain to tell her so and they are better for her praise.&lt;br/&gt;- 
     <category term="quote"/>
     <summary type="html">There comes forever something between us and what we deem our happiness.&lt;br/&gt;- Lord Byron (Sardanapalus I)</summary>
   </entry>
-
-  
-
-  
   <entry>
     <title>206. lzon.ca&#x2F;quotes</title>
     <id>https://lzon.ca/quotes/#206</id>
@@ -187,10 +141,6 @@ But it were vain to tell her so and they are better for her praise.&lt;br/&gt;- 
     <category term="quote"/>
     <summary type="html">Only the educated are free.&lt;br/&gt;- Epictetus (Discoures II)</summary>
   </entry>
-
-  
-
-  
   <entry>
     <title>205. lzon.ca&#x2F;quotes</title>
     <id>https://lzon.ca/quotes/#205</id>
@@ -201,10 +151,6 @@ But it were vain to tell her so and they are better for her praise.&lt;br/&gt;- 
     <category term="quote"/>
     <summary type="html">Many would contentedly suffer the consequences of their own mistakes rather than the insolence of him who triumphs as their deliverer.&lt;br/&gt;- Samuel Johnson (The Rambler No. 87)</summary>
   </entry>
-
-  
-
-  
   <entry>
     <title>204. lzon.ca&#x2F;quotes</title>
     <id>https://lzon.ca/quotes/#204</id>
@@ -215,10 +161,6 @@ But it were vain to tell her so and they are better for her praise.&lt;br/&gt;- 
     <category term="quote"/>
     <summary type="html">In the land of the blind, the one-eyed is king.&lt;br/&gt;- Apostolius (Paroemiae VII)</summary>
   </entry>
-
-  
-
-  
   <entry>
     <title>203. lzon.ca&#x2F;quotes</title>
     <id>https://lzon.ca/quotes/#203</id>
@@ -229,10 +171,6 @@ But it were vain to tell her so and they are better for her praise.&lt;br/&gt;- 
     <category term="quote"/>
     <summary type="html">What wound did ever heal but by degrees?&lt;br/&gt;- Shakespeare (Othello II)</summary>
   </entry>
-
-  
-
-  
   <entry>
     <title>202. lzon.ca&#x2F;quotes</title>
     <id>https://lzon.ca/quotes/#202</id>
@@ -243,10 +181,6 @@ But it were vain to tell her so and they are better for her praise.&lt;br/&gt;- 
     <category term="quote"/>
     <summary type="html">Music, the greatest good that mortals know and all of heaven we have below.&lt;br/&gt;- Joseph Addison (Song for St. Cecilia&apos;s Day)</summary>
   </entry>
-
-  
-
-  
   <entry>
     <title>201. lzon.ca&#x2F;quotes</title>
     <id>https://lzon.ca/quotes/#201</id>
@@ -257,10 +191,6 @@ But it were vain to tell her so and they are better for her praise.&lt;br/&gt;- 
     <category term="quote"/>
     <summary type="html">The dwarf sees farther than the giant, when he has the giant’s shoulders to mount on.&lt;br/&gt;- Samuel Coleridge (Friends VIII)</summary>
   </entry>
-
-  
-
-  
   <entry>
     <title>200. lzon.ca&#x2F;quotes</title>
     <id>https://lzon.ca/quotes/#200</id>
@@ -271,10 +201,6 @@ But it were vain to tell her so and they are better for her praise.&lt;br/&gt;- 
     <category term="quote"/>
     <summary type="html">Our doubts are traitors and make us lose the good we oft might win by fearing to attempt.&lt;br/&gt;- William Shakespeare (Measure for Measure I)</summary>
   </entry>
-
-  
-
-  
   <entry>
     <title>199. lzon.ca&#x2F;quotes</title>
     <id>https://lzon.ca/quotes/#199</id>
@@ -285,10 +211,6 @@ But it were vain to tell her so and they are better for her praise.&lt;br/&gt;- 
     <category term="quote"/>
     <summary type="html">The crisis of yesterday is the joke of tomorrow.&lt;br/&gt;- H. G. Wells (You Can&apos;t Be To Careful)</summary>
   </entry>
-
-  
-
-  
   <entry>
     <title>198. lzon.ca&#x2F;quotes</title>
     <id>https://lzon.ca/quotes/#198</id>
@@ -299,10 +221,6 @@ But it were vain to tell her so and they are better for her praise.&lt;br/&gt;- 
     <category term="quote"/>
     <summary type="html">How beautiful upon the mountains are the feet of him that bringeth good tidings.&lt;br/&gt;- Isaiah 52:7</summary>
   </entry>
-
-  
-
-  
   <entry>
     <title>197. lzon.ca&#x2F;quotes</title>
     <id>https://lzon.ca/quotes/#197</id>
@@ -313,10 +231,6 @@ But it were vain to tell her so and they are better for her praise.&lt;br/&gt;- 
     <category term="quote"/>
     <summary type="html">Your nervous system will always choose a familiar Hell over an unfamiliar Heaven.&lt;br/&gt;- Unknown</summary>
   </entry>
-
-  
-
-  
   <entry>
     <title>196. lzon.ca&#x2F;quotes</title>
     <id>https://lzon.ca/quotes/#196</id>
@@ -327,10 +241,6 @@ But it were vain to tell her so and they are better for her praise.&lt;br/&gt;- 
     <category term="quote"/>
     <summary type="html">The unhappiest people in this world, are those who care the most about what other people think.&lt;br/&gt;- C. JoyBell C. (Charz Childs)</summary>
   </entry>
-
-  
-
-  
   <entry>
     <title>195. lzon.ca&#x2F;quotes</title>
     <id>https://lzon.ca/quotes/#195</id>
@@ -341,10 +251,6 @@ But it were vain to tell her so and they are better for her praise.&lt;br/&gt;- 
     <category term="quote"/>
     <summary type="html">Forget not yet the tried intent. Of such a truth as I have meant. My great travail so gladly spent. Forget not yet!&lt;br/&gt;- Sir Thomas Wyatt</summary>
   </entry>
-
-  
-
-  
   <entry>
     <title>194. lzon.ca&#x2F;quotes</title>
     <id>https://lzon.ca/quotes/#194</id>
@@ -355,10 +261,6 @@ But it were vain to tell her so and they are better for her praise.&lt;br/&gt;- 
     <category term="quote"/>
     <summary type="html">I have immortal longings in me.&lt;br/&gt;- William Shakespeare (Antony and Cleopatra)</summary>
   </entry>
-
-  
-
-  
   <entry>
     <title>193. lzon.ca&#x2F;quotes</title>
     <id>https://lzon.ca/quotes/#193</id>
@@ -369,10 +271,6 @@ But it were vain to tell her so and they are better for her praise.&lt;br/&gt;- 
     <category term="quote"/>
     <summary type="html">[Thankfulness] bestows reverence, allowing us to encounter everyday epiphanies, those transcendent moments of awe that change forever how we experience life and the world.&lt;br/&gt;- John Milton</summary>
   </entry>
-
-  
-
-  
   <entry>
     <title>192. lzon.ca&#x2F;quotes</title>
     <id>https://lzon.ca/quotes/#192</id>
@@ -383,10 +281,6 @@ But it were vain to tell her so and they are better for her praise.&lt;br/&gt;- 
     <category term="quote"/>
     <summary type="html">A youthful miser is a monstrosity.&lt;br/&gt;- Voltaire (L&apos;Enfant Prodigue I)</summary>
   </entry>
-
-  
-
-  
   <entry>
     <title>191. lzon.ca&#x2F;quotes</title>
     <id>https://lzon.ca/quotes/#191</id>
@@ -397,10 +291,6 @@ But it were vain to tell her so and they are better for her praise.&lt;br/&gt;- 
     <category term="quote"/>
     <summary type="html">Neither trust, nor contend, nor lay wagers, nor lend. And you’ll have peace to your lives end.&lt;br/&gt;- Benjamin Franklin (Poor Richard’s Almanac)</summary>
   </entry>
-
-  
-
-  
   <entry>
     <title>190. lzon.ca&#x2F;quotes</title>
     <id>https://lzon.ca/quotes/#190</id>
@@ -411,10 +301,6 @@ But it were vain to tell her so and they are better for her praise.&lt;br/&gt;- 
     <category term="quote"/>
     <summary type="html">Charlotte, having seen his body. Borne before her on a shutter. Like a well-conducted person, Went on cutting bread and butter.&lt;br/&gt;- William Thackeray (Sorrows of Werther)</summary>
   </entry>
-
-  
-
-  
   <entry>
     <title>189. lzon.ca&#x2F;quotes</title>
     <id>https://lzon.ca/quotes/#189</id>
@@ -425,10 +311,6 @@ But it were vain to tell her so and they are better for her praise.&lt;br/&gt;- 
     <category term="quote"/>
     <summary type="html">Great and good are seldom the same man.&lt;br/&gt;- Thomas Fuller (1654-1734) (Gnomologia)</summary>
   </entry>
-
-  
-
-  
   <entry>
     <title>188. lzon.ca&#x2F;quotes</title>
     <id>https://lzon.ca/quotes/#188</id>
@@ -439,10 +321,6 @@ But it were vain to tell her so and they are better for her praise.&lt;br/&gt;- 
     <category term="quote"/>
     <summary type="html">The greatest wealth is to live content with little.&lt;br/&gt;- Plato</summary>
   </entry>
-
-  
-
-  
   <entry>
     <title>187. lzon.ca&#x2F;quotes</title>
     <id>https://lzon.ca/quotes/#187</id>
@@ -453,10 +331,6 @@ But it were vain to tell her so and they are better for her praise.&lt;br/&gt;- 
     <category term="quote"/>
     <summary type="html">And when nobody wakes you up in the morning, and when nobody waits for you at night, and when you can do whatever you want. What do you call it, freedom or loneliness.&lt;br/&gt;- Charles Bukowski</summary>
   </entry>
-
-  
-
-  
   <entry>
     <title>186. lzon.ca&#x2F;quotes</title>
     <id>https://lzon.ca/quotes/#186</id>
@@ -467,10 +341,6 @@ But it were vain to tell her so and they are better for her praise.&lt;br/&gt;- 
     <category term="quote"/>
     <summary type="html">Apologizing, a very desperate habit. One that is rarely cured. Apology is only egotism wrong side out.&lt;br/&gt;- Oliver W. Holmes (The Professor at the Breakfast Table)</summary>
   </entry>
-
-  
-
-  
   <entry>
     <title>185. lzon.ca&#x2F;quotes</title>
     <id>https://lzon.ca/quotes/#185</id>
@@ -481,10 +351,6 @@ But it were vain to tell her so and they are better for her praise.&lt;br/&gt;- 
     <category term="quote"/>
     <summary type="html">All Nature is but Art unknown to thee. All Chance and Direction which thou canst not see.&lt;br/&gt;- Alexander Pope (An Essay on Man)</summary>
   </entry>
-
-  
-
-  
   <entry>
     <title>184. lzon.ca&#x2F;quotes</title>
     <id>https://lzon.ca/quotes/#184</id>
@@ -495,10 +361,6 @@ But it were vain to tell her so and they are better for her praise.&lt;br/&gt;- 
     <category term="quote"/>
     <summary type="html">A stumble may prevent a Fall.&lt;br/&gt;- Thomas Fuller (1654-1734) (Gnomologia)</summary>
   </entry>
-
-  
-
-  
   <entry>
     <title>183. lzon.ca&#x2F;quotes</title>
     <id>https://lzon.ca/quotes/#183</id>
@@ -509,10 +371,6 @@ But it were vain to tell her so and they are better for her praise.&lt;br/&gt;- 
     <category term="quote"/>
     <summary type="html">In the middle of the road of life. I found myself in a dark wood. Having strayed from the straight path.&lt;br/&gt;- Dante (The Divine Comedy &apos;Inferno&apos;)</summary>
   </entry>
-
-  
-
-  
   <entry>
     <title>182. lzon.ca&#x2F;quotes</title>
     <id>https://lzon.ca/quotes/#182</id>
@@ -523,10 +381,6 @@ But it were vain to tell her so and they are better for her praise.&lt;br/&gt;- 
     <category term="quote"/>
     <summary type="html">Everyone smiles in the same language.&lt;br/&gt;- George Carlin</summary>
   </entry>
-
-  
-
-  
   <entry>
     <title>181. lzon.ca&#x2F;quotes</title>
     <id>https://lzon.ca/quotes/#181</id>
@@ -537,10 +391,6 @@ But it were vain to tell her so and they are better for her praise.&lt;br/&gt;- 
     <category term="quote"/>
     <summary type="html">Thus unlamented let me die, Steal from the world and not a stone tell where I lie.&lt;br/&gt;- Alexander Pope (Ode on Solitude)</summary>
   </entry>
-
-  
-
-  
   <entry>
     <title>180. lzon.ca&#x2F;quotes</title>
     <id>https://lzon.ca/quotes/#180</id>
@@ -551,10 +401,6 @@ But it were vain to tell her so and they are better for her praise.&lt;br/&gt;- 
     <category term="quote"/>
     <summary type="html">If I don’t practice one day, I know it; two days, the critics know it; three days, the public knows it.&lt;br/&gt;- Jascha Heifetz</summary>
   </entry>
-
-  
-
-  
   <entry>
     <title>179. lzon.ca&#x2F;quotes</title>
     <id>https://lzon.ca/quotes/#179</id>
@@ -565,10 +411,6 @@ But it were vain to tell her so and they are better for her praise.&lt;br/&gt;- 
     <category term="quote"/>
     <summary type="html">The essence of philosophy is that one should so live that their happiness shall depend as little as possible on external things.&lt;br/&gt;- Epictetus</summary>
   </entry>
-
-  
-
-  
   <entry>
     <title>178. lzon.ca&#x2F;quotes</title>
     <id>https://lzon.ca/quotes/#178</id>
@@ -579,10 +421,6 @@ But it were vain to tell her so and they are better for her praise.&lt;br/&gt;- 
     <category term="quote"/>
     <summary type="html">It is not the man who has too little, but the man who craves more, that is poor.&lt;br/&gt;- Seneca</summary>
   </entry>
-
-  
-
-  
   <entry>
     <title>177. lzon.ca&#x2F;quotes</title>
     <id>https://lzon.ca/quotes/#177</id>
@@ -593,10 +431,6 @@ But it were vain to tell her so and they are better for her praise.&lt;br/&gt;- 
     <category term="quote"/>
     <summary type="html">You know you’re getting old when the candles cost more than the cake.&lt;br/&gt;- Bob Hope</summary>
   </entry>
-
-  
-
-  
   <entry>
     <title>176. lzon.ca&#x2F;quotes</title>
     <id>https://lzon.ca/quotes/#176</id>
@@ -607,10 +441,6 @@ But it were vain to tell her so and they are better for her praise.&lt;br/&gt;- 
     <category term="quote"/>
     <summary type="html">I sit beside my lonely fire. And pray for wisdom yet. For calmness to remember. Or courage to forget.&lt;br/&gt;- Charles Hamilton Aidé (Remember to Forget)</summary>
   </entry>
-
-  
-
-  
   <entry>
     <title>175. lzon.ca&#x2F;quotes</title>
     <id>https://lzon.ca/quotes/#175</id>
@@ -621,10 +451,6 @@ But it were vain to tell her so and they are better for her praise.&lt;br/&gt;- 
     <category term="quote"/>
     <summary type="html">Men in rage strike those that wish them best.&lt;br/&gt;- William Shakespeare</summary>
   </entry>
-
-  
-
-  
   <entry>
     <title>174. lzon.ca&#x2F;quotes</title>
     <id>https://lzon.ca/quotes/#174</id>
@@ -635,10 +461,6 @@ But it were vain to tell her so and they are better for her praise.&lt;br/&gt;- 
     <category term="quote"/>
     <summary type="html">Something attempted, something done, has earned a night’s repose.&lt;br/&gt;- Henry Longfellow (The Village Blacksmith)</summary>
   </entry>
-
-  
-
-  
   <entry>
     <title>173. lzon.ca&#x2F;quotes</title>
     <id>https://lzon.ca/quotes/#173</id>
@@ -650,10 +472,6 @@ But it were vain to tell her so and they are better for her praise.&lt;br/&gt;- 
     <summary type="html">I wish it need not have happened in my time, said Frodo.
 So do I, said Gandalf. And so do all who live to see such times. But that is not for them to decide. All we have to decide is what to do with the time that is given us.&lt;br/&gt;- J.R.R. Tolkien (The Fellowship of the Ring)</summary>
   </entry>
-
-  
-
-  
   <entry>
     <title>172. lzon.ca&#x2F;quotes</title>
     <id>https://lzon.ca/quotes/#172</id>
@@ -668,10 +486,6 @@ The vine still clings to the mouldering wall.
 But at every gust the dead leaves fall.
 And the day is dark and dreary.&lt;br/&gt;- Henry Longfellow (The Rainy Day)</summary>
   </entry>
-
-  
-
-  
   <entry>
     <title>171. lzon.ca&#x2F;quotes</title>
     <id>https://lzon.ca/quotes/#171</id>
@@ -682,10 +496,6 @@ And the day is dark and dreary.&lt;br/&gt;- Henry Longfellow (The Rainy Day)</su
     <category term="quote"/>
     <summary type="html">Be strict with yourself and tolerant of others.&lt;br/&gt;- Marcus Aurelius</summary>
   </entry>
-
-  
-
-  
   <entry>
     <title>170. lzon.ca&#x2F;quotes</title>
     <id>https://lzon.ca/quotes/#170</id>
@@ -696,10 +506,6 @@ And the day is dark and dreary.&lt;br/&gt;- Henry Longfellow (The Rainy Day)</su
     <category term="quote"/>
     <summary type="html">Isn’t it nice to think that tomorrow is a new day with no mistakes in it yet?&lt;br/&gt;- L.M. Montgomery (Anne of Green Gables)</summary>
   </entry>
-
-  
-
-  
   <entry>
     <title>169. lzon.ca&#x2F;quotes</title>
     <id>https://lzon.ca/quotes/#169</id>
@@ -715,10 +521,6 @@ And where thy footstep gleams
 In what ethereal dances,
 By what eternal streams.&lt;br/&gt;- Edgar Allen Poe (To One in Paradise)</summary>
   </entry>
-
-  
-
-  
   <entry>
     <title>168. lzon.ca&#x2F;quotes</title>
     <id>https://lzon.ca/quotes/#168</id>
@@ -729,10 +531,6 @@ By what eternal streams.&lt;br/&gt;- Edgar Allen Poe (To One in Paradise)</summa
     <category term="quote"/>
     <summary type="html">You do unbend your noble strength, to think so brainsickly of things.&lt;br/&gt;- Shakespeare (Macbeth)</summary>
   </entry>
-
-  
-
-  
   <entry>
     <title>167. lzon.ca&#x2F;quotes</title>
     <id>https://lzon.ca/quotes/#167</id>
@@ -743,10 +541,6 @@ By what eternal streams.&lt;br/&gt;- Edgar Allen Poe (To One in Paradise)</summa
     <category term="quote"/>
     <summary type="html">Continuous improvement is better than delayed perfection.&lt;br/&gt;- Mark Twain</summary>
   </entry>
-
-  
-
-  
   <entry>
     <title>166. lzon.ca&#x2F;quotes</title>
     <id>https://lzon.ca/quotes/#166</id>
@@ -757,10 +551,6 @@ By what eternal streams.&lt;br/&gt;- Edgar Allen Poe (To One in Paradise)</summa
     <category term="quote"/>
     <summary type="html">Not to know what happened before one was born is to remain a child.&lt;br/&gt;- Cicero (De Oratore XXXIV)</summary>
   </entry>
-
-  
-
-  
   <entry>
     <title>165. lzon.ca&#x2F;quotes</title>
     <id>https://lzon.ca/quotes/#165</id>
@@ -771,10 +561,6 @@ By what eternal streams.&lt;br/&gt;- Edgar Allen Poe (To One in Paradise)</summa
     <category term="quote"/>
     <summary type="html">But at my back I always hear Time’s winged chariot hurrying near; And yonder all before us lie Deserts of vast eternity.&lt;br/&gt;- Andrew Marvell (To his Coy Mistress)</summary>
   </entry>
-
-  
-
-  
   <entry>
     <title>164. lzon.ca&#x2F;quotes</title>
     <id>https://lzon.ca/quotes/#164</id>
@@ -785,10 +571,6 @@ By what eternal streams.&lt;br/&gt;- Edgar Allen Poe (To One in Paradise)</summa
     <category term="quote"/>
     <summary type="html">Life often presents us with a choice of evils, rather than of goods.&lt;br/&gt;- C. C. Colton (Lacon)</summary>
   </entry>
-
-  
-
-  
   <entry>
     <title>163. lzon.ca&#x2F;quotes</title>
     <id>https://lzon.ca/quotes/#163</id>
@@ -799,10 +581,6 @@ By what eternal streams.&lt;br/&gt;- Edgar Allen Poe (To One in Paradise)</summa
     <category term="quote"/>
     <summary type="html">When you and I behind the Veil are passed, Oh but the long while the World shall last, Which of our Coming and Departure heeds. As Sea’s self should heed a pebble cast.&lt;br/&gt;- Omar Khayyám</summary>
   </entry>
-
-  
-
-  
   <entry>
     <title>162. lzon.ca&#x2F;quotes</title>
     <id>https://lzon.ca/quotes/#162</id>
@@ -813,10 +591,6 @@ By what eternal streams.&lt;br/&gt;- Edgar Allen Poe (To One in Paradise)</summa
     <category term="quote"/>
     <summary type="html">Doubt, of whatever kind, can be ended by Action alone.&lt;br/&gt;- Thomas Carlyle (Past and Present III)</summary>
   </entry>
-
-  
-
-  
   <entry>
     <title>161. lzon.ca&#x2F;quotes</title>
     <id>https://lzon.ca/quotes/#161</id>
@@ -827,10 +601,6 @@ By what eternal streams.&lt;br/&gt;- Edgar Allen Poe (To One in Paradise)</summa
     <category term="quote"/>
     <summary type="html">The fates lead the willing, and drag the unwilling.&lt;br/&gt;- Seneca (Ad Lucilium CVII)</summary>
   </entry>
-
-  
-
-  
   <entry>
     <title>160. lzon.ca&#x2F;quotes</title>
     <id>https://lzon.ca/quotes/#160</id>
@@ -841,10 +611,6 @@ By what eternal streams.&lt;br/&gt;- Edgar Allen Poe (To One in Paradise)</summa
     <category term="quote"/>
     <summary type="html">Punctuality is the politeness of kings.&lt;br/&gt;- Louis XVIII</summary>
   </entry>
-
-  
-
-  
   <entry>
     <title>159. lzon.ca&#x2F;quotes</title>
     <id>https://lzon.ca/quotes/#159</id>
@@ -858,10 +624,6 @@ To go with the drift of things.
 To yield with a grace to reason, and bow and accept the end.
 Of a love or a season?&lt;br/&gt;- Robert Frost (Reluctance)</summary>
   </entry>
-
-  
-
-  
   <entry>
     <title>158. lzon.ca&#x2F;quotes</title>
     <id>https://lzon.ca/quotes/#158</id>
@@ -872,10 +634,6 @@ Of a love or a season?&lt;br/&gt;- Robert Frost (Reluctance)</summary>
     <category term="quote"/>
     <summary type="html">In nature’s infinite book of secrecy a little I can read.&lt;br/&gt;- Shakespeare (Antony and Cleopatra)</summary>
   </entry>
-
-  
-
-  
   <entry>
     <title>157. lzon.ca&#x2F;quotes</title>
     <id>https://lzon.ca/quotes/#157</id>
@@ -886,10 +644,6 @@ Of a love or a season?&lt;br/&gt;- Robert Frost (Reluctance)</summary>
     <category term="quote"/>
     <summary type="html">Character is simply habit long continued.&lt;br/&gt;- Plutarch (On Moral Virtue IV)</summary>
   </entry>
-
-  
-
-  
   <entry>
     <title>156. lzon.ca&#x2F;quotes</title>
     <id>https://lzon.ca/quotes/#156</id>
@@ -900,10 +654,6 @@ Of a love or a season?&lt;br/&gt;- Robert Frost (Reluctance)</summary>
     <category term="quote"/>
     <summary type="html">The cure for a fallacious argument is a better argument, not the suppression of ideas.&lt;br/&gt;- Carl Sagan</summary>
   </entry>
-
-  
-
-  
   <entry>
     <title>155. lzon.ca&#x2F;quotes</title>
     <id>https://lzon.ca/quotes/#155</id>
@@ -914,10 +664,6 @@ Of a love or a season?&lt;br/&gt;- Robert Frost (Reluctance)</summary>
     <category term="quote"/>
     <summary type="html">You may delay, but time will not.&lt;br/&gt;- Benjamin Franklin</summary>
   </entry>
-
-  
-
-  
   <entry>
     <title>154. lzon.ca&#x2F;quotes</title>
     <id>https://lzon.ca/quotes/#154</id>
@@ -928,10 +674,6 @@ Of a love or a season?&lt;br/&gt;- Robert Frost (Reluctance)</summary>
     <category term="quote"/>
     <summary type="html">Too many people spend money they haven’t earned, to buy things they don’t want, to impress people that they don’t like.&lt;br/&gt;- Will Rogers</summary>
   </entry>
-
-  
-
-  
   <entry>
     <title>153. lzon.ca&#x2F;quotes</title>
     <id>https://lzon.ca/quotes/#153</id>
@@ -944,10 +686,6 @@ Of a love or a season?&lt;br/&gt;- Robert Frost (Reluctance)</summary>
 Some people dream of things that never were and ask, Why not?
 Some people have to go to work and don’t have time for all that.&lt;br/&gt;- George Carlin</summary>
   </entry>
-
-  
-
-  
   <entry>
     <title>152. lzon.ca&#x2F;quotes</title>
     <id>https://lzon.ca/quotes/#152</id>
@@ -958,10 +696,6 @@ Some people have to go to work and don’t have time for all that.&lt;br/&gt;- G
     <category term="quote"/>
     <summary type="html">All I’ve ever wanted was an honest week’s pay for an honest day’s work.&lt;br/&gt;- Steve Martin</summary>
   </entry>
-
-  
-
-  
   <entry>
     <title>151. lzon.ca&#x2F;quotes</title>
     <id>https://lzon.ca/quotes/#151</id>
@@ -972,10 +706,6 @@ Some people have to go to work and don’t have time for all that.&lt;br/&gt;- G
     <category term="quote"/>
     <summary type="html">Life is a competition… Not with others, but with ourselves. We should seek each day to live stronger, better, truer lives. Each to master some weakness of yesterday. Each day to repair a mistake; Each day to surpass ourselves.&lt;br/&gt;- David B. Haight</summary>
   </entry>
-
-  
-
-  
   <entry>
     <title>150. lzon.ca&#x2F;quotes</title>
     <id>https://lzon.ca/quotes/#150</id>
@@ -986,10 +716,6 @@ Some people have to go to work and don’t have time for all that.&lt;br/&gt;- G
     <category term="quote"/>
     <summary type="html">Whenever you are offended, understand that you are complicit in taking offense.&lt;br/&gt;- Epictetus</summary>
   </entry>
-
-  
-
-  
   <entry>
     <title>149. lzon.ca&#x2F;quotes</title>
     <id>https://lzon.ca/quotes/#149</id>
@@ -1000,10 +726,6 @@ Some people have to go to work and don’t have time for all that.&lt;br/&gt;- G
     <category term="quote"/>
     <summary type="html">Do not judge me by my success, judge me by how many times I fell down and got back up again.&lt;br/&gt;- Nelson Mandela</summary>
   </entry>
-
-  
-
-  
   <entry>
     <title>148. lzon.ca&#x2F;quotes</title>
     <id>https://lzon.ca/quotes/#148</id>
@@ -1014,10 +736,6 @@ Some people have to go to work and don’t have time for all that.&lt;br/&gt;- G
     <category term="quote"/>
     <summary type="html">It is easier to build strong children than to repair broken men.&lt;br/&gt;- Frederick Douglass</summary>
   </entry>
-
-  
-
-  
   <entry>
     <title>147. lzon.ca&#x2F;quotes</title>
     <id>https://lzon.ca/quotes/#147</id>
@@ -1028,10 +746,6 @@ Some people have to go to work and don’t have time for all that.&lt;br/&gt;- G
     <category term="quote"/>
     <summary type="html">Judge a man by his questions rather than his answers.&lt;br/&gt;- Pierre-Marc-Gaston, duc de Lévis</summary>
   </entry>
-
-  
-
-  
   <entry>
     <title>146. lzon.ca&#x2F;quotes</title>
     <id>https://lzon.ca/quotes/#146</id>
@@ -1042,10 +756,6 @@ Some people have to go to work and don’t have time for all that.&lt;br/&gt;- G
     <category term="quote"/>
     <summary type="html">The limits of tyrants are prescribed by the endurance of those whom they oppress&lt;br/&gt;- Frederick Douglass</summary>
   </entry>
-
-  
-
-  
   <entry>
     <title>145. lzon.ca&#x2F;quotes</title>
     <id>https://lzon.ca/quotes/#145</id>
@@ -1056,10 +766,6 @@ Some people have to go to work and don’t have time for all that.&lt;br/&gt;- G
     <category term="quote"/>
     <summary type="html">Doing nothing is better than being busy doing nothing.&lt;br/&gt;- Lao Tzu</summary>
   </entry>
-
-  
-
-  
   <entry>
     <title>144. lzon.ca&#x2F;quotes</title>
     <id>https://lzon.ca/quotes/#144</id>
@@ -1070,10 +776,6 @@ Some people have to go to work and don’t have time for all that.&lt;br/&gt;- G
     <category term="quote"/>
     <summary type="html">It is awful to want to go away and to want to go nowhere.&lt;br/&gt;- Sylvia Plath</summary>
   </entry>
-
-  
-
-  
   <entry>
     <title>143. lzon.ca&#x2F;quotes</title>
     <id>https://lzon.ca/quotes/#143</id>
@@ -1084,10 +786,6 @@ Some people have to go to work and don’t have time for all that.&lt;br/&gt;- G
     <category term="quote"/>
     <summary type="html">Experience is something you don’t get until just after you need it.&lt;br/&gt;- Steven Wright</summary>
   </entry>
-
-  
-
-  
   <entry>
     <title>142. lzon.ca&#x2F;quotes</title>
     <id>https://lzon.ca/quotes/#142</id>
@@ -1098,10 +796,6 @@ Some people have to go to work and don’t have time for all that.&lt;br/&gt;- G
     <category term="quote"/>
     <summary type="html">You miss 100% of the shots you don’t take.&lt;br/&gt;- Wayne Gretzky</summary>
   </entry>
-
-  
-
-  
   <entry>
     <title>141. lzon.ca&#x2F;quotes</title>
     <id>https://lzon.ca/quotes/#141</id>
@@ -1112,10 +806,6 @@ Some people have to go to work and don’t have time for all that.&lt;br/&gt;- G
     <category term="quote"/>
     <summary type="html">A ship in harbor is safe, but that’s not what ships are for.&lt;br/&gt;- John Shedd</summary>
   </entry>
-
-  
-
-  
   <entry>
     <title>140. lzon.ca&#x2F;quotes</title>
     <id>https://lzon.ca/quotes/#140</id>
@@ -1126,10 +816,6 @@ Some people have to go to work and don’t have time for all that.&lt;br/&gt;- G
     <category term="quote"/>
     <summary type="html">Man cannot remake himself without suffering, for he is both the marble and the sculptor.&lt;br/&gt;- Alexis Carrel</summary>
   </entry>
-
-  
-
-  
   <entry>
     <title>139. lzon.ca&#x2F;quotes</title>
     <id>https://lzon.ca/quotes/#139</id>
@@ -1140,10 +826,6 @@ Some people have to go to work and don’t have time for all that.&lt;br/&gt;- G
     <category term="quote"/>
     <summary type="html">For is there any practice less selfish, any labor less alienated, any time less wasted, than preparing something delicious and nourishing for people you love?&lt;br/&gt;- Michael Pollan (Cooked: A Natural History of Transformation)</summary>
   </entry>
-
-  
-
-  
   <entry>
     <title>138. lzon.ca&#x2F;quotes</title>
     <id>https://lzon.ca/quotes/#138</id>
@@ -1154,10 +836,6 @@ Some people have to go to work and don’t have time for all that.&lt;br/&gt;- G
     <category term="quote"/>
     <summary type="html">One joy dispels a hundred cares.&lt;br/&gt;- Confucius</summary>
   </entry>
-
-  
-
-  
   <entry>
     <title>137. lzon.ca&#x2F;quotes</title>
     <id>https://lzon.ca/quotes/#137</id>
@@ -1168,10 +846,6 @@ Some people have to go to work and don’t have time for all that.&lt;br/&gt;- G
     <category term="quote"/>
     <summary type="html">When you’re good at something, you’ll tell everyone. When you’re great at something, they’ll tell you.&lt;br/&gt;- Walter Payton</summary>
   </entry>
-
-  
-
-  
   <entry>
     <title>136. lzon.ca&#x2F;quotes</title>
     <id>https://lzon.ca/quotes/#136</id>
@@ -1182,10 +856,6 @@ Some people have to go to work and don’t have time for all that.&lt;br/&gt;- G
     <category term="quote"/>
     <summary type="html">I was taught to strive not because there were any guarantees of success but because the act of striving is in itself the only way to keep faith with life.&lt;br/&gt;- Madeleine K. Albright</summary>
   </entry>
-
-  
-
-  
   <entry>
     <title>135. lzon.ca&#x2F;quotes</title>
     <id>https://lzon.ca/quotes/#135</id>
@@ -1196,10 +866,6 @@ Some people have to go to work and don’t have time for all that.&lt;br/&gt;- G
     <category term="quote"/>
     <summary type="html">Act without expectation.&lt;br/&gt;- Lao Tzu</summary>
   </entry>
-
-  
-
-  
   <entry>
     <title>134. lzon.ca&#x2F;quotes</title>
     <id>https://lzon.ca/quotes/#134</id>
@@ -1210,10 +876,6 @@ Some people have to go to work and don’t have time for all that.&lt;br/&gt;- G
     <category term="quote"/>
     <summary type="html">I try more and more to be myself, caring relatively little whether people approve or disapprove.&lt;br/&gt;- Vincent Van Gogh</summary>
   </entry>
-
-  
-
-  
   <entry>
     <title>133. lzon.ca&#x2F;quotes</title>
     <id>https://lzon.ca/quotes/#133</id>
@@ -1224,10 +886,6 @@ Some people have to go to work and don’t have time for all that.&lt;br/&gt;- G
     <category term="quote"/>
     <summary type="html">Do not look for a sanctuary in anyone except your self.&lt;br/&gt;- Buddha</summary>
   </entry>
-
-  
-
-  
   <entry>
     <title>132. lzon.ca&#x2F;quotes</title>
     <id>https://lzon.ca/quotes/#132</id>
@@ -1238,10 +896,6 @@ Some people have to go to work and don’t have time for all that.&lt;br/&gt;- G
     <category term="quote"/>
     <summary type="html">There is no path to happiness: happiness is the path.&lt;br/&gt;- Buddha</summary>
   </entry>
-
-  
-
-  
   <entry>
     <title>131. lzon.ca&#x2F;quotes</title>
     <id>https://lzon.ca/quotes/#131</id>
@@ -1252,10 +906,6 @@ Some people have to go to work and don’t have time for all that.&lt;br/&gt;- G
     <category term="quote"/>
     <summary type="html">Holding on to anger is like grasping a hot coal with the intent of throwing it at someone else; you are the one who gets burned.&lt;br/&gt;- Buddha</summary>
   </entry>
-
-  
-
-  
   <entry>
     <title>130. lzon.ca&#x2F;quotes</title>
     <id>https://lzon.ca/quotes/#130</id>
@@ -1266,10 +916,6 @@ Some people have to go to work and don’t have time for all that.&lt;br/&gt;- G
     <category term="quote"/>
     <summary type="html">And in my hour of darkness. She is standing right in front of me. Speaking words of wisdom. Let it be.&lt;br/&gt;- Paul McCartney</summary>
   </entry>
-
-  
-
-  
   <entry>
     <title>129. lzon.ca&#x2F;quotes</title>
     <id>https://lzon.ca/quotes/#129</id>
@@ -1280,10 +926,6 @@ Some people have to go to work and don’t have time for all that.&lt;br/&gt;- G
     <category term="quote"/>
     <summary type="html">Don’t take yourself so seriously. You’re just a monkey with a plan.&lt;br/&gt;- Naval Ravikant</summary>
   </entry>
-
-  
-
-  
   <entry>
     <title>128. lzon.ca&#x2F;quotes</title>
     <id>https://lzon.ca/quotes/#128</id>
@@ -1294,10 +936,6 @@ Some people have to go to work and don’t have time for all that.&lt;br/&gt;- G
     <category term="quote"/>
     <summary type="html">Morality is not the doctrine of how we may make ourselves happy, but how we may make ourselves worthy of happiness.&lt;br/&gt;- Immanuel Kant</summary>
   </entry>
-
-  
-
-  
   <entry>
     <title>127. lzon.ca&#x2F;quotes</title>
     <id>https://lzon.ca/quotes/#127</id>
@@ -1308,10 +946,6 @@ Some people have to go to work and don’t have time for all that.&lt;br/&gt;- G
     <category term="quote"/>
     <summary type="html">It is easier to prevent bad habits than to break them.&lt;br/&gt;- Benjamin Franklin</summary>
   </entry>
-
-  
-
-  
   <entry>
     <title>126. lzon.ca&#x2F;quotes</title>
     <id>https://lzon.ca/quotes/#126</id>
@@ -1322,10 +956,6 @@ Some people have to go to work and don’t have time for all that.&lt;br/&gt;- G
     <category term="quote"/>
     <summary type="html">Be happy in the moment, that’s enough. Each moment is all we need, not more.&lt;br/&gt;- Mother Teresa</summary>
   </entry>
-
-  
-
-  
   <entry>
     <title>125. lzon.ca&#x2F;quotes</title>
     <id>https://lzon.ca/quotes/#125</id>
@@ -1336,10 +966,6 @@ Some people have to go to work and don’t have time for all that.&lt;br/&gt;- G
     <category term="quote"/>
     <summary type="html">In the wild struggle for existence, we want to have something that endures, and so we fill our minds with rubbish and facts, in the silly hope of keeping our place.&lt;br/&gt;- Oscar Wilde</summary>
   </entry>
-
-  
-
-  
   <entry>
     <title>124. lzon.ca&#x2F;quotes</title>
     <id>https://lzon.ca/quotes/#124</id>
@@ -1350,10 +976,6 @@ Some people have to go to work and don’t have time for all that.&lt;br/&gt;- G
     <category term="quote"/>
     <summary type="html">Blessed is he who expects nothing, for he shall never be disappointed.&lt;br/&gt;- Alexander Pope</summary>
   </entry>
-
-  
-
-  
   <entry>
     <title>123. lzon.ca&#x2F;quotes</title>
     <id>https://lzon.ca/quotes/#123</id>
@@ -1364,10 +986,6 @@ Some people have to go to work and don’t have time for all that.&lt;br/&gt;- G
     <category term="quote"/>
     <summary type="html">We accept the love we think we deserve&lt;br/&gt;- Stephen Chbosky (The Perks of Being a Wallflower)</summary>
   </entry>
-
-  
-
-  
   <entry>
     <title>122. lzon.ca&#x2F;quotes</title>
     <id>https://lzon.ca/quotes/#122</id>
@@ -1378,10 +996,6 @@ Some people have to go to work and don’t have time for all that.&lt;br/&gt;- G
     <category term="quote"/>
     <summary type="html">My deplorable mania for analysis exhausts me. I doubt everything, even my own doubt.&lt;br/&gt;- Gustave Flaubert</summary>
   </entry>
-
-  
-
-  
   <entry>
     <title>121. lzon.ca&#x2F;quotes</title>
     <id>https://lzon.ca/quotes/#121</id>
@@ -1392,10 +1006,6 @@ Some people have to go to work and don’t have time for all that.&lt;br/&gt;- G
     <category term="quote"/>
     <summary type="html">Don’t watch the clock; do what it does. Keep going.&lt;br/&gt;- Sam Levenson</summary>
   </entry>
-
-  
-
-  
   <entry>
     <title>120. lzon.ca&#x2F;quotes</title>
     <id>https://lzon.ca/quotes/#120</id>
@@ -1406,10 +1016,6 @@ Some people have to go to work and don’t have time for all that.&lt;br/&gt;- G
     <category term="quote"/>
     <summary type="html">I’ve learned that home isn’t a place, it’s a feeling.&lt;br/&gt;- Cecelia Ahern</summary>
   </entry>
-
-  
-
-  
   <entry>
     <title>119. lzon.ca&#x2F;quotes</title>
     <id>https://lzon.ca/quotes/#119</id>
@@ -1420,10 +1026,6 @@ Some people have to go to work and don’t have time for all that.&lt;br/&gt;- G
     <category term="quote"/>
     <summary type="html">Man is the only creature who refuses to be what he is.&lt;br/&gt;- Albert Camus</summary>
   </entry>
-
-  
-
-  
   <entry>
     <title>118. lzon.ca&#x2F;quotes</title>
     <id>https://lzon.ca/quotes/#118</id>
@@ -1434,10 +1036,6 @@ Some people have to go to work and don’t have time for all that.&lt;br/&gt;- G
     <category term="quote"/>
     <summary type="html">The problem with revolutions is that they always end right where they begin.&lt;br/&gt;- Matthew Catania</summary>
   </entry>
-
-  
-
-  
   <entry>
     <title>117. lzon.ca&#x2F;quotes</title>
     <id>https://lzon.ca/quotes/#117</id>
@@ -1448,10 +1046,6 @@ Some people have to go to work and don’t have time for all that.&lt;br/&gt;- G
     <category term="quote"/>
     <summary type="html">We could never learn to be brave and patient if there were only joy in the world.&lt;br/&gt;- Helen Keller</summary>
   </entry>
-
-  
-
-  
   <entry>
     <title>116. lzon.ca&#x2F;quotes</title>
     <id>https://lzon.ca/quotes/#116</id>
@@ -1462,10 +1056,6 @@ Some people have to go to work and don’t have time for all that.&lt;br/&gt;- G
     <category term="quote"/>
     <summary type="html">Too often we love people who don’t love us, but we fail to return the love of others who do.&lt;br/&gt;- Jay Shetty</summary>
   </entry>
-
-  
-
-  
   <entry>
     <title>115. lzon.ca&#x2F;quotes</title>
     <id>https://lzon.ca/quotes/#115</id>
@@ -1476,10 +1066,6 @@ Some people have to go to work and don’t have time for all that.&lt;br/&gt;- G
     <category term="quote"/>
     <summary type="html">The sad truth is that most evil is done by people who never make up their minds to be good or evil.&lt;br/&gt;- Hannah Arendt (The Life of the Mind)</summary>
   </entry>
-
-  
-
-  
   <entry>
     <title>114. lzon.ca&#x2F;quotes</title>
     <id>https://lzon.ca/quotes/#114</id>
@@ -1490,10 +1076,6 @@ Some people have to go to work and don’t have time for all that.&lt;br/&gt;- G
     <category term="quote"/>
     <summary type="html">You don’t get to choose if you get hurt in this world, but you do have some say in who hurts you.&lt;br/&gt;- John Green (The Fault in Our Stars)</summary>
   </entry>
-
-  
-
-  
   <entry>
     <title>113. lzon.ca&#x2F;quotes</title>
     <id>https://lzon.ca/quotes/#113</id>
@@ -1504,10 +1086,6 @@ Some people have to go to work and don’t have time for all that.&lt;br/&gt;- G
     <category term="quote"/>
     <summary type="html">Nobody realizes that some people expend tremendous energy merely to be normal.&lt;br/&gt;- Albert Camus</summary>
   </entry>
-
-  
-
-  
   <entry>
     <title>112. lzon.ca&#x2F;quotes</title>
     <id>https://lzon.ca/quotes/#112</id>
@@ -1518,10 +1096,6 @@ Some people have to go to work and don’t have time for all that.&lt;br/&gt;- G
     <category term="quote"/>
     <summary type="html">Wisdom is nothing more profound than an ability to follow one’s own advice.&lt;br/&gt;- Sam Harris</summary>
   </entry>
-
-  
-
-  
   <entry>
     <title>111. lzon.ca&#x2F;quotes</title>
     <id>https://lzon.ca/quotes/#111</id>
@@ -1532,10 +1106,6 @@ Some people have to go to work and don’t have time for all that.&lt;br/&gt;- G
     <category term="quote"/>
     <summary type="html">Eat food. Not too much. Mostly plants.&lt;br/&gt;- Michael Pollan (In Defense of Food: An Eater&apos;s Manifesto)</summary>
   </entry>
-
-  
-
-  
   <entry>
     <title>110. lzon.ca&#x2F;quotes</title>
     <id>https://lzon.ca/quotes/#110</id>
@@ -1546,10 +1116,6 @@ Some people have to go to work and don’t have time for all that.&lt;br/&gt;- G
     <category term="quote"/>
     <summary type="html">The sun shone, having no alternative, on the nothing new.&lt;br/&gt;- Samuel Beckett (Murphy)</summary>
   </entry>
-
-  
-
-  
   <entry>
     <title>109. lzon.ca&#x2F;quotes</title>
     <id>https://lzon.ca/quotes/#109</id>
@@ -1560,10 +1126,6 @@ Some people have to go to work and don’t have time for all that.&lt;br/&gt;- G
     <category term="quote"/>
     <summary type="html">The truly free man is the one who can turn down an invitation to dinner without giving an excuse.&lt;br/&gt;- Jules Renard</summary>
   </entry>
-
-  
-
-  
   <entry>
     <title>108. lzon.ca&#x2F;quotes</title>
     <id>https://lzon.ca/quotes/#108</id>
@@ -1574,10 +1136,6 @@ Some people have to go to work and don’t have time for all that.&lt;br/&gt;- G
     <category term="quote"/>
     <summary type="html">You have power over your mind, not outside events. Realize this, and you will find strength.&lt;br/&gt;- Marcus Aurelius</summary>
   </entry>
-
-  
-
-  
   <entry>
     <title>107. lzon.ca&#x2F;quotes</title>
     <id>https://lzon.ca/quotes/#107</id>
@@ -1588,10 +1146,6 @@ Some people have to go to work and don’t have time for all that.&lt;br/&gt;- G
     <category term="quote"/>
     <summary type="html">A learning experience is one of those things that says, ’You know that thing you just did? Don’t do that.&lt;br/&gt;- Douglas Adams</summary>
   </entry>
-
-  
-
-  
   <entry>
     <title>106. lzon.ca&#x2F;quotes</title>
     <id>https://lzon.ca/quotes/#106</id>
@@ -1602,10 +1156,6 @@ Some people have to go to work and don’t have time for all that.&lt;br/&gt;- G
     <category term="quote"/>
     <summary type="html">If there is one question I dread, to which I have never been able to invent a satisfactory reply, it is the question what am I doing.&lt;br/&gt;- Samuel Beckett</summary>
   </entry>
-
-  
-
-  
   <entry>
     <title>105. lzon.ca&#x2F;quotes</title>
     <id>https://lzon.ca/quotes/#105</id>
@@ -1616,10 +1166,6 @@ Some people have to go to work and don’t have time for all that.&lt;br/&gt;- G
     <category term="quote"/>
     <summary type="html">As far as you can avoid it, do not give grief to anyone. Never inflict your rage on another. If you hope for eternal rest, feel the pain yourself; but don’t hurt others.&lt;br/&gt;- Omar Khayyám</summary>
   </entry>
-
-  
-
-  
   <entry>
     <title>104. lzon.ca&#x2F;quotes</title>
     <id>https://lzon.ca/quotes/#104</id>
@@ -1630,10 +1176,6 @@ Some people have to go to work and don’t have time for all that.&lt;br/&gt;- G
     <category term="quote"/>
     <summary type="html">Learn from yesterday, live for today, look to tomorrow, rest this afternoon.&lt;br/&gt;- Charles M. Schulz (Charlie Brown&apos;s Little Book of Wisdom)</summary>
   </entry>
-
-  
-
-  
   <entry>
     <title>103. lzon.ca&#x2F;quotes</title>
     <id>https://lzon.ca/quotes/#103</id>
@@ -1644,10 +1186,6 @@ Some people have to go to work and don’t have time for all that.&lt;br/&gt;- G
     <category term="quote"/>
     <summary type="html">Be happy for this moment. This moment is your life.&lt;br/&gt;- Omar Khayyám</summary>
   </entry>
-
-  
-
-  
   <entry>
     <title>102. lzon.ca&#x2F;quotes</title>
     <id>https://lzon.ca/quotes/#102</id>
@@ -1658,10 +1196,6 @@ Some people have to go to work and don’t have time for all that.&lt;br/&gt;- G
     <category term="quote"/>
     <summary type="html">Nothing in this world is harder than speaking the truth, nothing easier than flattery.&lt;br/&gt;- Fyodor Dostoevsky</summary>
   </entry>
-
-  
-
-  
   <entry>
     <title>101. lzon.ca&#x2F;quotes</title>
     <id>https://lzon.ca/quotes/#101</id>
@@ -1672,10 +1206,6 @@ Some people have to go to work and don’t have time for all that.&lt;br/&gt;- G
     <category term="quote"/>
     <summary type="html">The greatest hazard of all, losing one’s self, can occur very quietly in the world, as if it were nothing at all. No other loss can occur so quietly.&lt;br/&gt;- Søren Kierkegaard</summary>
   </entry>
-
-  
-
-  
   <entry>
     <title>100. lzon.ca&#x2F;quotes</title>
     <id>https://lzon.ca/quotes/#100</id>
@@ -1686,10 +1216,6 @@ Some people have to go to work and don’t have time for all that.&lt;br/&gt;- G
     <category term="quote"/>
     <summary type="html">I am a collection of dismantled almosts.&lt;br/&gt;- Anne Sexton</summary>
   </entry>
-
-  
-
-  
   <entry>
     <title>99. lzon.ca&#x2F;quotes</title>
     <id>https://lzon.ca/quotes/#99</id>
@@ -1700,10 +1226,6 @@ Some people have to go to work and don’t have time for all that.&lt;br/&gt;- G
     <category term="quote"/>
     <summary type="html">A goal without a plan is just a wish.&lt;br/&gt;- Antoine de Saint-Exupéry</summary>
   </entry>
-
-  
-
-  
   <entry>
     <title>98. lzon.ca&#x2F;quotes</title>
     <id>https://lzon.ca/quotes/#98</id>
@@ -1714,10 +1236,6 @@ Some people have to go to work and don’t have time for all that.&lt;br/&gt;- G
     <category term="quote"/>
     <summary type="html">The difficulty lies not so much in developing new ideas as in escaping from old ones.&lt;br/&gt;- John Maynard Keynes</summary>
   </entry>
-
-  
-
-  
   <entry>
     <title>97. lzon.ca&#x2F;quotes</title>
     <id>https://lzon.ca/quotes/#97</id>
@@ -1728,10 +1246,6 @@ Some people have to go to work and don’t have time for all that.&lt;br/&gt;- G
     <category term="quote"/>
     <summary type="html">You can’t stay in your corner of the Forest waiting for others to come to you. You have to go to them sometimes.&lt;br/&gt;- A.A. Milne (Winnie the Pooh)</summary>
   </entry>
-
-  
-
-  
   <entry>
     <title>96. lzon.ca&#x2F;quotes</title>
     <id>https://lzon.ca/quotes/#96</id>
@@ -1742,10 +1256,6 @@ Some people have to go to work and don’t have time for all that.&lt;br/&gt;- G
     <category term="quote"/>
     <summary type="html">We are enriched not by what we possess, but by what we can do without.&lt;br/&gt;- Immanuel Kant</summary>
   </entry>
-
-  
-
-  
   <entry>
     <title>95. lzon.ca&#x2F;quotes</title>
     <id>https://lzon.ca/quotes/#95</id>
@@ -1756,10 +1266,6 @@ Some people have to go to work and don’t have time for all that.&lt;br/&gt;- G
     <category term="quote"/>
     <summary type="html">Boredom is desire seeking desire.&lt;br/&gt;- Leo Tolstoy</summary>
   </entry>
-
-  
-
-  
   <entry>
     <title>94. lzon.ca&#x2F;quotes</title>
     <id>https://lzon.ca/quotes/#94</id>
@@ -1770,10 +1276,6 @@ Some people have to go to work and don’t have time for all that.&lt;br/&gt;- G
     <category term="quote"/>
     <summary type="html">Man is fond of counting his troubles, but he does not count his joys. If he counted them up as he ought to, he would see that every lot has enough happiness provided for it.&lt;br/&gt;- Fyodor Dostoevsky</summary>
   </entry>
-
-  
-
-  
   <entry>
     <title>93. lzon.ca&#x2F;quotes</title>
     <id>https://lzon.ca/quotes/#93</id>
@@ -1784,10 +1286,6 @@ Some people have to go to work and don’t have time for all that.&lt;br/&gt;- G
     <category term="quote"/>
     <summary type="html">As far as we can discern, the sole purpose of human existence is to kindle a light of meaning in the darkness of mere being.&lt;br/&gt;- Carl Jung</summary>
   </entry>
-
-  
-
-  
   <entry>
     <title>92. lzon.ca&#x2F;quotes</title>
     <id>https://lzon.ca/quotes/#92</id>
@@ -1798,10 +1296,6 @@ Some people have to go to work and don’t have time for all that.&lt;br/&gt;- G
     <category term="quote"/>
     <summary type="html">Think of yourself as dead. You have lived your life. Now, take what’s left and live it properly. What doesn’t transmit light creates its own darkness.&lt;br/&gt;- Marcus Aurelius (Meditations)</summary>
   </entry>
-
-  
-
-  
   <entry>
     <title>91. lzon.ca&#x2F;quotes</title>
     <id>https://lzon.ca/quotes/#91</id>
@@ -1812,10 +1306,6 @@ Some people have to go to work and don’t have time for all that.&lt;br/&gt;- G
     <category term="quote"/>
     <summary type="html">We are stuck with technology when what we really want is just stuff that works.&lt;br/&gt;- Douglas Adams</summary>
   </entry>
-
-  
-
-  
   <entry>
     <title>90. lzon.ca&#x2F;quotes</title>
     <id>https://lzon.ca/quotes/#90</id>
@@ -1826,10 +1316,6 @@ Some people have to go to work and don’t have time for all that.&lt;br/&gt;- G
     <category term="quote"/>
     <summary type="html">The real problem of humanity is the following: We have Paleolithic emotions, medieval institutions and godlike technology.&lt;br/&gt;- Edward O. Wilson</summary>
   </entry>
-
-  
-
-  
   <entry>
     <title>89. lzon.ca&#x2F;quotes</title>
     <id>https://lzon.ca/quotes/#89</id>
@@ -1840,10 +1326,6 @@ Some people have to go to work and don’t have time for all that.&lt;br/&gt;- G
     <category term="quote"/>
     <summary type="html">What’s right is what’s left if you do everything else wrong.&lt;br/&gt;- Robin Williams</summary>
   </entry>
-
-  
-
-  
   <entry>
     <title>88. lzon.ca&#x2F;quotes</title>
     <id>https://lzon.ca/quotes/#88</id>
@@ -1854,10 +1336,6 @@ Some people have to go to work and don’t have time for all that.&lt;br/&gt;- G
     <category term="quote"/>
     <summary type="html">Focus is a matter of deciding what things you’re not going to do.&lt;br/&gt;- John Carmack</summary>
   </entry>
-
-  
-
-  
   <entry>
     <title>87. lzon.ca&#x2F;quotes</title>
     <id>https://lzon.ca/quotes/#87</id>
@@ -1868,10 +1346,6 @@ Some people have to go to work and don’t have time for all that.&lt;br/&gt;- G
     <category term="quote"/>
     <summary type="html">We don’t value things; we value their meaning. What they are is determined by the laws of physics, but what they mean is determined by the laws of psychology.&lt;br/&gt;- Rory Sutherland (Alchemy)</summary>
   </entry>
-
-  
-
-  
   <entry>
     <title>86. lzon.ca&#x2F;quotes</title>
     <id>https://lzon.ca/quotes/#86</id>
@@ -1882,10 +1356,6 @@ Some people have to go to work and don’t have time for all that.&lt;br/&gt;- G
     <category term="quote"/>
     <summary type="html">One who is too insistent on his own views, finds few to agree with him.&lt;br/&gt;- Lao Tzu</summary>
   </entry>
-
-  
-
-  
   <entry>
     <title>85. lzon.ca&#x2F;quotes</title>
     <id>https://lzon.ca/quotes/#85</id>
@@ -1896,10 +1366,6 @@ Some people have to go to work and don’t have time for all that.&lt;br/&gt;- G
     <category term="quote"/>
     <summary type="html">Almost all of our sorrows spring out of our relations with other people. There is no more mistaken path to happiness than worldliness.&lt;br/&gt;- Arthur Schopenhauer</summary>
   </entry>
-
-  
-
-  
   <entry>
     <title>84. lzon.ca&#x2F;quotes</title>
     <id>https://lzon.ca/quotes/#84</id>
@@ -1910,10 +1376,6 @@ Some people have to go to work and don’t have time for all that.&lt;br/&gt;- G
     <category term="quote"/>
     <summary type="html">Our span of life is brief, but is long enough for us to live well and honestly.&lt;br/&gt;- Marcus Tullius Cicero</summary>
   </entry>
-
-  
-
-  
   <entry>
     <title>83. lzon.ca&#x2F;quotes</title>
     <id>https://lzon.ca/quotes/#83</id>
@@ -1924,10 +1386,6 @@ Some people have to go to work and don’t have time for all that.&lt;br/&gt;- G
     <category term="quote"/>
     <summary type="html">In order to understand the world, one has to turn away from it on occasion.&lt;br/&gt;- Albert Camus (The Myth of Sisyphus)</summary>
   </entry>
-
-  
-
-  
   <entry>
     <title>82. lzon.ca&#x2F;quotes</title>
     <id>https://lzon.ca/quotes/#82</id>
@@ -1938,10 +1396,6 @@ Some people have to go to work and don’t have time for all that.&lt;br/&gt;- G
     <category term="quote"/>
     <summary type="html">Happiness is not having what you want. It is wanting what you have.&lt;br/&gt;- Rabbi Hyman Schachtel</summary>
   </entry>
-
-  
-
-  
   <entry>
     <title>81. lzon.ca&#x2F;quotes</title>
     <id>https://lzon.ca/quotes/#81</id>
@@ -1952,10 +1406,6 @@ Some people have to go to work and don’t have time for all that.&lt;br/&gt;- G
     <category term="quote"/>
     <summary type="html">When you are content to be simply yourself and don’t compare or compete, everyone will respect you.&lt;br/&gt;- Lao Tzu (Tao Te Ching)</summary>
   </entry>
-
-  
-
-  
   <entry>
     <title>80. lzon.ca&#x2F;quotes</title>
     <id>https://lzon.ca/quotes/#80</id>
@@ -1966,10 +1416,6 @@ Some people have to go to work and don’t have time for all that.&lt;br/&gt;- G
     <category term="quote"/>
     <summary type="html">Don’t stumble over something behind you.&lt;br/&gt;- Seneca</summary>
   </entry>
-
-  
-
-  
   <entry>
     <title>79. lzon.ca&#x2F;quotes</title>
     <id>https://lzon.ca/quotes/#79</id>
@@ -1980,10 +1426,6 @@ Some people have to go to work and don’t have time for all that.&lt;br/&gt;- G
     <category term="quote"/>
     <summary type="html">The creation of the world did not take place once and for all time, but takes place every day.&lt;br/&gt;- Samuel Beckett (Proust)</summary>
   </entry>
-
-  
-
-  
   <entry>
     <title>78. lzon.ca&#x2F;quotes</title>
     <id>https://lzon.ca/quotes/#78</id>
@@ -1994,10 +1436,6 @@ Some people have to go to work and don’t have time for all that.&lt;br/&gt;- G
     <category term="quote"/>
     <summary type="html">The only secret of magic is that I’m willing to work harder on it than you think it’s worth.&lt;br/&gt;- Penn Jillette</summary>
   </entry>
-
-  
-
-  
   <entry>
     <title>77. lzon.ca&#x2F;quotes</title>
     <id>https://lzon.ca/quotes/#77</id>
@@ -2008,10 +1446,6 @@ Some people have to go to work and don’t have time for all that.&lt;br/&gt;- G
     <category term="quote"/>
     <summary type="html">In any moment of decision, the best thing you can do is the right thing. The worst thing you can do is nothing.&lt;br/&gt;- Theodore Roosevelt</summary>
   </entry>
-
-  
-
-  
   <entry>
     <title>76. lzon.ca&#x2F;quotes</title>
     <id>https://lzon.ca/quotes/#76</id>
@@ -2022,10 +1456,6 @@ Some people have to go to work and don’t have time for all that.&lt;br/&gt;- G
     <category term="quote"/>
     <summary type="html">The only man who never makes mistakes is the man who never does anything.&lt;br/&gt;- Theodore Roosevelt</summary>
   </entry>
-
-  
-
-  
   <entry>
     <title>75. lzon.ca&#x2F;quotes</title>
     <id>https://lzon.ca/quotes/#75</id>
@@ -2036,10 +1466,6 @@ Some people have to go to work and don’t have time for all that.&lt;br/&gt;- G
     <category term="quote"/>
     <summary type="html">It always takes longer than you expect, even when you take into account Hofstadter’s Law.&lt;br/&gt;- Hofstadter’s Law</summary>
   </entry>
-
-  
-
-  
   <entry>
     <title>74. lzon.ca&#x2F;quotes</title>
     <id>https://lzon.ca/quotes/#74</id>
@@ -2050,10 +1476,6 @@ Some people have to go to work and don’t have time for all that.&lt;br/&gt;- G
     <category term="quote"/>
     <summary type="html">Poverty is when large efforts produce small results. Wealth is when small efforts produce large results.&lt;br/&gt;- David George</summary>
   </entry>
-
-  
-
-  
   <entry>
     <title>73. lzon.ca&#x2F;quotes</title>
     <id>https://lzon.ca/quotes/#73</id>
@@ -2064,10 +1486,6 @@ Some people have to go to work and don’t have time for all that.&lt;br/&gt;- G
     <category term="quote"/>
     <summary type="html">In a country well governed, poverty is something to be ashamed of. In a country badly governed, wealth is something to be ashamed of.&lt;br/&gt;- Confucius</summary>
   </entry>
-
-  
-
-  
   <entry>
     <title>72. lzon.ca&#x2F;quotes</title>
     <id>https://lzon.ca/quotes/#72</id>
@@ -2078,10 +1496,6 @@ Some people have to go to work and don’t have time for all that.&lt;br/&gt;- G
     <category term="quote"/>
     <summary type="html">Far and away the best prize that life has to offer is the chance to work hard at work worth doing.&lt;br/&gt;- Theodore Roosevelt</summary>
   </entry>
-
-  
-
-  
   <entry>
     <title>71. lzon.ca&#x2F;quotes</title>
     <id>https://lzon.ca/quotes/#71</id>
@@ -2092,10 +1506,6 @@ Some people have to go to work and don’t have time for all that.&lt;br/&gt;- G
     <category term="quote"/>
     <summary type="html">No man is more unhappy than he who never faces adversity. For he is not permitted to prove himself&lt;br/&gt;- Seneca</summary>
   </entry>
-
-  
-
-  
   <entry>
     <title>70. lzon.ca&#x2F;quotes</title>
     <id>https://lzon.ca/quotes/#70</id>
@@ -2106,10 +1516,6 @@ Some people have to go to work and don’t have time for all that.&lt;br/&gt;- G
     <category term="quote"/>
     <summary type="html">Most people are far too much occupied with themselves to be malicious.&lt;br/&gt;- Friedrich Nietzsche (Human, All Too Human)</summary>
   </entry>
-
-  
-
-  
   <entry>
     <title>69. lzon.ca&#x2F;quotes</title>
     <id>https://lzon.ca/quotes/#69</id>
@@ -2120,10 +1526,6 @@ Some people have to go to work and don’t have time for all that.&lt;br/&gt;- G
     <category term="quote"/>
     <summary type="html">Anyone who stops learning is old, whether at twenty or eighty. Anyone who keeps learning stays young. The greatest thing in life is to keep your mind young.&lt;br/&gt;- Henry Ford</summary>
   </entry>
-
-  
-
-  
   <entry>
     <title>68. lzon.ca&#x2F;quotes</title>
     <id>https://lzon.ca/quotes/#68</id>
@@ -2134,10 +1536,6 @@ Some people have to go to work and don’t have time for all that.&lt;br/&gt;- G
     <category term="quote"/>
     <summary type="html">Begin at once to live, and count each separate day as a separate life.&lt;br/&gt;- Seneca</summary>
   </entry>
-
-  
-
-  
   <entry>
     <title>67. lzon.ca&#x2F;quotes</title>
     <id>https://lzon.ca/quotes/#67</id>
@@ -2148,10 +1546,6 @@ Some people have to go to work and don’t have time for all that.&lt;br/&gt;- G
     <category term="quote"/>
     <summary type="html">The way to find out about our place in the universe is by examining the universe and by examining ourselves without preconceptions, with as unbiased a mind as we can muster.&lt;br/&gt;- Carl Sagan</summary>
   </entry>
-
-  
-
-  
   <entry>
     <title>66. lzon.ca&#x2F;quotes</title>
     <id>https://lzon.ca/quotes/#66</id>
@@ -2162,10 +1556,6 @@ Some people have to go to work and don’t have time for all that.&lt;br/&gt;- G
     <category term="quote"/>
     <summary type="html">For me, it is far better to grasp the Universe as it really is than to persist in delusion, however satisfying and reassuring.&lt;br/&gt;- Carl Sagan</summary>
   </entry>
-
-  
-
-  
   <entry>
     <title>65. lzon.ca&#x2F;quotes</title>
     <id>https://lzon.ca/quotes/#65</id>
@@ -2176,10 +1566,6 @@ Some people have to go to work and don’t have time for all that.&lt;br/&gt;- G
     <category term="quote"/>
     <summary type="html">Reject your sense of injury and the injury itself disappears.&lt;br/&gt;- Marcus Aurelius (Meditations)</summary>
   </entry>
-
-  
-
-  
   <entry>
     <title>64. lzon.ca&#x2F;quotes</title>
     <id>https://lzon.ca/quotes/#64</id>
@@ -2190,10 +1576,6 @@ Some people have to go to work and don’t have time for all that.&lt;br/&gt;- G
     <category term="quote"/>
     <summary type="html">Never ruin an apology with an excuse.&lt;br/&gt;- Benjamin Franklin (Poor Richard’s Almanac)</summary>
   </entry>
-
-  
-
-  
   <entry>
     <title>63. lzon.ca&#x2F;quotes</title>
     <id>https://lzon.ca/quotes/#63</id>
@@ -2204,10 +1586,6 @@ Some people have to go to work and don’t have time for all that.&lt;br/&gt;- G
     <category term="quote"/>
     <summary type="html">Wish not so much to live long as to live well.&lt;br/&gt;- Benjamin Franklin (Poor Richard’s Almanac)</summary>
   </entry>
-
-  
-
-  
   <entry>
     <title>62. lzon.ca&#x2F;quotes</title>
     <id>https://lzon.ca/quotes/#62</id>
@@ -2218,10 +1596,6 @@ Some people have to go to work and don’t have time for all that.&lt;br/&gt;- G
     <category term="quote"/>
     <summary type="html">If you would not be forgotten as soon as you are dead and rotten, either write things worth reading, or do things worth the writing.&lt;br/&gt;- Benjamin Franklin (Poor Richard’s Almanac)</summary>
   </entry>
-
-  
-
-  
   <entry>
     <title>61. lzon.ca&#x2F;quotes</title>
     <id>https://lzon.ca/quotes/#61</id>
@@ -2232,10 +1606,6 @@ Some people have to go to work and don’t have time for all that.&lt;br/&gt;- G
     <category term="quote"/>
     <summary type="html">If you get tired, learn to rest, not to quit.&lt;br/&gt;- Banksy</summary>
   </entry>
-
-  
-
-  
   <entry>
     <title>60. lzon.ca&#x2F;quotes</title>
     <id>https://lzon.ca/quotes/#60</id>
@@ -2246,10 +1616,6 @@ Some people have to go to work and don’t have time for all that.&lt;br/&gt;- G
     <category term="quote"/>
     <summary type="html">On the keyboard of life, always keep one finger on the escape key.&lt;br/&gt;- Scott Adams</summary>
   </entry>
-
-  
-
-  
   <entry>
     <title>59. lzon.ca&#x2F;quotes</title>
     <id>https://lzon.ca/quotes/#59</id>
@@ -2260,10 +1626,6 @@ Some people have to go to work and don’t have time for all that.&lt;br/&gt;- G
     <category term="quote"/>
     <summary type="html">Silence is a true friend who never betrays.&lt;br/&gt;- Confucius</summary>
   </entry>
-
-  
-
-  
   <entry>
     <title>58. lzon.ca&#x2F;quotes</title>
     <id>https://lzon.ca/quotes/#58</id>
@@ -2274,10 +1636,6 @@ Some people have to go to work and don’t have time for all that.&lt;br/&gt;- G
     <category term="quote"/>
     <summary type="html">We seldom think of what we have, but always of what we lack.&lt;br/&gt;- Arthur Schopenhauer</summary>
   </entry>
-
-  
-
-  
   <entry>
     <title>57. lzon.ca&#x2F;quotes</title>
     <id>https://lzon.ca/quotes/#57</id>
@@ -2288,10 +1646,6 @@ Some people have to go to work and don’t have time for all that.&lt;br/&gt;- G
     <category term="quote"/>
     <summary type="html">Mostly it is loss which teaches us about the worth of things.&lt;br/&gt;- Arthur Schopenhauer (Parerga and Paralipomena)</summary>
   </entry>
-
-  
-
-  
   <entry>
     <title>56. lzon.ca&#x2F;quotes</title>
     <id>https://lzon.ca/quotes/#56</id>
@@ -2302,10 +1656,6 @@ Some people have to go to work and don’t have time for all that.&lt;br/&gt;- G
     <category term="quote"/>
     <summary type="html">If you are depressed you are living in the past. If you are anxious you are living in the future. If you are at peace you are living in the present.&lt;br/&gt;- Lao Tzu</summary>
   </entry>
-
-  
-
-  
   <entry>
     <title>55. lzon.ca&#x2F;quotes</title>
     <id>https://lzon.ca/quotes/#55</id>
@@ -2316,10 +1666,6 @@ Some people have to go to work and don’t have time for all that.&lt;br/&gt;- G
     <category term="quote"/>
     <summary type="html">Flow is being completely involved in an activity for its own sake. The ego falls away. Time flies. Every action, movement, and thought follows inevitably from the previous one, like playing jazz.&lt;br/&gt;- Mihaly Csikszentmihalyi</summary>
   </entry>
-
-  
-
-  
   <entry>
     <title>54. lzon.ca&#x2F;quotes</title>
     <id>https://lzon.ca/quotes/#54</id>
@@ -2330,10 +1676,6 @@ Some people have to go to work and don’t have time for all that.&lt;br/&gt;- G
     <category term="quote"/>
     <summary type="html">The truth is, everyone is going to hurt you. You just got to find the ones worth suffering for.&lt;br/&gt;- Bob Marley</summary>
   </entry>
-
-  
-
-  
   <entry>
     <title>53. lzon.ca&#x2F;quotes</title>
     <id>https://lzon.ca/quotes/#53</id>
@@ -2344,10 +1686,6 @@ Some people have to go to work and don’t have time for all that.&lt;br/&gt;- G
     <category term="quote"/>
     <summary type="html">Forget injuries, never forget kindnesses.&lt;br/&gt;- Confucius</summary>
   </entry>
-
-  
-
-  
   <entry>
     <title>52. lzon.ca&#x2F;quotes</title>
     <id>https://lzon.ca/quotes/#52</id>
@@ -2358,10 +1696,6 @@ Some people have to go to work and don’t have time for all that.&lt;br/&gt;- G
     <category term="quote"/>
     <summary type="html">It is more shameful to distrust our friends than to be deceived by them.&lt;br/&gt;- Confucius</summary>
   </entry>
-
-  
-
-  
   <entry>
     <title>51. lzon.ca&#x2F;quotes</title>
     <id>https://lzon.ca/quotes/#51</id>
@@ -2372,10 +1706,6 @@ Some people have to go to work and don’t have time for all that.&lt;br/&gt;- G
     <category term="quote"/>
     <summary type="html">Man needs difficulties; they are necessary for health.&lt;br/&gt;- Carl Jung</summary>
   </entry>
-
-  
-
-  
   <entry>
     <title>50. lzon.ca&#x2F;quotes</title>
     <id>https://lzon.ca/quotes/#50</id>
@@ -2386,10 +1716,6 @@ Some people have to go to work and don’t have time for all that.&lt;br/&gt;- G
     <category term="quote"/>
     <summary type="html">Software is like sex: it’s better when it’s free.&lt;br/&gt;- Linus Torvalds</summary>
   </entry>
-
-  
-
-  
   <entry>
     <title>49. lzon.ca&#x2F;quotes</title>
     <id>https://lzon.ca/quotes/#49</id>
@@ -2400,10 +1726,6 @@ Some people have to go to work and don’t have time for all that.&lt;br/&gt;- G
     <category term="quote"/>
     <summary type="html">It does not matter how slowly you go as long as you do not stop.&lt;br/&gt;- Confucius</summary>
   </entry>
-
-  
-
-  
   <entry>
     <title>48. lzon.ca&#x2F;quotes</title>
     <id>https://lzon.ca/quotes/#48</id>
@@ -2414,10 +1736,6 @@ Some people have to go to work and don’t have time for all that.&lt;br/&gt;- G
     <category term="quote"/>
     <summary type="html">Amateurs hack systems; professionals hack people.&lt;br/&gt;- Bruce Schneier</summary>
   </entry>
-
-  
-
-  
   <entry>
     <title>47. lzon.ca&#x2F;quotes</title>
     <id>https://lzon.ca/quotes/#47</id>
@@ -2428,10 +1746,6 @@ Some people have to go to work and don’t have time for all that.&lt;br/&gt;- G
     <category term="quote"/>
     <summary type="html">The thing about resentment and anger as fuel [for motivation] is that it does burn bright, but it also burns dirty.&lt;br/&gt;- John Green (2020)</summary>
   </entry>
-
-  
-
-  
   <entry>
     <title>46. lzon.ca&#x2F;quotes</title>
     <id>https://lzon.ca/quotes/#46</id>
@@ -2442,10 +1756,6 @@ Some people have to go to work and don’t have time for all that.&lt;br/&gt;- G
     <category term="quote"/>
     <summary type="html">The harder I work, the luckier I become.&lt;br/&gt;- Terry Pratchett</summary>
   </entry>
-
-  
-
-  
   <entry>
     <title>45. lzon.ca&#x2F;quotes</title>
     <id>https://lzon.ca/quotes/#45</id>
@@ -2456,10 +1766,6 @@ Some people have to go to work and don’t have time for all that.&lt;br/&gt;- G
     <category term="quote"/>
     <summary type="html">Wisdom comes from experience. Experience is often a result of lack of wisdom.&lt;br/&gt;- Terry Pratchett</summary>
   </entry>
-
-  
-
-  
   <entry>
     <title>44. lzon.ca&#x2F;quotes</title>
     <id>https://lzon.ca/quotes/#44</id>
@@ -2470,10 +1776,6 @@ Some people have to go to work and don’t have time for all that.&lt;br/&gt;- G
     <category term="quote"/>
     <summary type="html">The human capacity for self pity is truly endless.&lt;br/&gt;- John Green</summary>
   </entry>
-
-  
-
-  
   <entry>
     <title>43. lzon.ca&#x2F;quotes</title>
     <id>https://lzon.ca/quotes/#43</id>
@@ -2484,10 +1786,6 @@ Some people have to go to work and don’t have time for all that.&lt;br/&gt;- G
     <category term="quote"/>
     <summary type="html">Our greatest glory is not in never falling, but in getting up every time we do.&lt;br/&gt;- Confucius</summary>
   </entry>
-
-  
-
-  
   <entry>
     <title>42. lzon.ca&#x2F;quotes</title>
     <id>https://lzon.ca/quotes/#42</id>
@@ -2498,10 +1796,6 @@ Some people have to go to work and don’t have time for all that.&lt;br/&gt;- G
     <category term="quote"/>
     <summary type="html">Everyone you meet is fighting a battle you know nothing about. Be kind, always.&lt;br/&gt;- Traditional Proverb</summary>
   </entry>
-
-  
-
-  
   <entry>
     <title>41. lzon.ca&#x2F;quotes</title>
     <id>https://lzon.ca/quotes/#41</id>
@@ -2512,10 +1806,6 @@ Some people have to go to work and don’t have time for all that.&lt;br/&gt;- G
     <category term="quote"/>
     <summary type="html">Don’t fight with the pillow, but lay down your head, and kick every worriment out of the bed.&lt;br/&gt;- Edmund Vance Cooke</summary>
   </entry>
-
-  
-
-  
   <entry>
     <title>40. lzon.ca&#x2F;quotes</title>
     <id>https://lzon.ca/quotes/#40</id>
@@ -2526,10 +1816,6 @@ Some people have to go to work and don’t have time for all that.&lt;br/&gt;- G
     <category term="quote"/>
     <summary type="html">Look at your habits: Are they the product of innumerable little cowardices and laziness… or of your courage and inventive reason?&lt;br/&gt;- Friedrich Nietzsche</summary>
   </entry>
-
-  
-
-  
   <entry>
     <title>39. lzon.ca&#x2F;quotes</title>
     <id>https://lzon.ca/quotes/#39</id>
@@ -2540,10 +1826,6 @@ Some people have to go to work and don’t have time for all that.&lt;br/&gt;- G
     <category term="quote"/>
     <summary type="html">To live is to suffer, to survive is to find some meaning in the suffering.&lt;br/&gt;- Friedrich Nietzsche</summary>
   </entry>
-
-  
-
-  
   <entry>
     <title>38. lzon.ca&#x2F;quotes</title>
     <id>https://lzon.ca/quotes/#38</id>
@@ -2554,10 +1836,6 @@ Some people have to go to work and don’t have time for all that.&lt;br/&gt;- G
     <category term="quote"/>
     <summary type="html">When we are tired, we are attacked by ideas we conquered long ago.&lt;br/&gt;- Friedrich Nietzsche</summary>
   </entry>
-
-  
-
-  
   <entry>
     <title>37. lzon.ca&#x2F;quotes</title>
     <id>https://lzon.ca/quotes/#37</id>
@@ -2568,10 +1846,6 @@ Some people have to go to work and don’t have time for all that.&lt;br/&gt;- G
     <category term="quote"/>
     <summary type="html">The past is over; the present is fleeting; we live in the future.&lt;br/&gt;- Ray Kurzweil</summary>
   </entry>
-
-  
-
-  
   <entry>
     <title>36. lzon.ca&#x2F;quotes</title>
     <id>https://lzon.ca/quotes/#36</id>
@@ -2582,10 +1856,6 @@ Some people have to go to work and don’t have time for all that.&lt;br/&gt;- G
     <category term="quote"/>
     <summary type="html">Find your passion, learn how to add value to it, and commit to a lifetime of learning.&lt;br/&gt;- Ray Kurzweil</summary>
   </entry>
-
-  
-
-  
   <entry>
     <title>35. lzon.ca&#x2F;quotes</title>
     <id>https://lzon.ca/quotes/#35</id>
@@ -2597,10 +1867,6 @@ Some people have to go to work and don’t have time for all that.&lt;br/&gt;- G
     <summary type="html">The fact that we live at the bottom of a deep gravity well, on the surface of a gas covered planet going around a nuclear
 fireball 90 million miles away and think this to be normal is obviously some indication of how skewed our perspective tends to be.&lt;br/&gt;- Douglas Adams</summary>
   </entry>
-
-  
-
-  
   <entry>
     <title>34. lzon.ca&#x2F;quotes</title>
     <id>https://lzon.ca/quotes/#34</id>
@@ -2611,10 +1877,6 @@ fireball 90 million miles away and think this to be normal is obviously some ind
     <category term="quote"/>
     <summary type="html">Technology is a word that describes something that doesn’t work yet.&lt;br/&gt;- Douglas Adams</summary>
   </entry>
-
-  
-
-  
   <entry>
     <title>33. lzon.ca&#x2F;quotes</title>
     <id>https://lzon.ca/quotes/#33</id>
@@ -2625,10 +1887,6 @@ fireball 90 million miles away and think this to be normal is obviously some ind
     <category term="quote"/>
     <summary type="html">Isn’t it enough to see that a garden is beautiful without having to believe that there are fairies at the bottom of it too?&lt;br/&gt;- Douglas Adams</summary>
   </entry>
-
-  
-
-  
   <entry>
     <title>32. lzon.ca&#x2F;quotes</title>
     <id>https://lzon.ca/quotes/#32</id>
@@ -2639,10 +1897,6 @@ fireball 90 million miles away and think this to be normal is obviously some ind
     <category term="quote"/>
     <summary type="html">Great things are not done by impulse, but by a series of small things brought together.&lt;br/&gt;- Vincent Van Gogh</summary>
   </entry>
-
-  
-
-  
   <entry>
     <title>31. lzon.ca&#x2F;quotes</title>
     <id>https://lzon.ca/quotes/#31</id>
@@ -2653,10 +1907,6 @@ fireball 90 million miles away and think this to be normal is obviously some ind
     <category term="quote"/>
     <summary type="html">I often think that the night is more alive and more richly colored than the day.&lt;br/&gt;- Vincent Van Gogh</summary>
   </entry>
-
-  
-
-  
   <entry>
     <title>30. lzon.ca&#x2F;quotes</title>
     <id>https://lzon.ca/quotes/#30</id>
@@ -2667,10 +1917,6 @@ fireball 90 million miles away and think this to be normal is obviously some ind
     <category term="quote"/>
     <summary type="html">A great fire burns within me, but no one stops to warm themselves at it, and passers-by only see a wisp of smoke.&lt;br/&gt;- Vincent Van Gogh</summary>
   </entry>
-
-  
-
-  
   <entry>
     <title>29. lzon.ca&#x2F;quotes</title>
     <id>https://lzon.ca/quotes/#29</id>
@@ -2681,10 +1927,6 @@ fireball 90 million miles away and think this to be normal is obviously some ind
     <category term="quote"/>
     <summary type="html">The road to success and the road to failure are almost exactly the same.&lt;br/&gt;- Colin R. Davis</summary>
   </entry>
-
-  
-
-  
   <entry>
     <title>28. lzon.ca&#x2F;quotes</title>
     <id>https://lzon.ca/quotes/#28</id>
@@ -2695,10 +1937,6 @@ fireball 90 million miles away and think this to be normal is obviously some ind
     <category term="quote"/>
     <summary type="html">Clothes make the man. Naked people have little or no influence on society.&lt;br/&gt;- Mark Twain</summary>
   </entry>
-
-  
-
-  
   <entry>
     <title>27. lzon.ca&#x2F;quotes</title>
     <id>https://lzon.ca/quotes/#27</id>
@@ -2709,10 +1947,6 @@ fireball 90 million miles away and think this to be normal is obviously some ind
     <category term="quote"/>
     <summary type="html">One of the cruelest things you can do to another person is pretend you care about them more than you really do.&lt;br/&gt;- Douglas Coupland</summary>
   </entry>
-
-  
-
-  
   <entry>
     <title>26. lzon.ca&#x2F;quotes</title>
     <id>https://lzon.ca/quotes/#26</id>
@@ -2723,10 +1957,6 @@ fireball 90 million miles away and think this to be normal is obviously some ind
     <category term="quote"/>
     <summary type="html">Forget artificial intelligence – in the brave new world of big data, it’s artificial idiocy we should be looking out for.&lt;br/&gt;- Tom Chatfield</summary>
   </entry>
-
-  
-
-  
   <entry>
     <title>25. lzon.ca&#x2F;quotes</title>
     <id>https://lzon.ca/quotes/#25</id>
@@ -2737,10 +1967,6 @@ fireball 90 million miles away and think this to be normal is obviously some ind
     <category term="quote"/>
     <summary type="html">Here, let me grab a napkin to write on and I’ll show you. Everyone knows things written on napkins are creative.&lt;br/&gt;- Mark Rosewater (2013)</summary>
   </entry>
-
-  
-
-  
   <entry>
     <title>24. lzon.ca&#x2F;quotes</title>
     <id>https://lzon.ca/quotes/#24</id>
@@ -2751,10 +1977,6 @@ fireball 90 million miles away and think this to be normal is obviously some ind
     <category term="quote"/>
     <summary type="html">Few people are successful unless other people want them to be.&lt;br/&gt;- Charles M. Schulz</summary>
   </entry>
-
-  
-
-  
   <entry>
     <title>23. lzon.ca&#x2F;quotes</title>
     <id>https://lzon.ca/quotes/#23</id>
@@ -2765,10 +1987,6 @@ fireball 90 million miles away and think this to be normal is obviously some ind
     <category term="quote"/>
     <summary type="html">People without dirty hands are wrong. Doing something makes you right.&lt;br/&gt;- Bre Pettis (The Cult of Done)</summary>
   </entry>
-
-  
-
-  
   <entry>
     <title>22. lzon.ca&#x2F;quotes</title>
     <id>https://lzon.ca/quotes/#22</id>
@@ -2780,10 +1998,6 @@ fireball 90 million miles away and think this to be normal is obviously some ind
     <summary type="html">Pretending you know what you’re doing is almost the same as knowing what you are doing,
 so just accept that you know what you’re doing even if you don’t and do it.&lt;br/&gt;- Bre Pettis (The Cult of Done)</summary>
   </entry>
-
-  
-
-  
   <entry>
     <title>21. lzon.ca&#x2F;quotes</title>
     <id>https://lzon.ca/quotes/#21</id>
@@ -2794,10 +2008,6 @@ so just accept that you know what you’re doing even if you don’t and do it.&
     <category term="quote"/>
     <summary type="html">Good food is very often, even most often, simple food.&lt;br/&gt;- Anthony Bourdain</summary>
   </entry>
-
-  
-
-  
   <entry>
     <title>20. lzon.ca&#x2F;quotes</title>
     <id>https://lzon.ca/quotes/#20</id>
@@ -2810,10 +2020,6 @@ so just accept that you know what you’re doing even if you don’t and do it.&
 no moment of smug clarity. Perhaps wisdom…is realizing how small I am, and unwise,
 and how far I have yet to go.&lt;br/&gt;- Anthony Bourdain</summary>
   </entry>
-
-  
-
-  
   <entry>
     <title>19. lzon.ca&#x2F;quotes</title>
     <id>https://lzon.ca/quotes/#19</id>
@@ -2824,10 +2030,6 @@ and how far I have yet to go.&lt;br/&gt;- Anthony Bourdain</summary>
     <category term="quote"/>
     <summary type="html">I don’t have to agree with you to like you or respect you.&lt;br/&gt;- Anthony Bourdain</summary>
   </entry>
-
-  
-
-  
   <entry>
     <title>18. lzon.ca&#x2F;quotes</title>
     <id>https://lzon.ca/quotes/#18</id>
@@ -2838,10 +2040,6 @@ and how far I have yet to go.&lt;br/&gt;- Anthony Bourdain</summary>
     <category term="quote"/>
     <summary type="html">Each night, when I go to sleep, I die. And the next morning, when I wake up, I am reborn.&lt;br/&gt;- Mahatma Gandhi</summary>
   </entry>
-
-  
-
-  
   <entry>
     <title>17. lzon.ca&#x2F;quotes</title>
     <id>https://lzon.ca/quotes/#17</id>
@@ -2852,10 +2050,6 @@ and how far I have yet to go.&lt;br/&gt;- Anthony Bourdain</summary>
     <category term="quote"/>
     <summary type="html">A man is but the product of his thoughts. What he thinks, he becomes.&lt;br/&gt;- Mahatma Gandhi</summary>
   </entry>
-
-  
-
-  
   <entry>
     <title>16. lzon.ca&#x2F;quotes</title>
     <id>https://lzon.ca/quotes/#16</id>
@@ -2866,10 +2060,6 @@ and how far I have yet to go.&lt;br/&gt;- Anthony Bourdain</summary>
     <category term="quote"/>
     <summary type="html">The best way to find yourself is to lose yourself in the service of others.&lt;br/&gt;- Mahatma Gandhi</summary>
   </entry>
-
-  
-
-  
   <entry>
     <title>15. lzon.ca&#x2F;quotes</title>
     <id>https://lzon.ca/quotes/#15</id>
@@ -2885,10 +2075,6 @@ Your actions become your habits,
 Your habits become your values,
 Your values become your destiny.&lt;br/&gt;- Mahatma Gandhi</summary>
   </entry>
-
-  
-
-  
   <entry>
     <title>14. lzon.ca&#x2F;quotes</title>
     <id>https://lzon.ca/quotes/#14</id>
@@ -2899,10 +2085,6 @@ Your values become your destiny.&lt;br/&gt;- Mahatma Gandhi</summary>
     <category term="quote"/>
     <summary type="html">I will not let anyone walk through my mind with their dirty feet.&lt;br/&gt;- Mahatma Gandhi</summary>
   </entry>
-
-  
-
-  
   <entry>
     <title>13. lzon.ca&#x2F;quotes</title>
     <id>https://lzon.ca/quotes/#13</id>
@@ -2913,10 +2095,6 @@ Your values become your destiny.&lt;br/&gt;- Mahatma Gandhi</summary>
     <category term="quote"/>
     <summary type="html">Happiness is when what you think, what you say, and what you do are in harmony.&lt;br/&gt;- Mahatma Gandhi</summary>
   </entry>
-
-  
-
-  
   <entry>
     <title>12. lzon.ca&#x2F;quotes</title>
     <id>https://lzon.ca/quotes/#12</id>
@@ -2927,10 +2105,6 @@ Your values become your destiny.&lt;br/&gt;- Mahatma Gandhi</summary>
     <category term="quote"/>
     <summary type="html">Live as if you were to die tomorrow. Learn as if you were to live forever.&lt;br/&gt;- Mahatma Gandhi</summary>
   </entry>
-
-  
-
-  
   <entry>
     <title>11. lzon.ca&#x2F;quotes</title>
     <id>https://lzon.ca/quotes/#11</id>
@@ -2941,10 +2115,6 @@ Your values become your destiny.&lt;br/&gt;- Mahatma Gandhi</summary>
     <category term="quote"/>
     <summary type="html">The less you want, the more you love.&lt;br/&gt;- Charles M. Schulz</summary>
   </entry>
-
-  
-
-  
   <entry>
     <title>10. lzon.ca&#x2F;quotes</title>
     <id>https://lzon.ca/quotes/#10</id>
@@ -2955,10 +2125,6 @@ Your values become your destiny.&lt;br/&gt;- Mahatma Gandhi</summary>
     <category term="quote"/>
     <summary type="html">Be yourself. No one can say you’re doing it wrong.&lt;br/&gt;- Charles M. Schulz</summary>
   </entry>
-
-  
-
-  
   <entry>
     <title>9. lzon.ca&#x2F;quotes</title>
     <id>https://lzon.ca/quotes/#9</id>
@@ -2969,10 +2135,6 @@ Your values become your destiny.&lt;br/&gt;- Mahatma Gandhi</summary>
     <category term="quote"/>
     <summary type="html">My life has no purpose, no direction, no aim, no meaning, and yet I’m happy. I can’t figure it out. What am I doing right?&lt;br/&gt;- Charles M. Schulz</summary>
   </entry>
-
-  
-
-  
   <entry>
     <title>8. lzon.ca&#x2F;quotes</title>
     <id>https://lzon.ca/quotes/#8</id>
@@ -2983,10 +2145,6 @@ Your values become your destiny.&lt;br/&gt;- Mahatma Gandhi</summary>
     <category term="quote"/>
     <summary type="html">I think I’m allergic to morning.&lt;br/&gt;- Charles M. Schulz</summary>
   </entry>
-
-  
-
-  
   <entry>
     <title>7. lzon.ca&#x2F;quotes</title>
     <id>https://lzon.ca/quotes/#7</id>
@@ -2997,10 +2155,6 @@ Your values become your destiny.&lt;br/&gt;- Mahatma Gandhi</summary>
     <category term="quote"/>
     <summary type="html">I think I’m afraid to be happy, every time I’m happy something bad happens.&lt;br/&gt;- Charlie Brown</summary>
   </entry>
-
-  
-
-  
   <entry>
     <title>6. lzon.ca&#x2F;quotes</title>
     <id>https://lzon.ca/quotes/#6</id>
@@ -3011,10 +2165,6 @@ Your values become your destiny.&lt;br/&gt;- Mahatma Gandhi</summary>
     <category term="quote"/>
     <summary type="html">I love the kinds of hugs where you can physically feel the sadness leaving your body.&lt;br/&gt;- Charlie Brown</summary>
   </entry>
-
-  
-
-  
   <entry>
     <title>5. lzon.ca&#x2F;quotes</title>
     <id>https://lzon.ca/quotes/#5</id>
@@ -3025,10 +2175,6 @@ Your values become your destiny.&lt;br/&gt;- Mahatma Gandhi</summary>
     <category term="quote"/>
     <summary type="html">I’ve developed a new philosophy. I only dread one day at a time.&lt;br/&gt;- Charlie Brown</summary>
   </entry>
-
-  
-
-  
   <entry>
     <title>4. lzon.ca&#x2F;quotes</title>
     <id>https://lzon.ca/quotes/#4</id>
@@ -3039,10 +2185,6 @@ Your values become your destiny.&lt;br/&gt;- Mahatma Gandhi</summary>
     <category term="quote"/>
     <summary type="html">That’s the secret to life… replace one worry with another.&lt;br/&gt;- Charlie Brown</summary>
   </entry>
-
-  
-
-  
   <entry>
     <title>3. lzon.ca&#x2F;quotes</title>
     <id>https://lzon.ca/quotes/#3</id>
@@ -3053,10 +2195,6 @@ Your values become your destiny.&lt;br/&gt;- Mahatma Gandhi</summary>
     <category term="quote"/>
     <summary type="html">In the book of life, the answers aren’t in the back.&lt;br/&gt;- Charlie Brown</summary>
   </entry>
-
-  
-
-  
   <entry>
     <title>2. lzon.ca&#x2F;quotes</title>
     <id>https://lzon.ca/quotes/#2</id>
@@ -3067,10 +2205,6 @@ Your values become your destiny.&lt;br/&gt;- Mahatma Gandhi</summary>
     <category term="quote"/>
     <summary type="html">Keep your eyes open to your mercies. The man who forgets to be thankful has fallen asleep in life.&lt;br/&gt;- Robert Louis Stevenson</summary>
   </entry>
-
-  
-
-  
   <entry>
     <title>1. lzon.ca&#x2F;quotes</title>
     <id>https://lzon.ca/quotes/#1</id>
@@ -3081,7 +2215,5 @@ Your values become your destiny.&lt;br/&gt;- Mahatma Gandhi</summary>
     <category term="quote"/>
     <summary type="html">To be occasionally quoted is the only fame I care for.&lt;br/&gt;- Alexander Smith</summary>
   </entry>
-
-  
 
 </feed>

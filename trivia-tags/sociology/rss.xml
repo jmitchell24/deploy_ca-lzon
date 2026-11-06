@@ -9,29 +9,46 @@
       <language>en</language>
       <atom:link href="https://lzon.ca/trivia-tags/sociology/rss.xml" rel="self" type="application/rss+xml"/>
       <lastBuildDate>Sun, 25 Oct 2026 12:00:00 +0000</lastBuildDate>
+      <!-- Items. Quotes (their own section feed) list one quote each. Posts go through
+           macros/feed.html, so this feed, atom.xml and pages.json agree: each item is titled
+           as the site titles the post, carries its type as a <category>, and in the merged
+           /posts/ feed leads its title with the type ("[ News ] …"). -->
       
       
       
-      
-      
+      <!-- quotes and numbered post types sort by filename, since dates alone aren't unique -->
       
       
       <item>
-          <title></title>
+          <title>The Pygmalion Effect is a psychological phenomemon in which placing high expectations on someone leads
+to their better performance.</title>
           <pubDate>Sun, 25 Oct 2026 12:00:00 +0000</pubDate>
           <author>Lzon</author>
-          <link>https://lzon.ca/trivia/000005/</link>
-          <guid isPermaLink="false">https://lzon.ca/trivia/000005/</guid>
-          <description xml:base="https://lzon.ca/trivia/000005/">&lt;p&gt;The Pygmalion Effect is a psychological phenomemon in which placing high expectations on someone leads
-to their better performance.&lt;&#x2F;p&gt;</description>
+          <link>https://lzon.ca/posts/trivia/000005/</link>
+          <guid isPermaLink="false">https://lzon.ca/posts/trivia/5</guid>
+          <category domain="https://lzon.ca/posts/trivia/">Trivia</category>
+          <description xml:base="https://lzon.ca/posts/trivia/000005/">
+&lt;p&gt;The Effect is an example of a self-fulfilling prophecy, the subject of the expectation performs better because of their belief that their
+performance is required, and not merely an optional choice.&lt;/p&gt;
+&lt;p&gt;The Pygmalion Effect is named for the sculptor Pygmalion from greek mythology. In his story he crafts a statue, and falls so intensely in love with his creation
+that it transforms into a real woman.&lt;/p&gt;
+&lt;p&gt;The term was coined by psychologists Robert Rosenthal and Lenore Jacombson. They conducted a study on school children in which the teacher
+expressed both high and low expectations on the students. As measured by IQ test scores, children who were expected to perform well had higher scores.
+Conversely, children who were expected to perform poorly by their teachers had lower scores.&lt;/p&gt;
+&lt;p&gt;Source: &lt;a href=&quot;https://example.org&quot;&gt;https://example.org&lt;/a&gt;&lt;/p&gt;&lt;p&gt;Source: &lt;a href=&quot;https://en.wikipedia.org/wiki/Pygmalion_effect&quot;&gt;https://en.wikipedia.org/wiki/Pygmalion_effect&lt;/a&gt;&lt;/p&gt;&lt;p&gt;Source: &lt;a href=&quot;https://en.wikipedia.org/wiki/Pygmalion_(mythology)&quot;&gt;https://en.wikipedia.org/wiki/Pygmalion_(mythology)&lt;/a&gt;&lt;/p&gt;
+</description>
       </item>
       <item>
-          <title></title>
+          <title>The Batman effect describes a spontaneous event that triggers prosocial behavior.</title>
           <pubDate>Wed, 21 Oct 2026 12:00:00 +0000</pubDate>
           <author>Lzon</author>
-          <link>https://lzon.ca/trivia/000001/</link>
-          <guid isPermaLink="false">https://lzon.ca/trivia/000001/</guid>
-          <description xml:base="https://lzon.ca/trivia/000001/">&lt;p&gt;The Batman effect describes a spontaneous event that triggers prosocial behavior.&lt;&#x2F;p&gt;</description>
+          <link>https://lzon.ca/posts/trivia/000001/</link>
+          <guid isPermaLink="false">https://lzon.ca/posts/trivia/1</guid>
+          <category domain="https://lzon.ca/posts/trivia/">Trivia</category>
+          <description xml:base="https://lzon.ca/posts/trivia/000001/">
+&lt;p&gt;In a study published in Nature, researchers found in their experiment that riders on public transit were more willing to give their seat to a pregnant woman when in the presence of a man dressed as Batman.&lt;/p&gt;
+&lt;p&gt;Source: &lt;a href=&quot;https://www.nature.com/articles/s44184-025-00171-5&quot;&gt;https://www.nature.com/articles/s44184-025-00171-5&lt;/a&gt;&lt;/p&gt;
+</description>
       </item>
     </channel>
 </rss>

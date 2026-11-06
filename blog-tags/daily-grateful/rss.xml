@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
+    <channel>
+      <title>
+        lzon.ca - daily-grateful</title>
+      <link>https://lzon.ca</link>
+      <description></description>
+      <generator>Zola</generator>
+      <language>en</language>
+      <atom:link href="https://lzon.ca/blog-tags/daily-grateful/rss.xml" rel="self" type="application/rss+xml"/>
+      <lastBuildDate>Wed, 21 Oct 2026 12:00:00 +0000</lastBuildDate>
+      <!-- Items. Quotes (their own section feed) list one quote each. Posts go through
+           macros/feed.html, so this feed, atom.xml and pages.json agree: each item is titled
+           as the site titles the post, carries its type as a <category>, and in the merged
+           /posts/ feed leads its title with the type ("[ News ] …"). -->
+      
+      
+      
+      <!-- quotes and numbered post types sort by filename, since dates alone aren't unique -->
+      
+      
+      <item>
+          <title>Concerning Hobbits</title>
+          <pubDate>Tue, 22 Sep 2026 12:00:00 +0000</pubDate>
+          <author>Lzon</author>
+          <link>https://lzon.ca/posts/blog/tolkien/</link>
+          <guid isPermaLink="false">https://lzon.ca/posts/blog/tolkien/</guid>
+          <category domain="https://lzon.ca/posts/blog/">Blog</category>
+          <description xml:base="https://lzon.ca/posts/blog/tolkien/">&lt;p&gt;Today is September 22, and on this day in the year 2968 of the Third Age Frodo Baggins was born.&lt;/p&gt;&lt;p&gt;&lt;a href=&quot;https://lzon.ca/posts/blog/tolkien/#continue-reading&quot;&gt;Continue reading&lt;/a&gt;&lt;/p&gt;
+</description>
+      </item>
+      <item>
+          <title>Gratitude for an Open Android</title>
+          <pubDate>Sun, 03 May 2026 12:00:00 +0000</pubDate>
+          <author>Lzon</author>
+          <link>https://lzon.ca/posts/blog/keep-android-open/</link>
+          <guid isPermaLink="false">https://lzon.ca/posts/blog/keep-android-open/</guid>
+          <category domain="https://lzon.ca/posts/blog/">Blog</category>
+          <description xml:base="https://lzon.ca/posts/blog/keep-android-open/">&lt;p&gt;Today I’m grateful for the open Android operating system.&lt;/p&gt;&lt;p&gt;&lt;a href=&quot;https://lzon.ca/posts/blog/keep-android-open/#continue-reading&quot;&gt;Continue reading&lt;/a&gt;&lt;/p&gt;
+</description>
+      </item>
+      <item>
+          <title>On Typing and Keyboards</title>
+          <pubDate>Sun, 29 Mar 2026 12:00:00 +0000</pubDate>
+          <author>Lzon</author>
+          <link>https://lzon.ca/posts/blog/typing-and-keyboards/</link>
+          <guid isPermaLink="false">https://lzon.ca/posts/blog/typing-and-keyboards/</guid>
+          <category domain="https://lzon.ca/posts/blog/">Blog</category>
+          <description xml:base="https://lzon.ca/posts/blog/typing-and-keyboards/">&lt;p&gt;I have a very consistent routine. I get up early. I exercise. I shower. I make coffee. I turn my computer on, then I place my hands on my keyboard and begin working.&lt;/p&gt;&lt;p&gt;&lt;a href=&quot;https://lzon.ca/posts/blog/typing-and-keyboards/#continue-reading&quot;&gt;Continue reading&lt;/a&gt;&lt;/p&gt;
+</description>
+      </item>
+      <item>
+          <title>Christine&apos;s Homestyle Bakery</title>
+          <pubDate>Thu, 29 Jan 2026 12:00:00 +0000</pubDate>
+          <author>Lzon</author>
+          <link>https://lzon.ca/posts/blog/christine-bakery/</link>
+          <guid isPermaLink="false">https://lzon.ca/posts/blog/christine-bakery/</guid>
+          <category domain="https://lzon.ca/posts/blog/">Blog</category>
+          <description xml:base="https://lzon.ca/posts/blog/christine-bakery/">&lt;p&gt;Today I’m grateful for Christine’s Homestyle Bakery.&lt;/p&gt;&lt;p&gt;&lt;a href=&quot;https://lzon.ca/posts/blog/christine-bakery/#continue-reading&quot;&gt;Continue reading&lt;/a&gt;&lt;/p&gt;
+</description>
+      </item>
+      <item>
+          <title>Dream Trawler</title>
+          <pubDate>Wed, 07 Jan 2026 12:00:00 +0000</pubDate>
+          <author>Lzon</author>
+          <link>https://lzon.ca/posts/blog/dream-trawler/</link>
+          <guid isPermaLink="false">https://lzon.ca/posts/blog/dream-trawler/</guid>
+          <category domain="https://lzon.ca/posts/blog/">Blog</category>
+          <description xml:base="https://lzon.ca/posts/blog/dream-trawler/">&lt;p&gt;Today I’m grateful for Dream Trawler, a card from the game Magic the Gathering.&lt;/p&gt;&lt;p&gt;&lt;a href=&quot;https://lzon.ca/posts/blog/dream-trawler/#continue-reading&quot;&gt;Continue reading&lt;/a&gt;&lt;/p&gt;
+</description>
+      </item>
+      <item>
+          <title>Driving</title>
+          <pubDate>Sat, 27 Dec 2025 12:00:00 +0000</pubDate>
+          <author>Lzon</author>
+          <link>https://lzon.ca/posts/blog/driving/</link>
+          <guid isPermaLink="false">https://lzon.ca/posts/blog/driving/</guid>
+          <category domain="https://lzon.ca/posts/blog/">Blog</category>
+          <description xml:base="https://lzon.ca/posts/blog/driving/">&lt;p&gt;Today I’m grateful just for driving.&lt;/p&gt;&lt;p&gt;&lt;a href=&quot;https://lzon.ca/posts/blog/driving/#continue-reading&quot;&gt;Continue reading&lt;/a&gt;&lt;/p&gt;
+</description>
+      </item>
+      <item>
+          <title>Chip Nuts</title>
+          <pubDate>Fri, 26 Dec 2025 12:00:00 +0000</pubDate>
+          <author>Lzon</author>
+          <link>https://lzon.ca/posts/blog/chip-nuts/</link>
+          <guid isPermaLink="false">https://lzon.ca/posts/blog/chip-nuts/</guid>
+          <category domain="https://lzon.ca/posts/blog/">Blog</category>
+          <description xml:base="https://lzon.ca/posts/blog/chip-nuts/">&lt;p&gt;Today I’m grateful for a simple local snack called Chip Nuts.&lt;/p&gt;&lt;p&gt;&lt;a href=&quot;https://lzon.ca/posts/blog/chip-nuts/#continue-reading&quot;&gt;Continue reading&lt;/a&gt;&lt;/p&gt;
+</description>
+      </item>
+      <item>
+          <title>Tomatoes and Bread</title>
+          <pubDate>Thu, 25 Dec 2025 12:00:00 +0000</pubDate>
+          <author>Lzon</author>
+          <link>https://lzon.ca/posts/blog/tomatoes-and-bread/</link>
+          <guid isPermaLink="false">https://lzon.ca/posts/blog/tomatoes-and-bread/</guid>
+          <category domain="https://lzon.ca/posts/blog/">Blog</category>
+          <description xml:base="https://lzon.ca/posts/blog/tomatoes-and-bread/">&lt;p&gt;Yep, today (and most days) I’m grateful for Tomatoes and Bread.&lt;/p&gt;&lt;p&gt;&lt;a href=&quot;https://lzon.ca/posts/blog/tomatoes-and-bread/#continue-reading&quot;&gt;Continue reading&lt;/a&gt;&lt;/p&gt;
+</description>
+      </item>
+      <item>
+          <title>Riegelein Chocolate Lady Bugs</title>
+          <pubDate>Wed, 24 Dec 2025 12:00:00 +0000</pubDate>
+          <author>Lzon</author>
+          <link>https://lzon.ca/posts/blog/riegelein-lady-bugs/</link>
+          <guid isPermaLink="false">https://lzon.ca/posts/blog/riegelein-lady-bugs/</guid>
+          <category domain="https://lzon.ca/posts/blog/">Blog</category>
+          <description xml:base="https://lzon.ca/posts/blog/riegelein-lady-bugs/">&lt;p&gt;Today I’m grateful for &lt;em&gt;Riegelein Chocolate Lady Bugs&lt;/em&gt;.&lt;/p&gt;&lt;p&gt;&lt;a href=&quot;https://lzon.ca/posts/blog/riegelein-lady-bugs/#continue-reading&quot;&gt;Continue reading&lt;/a&gt;&lt;/p&gt;
+</description>
+      </item>
+      <item>
+          <title>Why I&apos;m Grateful Today</title>
+          <pubDate>Tue, 23 Dec 2025 12:00:00 +0000</pubDate>
+          <author>Lzon</author>
+          <link>https://lzon.ca/posts/blog/lzon/</link>
+          <guid isPermaLink="false">https://lzon.ca/posts/blog/lzon/</guid>
+          <category domain="https://lzon.ca/posts/blog/">Blog</category>
+          <description xml:base="https://lzon.ca/posts/blog/lzon/">&lt;p&gt;Today I am grateful for this website, &lt;a rel=&quot;noopener external&quot; target=&quot;_blank&quot; href=&quot;https://lzon.ca&quot;&gt;lzon.ca&lt;/a&gt;. I started building it about a week ago, and so far I am quite satisfied with it, at a technical level.&lt;/p&gt;
+&lt;p&gt;I’m using the &lt;a rel=&quot;noopener external&quot; target=&quot;_blank&quot; href=&quot;https://getzola.org&quot;&gt;Zola&lt;/a&gt; static site generator. I started from scratch, without a template. I wanted to improve my web development skill, and I wanted a challenge. There was a moment on day one in which I literally had an empty index.html file loaded in my text editor.&lt;/p&gt;
+&lt;p&gt;The name is a contraction of the word “Lauzon”, pronounced “loh-zawn”. It’s the name of a lake near &lt;a rel=&quot;noopener external&quot; target=&quot;_blank&quot; href=&quot;https://en.wikipedia.org/wiki/Blind_River,_Ontario&quot;&gt;Blind River, Ontario&lt;/a&gt;. My Mom was born there and otherwise it is a very nice little town, in a part of the province that I love. The domain was also surprising inexpensive.&lt;/p&gt;
+&lt;p&gt;I think the design of the site is nice so far, and I’ve already learned a few new things related to web development and design:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;A new trick for addressing FOUC&lt;/li&gt;
+&lt;li&gt;How to create advanced CSS selectors&lt;/li&gt;
+&lt;li&gt;New ways to use CSS variables&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;I don’t know now how frequently I will publish content to this site. At the very least it can be a place to publish my rambles, when I feel compelled. Either way, I am satisfied with what this is right now.&lt;/p&gt;
+
+</description>
+      </item>
+    </channel>
+</rss>

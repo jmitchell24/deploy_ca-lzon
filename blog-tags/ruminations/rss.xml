@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
+    <channel>
+      <title>
+        lzon.ca - ruminations</title>
+      <link>https://lzon.ca</link>
+      <description></description>
+      <generator>Zola</generator>
+      <language>en</language>
+      <atom:link href="https://lzon.ca/blog-tags/ruminations/rss.xml" rel="self" type="application/rss+xml"/>
+      <lastBuildDate>Sun, 17 May 2026 12:00:00 +0000</lastBuildDate>
+      <!-- Items. Quotes (their own section feed) list one quote each. Posts go through
+           macros/feed.html, so this feed, atom.xml and pages.json agree: each item is titled
+           as the site titles the post, carries its type as a <category>, and in the merged
+           /posts/ feed leads its title with the type ("[ News ] …"). -->
+      
+      
+      
+      <!-- quotes and numbered post types sort by filename, since dates alone aren't unique -->
+      
+      
+      <item>
+          <title>Sleep Well</title>
+          <pubDate>Sun, 17 May 2026 12:00:00 +0000</pubDate>
+          <author>Lzon</author>
+          <link>https://lzon.ca/posts/blog/sleep-well/</link>
+          <guid isPermaLink="false">https://lzon.ca/posts/blog/sleep-well/</guid>
+          <category domain="https://lzon.ca/posts/blog/">Blog</category>
+          <description xml:base="https://lzon.ca/posts/blog/sleep-well/">&lt;p&gt;A small bit of life advice from a professional insomniac.&lt;/p&gt;&lt;p&gt;&lt;a href=&quot;https://lzon.ca/posts/blog/sleep-well/#continue-reading&quot;&gt;Continue reading&lt;/a&gt;&lt;/p&gt;
+</description>
+      </item>
+      <item>
+          <title>You need to make your bed</title>
+          <pubDate>Tue, 03 Feb 2026 12:00:00 +0000</pubDate>
+          <author>Lzon</author>
+          <link>https://lzon.ca/posts/blog/make-your-bed/</link>
+          <guid isPermaLink="false">https://lzon.ca/posts/blog/make-your-bed/</guid>
+          <category domain="https://lzon.ca/posts/blog/">Blog</category>
+          <description xml:base="https://lzon.ca/posts/blog/make-your-bed/">&lt;p&gt;What to do when you are at rock bottom, from someone who’s been there.&lt;/p&gt;&lt;p&gt;&lt;a href=&quot;https://lzon.ca/posts/blog/make-your-bed/#continue-reading&quot;&gt;Continue reading&lt;/a&gt;&lt;/p&gt;
+</description>
+      </item>
+      <item>
+          <title>Twenty Twenty-Five</title>
+          <pubDate>Mon, 24 Nov 2025 12:00:00 +0000</pubDate>
+          <author>Lzon</author>
+          <link>https://lzon.ca/posts/blog/twenty-five/</link>
+          <guid isPermaLink="false">https://lzon.ca/posts/blog/twenty-five/</guid>
+          <category domain="https://lzon.ca/posts/blog/">Blog</category>
+          <description xml:base="https://lzon.ca/posts/blog/twenty-five/">&lt;p&gt;The year is almost over.&lt;/p&gt;
+&lt;p&gt;“How is it November already?”&lt;/p&gt;
+&lt;p&gt;“Where did the time go?”&lt;/p&gt;
+&lt;p&gt;I’ve heard it, you’ve heard it, and probably felt it too. I haven’t felt it much at all, at least not recently. 2025 has been a year, a whole year, by my reckoning.&lt;/p&gt;
+&lt;h3 id=&quot;unemployed&quot;&gt;Unemployed&lt;/h3&gt;
+&lt;p&gt;It’s been nearly a year since my previous post, since I was feeling &lt;a href=&quot;/posts/life/gratitude&quot;&gt;grateful&lt;/a&gt;. I did in fact lose my job. It was at the end of February, and it wasn’t surprising. I feel I handled it well initially, or at least regarded my unemployment with appropriate seriousness. I immediately got to work: I updated my resume, my professional website, and even attempted to register a business. I did well to keep myself motivated. I know very well the rot that creeps into a person when they are unemployed for too long, and beyond anything else I was motivated to prevent that from happening.&lt;/p&gt;
+&lt;p&gt;I’ve submitted several dozen applications this year. By some standard, that no longer exists, that might have been a lot (or at least an appropriate amount). I realize fully that by modern standards it is not nearly enough. I haven’t had a single follow up, and of course no interviews.&lt;/p&gt;
+&lt;p&gt;I struggle in the extreme with feelings of judgement, and I always have. It makes job applications difficult, especially when I am taking them seriously. A few of my applications were for jobs I genuinely wanted, and it hurt when I didn’t even get a response. Many times I intentionally applied to jobs I didn’t care for, or otherwise was barely qualified, just to tell myself that I was trying.&lt;/p&gt;
+&lt;h3 id=&quot;it-starts-creeping-back&quot;&gt;It starts creeping back&lt;/h3&gt;
+&lt;p&gt;What is creeping? I think the best single word for it is merely ‘despair’. Deep despair, deeper that I ever thought possible before I felt it. Complete, and fully internalized hopelessness. I was being consumed by it before finding my job, and by summer this year I was beginning to feel it again.&lt;/p&gt;
+&lt;p&gt;The thinnest of silver linings is that I saw it coming. The despair is here again. I wasn’t able to stop it, but I have (so far) discovered ways to live with it. To not let it destroy me.&lt;/p&gt;
+&lt;p&gt;Not that I actually care anymore about my future. I wake up every day on a mission:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;At 6:50am, every day, I get out of bed.&lt;/li&gt;
+&lt;li&gt;I exercise. Hard, for 1 hour.&lt;/li&gt;
+&lt;li&gt;I attend to my hygeine, and the tidyness of my living space.&lt;/li&gt;
+&lt;li&gt;I go to my computer and begin working. On anything. If my progress on any given project begins to stall, I panic, and grab desperately for something else to do. I force myself to believe that working on these projects counts as ‘productivity’.&lt;/li&gt;
+&lt;li&gt;I go out to buy groceries in the afternoon, and eat a single meal, my supper, at 6pm.&lt;/li&gt;
+&lt;li&gt;My energy is mostly spent by the evening, and I can’t even enjoy a video game. So most days I do nothing until going to bed.&lt;/li&gt;
+&lt;li&gt;In general, I don’t sleep well.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;I have become ridgidly attached to my schedule. I panic whenever it is disrupted (e.g. eating supper 30 minutes later than usual), because it represents stability. It’s my flimsy defense against chaos. Its predictable and reliable. I really don’t like living this way, but I know that if not for this, my life would be so much worse.&lt;/p&gt;
+&lt;h3 id=&quot;the-motorcycle&quot;&gt;The Motorcycle&lt;/h3&gt;
+&lt;p&gt;In early summer I was consistently becoming stalled on all of my projects. Lingering panic was setting in, and after doom scrolling Marketplace my brain began to latch on to the idea of buying a motorcycle. I’m sure a part of me was genuinely excited by the prospect, but my attitude was ultimately fatalistic. I wanted a motorcycle because learning to ride was ‘something to do’, ‘anything to do’. I also was genuinely happy for the possibility of a dramatic (and quick) death if I had a crash. What happens next feels like punishment from the universe for daring to hope that I could be put out of my misery quickly and cleanly.&lt;/p&gt;
+&lt;h3 id=&quot;the-broken-foot&quot;&gt;The Broken Foot&lt;/h3&gt;
+&lt;p&gt;I rode the bike for 1 week. Then, at a complete stand-still, I lost my balance. The bike fell, with me under it, and my foot was crushed.&lt;/p&gt;
+&lt;p&gt;Multiple bones were broken, others were fractured. I was put into a cast that evening, and thus began the next 8 weeks.&lt;/p&gt;
+&lt;p&gt;By all outward appearances, I must have seemed to be taking it well. I had exactly two outbursts, which I intentionally allowed myself to have. I shouted, and stomped (with my walker). Beyond that, I did not complain much at all.&lt;/p&gt;
+&lt;p&gt;I maintained my schedule, I never missed a workout. I modified my stationary bike to accomodate the cast, and continued to ride. In a very real sense I was acting out of spite to the universe, for having done this to me. I did everything in my power to prevent it from disrupting me.&lt;/p&gt;
+&lt;p&gt;Overall, I feel I was genuinely more content during this time than I was before, and now. It felt justified to let go of my concerns about my life trajectory, at least for a while. I’ve tried to maintain this mindset after I began walking again, but unsurprisingly that hasn’t happened. I can feel the weight of the future again. It feels heavy, opaque, and threatening.&lt;/p&gt;
+&lt;h3 id=&quot;11-51am&quot;&gt;11:51AM&lt;/h3&gt;
+&lt;p&gt;It’s almost noon. I haven’t completed a notable task yet on any of my projects. I’ll scramble to get something done, to alleviate the anxiety.&lt;/p&gt;
+&lt;p&gt;Most years seem to go by quickly, especially as you get older. For me, 2025 has felt like a whole-ass year.&lt;/p&gt;
+
+</description>
+      </item>
+      <item>
+          <title>Gratitude</title>
+          <pubDate>Fri, 17 Jan 2025 12:00:00 +0000</pubDate>
+          <author>Lzon</author>
+          <link>https://lzon.ca/posts/blog/gratitude/</link>
+          <guid isPermaLink="false">https://lzon.ca/posts/blog/gratitude/</guid>
+          <category domain="https://lzon.ca/posts/blog/">Blog</category>
+          <description xml:base="https://lzon.ca/posts/blog/gratitude/">&lt;p&gt;Today is another decent day. The shop is just busy enough: I have enough to do that I don’t feel un-needed but I’m also not overworked.&lt;/p&gt;
+&lt;p&gt;For the second time this month I was told to stay home for lack of work to do. I understand fully, and agree that it was warranted, but this has rattled me none-the-less. Before now I have always had a consistent schedule. I was told 45 minutes before closing that I wouldn’t be working the following day. This took me by surprise, and I feel that I should have been given more notice.&lt;/p&gt;
+&lt;p&gt;Either way, I feel that I responded appropriately. I acknowledged the situation politely and professionally. The following day I immediately began searching for job postings, and updating my resume. I in no way want to lose this job, and I have recieved no indication yet that I’m in danger of losing it. But this is yet another &lt;em&gt;very&lt;/em&gt; stark reminder that my position is &lt;a href=&quot;/posts/life/precarity&quot;&gt;precarious&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;In recent years, I’ve gotten a lot better at appreciating the present moment, not dwelling too much on the past, or future. I’ve gotten better at feeling gratitude for the nice things immediately in front of me, such as meaningful and interesting work.&lt;/p&gt;
+
+</description>
+      </item>
+      <item>
+          <title>Precarity</title>
+          <pubDate>Wed, 18 Dec 2024 12:00:00 +0000</pubDate>
+          <author>Lzon</author>
+          <link>https://lzon.ca/posts/blog/precarity/</link>
+          <guid isPermaLink="false">https://lzon.ca/posts/blog/precarity/</guid>
+          <category domain="https://lzon.ca/posts/blog/">Blog</category>
+          <description xml:base="https://lzon.ca/posts/blog/precarity/">&lt;p&gt;I’m having a decent day today. The shop is quiet. I haven’t done much but I don’t feel completely useless either.&lt;/p&gt;
+&lt;p&gt;*** wanted to go to an event with his family and my being here allowed him to do that, or at least made
+it easier for him to do so.&lt;/p&gt;
+&lt;p&gt;A previous customer came in asking for help gaining access to her email. She is by no means unintelligent, but is genuinely tech illiterate.
+I had resolved her issue in under five minutes, and did not charge her for the service. We spoke at length about a possible upgrade to her old
+desktop computer at home. I won’t know for sure until next year if she is truly interested, but it seems likely.&lt;/p&gt;
+&lt;p&gt;During my performance review my boss said plainly, “I don’t need another person in the shop”. By this he meant that he was expecting me to
+work with his business clients: maintaining network infrastructure, responding to support requests, etc… He knew when he hired me that I
+was not immediately qualified to be doing these things, and that I’d have to learn while I was working. I have been genuinely trying to learn,
+but clearly that effort has thus far been insufficient. He hasn’t told me with any detail what his expectations are, only that I have not been
+meeting them. It has been weeks since that performance review and nothing has changed. I continue to work in the shop, and try to work on peronsal
+projects that will develop skills that might be useful in my work.&lt;/p&gt;
+&lt;p&gt;I feel I have no choice but to regard my situation as fundamentally precarious. &lt;a rel=&quot;noopener external&quot; target=&quot;_blank&quot; href=&quot;https://en.wikipedia.org/wiki/Damocles&quot;&gt;The Sword of Damocles&lt;/a&gt; is swinging constantly over my head. Some days I can see it more clearly than others. Today it is less visible, fortunately.&lt;/p&gt;
+&lt;p&gt;This post began with instances of what I feel is genuine usefulness. Going forward I want to make sure that I am grateful for them. It is during those moments that I
+like this job. They also reinforce my belief that I have competancy, and that I have something that I can offer to others.&lt;/p&gt;
+
+</description>
+      </item>
+    </channel>
+</rss>

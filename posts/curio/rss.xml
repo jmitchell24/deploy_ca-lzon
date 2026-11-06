@@ -1,0 +1,462 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
+    <channel>
+      <title>
+        lzon.ca - Curios</title>
+      <link>https://lzon.ca/posts/curio/</link>
+      <description></description>
+      <generator>Zola</generator>
+      <language>en</language>
+      <atom:link href="https://lzon.ca/posts/curio/rss.xml" rel="self" type="application/rss+xml"/>
+      <lastBuildDate>Wed, 02 Sep 2026 12:00:00 +0000</lastBuildDate>
+      <!-- Items. Quotes (their own section feed) list one quote each. Posts go through
+           macros/feed.html, so this feed, atom.xml and pages.json agree: each item is titled
+           as the site titles the post, carries its type as a <category>, and in the merged
+           /posts/ feed leads its title with the type ("[ News ] …"). -->
+      
+      
+      
+      <!-- quotes and numbered post types sort by filename, since dates alone aren't unique -->
+      
+      
+      <item>
+          <title>Internal Combustion Engine Simulator</title>
+          <pubDate>Wed, 02 Sep 2026 12:00:00 +0000</pubDate>
+          <author>Lzon</author>
+          <link>https://lzon.ca/posts/curio/curio-000038-ice-engine-sim/</link>
+          <guid isPermaLink="false">https://lzon.ca/posts/curio/38</guid>
+          <category domain="https://lzon.ca/posts/curio/">Curios</category>
+          <description xml:base="https://lzon.ca/posts/curio/curio-000038-ice-engine-sim/">&lt;p&gt;Link: &lt;a href=&quot;https://random.ma.ttias.be/boxermotor&quot;&gt;https://random.ma.ttias.be/boxermotor&lt;/a&gt;&lt;/p&gt;&lt;p&gt;This is a very interesting in-browser simulation of high performance internal combustion engines.&lt;/p&gt;
+&lt;p&gt;I’m not much of a car enthusiast, but I am amazed by the engineering and design of high-end sports cars.&lt;/p&gt;
+&lt;p&gt;If you want to read more about how this simulation was made check out the accompanying blog post &lt;a rel=&quot;noopener external&quot; target=&quot;_blank&quot; href=&quot;https://ma.ttias.be/9000-rpm/&quot;&gt;here&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;Source: &lt;a href=&quot;https://web.archive.org/web/20260830123902/https://random.ma.ttias.be/boxermotor&quot;&gt;https://web.archive.org/web/20260830123902/https://random.ma.ttias.be/boxermotor&lt;/a&gt;&lt;/p&gt;
+</description>
+      </item>
+      <item>
+          <title>Syntax Across Languages (One Big Page)</title>
+          <pubDate>Wed, 05 Aug 2026 12:00:00 +0000</pubDate>
+          <author>Lzon</author>
+          <link>https://lzon.ca/posts/curio/curio-000037-syntax-across-languages-one-big-page/</link>
+          <guid isPermaLink="false">https://lzon.ca/posts/curio/37</guid>
+          <category domain="https://lzon.ca/posts/curio/">Curios</category>
+          <description xml:base="https://lzon.ca/posts/curio/curio-000037-syntax-across-languages-one-big-page/">&lt;p&gt;Link: &lt;a href=&quot;https://rigaux.org/language-study/syntax-across-languages.html&quot;&gt;https://rigaux.org/language-study/syntax-across-languages.html&lt;/a&gt;&lt;/p&gt;&lt;p&gt;This is a large reference page I found for the syntax of many different programming languages. The layout is really useful for comparing specific syntax elements across different languages.&lt;/p&gt;
+&lt;p&gt;I’ve been using it while brainstorming for my own programming language, &lt;a href=&quot;/algoma&quot;&gt;Alogma&lt;/a&gt;.&lt;/p&gt;
+
+</description>
+      </item>
+      <item>
+          <title>Spurious Correlations</title>
+          <pubDate>Thu, 02 Jul 2026 12:00:00 +0000</pubDate>
+          <author>Lzon</author>
+          <link>https://lzon.ca/posts/curio/curio-000036-spurious-correlations/</link>
+          <guid isPermaLink="false">https://lzon.ca/posts/curio/36</guid>
+          <category domain="https://lzon.ca/posts/curio/">Curios</category>
+          <description xml:base="https://lzon.ca/posts/curio/curio-000036-spurious-correlations/">&lt;p&gt;Link: &lt;a href=&quot;https://www.tylervigen.com/spurious-correlations&quot;&gt;https://www.tylervigen.com/spurious-correlations&lt;/a&gt;&lt;/p&gt;&lt;p&gt;A site that perfectly demonstrates the common phrase, “Correlation does not imply causation”.&lt;/p&gt;
+&lt;p&gt;Source: &lt;a href=&quot;https://web.archive.org/web/20260428065236/https://www.tylervigen.com/spurious-correlations&quot;&gt;https://web.archive.org/web/20260428065236/https://www.tylervigen.com/spurious-correlations&lt;/a&gt;&lt;/p&gt;
+</description>
+      </item>
+      <item>
+          <title>Six Degrees of Wikipedia</title>
+          <pubDate>Thu, 21 May 2026 12:00:00 +0000</pubDate>
+          <author>Lzon</author>
+          <link>https://lzon.ca/posts/curio/curio-000035-six-degrees-of-wikipedia/</link>
+          <guid isPermaLink="false">https://lzon.ca/posts/curio/35</guid>
+          <category domain="https://lzon.ca/posts/curio/">Curios</category>
+          <description xml:base="https://lzon.ca/posts/curio/curio-000035-six-degrees-of-wikipedia/">&lt;p&gt;Link: &lt;a href=&quot;https://www.sixdegreesofwikipedia.com&quot;&gt;https://www.sixdegreesofwikipedia.com&lt;/a&gt;&lt;/p&gt;&lt;p&gt;A fun little web app. It finds the shortest possible of sequence of links between two different Wikipedia pages.&lt;/p&gt;
+&lt;p&gt;Source: &lt;a href=&quot;https://web.archive.org/web/20260420041603/https://www.sixdegreesofwikipedia.com&quot;&gt;https://web.archive.org/web/20260420041603/https://www.sixdegreesofwikipedia.com&lt;/a&gt;&lt;/p&gt;
+</description>
+      </item>
+      <item>
+          <title>Nibble</title>
+          <pubDate>Mon, 18 May 2026 12:00:00 +0000</pubDate>
+          <author>Lzon</author>
+          <link>https://lzon.ca/posts/curio/curio-000034-nibble-wikipedia/</link>
+          <guid isPermaLink="false">https://lzon.ca/posts/curio/34</guid>
+          <category domain="https://lzon.ca/posts/curio/">Curios</category>
+          <description xml:base="https://lzon.ca/posts/curio/curio-000034-nibble-wikipedia/">&lt;p&gt;Link: &lt;a href=&quot;https://en.wikipedia.org/wiki/Nibble&quot;&gt;https://en.wikipedia.org/wiki/Nibble&lt;/a&gt;&lt;/p&gt;&lt;p&gt;You probably already know that a byte is 8 bits, but have you ever heard of a ‘nibble’? A nibble is 4 bits. A few older chip architectures used it, but modern CPU’s typically use a 64-bit word length.&lt;/p&gt;
+&lt;p&gt;It’s not particularly relevant anymore. I personally had to use nibbles when I was writing my Gameboy emulator.&lt;/p&gt;
+&lt;p&gt;Source: &lt;a href=&quot;https://web.archive.org/web/20260204224218/https://en.wikipedia.org/wiki/Nibble&quot;&gt;https://web.archive.org/web/20260204224218/https://en.wikipedia.org/wiki/Nibble&lt;/a&gt;&lt;/p&gt;
+</description>
+      </item>
+      <item>
+          <title>taken.</title>
+          <pubDate>Tue, 12 May 2026 12:00:00 +0000</pubDate>
+          <author>Lzon</author>
+          <link>https://lzon.ca/posts/curio/curio-000033-taken/</link>
+          <guid isPermaLink="false">https://lzon.ca/posts/curio/33</guid>
+          <category domain="https://lzon.ca/posts/curio/">Curios</category>
+          <description xml:base="https://lzon.ca/posts/curio/curio-000033-taken/">&lt;p&gt;Link: &lt;a href=&quot;https://sinceyouarrived.world/taken&quot;&gt;https://sinceyouarrived.world/taken&lt;/a&gt;&lt;/p&gt;&lt;p&gt;A beautiful website that demonstrates what personal information a web server can collect from you just for opening a web page.&lt;/p&gt;
+&lt;p&gt;I’ve seen a few similar projects like this before, but this is by &lt;em&gt;far&lt;/em&gt; the best one I’ve ever seen.&lt;/p&gt;
+&lt;p&gt;Source: &lt;a href=&quot;https://web.archive.org/web/20260509004715/https://sinceyouarrived.world/taken&quot;&gt;https://web.archive.org/web/20260509004715/https://sinceyouarrived.world/taken&lt;/a&gt;&lt;/p&gt;
+</description>
+      </item>
+      <item>
+          <title>Crafting Interpreters</title>
+          <pubDate>Fri, 01 May 2026 12:00:00 +0000</pubDate>
+          <author>Lzon</author>
+          <link>https://lzon.ca/posts/curio/curio-000032-crafting-interpreters/</link>
+          <guid isPermaLink="false">https://lzon.ca/posts/curio/32</guid>
+          <category domain="https://lzon.ca/posts/curio/">Curios</category>
+          <description xml:base="https://lzon.ca/posts/curio/curio-000032-crafting-interpreters/">&lt;p&gt;Link: &lt;a href=&quot;https://craftinginterpreters.com/&quot;&gt;https://craftinginterpreters.com/&lt;/a&gt;&lt;/p&gt;&lt;p&gt;Robert Nystrom’s guide for creating a programming language from scratch.
+It’s fantastic, both his writing and code are very accessible. Freely available on his site,
+also published as a book.&lt;/p&gt;
+&lt;p&gt;Source: &lt;a href=&quot;https://web.archive.org/web/20260321095357/https://craftinginterpreters.com/&quot;&gt;https://web.archive.org/web/20260321095357/https://craftinginterpreters.com/&lt;/a&gt;&lt;/p&gt;
+</description>
+      </item>
+      <item>
+          <title>Passwords vs. Pass Phrases</title>
+          <pubDate>Wed, 29 Apr 2026 12:00:00 +0000</pubDate>
+          <author>Lzon</author>
+          <link>https://lzon.ca/posts/curio/curio-000031-passwords-vs-pass-phrases/</link>
+          <guid isPermaLink="false">https://lzon.ca/posts/curio/31</guid>
+          <category domain="https://lzon.ca/posts/curio/">Curios</category>
+          <description xml:base="https://lzon.ca/posts/curio/curio-000031-passwords-vs-pass-phrases/">&lt;p&gt;Link: &lt;a href=&quot;https://blog.codinghorror.com/passwords-vs-pass-phrases/&quot;&gt;https://blog.codinghorror.com/passwords-vs-pass-phrases/&lt;/a&gt;&lt;/p&gt;&lt;p&gt;An old CodingHorror post advocating for pass phrases over passwords.&lt;/p&gt;
+&lt;p&gt;Source: &lt;a href=&quot;https://web.archive.org/web/20160215133755/https://blog.codinghorror.com/passwords-vs-pass-phrases/&quot;&gt;https://web.archive.org/web/20160215133755/https://blog.codinghorror.com/passwords-vs-pass-phrases/&lt;/a&gt;&lt;/p&gt;
+</description>
+      </item>
+      <item>
+          <title>Brainwash An Executive Today!</title>
+          <pubDate>Sat, 25 Apr 2026 12:00:00 +0000</pubDate>
+          <author>Lzon</author>
+          <link>https://lzon.ca/posts/curio/curio-000030-brainwash-an-executive-today/</link>
+          <guid isPermaLink="false">https://lzon.ca/posts/curio/30</guid>
+          <category domain="https://lzon.ca/posts/curio/">Curios</category>
+          <description xml:base="https://lzon.ca/posts/curio/curio-000030-brainwash-an-executive-today/">&lt;p&gt;Link: &lt;a href=&quot;https://ludic.mataroa.blog/blog/brainwash-an-executive-today/&quot;&gt;https://ludic.mataroa.blog/blog/brainwash-an-executive-today/&lt;/a&gt;&lt;/p&gt;&lt;p&gt;An enlightening story. It demonstrates how executives are manipulated into participating in economic hype bubbles such as AI, or otherwise.&lt;/p&gt;
+&lt;p&gt;Source: &lt;a href=&quot;https://web.archive.org/web/20250206221459/https://ludic.mataroa.blog/blog/brainwash-an-executive-today/&quot;&gt;https://web.archive.org/web/20250206221459/https://ludic.mataroa.blog/blog/brainwash-an-executive-today/&lt;/a&gt;&lt;/p&gt;
+</description>
+      </item>
+      <item>
+          <title>Motivation in Hard Times</title>
+          <pubDate>Fri, 24 Apr 2026 12:00:00 +0000</pubDate>
+          <author>Lzon</author>
+          <link>https://lzon.ca/posts/curio/curio-000029-motivation-in-hard-times/</link>
+          <guid isPermaLink="false">https://lzon.ca/posts/curio/29</guid>
+          <category domain="https://lzon.ca/posts/curio/">Curios</category>
+          <description xml:base="https://lzon.ca/posts/curio/curio-000029-motivation-in-hard-times/">&lt;p&gt;Link: &lt;a href=&quot;https://www.youtube.com/watch?v=oAEewFj_-dg&quot;&gt;https://www.youtube.com/watch?v=oAEewFj_-dg&lt;/a&gt;&lt;/p&gt;&lt;p&gt;A video by John Green about the nature of motivation. I agree with what he has to say on the matter.&lt;/p&gt;
+
+</description>
+      </item>
+      <item>
+          <title>Understand, by Ted Chiang</title>
+          <pubDate>Wed, 22 Apr 2026 12:00:00 +0000</pubDate>
+          <author>Lzon</author>
+          <link>https://lzon.ca/posts/curio/curio-000028-understand-by-ted-chiang/</link>
+          <guid isPermaLink="false">https://lzon.ca/posts/curio/28</guid>
+          <category domain="https://lzon.ca/posts/curio/">Curios</category>
+          <description xml:base="https://lzon.ca/posts/curio/curio-000028-understand-by-ted-chiang/">&lt;p&gt;Link: &lt;a href=&quot;https://web.archive.org/web/20060101043301/http://www.infinityplus.co.uk/stories/under.htm&quot;&gt;https://web.archive.org/web/20060101043301/http://www.infinityplus.co.uk/stories/under.htm&lt;/a&gt;&lt;/p&gt;&lt;p&gt;A sci-fi novelette by Ted Chiang. Very short, and a great read.&lt;/p&gt;
+&lt;p&gt;Source: &lt;a href=&quot;https://web.archive.org/web/20060101043301/https://web.archive.org/web/20060101043301/http://www.infinityplus.co.uk/stories/under.htm&quot;&gt;https://web.archive.org/web/20060101043301/https://web.archive.org/web/20060101043301/http://www.infinityplus.co.uk/stories/under.htm&lt;/a&gt;&lt;/p&gt;
+</description>
+      </item>
+      <item>
+          <title>Waves &amp; Particles</title>
+          <pubDate>Mon, 20 Apr 2026 12:00:00 +0000</pubDate>
+          <author>Lzon</author>
+          <link>https://lzon.ca/posts/curio/curio-000027-waves-particles/</link>
+          <guid isPermaLink="false">https://lzon.ca/posts/curio/27</guid>
+          <category domain="https://lzon.ca/posts/curio/">Curios</category>
+          <description xml:base="https://lzon.ca/posts/curio/curio-000027-waves-particles/">&lt;p&gt;Link: &lt;a href=&quot;https://taylor.town/waves&quot;&gt;https://taylor.town/waves&lt;/a&gt;&lt;/p&gt;&lt;p&gt;A fun peice of interactive digital art.&lt;/p&gt;
+&lt;p&gt;Source: &lt;a href=&quot;https://web.archive.org/web/20260409044459/https://taylor.town/waves&quot;&gt;https://web.archive.org/web/20260409044459/https://taylor.town/waves&lt;/a&gt;&lt;/p&gt;
+</description>
+      </item>
+      <item>
+          <title>The Last Question by Isaac Asimov</title>
+          <pubDate>Sat, 18 Apr 2026 12:00:00 +0000</pubDate>
+          <author>Lzon</author>
+          <link>https://lzon.ca/posts/curio/curio-000026-the-last-question-by-isaac-asimov/</link>
+          <guid isPermaLink="false">https://lzon.ca/posts/curio/26</guid>
+          <category domain="https://lzon.ca/posts/curio/">Curios</category>
+          <description xml:base="https://lzon.ca/posts/curio/curio-000026-the-last-question-by-isaac-asimov/">&lt;p&gt;Link: &lt;a href=&quot;https://hex.ooo/library/last_question.html&quot;&gt;https://hex.ooo/library/last_question.html&lt;/a&gt;&lt;/p&gt;&lt;p&gt;A short scifi story, I’ve read it many times. Well worth your time.&lt;/p&gt;
+&lt;p&gt;Source: &lt;a href=&quot;https://web.archive.org/web/20260417124532/https://hex.ooo/library/last_question.html&quot;&gt;https://web.archive.org/web/20260417124532/https://hex.ooo/library/last_question.html&lt;/a&gt;&lt;/p&gt;
+</description>
+      </item>
+      <item>
+          <title>The Truth Dies on the Way Up</title>
+          <pubDate>Mon, 06 Apr 2026 12:00:00 +0000</pubDate>
+          <author>Lzon</author>
+          <link>https://lzon.ca/posts/curio/curio-000025-the-truth-dies-on-the-way-up/</link>
+          <guid isPermaLink="false">https://lzon.ca/posts/curio/25</guid>
+          <category domain="https://lzon.ca/posts/curio/">Curios</category>
+          <description xml:base="https://lzon.ca/posts/curio/curio-000025-the-truth-dies-on-the-way-up/">&lt;p&gt;Link: &lt;a href=&quot;https://thegrounded.ghost.io/the-truth-dies-on-the-way-up/&quot;&gt;https://thegrounded.ghost.io/the-truth-dies-on-the-way-up/&lt;/a&gt;&lt;/p&gt;&lt;p&gt;An interesting article about the nature of being an elite. Put simply, the wealthier and more powerful you become the more separated you become from the reality of everyone else in society. This is harmful for the individual as well as society which is subject to their whims.&lt;/p&gt;
+&lt;p&gt;Source: &lt;a href=&quot;https://web.archive.org/web/20260406041339/https://thegrounded.ghost.io/the-truth-dies-on-the-way-up/&quot;&gt;https://web.archive.org/web/20260406041339/https://thegrounded.ghost.io/the-truth-dies-on-the-way-up/&lt;/a&gt;&lt;/p&gt;
+</description>
+      </item>
+      <item>
+          <title>The Submarine</title>
+          <pubDate>Sun, 05 Apr 2026 12:00:00 +0000</pubDate>
+          <author>Lzon</author>
+          <link>https://lzon.ca/posts/curio/curio-000024-the-submarine/</link>
+          <guid isPermaLink="false">https://lzon.ca/posts/curio/24</guid>
+          <category domain="https://lzon.ca/posts/curio/">Curios</category>
+          <description xml:base="https://lzon.ca/posts/curio/curio-000024-the-submarine/">&lt;p&gt;Link: &lt;a href=&quot;https://paulgraham.com/submarine.html&quot;&gt;https://paulgraham.com/submarine.html&lt;/a&gt;&lt;/p&gt;&lt;p&gt;Paul Graham’s story of how he came to learn the value of marketing and public relations. The article specifically speaks to the use of PR in the news media.&lt;/p&gt;
+&lt;p&gt;I was already fairly paranoid about seeing ulterior motives in the news, so this served to confirm my suspicions.&lt;/p&gt;
+&lt;p&gt;Source: &lt;a href=&quot;https://web.archive.org/web/20050512021712/https://paulgraham.com/submarine.html&quot;&gt;https://web.archive.org/web/20050512021712/https://paulgraham.com/submarine.html&lt;/a&gt;&lt;/p&gt;
+</description>
+      </item>
+      <item>
+          <title>Why I don&apos;t think AGI is imminent</title>
+          <pubDate>Thu, 19 Feb 2026 12:00:00 +0000</pubDate>
+          <author>Lzon</author>
+          <link>https://lzon.ca/posts/curio/curio-000023-why-i-don-t-think-agi-is-imminent/</link>
+          <guid isPermaLink="false">https://lzon.ca/posts/curio/23</guid>
+          <category domain="https://lzon.ca/posts/curio/">Curios</category>
+          <description xml:base="https://lzon.ca/posts/curio/curio-000023-why-i-don-t-think-agi-is-imminent/">&lt;p&gt;Link: &lt;a href=&quot;https://dlants.me/agi-not-imminent.html&quot;&gt;https://dlants.me/agi-not-imminent.html&lt;/a&gt;&lt;/p&gt;&lt;p&gt;A very thorough explanation for why LLM technology will not lead to AGI.&lt;/p&gt;
+&lt;p&gt;Source: &lt;a href=&quot;https://web.archive.org/web/20260219050133/https://dlants.me/agi-not-imminent.html&quot;&gt;https://web.archive.org/web/20260219050133/https://dlants.me/agi-not-imminent.html&lt;/a&gt;&lt;/p&gt;
+</description>
+      </item>
+      <item>
+          <title>The Birth &amp; Death of JavaScript</title>
+          <pubDate>Fri, 30 Jan 2026 12:00:00 +0000</pubDate>
+          <author>Lzon</author>
+          <link>https://lzon.ca/posts/curio/curio-000022-the-birth-death-of-javascript/</link>
+          <guid isPermaLink="false">https://lzon.ca/posts/curio/22</guid>
+          <category domain="https://lzon.ca/posts/curio/">Curios</category>
+          <description xml:base="https://lzon.ca/posts/curio/curio-000022-the-birth-death-of-javascript/">&lt;p&gt;Link: &lt;a href=&quot;https://www.destroyallsoftware.com/talks/the-birth-and-death-of-javascript&quot;&gt;https://www.destroyallsoftware.com/talks/the-birth-and-death-of-javascript&lt;/a&gt;&lt;/p&gt;&lt;p&gt;An old satirical TED-style presentation about the future of JavaScript and web assembly. I remember seeing it years ago and thought it would be worth sharing.&lt;/p&gt;
+
+</description>
+      </item>
+      <item>
+          <title>The future of work when work is meaningless</title>
+          <pubDate>Mon, 26 Jan 2026 12:00:00 +0000</pubDate>
+          <author>Lzon</author>
+          <link>https://lzon.ca/posts/curio/curio-000021-the-future-of-work-when-work-is-meaningless/</link>
+          <guid isPermaLink="false">https://lzon.ca/posts/curio/21</guid>
+          <category domain="https://lzon.ca/posts/curio/">Curios</category>
+          <description xml:base="https://lzon.ca/posts/curio/curio-000021-the-future-of-work-when-work-is-meaningless/">&lt;p&gt;Link: &lt;a href=&quot;https://letters.thedankoe.com/p/the-future-of-work-when-work-is-meaningless&quot;&gt;https://letters.thedankoe.com/p/the-future-of-work-when-work-is-meaningless&lt;/a&gt;&lt;/p&gt;&lt;p&gt;A good take on the current effect that AI is having on the nature of employment, as well as predictions for the future.&lt;/p&gt;
+&lt;p&gt;Source: &lt;a href=&quot;https://web.archive.org/web/20260124215113/https://letters.thedankoe.com/p/the-future-of-work-when-work-is-meaningless&quot;&gt;https://web.archive.org/web/20260124215113/https://letters.thedankoe.com/p/the-future-of-work-when-work-is-meaningless&lt;/a&gt;&lt;/p&gt;
+</description>
+      </item>
+      <item>
+          <title>Manna by Marshall Brain</title>
+          <pubDate>Sun, 25 Jan 2026 12:00:00 +0000</pubDate>
+          <author>Lzon</author>
+          <link>https://lzon.ca/posts/curio/curio-000020-manna-by-marshall-brain/</link>
+          <guid isPermaLink="false">https://lzon.ca/posts/curio/20</guid>
+          <category domain="https://lzon.ca/posts/curio/">Curios</category>
+          <description xml:base="https://lzon.ca/posts/curio/curio-000020-manna-by-marshall-brain/">&lt;p&gt;Link: &lt;a href=&quot;https://marshallbrain.com/manna1&quot;&gt;https://marshallbrain.com/manna1&lt;/a&gt;&lt;/p&gt;&lt;p&gt;A good short scifi story by Marshall Brain.&lt;/p&gt;
+&lt;p&gt;I like to re-read this every so often. I have a habit of measuring news about automation against the timeline in the story, “when in Manna did this start happening”.&lt;/p&gt;
+&lt;p&gt;The second half is a bit too fanciful for my taste, so I usually skip it when re-reading.&lt;/p&gt;
+&lt;p&gt;Source: &lt;a href=&quot;https://web.archive.org/web/20260306144356/https://marshallbrain.com/manna1&quot;&gt;https://web.archive.org/web/20260306144356/https://marshallbrain.com/manna1&lt;/a&gt;&lt;/p&gt;
+</description>
+      </item>
+      <item>
+          <title>What Is Soul Fatigue?</title>
+          <pubDate>Sat, 24 Jan 2026 12:00:00 +0000</pubDate>
+          <author>Lzon</author>
+          <link>https://lzon.ca/posts/curio/curio-000019-what-is-soul-fatigue/</link>
+          <guid isPermaLink="false">https://lzon.ca/posts/curio/19</guid>
+          <category domain="https://lzon.ca/posts/curio/">Curios</category>
+          <description xml:base="https://lzon.ca/posts/curio/curio-000019-what-is-soul-fatigue/">&lt;p&gt;Link: &lt;a href=&quot;https://www.michelegargiulo.com/blog/what-is-soul-fatigue&quot;&gt;https://www.michelegargiulo.com/blog/what-is-soul-fatigue&lt;/a&gt;&lt;/p&gt;&lt;p&gt;Soul Fatigue as describe by the author is something I can definitely relate to. Fortunately I do believe its something that can be overcome, but it isn’t easy.&lt;/p&gt;
+&lt;p&gt;Source: &lt;a href=&quot;https://web.archive.org/web/20251117045941/https://www.michelegargiulo.com/blog/what-is-soul-fatigue&quot;&gt;https://web.archive.org/web/20251117045941/https://www.michelegargiulo.com/blog/what-is-soul-fatigue&lt;/a&gt;&lt;/p&gt;
+</description>
+      </item>
+      <item>
+          <title>Scientists find exercise rivals therapy for depression</title>
+          <pubDate>Sun, 11 Jan 2026 12:00:00 +0000</pubDate>
+          <author>Lzon</author>
+          <link>https://lzon.ca/posts/curio/curio-000018-scientists-find-exercise-rivals-therapy-for-depression/</link>
+          <guid isPermaLink="false">https://lzon.ca/posts/curio/18</guid>
+          <category domain="https://lzon.ca/posts/curio/">Curios</category>
+          <description xml:base="https://lzon.ca/posts/curio/curio-000018-scientists-find-exercise-rivals-therapy-for-depression/">&lt;p&gt;Link: &lt;a href=&quot;https://www.sciencedaily.com/releases/2026/01/260107225516.htm&quot;&gt;https://www.sciencedaily.com/releases/2026/01/260107225516.htm&lt;/a&gt;&lt;/p&gt;&lt;p&gt;I have struggled with depression for a long time and I can 100% attest to the effectiveness of exercise. There have been days in which I convinced myself to work out just by reminding myself that it would lift my mood.&lt;/p&gt;
+&lt;p&gt;Source: &lt;a href=&quot;https://web.archive.org/web/20260116191240/https://www.sciencedaily.com/releases/2026/01/260107225516.htm&quot;&gt;https://web.archive.org/web/20260116191240/https://www.sciencedaily.com/releases/2026/01/260107225516.htm&lt;/a&gt;&lt;/p&gt;
+</description>
+      </item>
+      <item>
+          <title>Are you already a Cyborg?</title>
+          <pubDate>Sat, 03 Jan 2026 12:00:00 +0000</pubDate>
+          <author>Lzon</author>
+          <link>https://lzon.ca/posts/curio/curio-000017-are-you-already-a-cyborg/</link>
+          <guid isPermaLink="false">https://lzon.ca/posts/curio/17</guid>
+          <category domain="https://lzon.ca/posts/curio/">Curios</category>
+          <description xml:base="https://lzon.ca/posts/curio/curio-000017-are-you-already-a-cyborg/">&lt;p&gt;Link: &lt;a href=&quot;https://www.sciencedirect.com/science/article/abs/pii/S0747563215001272&quot;&gt;https://www.sciencedirect.com/science/article/abs/pii/S0747563215001272&lt;/a&gt;&lt;/p&gt;&lt;p&gt;I suppose this is somewhat a matter of opinion, but its an idea that I definitely agree with.&lt;/p&gt;
+&lt;p&gt;The medium of communication between a person and their computer is hands, eyes, ears, etc… This doesn’t &lt;em&gt;feel&lt;/em&gt; like it qualifies as cyborg, but if that same computer was wired directly into the brain it most definitely would. The article (and I) argue that the meaningful difference is ‘bandwidth’, not the medium itself.&lt;/p&gt;
+&lt;p&gt;Source: &lt;a href=&quot;https://web.archive.org/web/20250115064053/https://www.sciencedirect.com/science/article/abs/pii/S0747563215001272&quot;&gt;https://web.archive.org/web/20250115064053/https://www.sciencedirect.com/science/article/abs/pii/S0747563215001272&lt;/a&gt;&lt;/p&gt;
+</description>
+      </item>
+      <item>
+          <title>Vanitiy Activities</title>
+          <pubDate>Thu, 25 Dec 2025 12:00:00 +0000</pubDate>
+          <author>Lzon</author>
+          <link>https://lzon.ca/posts/curio/curio-000016-vanitiy-activities/</link>
+          <guid isPermaLink="false">https://lzon.ca/posts/curio/16</guid>
+          <category domain="https://lzon.ca/posts/curio/">Curios</category>
+          <description xml:base="https://lzon.ca/posts/curio/curio-000016-vanitiy-activities/">&lt;p&gt;Link: &lt;a href=&quot;https://quarter--mile.com/vanity-activities&quot;&gt;https://quarter--mile.com/vanity-activities&lt;/a&gt;&lt;/p&gt;&lt;p&gt;An interesting piece of social theory. I definitely see this pattern in others, and in myself as well.&lt;/p&gt;
+&lt;p&gt;I think it’s a valid concept. I don’t see it as being necessarily a bad thing, but it’s certainly worthwhile to be cognizant of it.&lt;/p&gt;
+&lt;p&gt;Source: &lt;a href=&quot;https://web.archive.org/web/20251213234415/https://quarter--mile.com/vanity-activities&quot;&gt;https://web.archive.org/web/20251213234415/https://quarter--mile.com/vanity-activities&lt;/a&gt;&lt;/p&gt;
+</description>
+      </item>
+      <item>
+          <title>Is Everything a Religion?</title>
+          <pubDate>Fri, 19 Dec 2025 12:00:00 +0000</pubDate>
+          <author>Lzon</author>
+          <link>https://lzon.ca/posts/curio/curio-000015-is-everything-a-religion/</link>
+          <guid isPermaLink="false">https://lzon.ca/posts/curio/15</guid>
+          <category domain="https://lzon.ca/posts/curio/">Curios</category>
+          <description xml:base="https://lzon.ca/posts/curio/curio-000015-is-everything-a-religion/">&lt;p&gt;Link: &lt;a href=&quot;https://slatestarcodex.com/2015/03/25/is-everything-a-religion/&quot;&gt;https://slatestarcodex.com/2015/03/25/is-everything-a-religion/&lt;/a&gt;&lt;/p&gt;&lt;p&gt;A SlateStarCodex post about how often sub-cultures and social movements get called ‘religions’.&lt;/p&gt;
+&lt;p&gt;A good read, as always.&lt;/p&gt;
+&lt;p&gt;Source: &lt;a href=&quot;https://web.archive.org/web/20260315045923/https://slatestarcodex.com/2015/03/25/is-everything-a-religion/&quot;&gt;https://web.archive.org/web/20260315045923/https://slatestarcodex.com/2015/03/25/is-everything-a-religion/&lt;/a&gt;&lt;/p&gt;
+</description>
+      </item>
+      <item>
+          <title>No Graphics API</title>
+          <pubDate>Thu, 18 Dec 2025 12:00:00 +0000</pubDate>
+          <author>Lzon</author>
+          <link>https://lzon.ca/posts/curio/curio-000014-no-graphics-api/</link>
+          <guid isPermaLink="false">https://lzon.ca/posts/curio/14</guid>
+          <category domain="https://lzon.ca/posts/curio/">Curios</category>
+          <description xml:base="https://lzon.ca/posts/curio/curio-000014-no-graphics-api/">&lt;p&gt;Link: &lt;a href=&quot;https://www.sebastianaaltonen.com/blog/no-graphics-api&quot;&gt;https://www.sebastianaaltonen.com/blog/no-graphics-api&lt;/a&gt;&lt;/p&gt;&lt;p&gt;A history of graphics APIs. I remember teaching myself OpenGL in high school so I knew a fair bit of the history of this subject.&lt;/p&gt;
+&lt;p&gt;If you have any interest in computer graphics this is well worth a read.&lt;/p&gt;
+&lt;p&gt;Source: &lt;a href=&quot;https://web.archive.org/web/20251218124041/https://www.sebastianaaltonen.com/blog/no-graphics-api&quot;&gt;https://web.archive.org/web/20251218124041/https://www.sebastianaaltonen.com/blog/no-graphics-api&lt;/a&gt;&lt;/p&gt;
+</description>
+      </item>
+      <item>
+          <title>The history of Xerox</title>
+          <pubDate>Tue, 16 Dec 2025 12:00:00 +0000</pubDate>
+          <author>Lzon</author>
+          <link>https://lzon.ca/posts/curio/curio-000013-the-history-of-xerox/</link>
+          <guid isPermaLink="false">https://lzon.ca/posts/curio/13</guid>
+          <category domain="https://lzon.ca/posts/curio/">Curios</category>
+          <description xml:base="https://lzon.ca/posts/curio/curio-000013-the-history-of-xerox/">&lt;p&gt;Link: &lt;a href=&quot;https://www.abortretry.fail/p/the-history-of-xerox&quot;&gt;https://www.abortretry.fail/p/the-history-of-xerox&lt;/a&gt;&lt;/p&gt;&lt;p&gt;The story of Xerox through the early years of the personal computer. It’s a fascinating story and well worth your time.&lt;/p&gt;
+&lt;p&gt;Source: &lt;a href=&quot;https://web.archive.org/web/20251215073423/https://www.abortretry.fail/p/the-history-of-xerox&quot;&gt;https://web.archive.org/web/20251215073423/https://www.abortretry.fail/p/the-history-of-xerox&lt;/a&gt;&lt;/p&gt;
+</description>
+      </item>
+      <item>
+          <title>Fix your timestep</title>
+          <pubDate>Mon, 15 Dec 2025 12:00:00 +0000</pubDate>
+          <author>Lzon</author>
+          <link>https://lzon.ca/posts/curio/curio-000012-fix-your-timestep/</link>
+          <guid isPermaLink="false">https://lzon.ca/posts/curio/12</guid>
+          <category domain="https://lzon.ca/posts/curio/">Curios</category>
+          <description xml:base="https://lzon.ca/posts/curio/curio-000012-fix-your-timestep/">&lt;p&gt;Link: &lt;a href=&quot;https://gafferongames.com/post/fix_your_timestep/&quot;&gt;https://gafferongames.com/post/fix_your_timestep/&lt;/a&gt;&lt;/p&gt;&lt;p&gt;A very useful article for anyone interested in developing video games, or any other kind of real time system.&lt;/p&gt;
+&lt;p&gt;Source: &lt;a href=&quot;https://web.archive.org/web/20250930044329/https://gafferongames.com/post/fix_your_timestep/&quot;&gt;https://web.archive.org/web/20250930044329/https://gafferongames.com/post/fix_your_timestep/&lt;/a&gt;&lt;/p&gt;
+</description>
+      </item>
+      <item>
+          <title>The Copenhagen Trap</title>
+          <pubDate>Fri, 12 Dec 2025 12:00:00 +0000</pubDate>
+          <author>Lzon</author>
+          <link>https://lzon.ca/posts/curio/curio-000011-the-copenhagen-trap/</link>
+          <guid isPermaLink="false">https://lzon.ca/posts/curio/11</guid>
+          <category domain="https://lzon.ca/posts/curio/">Curios</category>
+          <description xml:base="https://lzon.ca/posts/curio/curio-000011-the-copenhagen-trap/">&lt;p&gt;Link: &lt;a href=&quot;https://aliveness.kunnas.com/articles/copenhagen-trap&quot;&gt;https://aliveness.kunnas.com/articles/copenhagen-trap&lt;/a&gt;&lt;/p&gt;&lt;p&gt;An article about how bad incentives lead to inaction.&lt;/p&gt;
+&lt;p&gt;Source: &lt;a href=&quot;https://web.archive.org/web/20251212191744/https://aliveness.kunnas.com/articles/copenhagen-trap&quot;&gt;https://web.archive.org/web/20251212191744/https://aliveness.kunnas.com/articles/copenhagen-trap&lt;/a&gt;&lt;/p&gt;
+</description>
+      </item>
+      <item>
+          <title>A History of Laptop Displays</title>
+          <pubDate>Mon, 24 Nov 2025 12:00:00 +0000</pubDate>
+          <author>Lzon</author>
+          <link>https://lzon.ca/posts/curio/curio-000010-a-history-of-laptop-displays/</link>
+          <guid isPermaLink="false">https://lzon.ca/posts/curio/10</guid>
+          <category domain="https://lzon.ca/posts/curio/">Curios</category>
+          <description xml:base="https://lzon.ca/posts/curio/curio-000010-a-history-of-laptop-displays/">&lt;p&gt;Link: &lt;a href=&quot;https://www.dosdays.co.uk/topics/laptop_displays.php&quot;&gt;https://www.dosdays.co.uk/topics/laptop_displays.php&lt;/a&gt;&lt;/p&gt;&lt;p&gt;An interesting history of older computer display technology. I’m a display nerd, a ‘pixel peeper’ so of course I had to read when I found it.&lt;/p&gt;
+&lt;p&gt;Source: &lt;a href=&quot;https://web.archive.org/web/20260218000851/https://www.dosdays.co.uk/topics/laptop_displays.php&quot;&gt;https://web.archive.org/web/20260218000851/https://www.dosdays.co.uk/topics/laptop_displays.php&lt;/a&gt;&lt;/p&gt;
+</description>
+      </item>
+      <item>
+          <title>Flash of unstyled content (FOUC)</title>
+          <pubDate>Wed, 23 Jul 2025 12:00:00 +0000</pubDate>
+          <author>Lzon</author>
+          <link>https://lzon.ca/posts/curio/curio-000009-flash-of-unstyled-content-fouc/</link>
+          <guid isPermaLink="false">https://lzon.ca/posts/curio/9</guid>
+          <category domain="https://lzon.ca/posts/curio/">Curios</category>
+          <description xml:base="https://lzon.ca/posts/curio/curio-000009-flash-of-unstyled-content-fouc/">&lt;p&gt;Link: &lt;a href=&quot;https://en.wikipedia.org/wiki/Flash_of_unstyled_content&quot;&gt;https://en.wikipedia.org/wiki/Flash_of_unstyled_content&lt;/a&gt;&lt;/p&gt;&lt;p&gt;An apparently well known issue in web development. I encountered this issue while teaching myself web development and have come to realize that it is a perennial concern. And in my personal experience is something that needs to be actively managed (it seems to creep back into my projects if I’m not careful).&lt;/p&gt;
+&lt;p&gt;Source: &lt;a href=&quot;https://web.archive.org/web/20260516233346/https://en.wikipedia.org/wiki/Flash_of_unstyled_content&quot;&gt;https://web.archive.org/web/20260516233346/https://en.wikipedia.org/wiki/Flash_of_unstyled_content&lt;/a&gt;&lt;/p&gt;
+</description>
+      </item>
+      <item>
+          <title>Let me pay for Firefox</title>
+          <pubDate>Tue, 15 Jul 2025 12:00:00 +0000</pubDate>
+          <author>Lzon</author>
+          <link>https://lzon.ca/posts/curio/curio-000008-let-me-pay-for-firefox/</link>
+          <guid isPermaLink="false">https://lzon.ca/posts/curio/8</guid>
+          <category domain="https://lzon.ca/posts/curio/">Curios</category>
+          <description xml:base="https://lzon.ca/posts/curio/curio-000008-let-me-pay-for-firefox/">&lt;p&gt;Link: &lt;a href=&quot;https://discourse.mozilla.org/t/let-me-pay-for-firefox/141297&quot;&gt;https://discourse.mozilla.org/t/let-me-pay-for-firefox/141297&lt;/a&gt;&lt;/p&gt;&lt;p&gt;A lament regarding the state of Mozilla corporation and its flagship product: the Firefox web browser.&lt;/p&gt;
+&lt;p&gt;The financial structure of Mozilla is concerning, it appears as though it is largely propped up by its only real competitor Google.&lt;/p&gt;
+&lt;p&gt;As much as I &lt;em&gt;want&lt;/em&gt; to believe that Firefox could be sustained as a paid product, I just don’t see that as being realistic. Asking anyone to pay for software is difficult, and even moresoe for web browsers since there is a deeply ingrained expectation that they are free to use.&lt;/p&gt;
+&lt;p&gt;Source: &lt;a href=&quot;https://web.archive.org/web/20260219121230/https://discourse.mozilla.org/t/let-me-pay-for-firefox/141297&quot;&gt;https://web.archive.org/web/20260219121230/https://discourse.mozilla.org/t/let-me-pay-for-firefox/141297&lt;/a&gt;&lt;/p&gt;
+</description>
+      </item>
+      <item>
+          <title>Writing Toy Software Is A Joy</title>
+          <pubDate>Fri, 20 Jun 2025 12:00:00 +0000</pubDate>
+          <author>Lzon</author>
+          <link>https://lzon.ca/posts/curio/curio-000007-writing-toy-software-is-a-joy/</link>
+          <guid isPermaLink="false">https://lzon.ca/posts/curio/7</guid>
+          <category domain="https://lzon.ca/posts/curio/">Curios</category>
+          <description xml:base="https://lzon.ca/posts/curio/curio-000007-writing-toy-software-is-a-joy/">&lt;p&gt;Link: &lt;a href=&quot;https://blog.jsbarretto.com/post/software-is-joy&quot;&gt;https://blog.jsbarretto.com/post/software-is-joy&lt;/a&gt;&lt;/p&gt;&lt;p&gt;There seems to be two kinds of programmers: those who care only for the final product of their work, and those who also enjoy the process itself.&lt;/p&gt;
+&lt;p&gt;I’m in the latter camp, as well as this author. I get a lot of satisfaction the experience of computing.&lt;/p&gt;
+&lt;p&gt;Source: &lt;a href=&quot;https://web.archive.org/web/20260311040624/https://blog.jsbarretto.com/post/software-is-joy&quot;&gt;https://web.archive.org/web/20260311040624/https://blog.jsbarretto.com/post/software-is-joy&lt;/a&gt;&lt;/p&gt;
+</description>
+      </item>
+      <item>
+          <title>The Intelligence Curse</title>
+          <pubDate>Mon, 09 Jun 2025 12:00:00 +0000</pubDate>
+          <author>Lzon</author>
+          <link>https://lzon.ca/posts/curio/curio-000006-the-intelligence-curse/</link>
+          <guid isPermaLink="false">https://lzon.ca/posts/curio/6</guid>
+          <category domain="https://lzon.ca/posts/curio/">Curios</category>
+          <description xml:base="https://lzon.ca/posts/curio/curio-000006-the-intelligence-curse/">&lt;p&gt;Link: &lt;a href=&quot;https://intelligence-curse.ai/&quot;&gt;https://intelligence-curse.ai/&lt;/a&gt;&lt;/p&gt;&lt;p&gt;A speculative article about the near-term future of AI technology, and the impacts it will have on the economy and society. It has a similar style to &lt;a rel=&quot;noopener external&quot; target=&quot;_blank&quot; href=&quot;https://ai-2027.com/&quot;&gt;AI 2027&lt;/a&gt;, but perhaps less well known.&lt;/p&gt;
+&lt;p&gt;The name is a riff on &lt;a rel=&quot;noopener external&quot; target=&quot;_blank&quot; href=&quot;https://en.wikipedia.org/wiki/Resource_curse&quot;&gt;Resource Curse&lt;/a&gt;, which describes what happens to citizens in a resource-rich nation. Wealth is generated from the resource, and less so from the labor of the citizens, which leads to their dis-empowerment due to lack of leverage.&lt;/p&gt;
+&lt;p&gt;The article warns that advanced AI can dis-empower people in a similar way.&lt;/p&gt;
+&lt;p&gt;Source: &lt;a href=&quot;https://web.archive.org/web/20260116021436/https://intelligence-curse.ai/&quot;&gt;https://web.archive.org/web/20260116021436/https://intelligence-curse.ai/&lt;/a&gt;&lt;/p&gt;
+</description>
+      </item>
+      <item>
+          <title>Build Your Own Text Editor</title>
+          <pubDate>Thu, 29 May 2025 12:00:00 +0000</pubDate>
+          <author>Lzon</author>
+          <link>https://lzon.ca/posts/curio/curio-000005-build-your-own-text-editor/</link>
+          <guid isPermaLink="false">https://lzon.ca/posts/curio/5</guid>
+          <category domain="https://lzon.ca/posts/curio/">Curios</category>
+          <description xml:base="https://lzon.ca/posts/curio/curio-000005-build-your-own-text-editor/">&lt;p&gt;Link: &lt;a href=&quot;https://viewsourcecode.org/snaptoken/kilo/index.html&quot;&gt;https://viewsourcecode.org/snaptoken/kilo/index.html&lt;/a&gt;&lt;/p&gt;&lt;p&gt;A very approachable guide for building your own terminal-based text editor from scratch. I haven’t made one for myself yet, but I did learn a lot about how command line terminals work while reading this.&lt;/p&gt;
+&lt;p&gt;Source: &lt;a href=&quot;https://web.archive.org/web/20260421124214/https://viewsourcecode.org/snaptoken/kilo/index.html&quot;&gt;https://web.archive.org/web/20260421124214/https://viewsourcecode.org/snaptoken/kilo/index.html&lt;/a&gt;&lt;/p&gt;
+</description>
+      </item>
+      <item>
+          <title>Windows NT vs. Unix - A design comparison</title>
+          <pubDate>Wed, 28 May 2025 12:00:00 +0000</pubDate>
+          <author>Lzon</author>
+          <link>https://lzon.ca/posts/curio/curio-000004-windows-nt-vs-unix-a-design-comparison/</link>
+          <guid isPermaLink="false">https://lzon.ca/posts/curio/4</guid>
+          <category domain="https://lzon.ca/posts/curio/">Curios</category>
+          <description xml:base="https://lzon.ca/posts/curio/curio-000004-windows-nt-vs-unix-a-design-comparison/">&lt;p&gt;Link: &lt;a href=&quot;https://blogsystem5.substack.com/p/windows-nt-vs-unix-design&quot;&gt;https://blogsystem5.substack.com/p/windows-nt-vs-unix-design&lt;/a&gt;&lt;/p&gt;&lt;p&gt;An interesting technical deep dive that I found. It explains in detail the differences between modern Windows (NT kernel) and Unix.&lt;/p&gt;
+&lt;p&gt;Source: &lt;a href=&quot;https://web.archive.org/web/20260220164156/https://blogsystem5.substack.com/p/windows-nt-vs-unix-design&quot;&gt;https://web.archive.org/web/20260220164156/https://blogsystem5.substack.com/p/windows-nt-vs-unix-design&lt;/a&gt;&lt;/p&gt;
+</description>
+      </item>
+      <item>
+          <title>Basic Hacks for Kobo E-Readers</title>
+          <pubDate>Wed, 28 May 2025 12:00:00 +0000</pubDate>
+          <author>Lzon</author>
+          <link>https://lzon.ca/posts/curio/curio-000003-basic-hacks-for-kobo-e-readers/</link>
+          <guid isPermaLink="false">https://lzon.ca/posts/curio/3</guid>
+          <category domain="https://lzon.ca/posts/curio/">Curios</category>
+          <description xml:base="https://lzon.ca/posts/curio/curio-000003-basic-hacks-for-kobo-e-readers/">&lt;p&gt;Link: &lt;a href=&quot;https://www.linux-magazine.com/Online/Features/Basic-Hacks-for-Kobo-E-Readers&quot;&gt;https://www.linux-magazine.com/Online/Features/Basic-Hacks-for-Kobo-E-Readers&lt;/a&gt;&lt;/p&gt;&lt;p&gt;I really like e-readers, and e-ink displays. The good ones really do like a real printed page, and its great to read on them.&lt;/p&gt;
+&lt;p&gt;I also like how hack-able they are, especially compared to other modern consumer technology. Kobo’s specifically are very easy to work with.&lt;/p&gt;
+&lt;p&gt;Source: &lt;a href=&quot;https://web.archive.org/web/20260508151936/https://www.linux-magazine.com/Online/Features/Basic-Hacks-for-Kobo-E-Readers&quot;&gt;https://web.archive.org/web/20260508151936/https://www.linux-magazine.com/Online/Features/Basic-Hacks-for-Kobo-E-Readers&lt;/a&gt;&lt;/p&gt;
+</description>
+      </item>
+      <item>
+          <title>Ship Software That Does Nothing</title>
+          <pubDate>Wed, 28 May 2025 12:00:00 +0000</pubDate>
+          <author>Lzon</author>
+          <link>https://lzon.ca/posts/curio/curio-000002-ship-software-that-does-nothing/</link>
+          <guid isPermaLink="false">https://lzon.ca/posts/curio/2</guid>
+          <category domain="https://lzon.ca/posts/curio/">Curios</category>
+          <description xml:base="https://lzon.ca/posts/curio/curio-000002-ship-software-that-does-nothing/">&lt;p&gt;Link: &lt;a href=&quot;https://kerrick.blog/articles/2025/ship-software-that-does-nothing/&quot;&gt;https://kerrick.blog/articles/2025/ship-software-that-does-nothing/&lt;/a&gt;&lt;/p&gt;&lt;p&gt;A good article, with a very sound piece of advice. Getting to the point that you are able to ship your product, even if it literally does nothing, is an important step and worth taking just on its own. Doing so will pay dividends as the project grows.&lt;/p&gt;
+&lt;p&gt;Source: &lt;a href=&quot;https://web.archive.org/web/20260129061230/https://kerrick.blog/articles/2025/ship-software-that-does-nothing/&quot;&gt;https://web.archive.org/web/20260129061230/https://kerrick.blog/articles/2025/ship-software-that-does-nothing/&lt;/a&gt;&lt;/p&gt;
+</description>
+      </item>
+      <item>
+          <title>How to build your resume with an SSG</title>
+          <pubDate>Tue, 20 May 2025 12:00:00 +0000</pubDate>
+          <author>Lzon</author>
+          <link>https://lzon.ca/posts/curio/curio-000001-how-to-build-your-resume-with-an-ssg/</link>
+          <guid isPermaLink="false">https://lzon.ca/posts/curio/1</guid>
+          <category domain="https://lzon.ca/posts/curio/">Curios</category>
+          <description xml:base="https://lzon.ca/posts/curio/curio-000001-how-to-build-your-resume-with-an-ssg/">&lt;p&gt;Link: &lt;a href=&quot;https://ktema.org/articles/the-overengineered-resume/&quot;&gt;https://ktema.org/articles/the-overengineered-resume/&lt;/a&gt;&lt;/p&gt;&lt;p&gt;An interesting and fun blog post about how the author built his resume using &lt;a rel=&quot;noopener external&quot; target=&quot;_blank&quot; href=&quot;https://getzola.org&quot;&gt;Zola&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;I use Zola to build this site, and I like using it a lot. I also took the author’s lead and built a workflow for my own resume based on it.&lt;/p&gt;
+&lt;p&gt;Source: &lt;a href=&quot;https://web.archive.org/web/20250520160612/https://ktema.org/articles/the-overengineered-resume/&quot;&gt;https://web.archive.org/web/20250520160612/https://ktema.org/articles/the-overengineered-resume/&lt;/a&gt;&lt;/p&gt;
+</description>
+      </item>
+    </channel>
+</rss>

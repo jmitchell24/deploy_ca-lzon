@@ -9,20 +9,29 @@
       <language>en</language>
       <atom:link href="https://lzon.ca/trivia-tags/film/rss.xml" rel="self" type="application/rss+xml"/>
       <lastBuildDate>Thu, 22 Oct 2026 12:00:00 +0000</lastBuildDate>
+      <!-- Items. Quotes (their own section feed) list one quote each. Posts go through
+           macros/feed.html, so this feed, atom.xml and pages.json agree: each item is titled
+           as the site titles the post, carries its type as a <category>, and in the merged
+           /posts/ feed leads its title with the type ("[ News ] …"). -->
       
       
       
-      
-      
+      <!-- quotes and numbered post types sort by filename, since dates alone aren't unique -->
       
       
       <item>
-          <title></title>
+          <title>A 3D scan of Nicolas Cage’s skull was used in the 2007 film Ghost Rider.</title>
           <pubDate>Thu, 22 Oct 2026 12:00:00 +0000</pubDate>
           <author>Lzon</author>
-          <link>https://lzon.ca/trivia/000002/</link>
-          <guid isPermaLink="false">https://lzon.ca/trivia/000002/</guid>
-          <description xml:base="https://lzon.ca/trivia/000002/">&lt;p&gt;A 3D scan of Nicolas Cage’s skull was used in the 2007 film Ghost Rider.&lt;&#x2F;p&gt;</description>
+          <link>https://lzon.ca/posts/trivia/000002/</link>
+          <guid isPermaLink="false">https://lzon.ca/posts/trivia/2</guid>
+          <category domain="https://lzon.ca/posts/trivia/">Trivia</category>
+          <description xml:base="https://lzon.ca/posts/trivia/000002/">
+&lt;p&gt;For his starring roll in 2007’s Ghost Rider a full 3D scan of Nicolas Cage’s body was
+taken by the special effects team. They used the scan to help create Cage’s immolated
+super-hero form, including the shape of the flame-covered skull.&lt;/p&gt;
+&lt;p&gt;Source: &lt;a href=&quot;https://www.cbr.com/nicolas-cage-ghost-rider-secret-skull-abs-skin/&quot;&gt;https://www.cbr.com/nicolas-cage-ghost-rider-secret-skull-abs-skin/&lt;/a&gt;&lt;/p&gt;
+</description>
       </item>
     </channel>
 </rss>
