@@ -8,7 +8,7 @@
       <generator>Zola</generator>
       <language>en</language>
       <atom:link href="https://lzon.ca/quotes/rss.xml" rel="self" type="application/rss+xml"/>
-      <lastBuildDate>Fri, 06 Nov 2026 12:00:00 +0000</lastBuildDate>
+      <lastBuildDate>Mon, 09 Nov 2026 12:00:00 +0000</lastBuildDate>
       <!-- Items. Quotes (their own section feed) list one quote each. Posts go through
            macros/feed.html, so this feed, atom.xml and pages.json agree: each item is titled
            as the site titles the post, carries its type as a <category>, and in the merged
@@ -21,6 +21,33 @@
       
       <!-- the merged feed leaves out types with `main_feed = false` (macros/feed.html) -->
       
+      <item>
+          <title>221. lzon.ca&#x2F;quotes</title>
+          <pubDate>Mon, 09 Nov 2026 12:00:00 +0000</pubDate>
+          <author>Lzon</author>
+          <link>https://lzon.ca/quotes/</link>
+          <guid isPermaLink="false">https://lzon.ca/quotes/#221</guid>
+          <category>quote</category>
+          <description>For though we sleep or wake, or roam or ride, Ay fleets the time, it will no man abide.&lt;br/&gt;- Chaucer (The Clerk&apos;s Tale)</description>
+      </item>
+      <item>
+          <title>220. lzon.ca&#x2F;quotes</title>
+          <pubDate>Sun, 08 Nov 2026 12:00:00 +0000</pubDate>
+          <author>Lzon</author>
+          <link>https://lzon.ca/quotes/</link>
+          <guid isPermaLink="false">https://lzon.ca/quotes/#220</guid>
+          <category>quote</category>
+          <description>In the sweat of thy face shalt thou eat bread.&lt;br/&gt;- Genesis 3:19</description>
+      </item>
+      <item>
+          <title>219. lzon.ca&#x2F;quotes</title>
+          <pubDate>Sat, 07 Nov 2026 12:00:00 +0000</pubDate>
+          <author>Lzon</author>
+          <link>https://lzon.ca/quotes/</link>
+          <guid isPermaLink="false">https://lzon.ca/quotes/#219</guid>
+          <category>quote</category>
+          <description>Am I my brother’s keeper?&lt;br/&gt;- Genesis 4:9</description>
+      </item>
       <item>
           <title>218. lzon.ca&#x2F;quotes</title>
           <pubDate>Fri, 06 Nov 2026 12:00:00 +0000</pubDate>
