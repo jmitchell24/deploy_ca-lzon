@@ -13,7 +13,7 @@
   <generator uri="https://www.getzola.org/">Zola</generator>
 
   
-  <updated>2026-11-06T12:00:00Z</updated>
+  <updated>2026-11-12T12:00:00Z</updated>
 
   <!-- Entries. Quotes (their own section feed) list one quote each. Posts go through
        macros/feed.html, so this feed, rss.xml and pages.json agree: each entry is titled as
@@ -33,6 +33,23 @@
 
   <!-- the merged feed leaves out types with `main_feed = false` (macros/feed.html) -->
   
+  <entry>
+    <title>Jensen Huang resigns as CEO of NVIDIA</title>
+    <id>https://lzon.ca/posts/news/34</id>
+    <link rel="alternate" href="https://lzon.ca/posts/news/nvidia-ceo-resigns/"/>
+    <category term="news" label="News" scheme="https://lzon.ca/posts/news/"/>
+    <published>2026-11-12T12:00:00Z</published>
+    <updated>2026-11-12T12:00:00Z</updated>
+    <author><name>Lzon</name></author>
+    <content type="html" xml:base="https://lzon.ca/posts/news/nvidia-ceo-resigns/">&lt;p&gt;NVIDIA CEO Jensen Huang has officially announced his resignation.&lt;/p&gt;
+&lt;span id=&quot;continue-reading&quot;&gt;&lt;/span&gt;
+&lt;p&gt;After 33 years as CEO of NVIDIA, Jensen Huang has announced that he will resign from the company that he co-founded. As both a husband and father of two adult children, Huang was revealed in recent weeks to have been having an affair with two separate women.&lt;/p&gt;
+&lt;p&gt;One affair was with Kimberly Powell, a long-time employee of NVIDIA and current vice-president of healthcare. She is a graduate of Northwestern University and an engineer. She previously worked within the company on applications for GPU computation in medical imaging.&lt;/p&gt;
+&lt;p&gt;The other affair was with a woman named Alice Huang (no relation). She is the CEO of the Singaporean firm called Megaspeed which is a direct customer of NVIDIA. Beyond merely being a conflict of interest and violation of NVIDIA corporate ethics, this affair is also being actively investigated by USA intelligence services. Alice Huang has been identified as being a potential spy working on behalf of the chinese government. The affair raises important questions about whether Beijing was attempting to procur access to restricted GPU exports, or gain information regarding the USA administration, for which Jensen had close ties.&lt;/p&gt;
+&lt;p&gt;Jensen Huang’s immediate replacement will be NVIDIA’s chief financial officer, &lt;a rel=&quot;noopener external&quot; target=&quot;_blank&quot; href=&quot;https://en.wikipedia.org/wiki/Colette_Kress&quot;&gt;Colette Kress&lt;/a&gt;. She will serve as interim CEO until a permanent successor can be determined.&lt;/p&gt;
+&lt;p&gt;Source: &lt;a href=&quot;https://variety.com/2026/biz/news/nvidia-ceo-jensen-huang-resigns-affairs-alleged-chinese-spy-1236945653/?utm_id=97758_v0_s00_e0_tv4&quot;&gt;https://variety.com/2026/biz/news/nvidia-ceo-jensen-huang-resigns-affairs-alleged-chinese-spy-1236945653/?utm_id=97758_v0_s00_e0_tv4&lt;/a&gt;&lt;/p&gt;&lt;p&gt;Source: &lt;a href=&quot;https://event.technologyreview.com/emtech-digital-2023/speaker/725329/kimberly-powell&quot;&gt;https://event.technologyreview.com/emtech-digital-2023/speaker/725329/kimberly-powell&lt;/a&gt;&lt;/p&gt;&lt;p&gt;Source: &lt;a href=&quot;https://www.nytimes.com/2026/11/06/us/politics/chinese-spy-agency-nvidia-jensen-huang.html&quot;&gt;https://www.nytimes.com/2026/11/06/us/politics/chinese-spy-agency-nvidia-jensen-huang.html&lt;/a&gt;&lt;/p&gt;&lt;p&gt;Source: &lt;a href=&quot;https://en.wikipedia.org/wiki/Jensen_Huang_spying_scandal&quot;&gt;https://en.wikipedia.org/wiki/Jensen_Huang_spying_scandal&lt;/a&gt;&lt;/p&gt;
+</content>
+  </entry>
   <entry>
     <title>Tesla Cybertruck to be discontinued in 2027</title>
     <id>https://lzon.ca/posts/news/33</id>
