@@ -318,7 +318,7 @@
             &quot;grandfather&quot;:  { name: &quot;Lo Po-mu • 羅伯沐&quot;,      role: &quot;Su&apos;s Grandfather b. 1921&quot; },
             &quot;mother-huang&quot;: { name: &quot;Lo Tsai-hsiu • 羅采秀&quot;,  role: &quot;Huang&apos;s Mother b. 1939&quot; },
             &quot;mother-su&quot;:    { name: &quot;Lo Shu-ya • 羅淑雅&quot;,     role: &quot;Su&apos;s Mother b. 1944&quot; },
-            &quot;jensen&quot;:       { name: &quot;Jensen Huang • 黃仁勳&quot;,  role: &quot;Co-founder &amp; CEO, NVIDIA b. 1963&quot;, ceo: true },
+            &quot;jensen&quot;:       { name: &quot;Jensen Huang • 黃仁勳&quot;,  role: &quot;Co-founder, NVIDIA b. 1963&quot;, ceo: true },
             &quot;lisa&quot;:         { name: &quot;Lisa Su • 蘇姿丰&quot;,       role: &quot;Chair &amp; CEO, AMD b. 1969&quot;,         ceo: true },
         };
 
@@ -452,9 +452,9 @@
         }
     })();
 &lt;/script&gt;
-&lt;p&gt;Jensen Huang was born in Taipai, Taiwan in 1963. At nine years old his parents sent him and his brother to live with their uncle in Tacoma, Washington. He was acedemically gifted, and would go on to study electrical engineering at Oregon State University. He would work in chip design for Texas Instruments, LSI Logic, and even AMD before founding his own company NVIDIA in 1993. He and his co-founders would work on their initial business plan while eating a their favorite Denny’s restaruant.&lt;/p&gt;
+&lt;p&gt;Jensen Huang was born in in 1963 in Taipai, Taiwan. At nine years old his parents sent him and his brother to live with their uncle in Tacoma, Washington. He was academically gifted, and after finishing public school would go on to study electrical engineering at Oregon State University. He then worked in chip design for Texas Instruments, LSI Logic, and even AMD before founding his own company NVIDIA in 1993. He and his co-founders would work together on their business plan while eating at their favorite Denny’s restaurant location.&lt;/p&gt;
 &lt;p&gt;Lisa Su was also born in Taiwan. At just three years old her family immigrated to the United States, settling in New York City. She had an early passion for engineering, demonstrated by taking apart her brother’s remote control cars to understand how they worked. She was given her first computer in junior high school, an Apple II which she taught herself how to use. She would obtain her master’s degree in electrical engineering from MIT in 1991. Later, she would go on to work for industry giants such as Texas Instruments (as Huang did) as well as IBM. For many years she would work as an engineer at AMD before eventually rising to become vice president of the company, and then finally CEO in 2014.&lt;/p&gt;
-&lt;p&gt;Both Huang and Su share a common ancestor, a man named Lo Chu. He is grandfather to Jensen, and great-grandfather to Lisa. This makes them first cousins once removed. They did not grow up together, and only met later in life after they had both established their careers.&lt;/p&gt;
+&lt;p&gt;Both Huang and Su share a common ancestor, a man named Lo Chü. He is grandfather to Jensen, and great-grandfather to Lisa. This makes them first cousins once removed. They did not grow up together, and only met later in life after they had both established their careers.&lt;/p&gt;
 &lt;p&gt;Source: &lt;a href=&quot;https://en.wikipedia.org/wiki/Jensen_Huang&quot;&gt;https://en.wikipedia.org/wiki/Jensen_Huang&lt;/a&gt;&lt;/p&gt;&lt;p&gt;Source: &lt;a href=&quot;https://en.wikipedia.org/wiki/Lisa_Su&quot;&gt;https://en.wikipedia.org/wiki/Lisa_Su&lt;/a&gt;&lt;/p&gt;&lt;p&gt;Source: &lt;a href=&quot;https://www.tomshardware.com/news/jensen-huang-and-lisa-su-family-tree-shows-how-closely-they-are-related&quot;&gt;https://www.tomshardware.com/news/jensen-huang-and-lisa-su-family-tree-shows-how-closely-they-are-related&lt;/a&gt;&lt;/p&gt;
 </description>
       </item>
