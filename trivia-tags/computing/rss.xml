@@ -8,7 +8,7 @@
       <generator>Zola</generator>
       <language>en</language>
       <atom:link href="https://lzon.ca/trivia-tags/computing/rss.xml" rel="self" type="application/rss+xml"/>
-      <lastBuildDate>Sun, 01 Nov 2026 12:00:00 +0000</lastBuildDate>
+      <lastBuildDate>Thu, 12 Nov 2026 12:00:00 +0000</lastBuildDate>
       <!-- Items. Quotes (their own section feed) list one quote each. Posts go through
            macros/feed.html, so this feed, atom.xml and pages.json agree: each item is titled
            as the site titles the post, carries its type as a <category>, and in the merged
@@ -21,6 +21,443 @@
       
       <!-- the merged feed leaves out types with `main_feed = false` (macros/feed.html) -->
       
+      <item>
+          <title>NVIDIA founder Jensen Huang is a relative of AMD CEO Lisa Su.</title>
+          <pubDate>Thu, 12 Nov 2026 12:00:00 +0000</pubDate>
+          <author>Lzon</author>
+          <link>https://lzon.ca/posts/trivia/000010/</link>
+          <guid isPermaLink="false">https://lzon.ca/posts/trivia/10</guid>
+          <category domain="https://lzon.ca/posts/trivia/">Trivia</category>
+          <description xml:base="https://lzon.ca/posts/trivia/000010/">
+  
+
+&lt;style&gt;
+    /*
+     * The shared part of the Huang / Su family tree, as nested lists: each person&apos;s
+     * children are a list under them, side by side, so depth is generation and cousins
+     * of the same generation sit level. The connecting lines are pure CSS, borders on
+     * pseudo-elements: a stem down from each parent that curves out both ways into the
+     * sibling bar, a dovetail (the child list&apos;s ::before and ::after), then the bar
+     * across to each child and the drop into it (the child item&apos;s ::before / ::after).
+     * The script fills in the people&apos;s boxes, plays the intro and highlights a person&apos;s line.
+     *
+     * Colours come from the site&apos;s own variables, so the tree follows the theme.
+     */
+    #hft {
+        --hft-gap: 1.25rem;
+        /* the site&apos;s $border-radius and $border-md (sass/lzon/_config-variables.scss) */
+        --hft-radius: 0.3rem;
+        --hft-border: max(2px, 0.12rem);
+        --hft-line: var(--color-dark);
+        --hft-lit: var(--color-primary);
+        /* each half of the gap between generations: the stem down from a parent, then the drop into a child */
+        --hft-drop: 1.5rem;
+        /* rounding of every bend: the stem&apos;s dovetail into the bar, and the bar into each child */
+        --hft-corner: 10px;
+        /* where a line down the middle starts (from either side), and a box reaching just past the middle */
+        --hft-mid: calc(50% - var(--hft-border) / 2);
+        --hft-half: calc(50% + var(--hft-border) / 2);
+        /* hover and picking */
+        --hft-quick: .2s ease;
+        /* the intro: how far each person drops, and how long each fade takes (the script sets it from TOTAL_MS) */
+        --hft-slide: 2em;
+        --hft-fade: .8s;
+
+        position: relative;
+        /* room above the tree for the intro&apos;s slide down (the top box would
+           otherwise clip as it starts above the tree&apos;s box); the margin gives it back */
+        padding-top: var(--hft-slide);
+        margin: calc(1.5rem - var(--hft-slide)) auto 1.5rem;
+        max-width: 40rem;
+    }
+
+    #hft ul {
+        position: relative;
+        display: flex;
+        justify-content: center;
+        margin: 0;
+        padding: var(--hft-drop) 0 0;
+        list-style: none;
+    }
+
+    #hft li {
+        position: relative;
+        flex: 1 1 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin: 0;
+        padding: var(--hft-drop) calc(var(--hft-gap) / 2) 0;
+    }
+
+    /* the common ancestors have no parent above them */
+    #hft &gt; ul,
+    #hft &gt; ul &gt; li { padding-top: 0; }
+
+    /*
+     * The site draws list bullets as a masked li::before (sass/lzon/_base.scss, the
+     * caret-right icon): undo all of it here, since these pseudo-elements are the
+     * connectors (the mask would hide their borders). The common ancestors get none.
+     */
+    #hft li::before,
+    #hft li::after {
+        content: none;
+        display: block;
+        mask-image: none;
+        background-color: transparent;
+        margin: 0;
+    }
+
+    /* ── connectors ─────────────────────────────────────────────────────────── */
+
+    /* every connector piece: a box with some of its borders drawn */
+    #hft ul ul::before,
+    #hft ul ul::after,
+    #hft ul ul &gt; li::before,
+    #hft ul ul &gt; li::after {
+        content: &quot;&quot;;
+        position: absolute;
+        top: 0;
+        box-sizing: border-box;
+        border: 0 solid var(--hft-line);
+        transition: border-color var(--hft-quick), opacity var(--hft-quick);
+    }
+
+    /*
+     * The stem and its dovetail: two boxes meeting at the middle, each drawing the stem
+     * (on the side where they meet) and the bar (along the bottom), with a rounded
+     * corner between, so the stem curves out into the bar both ways. ::before curves
+     * left toward the first child, ::after right toward the last.
+     */
+    #hft ul ul::before,
+    #hft ul ul::after {
+        width: calc(var(--hft-corner) + var(--hft-border) / 2);
+        height: calc(var(--hft-drop) + var(--hft-border));
+        border-bottom-width: var(--hft-border);
+    }
+    #hft ul ul::before {
+        right: var(--hft-mid);
+        border-right-width: var(--hft-border);
+        border-bottom-right-radius: var(--hft-corner);
+    }
+    #hft ul ul::after {
+        left: var(--hft-mid);
+        border-left-width: var(--hft-border);
+        border-bottom-left-radius: var(--hft-corner);
+    }
+
+    /* over an only child the stem just carries straight on into its drop */
+    #hft ul ul:has(&gt; li:only-child)::before {
+        height: var(--hft-drop);
+        border-bottom-width: 0;
+        border-radius: 0;
+    }
+    #hft ul ul:has(&gt; li:only-child)::after { display: none; }
+
+    /* each child: the bar&apos;s left half (::before) and right half with the drop (::after) */
+    #hft ul ul &gt; li::before,
+    #hft ul ul &gt; li::after {
+        width: var(--hft-half);
+        height: var(--hft-drop);
+        border-top-width: var(--hft-border);
+    }
+    #hft ul ul &gt; li::before { right: var(--hft-mid); }
+    #hft ul ul &gt; li::after {
+        left: var(--hft-mid);
+        border-left-width: var(--hft-border);
+    }
+
+    /*
+     * The first child: no bar to its left; its drop turns in from the bar with a rounded
+     * corner, and its bar stops short of the middle, where the dovetail&apos;s curve takes over
+     * (this assumes the middle is its right edge: two children, as every family here has).
+     */
+    #hft ul ul &gt; li:first-child::before { display: none; }
+    #hft ul ul &gt; li:first-child::after {
+        width: calc(var(--hft-half) - var(--hft-corner));
+        border-top-left-radius: var(--hft-corner);
+    }
+
+    /* the last child: likewise mirrored, the drop down the left half&apos;s right edge */
+    #hft ul ul &gt; li:last-child::after { display: none; }
+    #hft ul ul &gt; li:last-child::before {
+        left: var(--hft-corner);
+        width: auto;
+        border-right-width: var(--hft-border);
+        border-top-right-radius: var(--hft-corner);
+    }
+
+    /* an only child: just a straight drop, carrying on from the stem */
+    #hft ul ul &gt; li:only-child::before { display: none; }
+    #hft ul ul &gt; li:only-child::after {
+        display: block;
+        width: var(--hft-half);
+        border-top-width: 0;
+        border-radius: 0;
+    }
+
+    /* ── people ─────────────────────────────────────────────────────────────── */
+
+    .hft-person {
+        position: relative;
+        z-index: 1;
+        display: block;
+        width: 100%;
+        padding: .75rem .75rem;
+        border: var(--hft-border) dashed var(--hft-line);
+        border-radius: var(--hft-radius);
+        background: transparent;
+        color: var(--color-light);
+        font: inherit;
+        text-align: center;
+        line-height: 1.25;
+        cursor: pointer;
+        transition: border-color var(--hft-quick), opacity var(--hft-quick);
+    }
+    .hft-person:hover, .hft-person:focus-visible { border-color: var(--hft-lit); outline: none; }
+
+    /* the common ancestors span both lines of descent, but not the full width */
+    #hft &gt; ul &gt; li &gt; .hft-person { max-width: 60%; }
+
+    .hft-name { display: block; font-weight: 600; }
+    .hft-role { display: block; font-size: .8em; opacity: .75; }
+
+    /* the two CEOs: solid outline, so they stand out before anything is picked */
+    .hft-ceo {
+        border-style: solid;
+        /* the site&apos;s code block background (sass/lzon/_base.scss, pre) */
+        background-color: color-mix(in srgb, var(--color-dark) 25%, transparent);
+    }
+
+    /* ── picking: a person&apos;s line of descent lights up, everything else fades back ── */
+
+    #hft.hft-picked .hft-person:not(.hft-on) { opacity: .4; }
+    .hft-person.hft-on { border-color: var(--hft-lit); }
+
+    #hft.hft-picked :is(ul, li)::before,
+    #hft.hft-picked :is(ul, li)::after { opacity: .35; }
+    /* a lit child&apos;s drop and bar, and the side of the dovetail turning toward it */
+    #hft li.hft-on::before,
+    #hft li.hft-on::after,
+    #hft ul.hft-on-first::before,
+    #hft ul.hft-on-last::after { border-color: var(--hft-lit); opacity: 1; }
+
+    /*
+     * Intro, like the quote pages (sass/lzon/_component-qotd.scss) but quicker: each
+     * person fades in and drops into place with a strong ease-out, one after another;
+     * each connector fades in with the person it leads to. The script adds .hft-pre
+     * before first paint and takes it off each one in turn. !important: the page
+     * column&apos;s `.animate-on-hover:hover *` would otherwise swap in its short default
+     * while the pointer is over the post.
+     */
+    #hft.hft-intro .hft-person {
+        transition:
+            opacity var(--hft-fade) ease,
+            transform var(--hft-fade) cubic-bezier(0.16, 1, 0.3, 1),
+            border-color var(--hft-quick) !important;
+    }
+    #hft.hft-intro :is(ul, li)::before,
+    #hft.hft-intro :is(ul, li)::after { transition: opacity var(--hft-fade) ease !important; }
+
+    .hft-person.hft-pre { visibility: hidden; opacity: 0; transform: translateY(calc(-1 * var(--hft-slide))); }
+    #hft .hft-pre::before,
+    #hft .hft-pre::after { opacity: 0 !important; }
+
+    @media (prefers-reduced-motion: reduce) {
+        #hft .hft-person,
+        #hft :is(ul, li)::before,
+        #hft :is(ul, li)::after { transition: none !important; }
+    }
+
+    @media (max-width: 640px) {
+        #hft { --hft-gap: .75rem; }
+        .hft-role { font-size: .75em; }
+        #hft &gt; ul &gt; li &gt; .hft-person { max-width: 100%; }
+    }
+&lt;/style&gt;
+
+&lt;!-- Just the shape of the tree: the script puts each person&apos;s box in their list item. --&gt;
+&lt;div id=&quot;hft&quot;&gt;
+    &lt;ul&gt;
+        &lt;!-- generation 1: the shared ancestors --&gt;
+        &lt;li data-id=&quot;root&quot;&gt;
+            &lt;ul&gt;
+                &lt;!-- generation 2: the two siblings --&gt;
+                &lt;li data-id=&quot;grandfather&quot;&gt;
+                    &lt;ul&gt;
+                        &lt;!-- generation 3 --&gt;
+                        &lt;li data-id=&quot;mother-su&quot;&gt;
+                            &lt;ul&gt;
+                                &lt;!-- generation 4 --&gt;
+                                &lt;li data-id=&quot;lisa&quot;&gt;&lt;/li&gt;
+                            &lt;/ul&gt;
+                        &lt;/li&gt;
+                    &lt;/ul&gt;
+                &lt;/li&gt;
+                &lt;li data-id=&quot;mother-huang&quot;&gt;
+                    &lt;ul&gt;
+                        &lt;!-- generation 3 --&gt;
+                        &lt;li data-id=&quot;jensen&quot;&gt;&lt;/li&gt;
+                    &lt;/ul&gt;
+                &lt;/li&gt;
+            &lt;/ul&gt;
+        &lt;/li&gt;
+    &lt;/ul&gt;
+&lt;/div&gt;
+
+&lt;script&gt;
+    (() =&gt; {
+        &quot;use strict&quot;;
+
+        // ── The text on each person&apos;s box ───────────────────────────────────────
+        // Edit here. Keyed by each list item&apos;s data-id in the markup above; `name` is
+        // the bold line, `role` the smaller line under it (plain text, no HTML), and
+        // `ceo` gives the box a solid outline.
+        const PEOPLE = {
+            &quot;root&quot;:         { name: &quot;Lo Chü • 羅取&quot;,          role: &quot;Grandfather, Great-Grandfather b. [unknown]&quot; },
+            &quot;grandfather&quot;:  { name: &quot;Lo Po-mu • 羅伯沐&quot;,      role: &quot;Su&apos;s Grandfather b. 1921&quot; },
+            &quot;mother-huang&quot;: { name: &quot;Lo Tsai-hsiu • 羅采秀&quot;,  role: &quot;Huang&apos;s Mother b. 1939&quot; },
+            &quot;mother-su&quot;:    { name: &quot;Lo Shu-ya • 羅淑雅&quot;,     role: &quot;Su&apos;s Mother b. 1944&quot; },
+            &quot;jensen&quot;:       { name: &quot;Jensen Huang • 黃仁勳&quot;,  role: &quot;Co-founder &amp; CEO, NVIDIA b. 1963&quot;, ceo: true },
+            &quot;lisa&quot;:         { name: &quot;Lisa Su • 蘇姿丰&quot;,       role: &quot;Chair &amp; CEO, AMD b. 1969&quot;,         ceo: true },
+        };
+
+        const root  = document.getElementById(&quot;hft&quot;);
+        const items = [...root.querySelectorAll(&quot;li[data-id]&quot;)];
+        const byId  = new Map(items.map(li =&gt; [li.dataset.id, li]));
+
+        /**
+         * Makes a person&apos;s box: a button with their name over their role.
+         * @param {{name: string, role: string, ceo?: boolean}} text What the box says.
+         * @returns {HTMLButtonElement}
+         */
+        function makePerson({ name, role, ceo }) {
+            const button = document.createElement(&quot;button&quot;);
+            button.type = &quot;button&quot;;
+            button.className = ceo ? &quot;hft-person hft-ceo&quot; : &quot;hft-person&quot;;
+            for (const [cls, str] of [[&quot;hft-name&quot;, name], [&quot;hft-role&quot;, role]]) {
+                const span = document.createElement(&quot;span&quot;);
+                span.className = cls;
+                span.textContent = str;
+                button.append(span);
+            }
+            return button;
+        }
+
+        /** Each list item&apos;s box, put in first so it sits above the item&apos;s children (before first paint: this script runs right after the markup). */
+        const personOf = new Map(items.map(li =&gt; {
+            const button = makePerson(PEOPLE[li.dataset.id] ?? { name: li.dataset.id, role: &quot;&quot; });
+            li.prepend(button);
+            return [li, button];
+        }));
+
+        /**
+         * A person&apos;s line up to the common ancestors, themselves first.
+         * @param {HTMLLIElement} li The person&apos;s list item.
+         * @returns {HTMLLIElement[]}
+         */
+        function lineage(li) {
+            const line = [];
+            for (let it = li; it; it = it.parentElement.closest(&quot;li[data-id]&quot;)) line.push(it);
+            return line;
+        }
+
+        /** The picked person&apos;s id, or null for the default view. */
+        let picked = null;
+
+        /**
+         * Lights up `id`&apos;s line of descent (or nothing, for null). A lit item lights its
+         * own connector, and the list it sits in lights the side of its dovetail that
+         * turns toward it (an only child counts as first: a straight stem); the common
+         * ancestors have neither.
+         * @param {string | null} id The person to light up.
+         */
+        function highlight(id) {
+            const on = new Set(id ? lineage(byId.get(id)) : []);
+            root.classList.toggle(&quot;hft-picked&quot;, !!id);
+            for (const li of items) {
+                const lit = on.has(li) &amp;&amp; li.dataset.id !== &quot;root&quot;;
+                const first = li === li.parentElement.firstElementChild;
+                li.classList.toggle(&quot;hft-on&quot;, lit);
+                li.parentElement.classList.toggle(first ? &quot;hft-on-first&quot; : &quot;hft-on-last&quot;, lit);
+                personOf.get(li).classList.toggle(&quot;hft-on&quot;, on.has(li));
+                personOf.get(li).setAttribute(&quot;aria-pressed&quot;, String(li.dataset.id === id));
+            }
+        }
+
+        // Click: pick someone, or clicking them again clears it; clicking anywhere else
+        // on the page (the tree&apos;s empty space included) clears it too.
+        document.addEventListener(&quot;click&quot;, e =&gt; {
+            const li = root.contains(e.target) ? e.target.closest(&quot;.hft-person&quot;)?.parentElement : null;
+            const next = li &amp;&amp; picked !== li.dataset.id ? li.dataset.id : null;
+            if (next === picked) return;  // a click away with nothing picked: nothing to do
+            picked = next;
+            highlight(picked);
+        });
+
+        highlight(null);  // nobody picked: every button starts unpressed
+
+        // ── Intro ────────────────────────────────────────────────────────────────
+
+        /** The whole intro, from the first person starting to the last one settling. Tune this. */
+        const TOTAL_MS = 1500;
+
+        /** The stagger as a fraction of the fade: 0.3 = the next person starts 30% into the last one&apos;s fade. */
+        const OVERLAP = 0.3;
+
+        /**
+         * How long each fade and slide takes. The total is the last start, (n - 1) staggers,
+         * plus one fade: TOTAL_MS = FADE_MS * (1 + (n - 1) * OVERLAP).
+         */
+        const FADE_MS = TOTAL_MS / (1 + (items.length - 1) * OVERLAP);
+
+        /** Delay between one person starting and the next. */
+        const STAGGER_MS = FADE_MS * OVERLAP;
+
+        /**
+         * What .hft-pre hides for one person: their box, the connector into them, and
+         * the stem above their list.
+         * @param {HTMLLIElement} li The person&apos;s list item.
+         * @returns {HTMLElement[]}
+         */
+        const introParts = li =&gt; [personOf.get(li), li, li.parentElement];
+
+        /** People in generation order (document order would show a whole branch before the other). */
+        const byGeneration = [...items].sort((a, b) =&gt; lineage(a).length - lineage(b).length);
+
+        /** Plays the intro: people in generation order, one after another. */
+        function playIntro() {
+            root.style.setProperty(&quot;--hft-fade&quot;, `${FADE_MS}ms`);
+            root.classList.add(&quot;hft-intro&quot;);
+            byGeneration.forEach((li, i) =&gt; setTimeout(() =&gt; {
+                for (const el of introParts(li)) el.classList.remove(&quot;hft-pre&quot;);
+            }, i * STAGGER_MS));
+            // back to the short transitions for picking once everything has settled
+            setTimeout(() =&gt; root.classList.remove(&quot;hft-intro&quot;), TOTAL_MS);
+        }
+
+        // Hidden before first paint (this script runs right after the markup); without
+        // motion, or without IntersectionObserver, everything just shows.
+        const motion = !window.matchMedia(&quot;(prefers-reduced-motion: reduce)&quot;).matches &amp;&amp; &quot;IntersectionObserver&quot; in window;
+        if (motion) {
+            for (const li of items) for (const el of introParts(li)) el.classList.add(&quot;hft-pre&quot;);
+
+            // The intro plays once the tree is on screen, and the page&apos;s fonts are ready.
+            const seen = new IntersectionObserver(entries =&gt; {
+                if (!entries.some(e =&gt; e.isIntersecting)) return;
+                seen.disconnect();
+                document.fonts.ready.then(() =&gt; requestAnimationFrame(playIntro));
+            }, { threshold: 0.3 });
+            seen.observe(root);
+        }
+    })();
+&lt;/script&gt;
+&lt;p&gt;Jensen Huang was born in Taipai, Taiwan in 1963. At nine years old his parents sent him and his brother to live with their uncle in Tacoma, Washington. He was acedemically gifted, and would go on to study electrical engineering at Oregon State University. He would work in chip design for Texas Instruments, LSI Logic, and even AMD before founding his own company NVIDIA in 1993. He and his co-founders would work on their initial business plan while eating a their favorite Denny’s restaruant.&lt;/p&gt;
+&lt;p&gt;Lisa Su was also born in Taiwan. At just three years old her family immigrated to the United States, settling in New York City. She had an early passion for engineering, demonstrated by taking apart her brother’s remote control cars to understand how they worked. She was given her first computer in junior high school, an Apple II which she taught herself how to use. She would obtain her master’s degree in electrical engineering from MIT in 1991. Later, she would go on to work for industry giants such as Texas Instruments (as Huang did) as well as IBM. For many years she would work as an engineer at AMD before eventually rising to become vice president of the company, and then finally CEO in 2014.&lt;/p&gt;
+&lt;p&gt;Both Huang and Su share a common ancestor, a man named Lo Chu. He is grandfather to Jensen, and great-grandfather to Lisa. This makes them first cousins once removed. They did not grow up together, and only met later in life after they had both established their careers.&lt;/p&gt;
+&lt;p&gt;Source: &lt;a href=&quot;https://en.wikipedia.org/wiki/Jensen_Huang&quot;&gt;https://en.wikipedia.org/wiki/Jensen_Huang&lt;/a&gt;&lt;/p&gt;&lt;p&gt;Source: &lt;a href=&quot;https://en.wikipedia.org/wiki/Lisa_Su&quot;&gt;https://en.wikipedia.org/wiki/Lisa_Su&lt;/a&gt;&lt;/p&gt;&lt;p&gt;Source: &lt;a href=&quot;https://www.tomshardware.com/news/jensen-huang-and-lisa-su-family-tree-shows-how-closely-they-are-related&quot;&gt;https://www.tomshardware.com/news/jensen-huang-and-lisa-su-family-tree-shows-how-closely-they-are-related&lt;/a&gt;&lt;/p&gt;
+</description>
+      </item>
       <item>
           <title>The term ‘Computer Bug’ was popularized by programmer Grace Hopper after she removed a moth from a malfunctioning computer.</title>
           <pubDate>Wed, 28 Oct 2026 12:00:00 +0000</pubDate>
