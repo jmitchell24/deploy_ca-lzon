@@ -516,6 +516,521 @@ a tool that helps to identify bad codes is called a &lt;em&gt;‘debugger’&lt;
           <guid isPermaLink="false">https://lzon.ca/posts/trivia/6</guid>
           <category domain="https://lzon.ca/posts/trivia/">Trivia</category>
           <description xml:base="https://lzon.ca/posts/trivia/000006/">
+  
+
+&lt;style&gt;
+    /*
+     * A 3D runner, drawn as nothing but its outline: a skinned mannequin (Quaternius&apos;
+     * Universal Animation Library, CC0, stripped down to runner.glb beside this file)
+     * running in place. It&apos;s rendered in two passes: the runner&apos;s normals and depth go
+     * to an off-screen buffer, then an edge-detect shader draws only where those jump
+     * (the silhouette, overlapping limbs and creases) in the site&apos;s accent colour.
+     * The gait is set in the script (GAIT: jog, sprint, or a blend between them).
+     * Drag to turn the view.
+     *
+     * three.js (with its glTF loader and meshopt decoder: runner.glb is
+     * meshopt-compressed) is vendored beside this file as three-gltf.min.js and only
+     * fetched, along with the model, once the figure comes near the screen.
+     * The outline follows the theme&apos;s accent colour.
+     *
+     * Until then, and instead of it without JavaScript or WebGL, a still frame of
+     * the same view stands in: runner-fallback.webp, a capture of the render kept
+     * as just its alpha, used as a mask over the accent colour so it follows the
+     * theme too.
+     */
+    #hrun {
+        --hrun-slide: 2em;
+        --hrun-fade: .9s;
+
+        margin: 1.5rem auto;
+        max-width: 40rem;
+    }
+
+    .hrun-stage {
+        position: relative;
+        aspect-ratio: 16 / 9;
+        touch-action: pan-y;
+        cursor: grab;
+        user-select: none;
+    }
+    .hrun-stage.hrun-dragging { cursor: grabbing; }
+    .hrun-stage canvas { display: block; width: 100%; height: 100%; }
+
+    /* the still frame: shown until the 3D view is in, and instead of it if that fails */
+    .hrun-still {
+        position: absolute;
+        inset: 0;
+        background-color: var(--color-primary);
+        mask: url(&quot;runner-fallback.webp&quot;) center / contain no-repeat;
+        pointer-events: none;
+    }
+    /* nothing to drag without the 3D view */
+    .hrun-stage.hrun-static { cursor: auto; }
+
+    .hrun-credit {
+        margin-top: .5rem;
+        text-align: center;
+    }
+    .hrun-hint { display: block; }
+    .hrun-hint[hidden] { display: none; }
+
+    /*
+     * Intro, like the family tree&apos;s (trivia 10): the stage fades in and drops into
+     * place with a strong ease-out once the model has loaded and is on screen.
+     * !important: the page column&apos;s `.animate-on-hover:hover *` would otherwise swap
+     * in its short default while the pointer is over the post.
+     */
+    #hrun .hrun-stage canvas,
+    #hrun .hrun-still {
+        transition:
+            opacity var(--hrun-fade) ease,
+            transform var(--hrun-fade) cubic-bezier(0.16, 1, 0.3, 1) !important;
+    }
+    #hrun .hrun-pre { opacity: 0; transform: translateY(calc(-1 * var(--hrun-slide))); }
+    /* the still frame fades out in place as the 3D view comes in */
+    #hrun .hrun-still.hrun-gone { opacity: 0; transform: none; }
+
+    @media (prefers-reduced-motion: reduce) {
+        #hrun .hrun-stage canvas,
+        #hrun .hrun-still { transition: none !important; }
+    }
+
+    @media (max-width: 640px) {
+        .hrun-stage { aspect-ratio: 4 / 3; }
+    }
+&lt;/style&gt;
+
+&lt;!-- The stage gets its canvas from the script; the still frame stands in until then. --&gt;
+
+
+&lt;script type=&quot;module&quot;&gt;
+    &quot;use strict&quot;;
+
+    // ── Tuning ──────────────────────────────────────────────────────────────────
+
+    /** The model, beside this file in the page bundle. */
+    const MODEL_URL = new URL(&quot;runner.glb&quot;, location.href).href;
+
+    /** The vendored three.js build (three + GLTFLoader + MeshoptDecoder only). */
+    const THREE_URL = new URL(&quot;three-gltf.min.js&quot;, location.href).href;
+
+    /**
+     * The two gaits, as the clips in runner.glb. `metres` is how far the root moves
+     * over one loop, read from the root-motion version of the library (UAL1_Standard_RM):
+     * the floor slides back at metres / duration, so the feet stay planted.
+     */
+    const GAITS = [
+        { clip: &quot;Jog_Fwd_Loop&quot;, metres: 5.0 },
+        { clip: &quot;Sprint_Loop&quot;,  metres: 5.5 },
+    ];
+
+    /**
+     * Playback speed of the run: 1 = real time, 0.5 = half speed. Scales the stride
+     * and the floor together, so the feet stay planted at any value.
+     */
+    const SPEED = 0.5;
+
+    /** The gait: 0 = jog, 1 = sprint; in between blends the two into one stride. */
+    const GAIT = 0;
+
+    /** Where the camera sits: distance from the runner&apos;s hips, height, and field of view. */
+    const CAMERA = { distance: 4.5, height: 1.8, target: 0.65, fov: 30 };
+
+    /** The view&apos;s starting angle around the runner, in degrees (0 = side on); dragging turns it from there. */
+    const VIEW_START = -35;
+
+    /**
+     * The outline: `width` is the line&apos;s thickness in CSS pixels; `crease` is how sharp
+     * a fold in the surface must be to draw (0–1 of normal change; lower draws more),
+     * and `depth` how big a jump in distance, relative to the nearer surface, counts as
+     * one part passing in front of another.
+     */
+    const OUTLINE = { width: 0.75, crease: 0.35, depth: 0.04 };
+
+    /**
+     * The floor: a grid in the outline&apos;s colour and width, of square tiles `tile` metres across,
+     * clipped to a circle of `radius` metres around the runner whose last `fade`
+     * metres fade out, drawn at `opacity` so the runner stays the brighter line.
+     */
+    const FLOOR = { tile: 0.6, radius: 1.4, fade: 0.7, opacity: 0.5 };
+
+    // ── Page ────────────────────────────────────────────────────────────────────
+
+    const root    = document.getElementById(&quot;hrun&quot;);
+    const stage   = root.querySelector(&quot;.hrun-stage&quot;);
+    const still   = root.querySelector(&quot;.hrun-still&quot;);
+    const hint    = root.querySelector(&quot;.hrun-hint&quot;);
+
+    const reduced = window.matchMedia(&quot;(prefers-reduced-motion: reduce)&quot;).matches;
+
+    /**
+     * Gives up on the 3D view: the still frame stays, and the stage stops offering a drag.
+     * @param {string} why What went wrong (for the console).
+     * @param {unknown} [err] The error, if there was one.
+     */
+    function fallBack(why, err) {
+        console.warn(`running.html: ${why}; showing the still frame`, err ?? &quot;&quot;);
+        stage.classList.add(&quot;hrun-static&quot;);
+        stage.querySelector(&quot;canvas&quot;)?.remove();
+    }
+
+    /**
+     * Resolves a CSS colour (the site&apos;s are oklch, which three can&apos;t parse) to sRGB
+     * by painting it: a 1×1 canvas reads back whatever the browser makes of it.
+     * @param {string} css Any CSS colour, `var(--x)` included.
+     * @returns {[number, number, number]} 0–1 sRGB channels.
+     */
+    const resolveColor = (() =&gt; {
+        const probe = document.createElement(&quot;span&quot;);
+        const ctx = document.createElement(&quot;canvas&quot;).getContext(&quot;2d&quot;, { willReadFrequently: true });
+        return css =&gt; {
+            probe.style.color = css;
+            root.append(probe);
+            const computed = getComputedStyle(probe).color;
+            probe.remove();
+            ctx.clearRect(0, 0, 1, 1);
+            ctx.fillStyle = computed;
+            ctx.fillRect(0, 0, 1, 1);
+            const [r, g, b] = ctx.getImageData(0, 0, 1, 1).data;
+            return [r / 255, g / 255, b / 255];
+        };
+    })();
+
+    // ── Scene ───────────────────────────────────────────────────────────────────
+
+    /**
+     * Builds the scene, loads the runner and starts it. Called once the figure is
+     * near the screen, so nothing heavy is fetched for readers who never get here.
+     */
+    async function start() {
+        const THREE = await import(THREE_URL);
+
+        let renderer;
+        try {
+            renderer = new THREE.WebGLRenderer({ alpha: true });
+        } catch {
+            fallBack(&quot;no WebGL&quot;);
+            return;
+        }
+        // A shader that won&apos;t compile on this GPU: say why, and keep the still frame.
+        let shaderError = null;
+        renderer.debug.onShaderError = (gl, program, vs, fs) =&gt; {
+            shaderError = [gl.getProgramInfoLog(program), gl.getShaderInfoLog(vs), gl.getShaderInfoLog(fs)]
+                .filter(Boolean).join(&quot; | &quot;).replace(/\0/g, &quot;&quot;).trim() || &quot;unknown&quot;;
+            console.error(&quot;running.html: shader error:&quot;, shaderError);
+        };
+        // Supersampled: edge detection can&apos;t use the canvas&apos;s own antialiasing, so draw
+        // at twice the screen&apos;s density and let the browser&apos;s downscale smooth the lines.
+        renderer.setPixelRatio(Math.min(window.devicePixelRatio * 2, 3));
+        renderer.setClearColor(0x000000, 0);
+        renderer.domElement.classList.add(&quot;hrun-pre&quot;);
+        stage.prepend(renderer.domElement);
+
+        const scene  = new THREE.Scene();
+        const camera = new THREE.PerspectiveCamera(CAMERA.fov, 1, 0.1, 50);
+
+        // Pass 1: the runner&apos;s view-space normals (as colour) and depth, off screen.
+        // Where nothing is drawn the alpha stays 0 and the depth at the far plane.
+        const target = new THREE.WebGLRenderTarget(1, 1, {
+            depthTexture: new THREE.DepthTexture(1, 1),
+        });
+        const normalMat = new THREE.MeshNormalMaterial();
+
+        // Pass 2: a full-screen quad that compares each pixel of pass 1 with its four
+        // neighbours (`width` pixels away) and draws the accent colour where the normal
+        // turns sharply or the depth jumps; transparent everywhere else.
+        const outlineMat = new THREE.ShaderMaterial({
+            uniforms: {
+                tNormal:  { value: target.texture },
+                tDepth:   { value: target.depthTexture },
+                uStep:    { value: new THREE.Vector2() },
+                uColor:   { value: new THREE.Color() },
+                uCrease:  { value: OUTLINE.crease },
+                uDepth:   { value: OUTLINE.depth },
+                uNear:    { value: camera.near },
+                uFar:     { value: camera.far },
+                // the floor: the camera (by reference, so always current), the line
+                // width in buffer pixels, how far the grid has slid, and FLOOR
+                uInvProj:  { value: camera.projectionMatrixInverse },
+                uCamWorld: { value: camera.matrixWorld },
+                uCamPos:   { value: camera.position },
+                uLineW:    { value: 1 },
+                uScroll:   { value: 0 },
+                uFloor:    { value: [FLOOR.tile, FLOOR.radius, FLOOR.fade, FLOOR.opacity] },
+            },
+            vertexShader: /* glsl */ `
+                varying vec2 vUv;
+                void main() {
+                    vUv = uv;
+                    gl_Position = vec4(position.xy, 0.0, 1.0);
+                }`,
+            fragmentShader: /* glsl */ `
+                #include &lt;packing&gt;
+                uniform sampler2D tNormal, tDepth;
+                uniform vec2 uStep;
+                uniform vec3 uColor;
+                uniform float uCrease, uDepth, uNear, uFar;
+                uniform mat4 uInvProj, uCamWorld;
+                uniform vec3 uCamPos;
+                uniform float uLineW, uScroll;
+                uniform vec4 uFloor;  // tile, radius, fade, opacity
+                varying vec2 vUv;
+
+                /** Distance from the camera at uv (the far plane where the runner isn&apos;t). */
+                float dist(vec2 uv) {
+                    return -perspectiveDepthToViewZ(texture2D(tDepth, uv).x, uNear, uFar);
+                }
+                /** The surface normal at uv, back from 0–1 colour to -1–1. */
+                vec3 normal(vec2 uv) {
+                    return texture2D(tNormal, uv).rgb * 2.0 - 1.0;
+                }
+
+                float d0;
+                vec3 n0;
+                float jump, crease;
+
+                /** Compares the neighbour at uv with the centre, keeping the biggest change. */
+                void neighbour(vec2 uv) {
+                    float d = dist(uv);
+                    jump = max(jump, abs(d - d0) / min(d, d0));
+                    crease = max(crease, 1.0 - dot(n0, normal(uv)));
+                }
+
+                void main() {
+                    // (four plain calls, not an array in a loop: some mobile drivers mishandle those)
+                    d0 = dist(vUv);
+                    n0 = normal(vUv);
+                    jump = 0.0;
+                    crease = 0.0;
+                    neighbour(vUv + vec2(uStep.x, 0.0));
+                    neighbour(vUv - vec2(uStep.x, 0.0));
+                    neighbour(vUv + vec2(0.0, uStep.y));
+                    neighbour(vUv - vec2(0.0, uStep.y));
+                    // creases only count on the runner (the empty background has no normal)
+                    float onRunner = step(d0, uFar * 0.99);
+                    float edge = max(
+                        smoothstep(uDepth, uDepth * 2.0, jump),
+                        onRunner * smoothstep(uCrease, uCrease * 1.5, crease)
+                    );
+
+                    // The floor: where this pixel&apos;s view ray meets the ground (y = 0),
+                    // a grid line there, clipped and faded around the runner, and
+                    // hidden wherever the runner is nearer. (No early return: fwidth
+                    // needs every pixel to run the same code.)
+                    vec4 farPt = uInvProj * vec4(vUv * 2.0 - 1.0, 1.0, 1.0);
+                    vec3 rayView = farPt.xyz / farPt.w;
+                    vec3 ray = (uCamWorld * vec4(rayView, 0.0)).xyz;
+                    float down = step(ray.y, -1e-4);
+                    float t = -uCamPos.y / min(ray.y, -1e-4);
+                    vec3 hit = uCamPos + t * ray;
+                    vec2 cell = vec2(hit.x, hit.z + uScroll) / uFloor.x;
+                    vec2 px = abs(fract(cell - 0.5) - 0.5) / fwidth(cell);  // pixels to the nearest line
+                    float line = clamp(uLineW * 0.5 + 0.5 - min(px.x, px.y), 0.0, 1.0);
+                    float circle = 1.0 - smoothstep(uFloor.y - uFloor.z, uFloor.y, length(hit.xz));
+                    float shown = step(-t * rayView.z, d0);  // the floor is nearer than the runner (or no runner)
+                    float floorA = down * line * circle * shown * uFloor.w;
+
+                    float a = max(edge, floorA);
+                    gl_FragColor = vec4(uColor * a, a);  // premultiplied, onto a clear canvas
+                }`,
+            depthTest: false,
+            depthWrite: false,
+            blending: THREE.NoBlending,
+        });
+        const screen = new THREE.Scene();
+        screen.add(new THREE.Mesh(new THREE.PlaneGeometry(2, 2), outlineMat));
+        const screenCam = new THREE.OrthographicCamera(-1, 1, 1, -1, 0, 1);
+
+        /**
+         * Picks up the theme&apos;s accent colour. The shader writes it straight to the
+         * canvas, so it goes in as plain sRGB, outside three&apos;s colour management.
+         */
+        function applyPalette() {
+            const [r, g, b] = resolveColor(&quot;var(--color-primary)&quot;);
+            outlineMat.uniforms.uColor.value.setRGB(r, g, b, THREE.LinearSRGBColorSpace);
+            requestFrame();
+        }
+
+        // ── The runner ──
+
+        let gltf;
+        try {
+            gltf = await new THREE.GLTFLoader().setMeshoptDecoder(THREE.MeshoptDecoder).loadAsync(MODEL_URL);
+        } catch (err) {
+            fallBack(&quot;the model failed to load&quot;, err);
+            return;
+        }
+        const runner = gltf.scene;
+        runner.traverse(obj =&gt; {
+            if (!obj.isMesh) return;
+            obj.material = normalMat;
+            obj.frustumCulled = false;  // the skinned pose strays outside the bind-pose bounds
+        });
+        scene.add(runner);
+
+        // Both gaits play at once, weighted by the blend; neither advances on its own
+        // (timeScale 0): each frame sets their times from one shared phase, so the
+        // blend between them is always mid-stride in both.
+        const mixer = new THREE.AnimationMixer(runner);
+        const gaits = GAITS.map(g =&gt; {
+            const clip = THREE.AnimationClip.findByName(gltf.animations, g.clip);
+            const action = mixer.clipAction(clip);
+            action.setEffectiveTimeScale(0).play();
+            return { action, duration: clip.duration, metres: g.metres };
+        });
+
+        // ── State ──
+
+        const blend = GAIT;
+        let phase = 0;           // 0–1 through the stride
+        let scroll = 0;          // metres the floor has slid back
+        const playing = !reduced;  // with reduced motion: a still pose
+        let azimuth = THREE.MathUtils.degToRad(VIEW_START);
+        let visible = false;
+        let frameId = 0;
+        let dead = false;        // gave up: the still frame stays
+        let last = performance.now();
+
+        /** Puts the camera on its circle around the runner, at the current angle. */
+        function placeCamera() {
+            camera.position.set(
+                Math.sin(azimuth + Math.PI / 2) * CAMERA.distance,
+                CAMERA.height,
+                Math.cos(azimuth + Math.PI / 2) * CAMERA.distance,
+            );
+            camera.lookAt(0, CAMERA.target, 0);
+        }
+
+        /** Poses the runner for the current phase and blend. */
+        function pose() {
+            for (const [i, g] of gaits.entries()) {
+                g.action.time = phase * g.duration;
+                g.action.setEffectiveWeight(i === 0 ? 1 - blend : blend);
+            }
+            mixer.update(0);
+            outlineMat.uniforms.uScroll.value = scroll;
+        }
+
+        /**
+         * One frame: advances the stride and the floor by the time since the last, then
+         * draws in two passes: normals and depth off screen, then the outline found in
+         * them, with the floor.
+         * @param {number} now The frame&apos;s timestamp (ms).
+         */
+        function frame(now) {
+            frameId = 0;
+            const dt = Math.min((now - last) / 1000, 0.1);
+            last = now;
+
+            if (playing) {
+                // The blended stride: its length and its time, so speed = metres / seconds.
+                const seconds = THREE.MathUtils.lerp(gaits[0].duration, gaits[1].duration, blend);
+                const metres  = THREE.MathUtils.lerp(gaits[0].metres,   gaits[1].metres,   blend);
+                phase = (phase + SPEED * dt / seconds) % 1;
+                scroll = (scroll + SPEED * dt * metres / seconds) % 1000;
+            }
+            pose();
+            placeCamera();
+            renderer.setRenderTarget(target);
+            renderer.render(scene, camera);
+            renderer.setRenderTarget(null);
+            renderer.render(screen, screenCam);
+            if (playing &amp;&amp; visible) requestFrame();
+        }
+
+        /** Asks for a frame (just one at a time). */
+        function requestFrame() {
+            if (!frameId &amp;&amp; !dead) frameId = requestAnimationFrame(frame);
+        }
+
+        /** Fits the canvas to the stage. */
+        function resize() {
+            const { width, height } = stage.getBoundingClientRect();
+            if (!width || !height) return;
+            renderer.setSize(width, height, false);
+            const px = renderer.getDrawingBufferSize(new THREE.Vector2());
+            target.setSize(px.x, px.y);
+            const step = OUTLINE.width * renderer.getPixelRatio();
+            outlineMat.uniforms.uStep.value.set(step / px.x, step / px.y);
+            outlineMat.uniforms.uLineW.value = step;
+            camera.aspect = width / height;
+            camera.updateProjectionMatrix();
+            requestFrame();
+        }
+        new ResizeObserver(resize).observe(stage);
+
+        // Only animate while on screen.
+        new IntersectionObserver(entries =&gt; {
+            visible = entries.some(e =&gt; e.isIntersecting);
+            last = performance.now();
+            if (visible) requestFrame();
+        }).observe(stage);
+
+        // Drag sideways to turn the view (vertical drags still scroll the page on touch).
+        let dragX = null;
+        stage.addEventListener(&quot;pointerdown&quot;, e =&gt; {
+            dragX = e.clientX;
+            stage.setPointerCapture(e.pointerId);
+            stage.classList.add(&quot;hrun-dragging&quot;);
+        });
+        stage.addEventListener(&quot;pointermove&quot;, e =&gt; {
+            if (dragX === null) return;
+            azimuth -= (e.clientX - dragX) * 0.01;
+            dragX = e.clientX;
+            requestFrame();
+        });
+        const endDrag = () =&gt; {
+            dragX = null;
+            stage.classList.remove(&quot;hrun-dragging&quot;);
+        };
+        stage.addEventListener(&quot;pointerup&quot;, endDrag);
+        stage.addEventListener(&quot;pointercancel&quot;, endDrag);
+
+        // Follow the theme: light / dark is an attribute on &lt;body&gt;, the hue a style on
+        // &lt;html&gt;. Read again once the site&apos;s 0.5s colour transition has finished too.
+        const repaint = () =&gt; { applyPalette(); setTimeout(applyPalette, 550); };
+        new MutationObserver(repaint).observe(document.body, { attributes: true, attributeFilter: [&quot;data-dark-mode&quot;] });
+        new MutationObserver(repaint).observe(document.documentElement, { attributes: true, attributeFilter: [&quot;style&quot;] });
+
+        // ── Go ──
+
+        applyPalette();
+        resize();
+        frame(performance.now());
+
+        // Check the first frame actually drew something before swapping out the still
+        // frame: read the canvas straight back (still valid within this task).
+        const gl = renderer.getContext();
+        const px = new Uint8Array(gl.drawingBufferWidth * gl.drawingBufferHeight * 4);
+        gl.readPixels(0, 0, gl.drawingBufferWidth, gl.drawingBufferHeight, gl.RGBA, gl.UNSIGNED_BYTE, px);
+        let drawn = 0;
+        for (let i = 3; i &lt; px.length &amp;&amp; !drawn; i += 4) if (px[i]) drawn++;
+        if (shaderError || !drawn) {
+            dead = true;
+            fallBack(shaderError ? `shader error: ${shaderError}` : &quot;the first frame came out blank&quot;);
+            return;
+        }
+
+        requestAnimationFrame(() =&gt; {
+            renderer.domElement.classList.remove(&quot;hrun-pre&quot;);
+            still.classList.add(&quot;hrun-gone&quot;);
+            still.setAttribute(&quot;aria-hidden&quot;, &quot;true&quot;);
+            hint.hidden = false;
+        });
+    }
+
+    // Fetch three.js and the model once the figure is close to the screen.
+    if (&quot;IntersectionObserver&quot; in window) {
+        const near = new IntersectionObserver(entries =&gt; {
+            if (!entries.some(e =&gt; e.isIntersecting)) return;
+            near.disconnect();
+            start().catch(err =&gt; fallBack(&quot;the 3D view failed&quot;, err));
+        }, { rootMargin: &quot;300px&quot; });
+        near.observe(root);
+    } else {
+        start().catch(err =&gt; fallBack(&quot;the 3D view failed&quot;, err));
+    }
+&lt;/script&gt;
 &lt;p&gt;A noteworthy ability of the Human species is to run for long, uninterrupted periods of time.
 Few species are better, and Humans are the only ape that is capable of it.&lt;/p&gt;
 &lt;p&gt;Among many others, specific traits which enable this include:&lt;/p&gt;
