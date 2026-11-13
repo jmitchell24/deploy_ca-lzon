@@ -8,7 +8,7 @@
       <generator>Zola</generator>
       <language>en</language>
       <atom:link href="https://lzon.ca/quotes/rss.xml" rel="self" type="application/rss+xml"/>
-      <lastBuildDate>Thu, 12 Nov 2026 12:00:00 +0000</lastBuildDate>
+      <lastBuildDate>Fri, 13 Nov 2026 12:00:00 +0000</lastBuildDate>
       <!-- Items. Quotes (their own section feed) list one quote each. Posts go through
            macros/feed.html, so this feed, atom.xml and pages.json agree: each item is titled
            as the site titles the post, carries its type as a <category>, and in the merged
@@ -21,6 +21,15 @@
       
       <!-- the merged feed leaves out types with `main_feed = false` (macros/feed.html) -->
       
+      <item>
+          <title>225. lzon.ca&#x2F;quotes</title>
+          <pubDate>Fri, 13 Nov 2026 12:00:00 +0000</pubDate>
+          <author>Lzon</author>
+          <link>https://lzon.ca/quotes/</link>
+          <guid isPermaLink="false">https://lzon.ca/quotes/#225</guid>
+          <category>quote</category>
+          <description>In times of tummult and discord bad men have most power; mental and moral excellence require pease and quietness.&lt;br/&gt;- Tacitus (Annals IV)</description>
+      </item>
       <item>
           <title>224. lzon.ca&#x2F;quotes</title>
           <pubDate>Thu, 12 Nov 2026 12:00:00 +0000</pubDate>
