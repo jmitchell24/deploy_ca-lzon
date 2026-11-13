@@ -186,8 +186,9 @@
     /* the common ancestors span both lines of descent, but not the full width */
     #hft > ul > li > .hft-person { max-width: 60%; }
 
-    .hft-name { display: block; font-weight: 600; }
+    .hft-name { display: flex; flex-wrap: wrap; justify-content: center; column-gap: .3em; font-weight: 600; white-space: nowrap; }
     .hft-role { display: block; font-size: .8em; opacity: .75; }
+    .hft-han  { white-space: nowrap; }
 
     /* the two CEOs: solid outline, so they stand out before anything is picked */
     .hft-ceo {
@@ -195,6 +196,10 @@
         /* the site's code block background (sass/lzon/_base.scss, pre) */
         background-color: color-mix(in srgb, var(--color-dark) 25%, transparent);
     }
+
+    /* han chinese chars */ 
+  
+
 
     /* ── picking: a person's line of descent lights up, everything else fades back ── */
 
@@ -281,12 +286,12 @@
         // the bold line, `role` the smaller line under it (plain text, no HTML), and
         // `ceo` gives the box a solid outline.
         const PEOPLE = {
-            "root":         { name: "Lo Chü • 羅取",          role: "Grandfather, Great-Grandfather b. [unknown]" },
-            "grandfather":  { name: "Lo Po-mu • 羅伯沐",      role: "Su's Grandfather b. 1921" },
-            "mother-huang": { name: "Lo Tsai-hsiu • 羅采秀",  role: "Huang's Mother b. 1939" },
-            "mother-su":    { name: "Lo Shu-ya • 羅淑雅",     role: "Su's Mother b. 1944" },
-            "jensen":       { name: "Jensen Huang • 黃仁勳",  role: "Co-founder, NVIDIA b. 1963", ceo: true },
-            "lisa":         { name: "Lisa Su • 蘇姿丰",       role: "Chair & CEO, AMD b. 1969",         ceo: true },
+            "root":         { name: "Lo Chü",       han:"羅取", role: "Grandfather, Great-Grandfather b. [unknown]" },
+            "grandfather":  { name: "Lo Po-mu",     han:"羅伯沐", role: "Su's Grandfather b. 1921" },
+            "mother-huang": { name: "Lo Tsai-hsiu", han:"羅采秀", role: "Huang's Mother b. 1939" },
+            "mother-su":    { name: "Lo Shu-ya",    han:"羅淑雅", role: "Su's Mother b. 1944" },
+            "jensen":       { name: "Jensen Huang", han:"黃仁勳", role: "Co-founder, NVIDIA b. 1963",    ceo: true },
+            "lisa":         { name: "Lisa Su",      han:"蘇姿丰", role: "Chair & CEO, AMD b. 1969",      ceo: true },
         };
 
         const root  = document.getElementById("hft");
@@ -298,16 +303,26 @@
          * @param {{name: string, role: string, ceo?: boolean}} text What the box says.
          * @returns {HTMLButtonElement}
          */
-        function makePerson({ name, role, ceo }) {
+       function makePerson({ name, han, role, ceo }) {
             const button = document.createElement("button");
             button.type = "button";
             button.className = ceo ? "hft-person hft-ceo" : "hft-person";
-            for (const [cls, str] of [["hft-name", name], ["hft-role", role]]) {
-                const span = document.createElement("span");
-                span.className = cls;
-                span.textContent = str;
-                button.append(span);
+
+            const nameEl = document.createElement("span");
+            nameEl.className = "hft-name";
+            nameEl.append(name);
+            if (han) {
+                const hanEl = document.createElement("span");
+                hanEl.className = "hft-han";
+                hanEl.textContent = `${han}`;
+                nameEl.append(hanEl);
             }
+
+            const roleEl = document.createElement("span");
+            roleEl.className = "hft-role";
+            roleEl.textContent = role;
+
+            button.append(nameEl, roleEl);
             return button;
         }
 

@@ -232,8 +232,9 @@
     /* the common ancestors span both lines of descent, but not the full width */
     #hft &gt; ul &gt; li &gt; .hft-person { max-width: 60%; }
 
-    .hft-name { display: block; font-weight: 600; }
+    .hft-name { display: flex; flex-wrap: wrap; justify-content: center; column-gap: .3em; font-weight: 600; white-space: nowrap; }
     .hft-role { display: block; font-size: .8em; opacity: .75; }
+    .hft-han  { white-space: nowrap; }
 
     /* the two CEOs: solid outline, so they stand out before anything is picked */
     .hft-ceo {
@@ -241,6 +242,10 @@
         /* the site&apos;s code block background (sass/lzon/_base.scss, pre) */
         background-color: color-mix(in srgb, var(--color-dark) 25%, transparent);
     }
+
+    /* han chinese chars */ 
+  
+
 
     /* ── picking: a person&apos;s line of descent lights up, everything else fades back ── */
 
@@ -327,12 +332,12 @@
         // the bold line, `role` the smaller line under it (plain text, no HTML), and
         // `ceo` gives the box a solid outline.
         const PEOPLE = {
-            &quot;root&quot;:         { name: &quot;Lo Chü • 羅取&quot;,          role: &quot;Grandfather, Great-Grandfather b. [unknown]&quot; },
-            &quot;grandfather&quot;:  { name: &quot;Lo Po-mu • 羅伯沐&quot;,      role: &quot;Su&apos;s Grandfather b. 1921&quot; },
-            &quot;mother-huang&quot;: { name: &quot;Lo Tsai-hsiu • 羅采秀&quot;,  role: &quot;Huang&apos;s Mother b. 1939&quot; },
-            &quot;mother-su&quot;:    { name: &quot;Lo Shu-ya • 羅淑雅&quot;,     role: &quot;Su&apos;s Mother b. 1944&quot; },
-            &quot;jensen&quot;:       { name: &quot;Jensen Huang • 黃仁勳&quot;,  role: &quot;Co-founder, NVIDIA b. 1963&quot;, ceo: true },
-            &quot;lisa&quot;:         { name: &quot;Lisa Su • 蘇姿丰&quot;,       role: &quot;Chair &amp; CEO, AMD b. 1969&quot;,         ceo: true },
+            &quot;root&quot;:         { name: &quot;Lo Chü&quot;,       han:&quot;羅取&quot;, role: &quot;Grandfather, Great-Grandfather b. [unknown]&quot; },
+            &quot;grandfather&quot;:  { name: &quot;Lo Po-mu&quot;,     han:&quot;羅伯沐&quot;, role: &quot;Su&apos;s Grandfather b. 1921&quot; },
+            &quot;mother-huang&quot;: { name: &quot;Lo Tsai-hsiu&quot;, han:&quot;羅采秀&quot;, role: &quot;Huang&apos;s Mother b. 1939&quot; },
+            &quot;mother-su&quot;:    { name: &quot;Lo Shu-ya&quot;,    han:&quot;羅淑雅&quot;, role: &quot;Su&apos;s Mother b. 1944&quot; },
+            &quot;jensen&quot;:       { name: &quot;Jensen Huang&quot;, han:&quot;黃仁勳&quot;, role: &quot;Co-founder, NVIDIA b. 1963&quot;,    ceo: true },
+            &quot;lisa&quot;:         { name: &quot;Lisa Su&quot;,      han:&quot;蘇姿丰&quot;, role: &quot;Chair &amp; CEO, AMD b. 1969&quot;,      ceo: true },
         };
 
         const root  = document.getElementById(&quot;hft&quot;);
@@ -344,16 +349,26 @@
          * @param {{name: string, role: string, ceo?: boolean}} text What the box says.
          * @returns {HTMLButtonElement}
          */
-        function makePerson({ name, role, ceo }) {
+       function makePerson({ name, han, role, ceo }) {
             const button = document.createElement(&quot;button&quot;);
             button.type = &quot;button&quot;;
             button.className = ceo ? &quot;hft-person hft-ceo&quot; : &quot;hft-person&quot;;
-            for (const [cls, str] of [[&quot;hft-name&quot;, name], [&quot;hft-role&quot;, role]]) {
-                const span = document.createElement(&quot;span&quot;);
-                span.className = cls;
-                span.textContent = str;
-                button.append(span);
+
+            const nameEl = document.createElement(&quot;span&quot;);
+            nameEl.className = &quot;hft-name&quot;;
+            nameEl.append(name);
+            if (han) {
+                const hanEl = document.createElement(&quot;span&quot;);
+                hanEl.className = &quot;hft-han&quot;;
+                hanEl.textContent = `${han}`;
+                nameEl.append(hanEl);
             }
+
+            const roleEl = document.createElement(&quot;span&quot;);
+            roleEl.className = &quot;hft-role&quot;;
+            roleEl.textContent = role;
+
+            button.append(nameEl, roleEl);
             return button;
         }
 
