@@ -13,7 +13,7 @@
   <generator uri="https://www.getzola.org/">Zola</generator>
 
   
-  <updated>2026-11-13T12:00:00Z</updated>
+  <updated>2026-11-14T12:00:00Z</updated>
 
   <!-- Entries. Quotes (their own section feed) list one quote each. Posts go through
        macros/feed.html, so this feed, rss.xml and pages.json agree: each entry is titled as
@@ -33,6 +33,16 @@
 
   <!-- the merged feed leaves out types with `main_feed = false` (macros/feed.html) -->
   
+  <entry>
+    <title>226. lzon.ca&#x2F;quotes</title>
+    <id>https://lzon.ca/quotes/#226</id>
+    <link href="https://lzon.ca/quotes/"/>
+    <published>2026-11-14T12:00:00Z</published>
+    <updated>2026-11-14T12:00:00Z</updated>
+    <author><name>Lzon</name></author>
+    <category term="quote"/>
+    <summary type="html">The history of the great events of the world is little more than a history of crime.&lt;br/&gt;- Voltaire</summary>
+  </entry>
   <entry>
     <title>225. lzon.ca&#x2F;quotes</title>
     <id>https://lzon.ca/quotes/#225</id>
