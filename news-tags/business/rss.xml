@@ -21,6 +21,8 @@
       
       <!-- the merged feed leaves out types with `main_feed = false` (macros/feed.html) -->
       
+        
+      
       <item>
           <title>Jensen Huang resigns as CEO of NVIDIA</title>
           <pubDate>Thu, 12 Nov 2026 12:00:00 +0000</pubDate>

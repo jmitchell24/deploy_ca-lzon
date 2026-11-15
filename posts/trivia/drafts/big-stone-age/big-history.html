@@ -3,7 +3,7 @@
      * Big history: a vertical scroll through the whole human story, from today at the
      * top to the first stone tools at the bottom, on a log scale (see the script).
      *
-     * Layout, left to right inside the track: the group bands (Stone Age / after),
+     * Layout, left to right inside the track: the group bands (see the data's group list),
      * the period bands, the axis with its labels, the leader lines, the events. The
      * header sticks to the top; its bottom edge is the reading line, and the readout
      * shows the exact year under it.
@@ -24,22 +24,29 @@
         --bht-fs-xs: calc(1.15rem / 1.44);
         --bht-fs-sm: calc(1.15rem / 1.2);
         --bht-fs-md: 1.15rem;
+        /* $font-size-h5: the step between md and lg */
+        --bht-fs-h5: calc(1.15rem * 1.2);
         --bht-fs-lg: calc(1.15rem * 1.44);
         --bht-border: max(2px, 0.12rem);
         --bht-radius: 0.3rem;
         --bht-lh-sm: 1.25;
         --bht-speed: .3s;
         --bht-mono: "CourierPrime", monospace;
+        /* $font-family-sans */
+        --bht-sans: "Montserrat", Tahoma, Geneva, sans-serif;
 
         /*
          * Columns, as shares of the width so they scale with it: the axis line down
-         * the middle; to its left the group band, the period band, and the axis
-         * labels (the rest of the left half); to its right the leader lines, then
-         * the events.
+         * the middle; to its left the progress bar (half the group band's width), the
+         * group band, then the period band running up to the axis (the axis labels sit
+         * over its right end); to its right the leader lines, then the events.
          */
         --bht-axis: 50%;
-        --bht-gw: 4%;
-        --bht-pw: 26%;
+        --bht-gw: 6%;
+        --bht-iw: calc(var(--bht-gw) / 2);
+        --bht-pw: calc(var(--bht-axis) - var(--bht-iw) - var(--bht-gw));
+        /* the axis labels' room at the period band's right end */
+        --bht-tick-room: 6rem;
         --bht-cw: var(--bht-lg);
         --bht-ev: calc(var(--bht-axis) + var(--bht-cw));
 
@@ -63,11 +70,12 @@
         /*
          * The page's own background (sass/lzon/_base.scss: --color-darker under the
          * noise tile on html::before), so the header hides the timeline scrolling under
-         * it but looks see-through. Fixed to the viewport so the browser paints it as
-         * it scrolls (a clip set from script lags on phones); the grain inside the
-         * header holds still while the page's scrolls, which reads the same.
+         * it but looks see-through. Plain CSS, not a clip set from script (that lagged on
+         * phones); and not background-attachment: fixed either, which mobile Chrome
+         * repaints only once a fast scroll stops. Stuck to the top, the header holds its
+         * grain still anyway.
          */
-        background: var(--color-darker) url("/img/noise-dark.png") repeat fixed;
+        background: var(--color-darker) url("/img/noise-dark.png") repeat;
         padding: var(--bht-sm) 0;
         border-bottom: var(--bht-border) solid var(--bht-line);
     }
@@ -76,7 +84,8 @@
     #bht.bht-open .bht-head {
         position: sticky;
         top: env(safe-area-inset-top, 0px);
-        border-bottom-color: var(--bht-lit);
+        /* the progress bar's colour, so the frame reads as one */
+        border-bottom-color: var(--color-dark);
     }
 
     .bht-year {
@@ -87,7 +96,40 @@
         white-space: nowrap;
         font-variant-numeric: tabular-nums;
     }
-    .bht-clock { text-align: right; }
+    /*
+     * The readout: a main row (the year, the clock time) over a subtext row (years
+     * ago, time to midnight), each with its left and right ends apart. Neither wraps
+     * (see the font sizes above); if text ever still doesn't fit, the right-hand side
+     * gives way with an ellipsis rather than push the page wide.
+     */
+    /*
+     * Each row's font scales with the readout's width (container units) so its longest
+     * text fits on one line: full size wherever there's room, smaller only where there
+     * isn't. The divisors are each row's widest text in em, plus a little slack:
+     * "3,297,974 BCE" + "11:59pm" (main) and "3,299,999 years ago" +
+     * "23 h 59 min 59 s to midnight" (subtext); the gap comes off first.
+     */
+    .bht-read { container-type: inline-size; }
+    .bht-read-row:first-child .bht-year {
+        font-size: min(var(--bht-fs-lg), (100cqi - var(--bht-md)) / 13.1);
+    }
+    .bht-read-row:last-child .bht-ago {
+        font-size: min(var(--bht-fs-sm), (100cqi - var(--bht-md)) / 26.6);
+    }
+    .bht-read-row {
+        display: flex;
+        justify-content: space-between;
+        align-items: baseline;
+        gap: var(--bht-md);
+    }
+    .bht-read-row > * { white-space: nowrap; }
+    .bht-read-row > :first-child { flex-shrink: 0; }
+    .bht-read-row > :last-child {
+        min-width: 0;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        text-align: right;
+    }
     .bht-ago { display: block; white-space: nowrap; font-variant-numeric: tabular-nums; }
     /* the buttons, in the bottom strip: centred, spread across it on phones */
     .bht-btns {
@@ -99,8 +141,9 @@
         padding-block: var(--bht-xs);
         box-sizing: border-box;
     }
-    /* square-ish: side padding to about the row's height (over btn-sm's !important padding) */
-    .bht-btns .btn { padding-inline: var(--bht-md) !important; }
+    /* square-ish: side padding to about the row's height, narrowing on a small screen so
+       the row fits (over btn-sm's !important padding) */
+    .bht-btns .btn { padding-inline: clamp(var(--bht-xs), 2.5vw, var(--bht-md)) !important; }
 
     .bht-swatch {
         flex-shrink: 0;
@@ -123,8 +166,8 @@
         z-index: 3;
         bottom: env(safe-area-inset-bottom, 0px);
         padding-bottom: 1.5em;
-        background: var(--color-darker) url("/img/noise-dark.png") repeat fixed;
-        border-top: var(--bht-border) solid var(--bht-lit);
+        background: var(--color-darker) url("/img/noise-dark.png") repeat;
+        border-top: var(--bht-border) solid var(--color-dark);
     }
     #bht.bht-open .bht-foot { display: block; }
 
@@ -136,13 +179,64 @@
     .bht-band {
         position: absolute;
         box-sizing: border-box;
-        border-top: var(--bht-border) solid var(--bht-bg);
         background: color-mix(in oklch, var(--bht-era) 22%, transparent);
         transition: background-color var(--bht-speed) ease;
     }
     .bht-band.bht-here { background: color-mix(in oklch, var(--bht-era) 40%, transparent); }
-    .bht-band-group { left: 0; width: var(--bht-gw); background: color-mix(in oklch, var(--bht-era) 45%, transparent); }
-    .bht-band-period { left: var(--bht-gw); width: var(--bht-pw); }
+    /* centred across the band: the same room either side of its name */
+    .bht-band-group {
+        left: var(--bht-iw);
+        width: var(--bht-gw);
+        display: flex;
+        justify-content: center;
+        align-items: flex-start;
+        background: color-mix(in oklch, var(--bht-era) 45%, transparent);
+    }
+    .bht-band-period { left: calc(var(--bht-iw) + var(--bht-gw)); width: var(--bht-pw); }
+
+    /*
+     * The progress column, down the far left: a bar held in view between the header
+     * and the bottom strip (--bht-head-h, --bht-foot-h: set by the script), filling
+     * from the top as the reading point goes from now to the oldest point.
+     */
+    .bht-progress {
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        width: var(--bht-iw);
+    }
+    .bht-progress-bar {
+        position: sticky;
+        top: var(--bht-head-h);
+        /*
+         * As tall as the screen can get (lvh: with the phone's address bar hidden),
+         * less the header: it runs on under the bottom strip, which hides the rest, so
+         * it always reaches the strip's line. (dvh would track the address bar, but
+         * mobile Chrome only updates it once a fast scroll stops, so the bar fell short
+         * mid-scroll.) The script fills only the visible part.
+         */
+        height: calc(100vh - var(--bht-head-h));
+        height: calc(100lvh - var(--bht-head-h));
+        max-height: 100%;
+        box-sizing: border-box;
+        overflow: hidden;
+        /* the empty part: the fill's colour (the site's meta border, --color-dark) at
+           half strength */
+        background: color-mix(in srgb, var(--color-dark) 50%, transparent);
+    }
+    .bht-progress-fill {
+        height: 100%;
+        background: var(--color-dark);
+        transform-origin: top;
+        transform: scaleY(0);
+    }
+    /* left-aligned, set in as far as the group name sits in its band (--bht-group-gap,
+       measured by the script), and clear of the axis labels at the right end */
+    .bht-band-period .bht-band-label {
+        padding-left: var(--bht-group-gap, var(--bht-sm));
+        padding-right: calc(var(--bht-sm) + var(--bht-tick-room));
+    }
 
     /* each band's label rides along at the top of the view while its band is on screen */
     .bht-band-label {
@@ -150,17 +244,20 @@
         top: calc(var(--bht-head-h) + var(--bht-sm));
         display: block;
         padding: var(--bht-xs) var(--bht-sm) var(--bht-sm);
-        font-size: var(--bht-fs-sm);
+        /* sans, as the site's .text-sans-serif sets it (no serif size adjust) */
+        font-family: var(--bht-sans);
+        font-size-adjust: none;
+        font-size: var(--bht-fs-h5);
         line-height: var(--bht-lh-sm);
         color: var(--bht-text);
     }
     .bht-band-label b { display: block; font-weight: 600; }
-    .bht-band-label small { display: block; margin-top: var(--bht-xs); font-size: var(--bht-fs-xs); color: var(--bht-mute); }
+    .bht-band-label small { display: block; margin-top: var(--bht-xs); font-size: var(--bht-fs-sm); color: var(--bht-mute); }
     /* a band too short for its label (the script decides): one small line, no note, not sticky */
     .bht-band.bht-tiny .bht-band-label {
         position: static;
         padding: 0 var(--bht-sm);
-        font-size: var(--bht-fs-xs);
+        font-size: var(--bht-fs-sm);
         white-space: nowrap;
     }
     .bht-band.bht-tiny .bht-band-label small { display: none; }
@@ -171,7 +268,7 @@
         padding: var(--bht-sm) 0;
         writing-mode: vertical-rl;
         font-weight: 600;
-        font-size: var(--bht-fs-xs);
+        font-size: var(--bht-fs-md);
         letter-spacing: .05em;
         text-transform: uppercase;
     }
@@ -211,12 +308,13 @@
     .bht-tick-r {
         position: absolute;
         left: calc(var(--bht-axis) + var(--bht-xs));
+        /* never past the track's right edge: wraps there on a narrow screen */
+        right: 0;
         transform: translateY(-50%);
         font-family: var(--bht-mono);
         font-size: var(--bht-fs-xs);
         line-height: var(--bht-lh-sm);
         color: var(--bht-mute);
-        white-space: nowrap;
         font-variant-numeric: tabular-nums;
     }
     .bht-tick.bht-major, .bht-tick-r.bht-major { color: var(--bht-text); font-weight: 700; }
@@ -280,17 +378,9 @@
 
     /* the site's md breakpoint ($breakpoints-md, break-max-width(md)) */
     @media (max-width: 768px) {
-        #bht { --bht-cw: var(--bht-md); }
-        .bht-year { font-size: var(--bht-fs-md); }
-        /* the clock side wraps rather than run off the edge */
-        .bht-clock { min-width: 0; }
-        .bht-clock :is(.bht-year, .bht-ago) { white-space: normal; }
         /* the buttons spread across the bottom strip, clear of the site's settings
            button fixed in the bottom-right corner */
         .bht-btns { justify-content: space-between; gap: 0; padding-right: var(--bht-xl); }
-        /* narrower period bands: smaller names, no note */
-        .bht-band-period .bht-band-label { font-size: var(--bht-fs-xs); }
-        .bht-band-period .bht-band-label small { display: none; }
     }
 
     @media (prefers-reduced-motion: reduce) {
@@ -301,15 +391,17 @@
 <!-- The header and an empty track: the script builds the bands, axis and events. -->
 <div id="bht">
     <div class="bht-head">
-        <div class="flex-row gap-md text-sans-serif">
-            <div>
+        <!-- two rows, each across the full width: the year and (right) the same moment
+             if all of it were one 24-hour day ending now at midnight; then under each, its
+             subtext -->
+        <div class="bht-read text-sans-serif">
+            <div class="bht-read-row">
                 <span class="bht-year text-base">&nbsp;</span>
-                <span class="bht-ago text-sm text-soft">&nbsp;</span>
-            </div>
-            <!-- the same moment if all of it were one 24-hour day ending now at midnight -->
-            <div class="bht-clock ml-auto">
                 <span class="bht-year bht-clock-time text-base">&nbsp;</span>
-                <span class="bht-ago bht-clock-left text-sm text-soft">&nbsp;</span>
+            </div>
+            <div class="bht-read-row">
+                <span class="bht-ago text-soft">&nbsp;</span>
+                <span class="bht-ago bht-clock-left text-soft">&nbsp;</span>
             </div>
         </div>
         <div class="bht-legend flex-row flex-wrap gap-xs"></div>
@@ -359,46 +451,25 @@
         const LABEL_GAP = 8;
 
         // ── Data ────────────────────────────────────────────────────────────────
-        // Edit here. A point in time is either { ago: years before now } or
-        // { year: n } with BCE negative (-3200 is 3200 BCE). Deep-time dates read
-        // best as `ago`, historical ones as `year`.
+        // The periods, groups and events are in big-history-data.html, included just
+        // above this file: a hidden block of lists, read here. Its comment says how
+        // to edit them.
 
         /**
          * A period on the timeline.
          * @typedef {object} Period
-         * @property {string} name      Its name, on the band and in the header.
-         * @property {string} [group]   The group band it belongs to (consecutive periods with the same group share one).
+         * @property {string} name      Its name, on the band.
+         * @property {string} [group]   The key of the group band it belongs to (consecutive periods with the same group share one).
          * @property {{ago?: number, year?: number}} end When it ends; it starts where the previous one ends (the first at START_AGO).
          * @property {string} color     Any CSS colour.
-         * @property {string} [note]    A line under the name on wide screens.
+         * @property {string} [note]    A line under the name.
          */
-
-        /** @type {Period[]} The periods, oldest first; the last one runs to now. */
-        const PERIODS = [
-            { name: "Lower Paleolithic",   group: "Stone Age", end: { ago: 300_000 }, color: "oklch(55% 0.09 60)",  note: "Stone tools, fire, Homo erectus" },
-            { name: "Middle Paleolithic",  group: "Stone Age", end: { ago: 50_000 },  color: "oklch(62% 0.10 70)",  note: "Neanderthals, early Homo sapiens" },
-            { name: "Upper Paleolithic",   group: "Stone Age", end: { ago: 12_000 },  color: "oklch(70% 0.11 80)",  note: "Cave art, the spread across the world" },
-            { name: "Neolithic",           group: "Stone Age", end: { year: -3300 },  color: "oklch(66% 0.12 140)", note: "Farming, villages, pottery" },
-            { name: "Bronze Age",          group: "After the Stone Age", end: { year: -1200 },  color: "oklch(64% 0.14 45)",  note: "Writing, cities, empires" },
-            { name: "Iron Age",            group: "After the Stone Age", end: { year: -500 },   color: "oklch(58% 0.05 250)" },
-            { name: "Classical antiquity", group: "After the Stone Age", end: { year: 500 },    color: "oklch(62% 0.12 300)" },
-            { name: "Middle Ages",         group: "After the Stone Age", end: { year: 1500 },   color: "oklch(58% 0.13 25)" },
-            { name: "Early modern",        group: "After the Stone Age", end: { year: 1800 },   color: "oklch(64% 0.10 200)" },
-            { name: "Modern",              group: "After the Stone Age", end: { year: 1945 },   color: "oklch(60% 0.12 265)" },
-            { name: "Contemporary",        group: "After the Stone Age", end: { ago: 0 },       color: "oklch(70% 0.12 170)" },
-        ];
-
-        /** Colours for the group bands, by group name. */
-        const GROUP_COLORS = {
-            "Stone Age": "oklch(60% 0.09 70)",
-            "After the Stone Age": "oklch(60% 0.10 260)",
-        };
 
         /**
          * An event on the timeline.
          * @typedef {object} TimelineEvent
          * @property {number} [ago]     When, in years ago (shown as "c. … years ago").
-         * @property {number} [year]    Or when, as a year (BCE negative; fractions place it within the year).
+         * @property {number} [year]    Or when, as a year (BCE negative; fractions place it within the year; data-date gives one).
          * @property {boolean} [approx] For a `year`: prefix "c.".
          * @property {string} what      What happened.
          * @property {string} [where]   Where (a smaller line).
@@ -406,64 +477,77 @@
          * @property {boolean} [now]    The "you are here" marker: bold.
          */
 
+        /** The data block (big-history-data.html). */
+        const dataEl = document.getElementById("bht-data");
+        if (!dataEl) console.error("big-history.html: no #bht-data (include big-history-data.html above it)");
+
         /**
-         * @type {TimelineEvent[]} The events, any order. These are picked to sit about
-         * evenly on the log scale: one every ~0.13 powers of ten (each ~1.35× further
-         * back than the last), from today to the first stone tools.
+         * The items of one of the data block's lists.
+         * @param {string} name The list's class, after "bht-data-".
+         * @returns {HTMLLIElement[]}
          */
-        const EVENTS = [
-            { ago: 0, when: "Today", what: "You are here", now: true },
-            { year: 2026.45, what: "FIFA World Cup", where: "Canada, Mexico and the United States" },
-            { year: 2026.1,  what: "Winter Olympics", where: "Milan and Cortina, Italy" },
-            { year: 2025.35, what: "Leo XIV, the first American pope", where: "Vatican City" },
-            { year: 2024.57, what: "Summer Olympics", where: "Paris" },
-            { year: 2023.35, what: "Coronation of Charles III", where: "London" },
-            { year: 2021.98, what: "James Webb Space Telescope launches" },
-            { year: 2019.27, what: "First image of a black hole", where: "Event Horizon Telescope" },
-            { year: 2016.2,  what: "AlphaGo beats Lee Sedol at Go", where: "Seoul" },
-            { year: 2012.5,  what: "Higgs boson discovered", where: "CERN" },
-            { year: 2007.02, what: "The first iPhone" },
-            { year: 2000.84, what: "First crew aboard the International Space Station" },
-            { year: 1991.6,  what: "The World Wide Web goes public" },
-            { year: 1978.56, what: "First baby born through IVF", where: "Oldham, England" },
-            { year: 1961.28, what: "Yuri Gagarin, the first person in space" },
-            { year: 1939.67, what: "Second World War begins" },
-            { year: 1905.5,  what: "Einstein's special relativity" },
-            { year: 1859.9,  what: "On the Origin of Species" },
-            { year: 1804.9,  what: "Napoleon crowned emperor", where: "Paris" },
-            { year: 1727.2,  what: "Isaac Newton dies", where: "London" },
-            { year: 1623.9,  what: "Shakespeare's First Folio", where: "London" },
-            { year: 1492.8,  what: "Columbus reaches the Americas" },
-            { year: 1295,    what: "Marco Polo returns to Venice" },
-            { year: 1021,    what: "Norse settlers at L'Anse aux Meadows", where: "Newfoundland" },
-            { year: 691,     what: "Dome of the Rock completed", where: "Jerusalem" },
-            { year: 212,     what: "Rome grants citizenship to all free men in the empire" },
-            { year: -431,    what: "Peloponnesian War begins", where: "Greece" },
-            { year: -1274,   what: "Battle of Kadesh", where: "Syria" },
-            { year: -2560, approx: true, what: "Great Pyramid of Giza", where: "Egypt" },
-            { year: -4100, approx: true, what: "Oldest known winery", where: "Areni-1 cave, Armenia" },
-            { year: -6150, approx: true, what: "Storegga Slide tsunami", where: "North Sea" },
-            { year: -9000, approx: true, what: "Farming begins", where: "Fertile Crescent" },
-            { ago: 14_200,    what: "Earliest known dog buried with people", where: "Bonn-Oberkassel, Germany" },
-            { ago: 20_000,    what: "Earliest known pottery", where: "Xianrendong, China" },
-            { ago: 26_000,    what: "Last Glacial Maximum: ice sheets at their largest" },
-            { ago: 36_000,    what: "Chauvet Cave paintings", where: "France" },
-            { ago: 51_200,    what: "Oldest known figurative cave art", where: "Leang Karampuang, Sulawesi" },
-            { ago: 65_000,    what: "People reach Australia", where: "Madjedbebe, Northern Territory" },
-            { ago: 90_000,    what: "Barbed bone harpoons", where: "Katanda, DR Congo" },
-            { ago: 120_000,   what: "Early Homo sapiens burials", where: "Skhul and Qafzeh, Israel" },
-            { ago: 164_000,   what: "Shellfish gathering and ochre use", where: "Pinnacle Point, South Africa" },
-            { ago: 210_000,   what: "Earliest Homo sapiens outside Africa (disputed)", where: "Apidima Cave, Greece" },
-            { ago: 300_000,   what: "Earliest known Homo sapiens", where: "Jebel Irhoud, Morocco" },
-            { ago: 400_000,   what: "Habitual use of fire", where: "Qesem Cave, Israel" },
-            { ago: 500_000,   what: "Earliest known hafted spear points", where: "Kathu Pan, South Africa" },
-            { ago: 780_000,   what: "Hearths", where: "Gesher Benot Ya'aqov, Israel" },
-            { ago: 1_000_000, what: "Earliest evidence of controlled fire", where: "Wonderwerk Cave, South Africa" },
-            { ago: 1_400_000, what: "Hand axe made of bone", where: "Konso, Ethiopia" },
-            { ago: 1_800_000, what: "Hominins reach Eurasia", where: "Dmanisi, Georgia" },
-            { ago: 2_400_000, what: "Homo habilis", where: "East Africa" },
-            { ago: 3_300_000, what: "Oldest known stone tools", where: "Lomekwi, Kenya" },
-        ];
+        const dataItems = name => [...(dataEl?.querySelectorAll(`.bht-data-${name} > li`) ?? [])];
+
+        /**
+         * A number from a data attribute, or undefined if it isn't there.
+         * @param {HTMLElement} li
+         * @param {string} key The attribute, after "data-" (in dataset form: "endAgo").
+         * @returns {number | undefined}
+         */
+        const num = (li, key) => (li.dataset[key] === undefined ? undefined : Number(li.dataset[key]));
+
+        /**
+         * A "yyyy-mm-dd" date as a fractional year (so 2026-07-02 is about 2026.5);
+         * undefined if there's no date. A leading "-" is BCE, on the same footing as
+         * data-year (-3200-01-01 is the start of 3200 BCE).
+         * @param {string | undefined} date
+         * @returns {number | undefined}
+         */
+        function dateYear(date) {
+            if (date === undefined) return undefined;
+            const m = /^(-?)(\d{4,})-(\d{2})-(\d{2})$/.exec(date.trim());
+            if (!m) {
+                console.error(`big-history.html: bad date "${date}" (want yyyy-mm-dd)`);
+                return undefined;
+            }
+            const year = Number(m[1] + m[2]);
+            // Date.UTC treats years 0–99 as 1900s: set the year separately
+            const at = (y, mo, d) => { const t = new Date(Date.UTC(2000, mo, d)); t.setUTCFullYear(y); return t.getTime(); };
+            const start = at(year, 0, 1);
+            return year + (at(year, Number(m[3]) - 1, Number(m[4])) - start) / (at(year + 1, 0, 1) - start);
+        }
+
+        /**
+         * An item's child text, trimmed, or undefined if there's none.
+         * @param {HTMLElement} li
+         * @param {string} tag
+         * @returns {string | undefined}
+         */
+        const text = (li, tag) => li.querySelector(tag)?.textContent.trim() || undefined;
+
+        /** @type {Period[]} The periods, oldest first; the last one runs to now. */
+        const PERIODS = dataItems("periods").map(li => ({
+            name: text(li, "b") ?? "",
+            group: li.dataset.group,
+            end: li.dataset.endAgo !== undefined ? { ago: num(li, "endAgo") } : { year: num(li, "endYear") ?? dateYear(li.dataset.endDate) },
+            color: li.dataset.color,
+            note: text(li, "small"),
+        }));
+
+        /** The group bands' labels and colours, by key (a period's data-group). */
+        const GROUPS = Object.fromEntries(dataItems("groups").map(li =>
+            [li.dataset.key, { name: li.textContent.trim(), color: li.dataset.color }]));
+
+        /** @type {TimelineEvent[]} The events, any order. */
+        const EVENTS = dataItems("events").map(li => ({
+            ago: num(li, "ago"),
+            year: num(li, "year") ?? dateYear(li.dataset.date),
+            approx: "approx" in li.dataset,
+            what: text(li, "b") ?? "",
+            where: text(li, "small"),
+            when: li.dataset.when,
+            now: "now" in li.dataset,
+        }));
 
         // ── Time ────────────────────────────────────────────────────────────────
         // Positions are in "x": a fractional calendar year, BCE negative. There's no
@@ -611,8 +695,12 @@
         const groups = [];
         for (const p of periods) {
             const last = groups.at(-1);
-            if (p.group && last?.name === p.group) last.to = p.to;
-            else if (p.group) groups.push({ name: p.group, from: p.from, to: p.to, color: GROUP_COLORS[p.group] ?? p.color });
+            if (p.group && last?.key === p.group) last.to = p.to;
+            else if (p.group) {
+                const g = GROUPS[p.group];
+                if (!g) console.error(`big-history.html: no group with data-key "${p.group}"`);
+                groups.push({ key: p.group, name: g?.name ?? p.group, from: p.from, to: p.to, color: g?.color ?? p.color });
+            }
         }
 
         /**
@@ -723,6 +811,9 @@
         const endBands = [];
         let axisEl = null;
 
+        /** The progress bar's fill (see .bht-progress). */
+        let progressFill = null;
+
         /** Builds the bands, axis and events. */
         function build() {
             const frag = document.createDocumentFragment();
@@ -732,6 +823,13 @@
                 bands.push({ band, p });
                 frag.append(band);
             }
+
+            const progress = el("div", "bht-progress");
+            const bar = el("div", "bht-progress-bar");
+            progressFill = el("div", "bht-progress-fill");
+            bar.append(progressFill);
+            progress.append(bar);
+            frag.append(progress);
 
             const axis = el("div", "bht-axis");
             axis.style.height = `${SPAN_PX + 2 * PAD}px`;
@@ -780,6 +878,14 @@
             for (let i = 1; i < items.length; i++) {
                 const prev = items[i - 1];
                 items[i].top = Math.max(items[i].top, prev.top + prev.h + LABEL_GAP);
+            }
+
+            // The period names line up with the group name's left gap (it's centred in
+            // its band, so the gap depends on the band's width).
+            const group = track.querySelector(".bht-band-group");
+            if (group) {
+                const gap = group.firstElementChild.getBoundingClientRect().left - group.getBoundingClientRect().left;
+                root.style.setProperty("--bht-group-gap", `${gap}px`);
             }
 
             // Bands too short for their label get a small one-line label instead, and
@@ -903,6 +1009,16 @@
             const x = readX();
             if (window.innerWidth === laidOutWidth && root.classList.contains("bht-open")) {
                 lastRead = { x, inside: reach().line > 0 };
+            }
+            if (progressFill) {
+                const frac = Math.min(1, Math.max(0, (toPx(x) - PAD) / SPAN_PX));
+                // The bar runs on under the bottom strip (and, at the very end, up under the
+                // header): fill the part between their lines, as if that were all of it.
+                const bar = progressFill.parentElement.getBoundingClientRect();
+                const from = Math.max(bar.top, head.getBoundingClientRect().bottom);
+                const to = Math.min(bar.bottom, foot.getBoundingClientRect().top);
+                const fill = (from - bar.top) + frac * Math.max(0, to - from);
+                progressFill.style.transform = `scaleY(${bar.height ? fill / bar.height : 0})`;
             }
             const ago = NOW - x;
             yearEl.textContent = yearText(x);
@@ -1106,9 +1222,10 @@
 
         // ── Open / collapse ─────────────────────────────────────────────────────
 
-        /** Sets --bht-head-h, for the sticky band labels. */
+        /** Sets --bht-head-h and --bht-foot-h, for the sticky band labels and progress bar. */
         function measureHead() {
             root.style.setProperty("--bht-head-h", `${head.offsetHeight}px`);
+            root.style.setProperty("--bht-foot-h", `${foot.offsetHeight}px`);
         }
 
         /** Opens the timeline (building it the first time). */
@@ -1143,9 +1260,13 @@
             }, 150);
         });
         document.fonts?.ready.then(() => { measureHead(); layout(); update(); });
-        // the header's height changes with its text (the clock wraps on phones): keep
-        // the sticky band labels clear of it
-        if ("ResizeObserver" in window) new ResizeObserver(measureHead).observe(head);
+        // the header's and bottom strip's heights change with their text: keep the
+        // sticky band labels and the progress bar between them
+        if ("ResizeObserver" in window) {
+            const watch = new ResizeObserver(measureHead);
+            watch.observe(head);
+            watch.observe(foot);
+        }
 
         open();
     })();

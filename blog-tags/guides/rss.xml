@@ -21,6 +21,8 @@
       
       <!-- the merged feed leaves out types with `main_feed = false` (macros/feed.html) -->
       
+        
+      
       <item>
           <title>How C++20 improved the for-loop syntax</title>
           <pubDate>Sat, 11 Jul 2026 12:00:00 +0000</pubDate>

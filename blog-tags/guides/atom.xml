@@ -31,6 +31,8 @@
 
   <!-- the merged feed leaves out types with `main_feed = false` (macros/feed.html) -->
   
+    
+  
   <entry>
     <title>How C++20 improved the for-loop syntax</title>
     <id>https://lzon.ca/posts/blog/cpp-for-range-init/</id>

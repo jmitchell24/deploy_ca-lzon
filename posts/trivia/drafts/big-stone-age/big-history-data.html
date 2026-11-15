@@ -1,0 +1,97 @@
+<!--
+  The data for big-history.html, as markup: it's included just above it, and its
+  script reads this (hidden) block. Edit here.
+
+  Dates, one of: data-ago="years before now"; data-year="n" (BCE negative, so -3200
+  is 3200 BCE; a fraction places it within the year); or data-date="yyyy-mm-dd"
+  (placed on that day; the label still shows just the year). Deep time reads best
+  as ago. Periods take the same three as data-end-ago / data-end-year / data-end-date.
+
+  Groups: the bands down the far left. The <li> text is the band's label, data-key
+    the name periods use for it (data-group), data-color any CSS colour.
+  Periods: oldest first. Each starts where the one before ends; data-end-ago or
+    data-end-year says when it ends (the last runs to now). data-group is its
+    group's data-key (consecutive periods in one group share a band). <b> is the name, <small>
+    an optional note under it.
+  Events: any order. <b> is what happened, <small> an optional where.
+    data-approx prefixes the date with "c.", data-when replaces the date text, and
+    data-now marks "you are here" (bold).
+-->
+<div id="bht-data" hidden>
+    <ol class="bht-data-groups">
+        <li data-key="after" data-color="oklch(60% 0.09 70)">After Agriculture</li>
+        <li data-key="before" data-color="oklch(60% 0.10 260)">Before Agriculture</li>
+    </ol>
+
+    <ol class="bht-data-periods">
+        <li data-group="before" data-end-ago="300000" data-color="oklch(55% 0.09 60)"><b>Lower Paleolithic</b> <small>Stone tools, fire, Homo erectus</small></li>
+        <li data-group="before" data-end-ago="50000" data-color="oklch(62% 0.10 70)"><b>Middle Paleolithic</b> <small>Neanderthals, early Homo sapiens</small></li>
+        <li data-group="before" data-end-ago="12000" data-color="oklch(70% 0.11 80)"><b>Upper Paleolithic</b> <small>Cave art, the spread across the world</small></li>
+        <li data-group="before" data-end-year="-3300" data-color="oklch(66% 0.12 140)"><b>Neolithic</b> <small>Farming, villages, pottery</small></li>
+        <li data-group="after" data-end-year="-1200" data-color="oklch(64% 0.14 45)"><b>Bronze Age</b> <small>Writing, cities, empires</small></li>
+        <li data-group="after" data-end-year="-500" data-color="oklch(58% 0.05 250)"><b>Iron Age</b></li>
+        <li data-group="after" data-end-year="500" data-color="oklch(62% 0.12 300)"><b>Classical antiquity</b></li>
+        <li data-group="after" data-end-year="1500" data-color="oklch(58% 0.13 25)"><b>Middle Ages</b></li>
+        <li data-group="after" data-end-year="1800" data-color="oklch(64% 0.10 200)"><b>Early modern</b></li>
+        <li data-group="after" data-end-year="1945" data-color="oklch(60% 0.12 265)"><b>Modern</b></li>
+        <li data-group="after" data-end-ago="0" data-color="oklch(70% 0.12 170)">
+            <b>Contemporary</b>
+            <small>The era of internet memes, Orange colored Presidents and Sentient word-guessing asdf. </small>
+        </li>
+    </ol>
+
+    <!-- picked to sit about evenly on the log scale: each ~1.35× further back than the last -->
+    <ol class="bht-data-events">
+        <li data-ago="0" data-when="Today" data-now><b>You are here</b></li>
+        <li data-date="2026-07-19"><b>FIFA World Cup</b> <small>Canada, Mexico and the United States</small></li>
+        <li data-date="2026-02-06"><b>Winter Olympics</b> <small>Milan and Cortina, Italy</small></li>
+        <li data-date="2025-05-08"><b>Leo XIV, the first American pope</b> <small>Vatican City</small></li>
+        <li data-date="2024-07-26"><b>Summer Olympics</b> <small>Paris</small></li>
+        <li data-date="2023-05-06"><b>Coronation of Charles III</b> <small>London</small></li>
+        <li data-date="2021-12-25"><b>James Webb Space Telescope launches</b></li>
+        <li data-date="2019-04-10"><b>First image of a black hole</b> <small>Event Horizon Telescope</small></li>
+        <li data-date="2016-03-12"><b>AlphaGo beats Lee Sedol at Go</b> <small>Seoul</small></li>
+        <li data-date="2012-07-04"><b>Higgs boson discovered</b> <small>CERN</small></li>
+        <li data-date="2007-01-09"><b>The first iPhone</b></li>
+        <li data-date="2000-11-02"><b>First crew aboard the International Space Station</b></li>
+        <li data-date="1991-08-06"><b>The World Wide Web goes public</b></li>
+        <li data-date="1978-07-25"><b>First baby born through IVF</b> <small>Oldham, England</small></li>
+        <li data-date="1961-04-12"><b>Yuri Gagarin, the first person in space</b></li>
+        <li data-date="1939-09-01"><b>Second World War begins</b></li>
+        <li data-date="1905-09-26"><b>Einstein's special relativity</b></li>
+        <li data-date="1859-11-24"><b>On the Origin of Species</b></li>
+        <li data-date="1804-12-02"><b>Napoleon crowned emperor</b> <small>Paris</small></li>
+        <li data-date="1727-03-31"><b>Isaac Newton dies</b> <small>London</small></li>
+        <li data-year="1623"><b>Shakespeare's First Folio</b> <small>London</small></li>
+        <li data-date="1492-10-12"><b>Columbus reaches the Americas</b></li>
+        <li data-year="1295"><b>Marco Polo returns to Venice</b></li>
+        <li data-year="1021"><b>Norse settlers at L'Anse aux Meadows</b> <small>Newfoundland</small></li>
+        <li data-year="691"><b>Dome of the Rock completed</b> <small>Jerusalem</small></li>
+        <li data-year="212"><b>Rome grants citizenship to all free men in the empire</b></li>
+        <li data-year="-431"><b>Peloponnesian War begins</b> <small>Greece</small></li>
+        <li data-year="-1274"><b>Battle of Kadesh</b> <small>Syria</small></li>
+        <li data-year="-2560" data-approx><b>Great Pyramid of Giza</b> <small>Egypt</small></li>
+        <li data-year="-4100" data-approx><b>Oldest known winery</b> <small>Areni-1 cave, Armenia</small></li>
+        <li data-year="-6150" data-approx><b>Storegga Slide tsunami</b> <small>North Sea</small></li>
+        <li data-year="-9000" data-approx><b>Farming begins</b> <small>Fertile Crescent</small></li>
+        <li data-ago="14200"><b>Earliest known dog buried with people</b> <small>Bonn-Oberkassel, Germany</small></li>
+        <li data-ago="20000"><b>Earliest known pottery</b> <small>Xianrendong, China</small></li>
+        <li data-ago="26000"><b>Last Glacial Maximum: ice sheets at their largest</b></li>
+        <li data-ago="36000"><b>Chauvet Cave paintings</b> <small>France</small></li>
+        <li data-ago="51200"><b>Oldest known figurative cave art</b> <small>Leang Karampuang, Sulawesi</small></li>
+        <li data-ago="65000"><b>People reach Australia</b> <small>Madjedbebe, Northern Territory</small></li>
+        <li data-ago="90000"><b>Barbed bone harpoons</b> <small>Katanda, DR Congo</small></li>
+        <li data-ago="120000"><b>Early Homo sapiens burials</b> <small>Skhul and Qafzeh, Israel</small></li>
+        <li data-ago="164000"><b>Shellfish gathering and ochre use</b> <small>Pinnacle Point, South Africa</small></li>
+        <li data-ago="210000"><b>Earliest Homo sapiens outside Africa (disputed)</b> <small>Apidima Cave, Greece</small></li>
+        <li data-ago="300000"><b>Earliest known Homo sapiens</b> <small>Jebel Irhoud, Morocco</small></li>
+        <li data-ago="400000"><b>Habitual use of fire</b> <small>Qesem Cave, Israel</small></li>
+        <li data-ago="500000"><b>Earliest known hafted spear points</b> <small>Kathu Pan, South Africa</small></li>
+        <li data-ago="780000"><b>Hearths</b> <small>Gesher Benot Ya'aqov, Israel</small></li>
+        <li data-ago="1000000"><b>Earliest evidence of controlled fire</b> <small>Wonderwerk Cave, South Africa</small></li>
+        <li data-ago="1400000"><b>Hand axe made of bone</b> <small>Konso, Ethiopia</small></li>
+        <li data-ago="1800000"><b>Hominins reach Eurasia</b> <small>Dmanisi, Georgia</small></li>
+        <li data-ago="2400000"><b>Homo habilis</b> <small>East Africa</small></li>
+        <li data-ago="3300000"><b>Oldest known stone tools</b> <small>Lomekwi, Kenya</small></li>
+    </ol>
+</div>
