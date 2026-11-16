@@ -13,9 +13,9 @@
     data-end-year says when it ends (the last runs to now). data-group is its
     group's data-key (consecutive periods in one group share a band). <b> is the name, <small>
     an optional note under it.
-  Events: any order. <b> is what happened, <small> an optional where.
-    data-approx prefixes the date with "c.", data-when replaces the date text, and
-    data-now marks "you are here" (bold).
+  Events: any order. <b> is what happened, <small> an optional why.
+  A <small> (here or in a period) is copied in as written: <br>, <i>, <a> all work.
+    data-approx prefixes the date with "c.", and data-when replaces the date text.
 -->
 <div id="bht-data" hidden>
     <ol class="bht-data-groups">
@@ -24,16 +24,46 @@
     </ol>
 
     <ol class="bht-data-periods">
-        <li data-group="before" data-end-ago="300000" data-color="oklch(55% 0.09 60)"><b>Lower Paleolithic</b> <small>Stone tools, fire, Homo erectus</small></li>
-        <li data-group="before" data-end-ago="50000" data-color="oklch(62% 0.10 70)"><b>Middle Paleolithic</b> <small>Neanderthals, early Homo sapiens</small></li>
-        <li data-group="before" data-end-ago="12000" data-color="oklch(70% 0.11 80)"><b>Upper Paleolithic</b> <small>Cave art, the spread across the world</small></li>
-        <li data-group="before" data-end-year="-3300" data-color="oklch(66% 0.12 140)"><b>Neolithic</b> <small>Farming, villages, pottery</small></li>
-        <li data-group="after" data-end-year="-1200" data-color="oklch(64% 0.14 45)"><b>Bronze Age</b> <small>Writing, cities, empires</small></li>
-        <li data-group="after" data-end-year="-500" data-color="oklch(58% 0.05 250)"><b>Iron Age</b></li>
-        <li data-group="after" data-end-year="500" data-color="oklch(62% 0.12 300)"><b>Classical antiquity</b></li>
-        <li data-group="after" data-end-year="1500" data-color="oklch(58% 0.13 25)"><b>Middle Ages</b></li>
-        <li data-group="after" data-end-year="1800" data-color="oklch(64% 0.10 200)"><b>Early modern</b></li>
-        <li data-group="after" data-end-year="1945" data-color="oklch(60% 0.12 265)"><b>Modern</b></li>
+        <li data-group="before" data-end-ago="300000" data-color="oklch(55% 0.09 60)">
+            <b>Lower Paleolithic</b>
+            <small>Stone tools, fire, Homo erectus</small>
+        </li>
+        <li data-group="before" data-end-ago="50000" data-color="oklch(62% 0.10 70)">
+            <b>Middle Paleolithic</b>
+            <small>Neanderthals, early Homo sapiens</small>
+        </li>
+        <li data-group="before" data-end-ago="12000" data-color="oklch(70% 0.11 80)">
+            <b>Upper Paleolithic</b>
+            <small>Cave art, the spread across the world</small>
+        </li>
+        <li data-group="before" data-end-year="-3300" data-color="oklch(66% 0.12 140)">
+            <b>Neolithic</b>
+            <small>Farming, villages, pottery</small>
+        </li>
+        <li data-group="after" data-end-year="-1200" data-color="oklch(64% 0.14 45)">
+            <b>Bronze Age</b>
+            <small>Writing, cities, empires</small>
+        </li>
+        <li data-group="after" data-end-year="-500" data-color="oklch(58% 0.05 250)">
+            <b>Iron Age</b>
+            <small>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore.</small>
+        </li>
+        <li data-group="after" data-end-year="500" data-color="oklch(62% 0.12 300)">
+            <b>Classical antiquity</b>
+            <small>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore.</small>
+        </li>
+        <li data-group="after" data-end-year="1500" data-color="oklch(58% 0.13 25)">
+            <b>Middle Ages</b>
+            <small>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore.</small>
+        </li>
+        <li data-group="after" data-end-year="1800" data-color="oklch(64% 0.10 200)">
+            <b>Early modern</b>
+            <small>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore.</small>
+        </li>
+        <li data-group="after" data-end-year="1945" data-color="oklch(60% 0.12 265)">
+            <b>Modern</b>
+            <small>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore.</small>
+        </li>
         <li data-group="after" data-end-ago="0" data-color="oklch(70% 0.12 170)">
             <b>Contemporary</b>
             <small>The era of internet memes, Orange colored Presidents and Sentient word-guessing asdf. </small>
@@ -42,8 +72,27 @@
 
     <!-- picked to sit about evenly on the log scale: each ~1.35× further back than the last -->
     <ol class="bht-data-events">
-        <li data-ago="0" data-when="Today" data-now><b>You are here</b></li>
-        <li data-date="2026-07-19"><b>FIFA World Cup</b> <small>Canada, Mexico and the United States</small></li>
+
+        <li data-ago="0" >
+            <b>
+                Today
+            </b>
+            <small></small>
+        </li>
+
+
+        <li data-date="2026-07-19">
+            <b>FIFA World Cup</b> 
+            <small>
+                The 23rd FIFA World Cup, hosted by Canada, Mexico and the United States. 
+                <br>
+                The tournament began on July 11, and ended on July 19 with Spain winning the championship
+                for the second time. 
+                <br>
+                <a href="https://example.org">Source</a>
+            </small>
+        </li>
+        
         <li data-date="2026-02-06"><b>Winter Olympics</b> <small>Milan and Cortina, Italy</small></li>
         <li data-date="2025-05-08"><b>Leo XIV, the first American pope</b> <small>Vatican City</small></li>
         <li data-date="2024-07-26"><b>Summer Olympics</b> <small>Paris</small></li>
