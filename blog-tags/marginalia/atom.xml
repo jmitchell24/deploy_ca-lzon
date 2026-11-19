@@ -13,7 +13,7 @@
   <generator uri="https://www.getzola.org/">Zola</generator>
 
   
-  <updated>2026-09-15T12:00:00Z</updated>
+  <updated>2026-11-19T12:00:00Z</updated>
 
   <!-- Entries. Quotes (their own section feed) list one quote each. Posts go through
        macros/feed.html, so this feed, rss.xml and pages.json agree: each entry is titled as
@@ -33,6 +33,17 @@
   
     
   
+  <entry>
+    <title>Not-so-trivial Trivia</title>
+    <id>https://lzon.ca/posts/blog/000095-trivial-trivia/</id>
+    <link rel="alternate" href="https://lzon.ca/posts/blog/000095-trivial-trivia/"/>
+    <category term="blog" label="Blog" scheme="https://lzon.ca/posts/blog/"/>
+    <published>2026-11-19T12:00:00Z</published>
+    <updated>2026-11-19T12:00:00Z</updated>
+    <author><name>Lzon</name></author>
+    <content type="html" xml:base="https://lzon.ca/posts/blog/000095-trivial-trivia/">&lt;p&gt;Here’s a preview for my next trivia post. This was supposed to be simple and quick, but it has become something much larger than I ever anticipated.&lt;/p&gt;&lt;p&gt;&lt;a href=&quot;https://lzon.ca/posts/blog/000095-trivial-trivia/#continue-reading&quot;&gt;Continue reading&lt;/a&gt;&lt;/p&gt;
+</content>
+  </entry>
   <entry>
     <title>Just look at the Time</title>
     <id>https://lzon.ca/posts/blog/visual-time/</id>

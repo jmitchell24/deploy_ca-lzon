@@ -8,7 +8,7 @@
       <generator>Zola</generator>
       <language>en</language>
       <atom:link href="https://lzon.ca/posts/rss.xml" rel="self" type="application/rss+xml"/>
-      <lastBuildDate>Thu, 12 Nov 2026 12:00:00 +0000</lastBuildDate>
+      <lastBuildDate>Thu, 19 Nov 2026 12:00:00 +0000</lastBuildDate>
       <!-- Items. Quotes (their own section feed) list one quote each. Posts go through
            macros/feed.html, so this feed, atom.xml and pages.json agree: each item is titled
            as the site titles the post, carries its type as a <category>, and in the merged
@@ -23,6 +23,16 @@
       
         
       
+      <item>
+          <title>[ Blog ] Not-so-trivial Trivia</title>
+          <pubDate>Thu, 19 Nov 2026 12:00:00 +0000</pubDate>
+          <author>Lzon</author>
+          <link>https://lzon.ca/posts/blog/000095-trivial-trivia/</link>
+          <guid isPermaLink="false">https://lzon.ca/posts/blog/000095-trivial-trivia/</guid>
+          <category domain="https://lzon.ca/posts/blog/">Blog</category>
+          <description xml:base="https://lzon.ca/posts/blog/000095-trivial-trivia/">&lt;p&gt;Here’s a preview for my next trivia post. This was supposed to be simple and quick, but it has become something much larger than I ever anticipated.&lt;/p&gt;&lt;p&gt;&lt;a href=&quot;https://lzon.ca/posts/blog/000095-trivial-trivia/#continue-reading&quot;&gt;Continue reading&lt;/a&gt;&lt;/p&gt;
+</description>
+      </item>
       <item>
           <title>[ Trivia ] NVIDIA founder Jensen Huang is a relative of AMD CEO Lisa Su.</title>
           <pubDate>Thu, 12 Nov 2026 12:00:00 +0000</pubDate>

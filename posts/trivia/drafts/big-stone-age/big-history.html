@@ -494,9 +494,6 @@
         /** The track's whole height in px, now to START_AGO. */
         const SCROLL_PX = 33_000;
 
-        /** How far back the timeline starts, in years ago (the first known stone tools). */
-        const START_AGO = 3_300_000;
-
         /**
          * The scale is base-10 log of (years ago + LOG_OFFSET): each power of ten takes the
          * same height. The offset keeps "now" (0 years ago) finite; bigger values give the
@@ -622,7 +619,7 @@
         const GROUPS = Object.fromEntries(dataItems("groups").map(li =>
             [li.dataset.key, { name: li.textContent.trim(), color: li.dataset.color }]));
 
-        /** @type {TimelineEvent[]} The events, any order. */
+        /** @type {TimelineEvent[]} The events, any order; those with no date are left out (and reported). */
         const EVENTS = dataItems("events").map(li => ({
             ago: num(li, "ago"),
             year: num(li, "year") ?? dateYear(li.dataset.date),
@@ -630,7 +627,11 @@
             what: text(li, "b") ?? "",
             why: markup(li, "small"),
             when: li.dataset.when,
-        }));
+        })).filter(ev => {
+            const dated = ev.ago !== undefined || ev.year !== undefined;
+            if (!dated) console.warn(`big-history.html: "${ev.what}" has no date (data-ago, data-year or data-date): left out`);
+            return dated;
+        });
 
         // ── Time ────────────────────────────────────────────────────────────────
         // Positions are in "x": a fractional calendar year, BCE negative. There's no
@@ -640,6 +641,8 @@
         const startOfYear = new Date(today.getFullYear(), 0, 1);
         /** Now as x: this year plus how far through it we are. */
         const NOW = today.getFullYear() + (today - startOfYear) / (365.25 * 864e5);
+        /** How far back the timeline goes, in years ago: to its oldest event. */
+        const START_AGO = Math.max(...EVENTS.map(ev => (ev.ago !== undefined ? ev.ago : NOW - ev.year)));
         /** The oldest point, at the bottom of the track, as x. */
         const X0 = NOW - START_AGO;
         /** The track's length in px, top (now) to bottom (START_AGO). */
@@ -785,7 +788,7 @@
             const year = y => (y < 0 ? fmt(-y) : String(Math.max(1, y)));
             const era = y => (y < 0 ? "BCE" : "CE");
             const one = b => (b.ago !== undefined ? agoText(b.ago) : yearText(b.year));
-            if (!end || end.ago === 0) return `present – ${one(start)}`;
+            if (!end || end.ago === 0) return `Present – ${one(start)}`;
             if (start.ago !== undefined && end.ago !== undefined) return `${ago(end.ago)} – ${agoText(start.ago)}`;
             if (start.year !== undefined && end.year !== undefined && era(start.year) === era(end.year)) {
                 return `${year(end.year)} – ${year(start.year)} ${era(start.year)}`;
