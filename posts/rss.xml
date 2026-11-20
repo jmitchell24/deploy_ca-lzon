@@ -24,6 +24,2205 @@
         
       
       <item>
+          <title>[ Trivia ] If all of human history was just a single 24-hour day, farming and agriculture would have only been
+invented in the last 6 minutes before midnight.</title>
+          <pubDate>Fri, 20 Nov 2026 12:00:00 +0000</pubDate>
+          <author>Lzon</author>
+          <link>https://lzon.ca/posts/trivia/000011/</link>
+          <guid isPermaLink="false">https://lzon.ca/posts/trivia/11</guid>
+          <category domain="https://lzon.ca/posts/trivia/">Trivia</category>
+          <description xml:base="https://lzon.ca/posts/trivia/000011/">
+&lt;p&gt;This timeline puts into historic context the trends and forces that have shaped humanity and the world around us.&lt;/p&gt;
+&lt;p&gt;&lt;div id=&quot;bht-data&quot; hidden&gt;
+&lt;!--
+  The data for big-history.html, in markdown: the post includes it rendered (the
+  include_md shortcode), and the timeline&apos;s script reads the rendered result. Any
+  entry it can&apos;t read is listed in a red box above the timeline (and in the console).
+
+  # Periods: oldest first; each starts where the one before ends.
+    ## Name
+    - ends: when it ends (a date, below); the last one: present
+    - color: any CSS colour
+    then an optional summary (markdown).
+
+  # Events: any order.
+    ## Title
+    Date, on the line straight under the title
+    then an optional summary (markdown: paragraphs, links, emphasis).
+
+  Dates, one of:
+    2026-07-19            a day
+    1605  /  399 BCE      a year (CE optional)
+    c. 2000 BCE           &quot;c.&quot; for an approximate one
+    13,000 years ago      or &quot;2.75 million years ago&quot;
+    present               now
+  A heading may start with a number (&quot;12. Title&quot;); it&apos;s dropped. HTML comments, as
+  here, are ignored.
+--&gt;
+&lt;h1 id=&quot;periods&quot;&gt;Periods&lt;/h1&gt;
+&lt;h2 id=&quot;lower-paleolithic&quot;&gt;Lower Paleolithic&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;ends: 300,000 years ago&lt;/li&gt;
+&lt;li&gt;color: oklch(55% 0.09 60)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&quot;middle-paleolithic&quot;&gt;Middle Paleolithic&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;ends: 50,000 years ago&lt;/li&gt;
+&lt;li&gt;color: oklch(62% 0.10 70)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&quot;upper-paleolithic&quot;&gt;Upper Paleolithic&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;ends: 12,000 years ago&lt;/li&gt;
+&lt;li&gt;color: oklch(70% 0.11 80)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&quot;neolithic&quot;&gt;Neolithic&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;ends: 3300 BCE&lt;/li&gt;
+&lt;li&gt;color: oklch(66% 0.12 140)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&quot;bronze-age&quot;&gt;Bronze Age&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;ends: 1200 BCE&lt;/li&gt;
+&lt;li&gt;color: oklch(64% 0.14 45)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&quot;iron-age&quot;&gt;Iron Age&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;ends: 500 BCE&lt;/li&gt;
+&lt;li&gt;color: oklch(58% 0.05 250)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&quot;classical-antiquity&quot;&gt;Classical Antiquity&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;ends: 500&lt;/li&gt;
+&lt;li&gt;color: oklch(62% 0.12 300)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&quot;middle-ages&quot;&gt;Middle Ages&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;ends: 1500&lt;/li&gt;
+&lt;li&gt;color: oklch(58% 0.13 25)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;The Middle Ages is the time between the fall of the Western Roman Empire and the European Renaissance. It is regarded as a period of regression from the achievements of the Romans. Populations shrank and became more rural, central authority collapsed, religion grew into a dominant force in daily life. It culminated with a sequence of devastating plagues, and was ended by the emergence of the Italian Renaissance which would eventually spread to the rest of Europe.&lt;/p&gt;
+&lt;h2 id=&quot;early-modernity&quot;&gt;Early Modernity&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;ends: 1800&lt;/li&gt;
+&lt;li&gt;color: oklch(64% 0.10 200)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;The period from the beginning of the European Renaissance until the Industrial Revolution, these are the centuries in which the foundational trends and forces of modern life began. It encompasses the European Renaissance, Colonization of the Americas, French &amp;amp; American Revolutions, and the rise of Enlightenment philosophy.&lt;/p&gt;
+&lt;h2 id=&quot;modern-period&quot;&gt;Modern Period&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;ends: 1945&lt;/li&gt;
+&lt;li&gt;color: oklch(60% 0.12 265)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;The period of human history that begins in the 19th century with the Industrial Revolution, and ends with World War I &amp;amp; II in the early decades of the 20th century. It is the time in which the dominant trends of modern life emerged: Industrialization, Urbanization, and Secularization.&lt;/p&gt;
+&lt;h2 id=&quot;late-modernity&quot;&gt;Late Modernity&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;ends: present&lt;/li&gt;
+&lt;li&gt;color: oklch(70% 0.12 170)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;The most recent decades of modern history. It begins with the Cold War against the United States and Soviet Union and is broadly defined by ongoing and rapid technological progress and the emergence of a truly global society. Also referred to as the ‘Contemporary Period’ or ‘Post Modernity’.&lt;/p&gt;
+&lt;h1 id=&quot;events&quot;&gt;Events&lt;/h1&gt;
+&lt;h2 id=&quot;today&quot;&gt;Today&lt;/h2&gt;
+&lt;p&gt;present&lt;/p&gt;
+&lt;h2 id=&quot;kick-off-at-fifa-world-cup-2026&quot;&gt;Kick off at FIFA World Cup 2026 &lt;!-- 1 --&gt;&lt;/h2&gt;
+&lt;p&gt;2026-07-19&lt;/p&gt;
+&lt;p&gt;The 23rd FIFA World Cup began on July 11, jointly hosted by Canada, Mexico, and the United States.
+The tournament ended on July 19 with Spain winning for the second time.&lt;/p&gt;
+&lt;h2 id=&quot;launch-of-artemis-ii-lunar-mission&quot;&gt;Launch of Artemis II lunar mission &lt;!-- 2 --&gt;&lt;/h2&gt;
+&lt;p&gt;2026-04-01&lt;/p&gt;
+&lt;p&gt;This NASA mission flew humans to orbit around the moon for the first time since the end of the original Apollo missions in 1972.&lt;/p&gt;
+&lt;h2 id=&quot;death-of-jane-goodall&quot;&gt;Death of Jane Goodall &lt;!-- 3 --&gt;&lt;/h2&gt;
+&lt;p&gt;2025-10-01&lt;/p&gt;
+&lt;p&gt;English anthropologist Jane Goodall dies at the age of 91. She pioneered the modern study of wild chimpanzees through her field work, documenting their complex social structures and tool use. She was also an outspoken activist for conservation, animal welfare, and environmentalism.&lt;/p&gt;
+&lt;h2 id=&quot;attempted-assassination-of-donald-trump&quot;&gt;Attempted Assassination of Donald Trump &lt;!-- 4 --&gt;&lt;/h2&gt;
+&lt;p&gt;2024-07-13&lt;/p&gt;
+&lt;p&gt;United States presidential candidate Donald Trump survives an attempted assassination during a campaign rally. He was attacked by a gunman named Thomas Matthew Crooks. There would be another assassination several months later, on September 15 of the same year.&lt;/p&gt;
+&lt;h2 id=&quot;twitter-renamed-to-x-corp&quot;&gt;Twitter renamed to X Corp. &lt;!-- 5 --&gt;&lt;/h2&gt;
+&lt;p&gt;2023-07-23&lt;/p&gt;
+&lt;p&gt;Elon Musk renames the influential social media platform formerly known as Twitter. He had purchased the company in October 2022 in a leveraged buyout for $44 billion. In March 2025 X Corp. would be made a subsidiary of Musk’s newly founded AI company called &lt;strong&gt;xAI&lt;/strong&gt;.&lt;/p&gt;
+&lt;h2 id=&quot;russia-invades-ukraine&quot;&gt;Russia invades Ukraine &lt;!-- 6 --&gt;&lt;/h2&gt;
+&lt;p&gt;2022-02-24&lt;/p&gt;
+&lt;p&gt;Russia begins a full-scale invasion of Ukraine, representing the largest military conflict within Europe since the end of World War II. It immediately triggered a massive refugee crisis as well as a global commodities shock.&lt;/p&gt;
+&lt;h2 id=&quot;breakout-of-fire-at-notre-dame&quot;&gt;Breakout of fire at Notre-Dame &lt;!-- 7 --&gt;&lt;/h2&gt;
+&lt;p&gt;2019-04-15&lt;/p&gt;
+&lt;h2 id=&quot;ai-alphago-defeats-lee-sedol-at-go&quot;&gt;AI (AlphaGo) defeats Lee Sedol at Go &lt;!-- 8 --&gt;&lt;/h2&gt;
+&lt;p&gt;2016-03-12&lt;/p&gt;
+&lt;h2 id=&quot;curiosity-rover-lands-on-mars&quot;&gt;Curiosity rover lands on Mars &lt;!-- 9 --&gt;&lt;/h2&gt;
+&lt;p&gt;2012-08-06&lt;/p&gt;
+&lt;h2 id=&quot;first-iphone-revealed-at-macworld-2007&quot;&gt;First iPhone revealed at Macworld 2007 &lt;!-- 10 --&gt;&lt;/h2&gt;
+&lt;p&gt;2007-01-09&lt;/p&gt;
+&lt;h2 id=&quot;september-11-terrorist-attacks&quot;&gt;September 11 terrorist attacks &lt;!-- 11 --&gt;&lt;/h2&gt;
+&lt;p&gt;2001-09-11&lt;/p&gt;
+&lt;h2 id=&quot;end-of-the-soviet-union&quot;&gt;End of the Soviet Union &lt;!-- 12 --&gt;&lt;/h2&gt;
+&lt;p&gt;1991-12-26&lt;/p&gt;
+&lt;h2 id=&quot;three-mile-island-nuclear-accident&quot;&gt;Three Mile Island Nuclear Accident &lt;!-- 13 --&gt;&lt;/h2&gt;
+&lt;p&gt;1979-03-28&lt;/p&gt;
+&lt;h2 id=&quot;cuban-missile-crisis&quot;&gt;Cuban Missile Crisis &lt;!-- 14 --&gt;&lt;/h2&gt;
+&lt;p&gt;1962-10-16&lt;/p&gt;
+&lt;h2 id=&quot;beginning-of-world-war-2&quot;&gt;Beginning of World War 2 &lt;!-- 15 --&gt;&lt;/h2&gt;
+&lt;p&gt;1939-09-01&lt;/p&gt;
+&lt;h2 id=&quot;first-powered-flight-of-a-heavier-than-air-aircraft&quot;&gt;First powered flight of a heavier-than-air aircraft &lt;!-- 16 --&gt;&lt;/h2&gt;
+&lt;p&gt;1903-12-17&lt;/p&gt;
+&lt;h2 id=&quot;first-telegram-transmitted-via-undersea-cable&quot;&gt;First telegram transmitted via undersea cable &lt;!-- 17 --&gt;&lt;/h2&gt;
+&lt;p&gt;1858-08-16&lt;/p&gt;
+&lt;h2 id=&quot;beginning-of-the-war-of-1812&quot;&gt;Beginning of the War of 1812 &lt;!-- 18 --&gt;&lt;/h2&gt;
+&lt;p&gt;1812-06-18&lt;/p&gt;
+&lt;h2 id=&quot;birth-of-wolfgang-amadeus-mozart&quot;&gt;Birth of Wolfgang Amadeus Mozart&lt;/h2&gt;
+&lt;p&gt;1756-01-27&lt;/p&gt;
+&lt;h2 id=&quot;england-scotland-and-wales-unite-to-become-great-britain&quot;&gt;England, Scotland and Wales unite to become Great Britain &lt;!-- 19 --&gt;&lt;/h2&gt;
+&lt;p&gt;1707-05-01&lt;/p&gt;
+&lt;h2 id=&quot;founding-of-boston-massachusetts&quot;&gt;Founding of Boston, Massachusetts&lt;/h2&gt;
+&lt;p&gt;1630&lt;/p&gt;
+&lt;h2 id=&quot;copernicus-publishes-research-disproving-geocentrism&quot;&gt;Copernicus publishes research disproving geocentrism&lt;/h2&gt;
+&lt;p&gt;1543&lt;/p&gt;
+&lt;h2 id=&quot;columbus-lands-in-the-americas&quot;&gt;Columbus lands in the Americas &lt;!-- 21 --&gt;&lt;/h2&gt;
+&lt;p&gt;1492-10-12&lt;/p&gt;
+&lt;h2 id=&quot;bubonic-plague-spreads-into-europe-black-death&quot;&gt;Bubonic plague spreads into Europe (Black Death)&lt;/h2&gt;
+&lt;p&gt;1346&lt;/p&gt;
+&lt;h2 id=&quot;signing-of-the-magna-carta&quot;&gt;Signing of the Magna Carta &lt;!-- 22 --&gt;&lt;/h2&gt;
+&lt;p&gt;1215&lt;/p&gt;
+&lt;h2 id=&quot;norman-conquest-of-england&quot;&gt;Norman Conquest of England &lt;!-- 23 --&gt;&lt;/h2&gt;
+&lt;p&gt;1066&lt;/p&gt;
+&lt;h2 id=&quot;charlemagne-crowned-emperor-by-pope-leo-iii&quot;&gt;Charlemagne crowned Emperor by Pope Leo III&lt;/h2&gt;
+&lt;p&gt;800&lt;/p&gt;
+&lt;h2 id=&quot;fall-of-the-western-roman-empire&quot;&gt;Fall of the Western Roman Empire&lt;/h2&gt;
+&lt;p&gt;476&lt;/p&gt;
+&lt;h2 id=&quot;ministry-of-jesus-christ&quot;&gt;Ministry of Jesus Christ &lt;!-- 25 --&gt;&lt;/h2&gt;
+&lt;p&gt;30&lt;/p&gt;
+&lt;h2 id=&quot;execution-of-socrates&quot;&gt;Execution of Socrates &lt;!-- 26 --&gt;&lt;/h2&gt;
+&lt;p&gt;399 BCE&lt;/p&gt;
+&lt;h2 id=&quot;first-olympic-games&quot;&gt;First Olympic Games&lt;/h2&gt;
+&lt;p&gt;776 BCE&lt;/p&gt;
+&lt;h2 id=&quot;birth-of-moses-biblical-tradition&quot;&gt;Birth of Moses (biblical tradition)&lt;/h2&gt;
+&lt;p&gt;1526 BCE&lt;/p&gt;
+&lt;h2 id=&quot;extinction-of-wooly-mammoth&quot;&gt;Extinction of Wooly Mammoth &lt;!-- 28 --&gt;&lt;/h2&gt;
+&lt;p&gt;c. 2000 BCE&lt;/p&gt;
+&lt;h2 id=&quot;construction-of-the-great-pyramid-of-giza&quot;&gt;Construction of the Great Pyramid of Giza&lt;/h2&gt;
+&lt;p&gt;c. 2560 BCE&lt;/p&gt;
+&lt;h2 id=&quot;invention-of-the-wheel&quot;&gt;Invention of the Wheel &lt;!-- 29 --&gt;&lt;/h2&gt;
+&lt;p&gt;c. 3500 BCE&lt;/p&gt;
+&lt;h2 id=&quot;invention-of-copper-smelting&quot;&gt;Invention of Copper Smelting &lt;!-- 30 --&gt;&lt;/h2&gt;
+&lt;p&gt;c. 5000 BCE&lt;/p&gt;
+&lt;h2 id=&quot;domestication-of-cattle&quot;&gt;Domestication of Cattle&lt;/h2&gt;
+&lt;p&gt;c. 8500 BCE&lt;/p&gt;
+&lt;h2 id=&quot;invention-of-agriculture&quot;&gt;Invention of Agriculture&lt;/h2&gt;
+&lt;p&gt;c. 10,000 BCE&lt;/p&gt;
+&lt;h2 id=&quot;domestication-of-dogs&quot;&gt;Domestication of Dogs&lt;/h2&gt;
+&lt;p&gt;14,200 years ago&lt;/p&gt;
+&lt;!-- ## Rise of the Clovis culture in North America
+13,000 years ago --&gt;
+&lt;h2 id=&quot;earliest-painting-of-lascaux-cave&quot;&gt;Earliest painting of Lascaux Cave &lt;!-- 33 --&gt;&lt;/h2&gt;
+&lt;p&gt;20,000 years ago&lt;/p&gt;
+&lt;h2 id=&quot;sculpting-of-the-venus-of-willendorf&quot;&gt;Sculpting of the Venus of Willendorf&lt;/h2&gt;
+&lt;p&gt;30,000 years ago&lt;/p&gt;
+&lt;h2 id=&quot;extinction-of-neanderthals-in-europe&quot;&gt;Extinction of Neanderthals in Europe &lt;!-- 35 --&gt;&lt;/h2&gt;
+&lt;p&gt;40,000 years ago&lt;/p&gt;
+&lt;h2 id=&quot;first-migration-of-humans-into-europe&quot;&gt;First migration of Humans into Europe &lt;!-- 36 --&gt;&lt;/h2&gt;
+&lt;p&gt;45,000 years ago&lt;/p&gt;
+&lt;h2 id=&quot;first-migration-of-humans-into-australia&quot;&gt;First migration of Humans into Australia &lt;!-- 37 --&gt;&lt;/h2&gt;
+&lt;p&gt;65,000 years ago&lt;/p&gt;
+&lt;h2 id=&quot;earliest-permanent-structures-built-in-egypt&quot;&gt;Earliest permanent structures built in Egypt&lt;/h2&gt;
+&lt;p&gt;100,000 years ago&lt;/p&gt;
+&lt;h2 id=&quot;emergence-of-seafaring&quot;&gt;Emergence of seafaring&lt;/h2&gt;
+&lt;p&gt;130,000 years ago&lt;/p&gt;
+&lt;h2 id=&quot;earliest-known-use-of-clothing&quot;&gt;Earliest known use of Clothing&lt;/h2&gt;
+&lt;p&gt;170,000 years ago&lt;/p&gt;
+&lt;h2 id=&quot;first-migration-of-humans-beyond-africa&quot;&gt;First migration of Humans beyond Africa &lt;!-- 38 --&gt;&lt;/h2&gt;
+&lt;p&gt;200,000 years ago&lt;/p&gt;
+&lt;h2 id=&quot;emergence-of-the-species-homo-sapiens&quot;&gt;Emergence of the species Homo Sapiens &lt;!-- 39 --&gt;&lt;/h2&gt;
+&lt;p&gt;315,000 years ago&lt;/p&gt;
+&lt;h2 id=&quot;oldest-known-wooden-structure&quot;&gt;Oldest known Wooden Structure &lt;!-- 40a --&gt;&lt;/h2&gt;
+&lt;p&gt;476,000 years ago&lt;/p&gt;
+&lt;h2 id=&quot;first-use-of-the-hand-axe&quot;&gt;First use of the Hand Axe&lt;/h2&gt;
+&lt;p&gt;700,000 years ago&lt;/p&gt;
+&lt;h2 id=&quot;near-extinction-of-genus-homo&quot;&gt;Near Extinction of genus Homo &lt;!-- 41 --&gt;&lt;/h2&gt;
+&lt;p&gt;800,000 years ago&lt;/p&gt;
+&lt;h2 id=&quot;first-controlled-use-of-fire&quot;&gt;First controlled use of fire &lt;!-- 42 --&gt;&lt;/h2&gt;
+&lt;p&gt;1.8 million years ago&lt;/p&gt;
+&lt;h2 id=&quot;emergence-of-the-genus-homo&quot;&gt;Emergence of the genus Homo &lt;!-- 44 --&gt;&lt;/h2&gt;
+&lt;p&gt;2.75 million years ago&lt;/p&gt;
+
+&lt;/div&gt;
+
+
+  
+
+&lt;style&gt;
+    /*
+     * Big history: a vertical scroll through the whole human story, from today at the
+     * top to the first stone tools at the bottom, on a log scale (see the script).
+     *
+     * Layout, left to right inside the track: the progress bar, the group bands (see
+     * the data&apos;s group list), and the events column: the axis, the leader lines and
+     * the events. A coloured block for each period is inserted into the track at the
+     * period&apos;s top; it takes up room but no time (the scale skips over it), and sticks
+     * under the header while its period is on screen until the next one pushes it
+     * off. The header sticks to the top; its bottom edge is the reading line, and the
+     * readout shows the exact year under it.
+     *
+     * Site styles are used where they fit: the header&apos;s layout, text and buttons are
+     * site classes (flex-row, text-*, btn). The rest can&apos;t use them (it&apos;s drawn by
+     * the script or positioned), so it uses the tokens below, copied from the site&apos;s
+     * sass (sass/lzon/_config-variables.scss), and the site&apos;s colour variables, so it
+     * follows the theme. Period colours are set per period in the script (PERIODS).
+     */
+    #bht {
+        /* from the site&apos;s sass: $spacer-xs/sm/md/lg/xl, $border-md, $border-radius,
+           $line-height-sm, $transition-speed-md/lg (font sizes and families: the site&apos;s
+           text-* / font-size-h* / text-monospace / text-sans-serif classes, set in the
+           markup and by the script) */
+        --bht-xs: .25rem;
+        --bht-sm: .5rem;
+        --bht-md: 1rem;
+        --bht-lg: 1.5rem;
+        --bht-xl: 3rem;
+        /* the room under the bottom strip&apos;s button box: 1.5em at the page&apos;s text size
+           ($font-size-base); the veil&apos;s box ends there too */
+        --bht-foot-gap: calc(1.5 * 1.15rem);
+        --bht-border: max(2px, 0.12rem);
+        --bht-radius: 0.3rem;
+        --bht-lh-sm: 1.25;
+        --bht-speed: .3s;
+        --bht-speed-lg: .6s;
+
+        /*
+         * Three columns: the button column; a thin period band (a border&apos;s width), each
+         * period&apos;s colour from its block down to the next block; then the events: the
+         * axis line a little in, its leader lines and the events&apos; labels. The period
+         * blocks span the events column, inserted into the track at each period&apos;s top.
+         */
+        /* the padding inside every band and block, at every width */
+        --bht-band-pad: var(--bht-sm);
+        /* the small gap between the buttons and the timeline&apos;s frame */
+        --bht-gap: var(--bht-sm);
+        /* the button column, in its own rounded border: the buttons, a little padding
+           and the border; then the gap after it, where the timeline&apos;s frame starts */
+        --bht-nw: calc(var(--bht-xl) + 2 * var(--bht-xs) + 2 * var(--bht-border));
+        --bht-iw: calc(var(--bht-nw) + var(--bht-gap));
+        /* where the events column starts, and the axis line in it */
+        /* the period band: no width of its own now (the frame&apos;s left side is the edge), just
+           its guide marks, off the frame&apos;s side */
+        --bht-pbw: 0px;
+        --bht-ew: calc(var(--bht-iw) + var(--bht-border) + var(--bht-pbw));
+        /* the axis, in from the events column&apos;s edge by room for each event&apos;s clock time
+           (left of the axis) */
+        --bht-lw: calc(5 * var(--bht-lg));
+        --bht-axis: calc(var(--bht-ew) + var(--bht-lw));
+        --bht-cw: calc(2 * var(--bht-lg));
+        --bht-ev: calc(var(--bht-axis) + var(--bht-cw));
+
+        --bht-line: var(--color-dark);
+        --bht-lit: var(--color-tertiary);
+        /* the timeline&apos;s frame, in the colour of the period being read (--bht-frame-era:
+           set by the script), as its thin band */
+        --bht-frame-c: color-mix(in oklch, var(--bht-frame-era, var(--bht-line)) 55%, var(--color-darker));
+        --bht-bg: var(--color-darker);
+        --bht-text: var(--color-lighter);
+        --bht-mute: var(--color-light);
+        /* the header&apos;s height, set by the script: sticky labels sit below it */
+        --bht-head-h: calc(2 * var(--bht-xl));
+
+        position: relative;
+        margin: var(--bht-lg) 0;
+    }
+
+    /* ── header: the year readout over the reading line ──────────────────────── */
+
+    .bht-head {
+        position: relative;
+        z-index: 4; /* over the frame (.bht-frame, 3) */
+        /*
+         * The page&apos;s own background (sass/lzon/_base.scss: --color-darker under the
+         * noise tile on html::before), so the header hides the timeline scrolling under
+         * it but looks see-through. Plain CSS, not a clip set from script (that lagged on
+         * phones); and not background-attachment: fixed either, which mobile Chrome
+         * repaints only once a fast scroll stops. Stuck to the top, the header holds its
+         * grain still anyway.
+         */
+        background: var(--color-darker) url(&quot;/img/noise-dark.png&quot;) repeat;
+        /* room above the readout, as below the button box (.bht-foot) */
+        padding: 1.5em 0 var(--bht-sm);
+        border-bottom: var(--bht-border) solid var(--bht-line);
+    }
+    /* light mode&apos;s noise tile, as the site switches it */
+    body[data-dark-mode=&quot;off&quot;] #bht :is(.bht-head, .bht-foot, .bht-veil-cap, .bht-veil-end, .bht-veil-end::before) { background-image: url(&quot;/img/noise-light.png&quot;); }
+    #bht.bht-open .bht-head {
+        position: sticky;
+        top: env(safe-area-inset-top, 0px);
+        /* the progress bar&apos;s colour, so the frame reads as one */
+        border-bottom-color: var(--color-dark);
+    }
+
+    .bht-year {
+        display: block;
+        font-weight: 700;
+        line-height: var(--bht-lh-sm);
+        white-space: nowrap;
+        font-variant-numeric: tabular-nums;
+    }
+    /*
+     * The readout: a main row (the year, the clock time) over a subtext row (years
+     * ago, time to midnight), each with its left and right ends apart, sized by the
+     * site&apos;s text-lg / text-sm. Neither wraps; where text doesn&apos;t fit (phones, deep in
+     * the timeline) the clock side (left) gives way with an ellipsis rather than
+     * push the page wide; the year side (right) always shows whole.
+     */
+    .bht-read-row {
+        display: flex;
+        justify-content: space-between;
+        align-items: baseline;
+        gap: var(--bht-md);
+    }
+    .bht-read-row &gt; * { white-space: nowrap; }
+    .bht-read-row &gt; :first-child {
+        min-width: 0;
+        overflow: hidden;
+        text-overflow: ellipsis;
+    }
+    .bht-read-row &gt; :last-child { flex-shrink: 0; text-align: right; }
+    .bht-ago { display: block; white-space: nowrap; font-variant-numeric: tabular-nums; }
+    .bht-swatch {
+        flex-shrink: 0;
+        width: var(--bht-sm);
+        height: var(--bht-sm);
+        border-radius: 50%;
+        background: var(--bht-era, var(--bht-line));
+    }
+
+    /* the period list, shown only while collapsed: each one opens the timeline at its start */
+    .bht-legend { margin-top: var(--bht-sm); }
+    #bht.bht-open .bht-legend { display: none; }
+
+    /* a matching strip along the bottom of the view while the timeline is on screen,
+       hiding it as the header does (same background, see .bht-head); sticky, so it
+       settles at the timeline&apos;s end once that scrolls into view */
+    .bht-foot {
+        display: none;
+        position: sticky;
+        z-index: 4; /* over the frame (.bht-frame, 3) */
+        bottom: env(safe-area-inset-bottom, 0px);
+        padding-bottom: var(--bht-foot-gap);
+        background: var(--color-darker) url(&quot;/img/noise-dark.png&quot;) repeat;
+        border-top: var(--bht-border) solid var(--color-dark);
+    }
+    #bht.bht-open .bht-foot { display: block; }
+    /* no lines under the header or over the strip: the frame (.bht-frame-box) is the edge */
+    #bht.bht-open .bht-head { border-bottom-color: transparent; }
+    #bht.bht-open .bht-foot { border-top-color: transparent; }
+
+    /* ── track ──────────────────────────────────────────────────────────────── */
+
+    .bht-track { display: none; position: relative; }
+    #bht.bht-open .bht-track { display: block; }
+
+    /*
+     * The button column, down the far left: held in view between the header and the
+     * bottom strip (--bht-head-h, --bht-foot-h: set by the script); back to the top,
+     * previous period and previous event at its top, next event, next period and to
+     * the bottom at its bottom. Icon-only: the site&apos;s .btn-nav-link.
+     */
+    .bht-progress {
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        width: var(--bht-nw);
+        /* under the header and the strip (4) */
+        z-index: 2;
+        box-sizing: border-box;
+        /* (room for its frame, .bht-frame-nav) */
+        border: var(--bht-border) solid transparent;
+        padding-inline: var(--bht-xs);
+    }
+    /*
+     * A rounded frame around the whole timeline as it shows, as the site&apos;s meta boxes
+     * are (sass/lzon/_component-meta.scss: $border-md in --color-dark, solid as in a
+     * .meta-stack, $border-radius). Its sides run the timeline&apos;s whole length (the
+     * header and strip, over it, hide what&apos;s past them); its top edge sticks right
+     * under the header and its bottom edge right above the strip, each with its two
+     * rounded corners, so all four show wherever you are, the very end included.
+     */
+    .bht-frame {
+        position: absolute;
+        /* right of the button column and its gap */
+        inset: 0 0 0 var(--bht-iw);
+        z-index: 3;
+        pointer-events: none;
+        box-sizing: border-box;
+        border: var(--bht-border) solid var(--bht-frame-c);
+        border-block: 0;
+        transition: border-color var(--bht-speed) ease;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+    .bht-frame-top,
+    .bht-frame-bottom {
+        position: sticky;
+        /* out over the sides, to draw the corners onto them */
+        margin-inline: calc(-1 * var(--bht-border));
+        height: calc(var(--bht-radius) + var(--bht-border));
+        box-sizing: border-box;
+        border: var(--bht-border) solid var(--bht-frame-c);
+        transition: inherit;
+    }
+    /* the button column&apos;s frame: the same, round the column, in the line colour */
+    .bht-frame.bht-frame-nav {
+        right: auto;
+        left: 0;
+        width: var(--bht-nw);
+        --bht-frame-c: var(--color-dark);
+    }
+    .bht-frame-top {
+        top: var(--bht-head-h);
+        border-bottom: 0;
+        border-radius: var(--bht-radius) var(--bht-radius) 0 0;
+    }
+    .bht-frame-bottom {
+        bottom: var(--bht-foot-h, 0px);
+        border-top: 0;
+        border-radius: 0 0 var(--bht-radius) var(--bht-radius);
+    }
+    /* just outside each curve, the page&apos;s colour, so the frame&apos;s straight sides (drawn
+       under the corner pieces) don&apos;t show past it: on an overlay over the piece&apos;s whole
+       border box (its own background would be clipped to the curve); clear inside the
+       curve, so the piece&apos;s border shows */
+    .bht-frame-top::before,
+    .bht-frame-bottom::before {
+        content: &quot;&quot;;
+        position: absolute;
+        left: calc(-1 * var(--bht-border));
+        right: calc(-1 * var(--bht-border));
+        --bht-r: var(--bht-radius);
+        background-size: var(--bht-r) var(--bht-r);
+        background-repeat: no-repeat;
+    }
+    .bht-frame-top::before {
+        top: calc(-1 * var(--bht-border));
+        bottom: 0;
+        background-image:
+            radial-gradient(circle at 100% 100%, transparent calc(var(--bht-r) - .5px), var(--color-darker) var(--bht-r)),
+            radial-gradient(circle at 0 100%, transparent calc(var(--bht-r) - .5px), var(--color-darker) var(--bht-r));
+        background-position: left top, right top;
+    }
+    .bht-frame-bottom::before {
+        top: 0;
+        bottom: calc(-1 * var(--bht-border));
+        background-image:
+            radial-gradient(circle at 100% 0, transparent calc(var(--bht-r) - .5px), var(--color-darker) var(--bht-r)),
+            radial-gradient(circle at 0 0, transparent calc(var(--bht-r) - .5px), var(--color-darker) var(--bht-r));
+        background-position: left bottom, right bottom;
+    }
+    /* the column runs the track&apos;s full height; its top group sticks under the header,
+       its bottom group to the bottom of the screen just above the strip, each on its
+       own, so the bottom buttons show even before the timeline fills the screen */
+    .bht-nav {
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+    .bht-nav-group { display: flex; flex-direction: column; gap: var(--bht-xs); position: sticky; }
+    /* (level with the frame&apos;s top and bottom edges) */
+    .bht-nav-group:first-child { top: calc(var(--bht-head-h) + var(--bht-border)); padding-top: var(--bht-xs); }
+    .bht-nav-group:last-child { bottom: calc(var(--bht-foot-h, 0px) + var(--bht-border)); padding-bottom: var(--bht-xs); }
+    .bht-nav .btn-nav-link { width: 100%; aspect-ratio: 1; max-height: var(--bht-xl); padding: 0; }
+    /* each band&apos;s label rides along at the top of the view while its band is on screen */
+    /* sticks right at the header&apos;s line, so all the room above the text is its own
+       padding: the same at rest (at the top of its band) as stuck */
+    .bht-band-label {
+        position: sticky;
+        top: var(--bht-head-h);
+        display: block;
+        padding: calc(var(--bht-sm) + var(--bht-xs)) var(--bht-sm) var(--bht-sm);
+        line-height: var(--bht-lh-sm);
+        color: var(--bht-text);
+    }
+    .bht-band-label b { display: block; font-weight: 600; }
+
+    /*
+     * Period blocks. Each has a slot (absolute, positioned by the script) from its
+     * block&apos;s place in the track down to the next block; the block sits at the top of
+     * its slot and sticks right under the header while the slot is on screen, so the
+     * next one pushes it off. Solid (the colour over the page&apos;s), as they cover the
+     * events scrolling under them.
+     */
+    .bht-slot {
+        position: absolute;
+        left: var(--bht-ew);
+        right: 0;
+        z-index: 2;
+        pointer-events: none;
+    }
+    .bht-block {
+        position: sticky;
+        top: var(--bht-head-h);
+        box-sizing: border-box;
+        padding: calc(var(--bht-sm) + var(--bht-xs)) var(--bht-band-pad) var(--bht-sm);
+        line-height: var(--bht-lh-sm);
+        color: var(--bht-text);
+        background: color-mix(in oklch, var(--bht-era) 35%, var(--color-darker));
+        pointer-events: auto;
+    }
+    .bht-slot-period { z-index: 1; }
+    /* stuck at the top, a period&apos;s block turns its band&apos;s colour */
+    .bht-slot-period .bht-block { transition: background-color var(--bht-speed) ease; }
+    .bht-slot-period .bht-block.bht-stuck { background: color-mix(in oklch, var(--bht-era) 55%, var(--color-darker)); }
+    /* a period&apos;s thin band: beside the events column, from its block down to the next */
+    .bht-pband {
+        position: absolute;
+        /* (just inside the frame&apos;s left side, to just inside its right side: no fill,
+           just the guide marks at each side) */
+        left: calc(var(--bht-iw) + var(--bht-border));
+        right: var(--bht-border);
+        pointer-events: none;
+    }
+    /*
+     * Guide marks off the frame&apos;s left and right sides, in the frame&apos;s colour: short ticks
+     * scrolling with the timeline, evenly spaced so about ten show between the header
+     * and the strip at any point (a tenth of the screen&apos;s height less the header and
+     * strip). Kept in step across the bands: each starts its pattern at the track&apos;s
+     * top (--bht-y, its own top in the track: set by the script).
+     */
+    .bht-pband::before,
+    .bht-pband::after {
+        content: &quot;&quot;;
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        width: var(--bht-sm);
+        --bht-guide: calc((100vh - var(--bht-head-h) - var(--bht-foot-h, 0px)) / 10);
+        --bht-guide: calc((100svh - var(--bht-head-h) - var(--bht-foot-h, 0px)) / 10);
+        /* one tick per tile, tiled down (so an offset keeps the bands in step) */
+        background: linear-gradient(var(--bht-frame-c) 0 var(--bht-border), transparent 0) repeat-y;
+        background-size: 100% var(--bht-guide);
+        background-position: 0 calc(-1 * var(--bht-y, 0px));
+        pointer-events: none;
+    }
+    .bht-pband::before { left: 0; }
+    .bht-pband::after { right: 0; }
+    .bht-block b { display: block; font-weight: 600; overflow-wrap: anywhere; }
+    .bht-block small { display: block; margin-top: var(--bht-xs); color: var(--bht-mute); }
+    .bht-block .bht-block-range { margin-top: var(--bht-xs); }
+    /* the period&apos;s summary and dates in the body text&apos;s colour */
+    .bht-block :is(.bht-block-note, .bht-block-range) { color: var(--bht-text); }
+
+    /* the axis line */
+    .bht-axis {
+        position: absolute;
+        top: 0;
+        left: calc(var(--bht-axis) - var(--bht-sm));
+        width: var(--bht-sm);
+        border-right: var(--bht-border) solid var(--bht-line);
+    }
+    /* events: a leader line from the axis, and the label */
+    /* an S-bend from the axis to the label: ::before the first half, ::after the second */
+    .bht-link {
+        position: absolute;
+        left: var(--bht-axis);
+        width: var(--bht-cw);
+        --bht-r: min(var(--bht-radius), 50%);
+    }
+    .bht-link::before,
+    .bht-link::after {
+        content: &quot;&quot;;
+        position: absolute;
+        box-sizing: border-box;
+        width: 50%;
+        height: 50%;
+        border: 0 solid var(--bht-line);
+    }
+    .bht-link::before { left: 0; top: 0; border-top-width: var(--bht-border); border-right-width: var(--bht-border); border-top-right-radius: var(--bht-r); }
+    /* one stroke wider, so its vertical lines up under the first half&apos;s */
+    .bht-link::after  { right: 0; bottom: 0; width: calc(50% + var(--bht-border)); border-bottom-width: var(--bht-border); border-left-width: var(--bht-border); border-bottom-left-radius: var(--bht-r); }
+    /* going up: the same shape, flipped */
+    .bht-link.bht-up { transform: scaleY(-1); }
+    /* the same leader mirrored to the left of the axis, its clock time hanging under it */
+    .bht-link.bht-link-l { left: calc(var(--bht-axis) - var(--bht-cw)); transform: scaleX(-1); }
+    .bht-link.bht-link-l.bht-up { transform: scale(-1, -1); }
+    .bht-clock-at {
+        position: absolute;
+        right: calc(100% - var(--bht-axis) + var(--bht-band-pad));
+        padding-top: calc(var(--bht-sm) + var(--bht-xs));
+        /* no wider than the room left of the axis */
+        max-width: calc(var(--bht-lw) - 2 * var(--bht-band-pad));
+        text-align: right;
+        line-height: var(--bht-lh-sm);
+        /* accented, as the event&apos;s date is (.bht-when) */
+        color: var(--bht-lit);
+        font-variant-numeric: tabular-nums;
+    }
+    .bht-clock-at &gt; span { display: block; }
+    /* the time left to midnight, muted as the date&apos;s &quot;years ago&quot; is (.bht-when-ago) */
+    .bht-clock-at .bht-clock-at-left { color: var(--bht-mute); overflow-wrap: anywhere; }
+    /* level: one straight line */
+    .bht-link.bht-flat { height: 0 !important; }
+    .bht-link.bht-flat::before { width: 100%; border-right-width: 0; border-radius: 0; }
+    .bht-link.bht-flat::after { display: none; }
+
+    .bht-label {
+        position: absolute;
+        /* inset from the timeline&apos;s axis line, and from its leader line above, as a
+           band&apos;s name is from its band&apos;s edges; it hangs under the leader&apos;s end */
+        left: calc(var(--bht-axis) + var(--bht-band-pad));
+        /* in from the frame&apos;s right side as far as from the axis on the left */
+        right: calc(var(--bht-band-pad) + var(--bht-border));
+        padding: calc(var(--bht-sm) + var(--bht-xs)) 0 0;
+        line-height: var(--bht-lh-sm);
+        color: var(--bht-text);
+    }
+    .bht-when {
+        display: block;
+        color: var(--bht-lit);
+        font-variant-numeric: tabular-nums;
+    }
+    /* on its own line under the date */
+    .bht-when-ago { display: block; color: var(--bht-mute); }
+    /* bold as a band&apos;s name (.bht-band-label b); !important over the site&apos;s .text-serif,
+       which sets its own weight that way */
+    .bht-what  { display: block; font-weight: 600 !important; }
+    /* the summary in the body text&apos;s colour, as a period&apos;s */
+    .bht-why { display: block; color: var(--bht-text); }
+    /* hidden by the script&apos;s settings (HIDE_EVENT_SUMMARIES, HIDE_PERIOD_SUMMARIES) */
+    #bht.bht-hide-event-summaries .bht-why,
+    #bht.bht-hide-period-summaries .bht-block .bht-block-note { display: none; }
+
+    /*
+     * The veil: while the timeline starts low on the screen (too little of it showing
+     * to read: see veil() in the script), all of it is hidden and a large centred
+     * &quot;scroll to reveal&quot; stands in at its top, in a dashed box like the site&apos;s meta
+     * box (sass/lzon/_component-meta.scss: dashed $border-md in --color-dark,
+     * $border-radius) down to near the bottom of the screen; scrolled up far enough,
+     * the two cross-fade ($transition-speed-lg).
+     */
+    /*
+     * The veil&apos;s box is laid out by the browser alone, so it holds steady while
+     * scrolling (sizing it from script on scroll lagged behind on phones): the veil
+     * draws the sides, scrolling with the page and running well past the bottom of
+     * the screen, and its top edge (.bht-veil-cap) is a piece at its top; its bottom
+     * edge is a short piece stuck --bht-foot-gap above the bottom of the screen (as the
+     * button strip is), whose background, the page&apos;s, hides the sides where it
+     * overlaps them, and whose ::before hides them below it.
+     */
+    .bht-veil {
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        height: 100vh;
+        height: 100lvh;
+        box-sizing: border-box;
+        /* just the sides: the top and bottom edges are their own pieces (.bht-veil-cap,
+           .bht-veil-end), the bottom one sticking to the bottom of the screen */
+        padding: 0 var(--bht-md);
+        border: var(--bht-border) dashed var(--color-dark);
+        border-block: 0;
+        /* the bottom edge&apos;s cover (its ::before) goes no further than the box: not over
+           the page below it (clip, not hidden: no scroll box, so the edge still sticks;
+           only up and down, as the edges reach out over the sides) */
+        overflow-x: visible;
+        overflow-y: clip;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        pointer-events: none;
+        opacity: 0;
+        transition: opacity var(--bht-speed-lg) ease;
+    }
+    .bht-veil-icon { color: var(--color-primary); }
+    /* the top edge itself, with its rounded corners: as short as the bottom edge, so the
+       veil&apos;s own dashed sides run on down past it (one dash pattern, not two crossed) */
+    .bht-veil-cap {
+        position: relative;
+        align-self: stretch;
+        /* out over the veil&apos;s side borders, to draw its own */
+        margin-inline: calc(-1 * (var(--bht-md) + var(--bht-border)));
+        height: calc(var(--bht-radius) + var(--bht-border));
+        box-sizing: border-box;
+        border: var(--bht-border) dashed var(--color-dark);
+        border-bottom: 0;
+        border-radius: var(--bht-radius) var(--bht-radius) 0 0;
+        background: var(--color-darker) url(&quot;/img/noise-dark.png&quot;) repeat;
+        /* the text as far down from the top as the year row is (the header&apos;s top padding) */
+        margin-bottom: calc(var(--bht-foot-gap) - var(--bht-radius) - var(--bht-border));
+    }
+    /* each rounded corner of the top and bottom edges drawn here, solid (a dashed
+       border&apos;s dashes may leave a corner&apos;s curve blank): the curve in the line&apos;s colour,
+       the page&apos;s colour outside it, so the veil&apos;s straight sides (drawn under the edges)
+       don&apos;t show past it; clear inside */
+    .bht-veil-cap::after,
+    .bht-veil-end::after {
+        content: &quot;&quot;;
+        position: absolute;
+        left: calc(-1 * var(--bht-border));
+        right: calc(-1 * var(--bht-border));
+        height: var(--bht-radius);
+        --bht-r: var(--bht-radius);
+        background-size: var(--bht-r) var(--bht-r);
+        background-repeat: no-repeat;
+        pointer-events: none;
+    }
+    .bht-veil-cap::after {
+        top: calc(-1 * var(--bht-border));
+        background-image:
+            radial-gradient(circle at 100% 100%, transparent calc(var(--bht-r) - var(--bht-border) - .5px), var(--color-dark) calc(var(--bht-r) - var(--bht-border)), var(--color-dark) calc(var(--bht-r) - .5px), var(--color-darker) var(--bht-r)),
+            radial-gradient(circle at 0 100%, transparent calc(var(--bht-r) - var(--bht-border) - .5px), var(--color-dark) calc(var(--bht-r) - var(--bht-border)), var(--color-dark) calc(var(--bht-r) - .5px), var(--color-darker) var(--bht-r));
+        background-position: left top, right top;
+    }
+    .bht-veil-end::after {
+        bottom: calc(-1 * var(--bht-border));
+        background-image:
+            radial-gradient(circle at 100% 0, transparent calc(var(--bht-r) - var(--bht-border) - .5px), var(--color-dark) calc(var(--bht-r) - var(--bht-border)), var(--color-dark) calc(var(--bht-r) - .5px), var(--color-darker) var(--bht-r)),
+            radial-gradient(circle at 0 0, transparent calc(var(--bht-r) - var(--bht-border) - .5px), var(--color-dark) calc(var(--bht-r) - var(--bht-border)), var(--color-dark) calc(var(--bht-r) - .5px), var(--color-darker) var(--bht-r));
+        background-position: left bottom, right bottom;
+    }
+    /* icon and text close together: no line-height gap */
+    /* set like the year row&apos;s figures (.bht-year: bold, $line-height-sm), the icon just under */
+    .bht-veil-text { font-weight: 700; line-height: var(--bht-lh-sm); }
+    .bht-veil-icon { line-height: 1; }
+    .bht-veil-end {
+        position: sticky;
+        bottom: calc(env(safe-area-inset-bottom, 0px) + var(--bht-foot-gap));
+        margin-top: auto;
+        align-self: stretch;
+        /* out over the veil&apos;s side borders, to draw its own */
+        margin-inline: calc(-1 * (var(--bht-md) + var(--bht-border)));
+        height: calc(var(--bht-radius) + var(--bht-border));
+        box-sizing: border-box;
+        border: var(--bht-border) dashed var(--color-dark);
+        border-top: 0;
+        border-radius: 0 0 var(--bht-radius) var(--bht-radius);
+        background: var(--color-darker) url(&quot;/img/noise-dark.png&quot;) repeat;
+    }
+    /* the page&apos;s colour all the way across under the edge, over the veil&apos;s sides and
+       anything of its text a short screen puts lower than the edge (positioned, so it
+       paints over the text) */
+    .bht-veil-end::before {
+        content: &quot;&quot;;
+        position: absolute;
+        /* from below the edge&apos;s own bottom border (100% is its padding box&apos;s bottom) */
+        top: calc(100% + var(--bht-border));
+        left: calc(-1 * var(--bht-border));
+        right: calc(-1 * var(--bht-border));
+        height: 100vh;
+        height: 100lvh;
+        background: var(--color-darker) url(&quot;/img/noise-dark.png&quot;) repeat;
+    }
+    /* the header, track and bottom strip fade as one: faded separately, the header and
+       strip would turn see-through and stop hiding the track under them */
+    .bht-body { transition: opacity var(--bht-speed-lg) ease; }
+    #bht.bht-veiled .bht-veil { opacity: 1; }
+    #bht.bht-veiled .bht-body {
+        opacity: 0;
+        pointer-events: none;
+    }
+    /* no fade into the starting state on load (bht-ready: set by the script once that&apos;s
+       on screen): only changes after it fade */
+    #bht:not(.bht-ready) :is(.bht-veil, .bht-body) { transition: none; }
+
+    /*
+     * Narrow screens (the site&apos;s md breakpoint, $breakpoints-md): no button column; the
+     * buttons make a row along the bottom of the timeline, just above the frame&apos;s
+     * bottom edge, the &quot;next&quot; ones at the left and the &quot;previous&quot; ones at the right,
+     * the biggest jumps at the outer ends, keeping their up and down icons. The row is solid (the page&apos;s colour), so
+     * events scroll under it.
+     */
+    @media (max-width: 768px) {
+        /* no button column: the frame runs the full width, and ends the button row&apos;s
+           height (the buttons and the gap over them) above the track&apos;s end */
+        #bht { --bht-iw: 0px; --bht-row-h: calc(var(--bht-xl) + 2 * var(--bht-xs) + 2 * var(--bht-border) + var(--bht-gap)); }
+        .bht-frame-nav { display: none; }
+        .bht-frame { bottom: var(--bht-row-h); }
+        .bht-frame-bottom { bottom: calc(var(--bht-foot-h, 0px) + var(--bht-row-h)); }
+        /* no summaries, for events or periods: just titles and dates */
+        .bht-why, .bht-block .bht-block-note { display: none; }
+        /* the readout stacked: the clock time and its time to midnight, then the year
+           and its years ago, all at the left (the rows give up their children to one
+           column, reordered) */
+        .bht-read { display: flex; flex-direction: column; }
+        .bht-read-row { display: contents; }
+        .bht-read-row &gt; :is(:first-child, :last-child) { text-align: left; }
+        .bht-read-row:first-child &gt; :first-child { order: 1; }
+        .bht-read-row:last-child &gt; :first-child { order: 2; }
+        .bht-read-row:first-child &gt; :last-child { order: 3; }
+        .bht-read-row:last-child &gt; :last-child { order: 4; }
+        .bht-progress {
+            width: auto;
+            right: 0;
+            /* over the frame (3), so the row hides its sides */
+            z-index: 4;
+            padding: 0;
+            border: 0;
+            pointer-events: none;
+        }
+        .bht-nav {
+            flex-direction: row-reverse;
+            align-items: flex-end;
+        }
+        .bht-nav-group:first-child,
+        .bht-nav-group:last-child {
+            position: sticky;
+            top: auto;
+            bottom: var(--bht-foot-h, 0px);
+            flex: 1 1 0;
+            flex-direction: row-reverse;
+            gap: var(--bht-xs);
+            /* the gap between the frame&apos;s bottom edge and the row&apos;s border, then the
+               border&apos;s room and the padding inside it */
+            padding: calc(var(--bht-gap) + var(--bht-border) + var(--bht-xs)) var(--bht-xs) calc(var(--bht-border) + var(--bht-xs));
+            background: var(--color-darker) url(&quot;/img/noise-dark.png&quot;) repeat;
+            pointer-events: auto;
+        }
+        /* one rounded border round the whole row, drawn half by each group (the &quot;previous&quot;
+           group the right half, the &quot;next&quot; group the left) */
+        .bht-nav-group::after {
+            content: &quot;&quot;;
+            position: absolute;
+            inset: var(--bht-gap) 0 0;
+            border: var(--bht-border) solid var(--color-dark);
+            pointer-events: none;
+        }
+        .bht-nav-group:first-child::after { border-left: 0; border-radius: 0 var(--bht-radius) var(--bht-radius) 0; }
+        .bht-nav-group:last-child::after { border-right: 0; border-radius: var(--bht-radius) 0 0 var(--bht-radius); }
+        /* (reversed rows: flex-start is the right, flex-end the left) */
+        .bht-nav-group:first-child { justify-content: flex-start; }
+        .bht-nav-group:last-child { justify-content: flex-end; }
+        .bht-nav .btn-nav-link { width: var(--bht-xl); height: var(--bht-xl); max-height: none; }
+    }
+    body[data-dark-mode=&quot;off&quot;] #bht .bht-nav-group { background-image: url(&quot;/img/noise-light.png&quot;); }
+
+    /* problems reading the data (see showProblems): loud, so they&apos;re found while writing */
+    .bht-problems {
+        margin: var(--bht-lg) 0;
+        padding: var(--bht-sm) var(--bht-md);
+        border: var(--bht-border) dashed oklch(65% 0.2 25);
+        border-radius: var(--bht-radius);
+        background: color-mix(in oklch, oklch(65% 0.2 25) 15%, transparent);
+        color: var(--color-lighter);
+    }
+    .bht-problems &gt; b { display: block; color: oklch(70% 0.2 25); }
+    .bht-problems ul { margin: var(--bht-xs) 0 0; padding-left: var(--bht-md); overflow: visible; }
+
+    @media (prefers-reduced-motion: reduce) {
+        .bht-band { transition: none; }
+        /* (the veil&apos;s cross-fade stays: a fade isn&apos;t motion, and Android turns reduced
+           motion on with battery saver, which made the fade drop out at random) */
+    }
+&lt;/style&gt;
+
+&lt;!-- The header and an empty track: the script builds the bands, axis and events. --&gt;
+&lt;div id=&quot;bht&quot;&gt;
+    &lt;!-- shown instead of the timeline while too little of it is on screen (see veil()) --&gt;
+    &lt;div class=&quot;bht-veil text-sans-serif&quot; aria-hidden=&quot;true&quot;&gt;
+        &lt;span class=&quot;bht-veil-cap&quot;&gt;&lt;/span&gt;
+        &lt;span class=&quot;bht-veil-text font-size-h3 text-base&quot;&gt;Scroll up&lt;/span&gt;
+        &lt;!-- Phosphor caret-up --&gt;
+        &lt;span class=&quot;icon bht-veil-icon font-size-h3&quot;&gt;&lt;svg xmlns=&quot;http://www.w3.org/2000/svg&quot; width=&quot;32&quot; height=&quot;32&quot; class=&quot;svgicon&quot; fill=&quot;currentColor&quot; viewBox=&quot;0 0 256 256&quot; aria-hidden=&quot;true&quot;&gt;&lt;polyline points=&quot;48 160 128 80 208 160&quot; fill=&quot;none&quot; stroke=&quot;currentColor&quot; stroke-linecap=&quot;round&quot; stroke-linejoin=&quot;round&quot; stroke-width=&quot;16&quot;&gt;&lt;/polyline&gt;&lt;/svg&gt;&lt;/span&gt;
+        &lt;span class=&quot;bht-veil-end&quot;&gt;&lt;/span&gt;
+    &lt;/div&gt;
+    &lt;div class=&quot;bht-body&quot;&gt;
+    &lt;div class=&quot;bht-head&quot;&gt;
+        &lt;!-- two rows, each across the full width: the same moment if all of it were one
+             24-hour day ending now at midnight, and (right) the year; then under each, its
+             subtext --&gt;
+        &lt;div class=&quot;bht-read text-sans-serif&quot;&gt;
+            &lt;div class=&quot;bht-read-row font-size-h3&quot;&gt;
+                &lt;span class=&quot;bht-year bht-clock-time text-base&quot;&gt;&amp;nbsp;&lt;/span&gt;
+                &lt;span class=&quot;bht-year  text-base&quot;&gt;&amp;nbsp;&lt;/span&gt;
+            &lt;/div&gt;
+            &lt;div class=&quot;bht-read-row font-size-sm&quot;&gt;
+                &lt;span class=&quot;bht-ago bht-clock-left text-sm text-soft&quot;&gt;&amp;nbsp;&lt;/span&gt;
+                &lt;span class=&quot;bht-ago text-sm text-soft&quot;&gt;&amp;nbsp;&lt;/span&gt;
+            &lt;/div&gt;
+        &lt;/div&gt;
+        &lt;div class=&quot;bht-legend flex-row flex-wrap gap-xs&quot;&gt;&lt;/div&gt;
+    &lt;/div&gt;
+    &lt;div class=&quot;bht-track&quot; id=&quot;bht-track&quot;&gt;
+        &lt;!-- the frame around the timeline as it shows --&gt;
+        &lt;div class=&quot;bht-frame&quot;&gt;&lt;div class=&quot;bht-frame-top&quot;&gt;&lt;/div&gt;&lt;div class=&quot;bht-frame-bottom&quot;&gt;&lt;/div&gt;&lt;/div&gt;
+        &lt;!-- the button column, down the far left (the script adds the rest of the track) --&gt;
+        &lt;!-- the frame around the button column --&gt;
+        &lt;div class=&quot;bht-frame bht-frame-nav&quot;&gt;&lt;div class=&quot;bht-frame-top&quot;&gt;&lt;/div&gt;&lt;div class=&quot;bht-frame-bottom&quot;&gt;&lt;/div&gt;&lt;/div&gt;
+        &lt;div class=&quot;bht-progress&quot;&gt;
+            &lt;div class=&quot;bht-nav&quot;&gt;
+                &lt;div class=&quot;bht-nav-group&quot;&gt;
+                &lt;!-- Phosphor caret-line-up --&gt;
+                &lt;button type=&quot;button&quot; class=&quot;btn-nav-link bht-btn-top&quot; aria-label=&quot;Back to the top&quot; title=&quot;Back to the top&quot;&gt;&lt;span class=&quot;icon&quot;&gt;&lt;svg xmlns=&quot;http://www.w3.org/2000/svg&quot; width=&quot;32&quot; height=&quot;32&quot; class=&quot;svgicon&quot; fill=&quot;currentColor&quot; viewBox=&quot;0 0 256 256&quot; aria-hidden=&quot;true&quot;&gt;&lt;line x1=&quot;48&quot; y1=&quot;48&quot; x2=&quot;208&quot; y2=&quot;48&quot; fill=&quot;none&quot; stroke=&quot;currentColor&quot; stroke-linecap=&quot;round&quot; stroke-linejoin=&quot;round&quot; stroke-width=&quot;16&quot;&gt;&lt;/line&gt;&lt;polyline points=&quot;48 176 128 96 208 176&quot; fill=&quot;none&quot; stroke=&quot;currentColor&quot; stroke-linecap=&quot;round&quot; stroke-linejoin=&quot;round&quot; stroke-width=&quot;16&quot;&gt;&lt;/polyline&gt;&lt;/svg&gt;&lt;/span&gt;&lt;/button&gt;
+                &lt;!-- Phosphor caret-double-up --&gt;
+                &lt;button type=&quot;button&quot; class=&quot;btn-nav-link bht-btn-prev&quot; aria-label=&quot;Previous period&quot; title=&quot;Previous period&quot;&gt;&lt;span class=&quot;icon&quot;&gt;&lt;svg xmlns=&quot;http://www.w3.org/2000/svg&quot; width=&quot;32&quot; height=&quot;32&quot; class=&quot;svgicon&quot; fill=&quot;currentColor&quot; viewBox=&quot;0 0 256 256&quot; aria-hidden=&quot;true&quot;&gt;&lt;polyline points=&quot;48 208 128 128 208 208&quot; fill=&quot;none&quot; stroke=&quot;currentColor&quot; stroke-linecap=&quot;round&quot; stroke-linejoin=&quot;round&quot; stroke-width=&quot;16&quot;&gt;&lt;/polyline&gt;&lt;polyline points=&quot;48 128 128 48 208 128&quot; fill=&quot;none&quot; stroke=&quot;currentColor&quot; stroke-linecap=&quot;round&quot; stroke-linejoin=&quot;round&quot; stroke-width=&quot;16&quot;&gt;&lt;/polyline&gt;&lt;/svg&gt;&lt;/span&gt;&lt;/button&gt;
+                &lt;!-- Phosphor caret-up --&gt;
+                &lt;button type=&quot;button&quot; class=&quot;btn-nav-link bht-btn-prev-ev&quot; aria-label=&quot;Previous event&quot; title=&quot;Previous event&quot;&gt;&lt;span class=&quot;icon&quot;&gt;&lt;svg xmlns=&quot;http://www.w3.org/2000/svg&quot; width=&quot;32&quot; height=&quot;32&quot; class=&quot;svgicon&quot; fill=&quot;currentColor&quot; viewBox=&quot;0 0 256 256&quot; aria-hidden=&quot;true&quot;&gt;&lt;polyline points=&quot;48 160 128 80 208 160&quot; fill=&quot;none&quot; stroke=&quot;currentColor&quot; stroke-linecap=&quot;round&quot; stroke-linejoin=&quot;round&quot; stroke-width=&quot;16&quot;&gt;&lt;/polyline&gt;&lt;/svg&gt;&lt;/span&gt;&lt;/button&gt;
+                &lt;/div&gt;
+                &lt;div class=&quot;bht-nav-group&quot;&gt;
+                &lt;!-- Phosphor caret-down --&gt;
+                &lt;button type=&quot;button&quot; class=&quot;btn-nav-link bht-btn-next-ev&quot; aria-label=&quot;Next event&quot; title=&quot;Next event&quot;&gt;&lt;span class=&quot;icon&quot;&gt;&lt;svg xmlns=&quot;http://www.w3.org/2000/svg&quot; width=&quot;32&quot; height=&quot;32&quot; class=&quot;svgicon&quot; fill=&quot;currentColor&quot; viewBox=&quot;0 0 256 256&quot; aria-hidden=&quot;true&quot;&gt;&lt;polyline points=&quot;48 96 128 176 208 96&quot; fill=&quot;none&quot; stroke=&quot;currentColor&quot; stroke-linecap=&quot;round&quot; stroke-linejoin=&quot;round&quot; stroke-width=&quot;16&quot;&gt;&lt;/polyline&gt;&lt;/svg&gt;&lt;/span&gt;&lt;/button&gt;
+                &lt;!-- Phosphor caret-double-down --&gt;
+                &lt;button type=&quot;button&quot; class=&quot;btn-nav-link bht-btn-next&quot; aria-label=&quot;Next period&quot; title=&quot;Next period&quot;&gt;&lt;span class=&quot;icon&quot;&gt;&lt;svg xmlns=&quot;http://www.w3.org/2000/svg&quot; width=&quot;32&quot; height=&quot;32&quot; class=&quot;svgicon&quot; fill=&quot;currentColor&quot; viewBox=&quot;0 0 256 256&quot; aria-hidden=&quot;true&quot;&gt;&lt;polyline points=&quot;48 48 128 128 208 48&quot; fill=&quot;none&quot; stroke=&quot;currentColor&quot; stroke-linecap=&quot;round&quot; stroke-linejoin=&quot;round&quot; stroke-width=&quot;16&quot;&gt;&lt;/polyline&gt;&lt;polyline points=&quot;48 128 128 208 208 128&quot; fill=&quot;none&quot; stroke=&quot;currentColor&quot; stroke-linecap=&quot;round&quot; stroke-linejoin=&quot;round&quot; stroke-width=&quot;16&quot;&gt;&lt;/polyline&gt;&lt;/svg&gt;&lt;/span&gt;&lt;/button&gt;
+                &lt;!-- Phosphor caret-line-down --&gt;
+                &lt;button type=&quot;button&quot; class=&quot;btn-nav-link bht-btn-bottom&quot; aria-label=&quot;To the bottom&quot; title=&quot;To the bottom&quot;&gt;&lt;span class=&quot;icon&quot;&gt;&lt;svg xmlns=&quot;http://www.w3.org/2000/svg&quot; width=&quot;32&quot; height=&quot;32&quot; class=&quot;svgicon&quot; fill=&quot;currentColor&quot; viewBox=&quot;0 0 256 256&quot; aria-hidden=&quot;true&quot;&gt;&lt;line x1=&quot;48&quot; y1=&quot;208&quot; x2=&quot;208&quot; y2=&quot;208&quot; fill=&quot;none&quot; stroke=&quot;currentColor&quot; stroke-linecap=&quot;round&quot; stroke-linejoin=&quot;round&quot; stroke-width=&quot;16&quot;&gt;&lt;/line&gt;&lt;polyline points=&quot;48 80 128 160 208 80&quot; fill=&quot;none&quot; stroke=&quot;currentColor&quot; stroke-linecap=&quot;round&quot; stroke-linejoin=&quot;round&quot; stroke-width=&quot;16&quot;&gt;&lt;/polyline&gt;&lt;/svg&gt;&lt;/span&gt;&lt;/button&gt;
+                &lt;/div&gt;
+            &lt;/div&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+    &lt;div class=&quot;bht-foot&quot;&gt;
+    &lt;/div&gt;
+    &lt;/div&gt;
+&lt;/div&gt;
+
+&lt;script&gt;
+    (() =&gt; {
+        &quot;use strict&quot;;
+
+        // ── Settings ────────────────────────────────────────────────────────────
+
+        /** Hide every event&apos;s summary (just its date and title), at every width. */
+        const HIDE_EVENT_SUMMARIES = true;
+        /** Hide every period&apos;s summary (just its title and dates), at every width. */
+        const HIDE_PERIOD_SUMMARIES = true;
+
+        /** The track&apos;s whole height in px, now to START_AGO. */
+        const SCROLL_PX = 33_000;
+
+        /**
+         * The scale is base-10 log of (years ago + LOG_OFFSET): each power of ten takes the
+         * same height. The offset keeps &quot;now&quot; (0 years ago) finite; bigger values give the
+         * last few years less room.
+         */
+        const LOG_OFFSET = 1;
+
+        /** Empty room above today and below the oldest point, in rem (the site&apos;s $spacer-xl). */
+        const PAD_REM = 3;
+
+        /** Space between two event labels, in rem (the site&apos;s $spacer-sm). */
+        const LABEL_GAP_REM = 0.5;
+
+        // ── Data ────────────────────────────────────────────────────────────────
+        // The periods and events are in big-history.markdown, beside the post&apos;s
+        // index.md, which includes it rendered (the include_md shortcode) as a hidden
+        // block just above this file; read here. Its comment says how to write it. Any
+        // entry that can&apos;t be read is listed in a red box above the timeline, and in
+        // the console, and left out.
+
+        /**
+         * A period on the timeline.
+         * @typedef {object} Period
+         * @property {string} name      Its name, on its block.
+         * @property {string} [group]   The key of the group band it belongs to (none now).
+         * @property {{ago?: number, year?: number}} end When it ends; it starts where the previous one ends (the first at START_AGO).
+         * @property {string} color     Any CSS colour.
+         * @property {string} [note]    Its summary (markup, rendered from the markdown).
+         */
+
+        /**
+         * An event on the timeline.
+         * @typedef {object} TimelineEvent
+         * @property {number} [ago]     When, in years ago (shown as &quot;c. … years ago&quot;).
+         * @property {number} [year]    Or when, as a year (BCE negative; a day&apos;s date gives a fraction of one).
+         * @property {boolean} [approx] For a `year`: prefix &quot;c.&quot;.
+         * @property {string} what      What happened.
+         * @property {string} [why]     Its summary (markup, rendered from the markdown).
+         * @property {string} [when]    Overrides the date text.
+         */
+
+        /** The data block (big-history.markdown, rendered). */
+        const dataEl = document.getElementById(&quot;bht-data&quot;);
+
+        /** Problems found reading the data, shown above the timeline (see showProblems). */
+        const problems = [];
+
+        /**
+         * Notes a problem with the data.
+         * @param {string} where Which entry (or part of the file).
+         * @param {string} what What&apos;s wrong.
+         */
+        function problem(where, what) {
+            problems.push({ where, what });
+            console.error(`big-history.markdown: ${where}: ${what}`);
+        }
+
+        if (!dataEl) problem(&quot;the post&quot;, &apos;no data: include big-history.markdown above big-history.html (include_md, id=&quot;bht-data&quot;)&apos;);
+
+        /**
+         * A &quot;yyyy-mm-dd&quot; date as a fractional year (so 2026-07-02 is about 2026.5). A
+         * leading &quot;-&quot; is BCE, on the same footing as a year (-3200-01-01 is the start of
+         * 3200 BCE). Undefined for a day that doesn&apos;t exist.
+         * @param {string} date
+         * @returns {number | undefined}
+         */
+        function dateYear(date) {
+            const m = /^(-?)(\d{4,})-(\d{2})-(\d{2})$/.exec(date.trim());
+            if (!m) return undefined;
+            const year = Number(m[1] + m[2]), month = Number(m[3]), day = Number(m[4]);
+            // Date.UTC treats years 0–99 as 1900s: set the year separately
+            const at = (y, mo, d) =&gt; { const t = new Date(Date.UTC(2000, mo, d)); t.setUTCFullYear(y); return t; };
+            const t = at(year, month - 1, day);
+            if (month &lt; 1 || month &gt; 12 || t.getUTCDate() !== day) return undefined;
+            const start = at(year, 0, 1).getTime();
+            return year + (t.getTime() - start) / (at(year + 1, 0, 1).getTime() - start);
+        }
+
+        /**
+         * Reads a date as written in the data: &quot;2026-07-19&quot;, &quot;1605&quot;, &quot;399 BCE&quot;,
+         * &quot;c. 2000 BCE&quot;, &quot;13,000 years ago&quot;, &quot;2.75 million years ago&quot;, &quot;present&quot;.
+         * @param {string} text
+         * @returns {{ ago?: number, year?: number, approx?: boolean } | null} null if it can&apos;t.
+         */
+        function readDate(text) {
+            let t = text.trim().replace(/\s+/g, &quot; &quot;);
+            const approx = /^c\.?\s/i.test(t) || /^c\.\S/i.test(t);
+            t = t.replace(/^c\.?\s*/i, &quot;&quot;);
+            if (/^(present|now|today)$/i.test(t)) return { ago: 0 };
+            if (/^-?\d{4,}-\d{2}-\d{2}$/.test(t)) {
+                const year = dateYear(t);
+                return year === undefined ? null : { year, approx };
+            }
+            let m = /^(\d[\d,]*(?:\.\d+)?)\s*(million|thousand)?\s+(?:years|yrs)\s+ago$/i.exec(t);
+            if (m) {
+                const n = Number(m[1].replace(/,/g, &quot;&quot;));
+                const scale = { million: 1e6, thousand: 1e3 }[m[2]?.toLowerCase()] ?? 1;
+                return Number.isFinite(n) ? { ago: n * scale } : null;
+            }
+            m = /^(\d[\d,]*)\s*(BCE|BC|CE|AD)?$/i.exec(t);
+            if (m) {
+                const n = Number(m[1].replace(/,/g, &quot;&quot;));
+                if (!Number.isFinite(n) || n === 0) return null;
+                return { year: /^bc/i.test(m[2] ?? &quot;&quot;) ? -n : n, approx };
+            }
+            return null;
+        }
+
+        /**
+         * An entry&apos;s title: its heading&apos;s text (comments left out), less any leading
+         * number (&quot;12. Title&quot; → &quot;Title&quot;).
+         * @param {Element} h
+         * @returns {string}
+         */
+        const titleOf = h =&gt; h.textContent.trim().replace(/^\d+[a-z]?\.\s+/i, &quot;&quot;);
+
+        /**
+         * Reads the data block: &quot;# Periods&quot; and &quot;# Events&quot; sections, each &quot;## &quot; heading
+         * an entry, with what follows it until the next heading.
+         * @returns {{ periods: Period[], events: TimelineEvent[] }}
+         */
+        function readData() {
+            const periods = [], events = [];
+            if (!dataEl) return { periods, events };
+            /** @type {&quot;periods&quot; | &quot;events&quot; | null} */
+            let section = null;
+            /** @type {{ title: string, nodes: Element[], section: string } | null} */
+            let entry = null;
+            const entries = [];
+            // entries under a heading that isn&apos;t a section, counted for one problem each
+            let stray = null;
+            const flushStray = () =&gt; {
+                if (stray?.count) problem(stray.where, `${stray.why}; its ${stray.count} entr${stray.count === 1 ? &quot;y&quot; : &quot;ies&quot;} left out`);
+                stray = null;
+            };
+            for (const node of dataEl.children) {
+                if (node.tagName === &quot;H1&quot;) {
+                    flushStray();
+                    const name = node.textContent.trim().toLowerCase();
+                    section = name === &quot;periods&quot; || name === &quot;events&quot; ? name : null;
+                    if (!section) stray = { where: `&quot;# ${node.textContent.trim()}&quot;`, why: &apos;not a section this reads (&quot;# Periods&quot; or &quot;# Events&quot;)&apos;, count: 0 };
+                    entry = null;
+                } else if (node.tagName === &quot;H2&quot;) {
+                    entry = { title: titleOf(node), nodes: [], section };
+                    if (section) entries.push(entry);
+                    else if (stray) stray.count++;
+                    else {
+                        stray = { where: &quot;the file&quot;, why: &apos;entries before any &quot;# Periods&quot; or &quot;# Events&quot; heading&apos;, count: 1 };
+                    }
+                } else if (entry) {
+                    entry.nodes.push(node);
+                } else if (node.textContent.trim()) {
+                    problem(`&quot;${node.textContent.trim().slice(0, 40)}…&quot;`, &apos;text before any &quot;## &quot; entry: left out&apos;);
+                }
+            }
+
+            flushStray();
+
+            for (const e of entries) {
+                if (e.section === &quot;periods&quot;) {
+                    const where = `Period &quot;${e.title}&quot;`;
+                    const nodes = [...e.nodes];
+                    const settings = {};
+                    if (nodes[0]?.tagName === &quot;UL&quot;) {
+                        for (const li of nodes.shift().children) {
+                            const m = /^\s*([a-z]+)\s*:\s*(.*?)\s*$/i.exec(li.textContent);
+                            if (!m) { problem(where, `can&apos;t read &quot;${li.textContent.trim()}&quot; (want &quot;- key: value&quot;)`); continue; }
+                            const key = m[1].toLowerCase();
+                            if (![&quot;ends&quot;, &quot;color&quot;, &quot;group&quot;].includes(key)) problem(where, `unknown setting &quot;${m[1]}&quot; (ends, color)`);
+                            else settings[key] = m[2];
+                        }
+                    } else {
+                        problem(where, &apos;no settings: a &quot;- ends: …&quot; and &quot;- color: …&quot; list straight under the heading&apos;);
+                    }
+                    // (left out without a readable end: the period before it runs on in its place)
+                    if (settings.ends === undefined) {
+                        problem(where, &apos;no &quot;- ends:&quot;: left out&apos;);
+                        continue;
+                    }
+                    const d = readDate(settings.ends);
+                    if (!d) {
+                        problem(where, `can&apos;t read the date &quot;${settings.ends}&quot;: left out`);
+                        continue;
+                    }
+                    const end = d.ago !== undefined ? { ago: d.ago } : { year: d.year };
+                    if (!settings.color) problem(where, &apos;no &quot;- color:&quot; (grey for now)&apos;);
+                    const note = nodes.map(n =&gt; n.outerHTML).join(&quot;&quot;).trim();
+                    periods.push({ name: e.title, group: settings.group, end, color: settings.color || &quot;oklch(60% 0 0)&quot;, note: note || undefined });
+                } else {
+                    const where = `Event &quot;${e.title}&quot;`;
+                    const nodes = [...e.nodes];
+                    const first = nodes[0];
+                    if (!first || first.tagName !== &quot;P&quot;) {
+                        problem(where, &quot;no date on the line under the heading: left out&quot;);
+                        continue;
+                    }
+                    // the date is the first line; anything after it on the same paragraph
+                    // (no blank line between) belongs to the summary
+                    const [line, ...rest] = first.innerHTML.split(/\n|&lt;br\s*\/?&gt;/i);
+                    const dateText = line.replace(/&lt;[^&gt;]*&gt;/g, &quot;&quot;).trim();
+                    const d = readDate(dateText);
+                    if (!d) {
+                        problem(where, `can&apos;t read the date &quot;${dateText}&quot;: left out`);
+                        continue;
+                    }
+                    nodes.shift();
+                    const lead = rest.join(&quot;\n&quot;).trim();
+                    const why = (lead ? `&lt;p&gt;${lead}&lt;/p&gt;` : &quot;&quot;) + nodes.map(n =&gt; n.outerHTML).join(&quot;&quot;);
+                    events.push({ ...d, what: e.title, why: why.trim() || undefined });
+                }
+            }
+            if (!periods.length) problem(&quot;the file&quot;, &apos;no periods (a &quot;# Periods&quot; section with &quot;## &quot; entries)&apos;);
+            if (!events.length) problem(&quot;the file&quot;, &apos;no events (a &quot;# Events&quot; section with &quot;## &quot; entries)&apos;);
+            return { periods, events };
+        }
+
+        /**
+         * Lists the problems found reading the data in a red box just above the
+         * timeline, so they&apos;re obvious while writing (nothing shows when there are none).
+         */
+        function showProblems() {
+            if (!problems.length) return;
+            const box = document.createElement(&quot;div&quot;);
+            box.className = &quot;bht-problems text-sans-serif text-sm&quot;;
+            const head = document.createElement(&quot;b&quot;);
+            head.textContent = `big-history.markdown: ${problems.length} problem${problems.length === 1 ? &quot;&quot; : &quot;s&quot;}`;
+            const list = document.createElement(&quot;ul&quot;);
+            for (const p of problems) {
+                const li = document.createElement(&quot;li&quot;);
+                const where = document.createElement(&quot;b&quot;);
+                where.textContent = p.where;
+                li.append(where, `: ${p.what}`);
+                list.append(li);
+            }
+            box.append(head, list);
+            (document.getElementById(&quot;bht&quot;) ?? document.body).before(box);
+        }
+
+        /**
+         * An element holding markup.
+         * @param {string} tag
+         * @param {string} className
+         * @param {string} html
+         * @returns {HTMLElement}
+         */
+        function elHTML(tag, className, html) {
+            const e = el(tag, className);
+            e.innerHTML = html;
+            return e;
+        }
+
+        const data = readData();
+
+        /** @type {Period[]} The periods, oldest first; the last one runs to now. */
+        const PERIODS = data.periods;
+
+        /** The group bands&apos; labels and colours, by key (none now). */
+        const GROUPS = {};
+
+        /** @type {TimelineEvent[]} The events, any order. */
+        const EVENTS = data.events;
+
+        showProblems();
+
+        // ── Time ────────────────────────────────────────────────────────────────
+        // Positions are in &quot;x&quot;: a fractional calendar year, BCE negative. There&apos;s no
+        // year 0 in the calendar; x in [0, 1) reads as 1 CE.
+
+        const today = new Date();
+        const startOfYear = new Date(today.getFullYear(), 0, 1);
+        /** Now as x: this year plus how far through it we are. */
+        const NOW = today.getFullYear() + (today - startOfYear) / (365.25 * 864e5);
+        /** How far back the timeline goes, in years ago: to its oldest event. */
+        // (at least a year, so a file with no readable events still draws)
+        const START_AGO = Math.max(1, ...EVENTS.map(ev =&gt; (ev.ago !== undefined ? ev.ago : NOW - ev.year)));
+        /** The oldest point, at the bottom of the track, as x. */
+        const X0 = NOW - START_AGO;
+        /** The track&apos;s length in px, top (now) to bottom (START_AGO). */
+        const SPAN_PX = SCROLL_PX;
+        /** PAD_REM in px. */
+        const PAD = PAD_REM * parseFloat(getComputedStyle(document.documentElement).fontSize);
+        /** LABEL_GAP_REM in px. */
+        const LABEL_GAP = LABEL_GAP_REM * parseFloat(getComputedStyle(document.documentElement).fontSize);
+        /** Pixels per power of ten. */
+        const PX_PER_DECADE = SPAN_PX / (Math.log10(START_AGO + LOG_OFFSET) - Math.log10(LOG_OFFSET));
+
+        const fmt = n =&gt; Math.round(n).toLocaleString(&quot;en-US&quot;);
+
+        /**
+         * A point in time as x.
+         * @param {{ago?: number, year?: number}} p The point.
+         * @returns {number}
+         */
+        const toX = p =&gt; (p.ago !== undefined ? NOW - p.ago : p.year);
+
+        /**
+         * x on the scale alone, in px from the present (0) to the oldest point
+         * (SPAN_PX): log10 of years ago (plus LOG_OFFSET). The period blocks add no time,
+         * so progress through the timeline is measured on this.
+         * @param {number} x
+         * @returns {number}
+         */
+        const scalePx = x =&gt; (Math.log10(Math.max(0, NOW - x) + LOG_OFFSET) - Math.log10(LOG_OFFSET)) * PX_PER_DECADE;
+
+        /**
+         * scalePx backwards, clamped to the span.
+         * @param {number} px
+         * @returns {number}
+         */
+        function fromScalePx(px) {
+            const ago = LOG_OFFSET * 10 ** (Math.min(SPAN_PX, Math.max(0, px)) / PX_PER_DECADE) - LOG_OFFSET;
+            return Math.min(NOW, Math.max(X0, NOW - ago));
+        }
+
+        /**
+         * The blocks inserted into the track (periods), newest first; each with its edge `x` and its
+         * height `h` (measured in layout()). They&apos;re stacked into the track on top of the
+         * scale, so they take up room but no time.
+         * @type {{ kind: &quot;period&quot;, x: number, h: number, slot: HTMLElement, block: HTMLElement, item: object }[]}
+         */
+        const inserts = [];
+        // each insert also has `shift` (room left above it for an event label, which
+        // like the block itself takes no time) and `top` (where its block starts); both
+        // set by layout()
+
+        /**
+         * Where each insert starts in the track, in order (set by layout(): inserts at
+         * the present start at the very top; the rest at their edge on the scale, below
+         * the inserts above, and shifted down past any event label still there).
+         * @returns {number[]}
+         */
+        function insertTops() {
+            return inserts.map(ins =&gt; ins.top);
+        }
+
+        /**
+         * x as a pixel offset from the top of the track: the present PAD below the top,
+         * then the scale downward, pushed down by every insert above. A point exactly on
+         * an edge comes just under the inserts there.
+         * @param {number} x
+         * @returns {number}
+         */
+        function toPx(x) {
+            let h = 0;
+            for (const ins of inserts) if (ins.x &gt;= x) h += ins.shift + ins.h;
+            return PAD + scalePx(x) + h;
+        }
+
+        /**
+         * A pixel offset from the top of the track as x (toPx backwards), clamped to the
+         * span; anywhere inside an insert reads as its edge.
+         * @param {number} px
+         * @returns {number}
+         */
+        function fromPx(px) {
+            const tops = insertTops();
+            let off = 0;
+            for (let i = 0; i &lt; inserts.length; i++) {
+                // the insert, with the room left above it, reads as its edge
+                if (px &lt; tops[i] - inserts[i].shift) break;
+                if (px &lt; tops[i] + inserts[i].h) return inserts[i].x;
+                off += inserts[i].shift + inserts[i].h;
+            }
+            return fromScalePx(px - PAD - off);
+        }
+
+        /**
+         * The insert for a period or age.
+         * @param {object} item
+         * @returns {(typeof inserts)[number]}
+         */
+        const insertOf = item =&gt; inserts.find(ins =&gt; ins.item === item);
+
+        /**
+         * Where a period&apos;s or age&apos;s block starts in the track.
+         * @param {object} item
+         * @returns {number}
+         */
+        const insertTop = item =&gt; insertTops()[inserts.indexOf(insertOf(item))];
+
+        /**
+         * The age a period is in.
+         * @param {object} p
+         * @returns {object | undefined}
+         */
+        const ageOf = p =&gt; groups.find(g =&gt; p.from &gt;= g.from &amp;&amp; p.to &lt;= g.to);
+
+        /**
+         * The height stuck under the header over a period: its block.
+         * @param {object} p
+         * @returns {number}
+         */
+        const stuckOver = p =&gt; insertOf(p)?.h ?? 0;
+
+        /**
+         * The scroll position that brings a period&apos;s block to where it sticks, right
+         * under the header.
+         * @param {object} p
+         * @returns {number}
+         */
+        const scrollYForPeriod = p =&gt; scrollYForPx(insertTop(p));
+
+        /**
+         * A calendar year as text: &quot;3,200 BCE&quot; or &quot;1969 CE&quot;.
+         * @param {number} x
+         * @returns {string}
+         */
+        function yearText(x) {
+            const y = Math.floor(x);
+            return y &lt; 0 ? `${fmt(-y)} BCE` : `${Math.max(1, y)} CE`;
+        }
+
+        /** Seconds in the day the whole span is squeezed into (see clockText). */
+        const DAY_S = 24 * 60 * 60;
+
+        /**
+         * A time of day on a 12-hour clock, &quot;10:33pm&quot; (&quot;12:00am&quot; at either midnight:
+         * the start of the timeline and the present).
+         * @param {number} t Seconds since the day began (the start of the timeline).
+         * @returns {string}
+         */
+        function clockText(t) {
+            const s = Math.min(DAY_S, Math.floor(t + 1e-6));
+            const h24 = Math.floor(s / 3600) % 24;
+            const h12 = h24 % 12 || 12;
+            const min = String(Math.floor(s / 60) % 60).padStart(2, &quot;0&quot;);
+            return `${h12}:${min}${h24 &lt; 12 ? &quot;am&quot; : &quot;pm&quot;}`;
+        }
+
+        /**
+         * Time left until midnight as text, zero parts dropped: seconds always short
+         * (&quot;2 h 10 min 54 s&quot;, &quot;5 min 14 s&quot;, &quot;38.4 s&quot;, &quot;0.26 s&quot;: decimals once under a
+         * minute, where a second is decades); a last part of minutes or hours spelled
+         * out (&quot;2 h 10 minutes&quot;, &quot;2 hours&quot;).
+         * @param {number} left Seconds.
+         * @returns {string}
+         */
+        function untilText(left) {
+            if (left &lt; 1) return `${Number(left.toFixed(2))} s`;
+            if (left &lt; 60) return `${Number(left.toFixed(1))} s`;
+            const s = Math.floor(left);
+            const parts = [
+                [Math.floor(s / 3600), &quot;h&quot;, &quot;hour&quot;, &quot;hours&quot;],
+                [Math.floor(s / 60) % 60, &quot;min&quot;, &quot;minute&quot;, &quot;minutes&quot;],
+                [s % 60, &quot;s&quot;],
+            ].filter(([n]) =&gt; n &gt; 0);
+            return parts.map(([n, short, one, many], k) =&gt;
+                k === parts.length - 1 &amp;&amp; one ? `${n} ${n === 1 ? one : many}` : `${n} ${short}`).join(&quot; &quot;);
+        }
+
+        /**
+         * Time left until midnight in one rounded unit, unspaced: &quot;13ms&quot;, &quot;3s&quot;, &quot;4m&quot;, &quot;2h&quot;.
+         * @param {number} left Seconds.
+         * @returns {string}
+         */
+        function roughUntilText(left) {
+            // under a second (the last few decades), in milliseconds: &quot;13ms&quot;
+            if (left &lt; 0.9995) return `${Math.max(1, Math.round(left * 1000))}ms`;
+            if (left &lt; 59.5) return `${Math.round(left)}s`;
+            if (left &lt; 3570) return `${Math.round(left / 60)}m`;
+            return `${Math.round(left / 3600)}h`;
+        }
+
+        /**
+         * A span of years as text: &quot;3.3 million years ago&quot;, &quot;51,200 years ago&quot;.
+         * @param {number} ago Years before now.
+         * @returns {string}
+         */
+        function agoText(ago) {
+            if (ago &gt;= 1e6) return `${Number((ago / 1e6).toPrecision(3))} million years ago`;
+            return `${fmt(ago)} years ago`;
+        }
+
+        /**
+         * How long ago, for a calendar date: &quot;4 months ago&quot;, &quot;1 year ago&quot;, &quot;534 years ago&quot;.
+         * @param {number} ago Years before now.
+         * @returns {string}
+         */
+        function sinceText(ago) {
+            if (ago &lt; 1) {
+                const months = Math.max(1, Math.round(ago * 12));
+                return `${months} ${months === 1 ? &quot;month&quot; : &quot;months&quot;} ago`;
+            }
+            const years = Math.round(ago);
+            return years === 1 ? &quot;1 year ago&quot; : agoText(years);
+        }
+
+        /**
+         * An event&apos;s date text.
+         * @param {TimelineEvent} ev
+         * @returns {string}
+         */
+        function whenText(ev) {
+            if (ev.when) return ev.when;
+            if (ev.ago !== undefined) return `c. ${agoText(ev.ago)}`;
+            return (ev.approx ? &quot;c. &quot; : &quot;&quot;) + yearText(ev.year);
+        }
+
+        // ── Periods ─────────────────────────────────────────────────────────────
+
+        /** Each period with its start and end as x. */
+        const periods = PERIODS.map((p, i) =&gt; ({
+            ...p,
+            from: i === 0 ? X0 : toX(PERIODS[i - 1].end),
+            to: i === PERIODS.length - 1 ? NOW : toX(p.end),
+            // as given (ago or year), for its date range text; the last runs to now
+            start: i === 0 ? { ago: START_AGO } : PERIODS[i - 1].end,
+            end: i === PERIODS.length - 1 ? null : p.end,
+        }));
+
+        /**
+         * A period&apos;s dates as text, newest first (as the timeline reads, top down), in
+         * the terms they&apos;re given in, sharing the unit where both ends have it:
+         * &quot;300,000 – 3.3 million years ago&quot;, &quot;3,300 BCE – 12,000 years ago&quot;,
+         * &quot;1,200 – 3,300 BCE&quot;, &quot;500 CE – 500 BCE&quot;, &quot;present – 1945 CE&quot;.
+         * @param {{ago?: number, year?: number}} start
+         * @param {{ago?: number, year?: number} | null} end null: runs to now.
+         * @returns {string}
+         */
+        function rangeText(start, end) {
+            const ago = n =&gt; agoText(n).replace(/ years ago$/, &quot;&quot;);
+            const year = y =&gt; (y &lt; 0 ? fmt(-y) : String(Math.max(1, y)));
+            const era = y =&gt; (y &lt; 0 ? &quot;BCE&quot; : &quot;CE&quot;);
+            const one = b =&gt; (b.ago !== undefined ? agoText(b.ago) : yearText(b.year));
+            if (!end || end.ago === 0) return `present – ${one(start)}`;
+            if (start.ago !== undefined &amp;&amp; end.ago !== undefined) return `${ago(end.ago)} – ${agoText(start.ago)}`;
+            if (start.year !== undefined &amp;&amp; end.year !== undefined &amp;&amp; era(start.year) === era(end.year)) {
+                return `${year(end.year)} – ${year(start.year)} ${era(start.year)}`;
+            }
+            return `${one(end)} – ${one(start)}`;
+        }
+
+        /** Runs of consecutive periods with the same group, as one band each. */
+        const groups = [];
+        for (const p of periods) {
+            const last = groups.at(-1);
+            if (p.group &amp;&amp; last?.key === p.group) last.to = p.to;
+            else if (p.group) {
+                const g = GROUPS[p.group];
+                if (!g) console.error(`big-history.html: no group with data-key &quot;${p.group}&quot;`);
+                groups.push({ key: p.group, name: g?.name ?? p.group, from: p.from, to: p.to, color: g?.color ?? p.color });
+            }
+        }
+
+        /**
+         * The period at x (clamped to the ends); a period&apos;s top edge counts as in it.
+         * @param {number} x
+         * @returns {(typeof periods)[number]}
+         */
+        const periodAt = x =&gt; periods.find(p =&gt; x &lt;= p.to) ?? periods.at(-1);
+
+        // ── Elements ────────────────────────────────────────────────────────────
+
+        const root    = document.getElementById(&quot;bht&quot;);
+        // (before anything is laid out, so the labels and blocks are measured without them)
+        root.classList.toggle(&quot;bht-hide-event-summaries&quot;, HIDE_EVENT_SUMMARIES);
+        root.classList.toggle(&quot;bht-hide-period-summaries&quot;, HIDE_PERIOD_SUMMARIES);
+        const head    = root.querySelector(&quot;.bht-head&quot;);
+        const track   = root.querySelector(&quot;.bht-track&quot;);
+        const foot    = root.querySelector(&quot;.bht-foot&quot;);
+        const yearEl  = root.querySelector(&quot;.bht-year:not(.bht-clock-time)&quot;);
+        const agoEl   = root.querySelector(&quot;.bht-ago:not(.bht-clock-left)&quot;);
+        const clockEl = root.querySelector(&quot;.bht-clock-time&quot;);
+        const leftEl  = root.querySelector(&quot;.bht-clock-left&quot;);
+        const legend  = root.querySelector(&quot;.bht-legend&quot;);
+        const topBtn  = root.querySelector(&quot;.bht-btn-top&quot;);
+        const prevBtn = root.querySelector(&quot;.bht-btn-prev&quot;);
+        const prevEvBtn = root.querySelector(&quot;.bht-btn-prev-ev&quot;);
+        const nextEvBtn = root.querySelector(&quot;.bht-btn-next-ev&quot;);
+        const nextBtn = root.querySelector(&quot;.bht-btn-next&quot;);
+        const botBtn  = root.querySelector(&quot;.bht-btn-bottom&quot;);
+
+        /**
+         * Makes an element.
+         * @param {string} tag
+         * @param {string} [className]
+         * @param {string} [text]
+         * @returns {HTMLElement}
+         */
+        function el(tag, className, text) {
+            const e = document.createElement(tag);
+            if (className) e.className = className;
+            if (text !== undefined) e.textContent = text;
+            return e;
+        }
+
+        // The legend (collapsed only): each period opens the timeline at its start.
+        for (const p of periods) {
+            const b = el(&quot;button&quot;, &quot;btn btn-sm&quot;);
+            b.type = &quot;button&quot;;
+            const sw = el(&quot;i&quot;, &quot;bht-swatch&quot;);
+            sw.style.setProperty(&quot;--bht-era&quot;, p.color);
+            b.append(sw, p.name);
+            // its block at the reading line
+            b.addEventListener(&quot;click&quot;, () =&gt; { open(); stopGlide(); window.scrollTo({ top: scrollYForPeriod(p), behavior: &quot;instant&quot; }); update(); });
+            legend.append(b);
+        }
+
+        // ── Building the track (on first open) ──────────────────────────────────
+
+        /** Each event&apos;s link and label, for layout. */
+        const placed = [];
+        let built = false;
+
+        /**
+         * A period&apos;s slot and block: its name (site text classes: serif font-size-h5),
+         * its dates (text-xs) and its note (text-sm).
+         * @param {(typeof periods)[number]} p
+         * @returns {{ slot: HTMLElement, block: HTMLElement }}
+         */
+        function makeBlock(p) {
+            const slot = el(&quot;div&quot;, &quot;bht-slot bht-slot-period&quot;);
+            const block = el(&quot;div&quot;, &quot;bht-block text-serif&quot;);
+            block.style.setProperty(&quot;--bht-era&quot;, p.color);
+            block.append(el(&quot;b&quot;, &quot;font-size-h5&quot;, p.name));
+            // its dates right under its name, small
+            block.append(el(&quot;small&quot;, &quot;bht-block-range text-xs&quot;, rangeText(p.start, p.end)));
+            if (p.note) block.append(elHTML(&quot;small&quot;, &quot;bht-block-note text-sm&quot;, p.note));
+            slot.append(block);
+            return { slot, block };
+        }
+
+        /** The axis: it runs to the track&apos;s end. */
+        let axisEl = null;
+
+        /** Builds the bands, axis and events. */
+        function build() {
+            const frag = document.createDocumentFragment();
+            // newest first
+            for (const p of [...periods].reverse()) {
+                const { slot, block } = makeBlock(p);
+                const band = el(&quot;div&quot;, &quot;bht-pband&quot;);
+                band.style.setProperty(&quot;--bht-era&quot;, p.color);
+                inserts.push({ kind: &quot;period&quot;, x: p.to, h: 0, shift: 0, top: 0, slot, block, band, item: p });
+                frag.append(band, slot);
+            }
+
+
+            const axis = el(&quot;div&quot;, &quot;bht-axis&quot;);
+            axisEl = axis;
+            frag.append(axis);
+
+            // newest first: top to bottom
+            for (const ev of [...EVENTS].sort((a, b) =&gt; toX(b) - toX(a))) {
+                const x = Math.min(toX(ev), NOW);
+                const link = el(&quot;span&quot;, &quot;bht-link&quot;);
+                const linkL = el(&quot;span&quot;, &quot;bht-link bht-link-l&quot;);
+                // its time on the 24-hour day, under the left-hand mark
+                const dayLeft = ((NOW - x) / START_AGO) * DAY_S;
+                const clockAt = el(&quot;span&quot;, &quot;bht-clock-at text-monospace text-xs&quot;);
+                clockAt.append(el(&quot;span&quot;, &quot;&quot;, clockText(DAY_S - dayLeft)));
+                // an event at or after 11pm also gets its time left to midnight (not the
+                // present: that&apos;s midnight itself)
+                if (dayLeft &lt;= 3600 &amp;&amp; ev.ago !== 0) {
+                    clockAt.append(el(&quot;span&quot;, &quot;bht-clock-at-left text-xs&quot;, `${roughUntilText(dayLeft)} to midnight`));
+                }
+                const label = el(&quot;div&quot;, &quot;bht-label&quot;);
+                const when = el(&quot;span&quot;, &quot;bht-when text-monospace text-xs&quot;, whenText(ev));
+                // a calendar date also gets how long ago it was, muted
+                if (!ev.when &amp;&amp; ev.ago === undefined) when.append(el(&quot;span&quot;, &quot;bht-when-ago&quot;, sinceText(NOW - x)));
+                // the present: &quot;c. 0 years ago&quot; says nothing, so its date line is today&apos;s date,
+                // long (&quot;November 16, 2026&quot;), in the reader&apos;s own calendar and time, accented as
+                // a year is, with no &quot;ago&quot; line under it (unless the data gives it a date line)
+                if (ev.ago === 0 &amp;&amp; !ev.when) {
+                    when.textContent = today.toLocaleDateString(&quot;en-US&quot;, { year: &quot;numeric&quot;, month: &quot;long&quot;, day: &quot;numeric&quot; });
+                }
+                const what = el(&quot;span&quot;, &quot;bht-what text-serif text-base line-height-sm&quot;, ev.what);
+                label.append(when, what);
+                if (ev.why) {
+                    label.append(elHTML(&quot;span&quot;, &quot;bht-why text-sm&quot;, ev.why));
+                }
+                frag.append(link, linkL, clockAt, label);
+                // positioned in layout(), once the blocks are measured
+                placed.push({ x, y: 0, link, linkL, clockAt, label, when });
+            }
+
+            track.append(frag);
+            built = true;
+        }
+
+        /**
+         * Places the event labels: each one&apos;s date line level with its point on the axis if there&apos;s
+         * room, else pushed down past the one above, so the crowded recent centuries at
+         * the top spill down into the emptier past. Then draws each leader line from its
+         * point on the axis to its label.
+         */
+        function layout() {
+            if (!built) return;
+            // Measure the blocks (their height depends on the width), then everything is
+            // placed on the scale with the blocks stacked in.
+            for (const ins of inserts) ins.h = ins.block.offsetHeight;
+
+            // One sweep down the track, newest first (at a shared edge the blocks come
+            // before the events, which sit just under them). Events keep their true place;
+            // each label hangs under its leader line, pushed down only past the label or
+            // block above it. A block whose place is still covered by the label above is
+            // shifted down past it, and everything after moves down with it.
+            const items = placed.map(it =&gt; ({ ...it, h: it.label.offsetHeight, anchor: 0, top: 0 }));
+            const order = [
+                ...inserts.map(ins =&gt; ({ ins, x: ins.x, first: 0 })),
+                ...items.map(it =&gt; ({ it, x: it.x, first: 1 })),
+            ].sort((a, b) =&gt; b.x - a.x || a.first - b.first);
+            let off = 0;      // the inserts so far, with their shifts
+            let above = 0;    // the bottom of the last label or block placed
+            let labelAbove = false;
+            for (const o of order) {
+                if (o.ins) {
+                    const ins = o.ins;
+                    const nominal = (ins.x &gt;= NOW ? 0 : PAD + scalePx(ins.x)) + off;
+                    ins.shift = labelAbove ? Math.max(0, above + LABEL_GAP - nominal) : 0;
+                    ins.top = nominal + ins.shift;
+                    off += ins.shift + ins.h;
+                    above = ins.top + ins.h;
+                    labelAbove = false;
+                } else {
+                    const it = o.it;
+                    it.y = PAD + scalePx(it.x) + off;
+                    it.top = Math.max(it.y, above + (labelAbove ? LABEL_GAP : 0));
+                    above = it.top + it.h;
+                    labelAbove = true;
+                }
+            }
+            // the steps read each event&apos;s place from `placed`
+            items.forEach((it, i) =&gt; { placed[i].y = it.y; });
+            const tops = insertTops();
+
+            let bottom = 0;
+            for (const it of items) {
+                it.label.style.top = `${it.top}px`;
+                const to = it.top + it.anchor;
+                const d = to - it.y;
+                it.link.classList.toggle(&quot;bht-flat&quot;, Math.abs(d) &lt; 1);
+                it.link.classList.toggle(&quot;bht-up&quot;, d &lt;= -1);
+                it.link.style.top = `${Math.min(it.y, to)}px`;
+                it.link.style.height = `${Math.abs(d)}px`;
+                // mirrored on the left, with the clock time under it as the label is under the right
+                it.linkL.classList.toggle(&quot;bht-flat&quot;, Math.abs(d) &lt; 1);
+                it.linkL.classList.toggle(&quot;bht-up&quot;, d &lt;= -1);
+                it.linkL.style.top = it.link.style.top;
+                it.linkL.style.height = it.link.style.height;
+                it.clockAt.style.top = `${it.top}px`;
+                bottom = Math.max(bottom, it.top + it.h);
+            }
+            // Ends PAD below the oldest point (or just below the last label, if that&apos;s
+            // lower), so the page bottoms out at the footer (the reading point runs down
+            // to the oldest point over the last stretch: readPx). The oldest band and the
+            // axis run all the way, so the timeline meets the bottom line.
+            // (on a narrow screen the buttons are a row along the bottom: room for it too,
+            // so the last event can scroll clear of it)
+            const nav = root.querySelector(&quot;.bht-nav&quot;);
+            // (the row&apos;s full height over the track: its buttons, its padding and top line,
+            // and the frame&apos;s bottom edge under it; summed from the parts, as the row
+            // itself may not be laid out yet)
+            let rowH = 0;
+            if (nav &amp;&amp; getComputedStyle(nav).flexDirection.startsWith(&quot;row&quot;)) {
+                const g = getComputedStyle(nav.lastElementChild);
+                const btn = nav.querySelector(&quot;.btn-nav-link&quot;);
+                rowH = (btn ? btn.offsetHeight : 0) + parseFloat(g.paddingTop) + parseFloat(g.paddingBottom)
+                    + (parseFloat(getComputedStyle(root.querySelector(&quot;.bht-frame:not(.bht-frame-nav) .bht-frame-bottom&quot;)).borderBottomWidth) || 0);
+            }
+            const end = Math.max(toPx(X0) + PAD, bottom + LABEL_GAP) + rowH;
+            track.style.height = `${end}px`;
+            remeasure();
+            axisEl.style.height = `${end}px`;
+
+            // Each slot runs from its block down to where the next block starts (or the
+            // end), so the next block pushes it off.
+            inserts.forEach((ins, i) =&gt; {
+                const next = inserts.findIndex((o, k) =&gt; k &gt; i);
+                const bottom = next &lt; 0 ? end : tops[next];
+                ins.slot.style.top = `${tops[i]}px`;
+                ins.slot.style.height = `${Math.max(bottom - tops[i], ins.h)}px`;
+                // the period&apos;s band covers the same stretch as its slot
+                if (ins.band) {
+                    ins.band.style.top = ins.slot.style.top;
+                    ins.band.style.height = ins.slot.style.height;
+                    ins.band.style.setProperty(&quot;--bht-y&quot;, ins.slot.style.top);
+                }
+            });
+        }
+
+        // ── Reading the position ────────────────────────────────────────────────
+
+        /**
+         * Where the reading line (the header&apos;s bottom edge) can get to: the timeline
+         * ends a screen short of where the line could reach, so when the track&apos;s end
+         * meets the bottom strip the line is still `run` px above the oldest point.
+         * Over the last `run` px of scrolling the reading point leaves the line and runs
+         * down the track at twice the scroll speed, reaching the oldest point just as
+         * the track ends (scrolling on past that, it stays there).
+         * @returns {{ line: number, ramp: number, run: number }} `line`: the line&apos;s offset
+         *   into the track now; `ramp`: the offset where the run starts; `run`: its length.
+         */
+        function reach() {
+            const m = metrics();
+            // the header sticks at the top, so its line is headH down the screen; until
+            // the track reaches it, the line is the track&apos;s top
+            const line = Math.max(0, window.scrollY + m.headH - m.trackTop);
+            return { line, ramp: m.ramp, run: m.run };
+        }
+
+        /**
+         * The page geometry the scroll-driven parts need, measured once and again only
+         * when something changes size (see remeasure()): during scrolling everything is
+         * worked out from window.scrollY with plain arithmetic, so no frame forces the
+         * browser to lay the page out again (that made scrolling and dragging lag).
+         * @type {{ trackTop: number, trackH: number, rootTop: number, headH: number, footH: number, barH: number, thumbH: number, vh: number, ramp: number, run: number } | null}
+         */
+        let geo = null;
+
+        /** Drops the measured geometry; the next use measures it again. */
+        function remeasure() { geo = null; }
+
+        /**
+         * The measured geometry (see geo), measuring it if need be.
+         * @returns {NonNullable&lt;typeof geo&gt;}
+         */
+        function metrics() {
+            if (geo) return geo;
+            const y = window.scrollY;
+            const vh = window.innerHeight;
+            const trackRect = track.getBoundingClientRect();
+            const trackTop = trackRect.top + y;
+            const trackH = track.offsetHeight;
+            const headH = head.getBoundingClientRect().height;
+            const footRect = foot.getBoundingClientRect();
+            const footH = footRect.height;
+            const maxScroll = document.documentElement.scrollHeight - vh;
+            // Where the strip&apos;s line sits on screen while it sticks: read off the strip
+            // itself when it&apos;s stuck (anything along the screen&apos;s bottom, a horizontal
+            // scrollbar say, lifts it off innerHeight); else the visible bottom (clientHeight,
+            // which leaves out such a scrollbar) less its height.
+            const footLine = footRect.top &lt; trackRect.bottom - 1 ? footRect.top : document.documentElement.clientHeight - footH;
+            // The end: the track&apos;s bottom meeting the bottom strip, the last moment the
+            // strip sticks (or the page&apos;s bottom, if that comes first).
+            const endScroll = Math.min(maxScroll, trackTop + trackH - footLine);
+            // the line&apos;s offset into the track there
+            const lineMax = headH - (trackTop - endScroll);
+            const run = Math.max(0, toPx(X0) - lineMax);
+            geo = {
+                trackTop, trackH, headH, footH, footLine, endScroll, vh, run, ramp: lineMax - run,
+                rootTop: root.getBoundingClientRect().top + y,
+            };
+            return geo;
+        }
+
+        /**
+         * The reading point&apos;s offset into the track: the reading line&apos;s, plus the run.
+         * @returns {number}
+         */
+        function readPx() {
+            const { line, ramp } = reach();
+            return line + Math.max(0, line - ramp);
+        }
+
+        /**
+         * The x at the reading point, clamped to the span; now while collapsed.
+         * @returns {number}
+         */
+        function readX() {
+            if (!root.classList.contains(&quot;bht-open&quot;)) return NOW;
+            if (pinned &amp;&amp; Math.abs(window.scrollY - pinned.y) &lt; 1) return pinned.x;
+            pinned = null;
+            return fromPx(readPx());
+        }
+
+        /**
+         * A landing that reads exactly: after a period step the page sits on the
+         * boundary, but a pixel here can be years, so the readout is pinned to the
+         * boundary&apos;s exact x and period until the page scrolls again.
+         * @type {{ y: number, x: number, p: (typeof periods)[number] } | null}
+         */
+        let pinned = null;
+
+        /**
+         * The period under the reading point (the pinned one, after a period step).
+         * @returns {(typeof periods)[number]}
+         */
+        function currentPeriod() {
+            const x = readX();
+            return pinned ? pinned.p : periodAt(x);
+        }
+
+        /** The width the labels were last laid out for. */
+        let laidOutWidth = window.innerWidth;
+
+        /**
+         * The last reading taken at that width (where the reader was, and whether inside
+         * the timeline), so a width change can put them back: by the time the resize
+         * handler runs, the text above has already rewrapped and moved the timeline.
+         * @type {{ x: number, inside: boolean } | null}
+         */
+        let lastRead = null;
+
+        /** How far down the screen the timeline&apos;s top can be and still be revealed (a share of the screen height). */
+        const REVEAL_AT = 0.4;
+
+        /**
+         * Hides the timeline (showing &quot;scroll to reveal&quot; instead) while it starts in the
+         * lower part of the screen, where only a sliver of it would show between the
+         * header and the bottom strip; reveals it once its top is in the top REVEAL_AT
+         * of the screen, and keeps it revealed from there down.
+         */
+        function veil() {
+            const m = metrics();
+            root.classList.toggle(&quot;bht-veiled&quot;, m.rootTop - window.scrollY &gt; m.vh * REVEAL_AT);
+        }
+
+        /** Updates the veil, the year readout, and the period band under the reading line. */
+        function update() {
+            veil();
+            // A period&apos;s block takes its band&apos;s (stronger) colour once it&apos;s stuck at the
+            // top: its slot has reached the line it sticks at (under the header and its
+            // age&apos;s block). Worked out from scrollY and the cached geometry: no layout.
+            if (built) {
+                const m = metrics();
+                const line = window.scrollY - m.trackTop + m.headH;
+                const firstPeriodIns = inserts.find(ins =&gt; ins.kind === &quot;period&quot;);
+                for (const ins of inserts) {
+                    if (ins.kind !== &quot;period&quot;) continue;
+                    // (a block landed exactly at the top counts: half a pixel&apos;s leeway; the
+                    // newest period&apos;s block, at the track&apos;s very top, is always in its full
+                    // colour: wherever it shows, it&apos;s the period being read)
+                    const stuck = line &gt;= ins.top - 0.5 || ins === firstPeriodIns;
+                    if (stuck !== ins.stuck) {
+                        ins.stuck = stuck;
+                        ins.block.classList.toggle(&quot;bht-stuck&quot;, stuck);
+                    }
+                }
+            }
+            const x = readX();
+            if (window.innerWidth === laidOutWidth &amp;&amp; root.classList.contains(&quot;bht-open&quot;)) {
+                lastRead = { x, inside: reach().line &gt; 0 };
+            }
+            const ago = NOW - x;
+            yearEl.textContent = yearText(x);
+            // as on the timeline (&quot;14 years ago&quot;, &quot;2.75 million years ago&quot;)
+            agoEl.textContent = ago &lt; 0.05 ? &quot;Now&quot; : sinceText(ago);
+            const left = (ago / START_AGO) * DAY_S;
+            clockEl.textContent = clockText(DAY_S - left);
+            // one rounded unit, as on the timeline (&quot;11ms&quot;, &quot;6m&quot;, &quot;16h&quot;)
+            leftEl.textContent = left &lt; 0.0005 ? &quot;Midnight&quot; : `${roughUntilText(left)} to midnight`;
+
+            const p = pinned ? pinned.p : periodAt(x);
+            // the timeline&apos;s frame in the colour of the period being read
+            if (p !== framed) {
+                framed = p;
+                root.style.setProperty(&quot;--bht-frame-era&quot;, p.color);
+            }
+            // nothing more recent than the newest period, nothing further back than the oldest
+            const atTop = window.scrollY &lt;= scrollYFor(NOW) + 1, atEnd = atOldestPoint(x);
+            topBtn.disabled = atTop;
+            prevBtn.disabled = atTop;
+            nextBtn.disabled = p === periods[0] || atEnd;
+            botBtn.disabled = atEnd;
+            const evX = eventBase();
+            prevEvBtn.disabled = !eventFrom(evX, -1);
+            nextEvBtn.disabled = !eventFrom(evX, 1);
+        }
+
+        let queued = false;
+        /** The period whose colour the timeline&apos;s frame is in (update()), or null. */
+        let framed = null;
+        /** Calls update() once on the next frame. */
+        function queueUpdate() {
+            if (queued) return;
+            queued = true;
+            requestAnimationFrame(() =&gt; { queued = false; update(); });
+        }
+
+        /**
+         * The page scroll position that puts x on the reading line (now: the track&apos;s
+         * very top, so the padding above today shows).
+         * @param {number} x
+         * @returns {number}
+         */
+        function scrollYFor(x) {
+            return scrollYForPx(x &gt;= NOW ? 0 : toPx(Math.max(X0, x)));
+        }
+
+        /**
+         * The page scroll position that puts a point px into the track on the reading line.
+         * @param {number} px
+         * @returns {number}
+         */
+        function scrollYForPx(px) {
+            const m = metrics();
+            // readPx backwards: past the ramp, the line only needs to go half as far
+            const line = px &lt;= m.ramp ? px : (px + m.ramp) / 2;
+            return m.trackTop + line - m.headH;
+        }
+
+        /**
+         * Scrolls so x sits on the reading line, at once.
+         * @param {number} x
+         */
+        function scrollToX(x) {
+            stopGlide();
+            window.scrollTo({ top: scrollYFor(x), behavior: &quot;instant&quot; });
+            update();
+        }
+
+        // ── Top / Bottom buttons: an eased glide (native smooth scrolling can&apos;t be timed) ──
+
+        /** How long a glide to the top or bottom takes, in ms. */
+        const GLIDE_MS = 3000;
+
+        /** How long a step to the next or previous period or event takes, in ms. */
+        const PERIOD_GLIDE_MS = 500;
+
+        /**
+         * Ease in and out (cubic).
+         * @param {number} t 0 to 1.
+         * @returns {number}
+         */
+        const ease = t =&gt; (t &lt; 0.5 ? 4 * t * t * t : 1 - (-2 * t + 2) ** 3 / 2);
+
+        /** The running glide&apos;s frame request, or 0. */
+        let glideFrame = 0;
+
+        /** Stops a running glide where it is. */
+        function stopGlide() {
+            cancelAnimationFrame(glideFrame);
+            glideFrame = 0;
+            glideAim = null;
+        }
+
+        /** Where a running period or event step is headed (x and its period), or null. */
+        let glideAim = null;
+
+        /**
+         * Glides the page so x ends up on the reading line, over `ms` (at once, with
+         * reduced motion). The reader scrolling (wheel, touch, keys) stops it.
+         * @param {number} x
+         * @param {number} [ms] How long it takes.
+         * @param {(typeof periods)[number]} [pin] Pin the readout to x and this period on landing.
+         * @param {number} [to] The scroll position to land on, if not the one that puts x on the line.
+         * @param {() =&gt; void} [onLand] Called on landing.
+         */
+        function glideToX(x, ms = GLIDE_MS, pin, to = scrollYFor(x), onLand) {
+            stopGlide();
+            const land = () =&gt; {
+                if (pin) pinned = { y: window.scrollY, x, p: pin };
+                onLand?.();
+                update();
+            };
+            if (window.matchMedia(&quot;(prefers-reduced-motion: reduce)&quot;).matches) {
+                window.scrollTo({ top: to, behavior: &quot;instant&quot; });
+                return land();
+            }
+            const from = window.scrollY;
+            const start = performance.now();
+            const step = now =&gt; {
+                const t = Math.min(1, (now - start) / ms);
+                window.scrollTo({ top: from + (to - from) * ease(t), behavior: &quot;instant&quot; });
+                if (t &lt; 1) glideFrame = requestAnimationFrame(step);
+                else { stopGlide(); land(); }
+            };
+            glideFrame = requestAnimationFrame(step);
+        }
+
+        for (const type of [&quot;wheel&quot;, &quot;touchstart&quot;, &quot;keydown&quot;]) {
+            window.addEventListener(type, () =&gt; { if (glideFrame) stopGlide(); }, { passive: true });
+        }
+        topBtn.addEventListener(&quot;click&quot;, () =&gt; glideToX(NOW, PERIOD_GLIDE_MS));
+        // pinned, like a period step: at the end a pixel is centuries, and the landing can fall a fraction short
+        /** The bottom (the oldest point), pinned: there a pixel is centuries. */
+        // It lands where the timeline&apos;s end meets the bottom strip, so the last event
+        // clears the strip (and, on a narrow screen, the button row over it).
+        const glideBottom = () =&gt; {
+            remeasure();
+            // measured again on landing (the strip&apos;s line can only be read off it once it&apos;s
+            // stuck), and nudged onto the end if the first guess was off
+            glideToX(X0, PERIOD_GLIDE_MS, periods[0], metrics().endScroll, () =&gt; {
+                remeasure();
+                const end = metrics().endScroll;
+                if (Math.abs(window.scrollY - end) &gt; 0.5) {
+                    window.scrollTo({ top: end, behavior: &quot;instant&quot; });
+                    if (pinned) pinned.y = window.scrollY;
+                }
+            });
+        };
+
+        /**
+         * Whether x is at the oldest point, within a pixel.
+         * @param {number} x
+         * @returns {boolean}
+         */
+        const atOldestPoint = x =&gt; toPx(x) &gt;= toPx(X0) - 1;
+
+        botBtn.addEventListener(&quot;click&quot;, glideBottom);
+
+        /**
+         * Where a period starts for the reader: its most recent edge, exactly (the
+         * boundary with the next period up); for the newest period, now.
+         * @param {number} i The period&apos;s index in `periods`.
+         * @returns {number} x.
+         */
+        const periodTop = i =&gt; (i === periods.length - 1 ? NOW : periods[i].to);
+
+        /**
+         * Glides to the top of the period `step` places on from the current one (from
+         * where a running glide is headed, so repeated clicks keep stepping): +1 is the
+         * next period down (further back), -1 the previous one up (more recent).
+         * @param {1 | -1} step
+         */
+        function glidePeriod(step) {
+            const from = periods.indexOf(glideAim?.p ?? currentPeriod());
+            // periods run oldest first, so further back is a lower index; going back up
+            // from partway through a period, its own top comes first
+            const partway = step &lt; 0 &amp;&amp; !glideAim &amp;&amp; Math.abs(window.scrollY - scrollYForPeriod(periods[from])) &gt; 1;
+            const i = partway ? from : Math.min(periods.length - 1, Math.max(0, from - step));
+            if (i === from &amp;&amp; !partway) return;
+            const top = periodTop(i);
+            glideToX(top, PERIOD_GLIDE_MS, periods[i], scrollYForPeriod(periods[i]));
+            glideAim = { x: periodTop(i), p: periods[i] };
+        }
+        nextBtn.addEventListener(&quot;click&quot;, () =&gt; glidePeriod(1));
+        prevBtn.addEventListener(&quot;click&quot;, () =&gt; glidePeriod(-1));
+
+        /** Two x within this are the same point (pinned readouts are exact). */
+        const SAME_X = 1e-6;
+
+        /**
+         * The event `step` places on from x: +1 the next one down (further back), -1
+         * the previous one up (more recent); undefined past either end.
+         * @param {number} x
+         * @param {1 | -1} step
+         * @returns {(typeof placed)[number] | undefined}
+         */
+        function eventFrom(x, step) {
+            // placed runs newest first, top to bottom
+            return step &gt; 0
+                ? placed.find(it =&gt; it.x &lt; x - SAME_X)
+                : placed.findLast(it =&gt; it.x &gt; x + SAME_X);
+        }
+
+        /**
+         * The event just landed on by an event step, while the page hasn&apos;t scrolled since.
+         * @type {{ y: number, x: number } | null}
+         */
+        let landedEvent = null;
+
+        /**
+         * Where event steps count from: the event just landed on (it sits below the
+         * reading line, so the line&apos;s own x would find it again), else the reading point.
+         * @returns {number} x.
+         */
+        function eventBase() {
+            if (landedEvent &amp;&amp; Math.abs(window.scrollY - landedEvent.y) &lt; 1) return landedEvent.x;
+            landedEvent = null;
+            return readX();
+        }
+
+        /**
+         * Glides to the event `step` places on from the current one (or from where a
+         * running step is headed), landing with its point on the axis PAD below the
+         * period block stuck under the reading line, as the first event sits below the
+         * top. The readout shows the line&apos;s own year.
+         * @param {1 | -1} step
+         */
+        function glideEvent(step) {
+            const ev = eventFrom(glideAim?.x ?? eventBase(), step);
+            if (!ev) return;
+            const p = periodAt(ev.x);
+            const trackTop = track.getBoundingClientRect().top + window.scrollY;
+            const maxScroll = document.documentElement.scrollHeight - window.innerHeight;
+            // below the period block stuck over it, as the first event sits below the top
+            const to = trackTop + ev.y - head.getBoundingClientRect().height - PAD - stuckOver(p);
+            glideToX(ev.x, PERIOD_GLIDE_MS, undefined, Math.min(maxScroll, Math.max(0, to)),
+                () =&gt; { landedEvent = { y: window.scrollY, x: ev.x }; });
+            glideAim = { x: ev.x, p };
+        }
+        nextEvBtn.addEventListener(&quot;click&quot;, () =&gt; glideEvent(1));
+        prevEvBtn.addEventListener(&quot;click&quot;, () =&gt; glideEvent(-1));
+
+        // ── Open / collapse ─────────────────────────────────────────────────────
+
+        /** Sets --bht-head-h and --bht-foot-h, for the sticky band labels and progress bar. */
+        function measureHead() {
+            remeasure();
+            // exact heights (offsetHeight rounds, which left a hairline at the frame&apos;s corners)
+            root.style.setProperty(&quot;--bht-head-h&quot;, `${head.getBoundingClientRect().height}px`);
+            root.style.setProperty(&quot;--bht-foot-h&quot;, `${foot.getBoundingClientRect().height}px`);
+        }
+
+        /** Opens the timeline (building it the first time). */
+        function open() {
+            if (root.classList.contains(&quot;bht-open&quot;)) return;
+            if (!built) build();
+            root.classList.add(&quot;bht-open&quot;);
+            measureHead();
+            layout();
+            update();
+        }
+
+        // ── Keeping it current ──────────────────────────────────────────────────
+
+        window.addEventListener(&quot;scroll&quot;, queueUpdate, { passive: true });
+        let resizeTimer;
+        window.addEventListener(&quot;resize&quot;, () =&gt; {
+            remeasure();
+            clearTimeout(resizeTimer);
+            resizeTimer = setTimeout(() =&gt; {
+                if (!root.classList.contains(&quot;bht-open&quot;)) return;
+                // Phones resize the height as the address bar slides in and out while
+                // scrolling: nothing to re-lay out, and moving the page then would yank
+                // the reader around. Only a new width rewraps the labels.
+                if (window.innerWidth === laidOutWidth) return update();
+                laidOutWidth = window.innerWidth;
+                // keep the reader&apos;s place, if they were in the timeline (above it, leave the page be)
+                const before = lastRead;
+                measureHead();
+                layout();
+                if (before?.inside) scrollToX(before.x);
+                else update();
+            }, 150);
+        });
+        document.fonts?.ready.then(() =&gt; { measureHead(); layout(); update(); });
+        // the header&apos;s and bottom strip&apos;s heights change with their text: keep the
+        // sticky band labels and the progress bar between them
+        if (&quot;ResizeObserver&quot; in window) {
+            const watch = new ResizeObserver(measureHead);
+            watch.observe(head);
+            watch.observe(foot);
+            // anything above the timeline changing size (an image loading) moves it down
+            // the page: measure again
+            new ResizeObserver(() =&gt; { remeasure(); queueUpdate(); }).observe(document.body);
+        }
+
+        open();
+        // once the starting state is on screen, let later changes fade (two frames: the
+        // first paints it without a transition)
+        requestAnimationFrame(() =&gt; requestAnimationFrame(() =&gt; root.classList.add(&quot;bht-ready&quot;)));
+    })();
+&lt;/script&gt;
+&lt;/p&gt;
+
+</description>
+      </item>
+      <item>
           <title>[ Blog ] Not-so-trivial Trivia</title>
           <pubDate>Thu, 19 Nov 2026 12:00:00 +0000</pubDate>
           <author>Lzon</author>
@@ -2350,34 +4549,7 @@ also published as a book.&lt;/p&gt;
           <link>https://lzon.ca/posts/blog/barbs-beef-stroganoff/</link>
           <guid isPermaLink="false">https://lzon.ca/posts/blog/barbs-beef-stroganoff/</guid>
           <category domain="https://lzon.ca/posts/blog/">Blog</category>
-          <description xml:base="https://lzon.ca/posts/blog/barbs-beef-stroganoff/">&lt;p&gt;My Mom’s Beef Stroganoff recipe.&lt;/p&gt;
-&lt;h3 id=&quot;ingredients&quot;&gt;Ingredients&lt;/h3&gt;
-&lt;ul&gt;
-&lt;li&gt;🐮 4 tbsp butter&lt;/li&gt;
-&lt;li&gt;🧅 1 chopped onion&lt;/li&gt;
-&lt;li&gt;🧄 4 cloves minced garlic&lt;/li&gt;
-&lt;li&gt;🍄 1 lb sliced mushrooms&lt;/li&gt;
-&lt;li&gt;🐄 beef cubes seasoned with salt and pepper&lt;/li&gt;
-&lt;li&gt;🌿 2 tsp Dijon mustard&lt;/li&gt;
-&lt;li&gt;🍀 1 tsp paprika&lt;/li&gt;
-&lt;li&gt;🍷1/3 cup dry white wine&lt;/li&gt;
-&lt;li&gt;🐄 2 cup beef broth&lt;/li&gt;
-&lt;li&gt;🍞 2 tbsp flour&lt;/li&gt;
-&lt;li&gt;💮 1 tbsp Worcestershire sauce&lt;/li&gt;
-&lt;li&gt;🧂 salt and pepper (to taste)&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h3 id=&quot;instructions&quot;&gt;Instructions&lt;/h3&gt;
-&lt;ol&gt;
-&lt;li&gt;Cook beef in the butter.&lt;/li&gt;
-&lt;li&gt;Then cook the onions, cloves, mushrooms.&lt;/li&gt;
-&lt;li&gt;Mix in the mustard and paprika.&lt;/li&gt;
-&lt;li&gt;Add the wine, cook 5 mins.&lt;/li&gt;
-&lt;li&gt;Mix beef broth, flour, Worcestershire sauce, until smooth.&lt;/li&gt;
-&lt;li&gt;Pour beef broth mixture into the pan, mix well and bring to a simmer, until thick.&lt;/li&gt;
-&lt;li&gt;Add cream cheese at the end. (do not boil)&lt;/li&gt;
-&lt;li&gt;Add noodles at the end.&lt;/li&gt;
-&lt;/ol&gt;
-
+          <description xml:base="https://lzon.ca/posts/blog/barbs-beef-stroganoff/">&lt;p&gt;The classic European dish.&lt;/p&gt;&lt;p&gt;&lt;a href=&quot;https://lzon.ca/posts/blog/barbs-beef-stroganoff/#continue-reading&quot;&gt;Continue reading&lt;/a&gt;&lt;/p&gt;
 </description>
       </item>
       <item>
@@ -2678,65 +4850,7 @@ it isn’t particularly nutritious.&lt;/p&gt;
           <link>https://lzon.ca/posts/blog/baked-beans-and-rice/</link>
           <guid isPermaLink="false">https://lzon.ca/posts/blog/baked-beans-and-rice/</guid>
           <category domain="https://lzon.ca/posts/blog/">Blog</category>
-          <description xml:base="https://lzon.ca/posts/blog/baked-beans-and-rice/">&lt;p&gt;This is one of the first recipes I learned when
-I started to cook. It’s simple, cheap, filling and nutritious.
-It’s also very flexible: I’m constantly riffing on
-this recipe, and I’ve never made a bad batch.&lt;/p&gt;
-&lt;h3 id=&quot;ingredients&quot;&gt;Ingredients&lt;/h3&gt;
-&lt;ul&gt;
-&lt;li&gt;🍚 3 cups rice, basmati or preferred variety&lt;/li&gt;
-&lt;li&gt;🧂 2 teaspoons salt&lt;/li&gt;
-&lt;li&gt;🌿 1 teaspoon black pepper&lt;/li&gt;
-&lt;li&gt;☘️ 2 teaspoons ground cumin&lt;/li&gt;
-&lt;li&gt;🌶️ 1 tablespoon chili powder&lt;/li&gt;
-&lt;li&gt;🥵 1/4 teaspoon cayenne pepper (optional)&lt;/li&gt;
-&lt;li&gt;🌿 1/4 teaspoon oregano&lt;/li&gt;
-&lt;li&gt;🫒 1/4 cup olive oil (4 tablespoons)&lt;/li&gt;
-&lt;li&gt;🍅 1 jar tomato salsa (16 ounces)&lt;/li&gt;
-&lt;li&gt;🐔 2 cups chicken or beef broth&lt;/li&gt;
-&lt;li&gt;🫘 2 cans black beans, rinsed and drained (15 ounces each)&lt;/li&gt;
-&lt;li&gt;🧅 2 large chopped white onions&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h3 id=&quot;instructions&quot;&gt;Instructions&lt;/h3&gt;
-&lt;ol&gt;
-&lt;li&gt;Preheat oven to 350 ℉ (175 ℃).&lt;/li&gt;
-&lt;li&gt;Pour rice into a casserole dish and season with salt, pepper, cumin, chili powder, cayenne, and oregano. Pour in olive oil and stir until rice is thoroughly coated with oil. Add salsa, broth, onions and beans; stir until evenly combined. Cover very tightly with aluminum foil&lt;/li&gt;
-&lt;li&gt;Bake until rice is tender, about 1 hour 10 minutes. Remove foil, taste and adjust seasoning if necessary, and fluff with a fork. Serve hot, optionally garnish with green onion.&lt;/li&gt;
-&lt;/ol&gt;
-
-</description>
-      </item>
-      <item>
-          <title>[ Blog ] Beef Stroganoff</title>
-          <pubDate>Sat, 17 Aug 2024 12:00:00 +0000</pubDate>
-          <author>Lzon</author>
-          <link>https://lzon.ca/posts/blog/beef-stroganoff/</link>
-          <guid isPermaLink="false">https://lzon.ca/posts/blog/beef-stroganoff/</guid>
-          <category domain="https://lzon.ca/posts/blog/">Blog</category>
-          <description xml:base="https://lzon.ca/posts/blog/beef-stroganoff/">&lt;p&gt;Just a standard Beef Stroganoff recipe.
-I’ve made it a few times and everyone
-always likes it.&lt;/p&gt;
-&lt;h3 id=&quot;ingredients&quot;&gt;Ingredients&lt;/h3&gt;
-&lt;ul&gt;
-&lt;li&gt;🐄 3 lbs beef&lt;/li&gt;
-&lt;li&gt;🍷 1 1/2 white wine&lt;/li&gt;
-&lt;li&gt;🐮 2 cups beef broth&lt;/li&gt;
-&lt;li&gt;🥛 1/4 cup table cream&lt;/li&gt;
-&lt;li&gt;🥛 3/4 cup sour cream&lt;/li&gt;
-&lt;li&gt;🧅 2 onions&lt;/li&gt;
-&lt;li&gt;🧄 2 cloves garlic&lt;/li&gt;
-&lt;li&gt;🍄 8 oz mushroom&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h3 id=&quot;instructions&quot;&gt;Instructions&lt;/h3&gt;
-&lt;ol&gt;
-&lt;li&gt;Cut beef into thin strips&lt;/li&gt;
-&lt;li&gt;Cook on high heat until thoroughly browned, with a careful amount of olive oil.&lt;/li&gt;
-&lt;li&gt;Remove beef from pot, cook mushroom, onion, and garlic in the beef fat.&lt;/li&gt;
-&lt;li&gt;Deglaze with white wine, add broth once bottom is clean.&lt;/li&gt;
-&lt;li&gt;Add beef back to the pot, simmer for 10–20 minutes.&lt;/li&gt;
-&lt;li&gt;Add the creams, then add a thickener (flour) as desired.&lt;/li&gt;
-&lt;/ol&gt;
-
+          <description xml:base="https://lzon.ca/posts/blog/baked-beans-and-rice/">&lt;p&gt;Simple, quick, filling, tasty. A great addition to any weeknight meal.&lt;/p&gt;&lt;p&gt;&lt;a href=&quot;https://lzon.ca/posts/blog/baked-beans-and-rice/#continue-reading&quot;&gt;Continue reading&lt;/a&gt;&lt;/p&gt;
 </description>
       </item>
       <item>
@@ -2746,36 +4860,7 @@ always likes it.&lt;/p&gt;
           <link>https://lzon.ca/posts/blog/black-bean-burgers/</link>
           <guid isPermaLink="false">https://lzon.ca/posts/blog/black-bean-burgers/</guid>
           <category domain="https://lzon.ca/posts/blog/">Blog</category>
-          <description xml:base="https://lzon.ca/posts/blog/black-bean-burgers/">&lt;p&gt;Another recipe that I only ever tried once. I liked it,
-but it was otherwise unpopular in my house. It’s vegetarian
-but not vegan-friendly (it uses egg as a binder).&lt;/p&gt;
-&lt;p&gt;They are &lt;em&gt;very&lt;/em&gt; dense and filling.&lt;/p&gt;
-&lt;h3 id=&quot;ingredients&quot;&gt;Ingredients&lt;/h3&gt;
-&lt;ul&gt;
-&lt;li&gt;🧅 1/2 large red onion, chopped&lt;/li&gt;
-&lt;li&gt;🌶️ 1-2 whole chipotle peppers in adobo sauce (optional)&lt;/li&gt;
-&lt;li&gt;🫘 2 cans black beans drained and rinsed (15 ounces each)&lt;/li&gt;
-&lt;li&gt;🍞 1 cup plain bread crumbs&lt;/li&gt;
-&lt;li&gt;🌿 1 1/2 teaspoons cumin&lt;/li&gt;
-&lt;li&gt;🧂 3/4 teaspoon salt&lt;/li&gt;
-&lt;li&gt;🧄 4 cloves garlic&lt;/li&gt;
-&lt;li&gt;☘️ 1/2 teaspoon black pepper&lt;/li&gt;
-&lt;li&gt;🥚 2 large eggs&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h3 id=&quot;instructions&quot;&gt;Instructions&lt;/h3&gt;
-&lt;ol&gt;
-&lt;li&gt;Place onion, chipotle, and garlic into a food processor and pulse until finely chopped. Add black beans and pulse until beans are partially chopped, leaving some whole or partial beans. Transfer to a large mixing bowl.&lt;/li&gt;
-&lt;li&gt;Stir in bread crumbs, cumin, salt, pepper and eggs until well combined.&lt;/li&gt;
-&lt;li&gt;Divide mixture to for 8 patties.&lt;/li&gt;
-&lt;li&gt;When ready to cook choose one of the following options:
-&lt;ul&gt;
-&lt;li&gt;Fried: Heat a lightly oiled skillet to medium high heat. Cook for 5 minutes on each side.&lt;/li&gt;
-&lt;li&gt;Baked: Bake in a 400 ℉ oven for 5 minutes each side.&lt;/li&gt;
-&lt;li&gt;Grilled: Cook on an outdoor grill for 5 minutes each side.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;/ol&gt;
-
+          <description xml:base="https://lzon.ca/posts/blog/black-bean-burgers/">&lt;p&gt;A good meat-free burger recipe. Flavorful and filling.&lt;/p&gt;&lt;p&gt;&lt;a href=&quot;https://lzon.ca/posts/blog/black-bean-burgers/#continue-reading&quot;&gt;Continue reading&lt;/a&gt;&lt;/p&gt;
 </description>
       </item>
       <item>

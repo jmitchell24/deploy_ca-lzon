@@ -83,13 +83,13 @@ The most recent decades of modern history. It begins with the Cold War against t
 ## Today
 present
 
-## FIFA World Cup <!-- 1 -->
+## Kick off at FIFA World Cup 2026 <!-- 1 -->
 2026-07-19
 
 The 23rd FIFA World Cup began on July 11, jointly hosted by Canada, Mexico, and the United States. 
 The tournament ended on July 19 with Spain winning for the second time.
 
-## Artemis II Launch <!-- 2 -->
+## Launch of Artemis II lunar mission <!-- 2 -->
 2026-04-01
 
 This NASA mission flew humans to orbit around the moon for the first time since the end of the original Apollo missions in 1972.
@@ -104,7 +104,7 @@ English anthropologist Jane Goodall dies at the age of 91. She pioneered the mod
 
 United States presidential candidate Donald Trump survives an attempted assassination during a campaign rally. He was attacked by a gunman named Thomas Matthew Crooks. There would be another assassination several months later, on September 15 of the same year. 
 
-## Twitter becomes X Corp. <!-- 5 -->
+## Twitter renamed to X Corp. <!-- 5 -->
 2023-07-23
 
 Elon Musk renames the influential social media platform formerly known as Twitter. He had purchased the company in October 2022 in a leveraged buyout for $44 billion. In March 2025 X Corp. would be made a subsidiary of Musk's newly founded AI company called **xAI**.
@@ -114,12 +114,12 @@ Elon Musk renames the influential social media platform formerly known as Twitte
 
 Russia begins a full-scale invasion of Ukraine, representing the largest military conflict within Europe since the end of World War II. It immediately triggered a massive refugee crisis as well as a global commodities shock.
 
-## Notre-Dame Fire <!-- 7 -->
+## Breakout of fire at Notre-Dame <!-- 7 -->
 2019-04-15
 
 
 
-## AlphaGo beats Lee Sedol <!-- 8 -->
+## AI (AlphaGo) defeats Lee Sedol at Go <!-- 8 -->
 2016-03-12
 
 
@@ -129,7 +129,7 @@ Russia begins a full-scale invasion of Ukraine, representing the largest militar
 
 
 
-## First iPhone revealed at WDC <!-- 10 -->
+## First iPhone revealed at Macworld 2007 <!-- 10 -->
 2007-01-09
 
 
@@ -159,35 +159,37 @@ Russia begins a full-scale invasion of Ukraine, representing the largest militar
 
 
 
-## Tunguska Explosion in Siberia <!-- 16 -->
-1908-06-30
+## First powered flight of a heavier-than-air aircraft <!-- 16 -->
+1903-12-17
 
 
 
-## Carrington Solar Flare <!-- 17 -->
-1859-09-01
+## First telegram transmitted via undersea cable <!-- 17 -->
+1858-08-16
 
 
 
-## War of 1812 <!-- 18 -->
+## Beginning of the War of 1812 <!-- 18 -->
 1812-06-18
 
-
+## Birth of Wolfgang Amadeus Mozart 
+1756-01-27
 
 ## England, Scotland and Wales unite to become Great Britain <!-- 19 -->
 1707-05-01
 
+## Founding of Boston, Massachusetts
+1630
 
 
-## Publication of Don Quixote <!-- 20 -->
-1605
+## Copernicus publishes research disproving geocentrism 
+1543
 
-
-
-## Columbus lands in the New World <!-- 21 -->
+## Columbus lands in the Americas <!-- 21 -->
 1492-10-12
 
-
+## Bubonic plague spreads into Europe (Black Death)
+1346
 
 ## Signing of the Magna Carta <!-- 22 -->
 1215
@@ -197,12 +199,11 @@ Russia begins a full-scale invasion of Ukraine, representing the largest militar
 ## Norman Conquest of England <!-- 23 -->
 1066
 
+## Charlemagne crowned Emperor by Pope Leo III
+800
 
-
-## Kyoto chosen as capital city of Japan <!-- 24 -->
-794
-
-
+## Fall of the Western Roman Empire
+476
 
 ## Ministry of Jesus Christ <!-- 25 -->
 30
@@ -217,9 +218,10 @@ Russia begins a full-scale invasion of Ukraine, representing the largest militar
 ## First Olympic Games 
 776 BCE
 
+## Birth of Moses (biblical tradition)
+1526 BCE
 
-
-## Extinction of the Wooly Mammoth <!-- 28 -->
+## Extinction of Wooly Mammoth <!-- 28 -->
 c. 2000 BCE
 
 ## Construction of the Great Pyramid of Giza
@@ -233,12 +235,13 @@ c. 3500 BCE
 ## Invention of Copper Smelting <!-- 30 -->
 c. 5000 BCE
 
+## Domestication of Cattle
+c. 8500 BCE
 
+## Invention of Agriculture
+c. 10,000 BCE
 
-## Farming begins in the Fertile Crescent 
-12,000 years ago 
-
-## First domestication of Dogs 
+## Domestication of Dogs 
 14,200 years ago 
 
 <!-- ## Rise of the Clovis culture in North America
@@ -246,16 +249,18 @@ c. 5000 BCE
 
 
 
-## First painting of Lascaux Cave <!-- 33 -->
+## Earliest painting of Lascaux Cave <!-- 33 -->
 20,000 years ago
 
+
+## Sculpting of the Venus of Willendorf 
+30,000 years ago
 
 
 ## Extinction of Neanderthals in Europe <!-- 35 -->
 40,000 years ago
 
-## Sculpting of the Venus of Willendorf 
-30,000 years ago
+
 
 ## First migration of Humans into Europe <!-- 36 -->
 45,000 years ago
@@ -265,10 +270,14 @@ c. 5000 BCE
 ## First migration of Humans into Australia <!-- 37 -->
 65,000 years ago
 
+## Earliest permanent structures built in Egypt
+100,000 years ago
 
+## Emergence of seafaring
+130,000 years ago 
 
-## Beginning of most recent glacial period <!-- 37a -->
-115,000 years ago
+## Earliest known use of Clothing
+170,000 years ago
 
 ## First migration of Humans beyond Africa <!-- 38 -->
 200,000 years ago
@@ -278,17 +287,14 @@ c. 5000 BCE
 ## Emergence of the species Homo Sapiens <!-- 39 -->
 315,000 years ago
 
-## Construction of the oldest known wooden structure <!-- 40a -->
+## Oldest known Wooden Structure <!-- 40a -->
 476,000 years ago
 
+## First use of the Hand Axe 
+700,000 years ago 
 
-## Near Extinction of the Human lineage <!-- 41 -->
+## Near Extinction of genus Homo <!-- 41 -->
 800,000 years ago
-
-
-
-## Earth's magnetic field flips (Jaramillo Event) <!-- 41b -->
-1.07 million years ago
 
 ## First controlled use of fire <!-- 42 -->
 1.8 million years ago
