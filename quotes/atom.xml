@@ -13,7 +13,7 @@
   <generator uri="https://www.getzola.org/">Zola</generator>
 
   
-  <updated>2026-11-19T12:00:00Z</updated>
+  <updated>2026-11-20T12:00:00Z</updated>
 
   <!-- Entries. Quotes (their own section feed) list one quote each. Posts go through
        macros/feed.html, so this feed, rss.xml and pages.json agree: each entry is titled as
@@ -35,6 +35,16 @@
   
     
   
+  <entry>
+    <title>232. lzon.ca&#x2F;quotes</title>
+    <id>https://lzon.ca/quotes/#232</id>
+    <link href="https://lzon.ca/quotes/"/>
+    <published>2026-11-20T12:00:00Z</published>
+    <updated>2026-11-20T12:00:00Z</updated>
+    <author><name>Lzon</name></author>
+    <category term="quote"/>
+    <summary type="html">The past is never dead. It’s not even past.&lt;br/&gt;- William Faulkner (Requiem for a Nun)</summary>
+  </entry>
   <entry>
     <title>231. lzon.ca&#x2F;quotes</title>
     <id>https://lzon.ca/quotes/#231</id>
