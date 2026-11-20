@@ -96,7 +96,7 @@
         border-bottom: var(--bht-border) solid var(--bht-line);
     }
     /* light mode's noise tile, as the site switches it */
-    body[data-dark-mode="off"] #bht :is(.bht-head, .bht-foot, .bht-veil-end, .bht-veil-end::before, .bht-veil-end::after) { background-image: url("/img/noise-light.png"); }
+    body[data-dark-mode="off"] #bht :is(.bht-head, .bht-foot, .bht-veil-top, .bht-veil-top::before, .bht-veil-end, .bht-veil-end::before) { background-image: url("/img/noise-light.png"); }
     #bht.bht-open .bht-head {
         position: sticky;
         top: env(safe-area-inset-top, 0px);
@@ -463,11 +463,16 @@
         height: 100vh;
         height: 100lvh;
         box-sizing: border-box;
-        /* the text as far down from the top as the year row is (the header's top padding) */
-        padding: var(--bht-foot-gap) var(--bht-md) 0;
+        /* just the sides: the top edge (with the text) and the bottom edge are their own,
+           each sticking to its end of the screen (.bht-veil-top, .bht-veil-end) */
+        padding: 0 var(--bht-md);
         border: var(--bht-border) dashed var(--color-dark);
-        border-bottom: 0;
-        border-radius: var(--bht-radius) var(--bht-radius) 0 0;
+        border-block: 0;
+        /* the edges' covers (their ::before) go no further than the box: not over the
+           page above or below it (clip, not hidden: no scroll box, so the edges still
+           stick; only up and down, as the edges and covers reach out over the sides) */
+        overflow-x: visible;
+        overflow-y: clip;
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -477,6 +482,37 @@
         transition: opacity var(--bht-speed-lg) ease;
     }
     .bht-veil-icon { color: var(--color-primary); }
+    /* the top edge and the text under it, stuck to the top of the screen while the box
+       runs off it, so the text stays in view (the bottom edge's counterpart) */
+    .bht-veil-top {
+        position: sticky;
+        /* the header's room above it (1.5em: .bht-head), as the bottom edge has below it;
+           its cover fills that room */
+        top: calc(env(safe-area-inset-top, 0px) + var(--bht-foot-gap));
+        align-self: stretch;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        /* out over the veil's side borders, to draw its own */
+        margin-inline: calc(-1 * (var(--bht-md) + var(--bht-border)));
+        /* the text as far down from the top as the year row is (the header's top padding) */
+        padding: var(--bht-foot-gap) var(--bht-md) 0;
+        border: var(--bht-border) dashed var(--color-dark);
+        border-bottom: 0;
+        border-radius: var(--bht-radius) var(--bht-radius) 0 0;
+        background: var(--color-darker) url("/img/noise-dark.png") repeat;
+    }
+    /* the page's colour all the way across above the edge, over the veil's sides */
+    .bht-veil-top::before {
+        content: "";
+        position: absolute;
+        bottom: calc(100% + var(--bht-border));
+        left: calc(-1 * var(--bht-border));
+        right: calc(-1 * var(--bht-border));
+        height: 100vh;
+        height: 100lvh;
+        background: var(--color-darker) url("/img/noise-dark.png") repeat;
+    }
     /* icon and text close together: no line-height gap */
     /* set like the year row's figures (.bht-year: bold, $line-height-sm), the icon just under */
     .bht-veil-text { font-weight: 700; line-height: var(--bht-lh-sm); }
@@ -495,23 +531,37 @@
         border-radius: 0 0 var(--bht-radius) var(--bht-radius);
         background: var(--color-darker) url("/img/noise-dark.png") repeat;
     }
-    .bht-veil-end::before,
-    .bht-veil-end::after {
+    /* the page's colour all the way across under the edge, over the veil's sides and
+       anything of its text a short screen puts lower than the edge (positioned, so it
+       paints over the text) */
+    .bht-veil-end::before {
         content: "";
         position: absolute;
-        top: 100%;
-        width: var(--bht-border);
+        /* from below the edge's own bottom border (100% is its padding box's bottom) */
+        top: calc(100% + var(--bht-border));
+        left: calc(-1 * var(--bht-border));
+        right: calc(-1 * var(--bht-border));
         height: 100vh;
         height: 100lvh;
         background: var(--color-darker) url("/img/noise-dark.png") repeat;
     }
-    .bht-veil-end::before { left: calc(-1 * var(--bht-border)); }
-    .bht-veil-end::after { right: calc(-1 * var(--bht-border)); }
     /* the header, track and bottom strip fade as one: faded separately, the header and
        strip would turn see-through and stop hiding the track under them */
     .bht-body { transition: opacity var(--bht-speed-lg) ease; }
-    #bht.bht-veiled .bht-veil { opacity: 1; }
-    #bht.bht-veiled .bht-body {
+    /* too short a screen for the timeline (bht-short): the same box, saying so */
+    .bht-veil-short { display: none; }
+    #bht.bht-short .bht-veil-top > :not(.bht-veil-short) { display: none; }
+    #bht.bht-short .bht-veil-short { display: block; }
+    /* and the timeline cut to the box's height, so the page doesn't run on, empty, for
+       its whole length (still laid out under it, so its parts can still be measured
+       against the screen: tooShort()) */
+    #bht.bht-short .bht-body {
+        height: 100vh;
+        height: 100lvh;
+        overflow: hidden;
+    }
+    #bht:is(.bht-veiled, .bht-short) .bht-veil { opacity: 1; }
+    #bht:is(.bht-veiled, .bht-short) .bht-body {
         opacity: 0;
         pointer-events: none;
     }
@@ -610,9 +660,14 @@
 <div id="bht">
     <!-- shown instead of the timeline while too little of it is on screen (see veil()) -->
     <div class="bht-veil text-sans-serif" aria-hidden="true">
-        <span class="bht-veil-text font-size-h3 text-base">Scroll up</span>
-        <!-- Phosphor caret-up -->
-        <span class="icon bht-veil-icon font-size-h3"><svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" class="svgicon" fill="currentColor" viewBox="0 0 256 256" aria-hidden="true"><polyline points="48 160 128 80 208 160" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="16"></polyline></svg></span>
+        <div class="bht-veil-top">
+            <span class="bht-veil-text font-size-h3 text-base">Scroll up</span>
+            <!-- in place of the above, when the screen is too short for the timeline -->
+            <span class="bht-veil-text bht-veil-short font-size-h3 text-base">Too short</span>
+            <span class="bht-veil-short text-sm text-soft">Make the window taller to see the timeline</span>
+            <!-- Phosphor caret-up -->
+            <span class="icon bht-veil-icon font-size-h3"><svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" class="svgicon" fill="currentColor" viewBox="0 0 256 256" aria-hidden="true"><polyline points="48 160 128 80 208 160" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="16"></polyline></svg></span>
+        </div>
         <span class="bht-veil-end"></span>
     </div>
     <div class="bht-body">
@@ -1519,8 +1574,30 @@
             geo = {
                 trackTop, trackH, headH, footH, footLine, endScroll, vh, run, ramp: lineMax - run,
                 rootTop: root.getBoundingClientRect().top + y,
+                short: tooShort(vh - headH - footH),
             };
             return geo;
+        }
+
+        /**
+         * Whether the screen is too short to show the timeline usefully: the room between
+         * the header and the bottom strip must hold the tallest period block with room
+         * for an event under it (two of the site's $spacer-xl), and the buttons: on a wide
+         * screen both groups of the column with a $spacer-xl between them, so they never
+         * meet; on a narrow one the row along the bottom, under the block and event.
+         * @param {number} room the height between the header and the strip, in px
+         * @returns {boolean}
+         */
+        function tooShort(room) {
+            const xl = 3 * parseFloat(getComputedStyle(document.documentElement).fontSize);
+            const block = Math.max(0, ...inserts.map(ins => ins.block ? ins.block.offsetHeight : 0));
+            const nav = root.querySelector(".bht-nav");
+            if (!nav) return room < block + 2 * xl;
+            const groups = [...nav.children].map(g => g.offsetHeight);
+            if (getComputedStyle(nav).flexDirection.startsWith("row")) {
+                return room < block + 2 * xl + Math.max(...groups);
+            }
+            return room < Math.max(block + 2 * xl, groups[0] + groups[1] + xl);
         }
 
         /**
@@ -1578,11 +1655,14 @@
          * Hides the timeline (showing "scroll to reveal" instead) while it starts in the
          * lower part of the screen, where only a sliver of it would show between the
          * header and the bottom strip; reveals it once its top is in the top REVEAL_AT
-         * of the screen, and keeps it revealed from there down.
+         * of the screen, and keeps it revealed from there down. On a screen too short
+         * for it (tooShort()), hides it throughout, the box saying so.
          */
         function veil() {
             const m = metrics();
             root.classList.toggle("bht-veiled", m.rootTop - window.scrollY > m.vh * REVEAL_AT);
+            // too short a screen: the box says so instead, wherever you are
+            root.classList.toggle("bht-short", m.short);
         }
 
         /** Updates the veil, the year readout, and the period band under the reading line. */
