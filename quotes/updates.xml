@@ -951,8 +951,15 @@
       
       
     
+      
+      
+      
     
     
+    
+    
+      
+      
     
       
       
@@ -1653,7 +1660,7 @@
   
 
   <!-- the feed's own updated time: its newest change (updates.xml), else its newest post -->
-  <updated>2026-11-20T12:00:00Z</updated>
+  <updated>2026-11-21T12:00:00Z</updated>
   
 
   <!-- Entries. Quotes (their own section feed) list one quote each. Posts go through
@@ -1665,6 +1672,16 @@
   
     
   
+  <entry>
+    <title>233. lzon.ca&#x2F;quotes</title>
+    <id>https://lzon.ca/quotes/#233</id>
+    <link href="https://lzon.ca/quotes/"/>
+    <published>2026-11-21T12:00:00Z</published>
+    <updated>2026-11-21T12:00:00Z</updated>
+    <author><name>Lzon</name></author>
+    <category term="quote"/>
+    <summary type="html">Absence of occupation is not rest, A mind quite vacant is a mind distress’d.&lt;br/&gt;- William Cowper (Retirement)</summary>
+  </entry>
   <entry>
     <title>232. lzon.ca&#x2F;quotes</title>
     <id>https://lzon.ca/quotes/#232</id>

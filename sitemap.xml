@@ -64,6 +64,9 @@
         <loc>https://lzon.ca/curio-tags/</loc>
     </url>
     <url>
+        <loc>https://lzon.ca/drafts-tags/</loc>
+    </url>
+    <url>
         <loc>https://lzon.ca/manuscripts/</loc>
     </url>
     <url>
@@ -719,6 +722,9 @@
         <loc>https://lzon.ca/posts/curio/page/3/</loc>
     </url>
     <url>
+        <loc>https://lzon.ca/posts/drafts/</loc>
+    </url>
+    <url>
         <loc>https://lzon.ca/posts/news/</loc>
     </url>
     <url>
@@ -1078,6 +1084,10 @@
     <url>
         <loc>https://lzon.ca/quotes/000232/</loc>
         <lastmod>2026-11-20</lastmod>
+    </url>
+    <url>
+        <loc>https://lzon.ca/quotes/000233/</loc>
+        <lastmod>2026-11-21</lastmod>
     </url>
     <url>
         <loc>https://lzon.ca/quotes/quotes-000001-alexander-smith/</loc>

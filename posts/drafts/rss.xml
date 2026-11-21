@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
+    <channel>
+      <title>
+        lzon.ca - Drafts</title>
+      <link>https://lzon.ca/posts/drafts/</link>
+      <description></description>
+      <generator>Zola</generator>
+      <language>en</language>
+      <atom:link href="https://lzon.ca/posts/drafts/rss.xml" rel="self" type="application/rss+xml"/>
+      
+      <!-- Items. Quotes (their own section feed) list one quote each. Posts go through
+           macros/feed.html, so this feed, atom.xml and pages.json agree: each item is titled
+           as the site titles the post, carries its type as a <category>, and in the merged
+           /posts/ feed leads its title with the type ("[ News ] …"). -->
+      
+      
+      
+      <!-- quotes and numbered post types sort by filename, since dates alone aren't unique -->
+      
+      
+      <!-- the merged feed leaves out types with `main_feed = false` (macros/feed.html) -->
+      
+        
+      
+    </channel>
+</rss>
