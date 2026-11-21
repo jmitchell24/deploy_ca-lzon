@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  
+
+  <title>
+    lzon.ca - Film - Updates</title>
+
+  <id>https://lzon.ca</id>
+
+  <link rel="alternate" href="https://lzon.ca"/>
+  <link rel="self" href="https://lzon.ca/trivia-tags/film/updates.xml" type="application/atom+xml"/>
+  <generator uri="https://www.getzola.org/">Zola</generator>
+
+  
+  
+  
+  
+
+  
+    <!-- updates.xml: newest change first. Each page keyed "<updated, else date>|<path>"
+         (dates as YYYY-MM-DD sort as text; the path breaks ties, newest numbered first),
+         the keys sorted, then the pages looked up again in that order -->
+    
+    
+      
+      
+      
+    
+    
+    
+    
+      
+      
+    
+  
+
+  <!-- the feed's own updated time: its newest change (updates.xml), else its newest post -->
+  <updated>2026-10-22T12:00:00Z</updated>
+  
+
+  <!-- Entries. Quotes (their own section feed) list one quote each. Posts go through
+       macros/feed.html, so this feed, rss.xml and pages.json agree: each entry is titled as
+       the site titles the post, carries its type as a <category>, and in the merged /posts/
+       feed leads its title with the type ("[ News ] …"). -->
+
+  <!-- the merged feed leaves out types with `main_feed = false` (macros/feed.html) -->
+  
+    
+  
+  <entry>
+    <title>A 3D scan of Nicolas Cage’s skull was used in the 2007 film Ghost Rider.</title>
+    <id>https://lzon.ca/posts/trivia/2</id>
+    <link rel="alternate" href="https://lzon.ca/posts/trivia/000002/"/>
+    <category term="trivia" label="Trivia" scheme="https://lzon.ca/posts/trivia/"/>
+    <published>2026-10-22T12:00:00Z</published>
+    <updated>2026-10-22T12:00:00Z</updated>
+    <author><name>Lzon</name></author>
+    <content type="html" xml:base="https://lzon.ca/posts/trivia/000002/">
+&lt;p&gt;For his starring roll in 2007’s Ghost Rider a full 3D scan of Nicolas Cage’s body was
+taken by the special effects team. They used the scan to help create Cage’s immolated
+super-hero form, including the shape of the flame-covered skull.&lt;/p&gt;
+&lt;p&gt;Source: &lt;a href=&quot;https://www.cbr.com/nicolas-cage-ghost-rider-secret-skull-abs-skin/&quot;&gt;https://www.cbr.com/nicolas-cage-ghost-rider-secret-skull-abs-skin/&lt;/a&gt;&lt;/p&gt;
+</content>
+  </entry>
+
+</feed>

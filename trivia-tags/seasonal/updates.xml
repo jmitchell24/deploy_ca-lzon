@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  
+
+  <title>
+    lzon.ca - Seasonal - Updates</title>
+
+  <id>https://lzon.ca</id>
+
+  <link rel="alternate" href="https://lzon.ca"/>
+  <link rel="self" href="https://lzon.ca/trivia-tags/seasonal/updates.xml" type="application/atom+xml"/>
+  <generator uri="https://www.getzola.org/">Zola</generator>
+
+  
+  
+  
+  
+
+  
+    <!-- updates.xml: newest change first. Each page keyed "<updated, else date>|<path>"
+         (dates as YYYY-MM-DD sort as text; the path breaks ties, newest numbered first),
+         the keys sorted, then the pages looked up again in that order -->
+    
+    
+      
+      
+      
+    
+    
+    
+    
+      
+      
+    
+  
+
+  <!-- the feed's own updated time: its newest change (updates.xml), else its newest post -->
+  <updated>2026-11-01T12:00:00Z</updated>
+  
+
+  <!-- Entries. Quotes (their own section feed) list one quote each. Posts go through
+       macros/feed.html, so this feed, rss.xml and pages.json agree: each entry is titled as
+       the site titles the post, carries its type as a <category>, and in the merged /posts/
+       feed leads its title with the type ("[ News ] …"). -->
+
+  <!-- the merged feed leaves out types with `main_feed = false` (macros/feed.html) -->
+  
+    
+  
+  <entry>
+    <title>George Renninger, the 19th century confectioner is regarded as the original creator of Candy Corn.</title>
+    <id>https://lzon.ca/posts/trivia/9</id>
+    <link rel="alternate" href="https://lzon.ca/posts/trivia/00009/"/>
+    <category term="trivia" label="Trivia" scheme="https://lzon.ca/posts/trivia/"/>
+    <published>2026-10-31T12:00:00Z</published>
+    <updated>2026-11-01T12:00:00Z</updated>
+    <author><name>Lzon</name></author>
+    <content type="html" xml:base="https://lzon.ca/posts/trivia/00009/">
+
+&lt;p&gt;He originally referred to his classic Autumn treat as ‘Chicken Feed’. It wouldn’t become popularly named Candy Corn until after World War 1, when the American diet began incorporating more corn-derived foods.&lt;/p&gt;
+&lt;p&gt;As one of its original producers, the &lt;a rel=&quot;noopener external&quot; target=&quot;_blank&quot; href=&quot;https://en.wikipedia.org/wiki/Jelly_Belly&quot;&gt;Goelitz Candy Company&lt;/a&gt; (now Jelly Belly) helped to popularize the candy. They ran ad campaigns including one in which a bold rooster characture declares himself the “King of the Candy Corn Fields”.&lt;/p&gt;
+&lt;p&gt;In the modern era most Candy Corn is produced by Ferrero under the Brach’s brand. They control roughly 85% of the market. The National Confectioners Association has estimated that about 35 million pounds of Candy Corn are produced each year. They have also declared October 30th to be National Candy Corn Day.&lt;/p&gt;
+&lt;p&gt;Source: &lt;a href=&quot;https://en.wikipedia.org/wiki/Candy_corn&quot;&gt;https://en.wikipedia.org/wiki/Candy_corn&lt;/a&gt;&lt;/p&gt;&lt;p&gt;Source: &lt;a href=&quot;https://alwaysatreat.com/candy-moments/halloween-central/everything-candy-corn/&quot;&gt;https://alwaysatreat.com/candy-moments/halloween-central/everything-candy-corn/&lt;/a&gt;&lt;/p&gt;&lt;p&gt;Source: &lt;a href=&quot;https://www.thederrick.com/opinion/greene-column-like-it-or-not-candy-corn-withstands-the-test-of-time/article_8d728b97-3ac0-4845-a4ab-17282341bf04.html&quot;&gt;https://www.thederrick.com/opinion/greene-column-like-it-or-not-candy-corn-withstands-the-test-of-time/article_8d728b97-3ac0-4845-a4ab-17282341bf04.html&lt;/a&gt;&lt;/p&gt;
+</content>
+  </entry>
+
+</feed>

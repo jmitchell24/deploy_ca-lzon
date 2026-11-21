@@ -13,21 +13,23 @@
   <generator uri="https://www.getzola.org/">Zola</generator>
 
   
+  
+  
+  
+
+  
+    <!-- quotes and numbered post types sort by filename, since dates alone aren't unique -->
+    
+    
+  
+
+  <!-- the feed's own updated time: its newest change (updates.xml), else its newest post -->
   <updated>2026-11-12T12:00:00Z</updated>
 
   <!-- Entries. Quotes (their own section feed) list one quote each. Posts go through
        macros/feed.html, so this feed, rss.xml and pages.json agree: each entry is titled as
        the site titles the post, carries its type as a <category>, and in the merged /posts/
        feed leads its title with the type ("[ News ] …"). -->
-
-  
-  
-  
-
-  <!-- quotes and numbered post types sort by filename, since dates alone aren't unique -->
-  
-
-  
 
   <!-- the merged feed leaves out types with `main_feed = false` (macros/feed.html) -->
   
@@ -270,8 +272,10 @@ This follows an earlier report of the same swarm breaching security at the AI st
     <published>2026-05-10T12:00:00Z</published>
     <updated>2026-05-10T12:00:00Z</updated>
     <author><name>Lzon</name></author>
-    <content type="html" xml:base="https://lzon.ca/posts/news/000006-uk-opposing-age-verification/">&lt;p&gt;An open letter has been signed by prominent internet service companies which asks UK policymakers to not compromise the open web under the pretense of child safety. The new law has already been passed, and there is a legitimate concern that it will be used broadly to restrict internet access, and reduce online anonymity.&lt;/p&gt;
-&lt;p&gt;In my opinion this is a trojan horse, like many such laws that came before it. Child safety is being used as a pretense in order for a government to grant itself more power.&lt;/p&gt;
+    <content type="html" xml:base="https://lzon.ca/posts/news/000006-uk-opposing-age-verification/">&lt;p&gt;An open letter has been signed by prominent internet service companies which asks UK policymakers to not compromise the open web under the pretense of child safety.&lt;/p&gt;
+&lt;span id=&quot;continue-reading&quot;&gt;&lt;/span&gt;
+&lt;p&gt;The new law has already been passed, and there is a legitimate concern that it will be used broadly to restrict internet access, and reduce online anonymity.
+In my opinion this is a trojan horse, like many such laws that came before it. Child safety is being used as a pretense in order for a government to grant itself more power.&lt;/p&gt;
 &lt;p&gt;Source: &lt;a href=&quot;https://www.openrightsgroup.org/press-releases/companies-and-civil-society-warn-that-uk-is-undermining-open-web/&quot;&gt;https://www.openrightsgroup.org/press-releases/companies-and-civil-society-warn-that-uk-is-undermining-open-web/&lt;/a&gt;&lt;/p&gt;&lt;p&gt;Source: &lt;a href=&quot;https://web.archive.org/web/20260508194502/https://www.openrightsgroup.org/press-releases/companies-and-civil-society-warn-that-uk-is-undermining-open-web/&quot;&gt;https://web.archive.org/web/20260508194502/https://www.openrightsgroup.org/press-releases/companies-and-civil-society-warn-that-uk-is-undermining-open-web/&lt;/a&gt;&lt;/p&gt;
 </content>
   </entry>

@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  
+
+  <title>
+    lzon.ca - Psychology - Updates</title>
+
+  <id>https://lzon.ca</id>
+
+  <link rel="alternate" href="https://lzon.ca"/>
+  <link rel="self" href="https://lzon.ca/trivia-tags/psychology/updates.xml" type="application/atom+xml"/>
+  <generator uri="https://www.getzola.org/">Zola</generator>
+
+  
+  
+  
+  
+
+  
+    <!-- updates.xml: newest change first. Each page keyed "<updated, else date>|<path>"
+         (dates as YYYY-MM-DD sort as text; the path breaks ties, newest numbered first),
+         the keys sorted, then the pages looked up again in that order -->
+    
+    
+      
+      
+      
+    
+    
+    
+    
+      
+      
+    
+  
+
+  <!-- the feed's own updated time: its newest change (updates.xml), else its newest post -->
+  <updated>2026-10-24T12:00:00Z</updated>
+  
+
+  <!-- Entries. Quotes (their own section feed) list one quote each. Posts go through
+       macros/feed.html, so this feed, rss.xml and pages.json agree: each entry is titled as
+       the site titles the post, carries its type as a <category>, and in the merged /posts/
+       feed leads its title with the type ("[ News ] …"). -->
+
+  <!-- the merged feed leaves out types with `main_feed = false` (macros/feed.html) -->
+  
+    
+  
+  <entry>
+    <title>People can be Ambiverted, meaning they are equal parts Introverted and Extroverted.</title>
+    <id>https://lzon.ca/posts/trivia/4</id>
+    <link rel="alternate" href="https://lzon.ca/posts/trivia/000004/"/>
+    <category term="trivia" label="Trivia" scheme="https://lzon.ca/posts/trivia/"/>
+    <published>2026-10-24T12:00:00Z</published>
+    <updated>2026-10-24T12:00:00Z</updated>
+    <author><name>Lzon</name></author>
+    <content type="html" xml:base="https://lzon.ca/posts/trivia/000004/">
+&lt;p&gt;Introverted people obtain gratification from being alone, and consider social engagement to be mentally draining.&lt;/p&gt;
+&lt;p&gt;Extroverted people are the inverse of introverted, they are gratified and energized by being around others.&lt;/p&gt;
+&lt;p&gt;Ambiversion is a third personality trait at the mid point along a spectrum between introversion and extroversion.
+It was first proposed in 1923 by the American psychologist &lt;a rel=&quot;noopener external&quot; target=&quot;_blank&quot; href=&quot;https://en.wikipedia.org/wiki/Edmund_Smith_Conklin&quot;&gt;Edmund Smith Conklin&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;Source: &lt;a href=&quot;https://en.wikipedia.org/wiki/Extraversion_and_introversion#Ambiversion&quot;&gt;https://en.wikipedia.org/wiki/Extraversion_and_introversion#Ambiversion&lt;/a&gt;&lt;/p&gt;
+</content>
+  </entry>
+
+</feed>

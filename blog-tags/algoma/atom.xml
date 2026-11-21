@@ -13,21 +13,23 @@
   <generator uri="https://www.getzola.org/">Zola</generator>
 
   
+  
+  
+  
+
+  
+    <!-- quotes and numbered post types sort by filename, since dates alone aren't unique -->
+    
+    
+  
+
+  <!-- the feed's own updated time: its newest change (updates.xml), else its newest post -->
   <updated>2026-09-26T12:00:00Z</updated>
 
   <!-- Entries. Quotes (their own section feed) list one quote each. Posts go through
        macros/feed.html, so this feed, rss.xml and pages.json agree: each entry is titled as
        the site titles the post, carries its type as a <category>, and in the merged /posts/
        feed leads its title with the type ("[ News ] …"). -->
-
-  
-  
-  
-
-  <!-- quotes and numbered post types sort by filename, since dates alone aren't unique -->
-  
-
-  
 
   <!-- the merged feed leaves out types with `main_feed = false` (macros/feed.html) -->
   
