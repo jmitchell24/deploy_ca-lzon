@@ -24,7 +24,7 @@
   
 
   <!-- the feed's own updated time: its newest change (updates.xml), else its newest post -->
-  <updated>2026-11-02T12:00:00Z</updated>
+  <updated>2026-11-22T12:00:00Z</updated>
 
   <!-- Entries. Quotes (their own section feed) list one quote each. Posts go through
        macros/feed.html, so this feed, rss.xml and pages.json agree: each entry is titled as
@@ -35,6 +35,22 @@
   
     
   
+  <entry>
+    <title>Space probe reaches farthest ever distance from Earth</title>
+    <id>https://lzon.ca/posts/news/35</id>
+    <link rel="alternate" href="https://lzon.ca/posts/news/000035-voyager-light-day/"/>
+    <category term="news" label="News" scheme="https://lzon.ca/posts/news/"/>
+    <published>2026-11-22T12:00:00Z</published>
+    <updated>2026-11-22T12:00:00Z</updated>
+    <author><name>Lzon</name></author>
+    <content type="html" xml:base="https://lzon.ca/posts/news/000035-voyager-light-day/">&lt;p&gt;NASA’s Voyager 1 probe is now beyond 1 light-day from Earth.&lt;/p&gt;
+&lt;span id=&quot;continue-reading&quot;&gt;&lt;/span&gt;
+&lt;p&gt;The probe was launched on September 5th, 1977 on a mission to collect data from the outer solar system. It succeeded in this goal, and was then set to continue collecting data from beyond the heliosphere. On November 18, 2026 the probe reached a milestone distance of 16.1 billion miles from Earth. This is equivalent
+to a single ‘light day’ meaning the distance that light can travel in 24 hours.&lt;/p&gt;
+&lt;p&gt;Beyond its original mission, the probe was also made to be a form of time capsule. It contains one of two &lt;a rel=&quot;noopener external&quot; target=&quot;_blank&quot; href=&quot;https://en.wikipedia.org/wiki/Voyager_Golden_Record&quot;&gt;Golden Records&lt;/a&gt; which has information related to human civilization and life on earth. It is intended as a message for other intelligent life in the universe (if it exists).&lt;/p&gt;
+&lt;p&gt;Source: &lt;a href=&quot;https://www.nasa.gov/news-release/nasas-voyager-1-makes-history-reaching-one-light-day-from-earth/&quot;&gt;https://www.nasa.gov/news-release/nasas-voyager-1-makes-history-reaching-one-light-day-from-earth/&lt;/a&gt;&lt;/p&gt;
+</content>
+  </entry>
   <entry>
     <title>Study demonstrates potential anti-aging effect in GLP-1 drugs</title>
     <id>https://lzon.ca/posts/news/29</id>

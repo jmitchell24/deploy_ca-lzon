@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
+    <channel>
+      <title>
+        lzon.ca - Space</title>
+      <link>https://lzon.ca</link>
+      <description></description>
+      <generator>Zola</generator>
+      <language>en</language>
+      <atom:link href="https://lzon.ca/news-tags/space/rss.xml" rel="self" type="application/rss+xml"/>
+      <lastBuildDate>Sun, 22 Nov 2026 12:00:00 +0000</lastBuildDate>
+      <!-- Items. Quotes (their own section feed) list one quote each. Posts go through
+           macros/feed.html, so this feed, atom.xml and pages.json agree: each item is titled
+           as the site titles the post, carries its type as a <category>, and in the merged
+           /posts/ feed leads its title with the type ("[ News ] …"). -->
+      
+      
+      
+      <!-- quotes and numbered post types sort by filename, since dates alone aren't unique -->
+      
+      
+      <!-- the merged feed leaves out types with `main_feed = false` (macros/feed.html) -->
+      
+        
+      
+      <item>
+          <title>Space probe reaches farthest ever distance from Earth</title>
+          <pubDate>Sun, 22 Nov 2026 12:00:00 +0000</pubDate>
+          <author>Lzon</author>
+          <link>https://lzon.ca/posts/news/000035-voyager-light-day/</link>
+          <guid isPermaLink="false">https://lzon.ca/posts/news/35</guid>
+          <category domain="https://lzon.ca/posts/news/">News</category>
+          <description xml:base="https://lzon.ca/posts/news/000035-voyager-light-day/">&lt;p&gt;NASA’s Voyager 1 probe is now beyond 1 light-day from Earth.&lt;/p&gt;
+&lt;span id=&quot;continue-reading&quot;&gt;&lt;/span&gt;
+&lt;p&gt;The probe was launched on September 5th, 1977 on a mission to collect data from the outer solar system. It succeeded in this goal, and was then set to continue collecting data from beyond the heliosphere. On November 18, 2026 the probe reached a milestone distance of 16.1 billion miles from Earth. This is equivalent
+to a single ‘light day’ meaning the distance that light can travel in 24 hours.&lt;/p&gt;
+&lt;p&gt;Beyond its original mission, the probe was also made to be a form of time capsule. It contains one of two &lt;a rel=&quot;noopener external&quot; target=&quot;_blank&quot; href=&quot;https://en.wikipedia.org/wiki/Voyager_Golden_Record&quot;&gt;Golden Records&lt;/a&gt; which has information related to human civilization and life on earth. It is intended as a message for other intelligent life in the universe (if it exists).&lt;/p&gt;
+&lt;p&gt;Source: &lt;a href=&quot;https://www.nasa.gov/news-release/nasas-voyager-1-makes-history-reaching-one-light-day-from-earth/&quot;&gt;https://www.nasa.gov/news-release/nasas-voyager-1-makes-history-reaching-one-light-day-from-earth/&lt;/a&gt;&lt;/p&gt;
+</description>
+      </item>
+      <item>
+          <title>Earth reaches its Amphelion for 2026</title>
+          <pubDate>Mon, 06 Jul 2026 12:00:00 +0000</pubDate>
+          <author>Lzon</author>
+          <link>https://lzon.ca/posts/news/000024-aphelion-2026/</link>
+          <guid isPermaLink="false">https://lzon.ca/posts/news/24</guid>
+          <category domain="https://lzon.ca/posts/news/">News</category>
+          <description xml:base="https://lzon.ca/posts/news/000024-aphelion-2026/">&lt;p&gt;The Earth’s orbit is not quite circular, which means that through each year there is a point at which the Earth is closest and farthest from the Sun.&lt;/p&gt;
+&lt;span id=&quot;continue-reading&quot;&gt;&lt;/span&gt;
+&lt;p&gt;The farthest distance is referred to as ‘Amphelion’, and the shortest is called ‘Perihelion’.&lt;/p&gt;
+&lt;p&gt;Perihelion was reached back in January, and today the Earth will reach it’s Amphelion (farthest distance) for this year.&lt;/p&gt;
+&lt;p&gt;Source: &lt;a href=&quot;https://www.timeanddate.com/astronomy/perihelion-aphelion-solstice.html&quot;&gt;https://www.timeanddate.com/astronomy/perihelion-aphelion-solstice.html&lt;/a&gt;&lt;/p&gt;&lt;p&gt;Source: &lt;a href=&quot;https://web.archive.org/web/20260625005048/https://www.timeanddate.com/astronomy/perihelion-aphelion-solstice.html&quot;&gt;https://web.archive.org/web/20260625005048/https://www.timeanddate.com/astronomy/perihelion-aphelion-solstice.html&lt;/a&gt;&lt;/p&gt;
+</description>
+      </item>
+    </channel>
+</rss>
