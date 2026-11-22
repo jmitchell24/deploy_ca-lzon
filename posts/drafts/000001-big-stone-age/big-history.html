@@ -1,0 +1,1410 @@
+<style>
+    /*
+     * Big history: a vertical scroll through the whole human story, from today at the
+     * top to the first stone tools at the bottom, on a log scale (see the script).
+     *
+     * Layout, left to right inside the track: the group bands (see the data's group list),
+     * the period bands, the axis with its labels, the leader lines, the events. The
+     * header sticks to the top; its bottom edge is the reading line, and the readout
+     * shows the exact year under it.
+     *
+     * Site styles are used where they fit: the header's layout, text and buttons are
+     * site classes (flex-row, text-*, btn). The rest can't use them (it's drawn by
+     * the script or positioned), so it uses the tokens below, copied from the site's
+     * sass (sass/lzon/_config-variables.scss), and the site's colour variables, so it
+     * follows the theme. Period colours are set per period in the script (PERIODS).
+     */
+    #bht {
+        /* from the site's sass: $spacer-xs/sm/md/lg/xl, $border-md, $border-radius,
+           $line-height-sm, $transition-speed-md (font sizes and families: the site's
+           text-* / font-size-h* / text-monospace / text-sans-serif classes, set in the
+           markup and by the script) */
+        --bht-xs: .25rem;
+        --bht-sm: .5rem;
+        --bht-md: 1rem;
+        --bht-lg: 1.5rem;
+        --bht-xl: 3rem;
+        /* the room under the bottom strip's button box: 1.5em at the page's text size
+           ($font-size-base); the veil's box ends there too */
+        --bht-foot-gap: calc(1.5 * 1.15rem);
+        --bht-border: max(2px, 0.12rem);
+        --bht-radius: 0.3rem;
+        --bht-lh-sm: 1.25;
+        --bht-speed: .3s;
+
+        /*
+         * Columns: the axis line down the middle; to its left the progress bar (half
+         * the group band's width), the group band, then the period band running up to
+         * the axis; to its right the leader lines, then the events. The group band is
+         * exactly as wide as its name plus --bht-band-pad either side, so its padding
+         * is fixed at every width; the period band takes what's left of the left half.
+         * (The name is one line of text-md serif, $font-size-md; the site's serif size
+         * adjust renders its letters about 1.47em thick, measured.)
+         */
+        --bht-axis: 50%;
+        /* the padding inside every band, at every width */
+        --bht-band-pad: var(--bht-sm);
+        --bht-gw: calc(1.15rem * 1.47 + 2 * var(--bht-band-pad));
+        --bht-iw: calc(var(--bht-gw) / 2);
+        --bht-pw: calc(var(--bht-axis) - var(--bht-iw) - var(--bht-gw));
+        --bht-cw: calc(2 * var(--bht-lg));
+        --bht-ev: calc(var(--bht-axis) + var(--bht-cw));
+
+        --bht-line: var(--color-dark);
+        --bht-lit: var(--color-tertiary);
+        --bht-bg: var(--color-darker);
+        --bht-text: var(--color-lighter);
+        --bht-mute: var(--color-light);
+        /* the header's height, set by the script: sticky labels sit below it */
+        --bht-head-h: 6rem;
+
+        position: relative;
+        margin: var(--bht-lg) 0;
+    }
+
+    /* ── header: the year readout over the reading line ──────────────────────── */
+
+    .bht-head {
+        position: relative;
+        z-index: 3;
+        /*
+         * The page's own background (sass/lzon/_base.scss: --color-darker under the
+         * noise tile on html::before), so the header hides the timeline scrolling under
+         * it but looks see-through. Plain CSS, not a clip set from script (that lagged on
+         * phones); and not background-attachment: fixed either, which mobile Chrome
+         * repaints only once a fast scroll stops. Stuck to the top, the header holds its
+         * grain still anyway.
+         */
+        background: var(--color-darker) url("/img/noise-dark.png") repeat;
+        /* room above the readout, as below the button box (.bht-foot) */
+        padding: 1.5em 0 var(--bht-sm);
+        border-bottom: var(--bht-border) solid var(--bht-line);
+    }
+    /* light mode's noise tile, as the site switches it */
+    body[data-dark-mode="off"] #bht :is(.bht-head, .bht-foot, .bht-veil-end, .bht-veil-end::before, .bht-veil-end::after) { background-image: url("/img/noise-light.png"); }
+    #bht.bht-open .bht-head {
+        position: sticky;
+        top: env(safe-area-inset-top, 0px);
+        /* the progress bar's colour, so the frame reads as one */
+        border-bottom-color: var(--color-dark);
+    }
+
+    .bht-year {
+        display: block;
+        font-weight: 700;
+        line-height: var(--bht-lh-sm);
+        white-space: nowrap;
+        font-variant-numeric: tabular-nums;
+    }
+    /*
+     * The readout: a main row (the year, the clock time) over a subtext row (years
+     * ago, time to midnight), each with its left and right ends apart, sized by the
+     * site's text-lg / text-sm. Neither wraps; where text doesn't fit (phones, deep in
+     * the timeline) the clock side (left) gives way with an ellipsis rather than
+     * push the page wide; the year side (right) always shows whole.
+     */
+    .bht-read-row {
+        display: flex;
+        justify-content: space-between;
+        align-items: baseline;
+        gap: var(--bht-md);
+    }
+    .bht-read-row > * { white-space: nowrap; }
+    .bht-read-row > :first-child {
+        min-width: 0;
+        overflow: hidden;
+        text-overflow: ellipsis;
+    }
+    .bht-read-row > :last-child { flex-shrink: 0; text-align: right; }
+    .bht-ago { display: block; white-space: nowrap; font-variant-numeric: tabular-nums; }
+    /* the buttons, in the bottom strip: the "next" ones at the left, "back to top"
+       pushed to the right; spaced like the site's nav row (nav.nav: $spacer-sm gap
+       and padding) */
+    .bht-btns {
+        display: flex;
+        justify-content: flex-start;
+        align-items: stretch;
+        gap: var(--bht-sm);
+        min-height: var(--bht-xl);
+        padding-block: var(--bht-sm);
+        box-sizing: border-box;
+        /* one box around all of them, like a meta box (sass/lzon/_component-meta.scss:
+           $border-md in --color-dark, solid as in a .meta-stack; $border-radius on the
+           bottom corners only), the full width; its top edge is the timeline's bottom
+           line (the strip's border-top) */
+        padding-inline: var(--bht-sm);
+        border: var(--bht-border) solid var(--color-dark);
+        border-top: 0;
+        border-radius: 0 0 var(--bht-radius) var(--bht-radius);
+    }
+    /* at every width: the four share the whole row evenly, their labels wrapping onto
+       two lines where it's narrow */
+    .bht-btns { gap: var(--bht-sm); }
+    .bht-btns .btn-nav-link { flex: 1 1 0; min-width: 0; padding-inline: 0; }
+    /* each button: the site's .btn-nav-link (a button styled as a nav link), with its
+       label over the icon */
+    .bht-btns .btn-nav-link { flex-direction: column; gap: 0; line-height: 1.1; }
+    /* a little room between the label and its icon */
+    .bht-btns .btn-nav-link .icon { padding-top: var(--bht-xs); }
+    .bht-btn-text { text-align: center; }
+
+    .bht-swatch {
+        flex-shrink: 0;
+        width: var(--bht-sm);
+        height: var(--bht-sm);
+        border-radius: 50%;
+        background: var(--bht-era, var(--bht-line));
+    }
+
+    /* the period list, shown only while collapsed: each one opens the timeline at its start */
+    .bht-legend { margin-top: var(--bht-sm); }
+    #bht.bht-open .bht-legend { display: none; }
+
+    /* a matching strip along the bottom of the view while the timeline is on screen,
+       hiding it as the header does (same background, see .bht-head); sticky, so it
+       settles at the timeline's end once that scrolls into view */
+    .bht-foot {
+        display: none;
+        position: sticky;
+        z-index: 3;
+        bottom: env(safe-area-inset-bottom, 0px);
+        padding-bottom: var(--bht-foot-gap);
+        background: var(--color-darker) url("/img/noise-dark.png") repeat;
+        border-top: var(--bht-border) solid var(--color-dark);
+    }
+    #bht.bht-open .bht-foot { display: block; }
+
+    /* ── track ──────────────────────────────────────────────────────────────── */
+
+    .bht-track { display: none; position: relative; }
+    #bht.bht-open .bht-track { display: block; }
+
+    .bht-band {
+        position: absolute;
+        box-sizing: border-box;
+        background: color-mix(in oklch, var(--bht-era) 22%, transparent);
+        transition: background-color var(--bht-speed) ease;
+    }
+    .bht-band.bht-here { background: color-mix(in oklch, var(--bht-era) 40%, transparent); }
+    /* centred across the band: the same room either side of its name */
+    .bht-band-group {
+        left: var(--bht-iw);
+        width: var(--bht-gw);
+        display: flex;
+        justify-content: center;
+        align-items: flex-start;
+        background: color-mix(in oklch, var(--bht-era) 45%, transparent);
+    }
+    .bht-band-period { left: calc(var(--bht-iw) + var(--bht-gw)); width: var(--bht-pw); }
+
+    /*
+     * The progress column, down the far left: a bar held in view between the header
+     * and the bottom strip (--bht-head-h, --bht-foot-h: set by the script), filling
+     * from the top as the reading point goes from now to the oldest point.
+     */
+    .bht-progress {
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        width: var(--bht-iw);
+    }
+    .bht-progress-bar {
+        position: sticky;
+        top: var(--bht-head-h);
+        /*
+         * As tall as the screen can get (lvh: with the phone's address bar hidden),
+         * less the header: it runs on under the bottom strip, which hides the rest, so
+         * it always reaches the strip's line. (dvh would track the address bar, but
+         * mobile Chrome only updates it once a fast scroll stops, so the bar fell short
+         * mid-scroll.) The script fills only the visible part.
+         */
+        height: calc(100vh - var(--bht-head-h));
+        height: calc(100lvh - var(--bht-head-h));
+        max-height: 100%;
+        box-sizing: border-box;
+        overflow: hidden;
+        /* the empty part: the fill's colour (the site's meta border, --color-dark) at
+           half strength */
+        background: color-mix(in srgb, var(--color-dark) 50%, transparent);
+    }
+    .bht-progress-fill {
+        height: 100%;
+        background: var(--color-dark);
+        transform-origin: top;
+        transform: scaleY(0);
+    }
+    /* left-aligned, with the bands' fixed padding either side */
+    .bht-band-period .bht-band-label {
+        padding-left: var(--bht-band-pad);
+        padding-right: var(--bht-band-pad);
+    }
+    /* a period band: its name at the top, its dates pushed to the bottom (margin-top:
+       auto), where each sticks while the band is on screen: the name below the header,
+       the dates above the bottom strip */
+    .bht-band-period { display: flex; flex-direction: column; }
+    /*
+     * The dates sit in a box filling the band below the name (pulled up over the
+     * name's margin-bottom, which the script sets to the dates' height). Sticky inside
+     * that box, they can't rise above the description as a band comes up from the
+     * bottom; and the name's margin keeps it clear of them as a band leaves at the top.
+     */
+    .bht-band-range-box {
+        flex: 1 1 auto;
+        display: flex;
+        flex-direction: column;
+        margin-top: calc(-1 * var(--bht-range-h, 0px));
+    }
+    .bht-band-range {
+        position: sticky;
+        bottom: var(--bht-foot-h, 0px);
+        margin-top: auto;
+        /* all the room below the dates is padding (none from the sticky offset), so they
+           sit as far above the end of their band as above the bottom line when stuck */
+        padding: var(--bht-sm) var(--bht-sm) calc(var(--bht-sm) + var(--bht-xs)) var(--bht-band-pad);
+        line-height: var(--bht-lh-sm);
+        color: var(--bht-mute);
+    }
+    .bht-band.bht-tiny .bht-band-range { display: none; }
+
+    /* each band's label rides along at the top of the view while its band is on screen */
+    /* sticks right at the header's line, so all the room above the text is its own
+       padding: the same at rest (at the top of its band) as stuck */
+    .bht-band-label {
+        position: sticky;
+        top: var(--bht-head-h);
+        display: block;
+        padding: calc(var(--bht-sm) + var(--bht-xs)) var(--bht-sm) var(--bht-sm);
+        line-height: var(--bht-lh-sm);
+        color: var(--bht-text);
+    }
+    .bht-band-label b { display: block; font-weight: 600; }
+    /* a period name too long for its band breaks mid-word rather than run out of it */
+    .bht-band-period .bht-band-label b { overflow-wrap: anywhere; }
+    .bht-band-label small { display: block; margin-top: var(--bht-xs); color: var(--bht-mute); }
+    /* a band too short for its label (the script decides): one small line, no note, not sticky */
+    .bht-band.bht-tiny .bht-band-label {
+        position: static;
+        padding: 0 var(--bht-sm);
+        white-space: nowrap;
+    }
+    .bht-band.bht-tiny .bht-band-label small { display: none; }
+    .bht-band.bht-bare .bht-band-label { visibility: hidden; }
+
+    /* group names run down their narrow band, the band's fixed padding either side */
+    .bht-band-group .bht-band-label {
+        padding: calc(2 * var(--bht-sm)) var(--bht-band-pad) var(--bht-sm);
+        writing-mode: vertical-rl;
+        font-weight: 600;
+        letter-spacing: .05em;
+        text-transform: uppercase;
+    }
+
+    /* the axis line */
+    .bht-axis {
+        position: absolute;
+        top: 0;
+        left: calc(var(--bht-axis) - var(--bht-sm));
+        width: var(--bht-sm);
+        border-right: var(--bht-border) solid var(--bht-line);
+    }
+    /* events: a leader line from the axis, and the label */
+    /* an S-bend from the axis to the label: ::before the first half, ::after the second */
+    .bht-link {
+        position: absolute;
+        left: var(--bht-axis);
+        width: var(--bht-cw);
+        --bht-r: min(var(--bht-radius), 50%);
+    }
+    .bht-link::before,
+    .bht-link::after {
+        content: "";
+        position: absolute;
+        box-sizing: border-box;
+        width: 50%;
+        height: 50%;
+        border: 0 solid var(--bht-line);
+    }
+    .bht-link::before { left: 0; top: 0; border-top-width: var(--bht-border); border-right-width: var(--bht-border); border-top-right-radius: var(--bht-r); }
+    /* one stroke wider, so its vertical lines up under the first half's */
+    .bht-link::after  { right: 0; bottom: 0; width: calc(50% + var(--bht-border)); border-bottom-width: var(--bht-border); border-left-width: var(--bht-border); border-bottom-left-radius: var(--bht-r); }
+    /* going up: the same shape, flipped */
+    .bht-link.bht-up { transform: scaleY(-1); }
+    /* level: one straight line */
+    .bht-link.bht-flat { height: 0 !important; }
+    .bht-link.bht-flat::before { width: 100%; border-right-width: 0; border-radius: 0; }
+    .bht-link.bht-flat::after { display: none; }
+
+    .bht-label {
+        position: absolute;
+        /* inset from the timeline's axis line, and from its leader line above, as a
+           band's name is from its band's edges; it hangs under the leader's end */
+        left: calc(var(--bht-axis) + var(--bht-band-pad));
+        right: 0;
+        padding: calc(var(--bht-sm) + var(--bht-xs)) 0 0;
+        line-height: var(--bht-lh-sm);
+        color: var(--bht-text);
+    }
+    .bht-when {
+        display: block;
+        color: var(--bht-lit);
+        font-variant-numeric: tabular-nums;
+    }
+    /* an inline block: if it doesn't fit beside the date it drops to its own line
+       whole, and only wraps inside the brackets if even that line is too short */
+    .bht-when-ago { display: inline-block; color: var(--bht-mute); }
+    /* bold as a band's name (.bht-band-label b); !important over the site's .text-serif,
+       which sets its own weight that way */
+    .bht-what  { display: block; font-weight: 600 !important; }
+    .bht-why { display: block; color: var(--bht-mute); }
+
+    /*
+     * The veil: while the timeline starts low on the screen (too little of it showing
+     * to read: see veil() in the script), all of it is hidden and a large centred
+     * "scroll to reveal" stands in at its top, in a dashed box like the site's meta
+     * box (sass/lzon/_component-meta.scss: dashed $border-md in --color-dark,
+     * $border-radius) down to near the bottom of the screen; scrolled up far enough,
+     * the two cross-fade ($transition-speed-lg).
+     */
+    /*
+     * The veil's box is laid out by the browser alone, so it holds steady while
+     * scrolling (sizing it from script on scroll lagged behind on phones): the veil
+     * draws the top and sides, scrolling with the page and running well past the
+     * bottom of the screen; its bottom edge is a short piece stuck --bht-foot-gap
+     * above the bottom of the screen (as the button strip is), whose background, the
+     * page's, hides the sides where it overlaps them, and whose ::before / ::after hide
+     * them below it.
+     */
+    .bht-veil {
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        height: 100vh;
+        height: 100lvh;
+        box-sizing: border-box;
+        /* the text as far down from the top as the year row is (the header's top padding) */
+        padding: var(--bht-foot-gap) var(--bht-md) 0;
+        border: var(--bht-border) dashed var(--color-dark);
+        border-bottom: 0;
+        border-radius: var(--bht-radius) var(--bht-radius) 0 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        pointer-events: none;
+        opacity: 0;
+        transition: opacity .6s ease;
+    }
+    .bht-veil-icon { color: var(--color-primary); }
+    /* icon and text close together: no line-height gap */
+    /* set like the year row's figures (.bht-year: bold, $line-height-sm), the icon just under */
+    .bht-veil-text { font-weight: 700; line-height: var(--bht-lh-sm); }
+    .bht-veil-icon { line-height: 1; }
+    .bht-veil-end {
+        position: sticky;
+        bottom: calc(env(safe-area-inset-bottom, 0px) + var(--bht-foot-gap));
+        margin-top: auto;
+        align-self: stretch;
+        /* out over the veil's side borders, to draw its own */
+        margin-inline: calc(-1 * (var(--bht-md) + var(--bht-border)));
+        height: calc(var(--bht-radius) + var(--bht-border));
+        box-sizing: border-box;
+        border: var(--bht-border) dashed var(--color-dark);
+        border-top: 0;
+        border-radius: 0 0 var(--bht-radius) var(--bht-radius);
+        background: var(--color-darker) url("/img/noise-dark.png") repeat;
+    }
+    .bht-veil-end::before,
+    .bht-veil-end::after {
+        content: "";
+        position: absolute;
+        top: 100%;
+        width: var(--bht-border);
+        height: 100vh;
+        height: 100lvh;
+        background: var(--color-darker) url("/img/noise-dark.png") repeat;
+    }
+    .bht-veil-end::before { left: calc(-1 * var(--bht-border)); }
+    .bht-veil-end::after { right: calc(-1 * var(--bht-border)); }
+    /* the header, track and bottom strip fade as one: faded separately, the header and
+       strip would turn see-through and stop hiding the track under them */
+    .bht-body { transition: opacity .6s ease; }
+    #bht.bht-veiled .bht-veil { opacity: 1; }
+    #bht.bht-veiled .bht-body {
+        opacity: 0;
+        pointer-events: none;
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+        .bht-band { transition: none; }
+        /* (the veil's cross-fade stays: a fade isn't motion, and Android turns reduced
+           motion on with battery saver, which made the fade drop out at random) */
+    }
+</style>
+
+<!-- The header and an empty track: the script builds the bands, axis and events. -->
+<div id="bht">
+    <!-- shown instead of the timeline while too little of it is on screen (see veil()) -->
+    <div class="bht-veil text-sans-serif" aria-hidden="true">
+        <span class="bht-veil-text font-size-h3 text-base">Scroll up</span>
+        <!-- Phosphor caret-up -->
+        <span class="icon bht-veil-icon font-size-h3"><svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" class="svgicon" fill="currentColor" viewBox="0 0 256 256" aria-hidden="true"><polyline points="48 160 128 80 208 160" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="16"></polyline></svg></span>
+        <span class="bht-veil-end"></span>
+    </div>
+    <div class="bht-body">
+    <div class="bht-head">
+        <!-- two rows, each across the full width: the same moment if all of it were one
+             24-hour day ending now at midnight, and (right) the year; then under each, its
+             subtext -->
+        <div class="bht-read text-sans-serif">
+            <div class="bht-read-row font-size-h3">
+                <span class="bht-year bht-clock-time text-base">&nbsp;</span>
+                <span class="bht-year  text-base">&nbsp;</span>
+            </div>
+            <div class="bht-read-row font-size-sm">
+                <span class="bht-ago bht-clock-left text-sm text-soft">&nbsp;</span>
+                <span class="bht-ago text-sm text-soft">&nbsp;</span>
+            </div>
+        </div>
+        <div class="bht-legend flex-row flex-wrap gap-xs"></div>
+    </div>
+    <div class="bht-track" id="bht-track"></div>
+    <div class="bht-foot">
+        <div class="bht-btns">
+            <!-- Phosphor caret-down -->
+            <button type="button" class="btn-nav-link bht-btn-next-ev" aria-label="Next event (further back)" title="Next event"><span class="bht-btn-text text-sans-serif text-sm">Next Event</span><span class="icon"><svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" class="svgicon" fill="currentColor" viewBox="0 0 256 256" aria-hidden="true"><polyline points="48 96 128 176 208 96" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="16"></polyline></svg></span></button>
+            <!-- Phosphor caret-double-down -->
+            <button type="button" class="btn-nav-link bht-btn-next" aria-label="Next period (further back)" title="Next period"><span class="bht-btn-text text-sans-serif text-sm">Next Period</span><span class="icon"><svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" class="svgicon" fill="currentColor" viewBox="0 0 256 256" aria-hidden="true"><polyline points="48 48 128 128 208 48" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="16"></polyline><polyline points="48 128 128 208 208 128" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="16"></polyline></svg></span></button>
+            <!-- Phosphor caret-line-down -->
+            <button type="button" class="btn-nav-link bht-btn-next-age" aria-label="Next age (further back; the bottom from the oldest)" title="Next age"><span class="bht-btn-text text-sans-serif text-sm">Next Age</span><span class="icon"><svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" class="svgicon" fill="currentColor" viewBox="0 0 256 256" aria-hidden="true"><line x1="48" y1="208" x2="208" y2="208" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="16"></line><polyline points="48 80 128 160 208 80" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="16"></polyline></svg></span></button>
+            <!-- Phosphor caret-line-up -->
+            <button type="button" class="btn-nav-link bht-btn-top" aria-label="Back to the top" title="Back to top"><span class="bht-btn-text text-sans-serif text-sm">Back to top</span><span class="icon"><svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" class="svgicon" fill="currentColor" viewBox="0 0 256 256" aria-hidden="true"><line x1="48" y1="48" x2="208" y2="48" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="16"></line><polyline points="48 176 128 96 208 176" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="16"></polyline></svg></span></button>
+        </div>
+    </div>
+    </div>
+</div>
+
+<script>
+    (() => {
+        "use strict";
+
+        // ── Settings ────────────────────────────────────────────────────────────
+
+        /** The track's whole height in px, now to START_AGO. */
+        const SCROLL_PX = 33_000;
+
+        /**
+         * The scale is base-10 log of (years ago + LOG_OFFSET): each power of ten takes the
+         * same height. The offset keeps "now" (0 years ago) finite; bigger values give the
+         * last few years less room.
+         */
+        const LOG_OFFSET = 1;
+
+        /** Empty room above today and below the oldest point, in rem (the site's $spacer-xl). */
+        const PAD_REM = 3;
+
+        /** Space between two event labels (px). */
+        const LABEL_GAP = 8;
+
+        // ── Data ────────────────────────────────────────────────────────────────
+        // The periods, groups and events are in big-history-data.html, included just
+        // above this file: a hidden block of lists, read here. Its comment says how
+        // to edit them.
+
+        /**
+         * A period on the timeline.
+         * @typedef {object} Period
+         * @property {string} name      Its name, on the band.
+         * @property {string} [group]   The key of the group band it belongs to (consecutive periods with the same group share one).
+         * @property {{ago?: number, year?: number}} end When it ends; it starts where the previous one ends (the first at START_AGO).
+         * @property {string} color     Any CSS colour.
+         * @property {string} [note]    A line under the name (markup, as written in the data).
+         */
+
+        /**
+         * An event on the timeline.
+         * @typedef {object} TimelineEvent
+         * @property {number} [ago]     When, in years ago (shown as "c. … years ago").
+         * @property {number} [year]    Or when, as a year (BCE negative; fractions place it within the year; data-date gives one).
+         * @property {boolean} [approx] For a `year`: prefix "c.".
+         * @property {string} what      What happened.
+         * @property {string} [why]     Why it matters (a smaller line; markup, as written in the data).
+         * @property {string} [when]    Overrides the date text.
+         */
+
+        /** The data block (big-history-data.html). */
+        const dataEl = document.getElementById("bht-data");
+        if (!dataEl) console.error("big-history.html: no #bht-data (include big-history-data.html above it)");
+
+        /**
+         * The items of one of the data block's lists.
+         * @param {string} name The list's class, after "bht-data-".
+         * @returns {HTMLLIElement[]}
+         */
+        const dataItems = name => [...(dataEl?.querySelectorAll(`.bht-data-${name} > li`) ?? [])];
+
+        /**
+         * A number from a data attribute, or undefined if it isn't there.
+         * @param {HTMLElement} li
+         * @param {string} key The attribute, after "data-" (in dataset form: "endAgo").
+         * @returns {number | undefined}
+         */
+        const num = (li, key) => (li.dataset[key] === undefined ? undefined : Number(li.dataset[key]));
+
+        /**
+         * A "yyyy-mm-dd" date as a fractional year (so 2026-07-02 is about 2026.5);
+         * undefined if there's no date. A leading "-" is BCE, on the same footing as
+         * data-year (-3200-01-01 is the start of 3200 BCE).
+         * @param {string | undefined} date
+         * @returns {number | undefined}
+         */
+        function dateYear(date) {
+            if (date === undefined) return undefined;
+            const m = /^(-?)(\d{4,})-(\d{2})-(\d{2})$/.exec(date.trim());
+            if (!m) {
+                console.error(`big-history.html: bad date "${date}" (want yyyy-mm-dd)`);
+                return undefined;
+            }
+            const year = Number(m[1] + m[2]);
+            // Date.UTC treats years 0–99 as 1900s: set the year separately
+            const at = (y, mo, d) => { const t = new Date(Date.UTC(2000, mo, d)); t.setUTCFullYear(y); return t.getTime(); };
+            const start = at(year, 0, 1);
+            return year + (at(year, Number(m[3]) - 1, Number(m[4])) - start) / (at(year + 1, 0, 1) - start);
+        }
+
+        /**
+         * An item's child text, trimmed, or undefined if there's none.
+         * @param {HTMLElement} li
+         * @param {string} tag
+         * @returns {string | undefined}
+         */
+        const text = (li, tag) => li.querySelector(tag)?.textContent.trim() || undefined;
+
+        /**
+         * An item's child element's contents as markup, copied as written (so <br>, <i>,
+         * links and the like work), or undefined if it's missing or empty.
+         * @param {HTMLElement} li
+         * @param {string} tag
+         * @returns {string | undefined}
+         */
+        const markup = (li, tag) => {
+            const e = li.querySelector(tag);
+            return e && e.textContent.trim() ? e.innerHTML.trim() : undefined;
+        };
+
+        /**
+         * An element holding markup.
+         * @param {string} tag
+         * @param {string} className
+         * @param {string} html
+         * @returns {HTMLElement}
+         */
+        function elHTML(tag, className, html) {
+            const e = el(tag, className);
+            e.innerHTML = html;
+            return e;
+        }
+
+        /** @type {Period[]} The periods, oldest first; the last one runs to now. */
+        const PERIODS = dataItems("periods").map(li => ({
+            name: text(li, "b") ?? "",
+            group: li.dataset.group,
+            end: li.dataset.endAgo !== undefined ? { ago: num(li, "endAgo") } : { year: num(li, "endYear") ?? dateYear(li.dataset.endDate) },
+            color: li.dataset.color,
+            note: markup(li, "small"),
+        }));
+
+        /** The group bands' labels and colours, by key (a period's data-group). */
+        const GROUPS = Object.fromEntries(dataItems("groups").map(li =>
+            [li.dataset.key, { name: li.textContent.trim(), color: li.dataset.color }]));
+
+        /** @type {TimelineEvent[]} The events, any order; those with no date are left out (and reported). */
+        const EVENTS = dataItems("events").map(li => ({
+            ago: num(li, "ago"),
+            year: num(li, "year") ?? dateYear(li.dataset.date),
+            approx: "approx" in li.dataset,
+            what: text(li, "b") ?? "",
+            why: markup(li, "small"),
+            when: li.dataset.when,
+        })).filter(ev => {
+            const dated = ev.ago !== undefined || ev.year !== undefined;
+            if (!dated) console.warn(`big-history.html: "${ev.what}" has no date (data-ago, data-year or data-date): left out`);
+            return dated;
+        });
+
+        // ── Time ────────────────────────────────────────────────────────────────
+        // Positions are in "x": a fractional calendar year, BCE negative. There's no
+        // year 0 in the calendar; x in [0, 1) reads as 1 CE.
+
+        const today = new Date();
+        const startOfYear = new Date(today.getFullYear(), 0, 1);
+        /** Now as x: this year plus how far through it we are. */
+        const NOW = today.getFullYear() + (today - startOfYear) / (365.25 * 864e5);
+        /** How far back the timeline goes, in years ago: to its oldest event. */
+        const START_AGO = Math.max(...EVENTS.map(ev => (ev.ago !== undefined ? ev.ago : NOW - ev.year)));
+        /** The oldest point, at the bottom of the track, as x. */
+        const X0 = NOW - START_AGO;
+        /** The track's length in px, top (now) to bottom (START_AGO). */
+        const SPAN_PX = SCROLL_PX;
+        /** PAD_REM in px. */
+        const PAD = PAD_REM * parseFloat(getComputedStyle(document.documentElement).fontSize);
+        /** Pixels per power of ten. */
+        const PX_PER_DECADE = SPAN_PX / (Math.log10(START_AGO + LOG_OFFSET) - Math.log10(LOG_OFFSET));
+
+        const fmt = n => Math.round(n).toLocaleString("en-US");
+
+        /**
+         * A point in time as x.
+         * @param {{ago?: number, year?: number}} p The point.
+         * @returns {number}
+         */
+        const toX = p => (p.ago !== undefined ? NOW - p.ago : p.year);
+
+        /**
+         * x as a pixel offset from the top of the track: the present PAD below the top,
+         * then log10 of years ago (plus LOG_OFFSET) downward.
+         * @param {number} x
+         * @returns {number}
+         */
+        const toPx = x => PAD + (Math.log10(Math.max(0, NOW - x) + LOG_OFFSET) - Math.log10(LOG_OFFSET)) * PX_PER_DECADE;
+
+        /**
+         * A pixel offset from the top of the track as x (toPx backwards), clamped to the span.
+         * @param {number} px
+         * @returns {number}
+         */
+        function fromPx(px) {
+            const ago = LOG_OFFSET * 10 ** (Math.min(SPAN_PX, Math.max(0, px - PAD)) / PX_PER_DECADE) - LOG_OFFSET;
+            return Math.min(NOW, Math.max(X0, NOW - ago));
+        }
+
+        /**
+         * A calendar year as text: "3,200 BCE" or "1969 CE".
+         * @param {number} x
+         * @returns {string}
+         */
+        function yearText(x) {
+            const y = Math.floor(x);
+            return y < 0 ? `${fmt(-y)} BCE` : `${Math.max(1, y)} CE`;
+        }
+
+        /** Seconds in the day the whole span is squeezed into (see clockText). */
+        const DAY_S = 24 * 60 * 60;
+
+        /**
+         * A time of day on a 12-hour clock, "10:33pm" ("12:00am" at either midnight:
+         * the start of the timeline and the present).
+         * @param {number} t Seconds since the day began (the start of the timeline).
+         * @returns {string}
+         */
+        function clockText(t) {
+            const s = Math.min(DAY_S, Math.floor(t + 1e-6));
+            const h24 = Math.floor(s / 3600) % 24;
+            const h12 = h24 % 12 || 12;
+            const min = String(Math.floor(s / 60) % 60).padStart(2, "0");
+            return `${h12}:${min}${h24 < 12 ? "am" : "pm"}`;
+        }
+
+        /**
+         * Time left until midnight as text, zero parts dropped: seconds always short
+         * ("2 h 10 min 54 s", "5 min 14 s", "38.4 s", "0.26 s": decimals once under a
+         * minute, where a second is decades); a last part of minutes or hours spelled
+         * out ("2 h 10 minutes", "2 hours").
+         * @param {number} left Seconds.
+         * @returns {string}
+         */
+        function untilText(left) {
+            if (left < 1) return `${Number(left.toFixed(2))} s`;
+            if (left < 60) return `${Number(left.toFixed(1))} s`;
+            const s = Math.floor(left);
+            const parts = [
+                [Math.floor(s / 3600), "h", "hour", "hours"],
+                [Math.floor(s / 60) % 60, "min", "minute", "minutes"],
+                [s % 60, "s"],
+            ].filter(([n]) => n > 0);
+            return parts.map(([n, short, one, many], k) =>
+                k === parts.length - 1 && one ? `${n} ${n === 1 ? one : many}` : `${n} ${short}`).join(" ");
+        }
+
+        /**
+         * A span of years as text: "3.3 million years ago", "51,200 years ago".
+         * @param {number} ago Years before now.
+         * @returns {string}
+         */
+        function agoText(ago) {
+            if (ago >= 1e6) return `${Number((ago / 1e6).toPrecision(3))} million years ago`;
+            return `${fmt(ago)} years ago`;
+        }
+
+        /**
+         * How long ago, for a calendar date: "4 months ago", "1 year ago", "534 years ago".
+         * @param {number} ago Years before now.
+         * @returns {string}
+         */
+        function sinceText(ago) {
+            if (ago < 1) {
+                const months = Math.max(1, Math.round(ago * 12));
+                return `${months} ${months === 1 ? "month" : "months"} ago`;
+            }
+            const years = Math.round(ago);
+            return years === 1 ? "1 year ago" : agoText(years);
+        }
+
+        /**
+         * An event's date text.
+         * @param {TimelineEvent} ev
+         * @returns {string}
+         */
+        function whenText(ev) {
+            if (ev.when) return ev.when;
+            if (ev.ago !== undefined) return `c. ${agoText(ev.ago)}`;
+            return (ev.approx ? "c. " : "") + yearText(ev.year);
+        }
+
+        // ── Periods ─────────────────────────────────────────────────────────────
+
+        /** Each period with its start and end as x. */
+        const periods = PERIODS.map((p, i) => ({
+            ...p,
+            from: i === 0 ? X0 : toX(PERIODS[i - 1].end),
+            to: i === PERIODS.length - 1 ? NOW : toX(p.end),
+            // as given (ago or year), for its date range text; the last runs to now
+            start: i === 0 ? { ago: START_AGO } : PERIODS[i - 1].end,
+            end: i === PERIODS.length - 1 ? null : p.end,
+        }));
+
+        /**
+         * A period's dates as text, newest first (as the timeline reads, top down), in
+         * the terms they're given in, sharing the unit where both ends have it:
+         * "300,000 – 3.3 million years ago", "3,300 BCE – 12,000 years ago",
+         * "1,200 – 3,300 BCE", "500 CE – 500 BCE", "present – 1945 CE".
+         * @param {{ago?: number, year?: number}} start
+         * @param {{ago?: number, year?: number} | null} end null: runs to now.
+         * @returns {string}
+         */
+        function rangeText(start, end) {
+            const ago = n => agoText(n).replace(/ years ago$/, "");
+            const year = y => (y < 0 ? fmt(-y) : String(Math.max(1, y)));
+            const era = y => (y < 0 ? "BCE" : "CE");
+            const one = b => (b.ago !== undefined ? agoText(b.ago) : yearText(b.year));
+            if (!end || end.ago === 0) return `Present – ${one(start)}`;
+            if (start.ago !== undefined && end.ago !== undefined) return `${ago(end.ago)} – ${agoText(start.ago)}`;
+            if (start.year !== undefined && end.year !== undefined && era(start.year) === era(end.year)) {
+                return `${year(end.year)} – ${year(start.year)} ${era(start.year)}`;
+            }
+            return `${one(end)} – ${one(start)}`;
+        }
+
+        /** Runs of consecutive periods with the same group, as one band each. */
+        const groups = [];
+        for (const p of periods) {
+            const last = groups.at(-1);
+            if (p.group && last?.key === p.group) last.to = p.to;
+            else if (p.group) {
+                const g = GROUPS[p.group];
+                if (!g) console.error(`big-history.html: no group with data-key "${p.group}"`);
+                groups.push({ key: p.group, name: g?.name ?? p.group, from: p.from, to: p.to, color: g?.color ?? p.color });
+            }
+        }
+
+        /**
+         * The period at x (clamped to the ends).
+         * @param {number} x
+         * @returns {(typeof periods)[number]}
+         */
+        const periodAt = x => periods.find(p => x < p.to) ?? periods.at(-1);
+
+        // ── Elements ────────────────────────────────────────────────────────────
+
+        const root    = document.getElementById("bht");
+        const head    = root.querySelector(".bht-head");
+        const track   = root.querySelector(".bht-track");
+        const foot    = root.querySelector(".bht-foot");
+        const yearEl  = root.querySelector(".bht-year:not(.bht-clock-time)");
+        const agoEl   = root.querySelector(".bht-ago:not(.bht-clock-left)");
+        const clockEl = root.querySelector(".bht-clock-time");
+        const leftEl  = root.querySelector(".bht-clock-left");
+        const legend  = root.querySelector(".bht-legend");
+        const topBtn  = root.querySelector(".bht-btn-top");
+        const ageBtn  = root.querySelector(".bht-btn-next-age");
+        const nextBtn = root.querySelector(".bht-btn-next");
+        const nextEvBtn = root.querySelector(".bht-btn-next-ev");
+
+        /**
+         * Makes an element.
+         * @param {string} tag
+         * @param {string} [className]
+         * @param {string} [text]
+         * @returns {HTMLElement}
+         */
+        function el(tag, className, text) {
+            const e = document.createElement(tag);
+            if (className) e.className = className;
+            if (text !== undefined) e.textContent = text;
+            return e;
+        }
+
+        // The legend (collapsed only): each period opens the timeline at its start.
+        for (const p of periods) {
+            const b = el("button", "btn btn-sm");
+            b.type = "button";
+            const sw = el("i", "bht-swatch");
+            sw.style.setProperty("--bht-era", p.color);
+            b.append(sw, p.name);
+            // its most recent edge, one pixel in: the top of its band
+            b.addEventListener("click", () => { open(); scrollToX(fromPx(toPx(p.to) + 1)); });
+            legend.append(b);
+        }
+
+        // ── Building the track (on first open) ──────────────────────────────────
+
+        /** Each event's link and label, for layout. */
+        const placed = [];
+        /** Each period band, for highlighting the current one. */
+        const bands = [];
+        let built = false;
+
+        /** A period band label's site text class, and its class in a band too short for it. */
+        const BAND_SIZE = "font-size-h5", BAND_SIZE_TINY = "text-sm";
+
+        /**
+         * A band from x `from` to `to`.
+         * @param {string} kind "group" or "period".
+         * @param {{name: string, from: number, to: number, color: string, note?: string}} p
+         * @returns {HTMLElement}
+         */
+        function makeBand(kind, p) {
+            const band = el("div", `bht-band bht-band-${kind}`);
+            // the newest and oldest bands run on through the padding at either end
+            const top = p.to >= NOW ? 0 : toPx(p.to);
+            const bottom = p.from <= X0 ? toPx(X0) + PAD : toPx(p.from);
+            band.style.top = `${top}px`;
+            band.style.height = `${bottom - top}px`;
+            // the oldest bands are stretched to the track's end in layout()
+            if (p.from <= X0) endBands.push({ band, top });
+            band.style.setProperty("--bht-era", p.color);
+            // site text classes, all serif: group names text-md; period names font-size-h5
+            // (text-sm in a band too short for them: see layout) over a text-sm note
+            const font = kind === "group" ? "text-serif text-md" : `text-serif ${BAND_SIZE}`;
+            const label = el("span", `bht-band-label ${font}`);
+            label.append(el("b", "", p.name));
+            if (p.note) label.append(elHTML("small", "text-sm", p.note));
+            band.append(label);
+            // a period's dates, held at the bottom of the view while its band is on screen
+            if (kind === "period") {
+                // in its own box below the name, so as a band comes up from the bottom
+                // the dates stop under the description instead of riding up over it
+                const box = el("div", "bht-band-range-box");
+                box.append(el("span", "bht-band-range text-serif text-sm", rangeText(p.start, p.end)));
+                band.append(box);
+            }
+            return band;
+        }
+
+        /** The oldest group and period bands, and the axis: they run to the track's end. */
+        const endBands = [];
+        let axisEl = null;
+
+        /** The progress bar's fill (see .bht-progress). */
+        let progressFill = null;
+
+        /** Builds the bands, axis and events. */
+        function build() {
+            const frag = document.createDocumentFragment();
+            for (const g of groups) frag.append(makeBand("group", g));
+            for (const p of periods) {
+                const band = makeBand("period", p);
+                bands.push({ band, p });
+                frag.append(band);
+            }
+
+            const progress = el("div", "bht-progress");
+            const bar = el("div", "bht-progress-bar");
+            progressFill = el("div", "bht-progress-fill");
+            bar.append(progressFill);
+            progress.append(bar);
+            frag.append(progress);
+
+            const axis = el("div", "bht-axis");
+            axis.style.height = `${SPAN_PX + 2 * PAD}px`;
+            axisEl = axis;
+            frag.append(axis);
+
+            // newest first: top to bottom
+            for (const ev of [...EVENTS].sort((a, b) => toX(b) - toX(a))) {
+                const x = Math.min(toX(ev), NOW);
+                const link = el("span", "bht-link");
+                const label = el("div", "bht-label");
+                const when = el("span", "bht-when text-monospace text-sm", whenText(ev));
+                // a calendar date also gets how long ago it was, muted
+                if (!ev.when && ev.ago === undefined) when.append(" ", el("span", "bht-when-ago", `(${sinceText(NOW - x)})`));
+                const what = el("span", "bht-what text-serif text-base line-height-sm", ev.what);
+                // "c. 0 years ago" says nothing: no date line for the present (unless data-when gives one)
+                const dated = ev.when || ev.ago !== 0;
+                if (dated) label.append(when);
+                label.append(what);
+                // the present's small line is today's date, long ("November 16, 2026"), in the
+                // reader's own calendar and time
+                if (ev.ago === 0) {
+                    label.append(el("span", "bht-why text-sm", today.toLocaleDateString("en-US", { year: "numeric", month: "long", day: "numeric" })));
+                } else if (ev.why) {
+                    label.append(elHTML("span", "bht-why text-sm", ev.why));
+                }
+                frag.append(link, label);
+                // the leader line meets the first line: the date, or the title without one
+                placed.push({ x, y: toPx(x), link, label, when: dated ? when : what });
+            }
+
+            track.append(frag);
+            built = true;
+        }
+
+        /**
+         * Places the event labels: each one's date line level with its point on the axis if there's
+         * room, else pushed down past the one above, so the crowded recent centuries at
+         * the top spill down into the emptier past. Then draws each leader line from its
+         * point on the axis to its label.
+         */
+        function layout() {
+            if (!built) return;
+            // each label hangs under its leader line: the line comes in level with the
+            // label's top edge (the label's top padding is the room below it)
+            const items = placed.map(it => {
+                const h = it.label.offsetHeight;
+                const anchor = 0;
+                return { ...it, h, anchor, top: it.y - anchor };
+            });
+            items[0].top = Math.max(items[0].top, 0);
+            for (let i = 1; i < items.length; i++) {
+                const prev = items[i - 1];
+                items[i].top = Math.max(items[i].top, prev.top + prev.h + LABEL_GAP);
+            }
+
+            // Bands too short for their label get a small one-line label instead, and
+            // those too short even for that get none (the header names them).
+            for (const { band } of bands) {
+                const label = band.firstElementChild;
+                const tiny = on => {
+                    band.classList.toggle("bht-tiny", on);
+                    label.classList.toggle(BAND_SIZE, !on);
+                    label.classList.toggle(BAND_SIZE_TINY, on);
+                };
+                band.classList.remove("bht-bare");
+                tiny(false);
+                // Room under the name and note for the dates: the name (sticky at the top)
+                // keeps clear of them, so as the band scrolls away the dates push it up
+                // rather than run over it. It fits only with room for both.
+                const range = band.querySelector(".bht-band-range");
+                label.style.marginBottom = range ? `${range.offsetHeight}px` : "";
+                band.style.setProperty("--bht-range-h", range ? `${range.offsetHeight}px` : "0px");
+                const fits = () => label.offsetHeight + (range && !band.classList.contains("bht-tiny") ? range.offsetHeight : 0) <= band.offsetHeight;
+                if (fits()) continue;
+                tiny(true);
+                label.style.marginBottom = "";
+                band.style.setProperty("--bht-range-h", "0px");
+                if (!fits()) band.classList.add("bht-bare");
+            }
+
+            let bottom = 0;
+            for (const it of items) {
+                it.label.style.top = `${it.top}px`;
+                const to = it.top + it.anchor;
+                const d = to - it.y;
+                it.link.classList.toggle("bht-flat", Math.abs(d) < 1);
+                it.link.classList.toggle("bht-up", d <= -1);
+                it.link.style.top = `${Math.min(it.y, to)}px`;
+                it.link.style.height = `${Math.abs(d)}px`;
+                bottom = Math.max(bottom, it.top + it.h);
+            }
+            // Ends PAD below the oldest point (or just below the last label, if that's
+            // lower), so the page bottoms out at the footer (the reading point runs down
+            // to the oldest point over the last stretch: readPx). The oldest bands and
+            // the axis run all the way, so the timeline meets the bottom line.
+            const end = Math.max(toPx(X0) + PAD, bottom + LABEL_GAP);
+            track.style.height = `${end}px`;
+            axisEl.style.height = `${end}px`;
+            for (const { band, top } of endBands) band.style.height = `${end - top}px`;
+        }
+
+        // ── Reading the position ────────────────────────────────────────────────
+
+        /**
+         * Where the reading line (the header's bottom edge) can get to: the timeline
+         * ends a screen short of where the line could reach, so when the track's end
+         * meets the bottom strip the line is still `run` px above the oldest point.
+         * Over the last `run` px of scrolling the reading point leaves the line and runs
+         * down the track at twice the scroll speed, reaching the oldest point just as
+         * the track ends (scrolling on past that, it stays there).
+         * @returns {{ line: number, ramp: number, run: number }} `line`: the line's offset
+         *   into the track now; `ramp`: the offset where the run starts; `run`: its length.
+         */
+        function reach() {
+            const headH = head.getBoundingClientRect().height;
+            const trackRect = track.getBoundingClientRect();
+            const trackTop = trackRect.top;
+            const maxScroll = document.documentElement.scrollHeight - window.innerHeight;
+            // The end: the track's bottom meeting the bottom strip, the last moment the
+            // strip sticks (or the page's bottom, if that comes first).
+            const endScroll = Math.min(maxScroll,
+                trackRect.bottom + window.scrollY - (window.innerHeight - foot.getBoundingClientRect().height));
+            // the line's offset into the track there
+            const lineMax = headH - (trackTop + window.scrollY - endScroll);
+            const run = Math.max(0, toPx(X0) - lineMax);
+            return { line: head.getBoundingClientRect().bottom - trackTop, ramp: lineMax - run, run };
+        }
+
+        /**
+         * The reading point's offset into the track: the reading line's, plus the run.
+         * @returns {number}
+         */
+        function readPx() {
+            const { line, ramp } = reach();
+            return line + Math.max(0, line - ramp);
+        }
+
+        /**
+         * The x at the reading point, clamped to the span; now while collapsed.
+         * @returns {number}
+         */
+        function readX() {
+            if (!root.classList.contains("bht-open")) return NOW;
+            if (pinned && Math.abs(window.scrollY - pinned.y) < 1) return pinned.x;
+            pinned = null;
+            return fromPx(readPx());
+        }
+
+        /**
+         * A landing that reads exactly: after a period step the page sits on the
+         * boundary, but a pixel here can be years, so the readout is pinned to the
+         * boundary's exact x and period until the page scrolls again.
+         * @type {{ y: number, x: number, p: (typeof periods)[number] } | null}
+         */
+        let pinned = null;
+
+        /**
+         * The period under the reading point (the pinned one, after a period step).
+         * @returns {(typeof periods)[number]}
+         */
+        function currentPeriod() {
+            const x = readX();
+            return pinned ? pinned.p : periodAt(x);
+        }
+
+        /** The width the labels were last laid out for. */
+        let laidOutWidth = window.innerWidth;
+
+        /**
+         * The last reading taken at that width (where the reader was, and whether inside
+         * the timeline), so a width change can put them back: by the time the resize
+         * handler runs, the text above has already rewrapped and moved the timeline.
+         * @type {{ x: number, inside: boolean } | null}
+         */
+        let lastRead = null;
+
+        /** The last period shown, so the bands only change when it does. */
+        let shown = null;
+
+        /** How far down the screen the timeline's top can be and still be revealed (a share of the screen height). */
+        const REVEAL_AT = 0.4;
+
+        /**
+         * Hides the timeline (showing "scroll to reveal" instead) while it starts in the
+         * lower part of the screen, where only a sliver of it would show between the
+         * header and the bottom strip; reveals it once its top is in the top REVEAL_AT
+         * of the screen, and keeps it revealed from there down.
+         */
+        function veil() {
+            root.classList.toggle("bht-veiled", root.getBoundingClientRect().top > window.innerHeight * REVEAL_AT);
+        }
+
+        /** Updates the veil, the year readout, and the period band under the reading line. */
+        function update() {
+            veil();
+            const x = readX();
+            if (window.innerWidth === laidOutWidth && root.classList.contains("bht-open")) {
+                lastRead = { x, inside: reach().line > 0 };
+            }
+            if (progressFill) {
+                const frac = Math.min(1, Math.max(0, (toPx(x) - PAD) / SPAN_PX));
+                // The bar runs on under the bottom strip (and, at the very end, up under the
+                // header): fill the part between their lines, as if that were all of it.
+                const bar = progressFill.parentElement.getBoundingClientRect();
+                const from = Math.max(bar.top, head.getBoundingClientRect().bottom);
+                const to = Math.min(bar.bottom, foot.getBoundingClientRect().top);
+                const fill = (from - bar.top) + frac * Math.max(0, to - from);
+                progressFill.style.transform = `scaleY(${bar.height ? fill / bar.height : 0})`;
+            }
+            const ago = NOW - x;
+            yearEl.textContent = yearText(x);
+            // near the top a pixel is days, so recent spans get a decimal
+            agoEl.textContent = ago < 0.05 ? "Now" : ago < 10 ? `${ago.toFixed(1)} years ago` : `${fmt(ago)} years ago`;
+            const left = (ago / START_AGO) * DAY_S;
+            clockEl.textContent = clockText(DAY_S - left);
+            leftEl.textContent = left < 0.005 ? "Midnight" : `${untilText(left)} to midnight`;
+
+            const p = pinned ? pinned.p : periodAt(x);
+            // nothing more recent than the newest period, nothing further back than the oldest
+            nextBtn.disabled = p === periods[0];
+            topBtn.disabled = window.scrollY <= scrollYFor(NOW) + 1;
+            ageBtn.disabled = atOldestPoint(x);
+            const evX = eventBase();
+            nextEvBtn.disabled = !eventFrom(evX, 1);
+            if (p !== shown) {
+                for (const b of bands) b.band.classList.toggle("bht-here", b.p === p);
+                shown = p;
+            }
+        }
+
+        let queued = false;
+        /** Calls update() once on the next frame. */
+        function queueUpdate() {
+            if (queued) return;
+            queued = true;
+            requestAnimationFrame(() => { queued = false; update(); });
+        }
+
+        /**
+         * The page scroll position that puts x on the reading line (now: the track's
+         * very top, so the padding above today shows).
+         * @param {number} x
+         * @returns {number}
+         */
+        function scrollYFor(x) {
+            const trackTop = track.getBoundingClientRect().top + window.scrollY;
+            const px = x >= NOW ? 0 : toPx(Math.max(X0, x));
+            // readPx backwards: past the ramp, the line only needs to go half as far
+            const { ramp } = reach();
+            const line = px <= ramp ? px : (px + ramp) / 2;
+            // the exact height: offsetHeight rounds, and a fraction of a pixel can be millennia here
+            return trackTop + line - head.getBoundingClientRect().height;
+        }
+
+        /**
+         * Scrolls so x sits on the reading line, at once.
+         * @param {number} x
+         */
+        function scrollToX(x) {
+            stopGlide();
+            window.scrollTo({ top: scrollYFor(x), behavior: "instant" });
+            update();
+        }
+
+        // ── Top / Bottom buttons: an eased glide (native smooth scrolling can't be timed) ──
+
+        /** How long a glide to the top or bottom takes, in ms. */
+        const GLIDE_MS = 3000;
+
+        /** How long a step to the next or previous period or event takes, in ms. */
+        const PERIOD_GLIDE_MS = 500;
+
+        /**
+         * Ease in and out (cubic).
+         * @param {number} t 0 to 1.
+         * @returns {number}
+         */
+        const ease = t => (t < 0.5 ? 4 * t * t * t : 1 - (-2 * t + 2) ** 3 / 2);
+
+        /** The running glide's frame request, or 0. */
+        let glideFrame = 0;
+
+        /** Stops a running glide where it is. */
+        function stopGlide() {
+            cancelAnimationFrame(glideFrame);
+            glideFrame = 0;
+            glideAim = null;
+        }
+
+        /** Where a running period or event step is headed (x and its period), or null. */
+        let glideAim = null;
+
+        /**
+         * Glides the page so x ends up on the reading line, over `ms` (at once, with
+         * reduced motion). The reader scrolling (wheel, touch, keys) stops it.
+         * @param {number} x
+         * @param {number} [ms] How long it takes.
+         * @param {(typeof periods)[number]} [pin] Pin the readout to x and this period on landing.
+         * @param {number} [to] The scroll position to land on, if not the one that puts x on the line.
+         * @param {() => void} [onLand] Called on landing.
+         */
+        function glideToX(x, ms = GLIDE_MS, pin, to = scrollYFor(x), onLand) {
+            stopGlide();
+            const land = () => {
+                if (pin) pinned = { y: window.scrollY, x, p: pin };
+                onLand?.();
+                update();
+            };
+            if (window.matchMedia("(prefers-reduced-motion: reduce)").matches) {
+                window.scrollTo({ top: to, behavior: "instant" });
+                return land();
+            }
+            const from = window.scrollY;
+            const start = performance.now();
+            const step = now => {
+                const t = Math.min(1, (now - start) / ms);
+                window.scrollTo({ top: from + (to - from) * ease(t), behavior: "instant" });
+                if (t < 1) glideFrame = requestAnimationFrame(step);
+                else { stopGlide(); land(); }
+            };
+            glideFrame = requestAnimationFrame(step);
+        }
+
+        for (const type of ["wheel", "touchstart", "keydown"]) {
+            window.addEventListener(type, () => { if (glideFrame) stopGlide(); }, { passive: true });
+        }
+        topBtn.addEventListener("click", () => glideToX(NOW, PERIOD_GLIDE_MS));
+        // pinned, like a period step: at the end a pixel is centuries, and the landing can fall a fraction short
+        /** The bottom (the oldest point), pinned: there a pixel is centuries. */
+        const glideBottom = () => glideToX(X0, PERIOD_GLIDE_MS, periods[0]);
+
+        /**
+         * Whether x is at the oldest point, within a pixel.
+         * @param {number} x
+         * @returns {boolean}
+         */
+        const atOldestPoint = x => toPx(x) >= toPx(X0) - 1;
+
+        /**
+         * Glides to the top of the next age (group band) further back, from the current
+         * one (or from where a running step is headed), its first period's dates pinned;
+         * from the oldest age, to the bottom.
+         */
+        function glideAge() {
+            const p = glideAim?.p ?? currentPeriod();
+            const i = groups.findIndex(g => p.from >= g.from && p.to <= g.to);
+            const older = i > 0 ? groups[i - 1] : null;
+            if (!older) return glideBottom();
+            const first = periods.find(q => q.to === older.to);
+            glideToX(older.to, PERIOD_GLIDE_MS, first);
+            glideAim = { x: older.to, p: first };
+        }
+        ageBtn.addEventListener("click", glideAge);
+
+        /**
+         * Where a period starts for the reader: its most recent edge, exactly (the
+         * boundary with the next period up); for the newest period, now.
+         * @param {number} i The period's index in `periods`.
+         * @returns {number} x.
+         */
+        const periodTop = i => (i === periods.length - 1 ? NOW : periods[i].to);
+
+        /**
+         * Glides to the top of the period `step` places on from the current one (from
+         * where a running glide is headed, so repeated clicks keep stepping): +1 is the
+         * next period down (further back), -1 the previous one up (more recent).
+         * @param {1 | -1} step
+         */
+        function glidePeriod(step) {
+            const from = periods.indexOf(glideAim?.p ?? currentPeriod());
+            // periods run oldest first, so further back is a lower index
+            const i = Math.min(periods.length - 1, Math.max(0, from - step));
+            if (i === from) return;
+            glideToX(periodTop(i), PERIOD_GLIDE_MS, periods[i]);
+            glideAim = { x: periodTop(i), p: periods[i] };
+        }
+        nextBtn.addEventListener("click", () => glidePeriod(1));
+
+        /** Two x within this are the same point (pinned readouts are exact). */
+        const SAME_X = 1e-6;
+
+        /**
+         * The event `step` places on from x: +1 the next one down (further back), -1
+         * the previous one up (more recent); undefined past either end.
+         * @param {number} x
+         * @param {1 | -1} step
+         * @returns {(typeof placed)[number] | undefined}
+         */
+        function eventFrom(x, step) {
+            // placed runs newest first, top to bottom
+            return step > 0
+                ? placed.find(it => it.x < x - SAME_X)
+                : placed.findLast(it => it.x > x + SAME_X);
+        }
+
+        /**
+         * The event just landed on by an event step, while the page hasn't scrolled since.
+         * @type {{ y: number, x: number } | null}
+         */
+        let landedEvent = null;
+
+        /**
+         * Where event steps count from: the event just landed on (it sits below the
+         * reading line, so the line's own x would find it again), else the reading point.
+         * @returns {number} x.
+         */
+        function eventBase() {
+            if (landedEvent && Math.abs(window.scrollY - landedEvent.y) < 1) return landedEvent.x;
+            landedEvent = null;
+            return readX();
+        }
+
+        /**
+         * Glides to the event `step` places on from the current one (or from where a
+         * running step is headed), landing with its point on the axis PAD below the reading line, as
+         * the first event sits below the top. The readout shows the line's own year.
+         * @param {1 | -1} step
+         */
+        function glideEvent(step) {
+            const ev = eventFrom(glideAim?.x ?? eventBase(), step);
+            if (!ev) return;
+            const p = periodAt(ev.x);
+            const trackTop = track.getBoundingClientRect().top + window.scrollY;
+            const maxScroll = document.documentElement.scrollHeight - window.innerHeight;
+            const to = trackTop + ev.y - head.getBoundingClientRect().height - PAD;
+            glideToX(ev.x, PERIOD_GLIDE_MS, undefined, Math.min(maxScroll, Math.max(0, to)),
+                () => { landedEvent = { y: window.scrollY, x: ev.x }; });
+            glideAim = { x: ev.x, p };
+        }
+        nextEvBtn.addEventListener("click", () => glideEvent(1));
+
+        // ── Open / collapse ─────────────────────────────────────────────────────
+
+        /** Sets --bht-head-h and --bht-foot-h, for the sticky band labels and progress bar. */
+        function measureHead() {
+            root.style.setProperty("--bht-head-h", `${head.offsetHeight}px`);
+            root.style.setProperty("--bht-foot-h", `${foot.offsetHeight}px`);
+        }
+
+        /** Opens the timeline (building it the first time). */
+        function open() {
+            if (root.classList.contains("bht-open")) return;
+            if (!built) build();
+            root.classList.add("bht-open");
+            measureHead();
+            layout();
+            update();
+        }
+
+        // ── Keeping it current ──────────────────────────────────────────────────
+
+        window.addEventListener("scroll", queueUpdate, { passive: true });
+        let resizeTimer;
+        window.addEventListener("resize", () => {
+            clearTimeout(resizeTimer);
+            resizeTimer = setTimeout(() => {
+                if (!root.classList.contains("bht-open")) return;
+                // Phones resize the height as the address bar slides in and out while
+                // scrolling: nothing to re-lay out, and moving the page then would yank
+                // the reader around. Only a new width rewraps the labels.
+                if (window.innerWidth === laidOutWidth) return update();
+                laidOutWidth = window.innerWidth;
+                // keep the reader's place, if they were in the timeline (above it, leave the page be)
+                const before = lastRead;
+                measureHead();
+                layout();
+                if (before?.inside) scrollToX(before.x);
+                else update();
+            }, 150);
+        });
+        document.fonts?.ready.then(() => { measureHead(); layout(); update(); });
+        // the header's and bottom strip's heights change with their text: keep the
+        // sticky band labels and the progress bar between them
+        if ("ResizeObserver" in window) {
+            const watch = new ResizeObserver(measureHead);
+            watch.observe(head);
+            watch.observe(foot);
+        }
+
+        open();
+    })();
+</script>

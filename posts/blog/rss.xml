@@ -8,7 +8,7 @@
       <generator>Zola</generator>
       <language>en</language>
       <atom:link href="https://lzon.ca/posts/blog/rss.xml" rel="self" type="application/rss+xml"/>
-      <lastBuildDate>Fri, 20 Nov 2026 12:00:00 +0000</lastBuildDate>
+      <lastBuildDate>Sun, 22 Nov 2026 12:00:00 +0000</lastBuildDate>
       <!-- Items. Quotes (their own section feed) list one quote each. Posts go through
            macros/feed.html, so this feed, atom.xml and pages.json agree: each item is titled
            as the site titles the post, carries its type as a <category>, and in the merged
@@ -1142,35 +1142,7 @@ from friends and family. It works amazingly well on the BBQ.&lt;/p&gt;
           <link>https://lzon.ca/posts/blog/ginger-bread/</link>
           <guid isPermaLink="false">https://lzon.ca/posts/blog/ginger-bread/</guid>
           <category domain="https://lzon.ca/posts/blog/">Blog</category>
-          <description xml:base="https://lzon.ca/posts/blog/ginger-bread/">&lt;p&gt;I only tried this recipe once. It turned out nice,
-but it wasn’t interesting enough for me to try it
-again.&lt;/p&gt;
-&lt;h3 id=&quot;ingredients&quot;&gt;Ingredients&lt;/h3&gt;
-&lt;ul&gt;
-&lt;li&gt;🐮 1 cup (237 mL) milk or water&lt;/li&gt;
-&lt;li&gt;🍫 1/2 cup (118 mL) molasses&lt;/li&gt;
-&lt;li&gt;🍯 1/2 cup (118 mL) honey&lt;/li&gt;
-&lt;li&gt;🧈 1/2 cup (one stick, 113g) butter&lt;/li&gt;
-&lt;li&gt;🧂 1/2 cup (100g) granulated sugar&lt;/li&gt;
-&lt;li&gt;🥚 1 egg&lt;/li&gt;
-&lt;li&gt;🍞 2 1/2 cups (300g) all-purpose flour&lt;/li&gt;
-&lt;li&gt;🧂 1/2 teaspoon salt (maybe 3/4 if using unsalted butter)&lt;/li&gt;
-&lt;li&gt;🧑‍🍳 1 1/2 teaspoons baking soda&lt;/li&gt;
-&lt;li&gt;🌿 2 tablespoons ground cinnamon&lt;/li&gt;
-&lt;li&gt;🫚 2 tablespoons ground ginger (use half if you don’t want it very spicy)&lt;/li&gt;
-&lt;li&gt;☘️ a little finely-ground black pepper&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h3 id=&quot;instructions&quot;&gt;Instructions&lt;/h3&gt;
-&lt;ol&gt;
-&lt;li&gt;Heat oven to 350ºF/180ºC.&lt;/li&gt;
-&lt;li&gt;Prepare a loaf pan with grease or parchment sling.&lt;/li&gt;
-&lt;li&gt;Pour milk/water into a bowl, along with the molasses and honey.&lt;/li&gt;
-&lt;li&gt;Drop in the butter in chucks. Microwave until butter is mostly melted.&lt;/li&gt;
-&lt;li&gt;Put the flour in a mixing bowl with the salt, baking powder, and spices. Whisk to combine and fluff up the flour.&lt;/li&gt;
-&lt;li&gt;Add the sugar to the wet ingredients along with the egg and stir. Pour the wet ingredients into the dry and whisk until smooth.&lt;/li&gt;
-&lt;li&gt;Pour mixture into the loaf pan and bake for 1 hour.&lt;/li&gt;
-&lt;/ol&gt;
-
+          <description xml:base="https://lzon.ca/posts/blog/ginger-bread/">&lt;p&gt;Just a good and easy-to-follow Gingerbread recipe, in case you need one.&lt;/p&gt;&lt;p&gt;&lt;a href=&quot;https://lzon.ca/posts/blog/ginger-bread/#continue-reading&quot;&gt;Continue reading&lt;/a&gt;&lt;/p&gt;
 </description>
       </item>
       <item>
