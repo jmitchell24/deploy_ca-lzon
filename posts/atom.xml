@@ -24,7 +24,7 @@
   
 
   <!-- the feed's own updated time: its newest change (updates.xml), else its newest post -->
-  <updated>2026-11-22T12:00:00Z</updated>
+  <updated>2026-11-23T12:00:00Z</updated>
 
   <!-- Entries. Quotes (their own section feed) list one quote each. Posts go through
        macros/feed.html, so this feed, rss.xml and pages.json agree: each entry is titled as
@@ -42,7 +42,7 @@ invented in the last 6 minutes before midnight.</title>
     <link rel="alternate" href="https://lzon.ca/posts/trivia/000011/"/>
     <category term="trivia" label="Trivia" scheme="https://lzon.ca/posts/trivia/"/>
     <published>2026-11-20T12:00:00Z</published>
-    <updated>2026-11-20T12:00:00Z</updated>
+    <updated>2026-11-23T12:00:00Z</updated>
     <author><name>Lzon</name></author>
     <content type="html" xml:base="https://lzon.ca/posts/trivia/000011/">
 &lt;p&gt;This timeline puts into historic context the trends and forces that have shaped humanity and the world around us.&lt;/p&gt;
@@ -113,47 +113,47 @@ invented in the last 6 minutes before midnight.</title>
 &lt;li&gt;ends: 1500&lt;/li&gt;
 &lt;li&gt;color: oklch(58% 0.13 25)&lt;/li&gt;
 &lt;/ul&gt;
-&lt;p&gt;The Middle Ages is the time between the fall of the Western Roman Empire and the European Renaissance. It is regarded as a period of regression from the achievements of the Romans. Populations shrank and became more rural, central authority collapsed, religion grew into a dominant force in daily life. It culminated with a sequence of devastating plagues, and was ended by the emergence of the Italian Renaissance which would eventually spread to the rest of Europe.&lt;/p&gt;
+&lt;p&gt;From the fall of the Western Roman Empire until the European Renaissance. It is regarded as a period of regression from the Romans. Populations shrank, central authority collapsed, religion grew to dominate daily life. It culminated with a sequence of devastating plagues.&lt;/p&gt;
 &lt;h2 id=&quot;early-modernity&quot;&gt;Early Modernity&lt;/h2&gt;
 &lt;ul&gt;
 &lt;li&gt;ends: 1800&lt;/li&gt;
 &lt;li&gt;color: oklch(64% 0.10 200)&lt;/li&gt;
 &lt;/ul&gt;
-&lt;p&gt;The period from the beginning of the European Renaissance until the Industrial Revolution, these are the centuries in which the foundational trends and forces of modern life began. It encompasses the European Renaissance, Colonization of the Americas, French &amp;amp; American Revolutions, and the rise of Enlightenment philosophy.&lt;/p&gt;
+&lt;p&gt;From the European Renaissance until the Industrial Revolution in the 19th century, the centuries in which key trends and forces of modern life began. It includes the Colonization of the Americas, French &amp;amp; American Revolutions, and the rise of Enlightenment philosophy.&lt;/p&gt;
 &lt;h2 id=&quot;modern-period&quot;&gt;Modern Period&lt;/h2&gt;
 &lt;ul&gt;
 &lt;li&gt;ends: 1945&lt;/li&gt;
 &lt;li&gt;color: oklch(60% 0.12 265)&lt;/li&gt;
 &lt;/ul&gt;
-&lt;p&gt;The period of human history that begins in the 19th century with the Industrial Revolution, and ends with World War I &amp;amp; II in the early decades of the 20th century. It is the time in which the dominant trends of modern life emerged: Industrialization, Urbanization, and Secularization.&lt;/p&gt;
+&lt;p&gt;From the Industrial Revolution until World War I &amp;amp; II in the early decades of the 20th century. It is the time in which the dominant trends of modern life emerged: Industrialization, Urbanization, and Secularization.&lt;/p&gt;
 &lt;h2 id=&quot;late-modernity&quot;&gt;Late Modernity&lt;/h2&gt;
 &lt;ul&gt;
 &lt;li&gt;ends: present&lt;/li&gt;
 &lt;li&gt;color: oklch(70% 0.12 170)&lt;/li&gt;
 &lt;/ul&gt;
-&lt;p&gt;The most recent decades of modern history. It begins with the Cold War against the United States and Soviet Union and is broadly defined by ongoing and rapid technological progress and the emergence of a truly global society. Also referred to as the ‘Contemporary Period’ or ‘Post Modernity’.&lt;/p&gt;
+&lt;p&gt;The most recent decades of modern history, beginning at the start of the Cold War. Broadly defined by ongoing and rapid technological progress and the emergence of a truly global society.&lt;/p&gt;
 &lt;h1 id=&quot;events&quot;&gt;Events&lt;/h1&gt;
 &lt;h2 id=&quot;today&quot;&gt;Today&lt;/h2&gt;
 &lt;p&gt;present&lt;/p&gt;
 &lt;h2 id=&quot;kick-off-at-fifa-world-cup-2026&quot;&gt;Kick off at FIFA World Cup 2026 &lt;!-- 1 --&gt;&lt;/h2&gt;
 &lt;p&gt;2026-07-19&lt;/p&gt;
-&lt;p&gt;The 23rd FIFA World Cup began on July 11, jointly hosted by Canada, Mexico, and the United States.
-The tournament ended on July 19 with Spain winning for the second time.&lt;/p&gt;
+&lt;p&gt;The tournament began on July 11, jointly hosted by Canada, Mexico, and the United States.
+It ended on July 19 with Spain as winner.&lt;/p&gt;
 &lt;h2 id=&quot;launch-of-artemis-ii-lunar-mission&quot;&gt;Launch of Artemis II lunar mission &lt;!-- 2 --&gt;&lt;/h2&gt;
 &lt;p&gt;2026-04-01&lt;/p&gt;
-&lt;p&gt;This NASA mission flew humans to orbit around the moon for the first time since the end of the original Apollo missions in 1972.&lt;/p&gt;
+&lt;p&gt;A NASA mission to fly a human crew to orbit around the moon. This was the first time humans had visited the moon since end of the Apollo program in 1972.&lt;/p&gt;
 &lt;h2 id=&quot;death-of-jane-goodall&quot;&gt;Death of Jane Goodall &lt;!-- 3 --&gt;&lt;/h2&gt;
 &lt;p&gt;2025-10-01&lt;/p&gt;
-&lt;p&gt;English anthropologist Jane Goodall dies at the age of 91. She pioneered the modern study of wild chimpanzees through her field work, documenting their complex social structures and tool use. She was also an outspoken activist for conservation, animal welfare, and environmentalism.&lt;/p&gt;
+&lt;p&gt;The famed anthropologist died at 91. She was known for her field work with chimpanzees and was an outspoken activist for conservation, animal welfare, and environmentalism.&lt;/p&gt;
 &lt;h2 id=&quot;attempted-assassination-of-donald-trump&quot;&gt;Attempted Assassination of Donald Trump &lt;!-- 4 --&gt;&lt;/h2&gt;
 &lt;p&gt;2024-07-13&lt;/p&gt;
-&lt;p&gt;United States presidential candidate Donald Trump survives an attempted assassination during a campaign rally. He was attacked by a gunman named Thomas Matthew Crooks. There would be another assassination several months later, on September 15 of the same year.&lt;/p&gt;
+&lt;p&gt;Gunman Thomas Matthew Crooks tried to kill Donald Trump at a campaign rally. Another attempt on Trump’s life was made several months later.&lt;/p&gt;
 &lt;h2 id=&quot;twitter-renamed-to-x-corp&quot;&gt;Twitter renamed to X Corp. &lt;!-- 5 --&gt;&lt;/h2&gt;
 &lt;p&gt;2023-07-23&lt;/p&gt;
-&lt;p&gt;Elon Musk renames the influential social media platform formerly known as Twitter. He had purchased the company in October 2022 in a leveraged buyout for $44 billion. In March 2025 X Corp. would be made a subsidiary of Musk’s newly founded AI company called &lt;strong&gt;xAI&lt;/strong&gt;.&lt;/p&gt;
+&lt;!-- Elon Musk bought the company in October 2022, and offically renamed it to X Corp. renames the influential social media platform formerly known as Twitter. He had purchased the company in October 2022 in a leveraged buyout for $44 billion. In March 2025 X Corp. would be made a subsidiary of Musk&apos;s newly founded AI company called **xAI**. --&gt;
 &lt;h2 id=&quot;russia-invades-ukraine&quot;&gt;Russia invades Ukraine &lt;!-- 6 --&gt;&lt;/h2&gt;
 &lt;p&gt;2022-02-24&lt;/p&gt;
-&lt;p&gt;Russia begins a full-scale invasion of Ukraine, representing the largest military conflict within Europe since the end of World War II. It immediately triggered a massive refugee crisis as well as a global commodities shock.&lt;/p&gt;
+&lt;p&gt;A full-scale invasion of Ukraine by Russia. It was the largest military conflict in Europe since the end of World War II. It immediately triggered a massive refugee crisis as well as a global commodities shock.&lt;/p&gt;
 &lt;h2 id=&quot;breakout-of-fire-at-notre-dame&quot;&gt;Breakout of fire at Notre-Dame &lt;!-- 7 --&gt;&lt;/h2&gt;
 &lt;p&gt;2019-04-15&lt;/p&gt;
 &lt;h2 id=&quot;ai-alphago-defeats-lee-sedol-at-go&quot;&gt;AI (AlphaGo) defeats Lee Sedol at Go &lt;!-- 8 --&gt;&lt;/h2&gt;
@@ -849,7 +849,7 @@ The tournament ended on July 19 with Spain winning for the second time.&lt;/p&gt
         .bht-frame { bottom: var(--bht-row-h); }
         .bht-frame-bottom { bottom: calc(var(--bht-foot-h, 0px) + var(--bht-row-h)); }
         /* no summaries, for events or periods: just titles and dates */
-        .bht-why, .bht-block .bht-block-note { display: none; }
+        .bht-block .bht-block-note { display: none; }
         /* the readout stacked: the clock time and its time to midnight, then the year
            and its years ago, all at the left (the rows give up their children to one
            column, reordered) */
@@ -990,9 +990,9 @@ The tournament ended on July 19 with Spain winning for the second time.&lt;/p&gt
         // ── Settings ────────────────────────────────────────────────────────────
 
         /** Hide every event&apos;s summary (just its date and title), at every width. */
-        const HIDE_EVENT_SUMMARIES = true;
+        const HIDE_EVENT_SUMMARIES = false;
         /** Hide every period&apos;s summary (just its title and dates), at every width. */
-        const HIDE_PERIOD_SUMMARIES = true;
+        const HIDE_PERIOD_SUMMARIES = false;
 
         /** The track&apos;s whole height in px, now to START_AGO. */
         const SCROLL_PX = 33_000;
@@ -4958,7 +4958,7 @@ I found from &lt;a rel=&quot;noopener external&quot; target=&quot;_blank&quot; h
     <link rel="alternate" href="https://lzon.ca/posts/blog/baked-curry-pork/"/>
     <category term="blog" label="Blog" scheme="https://lzon.ca/posts/blog/"/>
     <published>2024-09-08T12:00:00Z</published>
-    <updated>2026-11-22T12:00:00Z</updated>
+    <updated>2026-11-23T12:00:00Z</updated>
     <author><name>Lzon</name></author>
     <content type="html" xml:base="https://lzon.ca/posts/blog/baked-curry-pork/">&lt;p&gt;An good weeknight meal with India-style flavor. It can be made from scratch in less than 2 hours.&lt;/p&gt;&lt;p&gt;&lt;a href=&quot;https://lzon.ca/posts/blog/baked-curry-pork/#continue-reading&quot;&gt;Continue reading&lt;/a&gt;&lt;/p&gt;
 </content>

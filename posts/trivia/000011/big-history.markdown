@@ -54,29 +54,31 @@
 - ends: 500
 - color: oklch(62% 0.12 300)
 
+
+
 ## Middle Ages
 - ends: 1500
 - color: oklch(58% 0.13 25)
 
-The Middle Ages is the time between the fall of the Western Roman Empire and the European Renaissance. It is regarded as a period of regression from the achievements of the Romans. Populations shrank and became more rural, central authority collapsed, religion grew into a dominant force in daily life. It culminated with a sequence of devastating plagues, and was ended by the emergence of the Italian Renaissance which would eventually spread to the rest of Europe. 
+From the fall of the Western Roman Empire until the European Renaissance. It is regarded as a period of regression from the Romans. Populations shrank, central authority collapsed, religion grew to dominate daily life. It culminated with a sequence of devastating plagues.
 
 ## Early Modernity
 - ends: 1800
 - color: oklch(64% 0.10 200)
 
-The period from the beginning of the European Renaissance until the Industrial Revolution, these are the centuries in which the foundational trends and forces of modern life began. It encompasses the European Renaissance, Colonization of the Americas, French & American Revolutions, and the rise of Enlightenment philosophy. 
+From the European Renaissance until the Industrial Revolution in the 19th century, the centuries in which key trends and forces of modern life began. It includes the Colonization of the Americas, French & American Revolutions, and the rise of Enlightenment philosophy. 
 
 ## Modern Period
 - ends: 1945
 - color: oklch(60% 0.12 265)
 
-The period of human history that begins in the 19th century with the Industrial Revolution, and ends with World War I & II in the early decades of the 20th century. It is the time in which the dominant trends of modern life emerged: Industrialization, Urbanization, and Secularization. 
+From the Industrial Revolution until World War I & II in the early decades of the 20th century. It is the time in which the dominant trends of modern life emerged: Industrialization, Urbanization, and Secularization. 
 
 ## Late Modernity
 - ends: present
 - color: oklch(70% 0.12 170)
 
-The most recent decades of modern history. It begins with the Cold War against the United States and Soviet Union and is broadly defined by ongoing and rapid technological progress and the emergence of a truly global society. Also referred to as the 'Contemporary Period' or 'Post Modernity'.
+The most recent decades of modern history, beginning at the start of the Cold War. Broadly defined by ongoing and rapid technological progress and the emergence of a truly global society.
 
 # Events
 
@@ -86,33 +88,33 @@ present
 ## Kick off at FIFA World Cup 2026 <!-- 1 -->
 2026-07-19
 
-The 23rd FIFA World Cup began on July 11, jointly hosted by Canada, Mexico, and the United States. 
-The tournament ended on July 19 with Spain winning for the second time.
+The tournament began on July 11, jointly hosted by Canada, Mexico, and the United States. 
+It ended on July 19 with Spain as winner. 
 
 ## Launch of Artemis II lunar mission <!-- 2 -->
 2026-04-01
 
-This NASA mission flew humans to orbit around the moon for the first time since the end of the original Apollo missions in 1972.
+A NASA mission to fly a human crew to orbit around the moon. This was the first time humans had visited the moon since end of the Apollo program in 1972.
 
 ## Death of Jane Goodall <!-- 3 -->
 2025-10-01
 
-English anthropologist Jane Goodall dies at the age of 91. She pioneered the modern study of wild chimpanzees through her field work, documenting their complex social structures and tool use. She was also an outspoken activist for conservation, animal welfare, and environmentalism.
+The famed anthropologist died at 91. She was known for her field work with chimpanzees and was an outspoken activist for conservation, animal welfare, and environmentalism.
 
 ## Attempted Assassination of Donald Trump <!-- 4 -->
 2024-07-13
 
-United States presidential candidate Donald Trump survives an attempted assassination during a campaign rally. He was attacked by a gunman named Thomas Matthew Crooks. There would be another assassination several months later, on September 15 of the same year. 
+Gunman Thomas Matthew Crooks tried to kill Donald Trump at a campaign rally. Another attempt on Trump's life was made several months later. 
 
 ## Twitter renamed to X Corp. <!-- 5 -->
 2023-07-23
 
-Elon Musk renames the influential social media platform formerly known as Twitter. He had purchased the company in October 2022 in a leveraged buyout for $44 billion. In March 2025 X Corp. would be made a subsidiary of Musk's newly founded AI company called **xAI**.
+<!-- Elon Musk bought the company in October 2022, and offically renamed it to X Corp. renames the influential social media platform formerly known as Twitter. He had purchased the company in October 2022 in a leveraged buyout for $44 billion. In March 2025 X Corp. would be made a subsidiary of Musk's newly founded AI company called **xAI**. -->
 
 ## Russia invades Ukraine <!-- 6 -->
 2022-02-24
 
-Russia begins a full-scale invasion of Ukraine, representing the largest military conflict within Europe since the end of World War II. It immediately triggered a massive refugee crisis as well as a global commodities shock.
+A full-scale invasion of Ukraine by Russia. It was the largest military conflict in Europe since the end of World War II. It immediately triggered a massive refugee crisis as well as a global commodities shock.
 
 ## Breakout of fire at Notre-Dame <!-- 7 -->
 2019-04-15

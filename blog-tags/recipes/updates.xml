@@ -169,7 +169,7 @@
   
 
   <!-- the feed's own updated time: its newest change (updates.xml), else its newest post -->
-  <updated>2026-11-22T12:00:00Z</updated>
+  <updated>2026-11-23T12:00:00Z</updated>
   
 
   <!-- Entries. Quotes (their own section feed) list one quote each. Posts go through
@@ -187,7 +187,7 @@
     <link rel="alternate" href="https://lzon.ca/posts/blog/baked-curry-pork/"/>
     <category term="blog" label="Blog" scheme="https://lzon.ca/posts/blog/"/>
     <published>2024-09-08T12:00:00Z</published>
-    <updated>2026-11-22T12:00:00Z</updated>
+    <updated>2026-11-23T12:00:00Z</updated>
     <author><name>Lzon</name></author>
     <content type="html" xml:base="https://lzon.ca/posts/blog/baked-curry-pork/">&lt;p&gt;An good weeknight meal with India-style flavor. It can be made from scratch in less than 2 hours.&lt;/p&gt;&lt;p&gt;&lt;a href=&quot;https://lzon.ca/posts/blog/baked-curry-pork/#continue-reading&quot;&gt;Continue reading&lt;/a&gt;&lt;/p&gt;
 </content>

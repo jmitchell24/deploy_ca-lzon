@@ -587,7 +587,7 @@
         .bht-frame { bottom: var(--bht-row-h); }
         .bht-frame-bottom { bottom: calc(var(--bht-foot-h, 0px) + var(--bht-row-h)); }
         /* no summaries, for events or periods: just titles and dates */
-        .bht-why, .bht-block .bht-block-note { display: none; }
+        .bht-block .bht-block-note { display: none; }
         /* the readout stacked: the clock time and its time to midnight, then the year
            and its years ago, all at the left (the rows give up their children to one
            column, reordered) */
@@ -728,9 +728,9 @@
         // ── Settings ────────────────────────────────────────────────────────────
 
         /** Hide every event's summary (just its date and title), at every width. */
-        const HIDE_EVENT_SUMMARIES = true;
+        const HIDE_EVENT_SUMMARIES = false;
         /** Hide every period's summary (just its title and dates), at every width. */
-        const HIDE_PERIOD_SUMMARIES = true;
+        const HIDE_PERIOD_SUMMARIES = false;
 
         /** The track's whole height in px, now to START_AGO. */
         const SCROLL_PX = 33_000;
