@@ -64,6 +64,12 @@
         <loc>https://lzon.ca/curio-tags/</loc>
     </url>
     <url>
+        <loc>https://lzon.ca/curio-tags/computing/</loc>
+    </url>
+    <url>
+        <loc>https://lzon.ca/curio-tags/computing/page/1/</loc>
+    </url>
+    <url>
         <loc>https://lzon.ca/drafts-tags/</loc>
     </url>
     <url>
@@ -565,6 +571,10 @@
     </url>
     <url>
         <loc>https://lzon.ca/posts/curio/</loc>
+    </url>
+    <url>
+        <loc>https://lzon.ca/posts/curio/000039-trynix/</loc>
+        <lastmod>2026-11-24</lastmod>
     </url>
     <url>
         <loc>https://lzon.ca/posts/curio/curio-000001-how-to-build-your-resume-with-an-ssg/</loc>

@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  
+
+  <title>
+    lzon.ca - Computing</title>
+
+  <id>https://lzon.ca</id>
+
+  <link rel="alternate" href="https://lzon.ca"/>
+  <link rel="self" href="https://lzon.ca/curio-tags/computing/atom.xml" type="application/atom+xml"/>
+  <generator uri="https://www.getzola.org/">Zola</generator>
+
+  
+  
+  
+  
+
+  
+    <!-- quotes and numbered post types sort by filename, since dates alone aren't unique -->
+    
+    
+  
+
+  <!-- the feed's own updated time: its newest change (updates.xml), else its newest post -->
+  <updated>2026-11-24T12:00:00Z</updated>
+
+  <!-- Entries. Quotes (their own section feed) list one quote each. Posts go through
+       macros/feed.html, so this feed, rss.xml and pages.json agree: each entry is titled as
+       the site titles the post, carries its type as a <category>, and in the merged /posts/
+       feed leads its title with the type ("[ News ] …"). -->
+
+  <!-- the merged feed leaves out types with `main_feed = false` (macros/feed.html) -->
+  
+    
+  
+  <entry>
+    <title>Trynix - Run any NixOS package in your browser</title>
+    <id>https://lzon.ca/posts/curio/39</id>
+    <link rel="alternate" href="https://lzon.ca/posts/curio/000039-trynix/"/>
+    <link rel="related" href="https://trynix.dev/"/>
+    <category term="curio" label="Curios" scheme="https://lzon.ca/posts/curio/"/>
+    <published>2026-11-24T12:00:00Z</published>
+    <updated>2026-11-24T12:00:00Z</updated>
+    <author><name>Lzon</name></author>
+    <content type="html" xml:base="https://lzon.ca/posts/curio/000039-trynix/">&lt;p&gt;Link: &lt;a href=&quot;https://trynix.dev/&quot;&gt;https://trynix.dev/&lt;/a&gt;&lt;/p&gt;&lt;p&gt;This is a fun project that allows you to run any NixOS package in your browser.&lt;/p&gt;
+&lt;span id=&quot;continue-reading&quot;&gt;&lt;/span&gt;
+&lt;p&gt;This reminded me of &lt;a rel=&quot;noopener external&quot; target=&quot;_blank&quot; href=&quot;https://www.thestrangeloop.com/2013/the-birth-and-death-of-javascript.html&quot;&gt;The Birth and Death of Javascript&lt;/a&gt;. It’s a ‘future-history’ style performance in which the speaker explains all software, even the OS itself, gets reimplemented as web apps running in a browser.&lt;/p&gt;
+&lt;p&gt;Using Trynix I tried to run Firefox within Firefox, and it worked! I recommend you find your favorite app in the package registry and give it a go.&lt;/p&gt;
+&lt;p&gt;Source: &lt;a href=&quot;https://www.thestrangeloop.com/2013/the-birth-and-death-of-javascript.html&quot;&gt;https://www.thestrangeloop.com/2013/the-birth-and-death-of-javascript.html&lt;/a&gt;&lt;/p&gt;
+</content>
+  </entry>
+
+</feed>

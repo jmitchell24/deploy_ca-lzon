@@ -8,7 +8,7 @@
       <generator>Zola</generator>
       <language>en</language>
       <atom:link href="https://lzon.ca/posts/curio/rss.xml" rel="self" type="application/rss+xml"/>
-      <lastBuildDate>Wed, 02 Sep 2026 12:00:00 +0000</lastBuildDate>
+      <lastBuildDate>Tue, 24 Nov 2026 12:00:00 +0000</lastBuildDate>
       <!-- Items. Quotes (their own section feed) list one quote each. Posts go through
            macros/feed.html, so this feed, atom.xml and pages.json agree: each item is titled
            as the site titles the post, carries its type as a <category>, and in the merged
@@ -23,6 +23,20 @@
       
         
       
+      <item>
+          <title>Trynix - Run any NixOS package in your browser</title>
+          <pubDate>Tue, 24 Nov 2026 12:00:00 +0000</pubDate>
+          <author>Lzon</author>
+          <link>https://lzon.ca/posts/curio/000039-trynix/</link>
+          <guid isPermaLink="false">https://lzon.ca/posts/curio/39</guid>
+          <category domain="https://lzon.ca/posts/curio/">Curios</category>
+          <description xml:base="https://lzon.ca/posts/curio/000039-trynix/">&lt;p&gt;Link: &lt;a href=&quot;https://trynix.dev/&quot;&gt;https://trynix.dev/&lt;/a&gt;&lt;/p&gt;&lt;p&gt;This is a fun project that allows you to run any NixOS package in your browser.&lt;/p&gt;
+&lt;span id=&quot;continue-reading&quot;&gt;&lt;/span&gt;
+&lt;p&gt;This reminded me of &lt;a rel=&quot;noopener external&quot; target=&quot;_blank&quot; href=&quot;https://www.thestrangeloop.com/2013/the-birth-and-death-of-javascript.html&quot;&gt;The Birth and Death of Javascript&lt;/a&gt;. It’s a ‘future-history’ style performance in which the speaker explains all software, even the OS itself, gets reimplemented as web apps running in a browser.&lt;/p&gt;
+&lt;p&gt;Using Trynix I tried to run Firefox within Firefox, and it worked! I recommend you find your favorite app in the package registry and give it a go.&lt;/p&gt;
+&lt;p&gt;Source: &lt;a href=&quot;https://www.thestrangeloop.com/2013/the-birth-and-death-of-javascript.html&quot;&gt;https://www.thestrangeloop.com/2013/the-birth-and-death-of-javascript.html&lt;/a&gt;&lt;/p&gt;
+</description>
+      </item>
       <item>
           <title>Internal Combustion Engine Simulator</title>
           <pubDate>Wed, 02 Sep 2026 12:00:00 +0000</pubDate>
