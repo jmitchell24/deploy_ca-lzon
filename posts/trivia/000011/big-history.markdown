@@ -104,11 +104,12 @@ The famed anthropologist died at 91. She was known for her field work with chimp
 ## Attempted Assassination of Donald Trump <!-- 4 -->
 2024-07-13
 
-Gunman Thomas Matthew Crooks tried to kill Donald Trump at a campaign rally. Another attempt on Trump's life was made several months later. 
+Gunman Thomas Matthew Crooks tried to kill Donald Trump at a campaign rally. Another attempt on Trump's life was made several months later by another assassin. 
 
 ## Twitter renamed to X Corp. <!-- 5 -->
 2023-07-23
 
+Purchased by Elon Musk in October 2022 in a leveraged buyout for $44 billion, then renamed to X Corp. in June 2023. 
 <!-- Elon Musk bought the company in October 2022, and offically renamed it to X Corp. renames the influential social media platform formerly known as Twitter. He had purchased the company in October 2022 in a leveraged buyout for $44 billion. In March 2025 X Corp. would be made a subsidiary of Musk's newly founded AI company called **xAI**. -->
 
 ## Russia invades Ukraine <!-- 6 -->
@@ -119,12 +120,12 @@ A full-scale invasion of Ukraine by Russia. It was the largest military conflict
 ## Breakout of fire at Notre-Dame <!-- 7 -->
 2019-04-15
 
+Likely by accident, a large blaze broke out at Notre-Dame in Paris. Damage was significant. With donations totaling over €840 million the cathedral was reconstructed and reopened to the public on December 7th 2024.
 
-
-## AI (AlphaGo) defeats Lee Sedol at Go <!-- 8 -->
+## AI defeats Lee Sedol at Go <!-- 8 -->
 2016-03-12
 
-
+It won using a novel Deep Learning approach which mimics neural processing. It was not possible to use the techniques of Chess AI since it would require searching too many board states (Chess has fewer than Go). 
 
 ## Curiosity rover lands on Mars <!-- 9 -->
 2012-08-06
@@ -157,7 +158,7 @@ A full-scale invasion of Ukraine by Russia. It was the largest military conflict
 
 
 
-## Beginning of World War 2 <!-- 15 -->
+## Beginning of World War II <!-- 15 -->
 1939-09-01
 
 
