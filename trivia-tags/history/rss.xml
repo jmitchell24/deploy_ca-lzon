@@ -8,7 +8,7 @@
       <generator>Zola</generator>
       <language>en</language>
       <atom:link href="https://lzon.ca/trivia-tags/history/rss.xml" rel="self" type="application/rss+xml"/>
-      <lastBuildDate>Mon, 23 Nov 2026 12:00:00 +0000</lastBuildDate>
+      <lastBuildDate>Wed, 25 Nov 2026 12:00:00 +0000</lastBuildDate>
       <!-- Items. Quotes (their own section feed) list one quote each. Posts go through
            macros/feed.html, so this feed, atom.xml and pages.json agree: each item is titled
            as the site titles the post, carries its type as a <category>, and in the merged
@@ -65,42 +65,49 @@ invented in the last 6 minutes before midnight.</title>
 &lt;li&gt;ends: 300,000 years ago&lt;/li&gt;
 &lt;li&gt;color: oklch(55% 0.09 60)&lt;/li&gt;
 &lt;/ul&gt;
+&lt;p&gt;The period in which anatomically modern humans emerged. Tool-making became more common and routine, as well as controlled use of fire. Humans become more cooperative, working together towards shared goals such as animal hunting.&lt;/p&gt;
 &lt;h2 id=&quot;middle-paleolithic&quot;&gt;Middle Paleolithic&lt;/h2&gt;
 &lt;ul&gt;
 &lt;li&gt;ends: 50,000 years ago&lt;/li&gt;
 &lt;li&gt;color: oklch(62% 0.10 70)&lt;/li&gt;
 &lt;/ul&gt;
+&lt;p&gt;The period in which both modern humans and Neanderthals existed. Stone tools became more advanced. Human populations begin migrating farther out of Africa. Groups begin taking greater care of the elderly. Ritualistic behaviors emerged, such as burying the dead.&lt;/p&gt;
 &lt;h2 id=&quot;upper-paleolithic&quot;&gt;Upper Paleolithic&lt;/h2&gt;
 &lt;ul&gt;
 &lt;li&gt;ends: 12,000 years ago&lt;/li&gt;
 &lt;li&gt;color: oklch(70% 0.11 80)&lt;/li&gt;
 &lt;/ul&gt;
+&lt;p&gt;The period in which culture and advanced tool making emerged. Materials such as ivory and antler were used to make new tools and weapons. Rudimentary settlements and campsites were built. The earliest cave paintings and scultpures were created.&lt;/p&gt;
 &lt;h2 id=&quot;neolithic&quot;&gt;Neolithic&lt;/h2&gt;
 &lt;ul&gt;
 &lt;li&gt;ends: 3300 BCE&lt;/li&gt;
 &lt;li&gt;color: oklch(66% 0.12 140)&lt;/li&gt;
 &lt;/ul&gt;
+&lt;p&gt;The period in which plant agriculture and animal domestication was developed, as well as rudimentary metallurgy. This was the time in which the first settled societies emerged in Asia, Europe, and Africa.&lt;/p&gt;
 &lt;h2 id=&quot;bronze-age&quot;&gt;Bronze Age&lt;/h2&gt;
 &lt;ul&gt;
 &lt;li&gt;ends: 1200 BCE&lt;/li&gt;
 &lt;li&gt;color: oklch(64% 0.14 45)&lt;/li&gt;
 &lt;/ul&gt;
+&lt;p&gt;The period in which bronze smelting was developed, replacing copper as a superior means of crafting tools and weapons. It was during this time that city-states first formed in regions such as Egypt and Mesopotamia.&lt;/p&gt;
 &lt;h2 id=&quot;iron-age&quot;&gt;Iron Age&lt;/h2&gt;
 &lt;ul&gt;
 &lt;li&gt;ends: 500 BCE&lt;/li&gt;
 &lt;li&gt;color: oklch(58% 0.05 250)&lt;/li&gt;
 &lt;/ul&gt;
+&lt;p&gt;The period in which iron smelting was developed, replacing bronze as a superior means of crafting tools and weapons. It was during these centuries that later great empires began.&lt;/p&gt;
 &lt;h2 id=&quot;classical-antiquity&quot;&gt;Classical Antiquity&lt;/h2&gt;
 &lt;ul&gt;
 &lt;li&gt;ends: 500&lt;/li&gt;
 &lt;li&gt;color: oklch(62% 0.12 300)&lt;/li&gt;
 &lt;/ul&gt;
+&lt;p&gt;From the writings of Greek poet Homer, until the fall of the Western Roman Empire. This period is defined by the rise of Greco-Roman civilization in the Mediterranean. Both cultures strongly influenced the architecture, art and politics of future civilizations.&lt;/p&gt;
 &lt;h2 id=&quot;middle-ages&quot;&gt;Middle Ages&lt;/h2&gt;
 &lt;ul&gt;
 &lt;li&gt;ends: 1500&lt;/li&gt;
 &lt;li&gt;color: oklch(58% 0.13 25)&lt;/li&gt;
 &lt;/ul&gt;
-&lt;p&gt;From the fall of the Western Roman Empire until the European Renaissance. It is regarded as a period of regression from the Romans. Populations shrank, central authority collapsed, religion grew to dominate daily life. It culminated with a sequence of devastating plagues.&lt;/p&gt;
+&lt;p&gt;From the fall of the Western Roman Empire until the European Renaissance. A period of regression: Populations shrank, central authority collapsed, religion grew to dominate daily life. It culminated with a sequence of devastating plagues.&lt;/p&gt;
 &lt;h2 id=&quot;early-modernity&quot;&gt;Early Modernity&lt;/h2&gt;
 &lt;ul&gt;
 &lt;li&gt;ends: 1800&lt;/li&gt;

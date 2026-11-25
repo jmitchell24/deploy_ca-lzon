@@ -56,31 +56,9 @@
       
     
     
-    
-    
-      
-      
-    
-      
-      
-    
-      
-      
-    
-      
-      
-    
-      
-      
-    
-      
-      
-    
-      
-      
-    
-      
-      
+    <!-- the entries loop walks the keys and looks each page up as it goes: collecting the
+         pages into a list first (concat in a loop) copied the whole list each time,
+         about half the site's build time -->
     
   
 

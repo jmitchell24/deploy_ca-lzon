@@ -30,37 +30,49 @@
 - ends: 300,000 years ago
 - color: oklch(55% 0.09 60)
 
+The period in which anatomically modern humans emerged. Tool-making became more common and routine, as well as controlled use of fire. Humans become more cooperative, working together towards shared goals such as animal hunting. 
+
 ## Middle Paleolithic
 - ends: 50,000 years ago
 - color: oklch(62% 0.10 70)
+
+The period in which both modern humans and Neanderthals existed. Stone tools became more advanced. Human populations begin migrating farther out of Africa. Groups begin taking greater care of the elderly. Ritualistic behaviors emerged, such as burying the dead. 
 
 ## Upper Paleolithic
 - ends: 12,000 years ago
 - color: oklch(70% 0.11 80)
 
+The period in which culture and advanced tool making emerged. Materials such as ivory and antler were used to make new tools and weapons. Rudimentary settlements and campsites were built. The earliest cave paintings and scultpures were created. 
+
 ## Neolithic
 - ends: 3300 BCE
 - color: oklch(66% 0.12 140)
+
+The period in which plant agriculture and animal domestication was developed, as well as rudimentary metallurgy. This was the time in which the first settled societies emerged in Asia, Europe, and Africa. 
 
 ## Bronze Age
 - ends: 1200 BCE
 - color: oklch(64% 0.14 45)
 
+The period in which bronze smelting was developed, replacing copper as a superior means of crafting tools and weapons. It was during this time that city-states first formed in regions such as Egypt and Mesopotamia.
+
 ## Iron Age
 - ends: 500 BCE
 - color: oklch(58% 0.05 250)
+
+The period in which iron smelting was developed, replacing bronze as a superior means of crafting tools and weapons. It was during these centuries that later great empires began. 
 
 ## Classical Antiquity
 - ends: 500
 - color: oklch(62% 0.12 300)
 
-
+From the writings of Greek poet Homer, until the fall of the Western Roman Empire. This period is defined by the rise of Greco-Roman civilization in the Mediterranean. Both cultures strongly influenced the architecture, art and politics of future civilizations.
 
 ## Middle Ages
 - ends: 1500
 - color: oklch(58% 0.13 25)
 
-From the fall of the Western Roman Empire until the European Renaissance. It is regarded as a period of regression from the Romans. Populations shrank, central authority collapsed, religion grew to dominate daily life. It culminated with a sequence of devastating plagues.
+From the fall of the Western Roman Empire until the European Renaissance. A period of regression: Populations shrank, central authority collapsed, religion grew to dominate daily life. It culminated with a sequence of devastating plagues.
 
 ## Early Modernity
 - ends: 1800
