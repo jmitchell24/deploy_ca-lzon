@@ -27,7 +27,7 @@
   
 
   <!-- the feed's own updated time: its newest change (updates.xml), else its newest post -->
-  <updated>2026-11-24T12:00:00Z</updated>
+  <updated>2026-11-25T12:00:00Z</updated>
 
   <!-- Entries. Quotes (their own section feed) list one quote each. Posts go through
        macros/feed.html, so this feed, rss.xml and pages.json agree: each entry is titled as
@@ -38,6 +38,16 @@
   
     
   
+  <entry>
+    <title>237. lzon.ca&#x2F;quotes</title>
+    <id>https://lzon.ca/quotes/#237</id>
+    <link rel="alternate" href="https://lzon.ca/quotes/000237/"/>
+    <published>2026-11-25T12:00:00Z</published>
+    <updated>2026-11-25T12:00:00Z</updated>
+    <author><name>Lzon</name></author>
+    <category term="quote"/>
+    <summary type="html">It is the test of reason and refinement to be able to exist without bugbears.&lt;br/&gt;- William Hazlitt</summary>
+  </entry>
   <entry>
     <title>236. lzon.ca&#x2F;quotes</title>
     <id>https://lzon.ca/quotes/#236</id>
