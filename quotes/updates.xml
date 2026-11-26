@@ -971,6 +971,10 @@
       
       
     
+      
+      
+      
+    
     
     <!-- the entries loop walks the keys and looks each page up as it goes: collecting the
          pages into a list first (concat in a loop) copied the whole list each time,
@@ -979,7 +983,7 @@
   
 
   <!-- the feed's own updated time: its newest change (updates.xml), else its newest post -->
-  <updated>2026-11-25T12:00:00Z</updated>
+  <updated>2026-11-26T12:00:00Z</updated>
   
 
   <!-- Entries. Quotes (their own section feed) list one quote each. Posts go through
@@ -991,6 +995,16 @@
   
     
   
+  <entry>
+    <title>238. lzon.ca&#x2F;quotes</title>
+    <id>https://lzon.ca/quotes/#238</id>
+    <link rel="alternate" href="https://lzon.ca/quotes/000238/"/>
+    <published>2026-11-26T12:00:00Z</published>
+    <updated>2026-11-26T12:00:00Z</updated>
+    <author><name>Lzon</name></author>
+    <category term="quote"/>
+    <summary type="html">This Age will serve to make a very pretty farce for the next.&lt;br/&gt;- Samuel Butler (Remains II)</summary>
+  </entry>
   <entry>
     <title>237. lzon.ca&#x2F;quotes</title>
     <id>https://lzon.ca/quotes/#237</id>
