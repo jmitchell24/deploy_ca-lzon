@@ -1,0 +1,418 @@
+<!--
+  The data for big-history.html, as markup: it's included just above it, and its
+  script reads this (hidden) block. Edit here.
+
+  Dates, one of: data-ago="years before now"; data-year="n" (BCE negative, so -3200
+  is 3200 BCE; a fraction places it within the year); or data-date="yyyy-mm-dd"
+  (placed on that day; the label still shows just the year). Deep time reads best
+  as ago. Periods take the same three as data-end-ago / data-end-year / data-end-date.
+
+  Groups: the bands down the far left. The <li> text is the band's label, data-key
+    the name periods use for it (data-group), data-color any CSS colour.
+  Periods: oldest first. Each starts where the one before ends; data-end-ago or
+    data-end-year says when it ends (the last runs to now). data-group is its
+    group's data-key (consecutive periods in one group share a band). <b> is the name, <small>
+    an optional note under it.
+  Events: any order; the oldest sets how far back the timeline goes, and one
+    with no date is left out. <b> is what happened, <small> an optional why.
+  A <small> (here or in a period) is copied in as written: <br>, <i>, <a> all work.
+    data-approx prefixes the date with "c.", and data-when replaces the date text.
+-->
+<div id="bht-data" hidden>
+    <ol class="bht-data-groups">
+        <li data-key="after" data-color="oklch(60% 0.09 70)">After Agriculture</li>
+        <li data-key="before" data-color="oklch(60% 0.10 260)">Before Agriculture</li>
+    </ol>
+
+    <ol class="bht-data-periods">
+        <li data-group="before" data-end-ago="300000" data-color="oklch(55% 0.09 60)">
+            <b>Lower Paleolithic</b>
+            <small>SUMMARY</small>
+        </li>
+        <li data-group="before" data-end-ago="50000" data-color="oklch(62% 0.10 70)">
+            <b>Middle Paleolithic</b>
+            <small>SUMMARY</small>
+        </li>
+        <li data-group="before" data-end-ago="12000" data-color="oklch(70% 0.11 80)">
+            <b>Upper Paleolithic</b>
+            <small>SUMMARY</small>
+        </li>
+        <li data-group="before" data-end-year="-3300" data-color="oklch(66% 0.12 140)">
+            <b>Neolithic</b>
+            <small>SUMMARY</small>
+        </li>
+        <li data-group="after" data-end-year="-1200" data-color="oklch(64% 0.14 45)">
+            <b>Bronze Age</b>
+            <small>SUMMARY</small>
+        </li>
+        <li data-group="after" data-end-year="-500" data-color="oklch(58% 0.05 250)">
+            <b>Iron Age</b>
+            <small>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore.</small>
+        </li>
+        <li data-group="after" data-end-year="500" data-color="oklch(62% 0.12 300)">
+            <b>Classical antiquity</b>
+            <small>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore.</small>
+        </li>
+        <li data-group="after" data-end-year="1500" data-color="oklch(58% 0.13 25)">
+            <b>Middle Ages</b>
+            <small>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore.</small>
+        </li>
+        <li data-group="after" data-end-year="1800" data-color="oklch(64% 0.10 200)">
+            <b>Early modern</b>
+            <small>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore.</small>
+        </li>
+        <li data-group="after" data-end-year="1945" data-color="oklch(60% 0.12 265)">
+            <b>Modern</b>
+            <small>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore.</small>
+        </li>
+        <li data-group="after" data-end-ago="0" data-color="oklch(70% 0.12 170)">
+            <b>Contemporary</b>
+            <small>The era of internet memes, Orange colored Presidents and Sentient word-guessing asdf. </small>
+        </li>
+    </ol>
+
+    <!-- picked to sit about evenly on the log scale: each ~1.35× further back than the last -->
+    <ol class="bht-data-events">
+
+        <li data-ago="0" >
+            <b>
+                Today
+            </b>
+            <small></small>
+        </li>
+
+        <li data-date="2026-07-19"> <!-- 1 -->
+            <b>FIFA World Cup</b>
+            <small>
+                The 23rd FIFA World Cup began on July 11, jointly hosted by Canada, Mexico, and the United States.
+                <br><br>
+                The tournament ended on July 19 with Spain winning for the second time.
+            </small>
+        </li>
+
+        <li data-date="2026-04-01"> <!-- 2 -->
+            <b>Artemis II</b>
+            <small>
+                The new NASA mission flew humans to orbit around the moon for the first time since the end of the original Apollo missions in 1972
+            </small>
+        </li>
+
+        <li data-date="2025-10-01"> <!-- 3 -->
+            <b>Death of Jane Goodall</b>
+            <small>
+                English anthropologist Jane Goodall dies at the age of 91. She pioneered the modern study of wild chimpanzees through her field work, documenting their complex social structures and tool use. She was also an outspoken activist for conservation, animal welfare, and environmentalism.
+            </small>
+        </li>
+
+        <li data-date="2024-07-13"> <!-- 4 -->
+            <b>Attempted Assassination of Donald Trump</b>
+            <small>
+                United States Presidential candidate Donald Trump survives an attempted assassination during a campaign rally. He was struck in the ear by gunman Thomas Matthew Crooks. There would be another assassination several months later, on September 15 of the same year.
+            </small>
+        </li>
+
+        <li data-date="2023-07-23"> <!-- 5 -->
+            <b>Twitter becomes X Corp.</b>
+            <small>
+                Elon Musk renames the influential social media platform formerly known as Twitter. He had purchased the company in October 2022 in a leveraged buyout for $44 billion. In March 2025 X Corp. would be made a subsidiary of Musk's newly founded AI company called xAI.
+            </small>
+        </li>
+
+        <li data-date="2022-02-24"> <!-- 6 -->
+            <b>Russia invades Ukraine</b>
+            <small>
+                Russia begins a full-scale invasion of Ukraine, representing the largest military conflict within Europe since the end of World War II. It immediately triggered a massive refugee crisis as well as a global commodities shock.
+                <br><br>
+                In subsequent years it has led to an expansion of NATO, as well as accelerated de-carbonization in the EU as the bloc transitioned away from using Russian oil resources.
+            </small>
+        </li>
+
+        <li data-date="2019-04-15"> <!-- 7 -->
+            <b>Notre-Dame Fire</b>
+            <small>
+                &lt;summary&gt;
+            </small>
+        </li>
+
+        <li data-date="2016-03-12"> <!-- 8 -->
+            <b>AlphaGo beats Lee Sedol</b>
+            <small>
+                &lt;summary&gt;
+            </small>
+        </li>
+
+        <li data-date="2012-08-06"> <!-- 9 -->
+            <b>NASA’s Curiosity rover lands on Mars</b>
+            <small>
+                &lt;summary&gt;
+            </small>
+        </li>
+
+        <li data-date="2007-01-09"> <!-- 10 -->
+            <b>Steve Jobs reveals the iPhone</b>
+            <small>
+                &lt;summary&gt;
+            </small>
+        </li>
+
+        <li data-date="2001-09-11"> <!-- 11 -->
+            <b>September 11 attacks</b>
+            <small>
+                &lt;summary&gt;
+            </small>
+        </li>
+
+        <li data-date="1991-12-26"> <!-- 12 -->
+            <b>End of the Soviet Union</b>
+            <small>
+                &lt;summary&gt;
+            </small>
+        </li>
+
+        <li data-date="1979-03-28"> <!-- 13 -->
+            <b>Three Mile Island Nuclear Accident</b>
+            <small>
+                &lt;summary&gt;
+            </small>
+        </li>
+
+        <li data-date="1962-10-16"> <!-- 14 -->
+            <b>Cuban Missile Crisis</b>
+            <small>
+                &lt;summary&gt;
+            </small>
+        </li>
+
+        <li data-date="1939-09-01"> <!-- 15 -->
+            <b>Beginning of World War 2</b>
+            <small>
+                &lt;summary&gt;
+            </small>
+        </li>
+
+        <li data-date="1908-06-30"> <!-- 16 -->
+            <b>Tunguska event in Siberia</b>
+            <small>
+                &lt;summary&gt;
+            </small>
+        </li>
+
+        <li data-date="1859-09-01"> <!-- 17 -->
+            <b>Carrington Event</b>
+            <small>
+                &lt;summary&gt;
+            </small>
+        </li>
+
+        <li data-date="1812-06-18"> <!-- 18 -->
+            <b>War of 1812</b>
+            <small>
+                &lt;summary&gt;
+            </small>
+        </li>
+
+        <li data-date="1707-05-01"> <!-- 19 -->
+            <b>England, Scotland and Wales unite to become Great Britain</b>
+            <small>
+                &lt;summary&gt;
+            </small>
+        </li>
+
+        <li data-year="1605"> <!-- 20 -->
+            <b>Publication of Don Quixote</b>
+            <small>
+                &lt;summary&gt;
+            </small>
+        </li>
+
+        <li data-date="1492-10-12"> <!-- 21 -->
+            <b>Columbus lands in the New World</b>
+            <small>
+                &lt;summary&gt;
+            </small>
+        </li>
+
+        <li data-year="1215"> <!-- 22 -->
+            <b>Signing of the Magna Carta </b>
+            <small>
+                &lt;summary&gt;
+            </small>
+        </li>
+
+        <li data-year="1066"> <!-- 23 -->
+            <b>Norman Conquest of England</b>
+            <small>
+                &lt;summary&gt;
+            </small>
+        </li>
+
+        <li data-year="794"> <!-- 24 -->
+            <b>Kyoto chosen as capital city of Japan </b>
+            <small>
+                &lt;summary&gt;
+            </small>
+        </li>
+
+        <li data-year="30"> <!-- 25 -->
+            <b>Ministry of Jesus</b>
+            <small>
+                &lt;summary&gt;
+            </small>
+        </li>
+
+        <li data-year="-399"> <!-- 26 -->
+            <b>Execution of Socrates </b>
+            <small>
+                &lt;summary&gt;
+            </small>
+        </li>
+
+        <li data-year="-1177"> <!-- 27 -->
+            <b>Bronze Age Collapse</b>
+            <small>
+                &lt;summary&gt;
+            </small>
+        </li>
+
+        <li data-year="-2000" data-approx> <!-- 28 -->
+            <b>Extinction of the Wooly Mammoth</b>
+            <small>
+                &lt;summary&gt;
+            </small>
+        </li>
+
+        <li data-year="-4000" data-approx> <!-- 29 -->
+            <b>Uruk Period</b>
+            <small>
+                &lt;summary&gt;
+            </small>
+        </li>
+
+        <li data-year="-5000" data-approx> <!-- 30 -->
+            <b>Invention of copper smelting</b>
+            <small>
+                &lt;summary&gt;
+            </small>
+        </li>
+
+        <li data-year="-9700" data-approx> <!-- 31 -->
+            <b>End of the last Ice Age</b>
+            <small>
+                &lt;summary&gt;
+            </small>
+        </li>
+
+        <li data-ago="13000"> <!-- 32 -->
+            <b>Emergence of the Clovis culture in North America</b>
+            <small>
+                &lt;summary&gt;
+            </small>
+        </li>
+
+        <li data-ago="20000"> <!-- 33 -->
+            <b>Lascaux cave paintings</b>
+            <small>
+                &lt;summary&gt;
+            </small>
+        </li>
+
+        <li> <!-- 34 -->
+            <b>Venus of Willendorf</b>
+            <small>
+                &lt;summary&gt;
+            </small>
+        </li>
+
+        <li data-ago="40000"> <!-- 35 -->
+            <b>Extinction of Neanderthals in Europe </b>
+            <small>
+                &lt;summary&gt;
+            </small>
+        </li>
+
+        <li data-ago="45000"> <!-- 36 -->
+            <b>Human population expands into Europe</b>
+            <small>
+                &lt;summary&gt;
+            </small>
+        </li>
+
+        <li data-ago="65000"> <!-- 37 -->
+            <b>Human population expands to Australia</b>
+            <small>
+                &lt;summary&gt;
+            </small>
+        </li>
+
+        <li data-ago="115000"> <!-- 37a -->
+            <b>Last glacial period begins</b>
+            <small>
+                The warm Eemian interglacial, when the world was warmer than today and seas stood higher, comes to an end, and ice sheets begin spreading again across the northern continents. This is the ice age that comes to an end around 9700 BCE (see below).
+                <br>
+                <a href="https://en.wikipedia.org/wiki/Last_Glacial_Period">Source</a>
+            </small>
+        </li>
+
+        <li data-ago="200000"> <!-- 38 -->
+            <b>Human population begin expanding beyond Africa</b>
+            <small>
+                &lt;summary&gt;
+            </small>
+        </li>
+
+        <li data-ago="315000"> <!-- 39 -->
+            <b>Oldest known Homo Sapiens remains</b>
+            <small>
+                https://www.nature.com/articles/nature.2017.22114
+                <br>
+                &lt;summary&gt;
+            </small>
+        </li>
+
+
+        <li data-ago="476000"> <!-- 40a -->
+            <b>Oldest known wooden structure</b>
+            <small>
+                Early humans at Kalambo Falls, Zambia, cut a notch into one log and fit a second log through it, joining them to build what was probably a platform or the base of a dwelling. It predates our own species, Homo sapiens, by nearly 200,000 years.
+                <br>
+                <a href="https://www.nature.com/articles/s41586-023-06557-9">Source</a>
+            </small>
+        </li>
+
+        <li data-ago="800000"> <!-- 41 -->
+            <b>Human species nearly goes extinct</b>
+            <small>
+                &lt;summary&gt;
+            </small>
+        </li>
+
+
+
+
+
+        <li data-ago="1070000"> <!-- 41b -->
+            <b>Jaramillo event begins</b>
+            <small>
+                Earth's magnetic field flips to normal polarity, with compasses pointing north as they do today, for about 70,000 years in the middle of a long reversed stretch, before flipping back. Named for Jaramillo Creek in New Mexico, where it was first identified in 1966.
+                <br>
+                <a href="https://www.nature.com/articles/s41598-020-58404-w">Source</a>
+            </small>
+        </li>
+
+        <li data-ago="1800000"> <!-- 42 -->
+            <b>Oldest known use of fire</b>
+            <small>
+                &lt;summary&gt;
+            </small>
+        </li>
+
+
+        <li data-ago="2750000"> <!-- 44 -->
+            <b>Origins of the Homo genus</b>
+            <small>
+                &lt;summary&gt;
+            </small>
+        </li>
+
+    </ol>
+</div>
