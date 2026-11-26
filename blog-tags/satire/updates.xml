@@ -67,7 +67,7 @@
   
 
   <!-- the feed's own updated time: its newest change (updates.xml), else its newest post -->
-  <updated>2026-08-30T12:00:00Z</updated>
+  <updated>2026-11-26T12:00:00Z</updated>
   
 
   <!-- Entries. Quotes (their own section feed) list one quote each. Posts go through
@@ -79,6 +79,17 @@
   
     
   
+  <entry>
+    <title>Nvidia CEO envisions a future of AI-powered gamers</title>
+    <id>https://lzon.ca/posts/blog/nvidia-agentic-gamers/</id>
+    <link rel="alternate" href="https://lzon.ca/posts/blog/nvidia-agentic-gamers/"/>
+    <category term="blog" label="Blog" scheme="https://lzon.ca/posts/blog/"/>
+    <published>2026-03-21T12:00:00Z</published>
+    <updated>2026-11-26T12:00:00Z</updated>
+    <author><name>Lzon</name></author>
+    <content type="html" xml:base="https://lzon.ca/posts/blog/nvidia-agentic-gamers/">&lt;p&gt;Jensen Huang explains his vision for a “Nation of Gamers in the Datacenter”&lt;/p&gt;&lt;p&gt;&lt;a href=&quot;https://lzon.ca/posts/blog/nvidia-agentic-gamers/#continue-reading&quot;&gt;Continue reading&lt;/a&gt;&lt;/p&gt;
+</content>
+  </entry>
   <entry>
     <title>Trump renames Canadian Geese to American Geese</title>
     <id>https://lzon.ca/posts/blog/trump-geese/</id>
@@ -154,17 +165,6 @@
     <updated>2026-03-22T12:00:00Z</updated>
     <author><name>Lzon</name></author>
     <content type="html" xml:base="https://lzon.ca/posts/blog/android-super-safety/">&lt;p&gt;Google has big plans for the future of user safety on its flagship mobile operating system, Android.&lt;/p&gt;&lt;p&gt;&lt;a href=&quot;https://lzon.ca/posts/blog/android-super-safety/#continue-reading&quot;&gt;Continue reading&lt;/a&gt;&lt;/p&gt;
-</content>
-  </entry>
-  <entry>
-    <title>Nvidia CEO envisions a future of AI-powered gamers</title>
-    <id>https://lzon.ca/posts/blog/nvidia-agentic-gamers/</id>
-    <link rel="alternate" href="https://lzon.ca/posts/blog/nvidia-agentic-gamers/"/>
-    <category term="blog" label="Blog" scheme="https://lzon.ca/posts/blog/"/>
-    <published>2026-03-21T12:00:00Z</published>
-    <updated>2026-03-21T12:00:00Z</updated>
-    <author><name>Lzon</name></author>
-    <content type="html" xml:base="https://lzon.ca/posts/blog/nvidia-agentic-gamers/">&lt;p&gt;Jensen Huang explains his vision for a “Nation of Gamers in the Datacenter”&lt;/p&gt;&lt;p&gt;&lt;a href=&quot;https://lzon.ca/posts/blog/nvidia-agentic-gamers/#continue-reading&quot;&gt;Continue reading&lt;/a&gt;&lt;/p&gt;
 </content>
   </entry>
   <entry>
