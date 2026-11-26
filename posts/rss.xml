@@ -8,7 +8,7 @@
       <generator>Zola</generator>
       <language>en</language>
       <atom:link href="https://lzon.ca/posts/rss.xml" rel="self" type="application/rss+xml"/>
-      <lastBuildDate>Wed, 25 Nov 2026 12:00:00 +0000</lastBuildDate>
+      <lastBuildDate>Thu, 26 Nov 2026 12:00:00 +0000</lastBuildDate>
       <!-- Items. Quotes (their own section feed) list one quote each. Posts go through
            macros/feed.html, so this feed, atom.xml and pages.json agree: each item is titled
            as the site titles the post, carries its type as a <category>, and in the merged
@@ -4346,7 +4346,7 @@ I found from &lt;a rel=&quot;noopener external&quot; target=&quot;_blank&quot; h
           <link>https://lzon.ca/posts/blog/baked-cajun-pork/</link>
           <guid isPermaLink="false">https://lzon.ca/posts/blog/baked-cajun-pork/</guid>
           <category domain="https://lzon.ca/posts/blog/">Blog</category>
-          <description xml:base="https://lzon.ca/posts/blog/baked-cajun-pork/">&lt;p&gt;A simple and flavorful weeknight recipe with a bit if spicyness.&lt;/p&gt;&lt;p&gt;&lt;a href=&quot;https://lzon.ca/posts/blog/baked-cajun-pork/#continue-reading&quot;&gt;Continue reading&lt;/a&gt;&lt;/p&gt;
+          <description xml:base="https://lzon.ca/posts/blog/baked-cajun-pork/">&lt;p&gt;A simple and flavorful weeknight recipe with a bit if spiciness.&lt;/p&gt;&lt;p&gt;&lt;a href=&quot;https://lzon.ca/posts/blog/baked-cajun-pork/#continue-reading&quot;&gt;Continue reading&lt;/a&gt;&lt;/p&gt;
 </description>
       </item>
       <item>
@@ -4531,7 +4531,7 @@ me how I know 😉).&lt;/p&gt;
 &lt;li&gt;Cook beef and onion completely in a saucepan, then add tomato sauce. Pour over the cooked egg layer, then sprinkle the remaining cheese on top. Bake for 20 more minutes until done.&lt;/li&gt;
 &lt;/ol&gt;
 &lt;h3 id=&quot;description&quot;&gt;Description&lt;/h3&gt;
-&lt;p&gt;This is an italian-style caserole with pizza-like topping and a zuchini base. I first made it in 2023 and it tastes fantastic. I choose sometimes to skip the zuchini base to save time (or if I’m just being lazy). The topping is the signature feature of this dish, it really does taste like a pizza!&lt;/p&gt;
+&lt;p&gt;This is an Italian-style casserole with pizza-like topping and a zucchini base. I first made it in 2023 and it tastes fantastic. I choose sometimes to skip the zucchini base to save time (or if I’m just being lazy). The topping is the signature feature of this dish, it really does taste like a pizza!&lt;/p&gt;
 
 </description>
       </item>

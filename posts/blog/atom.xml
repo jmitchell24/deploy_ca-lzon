@@ -25,7 +25,7 @@
   
 
   <!-- the feed's own updated time: its newest change (updates.xml), else its newest post -->
-  <updated>2026-11-23T12:00:00Z</updated>
+  <updated>2026-11-26T12:00:00Z</updated>
 
   <!-- Entries. Quotes (their own section feed) list one quote each. Posts go through
        macros/feed.html, so this feed, rss.xml and pages.json agree: each entry is titled as
@@ -1108,7 +1108,7 @@ I found from &lt;a rel=&quot;noopener external&quot; target=&quot;_blank&quot; h
     <published>2024-09-08T12:00:00Z</published>
     <updated>2026-11-20T12:00:00Z</updated>
     <author><name>Lzon</name></author>
-    <content type="html" xml:base="https://lzon.ca/posts/blog/baked-cajun-pork/">&lt;p&gt;A simple and flavorful weeknight recipe with a bit if spicyness.&lt;/p&gt;&lt;p&gt;&lt;a href=&quot;https://lzon.ca/posts/blog/baked-cajun-pork/#continue-reading&quot;&gt;Continue reading&lt;/a&gt;&lt;/p&gt;
+    <content type="html" xml:base="https://lzon.ca/posts/blog/baked-cajun-pork/">&lt;p&gt;A simple and flavorful weeknight recipe with a bit if spiciness.&lt;/p&gt;&lt;p&gt;&lt;a href=&quot;https://lzon.ca/posts/blog/baked-cajun-pork/#continue-reading&quot;&gt;Continue reading&lt;/a&gt;&lt;/p&gt;
 </content>
   </entry>
   <entry>
@@ -1279,7 +1279,7 @@ me how I know 😉).&lt;/p&gt;
     <link rel="alternate" href="https://lzon.ca/posts/blog/zucchini-pizza-caserole/"/>
     <category term="blog" label="Blog" scheme="https://lzon.ca/posts/blog/"/>
     <published>2024-08-17T12:00:00Z</published>
-    <updated>2026-02-09T12:00:00Z</updated>
+    <updated>2026-11-26T12:00:00Z</updated>
     <author><name>Lzon</name></author>
     <content type="html" xml:base="https://lzon.ca/posts/blog/zucchini-pizza-caserole/">
 
@@ -1302,7 +1302,7 @@ me how I know 😉).&lt;/p&gt;
 &lt;li&gt;Cook beef and onion completely in a saucepan, then add tomato sauce. Pour over the cooked egg layer, then sprinkle the remaining cheese on top. Bake for 20 more minutes until done.&lt;/li&gt;
 &lt;/ol&gt;
 &lt;h3 id=&quot;description&quot;&gt;Description&lt;/h3&gt;
-&lt;p&gt;This is an italian-style caserole with pizza-like topping and a zuchini base. I first made it in 2023 and it tastes fantastic. I choose sometimes to skip the zuchini base to save time (or if I’m just being lazy). The topping is the signature feature of this dish, it really does taste like a pizza!&lt;/p&gt;
+&lt;p&gt;This is an Italian-style casserole with pizza-like topping and a zucchini base. I first made it in 2023 and it tastes fantastic. I choose sometimes to skip the zucchini base to save time (or if I’m just being lazy). The topping is the signature feature of this dish, it really does taste like a pizza!&lt;/p&gt;
 
 </content>
   </entry>

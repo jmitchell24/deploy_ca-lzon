@@ -707,7 +707,7 @@
   
 
   <!-- the feed's own updated time: its newest change (updates.xml), else its newest post -->
-  <updated>2026-11-25T12:00:00Z</updated>
+  <updated>2026-11-26T12:00:00Z</updated>
   
 
   <!-- Entries. Quotes (their own section feed) list one quote each. Posts go through
@@ -719,6 +719,39 @@
   
     
   
+  <entry>
+    <title>[ Blog ] Zucchini Pizza Casserole</title>
+    <id>https://lzon.ca/posts/blog/zucchini-pizza-caserole/</id>
+    <link rel="alternate" href="https://lzon.ca/posts/blog/zucchini-pizza-caserole/"/>
+    <category term="blog" label="Blog" scheme="https://lzon.ca/posts/blog/"/>
+    <published>2024-08-17T12:00:00Z</published>
+    <updated>2026-11-26T12:00:00Z</updated>
+    <author><name>Lzon</name></author>
+    <content type="html" xml:base="https://lzon.ca/posts/blog/zucchini-pizza-caserole/">
+
+&lt;h3 id=&quot;ingredients&quot;&gt;Ingredients&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;🥒 4 cups shredded unpeeled zucchini&lt;/li&gt;
+&lt;li&gt;🥚 2 large eggs&lt;/li&gt;
+&lt;li&gt;🧀 1/2 cup Parmesan&lt;/li&gt;
+&lt;li&gt;🧀 2 cups mozzarella&lt;/li&gt;
+&lt;li&gt;🧀 1 cup cheddar&lt;/li&gt;
+&lt;li&gt;🐮 1 lbs ground beef&lt;/li&gt;
+&lt;li&gt;🧅 1/2 cup onion&lt;/li&gt;
+&lt;li&gt;🍅 1 can tomato sauce&lt;/li&gt;
+&lt;li&gt;🫑 1 bell pepper&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&quot;instructions&quot;&gt;Instructions&lt;/h3&gt;
+&lt;ol&gt;
+&lt;li&gt;Preheat oven to 400 ℉. Shred zucchini and squeeze out moisture.&lt;/li&gt;
+&lt;li&gt;Combine zucchini with the egg, and half of the cheese (Parmesan, mozzarella, and cheddar). Layer into the bottom of a large baking dish. Bake for 20 minutes&lt;/li&gt;
+&lt;li&gt;Cook beef and onion completely in a saucepan, then add tomato sauce. Pour over the cooked egg layer, then sprinkle the remaining cheese on top. Bake for 20 more minutes until done.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h3 id=&quot;description&quot;&gt;Description&lt;/h3&gt;
+&lt;p&gt;This is an Italian-style casserole with pizza-like topping and a zucchini base. I first made it in 2023 and it tastes fantastic. I choose sometimes to skip the zucchini base to save time (or if I’m just being lazy). The topping is the signature feature of this dish, it really does taste like a pizza!&lt;/p&gt;
+
+</content>
+  </entry>
   <entry>
     <title>[ Trivia ] If all of human history was just a single 24-hour day, farming and agriculture would have only been
 invented in the last 6 minutes before midnight.</title>
@@ -2994,7 +3027,7 @@ It ended on July 19 with Spain as winner.&lt;/p&gt;
     <published>2024-09-08T12:00:00Z</published>
     <updated>2026-11-20T12:00:00Z</updated>
     <author><name>Lzon</name></author>
-    <content type="html" xml:base="https://lzon.ca/posts/blog/baked-cajun-pork/">&lt;p&gt;A simple and flavorful weeknight recipe with a bit if spicyness.&lt;/p&gt;&lt;p&gt;&lt;a href=&quot;https://lzon.ca/posts/blog/baked-cajun-pork/#continue-reading&quot;&gt;Continue reading&lt;/a&gt;&lt;/p&gt;
+    <content type="html" xml:base="https://lzon.ca/posts/blog/baked-cajun-pork/">&lt;p&gt;A simple and flavorful weeknight recipe with a bit if spiciness.&lt;/p&gt;&lt;p&gt;&lt;a href=&quot;https://lzon.ca/posts/blog/baked-cajun-pork/#continue-reading&quot;&gt;Continue reading&lt;/a&gt;&lt;/p&gt;
 </content>
   </entry>
   <entry>
@@ -4781,39 +4814,6 @@ it isn’t particularly nutritious.&lt;/p&gt;
 &lt;li&gt;Simmer on medium heat until pasta is tender. Stir frequently.&lt;/li&gt;
 &lt;li&gt;Optionally, serve with grated Parmesan.&lt;/li&gt;
 &lt;/ol&gt;
-
-</content>
-  </entry>
-  <entry>
-    <title>[ Blog ] Zucchini Pizza Casserole</title>
-    <id>https://lzon.ca/posts/blog/zucchini-pizza-caserole/</id>
-    <link rel="alternate" href="https://lzon.ca/posts/blog/zucchini-pizza-caserole/"/>
-    <category term="blog" label="Blog" scheme="https://lzon.ca/posts/blog/"/>
-    <published>2024-08-17T12:00:00Z</published>
-    <updated>2026-02-09T12:00:00Z</updated>
-    <author><name>Lzon</name></author>
-    <content type="html" xml:base="https://lzon.ca/posts/blog/zucchini-pizza-caserole/">
-
-&lt;h3 id=&quot;ingredients&quot;&gt;Ingredients&lt;/h3&gt;
-&lt;ul&gt;
-&lt;li&gt;🥒 4 cups shredded unpeeled zucchini&lt;/li&gt;
-&lt;li&gt;🥚 2 large eggs&lt;/li&gt;
-&lt;li&gt;🧀 1/2 cup Parmesan&lt;/li&gt;
-&lt;li&gt;🧀 2 cups mozzarella&lt;/li&gt;
-&lt;li&gt;🧀 1 cup cheddar&lt;/li&gt;
-&lt;li&gt;🐮 1 lbs ground beef&lt;/li&gt;
-&lt;li&gt;🧅 1/2 cup onion&lt;/li&gt;
-&lt;li&gt;🍅 1 can tomato sauce&lt;/li&gt;
-&lt;li&gt;🫑 1 bell pepper&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h3 id=&quot;instructions&quot;&gt;Instructions&lt;/h3&gt;
-&lt;ol&gt;
-&lt;li&gt;Preheat oven to 400 ℉. Shred zucchini and squeeze out moisture.&lt;/li&gt;
-&lt;li&gt;Combine zucchini with the egg, and half of the cheese (Parmesan, mozzarella, and cheddar). Layer into the bottom of a large baking dish. Bake for 20 minutes&lt;/li&gt;
-&lt;li&gt;Cook beef and onion completely in a saucepan, then add tomato sauce. Pour over the cooked egg layer, then sprinkle the remaining cheese on top. Bake for 20 more minutes until done.&lt;/li&gt;
-&lt;/ol&gt;
-&lt;h3 id=&quot;description&quot;&gt;Description&lt;/h3&gt;
-&lt;p&gt;This is an italian-style caserole with pizza-like topping and a zuchini base. I first made it in 2023 and it tastes fantastic. I choose sometimes to skip the zuchini base to save time (or if I’m just being lazy). The topping is the signature feature of this dish, it really does taste like a pizza!&lt;/p&gt;
 
 </content>
   </entry>
