@@ -1,0 +1,27 @@
+{
+ "puff": {
+  "RADIUS": 0.02,
+  "BRIGHTNESS": 2.1,
+  "DRIFT": 40,
+  "SPREAD": 80
+ },
+ "sim": {
+  "DENSITY_DISSIPATION": 1,
+  "VELOCITY_DISSIPATION": 0.2,
+  "PRESSURE": 0.75,
+  "CURL": 10,
+  "COLOR_UPDATE_SPEED": 10,
+  "SIM_RESOLUTION": 128,
+  "DYE_RESOLUTION": 1024
+ },
+ "look": {
+  "SHADING": true,
+  "COLORFUL": false,
+  "BLOOM": true,
+  "BLOOM_INTENSITY": 0.8,
+  "BLOOM_THRESHOLD": 0.6,
+  "SUNRAYS": true,
+  "SUNRAYS_WEIGHT": 1,
+  "PAUSED": false
+ }
+}

@@ -1,0 +1,340 @@
+<style>
+    /*
+     * Quote typer (prototype): the quote is shown as a placeholder; typed characters
+     * light up (correct) or turn red (wrong) over it. Keys are read from the whole page,
+     * so there is nothing to click first. The timer starts on the first key; when the
+     * whole quote is typed correctly, speed and accuracy are shown. Tab + Space resets at any
+     * time; Tab + Q resets with a random quote from the site (/quotes/pages.json).
+     *
+     * Styled and animated like the single quote page (templates/page-quotes.html): the
+     * site's .quote-showcase figure gives the layout, type and transitions
+     * (sass/lzon/_component-qotd.scss). The intro mirrors ts/qotd.ts initQuoteShowcase:
+     * after a short pause the quote rises and fades in as it types in, then the
+     * attribution and the footer fade in. That code isn't used directly because it would
+     * split the per-character spans, so .qt-pre / .qt-typing stand in for its
+     * .pre-type / .typing classes.
+     */
+    #qt {
+        --qt-error: #e05a5a;
+        margin: 1.5rem 0;
+    }
+    #qt [hidden] { display: none !important; }
+    #qt blockquote { white-space: pre-wrap; word-break: break-word; }
+
+    /* muted placeholder; deleting snaps back to it */
+    #qt .qt-ch { color: var(--color-gray); opacity: .55; transition: color .08s, opacity .08s; }
+    /* a correct character fades muted → accent → body text colour. (paint() removes and
+       re-adds the class on every key in one go, so the animation only plays when a
+       character newly becomes correct.) */
+    #qt .qt-ok { color: var(--color-lighter); opacity: 1; animation: qt-ok-fade .6s ease-out; }
+    @keyframes qt-ok-fade {
+        0%   { color: var(--color-gray); opacity: .55; }
+        25%  { color: var(--color-primary); opacity: 1; }
+        100% { color: var(--color-lighter); opacity: 1; }
+    }
+    #qt .qt-bad { color: var(--qt-error); opacity: 1; text-decoration: underline; }
+    #qt .qt-bad.qt-space { background: color-mix(in srgb, var(--qt-error) 35%, transparent); }
+    /* next character to type: one faint highlight, slanted to match the italic text, that
+       slides from character to character (placed by placeHighlight). Drawn as a
+       translucent overlay (a background can't be skewed); it's light enough that the
+       letter shows through. */
+    #qt blockquote { position: relative; }
+    #qt .qt-hl {
+        position: absolute;
+        left: 0;
+        top: 0;
+        background: color-mix(in srgb, var(--color-primary) 28%, transparent);
+        border-radius: 2px;
+        pointer-events: none;
+        transition: transform .12s ease-out, width .12s ease-out, opacity .2s ease;
+    }
+    /* moving to another line (or re-placing after a resize): jump, don't slide across */
+    #qt .qt-hl.qt-jump { transition: opacity .2s ease; }
+    #qt .qt-hl.qt-off { opacity: 0; }
+    /* not yet typed in by the intro: keeps its space so wrapping never shifts */
+    #qt .qt-unrevealed { visibility: hidden; }
+
+    #qt .qt-foot {
+        display: flex; flex-direction: column; align-items: center; gap: 1rem;
+        font-size: .85rem; text-align: center;
+        transition: opacity .6s ease;
+    }
+    #qt .qt-result { display: flex; flex-wrap: wrap; justify-content: center; gap: 1.5rem; }
+    #qt .qt-stat b { display: block; font-size: 1.6rem; color: var(--color-primary); }
+
+    /* intro states (see the note above) */
+    #qt.qt-pre blockquote { visibility: hidden; opacity: 0; transform: translateY(2em); }
+    #qt.qt-pre figcaption, #qt.qt-typing figcaption,
+    #qt.qt-pre .qt-foot, #qt.qt-typing .qt-foot { opacity: 0; }
+    @media (prefers-reduced-motion: reduce) { #qt .qt-foot { transition: none; } }
+</style>
+
+<div id="qt" class="qt-pre">
+    <figure class="quote-showcase">
+        <blockquote class="text-serif text-base text-italic" aria-label="Type this quote"></blockquote>
+        <figcaption class="text-sans-serif text-mute">
+            <span class="quote-showcase-author"></span>
+        </figcaption>
+    </figure>
+    <div class="qt-foot text-sans-serif text-mute">
+        <div class="qt-hint">Start typing. The timer starts on your first key.</div>
+        <div class="qt-result" hidden>
+            <div class="qt-stat"><b class="qt-wpm"></b>words / min</div>
+            <div class="qt-stat"><b class="qt-acc"></b>accuracy</div>
+            <div class="qt-stat"><b class="qt-time"></b>seconds</div>
+        </div>
+        <div>tab + space to reset · tab + q for another quote</div>
+    </div>
+</div>
+
+<script>
+(() => {
+    /**
+     * The quote being typed: { text, author }. Starts as a test quote
+     * (content/quotes/quotes-000001_alexander-smith.md); Tab + Q swaps in a random one
+     * from the site's quotes (QUOTES_URL).
+     */
+    let QUOTE = { text: "To be occasionally quoted is the only fame I care for.", author: "Alexander Smith" };
+    /** The quotes feed, as read by ts/qotd.ts: { pages: [{ text, author, work, ... }] }. */
+    const QUOTES_URL = "/quotes/pages.json";
+    /** The feed's quotes once loaded (see loadQuotes). */
+    let quotesPromise = null;
+
+    /**
+     * Keys accepted for characters a keyboard doesn't have: curly quotes and dashes take
+     * their plain versions, and a line break (in verse) takes Space or Enter.
+     */
+    const EQUIVALENT = { "’": "'", "‘": "'", "“": '"', "”": '"', "–": "-", "—": "-", "\n": " " };
+
+    /**
+     * Whether a typed character counts as the expected one.
+     * @param {string} expected the quote's character
+     * @param {string} typed the typed character ("\n" for Enter)
+     */
+    function matches(expected, typed) {
+        return typed === expected || EQUIVALENT[expected] === typed;
+    }
+
+    /** Loads (once) the site's quotes, tidied for typing: "…" spelled out as "...". */
+    function loadQuotes() {
+        quotesPromise ??= fetch(QUOTES_URL)
+            .then((res) => res.json())
+            .then((data) => data.pages
+                .map((p) => ({
+                    text: p.text.replace(/\r/g, "").replace(/…/g, "...").trim(),
+                    author: p.author ?? "Anonymous",
+                }))
+                .filter((q) => q.text))
+            .catch((err) => { quotesPromise = null; throw err; });
+        return quotesPromise;
+    }
+
+    /** Swaps in a random quote from the site (never the current one) and starts it fresh. */
+    function nextQuote() {
+        loadQuotes().then((quotes) => {
+            const others = quotes.filter((q) => q.text !== QUOTE.text);
+            if (!others.length) return;
+            QUOTE = others[Math.floor(Math.random() * others.length)];
+            reset();
+            playIntro(false);
+        }).catch((err) => console.warn("quote typer: couldn't load quotes", err));
+    }
+
+    /** Intro timing, from ts/qotd.ts (SHOWCASE_DELAY_MS, TYPE_MS_PER_CHAR). */
+    const INTRO_DELAY_MS = 150;
+    const INTRO_MS_PER_CHAR = 12;
+
+    const root = document.getElementById("qt");
+    const quoteEl = root.querySelector("blockquote");
+    const hint = root.querySelector(".qt-hint");
+    const result = root.querySelector(".qt-result");
+
+    /** One span per quote character, indexed like QUOTE.text. */
+    let spans = [];
+    /** What the player has typed so far. */
+    let typed = "";
+    /** Time of the first keystroke (ms), or null before typing starts. */
+    let startedAt = null;
+    /** True once the quote is complete; typing is ignored until reset. */
+    let done = false;
+    /** Count of keystrokes that added a wrong character, for accuracy. */
+    let mistakes = 0;
+    /** Count of keystrokes that added any character. */
+    let keystrokes = 0;
+    /** True while Tab is held, for the Tab + Space reset chord. */
+    let tabDown = false;
+    /** Bumped on each intro so a stale intro's timers stop. */
+    let introGen = 0;
+    /** The sliding highlight over the next character (see placeHighlight). */
+    const highlight = document.createElement("div");
+    highlight.className = "qt-hl";
+    highlight.setAttribute("aria-hidden", "true");
+    /** The highlighted character's line (offsetTop), to tell a slide from a line change. */
+    let lastTop = null;
+    // the layout shifts when fonts load or the column resizes: re-place without sliding
+    new ResizeObserver(() => placeHighlight(true)).observe(quoteEl);
+
+    /** Builds the placeholder spans and clears all state. */
+    function reset() {
+        quoteEl.replaceChildren();
+        spans = [...QUOTE.text].map((c) => {
+            const s = document.createElement("span");
+            s.className = "qt-ch" + (c === " " || c === "\n" ? " qt-space" : "");
+            s.textContent = c;
+            quoteEl.append(s);
+            return s;
+        });
+        quoteEl.append(highlight);
+        lastTop = null;
+        root.querySelector(".quote-showcase-author").textContent = "— " + QUOTE.author;
+        typed = "";
+        startedAt = null;
+        done = false;
+        mistakes = keystrokes = 0;
+        result.hidden = true;
+        hint.hidden = false;
+        paint();
+    }
+
+    /** Colours each character from what has been typed and moves the cursor. */
+    function paint() {
+        spans.forEach((s, i) => {
+            s.classList.remove("qt-ok", "qt-bad", "qt-cur");
+            if (i < typed.length) s.classList.add(typed[i] === QUOTE.text[i] ? "qt-ok" : "qt-bad");
+        });
+        if (typed.length < spans.length) spans[typed.length].classList.add("qt-cur");
+        placeHighlight(false);
+    }
+
+    /**
+     * Moves the highlight over the next character to type, sliding along a line and
+     * jumping between lines; hides it when the quote is complete.
+     * @param {boolean} jump place it without sliding (after a resize or font load)
+     */
+    function placeHighlight(jump) {
+        const s = spans[typed.length];
+        if (!s) { highlight.classList.add("qt-off"); return; }
+        const em = parseFloat(getComputedStyle(quoteEl).fontSize);
+        const top = s.offsetTop;
+        highlight.classList.toggle("qt-jump", jump || (lastTop !== null && top !== lastTop));
+        highlight.classList.remove("qt-off");
+        lastTop = top;
+        // inset 0.1em top and bottom, 0.04em wider each side; nudged right 0.08em
+        // because italic glyphs overhang their box
+        highlight.style.width = (s.offsetWidth + 0.08 * em) + "px";
+        highlight.style.height = (s.offsetHeight - 0.2 * em) + "px";
+        highlight.style.transform =
+            `translate(${s.offsetLeft + 0.04 * em}px, ${top + 0.1 * em}px) skewX(-12deg)`;
+    }
+
+    /** Resolves once the page is loaded, fonts are ready and a frame is drawn (as ts/qotd.ts afterFirstPaint). */
+    function afterFirstPaint() {
+        const loaded = document.readyState === "complete"
+            ? Promise.resolve()
+            : new Promise((r) => window.addEventListener("load", r, { once: true }));
+        return Promise.all([loaded, document.fonts.ready])
+            .then(() => new Promise((r) => requestAnimationFrame(() => requestAnimationFrame(r))));
+    }
+
+    /** Ends the intro now: every character shown, attribution and footer faded in. */
+    function finishIntro() {
+        introGen++;
+        spans.forEach((s) => s.classList.remove("qt-unrevealed"));
+        root.classList.remove("qt-pre", "qt-typing");
+    }
+
+    /**
+     * Plays the quote page intro: after a pause the quote rises and fades in while its
+     * characters type in, then the attribution and footer fade in.
+     * @param {boolean} waitForPaint wait for the first paint (page load) before starting
+     */
+    function playIntro(waitForPaint) {
+        const gen = ++introGen;
+        root.classList.remove("qt-typing");
+        root.classList.add("qt-pre");
+        if (matchMedia("(prefers-reduced-motion: reduce)").matches) { finishIntro(); return; }
+        spans.forEach((s) => s.classList.add("qt-unrevealed"));
+        void root.offsetHeight; // commit the hidden state so the rise replays on reset
+        (waitForPaint ? afterFirstPaint() : Promise.resolve()).then(() => {
+            setTimeout(() => {
+                if (gen !== introGen) return;
+                root.classList.replace("qt-pre", "qt-typing");
+                let i = 0;
+                (function tick() {
+                    if (gen !== introGen) return;
+                    if (i >= spans.length) { root.classList.remove("qt-typing"); return; }
+                    spans[i++].classList.remove("qt-unrevealed");
+                    setTimeout(tick, INTRO_MS_PER_CHAR);
+                })();
+            }, INTRO_DELAY_MS);
+        });
+    }
+
+    /**
+     * Page-wide key handler: Tab + Space resets, Tab + Q resets with a random quote,
+     * Backspace deletes, any printable key (or Enter, for a line break) types. Keys with
+     * Ctrl/Meta/Alt pass through so browser shortcuts still work. Typing during the
+     * intro skips to its end.
+     * @param {KeyboardEvent} e
+     */
+    function onKeyDown(e) {
+        if (e.key === "Tab") { tabDown = true; e.preventDefault(); return; }
+        if (tabDown && e.key === " ") { e.preventDefault(); reset(); playIntro(false); return; }
+        if (tabDown && e.key.toLowerCase() === "q") { e.preventDefault(); nextQuote(); return; }
+        if (e.ctrlKey || e.metaKey || e.altKey || done) return;
+
+        const key = e.key === "Enter" ? "\n" : e.key;
+        if (key === "Backspace") {
+            e.preventDefault();
+            typed = typed.slice(0, -1);
+        } else if (key.length === 1) {
+            e.preventDefault(); // stops Space scrolling the page
+            if (typed.length >= QUOTE.text.length) return;
+            if (root.classList.contains("qt-pre") || root.classList.contains("qt-typing")) finishIntro();
+            if (startedAt === null) { startedAt = performance.now(); hint.hidden = true; }
+            keystrokes++;
+            const expected = QUOTE.text[typed.length];
+            const ok = matches(expected, key);
+            if (!ok) mistakes++;
+            announceType(spans[typed.length], ok);
+            // a match stores the quote's own character, so `typed` lines up with the text
+            typed += ok ? expected : key;
+        } else {
+            return;
+        }
+        paint();
+        if (typed === QUOTE.text) finish();
+    }
+
+    /**
+     * Tells the page a character was typed (for effects such as fluid.html's smoke): a
+     * 'qt:type' event on window with the character's centre in viewport px.
+     * @param {HTMLElement} span the quote character that was typed over
+     * @param {boolean} ok whether the typed key matched it
+     */
+    function announceType(span, ok) {
+        const r = span.getBoundingClientRect();
+        window.dispatchEvent(new CustomEvent("qt:type", {
+            detail: { x: r.left + r.width / 2, y: r.top + r.height / 2, ok },
+        }));
+    }
+
+    /** Stops the game and shows speed (5 chars = 1 word), accuracy and time. */
+    function finish() {
+        done = true;
+        const secs = (performance.now() - startedAt) / 1000;
+        const wpm = (QUOTE.text.length / 5) / (secs / 60);
+        const acc = ((keystrokes - mistakes) / keystrokes) * 100;
+        root.querySelector(".qt-wpm").textContent = Math.round(wpm);
+        root.querySelector(".qt-acc").textContent = Math.round(acc) + "%";
+        root.querySelector(".qt-time").textContent = secs.toFixed(1);
+        result.hidden = false;
+    }
+
+    document.addEventListener("keydown", onKeyDown);
+    document.addEventListener("keyup", (e) => { if (e.key === "Tab") tabDown = false; });
+    window.addEventListener("blur", () => { tabDown = false; });
+    reset();
+    playIntro(true);
+})();
+</script>

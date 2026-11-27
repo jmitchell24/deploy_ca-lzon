@@ -23,6 +23,10 @@
          the keys sorted, then the pages looked up again in that order -->
     
     
+      
+      
+      
+    
     
     <!-- the entries loop walks the keys and looks each page up as it goes: collecting the
          pages into a list first (concat in a loop) copied the whole list each time,
@@ -31,6 +35,7 @@
   
 
   <!-- the feed's own updated time: its newest change (updates.xml), else its newest post -->
+  <updated>2026-11-27T12:00:00Z</updated>
   
 
   <!-- Entries. Quotes (their own section feed) list one quote each. Posts go through
@@ -42,5 +47,16 @@
   
     
   
+  <entry>
+    <title>My Title</title>
+    <id>https://lzon.ca/posts/drafts/000012-my-title/</id>
+    <link rel="alternate" href="https://lzon.ca/posts/drafts/000012-my-title/"/>
+    <category term="drafts" label="Drafts" scheme="https://lzon.ca/posts/drafts/"/>
+    <published>2026-11-27T12:00:00Z</published>
+    <updated>2026-11-27T12:00:00Z</updated>
+    <author><name>Lzon</name></author>
+    <content type="html" xml:base="https://lzon.ca/posts/drafts/000012-my-title/">&lt;p&gt;A typing game.&lt;/p&gt;&lt;p&gt;&lt;a href=&quot;https://lzon.ca/posts/drafts/000012-my-title/#continue-reading&quot;&gt;Continue reading&lt;/a&gt;&lt;/p&gt;
+</content>
+  </entry>
 
 </feed>
