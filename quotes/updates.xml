@@ -975,6 +975,10 @@
       
       
     
+      
+      
+      
+    
     
     <!-- the entries loop walks the keys and looks each page up as it goes: collecting the
          pages into a list first (concat in a loop) copied the whole list each time,
@@ -983,7 +987,7 @@
   
 
   <!-- the feed's own updated time: its newest change (updates.xml), else its newest post -->
-  <updated>2026-11-26T12:00:00Z</updated>
+  <updated>2026-11-27T12:00:00Z</updated>
   
 
   <!-- Entries. Quotes (their own section feed) list one quote each. Posts go through
@@ -995,6 +999,16 @@
   
     
   
+  <entry>
+    <title>239. lzon.ca&#x2F;quotes</title>
+    <id>https://lzon.ca/quotes/#239</id>
+    <link rel="alternate" href="https://lzon.ca/quotes/000239/"/>
+    <published>2026-11-27T12:00:00Z</published>
+    <updated>2026-11-27T12:00:00Z</updated>
+    <author><name>Lzon</name></author>
+    <category term="quote"/>
+    <summary type="html">Hope is the thing with feathers that perches in the soul. And sings the tune without the words, and never stops at all.&lt;br/&gt;- Emily Dickinson</summary>
+  </entry>
   <entry>
     <title>238. lzon.ca&#x2F;quotes</title>
     <id>https://lzon.ca/quotes/#238</id>

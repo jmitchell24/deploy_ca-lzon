@@ -3,14 +3,16 @@
      * Quote typer (prototype): the quote is shown as a placeholder; typed characters
      * light up (correct) or turn red (wrong) over it. Keys are read from the whole page,
      * so there is nothing to click first. The timer starts on the first key; when the
-     * whole quote is typed correctly, speed and accuracy are shown. Tab + Space resets at any
-     * time; Tab + Q resets with a random quote from the site (/quotes/pages.json).
+     * whole quote is typed correctly, the rule, attribution and scorecard (speed,
+     * accuracy, time, reset keys) rise in under it; until then only the quote shows.
+     * Tab + Space resets at any time; Tab + Q resets with a random quote from the site
+     * (/quotes/pages.json).
      *
      * Styled and animated like the single quote page (templates/page-quotes.html): the
      * site's .quote-showcase figure gives the layout, type and transitions
      * (sass/lzon/_component-qotd.scss). The intro mirrors ts/qotd.ts initQuoteShowcase:
-     * after a short pause the quote rises and fades in as it types in, then the
-     * attribution and the footer fade in. That code isn't used directly because it would
+     * after a short pause the quote rises and fades in as it types in (the attribution
+     * waits for the end of the game, see .qt-done). That code isn't used directly because it would
      * split the per-character spans, so .qt-pre / .qt-typing stand in for its
      * .pre-type / .typing classes.
      */
@@ -19,14 +21,46 @@
         margin: 1.5rem 0;
     }
     #qt [hidden] { display: none !important; }
-    #qt blockquote { white-space: pre-wrap; word-break: break-word; }
+    /* break-spaces, not pre-wrap: a space at the end of a line keeps its width instead of
+       hanging past the edge at zero width, so the highlight shows on it and it doesn't
+       look skipped. Line breaks (\n, in verse) are kept. */
+    #qt blockquote { white-space: break-spaces; word-break: break-word; }
 
     /* muted placeholder; deleting snaps back to it */
     #qt .qt-ch { color: var(--color-gray); opacity: .55; transition: color .08s, opacity .08s; }
     /* a correct character fades muted → accent → body text colour. (paint() removes and
        re-adds the class on every key in one go, so the animation only plays when a
        character newly becomes correct.) */
-    #qt .qt-ok { color: var(--color-lighter); opacity: 1; animation: qt-ok-fade .6s ease-out; }
+    #qt .qt-ok { color: var(--color-lighter); opacity: 1; animation: qt-ok-fade .6s ease-out, qt-hop .22s; }
+    #qt .qt-bad { animation: qt-hop .22s; }
+    /* finished: the typing animation (colour fade and pop) replays as a wave from the
+       last character back to the first; each character's delay is set in celebrate() */
+    #qt .qt-ok.qt-wave { animation: qt-wave-fade .6s ease-out, qt-wave-hop .22s; }
+    /* a typed character pops: lifts and scales up, then settles back. Scaling needs inline-blocks (see
+       reset()); each word is a no-wrap group so lines still break only at spaces. */
+    #qt .qt-word { white-space: nowrap; }
+    #qt .qt-glyph { display: inline-block; }
+    @keyframes qt-hop {
+        /* decelerate up to the peak (ease-out cubic), accelerate back (ease-in cubic): a
+           small scale and a lift together */
+        0%   { transform: none; animation-timing-function: cubic-bezier(0.33, 1, 0.68, 1); }
+        50%  { transform: translateY(-0.07em) scale(1.125); animation-timing-function: cubic-bezier(0.32, 0, 0.67, 0); }
+        100% { transform: none; }
+    }
+    /* copies of qt-ok-fade and qt-hop for the end-of-game wave: a new animation name is
+       what makes the browser restart it (keep these in step with the originals) */
+    @keyframes qt-wave-fade {
+        0%   { color: var(--color-gray); opacity: .55; }
+        25%  { color: var(--color-primary); opacity: 1; }
+        100% { color: var(--color-lighter); opacity: 1; }
+    }
+    @keyframes qt-wave-hop {
+        /* decelerate up to the peak (ease-out cubic), accelerate back (ease-in cubic): a
+           small scale and a lift together */
+        0%   { transform: none; animation-timing-function: cubic-bezier(0.33, 1, 0.68, 1); }
+        50%  { transform: translateY(-0.07em) scale(1.125); animation-timing-function: cubic-bezier(0.32, 0, 0.67, 0); }
+        100% { transform: none; }
+    }
     @keyframes qt-ok-fade {
         0%   { color: var(--color-gray); opacity: .55; }
         25%  { color: var(--color-primary); opacity: 1; }
@@ -57,16 +91,31 @@
     #qt .qt-foot {
         display: flex; flex-direction: column; align-items: center; gap: 1rem;
         font-size: .85rem; text-align: center;
-        transition: opacity .6s ease;
     }
     #qt .qt-result { display: flex; flex-wrap: wrap; justify-content: center; gap: 1.5rem; }
     #qt .qt-stat b { display: block; font-size: 1.6rem; color: var(--color-primary); }
 
     /* intro states (see the note above) */
     #qt.qt-pre blockquote { visibility: hidden; opacity: 0; transform: translateY(2em); }
-    #qt.qt-pre figcaption, #qt.qt-typing figcaption,
-    #qt.qt-pre .qt-foot, #qt.qt-typing .qt-foot { opacity: 0; }
-    @media (prefers-reduced-motion: reduce) { #qt .qt-foot { transition: none; } }
+
+    /* Only the quote shows while playing. The rule, attribution and scorecard are hidden
+       (keeping their space, so nothing moves) and rise and fade in when the quote is
+       finished (.qt-done), with the quote's own intro motion (the site's .quote-showcase
+       blockquote transition); the scorecard follows a beat later. Hiding is instant, so
+       a reset clears them at once. !important and the id beat the site's figcaption
+       transition (also !important). */
+    #qt figcaption, #qt .qt-foot {
+        visibility: hidden; opacity: 0; transform: translateY(2em);
+        transition: none !important;
+    }
+    #qt.qt-done figcaption, #qt.qt-done .qt-foot {
+        visibility: visible; opacity: 1; transform: none;
+        transition: opacity 1.2s ease, transform 1.2s cubic-bezier(0.16, 1, 0.3, 1) !important;
+    }
+    #qt.qt-done .qt-foot { transition-delay: 1s !important; }
+    @media (prefers-reduced-motion: reduce) {
+        #qt.qt-done figcaption, #qt.qt-done .qt-foot { transition: none !important; }
+    }
 </style>
 
 <div id="qt" class="qt-pre">
@@ -77,8 +126,7 @@
         </figcaption>
     </figure>
     <div class="qt-foot text-sans-serif text-mute">
-        <div class="qt-hint">Start typing. The timer starts on your first key.</div>
-        <div class="qt-result" hidden>
+        <div class="qt-result">
             <div class="qt-stat"><b class="qt-wpm"></b>words / min</div>
             <div class="qt-stat"><b class="qt-acc"></b>accuracy</div>
             <div class="qt-stat"><b class="qt-time"></b>seconds</div>
@@ -146,8 +194,6 @@
 
     const root = document.getElementById("qt");
     const quoteEl = root.querySelector("blockquote");
-    const hint = root.querySelector(".qt-hint");
-    const result = root.querySelector(".qt-result");
 
     /** One span per quote character, indexed like QUOTE.text. */
     let spans = [];
@@ -171,17 +217,29 @@
     highlight.setAttribute("aria-hidden", "true");
     /** The highlighted character's line (offsetTop), to tell a slide from a line change. */
     let lastTop = null;
+    /** Reused to measure a character's text box for the highlight. */
+    const highlightRange = document.createRange();
     // the layout shifts when fonts load or the column resizes: re-place without sliding
     new ResizeObserver(() => placeHighlight(true)).observe(quoteEl);
 
     /** Builds the placeholder spans and clears all state. */
     function reset() {
         quoteEl.replaceChildren();
+        // characters are inline-blocks (so they can scale), grouped per word in no-wrap
+        // spans so lines still only break at spaces; spaces and line breaks stay inline
+        let word = null;
         spans = [...QUOTE.text].map((c) => {
             const s = document.createElement("span");
-            s.className = "qt-ch" + (c === " " || c === "\n" ? " qt-space" : "");
             s.textContent = c;
-            quoteEl.append(s);
+            if (c === " " || c === "\n") {
+                s.className = "qt-ch qt-space";
+                quoteEl.append(s);
+                word = null;
+            } else {
+                s.className = "qt-ch qt-glyph";
+                if (!word) { word = document.createElement("span"); word.className = "qt-word"; quoteEl.append(word); }
+                word.append(s);
+            }
             return s;
         });
         quoteEl.append(highlight);
@@ -191,8 +249,7 @@
         startedAt = null;
         done = false;
         mistakes = keystrokes = 0;
-        result.hidden = true;
-        hint.hidden = false;
+        root.classList.remove("qt-done");
         paint();
     }
 
@@ -215,16 +272,21 @@
         const s = spans[typed.length];
         if (!s) { highlight.classList.add("qt-off"); return; }
         const em = parseFloat(getComputedStyle(quoteEl).fontSize);
-        const top = s.offsetTop;
-        highlight.classList.toggle("qt-jump", jump || (lastTop !== null && top !== lastTop));
+        // measure the glyph's text box (not the inline-block, which is line-height tall),
+        // relative to the quote; unscaled, since the next character isn't animating
+        highlightRange.selectNodeContents(s);
+        const g = highlightRange.getBoundingClientRect();
+        const q = quoteEl.getBoundingClientRect();
+        const left = g.left - q.left, top = g.top - q.top;
+        highlight.classList.toggle("qt-jump", jump || (lastTop !== null && Math.abs(top - lastTop) > 1));
         highlight.classList.remove("qt-off");
         lastTop = top;
         // inset 0.1em top and bottom, 0.04em wider each side; nudged right 0.08em
         // because italic glyphs overhang their box
-        highlight.style.width = (s.offsetWidth + 0.08 * em) + "px";
-        highlight.style.height = (s.offsetHeight - 0.2 * em) + "px";
+        highlight.style.width = (g.width + 0.08 * em) + "px";
+        highlight.style.height = (g.height - 0.2 * em) + "px";
         highlight.style.transform =
-            `translate(${s.offsetLeft + 0.04 * em}px, ${top + 0.1 * em}px) skewX(-12deg)`;
+            `translate(${left + 0.04 * em}px, ${top + 0.1 * em}px) skewX(-12deg)`;
     }
 
     /** Resolves once the page is loaded, fonts are ready and a frame is drawn (as ts/qotd.ts afterFirstPaint). */
@@ -291,7 +353,7 @@
             e.preventDefault(); // stops Space scrolling the page
             if (typed.length >= QUOTE.text.length) return;
             if (root.classList.contains("qt-pre") || root.classList.contains("qt-typing")) finishIntro();
-            if (startedAt === null) { startedAt = performance.now(); hint.hidden = true; }
+            if (startedAt === null) startedAt = performance.now();
             keystrokes++;
             const expected = QUOTE.text[typed.length];
             const ok = matches(expected, key);
@@ -328,7 +390,28 @@
         root.querySelector(".qt-wpm").textContent = Math.round(wpm);
         root.querySelector(".qt-acc").textContent = Math.round(acc) + "%";
         root.querySelector(".qt-time").textContent = secs.toFixed(1);
-        result.hidden = false;
+        root.classList.add("qt-done");
+        celebrate();
+    }
+
+    /** Total length of the end-of-game wave, any quote length (ms). */
+    const WAVE_TOTAL_MS = 2000;
+    /** Length of one character's animation (the longer of qt-wave-fade and qt-wave-hop, ms). */
+    const WAVE_CHAR_MS = 600;
+
+    /**
+     * Replays the typing animation over the whole quote in reverse order, last character
+     * first, so the whole wave takes WAVE_TOTAL_MS: the start times are spread so the
+     * first character's animation ends then. The animation is restarted by swapping it
+     * for a renamed copy (.qt-wave), delayed per character.
+     */
+    function celebrate() {
+        const n = spans.length;
+        const step = n > 1 ? (WAVE_TOTAL_MS - WAVE_CHAR_MS) / (n - 1) : 0;
+        spans.forEach((s, i) => {
+            s.style.animationDelay = `${(n - 1 - i) * step}ms`;
+            s.classList.add("qt-wave");
+        });
     }
 
     document.addEventListener("keydown", onKeyDown);
